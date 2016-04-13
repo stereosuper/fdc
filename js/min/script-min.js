@@ -1,0 +1,1 @@
+function imgFit(){Modernizr.objectfit||$(".img-fit").each(function(){var i=$(this),n=i.find("img").prop("src");n&&i.css("backgroundImage","url("+n+")").addClass("compat-object-fit")})}$(function(){imgFit(),$(document).scroll(function(){}),$(window).resize(function(){}),$(window).load(function(){})});

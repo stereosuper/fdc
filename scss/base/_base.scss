@@ -17,18 +17,22 @@ $transition: .3s ease-in-out;
 
 html{
   font-size: 62.5%; /* sets the base font to 10px for easier math */
+  background-color: $gris-bg;
 }
 
 body{
   font-family: sans-serif;
-  font-size: 1.6em;
   /* sets the default sizing to make sure nothing is actually 16px */
   line-height: 1;
 }
 
 h1{
-    font-size: 3em;
+    @include roboto-bold(4em);
     margin: .67em 0;
+    text-align: center;
+    &.big{
+      font-size: 6.5em;
+    }
 }
 
 h2{
@@ -37,7 +41,7 @@ h2{
 }
 
 h3{
-    font-size: 2em;
+    font-size: 2.8em;
     margin: 1em 0;
 }
 
@@ -57,6 +61,8 @@ h6{
 }
 
 p{
+    @include roboto(1.6em);
+    line-height: 1.3em;
     margin: 1em 0;
 }
 
@@ -146,18 +152,11 @@ select{
 
 /******* MODULES *******/
 
-.wrapper{
-    max-width: 1200px;
+.container{
+    max-width: 1196px;
     padding: 0 20px;
     margin: 0 auto;
 }
-
-
-/******* HEADER *******/
-
-
-/******* FOOTER *******/
-
 
 /******* CLASSES GENERALES  *******/
 
@@ -177,6 +176,16 @@ select{
   overflow: hidden;
 }
 
+.wrapper-alignment{
+  display: table;
+  width: 100%;
+}
+
+.content-align-middle{
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .clearfix:before,
 .clearfix:after{
     content: ' ';
@@ -184,4 +193,18 @@ select{
 }
 .clearfix:after{
     clear: both;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.img-fit{
+  &.compat-object-fit {
+    background-size: cover;
+    background-position: center center;
+    img { // hide image if object fit is not supported - opacity to 0 for the link area
+      opacity: 0;
+    }
+  }
 }

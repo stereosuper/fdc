@@ -9,16 +9,19 @@
 //  'vendors/';
 
 @import
-  'base/base',
   'base/reset',
-  'base/fonts';
+  'base/fonts',
+  'base/base';
+  
 
 @import
   'layout/grid',
   'layout/forms';
 
 @import
-  'components/buttons';
+  'components/buttons',
+  'components/bloc-top',
+  'components/choices';
 
 @import
   'pages/home';

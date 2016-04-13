@@ -2,120 +2,6 @@
 /* Colors */
 /* Functions */
 /* Mixins */
-/******* GÉNÉRAL *******/
-::-moz-selection {
-  background: black;
-  color: white;
-  text-shadow: none; }
-
-::selection {
-  background: black;
-  color: white;
-  text-shadow: none; }
-
-html {
-  font-size: 62.5%;
-  /* sets the base font to 10px for easier math */ }
-
-body {
-  font-family: sans-serif;
-  font-size: 1.6em;
-  /* sets the default sizing to make sure nothing is actually 16px */
-  line-height: 1; }
-
-h1 {
-  font-size: 3em;
-  margin: .67em 0; }
-
-h2 {
-  font-size: 2.5em;
-  margin: .83em 0; }
-
-h3 {
-  font-size: 2em;
-  margin: 1em 0; }
-
-h4 {
-  font-size: 1.7em;
-  margin: 1.33em 0; }
-
-h5 {
-  font-size: 1.3em;
-  margin: 1.67em 0; }
-
-h6 {
-  font-size: 1.1em;
-  margin: 2.33em 0; }
-
-p {
-  margin: 1em 0; }
-
-blockquote {
-  margin: 1em 40px; }
-
-ol, ul {
-  margin: 1em 0;
-  padding: 0 0 0 40px; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-/******* LIENS / BOUTONS *******/
-a {
-  text-decoration: none;
-  transition: 0.3s ease-in-out; }
-  a:focus {
-    outline: 0; }
-
-/******* FORMULAIRES *******/
-::-webkit-input-placeholder {
-  color: #8b8b8b; }
-
-::-moz-placeholder {
-  color: #8b8b8b; }
-
-:-ms-input-placeholder {
-  color: #8b8b8b; }
-
-input, textarea, select, button {
-  transition: 0.3s ease-in-out; }
-  input:focus, textarea:focus, select:focus, button:focus {
-    outline: 0; }
-
-input:-webkit-autofill, textarea:-webkit-autofill {
-  box-shadow: 0 0 0 1000px white inset; }
-
-/******* MODULES *******/
-.wrapper {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto; }
-
-/******* HEADER *******/
-/******* FOOTER *******/
-/******* CLASSES GENERALES  *******/
-.reset-list {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-
-.hidden {
-  display: none !important; }
-
-.ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden; }
-
-.clearfix:before,
-.clearfix:after {
-  content: ' ';
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -503,19 +389,235 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'robotobold';
-  src: url("../fonts/Roboto-Bold-webfont.eot");
-  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-family: 'roboto_condensedbold';
+  src: url("../fonts/RobotoCondensed-Bold-webfont.eot");
+  src: url("../fonts/RobotoCondensed-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-Bold-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'robotobold_italic';
-  src: url("../fonts/Roboto-BoldItalic-webfont.eot");
-  src: url("../fonts/Roboto-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-BoldItalic-webfont.woff") format("woff"), url("../fonts/Roboto-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/Roboto-BoldItalic-webfont.svg#robotobold_italic") format("svg");
+  font-family: 'roboto_condensedbold_italic';
+  src: url("../fonts/RobotoCondensed-BoldItalic-webfont.eot");
+  src: url("../fonts/RobotoCondensed-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-BoldItalic-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Font icons */
+/******* GÉNÉRAL *******/
+::-moz-selection {
+  background: black;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: black;
+  color: white;
+  text-shadow: none; }
+
+html {
+  font-size: 62.5%;
+  /* sets the base font to 10px for easier math */
+  background-color: #f5f5f6; }
+
+body {
+  font-family: sans-serif;
+  /* sets the default sizing to make sure nothing is actually 16px */
+  line-height: 1; }
+
+h1 {
+  font-family: 'roboto_condensedbold', sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: .67em 0;
+  text-align: center; }
+  h1.big {
+    font-size: 6.5em; }
+
+h2 {
+  font-size: 2.5em;
+  margin: .83em 0; }
+
+h3 {
+  font-size: 2.8em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1.7em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 1.3em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 1.1em;
+  margin: 2.33em 0; }
+
+p {
+  font-family: 'robotoregular', sans-serif;
+  font-weight: normal;
+  font-size: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.3em;
+  margin: 1em 0; }
+
+blockquote {
+  margin: 1em 40px; }
+
+ol, ul {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/******* LIENS / BOUTONS *******/
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out; }
+  a:focus {
+    outline: 0; }
+
+/******* FORMULAIRES *******/
+::-webkit-input-placeholder {
+  color: #8b8b8b; }
+
+::-moz-placeholder {
+  color: #8b8b8b; }
+
+:-ms-input-placeholder {
+  color: #8b8b8b; }
+
+input, textarea, select, button {
+  transition: 0.3s ease-in-out; }
+  input:focus, textarea:focus, select:focus, button:focus {
+    outline: 0; }
+
+input:-webkit-autofill, textarea:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset; }
+
+/******* MODULES *******/
+.container {
+  max-width: 1196px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+/******* CLASSES GENERALES  *******/
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.hidden {
+  display: none !important; }
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.wrapper-alignment {
+  display: table;
+  width: 100%; }
+
+.content-align-middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.position-relative {
+  position: relative; }
+
+.img-fit.compat-object-fit {
+  background-size: cover;
+  background-position: center center; }
+  .img-fit.compat-object-fit img {
+    opacity: 0; }
+
 /* Grid */
 /* Grid */
 /* Buttons */
+/* Bloc top */
+.bloc-top {
+  position: relative;
+  height: 507px;
+  text-align: center; }
+  .bloc-top h1 {
+    margin: 0;
+    padding: 130px 0 0 0;
+    color: white; }
+  .bloc-top p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 4px 0 0 0;
+    font-family: 'roboto_condensedbold', sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: #b52d36;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .bloc-top .wrapper-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .bloc-top img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+/* Choices */
+.choices {
+  display: block;
+  list-style-type: none;
+  margin: -100px 0 0 0;
+  padding: 0; }
+  .choices > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    .choices > li:last-child .zone-txt {
+      border-right: 1px solid #dadada; }
+    .choices > li .visuel:nth-of-type(1) {
+      background-color: rgba(211, 46, 30, 0.95); }
+    .choices > li .visuel:nth-of-type(2) {
+      background-color: rgba(211, 46, 30, 0.95); }
+    .choices > li .visuel:nth-of-type(3) {
+      background-color: rgba(211, 46, 30, 0.95); }
+    .choices > li .visuel:nth-of-type(4) {
+      background-color: rgba(211, 46, 30, 0.95); }
+    .choices > li .visuel:nth-of-type(5) {
+      background-color: rgba(211, 46, 30, 0.95); }
+  .choices .visuel {
+    height: 223px; }
+  .choices .zone-txt {
+    box-sizing: border-box;
+    height: 216px;
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-left: 1px solid #dadada; }
+  .choices h3 {
+    margin: 0; }
+
 /* Home specific style */
