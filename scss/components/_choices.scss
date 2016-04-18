@@ -2,7 +2,7 @@
 .choices{
 	display: block;
 	list-style-type: none;
-	margin: -100px 0 0 0;
+	margin: -100px 0 75px 0;
 	padding: 0;
 	> li{
 		display: inline-block;
@@ -16,20 +16,136 @@
 				border-right: 1px solid $gris;
 			}
 		}
-		.visuel{
-			@for $i from 1 through 5 {
-			  &:nth-of-type(#{$i}) {
-			    //background-color: rgba($theme2-gradient-{$i}, 0.95);
-			    background-color: rgba($theme2-gradient-1, 0.95);
-			  }
+		&:nth-child(1){
+			.visuel{
+				.bg-visuel{
+					background: linear-gradient(to bottom, $theme2-gradient-1 0%, darken($theme2-gradient-1, 5%) 100%);
+					&:before{
+						width: 300px;
+						height: 300px;
+						top: -132px;
+						left: -289px;
+						background: rgb(198, 40, 25);
+					}
+					&:after{
+						width: 484px;
+						height: 484px;
+						top: 243px;
+						left: 40px;
+						background: rgb(198, 40, 25);
+					}
+				}
+			}
+			h3{
+				color: rgb(183, 48, 56);
 			}
 		}
-		&:nth-child(1){
-
+		&:nth-child(2){
+			.visuel{
+				.bg-visuel{
+					background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
+					&:before{
+						width: 300px;
+						height: 300px;
+						top: -267px;
+						left: -92px;
+						background: rgb(212, 47, 31);
+						opacity: 0.5;
+					}
+				}
+			}
+			h3{
+				color: rgb(197, 51, 44);
+			}
+		}
+		&:nth-child(3){
+			.visuel{
+				.bg-visuel{
+					background: linear-gradient(to bottom, $theme2-gradient-3 0%, darken($theme2-gradient-3, 5%) 100%);
+					&:before{
+						width: 84px;
+						height: 84px;
+						top: 27px;
+						left: -23px;
+						background: rgb(228, 77, 29);
+						opacity: 0.8;
+					}
+				}
+			}
+			h3{
+				color: rgb(204, 68, 48);
+			}
+		}
+		&:nth-child(4){
+			.visuel{
+				.bg-visuel{
+					background: linear-gradient(to bottom, $theme2-gradient-4 0%, darken($theme2-gradient-4, 5%) 100%);
+					&:before{
+						width: 235px;
+						height: 235px;
+						top: -98px;
+						left: 53px;
+						background: rgb(235, 91, 30);
+					}
+					&:after{
+						width: 235px;
+						height: 235px;
+						top: 194px;
+						left: -136px;
+						background: rgb(235, 91, 30);
+					}
+				}
+			}
+			h3{
+				color: rgb(211, 83, 37);
+			}
+		}
+		&:nth-child(5){
+			.visuel{
+				.bg-visuel{
+					background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
+					&:before{
+						width: 92px;
+						height: 92px;
+						top: -70px;
+						left: -20px;
+						background: rgb(241, 103, 30);
+						opacity: 0.5;
+					}
+					&:after{
+						width: 216px;
+						height: 216px;
+						top: 7px;
+						left: 76px;
+						background: rgb(241, 103, 30);
+						opacity: 0.5;
+					}
+				}
+			}
+			h3{
+				color: rgb(230, 128, 37);
+			}
 		}
 	}
 	.visuel{
 		height: 223px;
+		position: relative;
+		overflow: hidden;
+		.bg-visuel{
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0.95;
+			&:before, &:after{
+				content: '';
+				display: block;
+				position: absolute;
+				transform: rotate(45deg);
+			}
+		}
 	}
 	.zone-txt{
 		box-sizing: border-box;
