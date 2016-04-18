@@ -1,0 +1,80 @@
+/* News */
+.news{
+	display: block;
+	> li{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		height: 145px;
+		margin: 0;
+		padding: 0 20px;
+		box-sizing: border-box;
+		&:nth-child(odd){
+			.article-date{
+				background: linear-gradient(to bottom, rgb(228, 99, 54) 0%, darken(rgb(228, 99, 54), 5%) 100%);
+				&:before{
+					background-color: rgb(208, 76, 40);
+					opacity: 0.3;
+				}
+			}
+			h4{
+				color: rgb(227, 88, 55);
+			}
+		}
+		&:nth-child(even){
+			.article-date{
+				background: linear-gradient(to bottom, rgb(221, 79, 62) 0%, darken(rgb(221, 79, 62), 5%) 100%);
+				&:before{
+					background-color: rgb(198, 60, 47);
+					opacity: 0.5;
+				}
+			}
+			h4{
+				color: rgb(221, 80, 62);
+			}
+		}
+	}
+	.article-date{
+		position: relative;
+		width: 73px;
+		height: 100%;
+		color: $blanc;
+		overflow: hidden;
+		&:before{
+			content: '';
+			display: block;
+			width: 172px;
+			height: 172px;
+			position: absolute;
+			top: -67px;
+			left: -7px;
+			transform: rotate(45deg);
+		}
+	}
+	.article-desc{
+		padding: 30px 15px 30px 25px;
+		border: 1px solid $gris;
+		background-color: $blanc;
+	}
+	time{
+		position: relative;
+	}
+	.day, .month, .year{
+		display: block;
+	}
+	.day{
+		@include roboto-bold(3.7em);
+		line-height: 0.9em;
+	}
+	.month{
+		@include roboto(1.6em);
+	}
+	.year{
+		@include roboto-bold(1.5em);
+		letter-spacing: 1px;
+	}
+	p{
+		@include roboto(1.4em);
+		margin: 6px 0 0 0;
+	}
+}
