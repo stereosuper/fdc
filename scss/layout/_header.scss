@@ -1,0 +1,56 @@
+/* Header */
+#header{
+	height: 58px;
+	nav{
+		float: right;
+	}
+}
+
+.zone-left-header{
+	display: inline-block;
+	vertical-align: top;
+}
+#logo{
+  display: inline-block;
+  vertical-align: top;
+  height: 58px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  @include roboto-bold(1.6em);
+  text-transform: uppercase;
+  color: rgb(198, 54, 67);
+  .zone-img-logo{
+  	display: inline-block;
+  	vertical-align: middle;
+  	width: 118px;
+  	height: 100%;
+  	box-sizing: border-box;
+  	padding: 16px 0 0 16px;
+  	background-color: rgb(198, 54, 67);
+  }
+  .zone-txt-logo{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0 0 22px;
+  }
+}
+
+.menu-header{
+	display: inline-block;
+	vertical-align: top;
+	list-style-type: none;
+	margin: 0;
+	padding: 21px 0 0 0;
+	> li{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 50px 0 0;
+		padding: 0;
+	}
+	a{
+		@include roboto-medium(1.6em);
+		color: $txt;
+		text-decoration: none;
+	}
+}

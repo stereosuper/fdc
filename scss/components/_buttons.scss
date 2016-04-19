@@ -2,6 +2,8 @@
 a{
 	color: $bleu-link;
 	text-decoration: underline;
+}
+a, button, span{
 	&.btn-arrow{
 		position: relative;
 		padding: 0 5px 0 0;
@@ -9,6 +11,7 @@ a{
 		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+		backface-visibility: hidden;
 		&:after{
 			@include font-icon;
 			content: '\e900';
@@ -24,5 +27,54 @@ a{
 				transform: translate3d(5px, -.1em, 1px);
 			}
 		}
+	}
+	&.btn-block{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		padding: 13px 13px 12px 13px;
+		@include roboto-bold(1.2em);
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 1px;
+		background-color: $theme-btn;
+		color: $blanc;
+		border: none;
+		box-sizing: border-box;
+		backface-visibility: hidden;
+		.wrapper-input-btn &{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		&:before, &:after{
+			content: '';
+			display: block;
+			position: absolute;
+			background: rgb(134, 48, 58);
+			transform: rotate(45deg);
+			z-index: -1;
+			opacity: 0.1;
+		}
+		&:before{
+			width: 45px;
+			height: 45px;
+			top: 25px;
+			right: 3px;
+		}
+		&:after{
+			width: 36px;
+			height: 36px;
+			top: -28px;
+			right: 62px;
+		}
+		&.big{
+			padding: 22px 25px;
+		}
+	}
+	&.btn-medium{
+		font-size: 1.2em;
 	}
 }

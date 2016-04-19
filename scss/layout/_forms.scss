@@ -1,1 +1,42 @@
-/* Grid */
+/* Forms */
+fieldset{
+	margin: 10px 0;
+	padding: 0;
+	border: none;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 7px 10px;
+	background: none;
+	border: 2px solid rgb(193, 195, 198);
+	@include roboto(1.4em);
+	color: $blanc;
+	line-height: normal;
+}
+
+::-webkit-input-placeholder{
+    @include roboto-italic(1em);
+}
+:-moz-placeholder{
+    @include roboto-italic(1em);
+}
+::-moz-placeholder{
+    @include roboto-italic(1em);
+}
+:-ms-input-placeholder{
+    @include roboto-italic(1em);
+}
+
+.wrapper-input-btn{
+	display: block;
+	width: 100%;
+	position: relative;
+	.wrapper-input{
+		display: block;
+		box-sizing: border-box;
+		padding: 0 53px 0 0;
+	}
+}

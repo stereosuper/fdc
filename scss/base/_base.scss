@@ -26,6 +26,10 @@ body{
   line-height: 1;
 }
 
+#main{
+  padding: 0 0 100px 0;
+}
+
 h1{
     @include roboto-bold(4em);
     margin: 0;
@@ -44,6 +48,9 @@ h2{
       @include roboto-bold(4em);
       padding: 0 115px;
       color: $txt;
+    }
+    &.inline-b{
+      padding-right: 10px;
     }
 }
 
@@ -80,7 +87,7 @@ p{
 }
 
 b, strong{
-
+  @include roboto-bold(1em);
 }
 
 i, em{
@@ -99,6 +106,27 @@ ol, ul{
 img{
   max-width: 100%;
   height: auto;
+}
+
+address{
+  font-style: normal;
+  margin: 25px 0 0 0;
+  ul{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    > li{
+      display: block;
+      margin: 6px 0;
+      padding: 0;
+      @include roboto(1.4em);
+    }
+  }
+  strong{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 }
 
 
@@ -170,6 +198,11 @@ select{
     padding: 0 20px;
     margin: 0 auto;
 }
+.container-full{
+  max-width: 2000px;
+  padding: 0;
+  margin: 0 auto;
+}
 
 /******* CLASSES GENERALES  *******/
 
@@ -221,6 +254,21 @@ select{
 
 .center-align{
   text-align: center;
+}
+
+.inline-b{
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(-.1em);
+}
+
+.full-width{
+  width: 100%;
+}
+
+.wrapper-overflow-hidden{
+  position: relative;
+  overflow: hidden;
 }
 
 .img-fit{
