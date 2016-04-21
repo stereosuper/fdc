@@ -1,39 +1,56 @@
+$tps-transition-choice: 0.3s;
+
 /* Choices */
+.wrapper-choices{
+	position: relative;
+	overflow: hidden;
+	margin: -100px 0 75px 0;
+	box-shadow: 0px 24px 76px 0px rgba(0, 0, 0, 0.06);
+}
 .choices{
 	display: block;
+	position: relative;
+	height: 440px;
 	list-style-type: none;
-	margin: -100px 0 75px 0;
+	margin: 0;
 	padding: 0;
 	> li{
 		display: inline-block;
 		vertical-align: top;
-		width: 20%;
+		position: absolute;
+		top: 0;
+		//width: 20%;
+		width: 100%;
+		height: 100%;
 		margin: 0;
 		padding: 0;
 		text-align: center;
+		transition: transform $tps-transition-choice ease-in-out;
+		transform-origin: 0 50%;
 		&:last-child{
-			.zone-txt{
-				border-right: 1px solid $gris;
+			.zone-btn{
+				&:before{
+					border-right: 1px solid $gris;
+				}
 			}
 		}
 		&:nth-child(1){
-			.visuel{
-				.bg-visuel{
-					background: linear-gradient(to bottom, $theme2-gradient-1 0%, darken($theme2-gradient-1, 5%) 100%);
-					&:before{
-						width: 300px;
-						height: 300px;
-						top: -132px;
-						left: -289px;
-						background: rgb(198, 40, 25);
-					}
-					&:after{
-						width: 484px;
-						height: 484px;
-						top: 243px;
-						left: 40px;
-						background: rgb(198, 40, 25);
-					}
+			left: 0;
+			.bg-choice{
+				background: linear-gradient(to bottom, $theme2-gradient-1 0%, darken($theme2-gradient-1, 5%) 100%);
+				&:before{
+					width: 300px;
+					height: 300px;
+					top: -132px;
+					left: -289px;
+					background: rgb(198, 40, 25);
+				}
+				&:after{
+					width: 484px;
+					height: 484px;
+					top: 243px;
+					left: 40px;
+					background: rgb(198, 40, 25);
 				}
 			}
 			h3{
@@ -41,17 +58,16 @@
 			}
 		}
 		&:nth-child(2){
-			.visuel{
-				.bg-visuel{
-					background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
-					&:before{
-						width: 300px;
-						height: 300px;
-						top: -267px;
-						left: -92px;
-						background: rgb(212, 47, 31);
-						opacity: 0.5;
-					}
+			left: 20%;
+			.bg-choice{
+				background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
+				&:before{
+					width: 300px;
+					height: 300px;
+					top: -267px;
+					left: -92px;
+					background: rgb(212, 47, 31);
+					opacity: 0.5;
 				}
 			}
 			h3{
@@ -59,17 +75,16 @@
 			}
 		}
 		&:nth-child(3){
-			.visuel{
-				.bg-visuel{
-					background: linear-gradient(to bottom, $theme2-gradient-3 0%, darken($theme2-gradient-3, 5%) 100%);
-					&:before{
-						width: 84px;
-						height: 84px;
-						top: 27px;
-						left: -23px;
-						background: rgb(228, 77, 29);
-						opacity: 0.8;
-					}
+			left: 40%;
+			.bg-choice{
+				background: linear-gradient(to bottom, $theme2-gradient-3 0%, darken($theme2-gradient-3, 5%) 100%);
+				&:before{
+					width: 84px;
+					height: 84px;
+					top: 27px;
+					left: -23px;
+					background: rgb(228, 77, 29);
+					opacity: 0.8;
 				}
 			}
 			h3{
@@ -77,23 +92,22 @@
 			}
 		}
 		&:nth-child(4){
-			.visuel{
-				.bg-visuel{
-					background: linear-gradient(to bottom, $theme2-gradient-4 0%, darken($theme2-gradient-4, 5%) 100%);
-					&:before{
-						width: 235px;
-						height: 235px;
-						top: -98px;
-						left: 53px;
-						background: rgb(235, 91, 30);
-					}
-					&:after{
-						width: 235px;
-						height: 235px;
-						top: 194px;
-						left: -136px;
-						background: rgb(235, 91, 30);
-					}
+			left: 60%;
+			.bg-choice{
+				background: linear-gradient(to bottom, $theme2-gradient-4 0%, darken($theme2-gradient-4, 5%) 100%);
+				&:before{
+					width: 235px;
+					height: 235px;
+					top: -98px;
+					left: 53px;
+					background: rgb(235, 91, 30);
+				}
+				&:after{
+					width: 235px;
+					height: 235px;
+					top: 194px;
+					left: -136px;
+					background: rgb(235, 91, 30);
 				}
 			}
 			h3{
@@ -101,25 +115,24 @@
 			}
 		}
 		&:nth-child(5){
-			.visuel{
-				.bg-visuel{
-					background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
-					&:before{
-						width: 92px;
-						height: 92px;
-						top: -70px;
-						left: -20px;
-						background: rgb(241, 103, 30);
-						opacity: 0.5;
-					}
-					&:after{
-						width: 216px;
-						height: 216px;
-						top: 7px;
-						left: 76px;
-						background: rgb(241, 103, 30);
-						opacity: 0.5;
-					}
+			left: 80%;
+			.bg-choice{
+				background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
+				&:before{
+					width: 92px;
+					height: 92px;
+					top: -70px;
+					left: -20px;
+					background: rgb(241, 103, 30);
+					opacity: 0.5;
+				}
+				&:after{
+					width: 216px;
+					height: 216px;
+					top: 7px;
+					left: 76px;
+					background: rgb(241, 103, 30);
+					opacity: 0.5;
 				}
 			}
 			h3{
@@ -127,36 +140,304 @@
 			}
 		}
 	}
-	.visuel{
-		height: 223px;
+	&.choice-1-active{
+		> li{
+			&:nth-child(1){
+				z-index: 4;
+				.zone-content{
+					transform: scaleX(1);
+				}
+				.content{
+					opacity: 1;
+				}
+				.zone-btn{
+					&:before{
+						transform: translateY(100%);
+					}
+				}
+				.visuel{
+					transform: translateY(36px);
+				}
+				.zone-txt{
+					transform: translateY(-50px);
+				}
+				h3, p{
+					color: $blanc;
+				}
+			}
+		}
+		.bg-choice{
+			opacity: 1;
+		}
+	}
+	&.choice-2-active{
+		> li{
+			&:nth-child(2){
+				z-index: 4;
+				transform: translateX(-20%);
+				.zone-content{
+					transform: scaleX(1);
+				}
+				.content{
+					opacity: 1;
+				}
+				.zone-btn{
+					&:before{
+						transform: translateY(100%);
+					}
+				}
+				.visuel{
+					transform: translateY(36px);
+				}
+				.zone-txt{
+					transform: translateY(-50px);
+				}
+				h3, p{
+					color: $blanc;
+				}
+			}
+		}
+		.bg-choice{
+			opacity: 1;
+		}
+	}
+	&.choice-3-active{
+		> li{
+			&:nth-child(3){
+				z-index: 4;
+				transform: translateX(-40%);
+				.zone-content{
+					transform: scaleX(1);
+				}
+				.content{
+					opacity: 1;
+				}
+				.zone-btn{
+					&:before{
+						transform: translateY(100%);
+					}
+				}
+				.visuel{
+					transform: translateY(36px);
+				}
+				.zone-txt{
+					transform: translateY(-50px);
+				}
+				h3, p{
+					color: $blanc;
+				}
+			}
+		}
+		.bg-choice{
+			opacity: 1;
+		}
+	}
+	&.choice-4-active{
+		> li{
+			&:nth-child(4){
+				z-index: 4;
+				transform: translateX(-60%);
+				.zone-content{
+					transform: scaleX(1);
+				}
+				.content{
+					opacity: 1;
+				}
+				.zone-btn{
+					&:before{
+						transform: translateY(100%);
+					}
+				}
+				.visuel{
+					transform: translateY(36px);
+				}
+				.zone-txt{
+					transform: translateY(-50px);
+				}
+				h3, p{
+					color: $blanc;
+				}
+			}
+		}
+		.bg-choice{
+			opacity: 1;
+		}
+	}
+	&.choice-5-active{
+		> li{
+			&:nth-child(5){
+				z-index: 4;
+				transform: translateX(-80%);
+				.zone-content{
+					transform: scaleX(1);
+				}
+				.content{
+					opacity: 1;
+				}
+				.zone-btn{
+					&:before{
+						transform: translateY(100%);
+					}
+				}
+				.visuel{
+					transform: translateY(36px);
+				}
+				.zone-txt{
+					transform: translateY(-50px);
+				}
+				h3, p{
+					color: $blanc;
+				}
+			}
+		}
+		.bg-choice{
+			opacity: 1;
+		}
+	}
+	.zone-btn{
+		display: inline-block;
+		vertical-align: top;
+		width: 20%;
+		height: 100%;
 		position: relative;
-		overflow: hidden;
-		.bg-visuel{
+		&:before{
+			content: '';
 			display: block;
+			width: 100%;
+			height: 216px;
+			box-sizing: border-box;
+			background-color: $blanc;
+			border-top: 1px solid $gris;
+			border-bottom: 1px solid $gris;
+			border-left: 1px solid $gris;
 			position: absolute;
-			top: 0;
-			right: 0;
 			bottom: 0;
 			left: 0;
-			opacity: 0.95;
-			&:before, &:after{
-				content: '';
-				display: block;
-				position: absolute;
-				transform: rotate(45deg);
-			}
+			z-index: 2;
+
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+	.zone-content{
+		display: inline-block;
+		vertical-align: top;
+		width: 80%;
+		height: 100%;
+		position: relative;
+		background-color: rgb(245, 245, 245);
+		box-sizing: border-box;
+		text-align: left;
+		
+		transition: transform 0.3s ease-in-out;
+		//transition-delay: $tps-transition-choice;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+	}
+	.content{
+		position: relative;
+		height: 100%;
+
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+		transition-delay: 0.5s;
+	}
+	.btn-choice{
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: none;
+		z-index: 3;
+		border: none;
+	}
+	.bg-choice{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0.95;
+		&:before, &:after{
+			content: '';
+			display: block;
+			position: absolute;
+			transform: rotate(45deg);
+		}
+	}
+	.visuel{
+		height: 224px;
+		position: relative;
+		overflow: hidden;
+
+		transition: transform 0.3s ease-in-out;
+		.wrapper-alignment{
+			height: 100%;
+		}
+		.content-align-middle{
+			width: 100%;
+			position: relative;
 		}
 	}
 	.zone-txt{
 		box-sizing: border-box;
 		height: 216px;
 		padding: 20px;
-		background-color: $blanc;
-		border-top: 1px solid $gris;
-		border-bottom: 1px solid $gris;
-		border-left: 1px solid $gris;
+		position: relative;
+		z-index: 2;
+
+		transition: transform 0.3s ease-in-out;
 	}
 	h3{
 		margin: 0;
+	}
+	h3, p{
+		transition: color 0.3s ease-in-out;
+	}
+	.btn-close-choice{
+		display: block;
+		@include size(40px);
+		background-color: $blanc;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: none;
+		border-left: 1px solid rgb(218, 218, 218);
+		border-bottom: 1px solid rgb(218, 218, 218);
+		font-size: 15px;
+		color: rgb(218, 218, 218);
+		text-align: center;
+		line-height: 40px;
+	}
+	.types{
+		display: block;
+		height: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		columns: 3;
+		column-gap: 0;
+		> li{
+			display: block;
+			height: 16.666666667%;
+		}
+		a{
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 22px 0 22px;
+			@include roboto-medium(1.6em);
+			color: rgb(40, 44, 52);
+			text-decoration: none;
+			background-color: $blanc;
+			border: 1px solid rgb(218, 218, 218);
+			span{
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 }

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]> <html lang='fr-FR' class='no-js lt-ie9 lt-ie10'> <![endif]-->
 <!--[if IE 9]> <html lang='fr-FR' class="no-js lt-ie10"> <![endif]-->
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
@@ -11,18 +10,17 @@
 	  	<meta name='viewport' content='width=device-width,initial-scale=1'>
 
 	  	<link rel='stylesheet' href='css/main.css'>
-	  	<script src='js/modernizr.min.js'></script>
+	  	<script src='js/modernizr-custom.js'></script>
 	</head>
 
 	<body>
 		<header id='header' class='clearfix'>
 			<div class='zone-left-header'>
-				<a id='logo' href='./'>
-					<span class='zone-img-logo'>
-						<img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Forum des Commerces">
-					</span><!--
-					--><span class='zone-txt-logo'>Forum des Commerces</span>
-					
+				<button id='logo'>
+					<img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Forum des Commerces">
+				</button>
+				<a href='./' class='home-link'>
+					Forum des Commerces
 				</a>
 			</div>
 			<nav role='navigation'>
@@ -46,6 +44,17 @@
 						<a href='#'>Partenaires</a>
 					</li>
 				</ul>
+				<ul class='nav-header'>
+					<li>
+						<a href='#' class='icon-mail'></a>
+					</li><!--
+					--><li>
+						<a href='#' class='icon-tool'></a>
+					</li><!--
+					--><li>
+						<button class='icon-user'></button>
+					</li>
+				</ul>
 			</nav>
 			<!--<button id='burger'></button>-->
 		</header>
@@ -63,88 +72,175 @@
 
 			<div class='container position-relative'>
 				<section>
-					<ul class='choices'>
-						<li>
-							<div class='visuel'>
-								<div class='wrapper-alignment'>
-									<div class='bg-visuel'></div>
-									<div class='content-align-middle'>
-
+					<div class='wrapper-choices'>
+						<ul class='choices'>
+							<li>
+								<div class='zone-btn'>
+									<button class='btn-choice'></button>
+									<div class='bg-choice'></div>
+									<div class='visuel'>
+										<div class='wrapper-alignment'>
+											<div class='content-align-middle'>
+												<img src="img/achat.png" srcset="img/achat.png 1x, img/achat@2x.png 2x" alt="Achat">
+											</div>
+										</div>
+									</div>
+									<div class='zone-txt wrapper-alignment'>
+										<div class='content-align-middle'>
+											<h3>Achat</h3>
+											<p>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local commercial…</p>
+										</div>
+									</div>
+								</div><!--
+								--><div class='zone-content'>
+									<div class='content'>
+										<button class='btn-close-choice icon-cross'></button>
+										<ul class='types'>
+											<li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Bar Tabac PMU</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Bar Brasserie</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Boucherie Charcuterie Traiteur</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Boulangerie Pâtisserie</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Boutique et Magasins</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Bureaux Locaux Entrepôts</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Coiffure Esthétique Parfumerie</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Commerce Alimentation</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Creperie Pizzeria</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Entreprise du bâtiment</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Hôtel Bureau</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Hôtel Restaurant</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Murs Commerciaux</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Restaurant</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Restauration rapide</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Salon de thé</span></a>
+											</li><!--
+											--><li>
+												<a href='' class='wrapper-alignment'><span class='content-align-middle'>Tabac Loto Presse</span></a>
+											</li>
+										</ul>
 									</div>
 								</div>
-							</div>
-							<div class='zone-txt wrapper-alignment'>
-								<div class='content-align-middle'>
-									<h3>Achat</h3>
-									<p>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local commercial…</p>
-								</div>
-							</div>
-						</li><!--
-						--><li>
-							<div class='visuel'>
-								<div class='wrapper-alignment'>
-									<div class='bg-visuel'></div>
-									<div class='content-align-middle'>
-
+							</li><!--
+							--><li>
+								<div class='zone-btn'>
+									<button class='btn-choice'></button>
+									<div class='bg-choice'></div>
+									<div class='visuel'>
+										<div class='wrapper-alignment'>
+											<div class='content-align-middle'>
+												<img src="img/vente.png" srcset="img/vente.png 1x, img/vente@2x.png 2x" alt="Vente">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class='zone-txt wrapper-alignment'>
-								<div class='content-align-middle'>
-									<h3>Vente</h3>
-									<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local commercial…</p>
-								</div>
-							</div>
-						</li><!--
-						--><li>
-							<div class='visuel'>
-								<div class='wrapper-alignment'>
-									<div class='bg-visuel'></div>
-									<div class='content-align-middle'>
-
+									<div class='zone-txt wrapper-alignment'>
+										<div class='content-align-middle'>
+											<h3>Vente</h3>
+											<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local commercial…</p>
+										</div>
 									</div>
+								</div><!--
+								--><div class='zone-content'>
+									
 								</div>
-							</div>
-							<div class='zone-txt wrapper-alignment'>
-								<div class='content-align-middle'>
-									<h3>Matériel</h3>
-									<p>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</p>
-								</div>
-							</div>
-						</li><!--
-						--><li>
-							<div class='visuel'>
-								<div class='wrapper-alignment'>
-									<div class='bg-visuel'></div>
-									<div class='content-align-middle'>
-
+							</li><!--
+							--><li>
+								<div class='zone-btn'>
+									<button class='btn-choice'></button>
+									<div class='bg-choice'></div>
+									<div class='visuel'>
+										<div class='wrapper-alignment'>
+											<div class='content-align-middle'>
+												<img src="img/materiel.png" srcset="img/materiel.png 1x, img/vente@2x.png 2x" alt="Matériel">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class='zone-txt wrapper-alignment'>
-								<div class='content-align-middle'>
-									<h3>Personnel</h3>
-									<p>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</p>
-								</div>
-							</div>
-						</li><!--
-						--><li>
-							<div class='visuel'>
-								<div class='wrapper-alignment'>
-									<div class='bg-visuel'></div>
-									<div class='content-align-middle'>
-
+									<div class='zone-txt wrapper-alignment'>
+										<div class='content-align-middle'>
+											<h3>Matériel</h3>
+											<p>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</p>
+										</div>
 									</div>
+								</div><!--
+								--><div class='zone-content'>
+									
 								</div>
-							</div>
-							<div class='zone-txt wrapper-alignment'>
-								<div class='content-align-middle'>
-									<h3>Partenaires</h3>
-									<p>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</p>
+							</li><!--
+							--><li>
+								<div class='zone-btn'>
+									<button class='btn-choice'></button>
+									<div class='bg-choice'></div>
+									<div class='visuel'>
+										<div class='wrapper-alignment'>
+											<div class='content-align-middle'>
+												<img src="img/personnel.png" srcset="img/personnel.png 1x, img/personnel@2x.png 2x" alt="Personnel">
+											</div>
+										</div>
+									</div>
+									<div class='zone-txt wrapper-alignment'>
+										<div class='content-align-middle'>
+											<h3>Personnel</h3>
+											<p>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</p>
+										</div>
+									</div>
+								</div><!--
+								--><div class='zone-content'>
+									
 								</div>
-							</div>
-						</li>
-					</ul>
+							</li><!--
+							--><li>
+								<div class='zone-btn'>
+									<button class='btn-choice'></button>
+									<div class='bg-choice'></div>
+									<div class='visuel'>
+										<div class='wrapper-alignment'>
+											<div class='content-align-middle'>
+												<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="Partenaires">
+											</div>
+										</div>
+									</div>
+									<div class='zone-txt wrapper-alignment'>
+										<div class='content-align-middle'>
+											<h3>Partenaires</h3>
+											<p>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</p>
+										</div>
+									</div>
+								</div><!--
+								--><div class='zone-content'>
+									
+								</div>
+							</li>
+						</ul>
+					</div>
 					
 					<h2 class='h1 inline-b'>À la une</h2>
 					<a href='#' class='btn-arrow btn-medium inline-b'>Toute l'actualité</a>
