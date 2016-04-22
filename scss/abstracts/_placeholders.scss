@@ -8,7 +8,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     backface-visibility: hidden;
-    &:after{
+    &::after{
         @include font-icon;
         content: '\e900';
         display: inline-block;
@@ -23,8 +23,7 @@
             transform: translate3d(5px, -0.3em, 1px);
         }
     }
-}
-
-%btn-medium{
-    font-size: 1.2em;
+    &.big{
+        font-size: 1.2em;
+    }
 }
