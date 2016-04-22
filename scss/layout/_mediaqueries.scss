@@ -4,11 +4,20 @@
 }
 
 @media (max-width: 979px){
-
+    .content-right{
+        padding-right: 60px;
+    }
 }
 
 @media (max-width: 767px){
+    h1{
+        padding: 0 30px;
+    }
 
+    .content-default{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 @media (max-width: 480px){
@@ -17,11 +26,11 @@
 
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-	
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
-	
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi) {
@@ -34,7 +43,7 @@
 @media print {
     *{
         color: #000 !important;
-    } 
+    }
     a{
         text-decoration: underline;
         &[href]:after{
