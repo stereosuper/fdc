@@ -1,6 +1,11 @@
 /* Buttons */
+
 .btn-arrow{
 	@extend %btn-arrow;
+}
+
+.btn-medium{
+	@extend %btn-medium;
 }
 
 .btn-block{
@@ -48,8 +53,4 @@
 	&.big{
 		padding: 22px 25px;
 	}
-}
-
-.btn-medium{
-	@extend %btn-medium;
 }

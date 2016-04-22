@@ -21,7 +21,7 @@ html{
 }
 
 body{
-  font-family: $roboto;
+  @include roboto(1.6em);
   line-height: 1;
 }
 
@@ -29,9 +29,12 @@ body{
   padding: 0 0 100px;
 }
 
+h1, h2, h3, h4{
+  @include roboto-bold(2.5em);
+}
+
 h1{
-    @include roboto-bold(4em);
-    margin: 0;
+    margin: 0.13em 0 0.85em;
     padding: 0 60px;
     &.big{
       font-size: 6.5em;
@@ -41,10 +44,12 @@ h1{
 }
 
 h2{
-    @include roboto-bold(2em);
+    font-size: 1.25em;
+    padding: 2em 0 0.5em;
+    margin: 0;
     color: $theme-rouge-title;
     &.h1{
-      @include roboto-bold(4em);
+      font-size: 2.5em;
       padding: 0 115px;
       color: $txt;
     }
@@ -54,16 +59,16 @@ h2{
 }
 
 h3{
-    @include roboto-bold(2.8em);
+    font-size: 2.8em;
     margin: 1em 0;
     &.h2{
-      @include roboto-bold(2em);
+      font-size: 2em;
       margin: 0;
     }
 }
 
 h4{
-    @include roboto-bold(1.2em);
+    font-size: 1.2em;
     margin: 0 0 7px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -80,9 +85,8 @@ h6{
 }
 
 p{
-    font-size: 1.6em;
-    line-height: 1.3em;
-    margin: 1em 0;
+    line-height: 1.5;
+    margin: 1.55em 0;
 }
 
 b, strong{
@@ -90,7 +94,7 @@ b, strong{
 }
 
 i, em{
-
+  @include roboto-italic(1em);
 }
 
 blockquote{
@@ -98,8 +102,12 @@ blockquote{
 }
 
 ol, ul{
-    margin: 1em 0;
     padding: 0 0 0 40px;
+    margin: 1em 0;
+   //font-size: 1.6em;
+    li{
+
+    }
 }
 
 img{
@@ -195,26 +203,14 @@ select{
 
 /******* CLASSES GENERALES  *******/
 
-.reset-list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
 .hidden{
     display: none !important;
 }
 
-.ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 .wrapper-alignment{
   display: table;
-  table-layout: fixed;
   width: 100%;
+  table-layout: fixed;
   box-sizing: border-box;
 }
 
@@ -229,13 +225,7 @@ select{
 }
 
 .clearfix{
-  &::before, &::after{
-    content: ' ';
-    display: table;
-  }
-  &::after{
-    clear: both;
-  }
+  @include clearfix;
 }
 
 .position-relative{

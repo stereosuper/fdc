@@ -4,7 +4,7 @@
 /* Mixins */
 /* Font icons */
 /* Placeholders */
-.breadcrumb a, .btn-arrow {
+.breadcrumb a, .breadcrumb span, .btn-arrow {
   position: relative;
   padding: 0 5px 0 0;
   font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
@@ -18,7 +18,7 @@
   letter-spacing: 1px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
-  .breadcrumb a:after, .btn-arrow:after {
+  .breadcrumb a:after, .breadcrumb span:after, .btn-arrow:after {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'fdc' !important;
     speak: none;
@@ -31,21 +31,21 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: '\e900';
-    font-size: 6px;
     display: inline-block;
-    vertical-align: middle;
     padding-left: 1px;
-    -webkit-transform: translate3d(0, -0.1em, 1px);
-            transform: translate3d(0, -0.1em, 1px);
+    vertical-align: middle;
+    -webkit-transform: translate3d(0, -0.3em, 1px);
+            transform: translate3d(0, -0.3em, 1px);
+    font-size: 6px;
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
     transition: -webkit-transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; }
-  .breadcrumb a:hover:after, .btn-arrow:hover:after {
-    -webkit-transform: translate3d(5px, -0.1em, 1px);
-            transform: translate3d(5px, -0.1em, 1px); }
+  .breadcrumb a:hover:after, .breadcrumb span:hover:after, .btn-arrow:hover:after {
+    -webkit-transform: translate3d(5px, -0.3em, 1px);
+            transform: translate3d(5px, -0.3em, 1px); }
 
-.breadcrumb a, .btn-medium {
+.breadcrumb a, .breadcrumb span, .btn-medium {
   font-size: 1.2em; }
 
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -514,19 +514,26 @@ html {
 
 body {
   font-family: "robotoregular", sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1; }
 
 #main {
   padding: 0 0 100px; }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  margin: 0.13em 0 0.85em;
   padding: 0 60px; }
   h1.big {
     font-size: 6.5em;
@@ -534,49 +541,26 @@ h1 {
     padding: 0; }
 
 h2 {
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-  font-size: 2em;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  font-size: 1.25em;
+  padding: 2em 0 0.5em;
+  margin: 0;
   color: #df5441; }
   h2.h1 {
-    font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-    font-size: 4em;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    font-size: 2.5em;
     padding: 0 115px;
     color: #282c34; }
   h2.inline-b {
     padding-right: 10px; }
 
 h3 {
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
   font-size: 2.8em;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   margin: 1em 0; }
   h3.h2 {
-    font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
     font-size: 2em;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
     margin: 0; }
 
 h4 {
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1.2em;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   margin: 0 0 7px 0;
   text-transform: uppercase;
   letter-spacing: 1px; }
@@ -590,12 +574,19 @@ h6 {
   margin: 2.33em 0; }
 
 p {
-  font-size: 1.6em;
-  line-height: 1.3em;
-  margin: 1em 0; }
+  line-height: 1.5;
+  margin: 1.55em 0; }
 
 b, strong {
   font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+i, em {
+  font-family: "robotoitalic", "robotoregular", sans-serif;
   font-size: 1em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -606,8 +597,8 @@ blockquote {
   margin: 1em 40px; }
 
 ol, ul {
-  margin: 1em 0;
-  padding: 0 0 0 40px; }
+  padding: 0 0 0 40px;
+  margin: 1em 0; }
 
 img {
   max-width: 100%;
@@ -664,23 +655,13 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 
 /******* MODULES *******/
 /******* CLASSES GENERALES  *******/
-.reset-list {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-
 .hidden {
   display: none !important; }
 
-.ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden; }
-
 .wrapper-alignment {
   display: table;
-  table-layout: fixed;
   width: 100%;
+  table-layout: fixed;
   box-sizing: border-box; }
 
 .content-align-middle {
@@ -691,10 +672,9 @@ input:-webkit-autofill, textarea:-webkit-autofill {
   display: table-cell;
   vertical-align: top; }
 
-.clearfix::before, .clearfix::after {
-  content: ' ';
-  display: table; }
 .clearfix::after {
+  content: '';
+  display: table;
   clear: both; }
 
 .position-relative {
@@ -732,6 +712,12 @@ input:-webkit-autofill, textarea:-webkit-autofill {
   max-width: 2000px;
   padding: 0;
   margin: 0 auto; }
+
+.content-default {
+  padding: 20px 130px 50px 60px;
+  border: 1px solid #dadada;
+  background: #fff;
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05); }
 
 /* Forms */
 fieldset {
@@ -1109,12 +1095,19 @@ input[type="text"], input[type="email"], input[type="tel"] {
 /* Breadcrumb */
 .breadcrumb {
   padding: 0 60px;
-  margin: 0 0 5px;
+  margin: 50px 0 0;
   color: #c7c2c2; }
   .breadcrumb li {
     display: inline-block; }
-  .breadcrumb a {
+  .breadcrumb a, .breadcrumb span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 310px;
     color: inherit; }
+  .breadcrumb span::after {
+    display: none; }
 
 /* Buttons */
 .btn-block {
