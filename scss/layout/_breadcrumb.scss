@@ -1,0 +1,15 @@
+/* Breadcrumb */
+
+.breadcrumb{
+    padding: 0 60px;
+    margin: 0 0 5px;
+    color: #c7c2c2;
+    li{
+        display: inline-block;
+    }
+    a{
+        @extend %btn-arrow;
+        @extend %btn-medium;
+        color: inherit;
+    }
+}
