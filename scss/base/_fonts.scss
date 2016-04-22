@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'robotoregular';
     src: url('../fonts/Roboto-Regular-webfont.eot');
@@ -67,8 +66,8 @@
 
 @font-face {
     font-family: 'fdc';
-    src:    url('../fonts/fdc.eot?a49uhg');
-    src:    url('../fonts/fdc.eot?a49uhg#iefix') format('embedded-opentype'),
+    src: url('../fonts/fdc.eot?a49uhg');
+    src: url('../fonts/fdc.eot?a49uhg#iefix') format('embedded-opentype'),
         url('../fonts/fdc.woff2?a49uhg') format('woff2'),
         url('../fonts/fdc.ttf?a49uhg') format('truetype'),
         url('../fonts/fdc.woff?a49uhg') format('woff'),
@@ -77,75 +76,6 @@
     font-style: normal;
 }
 
-@mixin roboto($size){
-    font-family: 'robotoregular', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-italic($size){
-    font-family: 'robotoitalic', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-medium($size){
-    font-family: 'robotomedium', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-medium-italic($size){
-    font-family: 'robotomedium_italic', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-bold($size){
-    font-family: 'roboto_condensedbold', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-bold-italic($size){
-    font-family: 'roboto_condensedbold_italic', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-/* Font icons */
-@mixin font-icon{
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'fdc' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 [class^="icon-"], [class*=" icon-"]{
     @include font-icon;
