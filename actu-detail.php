@@ -11,7 +11,7 @@
         <?php include_once('includes/header.html'); ?>
 
         <main id='main' role='main'>
-            <div class='container'>
+            <div class='container-small'>
                 <ul class='breadcrumb'>
                     <li><a href='./'>Accueil</a></li>
                     <li><a href='./'>Actualités</a></li>
@@ -45,7 +45,7 @@
                         <li>1 jour lorsque la société est en redressement ou liquidation judiciaire.</li>
                     </ul>
                     <p>Notez que si une nouvelle réunion devait se tenir <strong>avant l’expiration de ces délais</strong>, le PV devrait être établi et transmis à l’employeur avant la date de cette nouvelle réunion.</p>
-                    <p><strong>Source :</strong> Décret n° 2016-453 du 12 avril 2016 relatif à certaines modalités de déroulement des réunions des institutions représentatives du personnel</p>
+                    <p><b><u>Source :</u></b> Décret n° 2016-453 du 12 avril 2016 relatif à certaines modalités de déroulement des réunions des institutions représentatives du personnel</p>
                 </div>
             </div>
         </main>
