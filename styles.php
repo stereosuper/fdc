@@ -37,6 +37,19 @@
                     <code>un ptit bout de code</code>
                     <hr>
 
+                    <h2>Icons (base/_fonts.scss)</h2>
+                    <span class='icon-cross'></span>
+                    <span class='icon-home'></span>
+                    <span class='icon-twitter'></span>
+                    <span class='icon-facebook'></span>
+                    <span class='icon-linkedin'></span>
+                    <span class='icon-share'></span>
+                    <span class='icon-user'></span>
+                    <span class='icon-mail'></span>
+                    <span class='icon-tool'></span>
+                    <span class='icon-arrow'></span>
+                    <hr>
+
                     <h2>Buttons (components/_buttons.scss)</h2>
                     <a href='#' class='btn-block'>.btn-block</a>
                     <a href='#' class='btn-block big'>.btn-block.big</a>
