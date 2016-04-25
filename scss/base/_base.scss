@@ -95,7 +95,17 @@ i, em{
 }
 
 blockquote{
+    position: relative;
     margin: 1em 40px;
+    font-family: $roboto-it;
+    &::before{
+        content: '"';
+        position: absolute;
+        top: 0;
+        left: -20px;
+        font-size: 35px;
+        color: #ef792d;
+    }
 }
 
 ol, ul{

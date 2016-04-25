@@ -552,7 +552,16 @@ i, em {
   text-rendering: optimizeLegibility; }
 
 blockquote {
-  margin: 1em 40px; }
+  position: relative;
+  margin: 1em 40px;
+  font-family: "robotoitalic", "robotoregular", sans-serif; }
+  blockquote::before {
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-size: 35px;
+    color: #ef792d; }
 
 ol, ul {
   padding: 0 0 0 25px;
