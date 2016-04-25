@@ -1,6 +1,7 @@
 $(function(){
 	/**** VARIABLES ****/
-	var myScroll;
+	var myScroll,
+		tpsAnimChoice = 600;
 
 	window.requestAnimFrame = (function(){
 		return  window.requestAnimationFrame   || 
@@ -54,11 +55,15 @@ $(function(){
 		}
 	);
 	$('.btn-choice').click(function(){
-		$(this).closest('.choices').addClass('choice-'+($(this).closest('li').index()+1)+'-active');
+		$(this).closest('.choices').addClass('choice-'+($(this).closest('li').index()+1)+'-active choice-'+($(this).closest('li').index()+1)+'-animating');
 		return false;
 	});
 	$('.btn-close-choice').click(function(){
-		$(this).closest('.choices').removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active');
+		var choices = $(this).closest('.choices');
+		choices.removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active');
+		setTimeout(function(){
+			choices.removeClass('choice-1-animating choice-2-animating choice-3-animating choice-4-animating choice-5-animating');
+		}, tpsAnimChoice);
 		return false;
 	});
     $(document).scroll(function(){
