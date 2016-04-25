@@ -1,6 +1,3 @@
-$transition: .3s ease-in-out;
-
-
 /******* GÉNÉRAL *******/
 
 ::-moz-selection{
@@ -180,55 +177,6 @@ a{
   }
 }
 
-
-
-/******* FORMULAIRES *******/
-
-::-webkit-input-placeholder{
-    color: rgb(139, 139, 139);
-}
-::-moz-placeholder{
-    color: rgb(139, 139, 139);
-}
-:-ms-input-placeholder{
-    color: rgb(139, 139, 139);
-}
-
-label{
-
-}
-
-fieldset{
-
-}
-
-input, textarea, select, button{
-  transition: $transition;
-  &:focus{
-      outline: 0;
-  }
-}
-
-input, textarea{
-  &:-webkit-autofill{
-      box-shadow: 0 0 0 1000px rgb(255, 255, 255) inset;
-  }
-}
-
-input{
-
-}
-
-textarea{
-
-}
-
-select{
-
-}
-
-
-/******* MODULES *******/
 
 /******* CLASSES GENERALES  *******/
 
