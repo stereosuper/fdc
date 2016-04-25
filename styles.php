@@ -38,11 +38,14 @@
                     <hr>
 
                     <h2>Icons (base/_fonts.scss)</h2>
-                    <span class='icon-cross'></span>
-                    <span class='icon-home'></span>
                     <span class='icon-twitter'></span>
                     <span class='icon-facebook'></span>
                     <span class='icon-linkedin'></span>
+                    <span class='icon-google'></span>
+                    <span class='icon-viadeo'></span>
+                    <br><br>
+                    <span class='icon-cross'></span>
+                    <span class='icon-home'></span>
                     <span class='icon-share'></span>
                     <span class='icon-user'></span>
                     <span class='icon-mail'></span>
