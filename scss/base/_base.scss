@@ -169,11 +169,13 @@ a{
     color: $bleu-link;
     transition: $transition;
     &:focus, &:hover{
+        color: mix(white, $bleu-link, 30%);
     }
     &:focus{
         outline: 0;
     }
     &:active{
+        color: mix(black, $bleu-link, 30%);
     }
 }
 

@@ -614,8 +614,12 @@ a {
   color: #7392da;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
+  a:focus, a:hover {
+    color: #9db3e5; }
   a:focus {
     outline: 0; }
+  a:active {
+    color: #516699; }
 
 /******* CLASSES GENERALES  *******/
 .hidden {
