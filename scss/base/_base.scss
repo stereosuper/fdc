@@ -99,7 +99,17 @@ i, em{
 }
 
 blockquote{
+    position: relative;
     margin: 1em 40px;
+    font-family: $roboto-it;
+    &::before{
+        content: '"';
+        position: absolute;
+        top: 0;
+        left: -20px;
+        font-size: 35px;
+        color: #ef792d;
+    }
 }
 
 ol, ul{
@@ -174,11 +184,13 @@ a{
     color: $bleu-link;
     transition: $transition;
     &:focus, &:hover{
+        color: mix(white, $bleu-link, 30%);
     }
     &:focus{
         outline: 0;
     }
     &:active{
+        color: mix(black, $bleu-link, 30%);
     }
 }
 
