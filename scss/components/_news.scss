@@ -10,6 +10,9 @@
 		margin: 0;
 		padding: 0 20px;
 		box-sizing: border-box;
+		&::before{
+			display: none;
+		}
 		&:nth-child(odd){
 			.article-date{
 				background: linear-gradient(to bottom, rgb(228, 99, 54) 0%, darken(rgb(228, 99, 54), 5%) 100%);
@@ -62,20 +65,22 @@
 	}
 	.day, .month, .year{
 		display: block;
+		line-height: 1em;
 	}
 	.day{
-		@include roboto-bold(3.7em);
+		@include roboto-bold(2.313em);
 		line-height: 0.9em;
 	}
 	.month{
-		@include roboto(1.6em);
+		@include roboto(1em);
 	}
 	.year{
-		@include roboto-bold(1.5em);
+		@include roboto-bold(0.938em);
 		letter-spacing: 1px;
+		margin: 3px 0 0 0;
 	}
 	p{
-		@include roboto(1.4em);
+		@include roboto(0.875em);
 		margin: 6px 0 0 0;
 	}
 }

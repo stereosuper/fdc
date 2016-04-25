@@ -494,7 +494,7 @@ h1 {
   margin: 0.13em 0 0.85em;
   padding: 0 60px; }
   h1.big {
-    font-size: 6.5em;
+    font-size: 4.063em;
     text-align: center;
     padding: 0; }
 
@@ -514,7 +514,7 @@ h3 {
   font-size: 1.1em;
   margin: 1.5em 0 1em; }
   h3.h2 {
-    font-size: 2em;
+    font-size: 1.25em;
     margin: 0; }
 
 h4 {
@@ -522,6 +522,9 @@ h4 {
   margin: 0 0 7px 0;
   text-transform: uppercase;
   letter-spacing: 1px; }
+  h4.small {
+    font-size: 0.875em;
+    margin: 0; }
 
 h5 {
   font-size: 1em;
@@ -552,6 +555,7 @@ i, em {
   text-rendering: optimizeLegibility; }
 
 blockquote {
+<<<<<<< HEAD
   position: relative;
   margin: 1em 40px;
   font-family: "robotoitalic", "robotoregular", sans-serif;
@@ -563,6 +567,9 @@ blockquote {
     left: -20px;
     font-size: 35px;
     color: #ef792d; }
+=======
+  margin: 1em 40px; }
+>>>>>>> 174113b49a9e61669edf0de47192fe6bfca90405
 
 ol, ul {
   padding: 0 0 0 25px;
@@ -607,12 +614,13 @@ address {
   address ul {
     display: block;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    line-height: normal; }
     address ul > li {
       display: block;
       margin: 6px 0;
       padding: 0;
-      font-size: 1.4em; }
+      font-size: 0.875em; }
       address ul > li::before {
         display: none; }
   address strong {
@@ -623,13 +631,9 @@ address {
 a {
   color: #7392da;
   -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out; }
-  a:focus, a:hover {
-    color: #9db3e5; }
+          transition: 0.3s ease-in-out; }
   a:focus {
     outline: 0; }
-  a:active {
-    color: #516699; }
 
 /******* CLASSES GENERALES  *******/
 .hidden {
@@ -664,6 +668,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateY(-0.1em);
+      -ms-transform: translateY(-0.1em);
           transform: translateY(-0.1em); }
 
 .full-width {
@@ -722,9 +727,7 @@ a {
             transform: translate3d(0, -0.3em, 1px);
     font-size: 6px;
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    transition: -webkit-transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; }
+            transition: transform 0.2s ease-in-out; }
   .breadcrumb a:hover::after, .breadcrumb span:hover::after, .btn-arrow:hover::after {
     -webkit-transform: translate3d(5px, -0.3em, 1px);
             transform: translate3d(5px, -0.3em, 1px); }
@@ -781,7 +784,7 @@ fieldset {
 
 input, textarea, select, button {
   -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out; }
+          transition: 0.3s ease-in-out; }
   input:focus, textarea:focus, select:focus, button:focus {
     outline: 0; }
 
@@ -795,7 +798,7 @@ input[type=text], input[type=email], input[type=tel] {
   box-sizing: border-box;
   vertical-align: middle;
   font-family: "robotoregular", sans-serif;
-  font-size: 1.4em;
+  font-size: 0.875em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -830,9 +833,7 @@ input[type=text], input[type=email], input[type=tel] {
   padding: 16px 0 0 16px;
   background-color: #c63643;
   border: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   text-align: left;
   line-height: normal; }
 
@@ -840,7 +841,7 @@ input[type=text], input[type=email], input[type=tel] {
   display: inline-block;
   vertical-align: middle;
   font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -879,9 +880,11 @@ input[type=text], input[type=email], input[type=tel] {
     vertical-align: top;
     margin: 0 50px 0 0;
     padding: 0; }
+    .menu-header > li::before {
+      display: none; }
   .menu-header a {
     font-family: "robotomedium", "robotoregular", sans-serif;
-    font-size: 1.6em;
+    font-size: 1em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -902,6 +905,8 @@ input[type=text], input[type=email], input[type=tel] {
     height: 58px;
     margin: 0;
     padding: 0; }
+    .nav-header > li::before {
+      display: none; }
     .nav-header > li:nth-child(1) a, .nav-header > li:nth-child(1) button {
       background-color: #f18832; }
     .nav-header > li:nth-child(2) a, .nav-header > li:nth-child(2) button {
@@ -913,9 +918,7 @@ input[type=text], input[type=email], input[type=tel] {
     width: 100%;
     height: 100%;
     border: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     line-height: 58px;
     text-align: center;
     color: white;
@@ -945,11 +948,13 @@ input[type=text], input[type=email], input[type=tel] {
     background: #282c34;
     z-index: -1; }
   #footer h2 {
-    margin-top: 0;
+    margin: 0 0 0.8em 0;
+    padding: 0;
     color: white; }
   #footer p {
-    font-size: 1.4em;
-    line-height: 1.5em; }
+    font-size: 0.875em;
+    line-height: 1.5em;
+    margin: 1em 0; }
   #footer .container {
     position: relative;
     padding: 45px 0 130px 0; }
@@ -975,6 +980,8 @@ input[type=text], input[type=email], input[type=tel] {
     box-sizing: border-box;
     margin: 0;
     padding: 0 20px; }
+    .cols-footer > li::before {
+      display: none; }
     .cols-footer > li:nth-child(1) {
       width: 50%;
       padding-right: 140px; }
@@ -1002,6 +1009,8 @@ input[type=text], input[type=email], input[type=tel] {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 0; }
+    .logos > li::before {
+      display: none; }
     .logos > li:nth-child(odd) {
       margin-left: 0;
       margin-right: 15px; }
@@ -1026,6 +1035,7 @@ input[type=text], input[type=email], input[type=tel] {
       width: 198px;
       height: 198px;
       -webkit-transform: rotate(-9deg);
+          -ms-transform: rotate(-9deg);
               transform: rotate(-9deg);
       top: 273px;
       left: 0; }
@@ -1033,6 +1043,7 @@ input[type=text], input[type=email], input[type=tel] {
       width: 109px;
       height: 109px;
       -webkit-transform: rotate(-15deg);
+          -ms-transform: rotate(-15deg);
               transform: rotate(-15deg);
       top: 203px;
       left: 258px; }
@@ -1040,6 +1051,7 @@ input[type=text], input[type=email], input[type=tel] {
       width: 55px;
       height: 55px;
       -webkit-transform: rotate(-36deg);
+          -ms-transform: rotate(-36deg);
               transform: rotate(-36deg);
       top: 60px;
       left: 436px; }
@@ -1057,14 +1069,17 @@ input[type=text], input[type=email], input[type=tel] {
   list-style-type: none;
   box-sizing: border-box;
   margin: 0;
-  padding: 13px 160px 0 0; }
+  padding: 11px 160px 0 0;
+  line-height: 1.1em; }
   .menu-footer > li {
     display: inline-block;
     vertical-align: top;
     margin: 0 0 0 37px;
     padding: 0; }
+    .menu-footer > li::before {
+      display: none; }
   .menu-footer a {
-    font-size: 1.2em;
+    font-size: 0.75em;
     color: #282c34;
     text-decoration: none; }
 
@@ -1073,13 +1088,12 @@ input[type=text], input[type=email], input[type=tel] {
   bottom: 25px;
   right: 0;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+          transition: transform 0.4s ease-in-out;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
   .social-footer.closed {
     -webkit-transform: translateX(75%);
+        -ms-transform: translateX(75%);
             transform: translateX(75%); }
 
 /* Breadcrumb */
@@ -1110,7 +1124,7 @@ input[type=text], input[type=email], input[type=tel] {
   overflow: hidden;
   padding: 13px 13px 12px 13px;
   font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-  font-size: 1.2em;
+  font-size: 0.75em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1123,7 +1137,8 @@ input[type=text], input[type=email], input[type=tel] {
   border: none;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+  line-height: 1em; }
   .wrapper-input-btn .btn-block {
     position: absolute;
     top: 0;
@@ -1134,6 +1149,7 @@ input[type=text], input[type=email], input[type=tel] {
     position: absolute;
     background: #86303a;
     -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     z-index: -1;
     opacity: 0.1; }
@@ -1205,7 +1221,7 @@ input[type=text], input[type=email], input[type=tel] {
     vertical-align: top;
     margin: 4px 0 0 0;
     font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-    font-size: 2em;
+    font-size: 1.25em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1239,7 +1255,8 @@ input[type=text], input[type=email], input[type=tel] {
   height: 440px;
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  line-height: normal; }
   .choices > li {
     display: inline-block;
     vertical-align: top;
@@ -1251,13 +1268,14 @@ input[type=text], input[type=email], input[type=tel] {
     padding: 0;
     text-align: center;
     -webkit-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
             transform-origin: 0 50%;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s; }
+    .choices > li::before {
+      display: none; }
     .choices > li:last-child .zone-btn:before {
       border-right: 1px solid #dadada; }
     .choices > li:nth-child(1) {
@@ -1385,17 +1403,21 @@ input[type=text], input[type=email], input[type=tel] {
     z-index: 4; }
     .choices.choice-1-active > li:nth-child(1) .zone-content {
       -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
               transform: scaleX(1); }
     .choices.choice-1-active > li:nth-child(1) .content {
       opacity: 1; }
     .choices.choice-1-active > li:nth-child(1) .zone-btn:before {
       -webkit-transform: translateY(100%);
+          -ms-transform: translateY(100%);
               transform: translateY(100%); }
     .choices.choice-1-active > li:nth-child(1) .visuel {
       -webkit-transform: translateY(36px);
+          -ms-transform: translateY(36px);
               transform: translateY(36px); }
     .choices.choice-1-active > li:nth-child(1) .zone-txt {
       -webkit-transform: translateY(-50px);
+          -ms-transform: translateY(-50px);
               transform: translateY(-50px); }
     .choices.choice-1-active > li:nth-child(1) h3, .choices.choice-1-active > li:nth-child(1) p {
       color: white; }
@@ -1404,20 +1426,25 @@ input[type=text], input[type=email], input[type=tel] {
   .choices.choice-2-active > li:nth-child(2) {
     z-index: 4;
     -webkit-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
             transform: translateX(-20%); }
     .choices.choice-2-active > li:nth-child(2) .zone-content {
       -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
               transform: scaleX(1); }
     .choices.choice-2-active > li:nth-child(2) .content {
       opacity: 1; }
     .choices.choice-2-active > li:nth-child(2) .zone-btn:before {
       -webkit-transform: translateY(100%);
+          -ms-transform: translateY(100%);
               transform: translateY(100%); }
     .choices.choice-2-active > li:nth-child(2) .visuel {
       -webkit-transform: translateY(36px);
+          -ms-transform: translateY(36px);
               transform: translateY(36px); }
     .choices.choice-2-active > li:nth-child(2) .zone-txt {
       -webkit-transform: translateY(-50px);
+          -ms-transform: translateY(-50px);
               transform: translateY(-50px); }
     .choices.choice-2-active > li:nth-child(2) h3, .choices.choice-2-active > li:nth-child(2) p {
       color: white; }
@@ -1426,20 +1453,25 @@ input[type=text], input[type=email], input[type=tel] {
   .choices.choice-3-active > li:nth-child(3) {
     z-index: 4;
     -webkit-transform: translateX(-40%);
+        -ms-transform: translateX(-40%);
             transform: translateX(-40%); }
     .choices.choice-3-active > li:nth-child(3) .zone-content {
       -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
               transform: scaleX(1); }
     .choices.choice-3-active > li:nth-child(3) .content {
       opacity: 1; }
     .choices.choice-3-active > li:nth-child(3) .zone-btn:before {
       -webkit-transform: translateY(100%);
+          -ms-transform: translateY(100%);
               transform: translateY(100%); }
     .choices.choice-3-active > li:nth-child(3) .visuel {
       -webkit-transform: translateY(36px);
+          -ms-transform: translateY(36px);
               transform: translateY(36px); }
     .choices.choice-3-active > li:nth-child(3) .zone-txt {
       -webkit-transform: translateY(-50px);
+          -ms-transform: translateY(-50px);
               transform: translateY(-50px); }
     .choices.choice-3-active > li:nth-child(3) h3, .choices.choice-3-active > li:nth-child(3) p {
       color: white; }
@@ -1448,20 +1480,25 @@ input[type=text], input[type=email], input[type=tel] {
   .choices.choice-4-active > li:nth-child(4) {
     z-index: 4;
     -webkit-transform: translateX(-60%);
+        -ms-transform: translateX(-60%);
             transform: translateX(-60%); }
     .choices.choice-4-active > li:nth-child(4) .zone-content {
       -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
               transform: scaleX(1); }
     .choices.choice-4-active > li:nth-child(4) .content {
       opacity: 1; }
     .choices.choice-4-active > li:nth-child(4) .zone-btn:before {
       -webkit-transform: translateY(100%);
+          -ms-transform: translateY(100%);
               transform: translateY(100%); }
     .choices.choice-4-active > li:nth-child(4) .visuel {
       -webkit-transform: translateY(36px);
+          -ms-transform: translateY(36px);
               transform: translateY(36px); }
     .choices.choice-4-active > li:nth-child(4) .zone-txt {
       -webkit-transform: translateY(-50px);
+          -ms-transform: translateY(-50px);
               transform: translateY(-50px); }
     .choices.choice-4-active > li:nth-child(4) h3, .choices.choice-4-active > li:nth-child(4) p {
       color: white; }
@@ -1470,20 +1507,25 @@ input[type=text], input[type=email], input[type=tel] {
   .choices.choice-5-active > li:nth-child(5) {
     z-index: 4;
     -webkit-transform: translateX(-80%);
+        -ms-transform: translateX(-80%);
             transform: translateX(-80%); }
     .choices.choice-5-active > li:nth-child(5) .zone-content {
       -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
               transform: scaleX(1); }
     .choices.choice-5-active > li:nth-child(5) .content {
       opacity: 1; }
     .choices.choice-5-active > li:nth-child(5) .zone-btn:before {
       -webkit-transform: translateY(100%);
+          -ms-transform: translateY(100%);
               transform: translateY(100%); }
     .choices.choice-5-active > li:nth-child(5) .visuel {
       -webkit-transform: translateY(36px);
+          -ms-transform: translateY(36px);
               transform: translateY(36px); }
     .choices.choice-5-active > li:nth-child(5) .zone-txt {
       -webkit-transform: translateY(-50px);
+          -ms-transform: translateY(-50px);
               transform: translateY(-50px); }
     .choices.choice-5-active > li:nth-child(5) h3, .choices.choice-5-active > li:nth-child(5) p {
       color: white; }
@@ -1510,9 +1552,7 @@ input[type=text], input[type=email], input[type=tel] {
       left: 0;
       z-index: 2;
       -webkit-transition: -webkit-transform 0.3s ease-in-out;
-      transition: -webkit-transform 0.3s ease-in-out;
-      transition: transform 0.3s ease-in-out;
-      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+              transition: transform 0.3s ease-in-out;
       -webkit-transition-delay: 0.3s;
               transition-delay: 0.3s; }
   .choices .zone-content {
@@ -1526,12 +1566,12 @@ input[type=text], input[type=email], input[type=tel] {
     text-align: left;
     z-index: 1;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
     -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
             transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
             transform-origin: 0 50%;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s; }
@@ -1552,7 +1592,7 @@ input[type=text], input[type=email], input[type=tel] {
     z-index: 1;
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+            transition: opacity 0.3s ease-in-out;
     -webkit-transition-delay: 0s;
             transition-delay: 0s; }
     .choices .content:before {
@@ -1586,7 +1626,7 @@ input[type=text], input[type=email], input[type=tel] {
     left: 0;
     opacity: 0.95;
     -webkit-transition: opacity 0 ease-in-out;
-    transition: opacity 0 ease-in-out;
+            transition: opacity 0 ease-in-out;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s; }
     .choices .bg-choice:before, .choices .bg-choice:after {
@@ -1594,15 +1634,14 @@ input[type=text], input[type=email], input[type=tel] {
       display: block;
       position: absolute;
       -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
   .choices .visuel {
     height: 224px;
     position: relative;
     overflow: hidden;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s; }
     .choices .visuel .wrapper-alignment {
@@ -1617,16 +1656,17 @@ input[type=text], input[type=email], input[type=tel] {
     position: relative;
     z-index: 2;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s; }
   .choices h3 {
-    margin: 0; }
+    margin: 0;
+    font-size: 1.75em; }
+  .choices p {
+    margin: 10px 0; }
   .choices h3, .choices p {
     -webkit-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s; }
   .choices .btn-close-choice {
@@ -1668,7 +1708,7 @@ input[type=text], input[type=email], input[type=tel] {
       box-sizing: border-box;
       padding: 27px 22px 0 22px;
       font-family: "robotomedium", "robotoregular", sans-serif;
-      font-size: 1.6em;
+      font-size: 1em;
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -1728,6 +1768,8 @@ input[type=text], input[type=email], input[type=tel] {
     margin: 0;
     padding: 0 20px;
     box-sizing: border-box; }
+    .news > li::before {
+      display: none; }
     .news > li:nth-child(odd) .article-date {
       background: -webkit-linear-gradient(top, #e46336 0%, #e15220 100%);
       background: linear-gradient(to bottom, #e46336 0%, #e15220 100%); }
@@ -1759,6 +1801,7 @@ input[type=text], input[type=email], input[type=tel] {
       top: -67px;
       left: -7px;
       -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
   .news .article-desc {
     padding: 30px 15px 30px 25px;
@@ -1767,10 +1810,11 @@ input[type=text], input[type=email], input[type=tel] {
   .news time {
     position: relative; }
   .news .day, .news .month, .news .year {
-    display: block; }
+    display: block;
+    line-height: 1em; }
   .news .day {
     font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-    font-size: 3.7em;
+    font-size: 2.313em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1778,22 +1822,23 @@ input[type=text], input[type=email], input[type=tel] {
     line-height: 0.9em; }
   .news .month {
     font-family: "robotoregular", sans-serif;
-    font-size: 1.6em;
+    font-size: 1em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility; }
   .news .year {
     font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-    font-size: 1.5em;
+    font-size: 0.938em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin: 3px 0 0 0; }
   .news p {
     font-family: "robotoregular", sans-serif;
-    font-size: 1.4em;
+    font-size: 0.875em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
