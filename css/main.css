@@ -684,11 +684,6 @@ a {
   position: relative;
   padding: 0 5px 0 0;
   font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -820,7 +815,7 @@ input[type=text], input[type=email], input[type=tel] {
   margin: 0 20px 0 0;
   padding: 16px 0 0 16px;
   background-color: #c63643;
-  border: none;
+  border: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1055,12 +1050,7 @@ input[type=text], input[type=email], input[type=tel] {
     margin: 0 0 0 37px;
     padding: 0; }
   .menu-footer a {
-    font-family: "robotoregular", sans-serif;
     font-size: 1.2em;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
     color: #282c34;
     text-decoration: none; }
 

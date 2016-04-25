@@ -35,14 +35,12 @@
 		opacity: 0.1;
 	}
 	&:before{
-		width: 45px;
-		height: 45px;
+		@include size(45px);
 		top: 25px;
 		right: 3px;
 	}
 	&:after{
-		width: 36px;
-		height: 36px;
+		@include size(36px);
 		top: -28px;
 		right: 62px;
 	}

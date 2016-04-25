@@ -1,4 +1,6 @@
-// Variables
+// Variables //
+
+// Colors
 
 $blanc: rgb(255, 255, 255);
 $noir: rgb(0, 0, 0);
@@ -25,8 +27,12 @@ $theme2-gradient-4: rgb(241, 104, 30);
 $theme2-gradient-5: rgb(242, 130, 30);
 
 
+// Transitions
+
 $transition: .3s ease-in-out;
 
+
+// Fonts
 
 $roboto: 'robotoregular', sans-serif;
 $roboto-it: 'robotoitalic', $roboto;
