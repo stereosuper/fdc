@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'robotoregular';
     src: url('../fonts/Roboto-Regular-webfont.eot');
@@ -6,7 +5,7 @@
          url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
          url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -17,7 +16,7 @@
          url('../fonts/Roboto-Italic-webfont.woff') format('woff'),
          url('../fonts/Roboto-Italic-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-Italic-webfont.svg#robotoitalic') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -28,7 +27,7 @@
          url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
          url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -39,7 +38,7 @@
          url('../fonts/Roboto-MediumItalic-webfont.woff') format('woff'),
          url('../fonts/Roboto-MediumItalic-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-MediumItalic-webfont.svg#robotomedium_italic') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -50,7 +49,7 @@
          url('../fonts/RobotoCondensed-Bold-webfont.woff') format('woff'),
          url('../fonts/RobotoCondensed-Bold-webfont.ttf') format('truetype'),
          url('../fonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -61,111 +60,43 @@
          url('../fonts/RobotoCondensed-BoldItalic-webfont.woff') format('woff'),
          url('../fonts/RobotoCondensed-BoldItalic-webfont.ttf') format('truetype'),
          url('../fonts/RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'fdc';
-    src:    url('../fonts/fdc.eot?a49uhg');
-    src:    url('../fonts/fdc.eot?a49uhg#iefix') format('embedded-opentype'),
+    src: url('../fonts/fdc.eot?a49uhg');
+    src: url('../fonts/fdc.eot?a49uhg#iefix') format('embedded-opentype'),
         url('../fonts/fdc.woff2?a49uhg') format('woff2'),
         url('../fonts/fdc.ttf?a49uhg') format('truetype'),
         url('../fonts/fdc.woff?a49uhg') format('woff'),
         url('../fonts/fdc.svg?a49uhg#fdc') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
-@mixin roboto($size){
-    font-family: 'robotoregular', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
 
-@mixin roboto-italic($size){
-    font-family: 'robotoitalic', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-medium($size){
-    font-family: 'robotomedium', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-medium-italic($size){
-    font-family: 'robotomedium_italic', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-bold($size){
-    font-family: 'roboto_condensedbold', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-@mixin roboto-bold-italic($size){
-    font-family: 'roboto_condensedbold_italic', sans-serif;
-    font-weight: normal;
-    font-size: $size;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-/* Font icons */
-@mixin font-icon{
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'fdc' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="icon-"], [class*=" icon-"]{
+[class^='icon-'], [class*=' icon-']{
     @include font-icon;
 }
 
 $icons: (
-  cross: "\e906",
-  home: "\e905",
-  twitter: "\f099",
-  facebook: "\f09a",
-  linkedin: "\f0e1",
-  share: "\e904",
-  user: "\e901",
-  mail: "\e902",
-  tool: "\e903",
-  arrow: "\e900"
+    cross: '\e906',
+    home: '\e905',
+    twitter: '\f099',
+    facebook: '\f09a',
+    linkedin: '\f0e1',
+    google: '\f0d5',
+    viadeo: '\f2a9',
+    share: '\e904',
+    user: '\e901',
+    mail: '\e902',
+    tool: '\e903',
+    arrow: '\e900'
 );
-
 @each $name, $icon in $icons {
-  .icon-#{$name}:before {
-    content: $icon;
-  }
+    .icon-#{$name}::before {
+        content: $icon;
+    }
 }

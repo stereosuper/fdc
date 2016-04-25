@@ -1,1 +1,32 @@
 /* Placeholders */
+
+%btn-arrow{
+    position: relative;
+    padding: 0 5px 0 0;
+    @include roboto-bold(1em);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backface-visibility: hidden;
+    &::after{
+        @include font-icon;
+        content: '\e900';
+        display: inline-block;
+        padding-left: 1px;
+        vertical-align: middle;
+        transform: translate3d(0, -0.3em, 1px);
+        font-size: 6px;
+        transition: transform 0.2s ease-in-out;
+    }
+    &:hover{
+        &::after{
+            transform: translate3d(5px, -0.3em, 1px);
+        }
+    }
+    &.big{
+        font-size: 1.2em;
+    }
+    &.small{
+        font-size: 0.88em;
+    }
+}

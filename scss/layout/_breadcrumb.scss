@@ -1,0 +1,28 @@
+/* Breadcrumb */
+
+.breadcrumb{
+    padding: 0 60px;
+    margin: 50px 0 0;
+    color: #c7c2c2;
+    li{
+        display: inline-block;
+        &::before{
+            display: none;
+        }
+    }
+    a, span{
+        @extend %btn-arrow;
+        @extend .btn-arrow.big;
+
+        @include ellipsis;
+
+        display: inline-block;
+        max-width: 310px;
+        color: inherit;
+    }
+    span{
+        &::after{
+            display: none;
+        }
+    }
+}

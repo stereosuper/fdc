@@ -1,0 +1,60 @@
+.social-right{
+    float: right;
+    p{
+        padding-right: 20px;
+    }
+    .social{
+        float: right;
+    }
+}
+
+.social{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    > li{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        @include size(39px);
+        &:nth-child(1){
+            a{
+                background-color: rgb(191, 46, 54);
+            }
+        }
+        &:nth-child(2){
+            a{
+                background-color: rgb(212, 59, 54);
+            }
+        }
+        &:nth-child(3){
+            a{
+                background-color: rgb(233, 95, 54);
+            }
+        }
+        &:nth-child(4){
+            a{
+                background-color: rgb(241, 136, 50);
+            }
+        }
+        &:before{
+            display: none;
+        }
+    }
+    a{
+        display: block;
+        height: 100%;
+        font-size: 14px;
+        line-height: 39px;
+        text-align: center;
+        text-decoration: none;
+        color: $blanc;
+        &.icon-share{
+            font-size: 16px;
+        }
+        &.icon-viadeo{
+            font-size: 18px;
+        }
+    }
+}

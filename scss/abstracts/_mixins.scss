@@ -11,6 +11,13 @@
   }
 }
 
+/// Helper to cut text with an ellipse
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 /// Helper to size an element
 /// @author Hugo Giraudel
 /// @param {Length} $width
@@ -41,7 +48,7 @@
 
     border-#{opposite-position($direction)}: $size * 1.5 solid $color;
     $perpendicular-borders: $size solid transparent;
-    
+
     @if $direction == top or $direction == bottom {
       border-left:   $perpendicular-borders;
       border-right:  $perpendicular-borders;
@@ -52,4 +59,68 @@
       border-top:    $perpendicular-borders;
     }
   }
+}
+
+
+// Fonts
+@mixin roboto($size){
+    font-family: $roboto;
+    font-size: $size;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+@mixin roboto-italic($size){
+    font-family: $roboto-it;
+    font-size: $size;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+@mixin roboto-medium($size){
+    font-family: $roboto-medium;
+    font-size: $size;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+@mixin roboto-medium-italic($size){
+    font-family: $roboto-medium-it;
+    font-size: $size;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+@mixin roboto-bold($size){
+    font-family: $roboto-bold;
+    font-size: $size;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+@mixin roboto-bold-italic($size){
+    font-family: $roboto-bold-it;
+    font-size: $size;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+// Font icons
+@mixin font-icon{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'fdc' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
