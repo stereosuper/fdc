@@ -3,17 +3,18 @@
 @import
   'abstracts/variables',
   'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/placeholders';
-
-//@import
-//  'vendors/';
+  'abstracts/mixins';
 
 @import
   'base/reset',
   'base/fonts',
   'base/base';
 
+
+//@import
+//  'vendors/';
+
+@import 'abstracts/placeholders';
 
 @import
   'layout/grid',
