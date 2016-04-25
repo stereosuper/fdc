@@ -3,7 +3,7 @@
 %btn-arrow{
     position: relative;
     padding: 0 5px 0 0;
-    @include roboto-bold(1em);
+    font-family: $roboto-bold;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;

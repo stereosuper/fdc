@@ -1,42 +1,55 @@
 /* Forms */
-fieldset{
-	margin: 10px 0;
-	padding: 0;
-	border: none;
-}
-
-input[type="text"], input[type="email"], input[type="tel"]{
-	display: inline-block;
-	vertical-align: middle;
-	box-sizing: border-box;
-	padding: 7px 10px;
-	background: none;
-	border: 2px solid rgb(193, 195, 198);
-	@include roboto(1.4em);
-	color: $blanc;
-	line-height: normal;
-}
 
 ::-webkit-input-placeholder{
-    @include roboto-italic(1em);
-}
-:-moz-placeholder{
-    @include roboto-italic(1em);
+	font-family: $roboto-it;
+    color: rgb(139, 139, 139);
 }
 ::-moz-placeholder{
-    @include roboto-italic(1em);
+	font-family: $roboto-it;
+    color: rgb(139, 139, 139);
 }
 :-ms-input-placeholder{
-    @include roboto-italic(1em);
+	font-family: $roboto-it;
+    color: rgb(139, 139, 139);
+}
+
+fieldset{
+	padding: 0;
+	border: 0;
+	margin: 10px 0;
+}
+
+input, textarea, select, button{
+  	transition: $transition;
+  	&:focus{
+      	outline: 0;
+  	}
+}
+
+input, textarea{
+  	&:-webkit-autofill{
+      	box-shadow: 0 0 0 1000px rgb(255, 255, 255) inset;
+  	}
+}
+
+input{
+	&[type=text], &[type=email], &[type=tel]{
+		display: inline-block;
+		padding: 7px 10px;
+		border: 2px solid rgb(193, 195, 198);
+		box-sizing: border-box;
+		vertical-align: middle;
+		@include roboto(1.4em);
+		background: none;
+		color: $blanc;
+		line-height: normal;
+	}
 }
 
 .wrapper-input-btn{
-	display: block;
-	width: 100%;
 	position: relative;
 	.wrapper-input{
-		display: block;
-		box-sizing: border-box;
 		padding: 0 53px 0 0;
+		box-sizing: border-box;
 	}
 }

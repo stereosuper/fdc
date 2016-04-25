@@ -1,6 +1,3 @@
-$transition: .3s ease-in-out;
-
-
 /******* GÉNÉRAL *******/
 
 ::-moz-selection{
@@ -15,32 +12,32 @@ $transition: .3s ease-in-out;
 }
 
 html{
-  font-size: 62.5%; /* sets the base font to 10px for easier math */
-  background-color: $gris-bg;
-  color: $txt;
+    font-size: 62.5%; /* sets the base font to 10px for easier math */
+    background-color: $gris-bg;
+    color: $txt;
 }
 
 body{
-  @include roboto(1.6em);
-  line-height: 1;
+    @include roboto(1.6em);
+    line-height: 1;
 }
 
 #main{
-  padding: 0 0 100px;
+    padding: 0 0 100px;
 }
 
 h1, h2, h3, h4, h5, h6{
-  @include roboto-bold(2.5em);
+    @include roboto-bold(2.5em);
 }
 
 h1{
     margin: 0.13em 0 0.85em;
     padding: 0 60px;
     &.big{
-      font-size: 6.5em;
-      text-align: center;
-      padding: 0;
-    }
+        font-size: 6.5em;
+        text-align: center;
+        padding: 0;
+  }
 }
 
 h2{
@@ -49,22 +46,22 @@ h2{
     margin: 0 0 1em;
     color: $theme-rouge-title;
     &.h1{
-      font-size: 2.5em;
-      padding: 0 115px;
-      color: $txt;
-    }
-    &.inline-b{
-      padding-right: 10px;
-    }
+        font-size: 2.5em;
+        padding: 0 115px;
+        color: $txt;
+  }
+  &.inline-b{
+        padding-right: 10px;
+  }
 }
 
 h3{
     font-size: 2em;
     margin: 1em 0;
     &.h2{
-      font-size: 2em;
-      margin: 0;
-    }
+        font-size: 2em;
+        margin: 0;
+  }
 }
 
 h4{
@@ -90,11 +87,11 @@ p{
 }
 
 b, strong{
-  @include roboto-bold(1em);
+    @include roboto-bold(1em);
 }
 
 i, em{
-  @include roboto-italic(1em);
+    @include roboto-italic(1em);
 }
 
 blockquote{
@@ -143,92 +140,43 @@ img{
 }
 
 address{
-  font-style: normal;
-  margin: 25px 0 0;
-  ul{
-    display: block;
-    margin: 0;
-    padding: 0;
-    > li{
-      display: block;
-      margin: 6px 0;
-      padding: 0;
-      @include roboto(1.4em);
-      &::before{
-        display: none;
-      }
+    font-style: normal;
+    margin: 25px 0 0;
+    ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        > li{
+            display: block;
+            margin: 6px 0;
+            padding: 0;
+            font-size: 1.4em;
+            &::before{
+                display: none;
+            }
+        }
     }
-  }
-  strong{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+    strong{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 }
 
 
 /******* LIENS / BOUTONS *******/
 
 a{
-  color: $bleu-link;
-  transition: $transition;
-  &:focus, &:hover{
-  }
-  &:focus{
-      outline: 0;
-  }
-  &:active{
-  }
+    color: $bleu-link;
+    transition: $transition;
+    &:focus, &:hover{
+    }
+    &:focus{
+        outline: 0;
+    }
+    &:active{
+    }
 }
 
-
-
-/******* FORMULAIRES *******/
-
-::-webkit-input-placeholder{
-    color: rgb(139, 139, 139);
-}
-::-moz-placeholder{
-    color: rgb(139, 139, 139);
-}
-:-ms-input-placeholder{
-    color: rgb(139, 139, 139);
-}
-
-label{
-
-}
-
-fieldset{
-
-}
-
-input, textarea, select, button{
-  transition: $transition;
-  &:focus{
-      outline: 0;
-  }
-}
-
-input, textarea{
-  &:-webkit-autofill{
-      box-shadow: 0 0 0 1000px rgb(255, 255, 255) inset;
-  }
-}
-
-input{
-
-}
-
-textarea{
-
-}
-
-select{
-
-}
-
-
-/******* MODULES *******/
 
 /******* CLASSES GENERALES  *******/
 
@@ -298,11 +246,11 @@ select{
 }
 
 .img-fit{
-  &.compat-object-fit {
-    background-size: cover;
-    background-position: 50% 50%;
-    img { // hide image if object fit is not supported - opacity to 0 for the link area
-      opacity: 0;
+    &.compat-object-fit {
+        background-size: cover;
+        background-position: 50% 50%;
+        img { // hide image if object fit is not supported - opacity to 0 for the link area
+            opacity: 0;
+        }
     }
-  }
 }
