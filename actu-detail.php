@@ -46,17 +46,23 @@
                     </ul>
                     <p>Notez que si une nouvelle réunion devait se tenir <strong>avant l’expiration de ces délais</strong>, le PV devrait être établi et transmis à l’employeur avant la date de cette nouvelle réunion.</p>
                     <p><b><u>Source :</u></b> Décret n° 2016-453 du 12 avril 2016 relatif à certaines modalités de déroulement des réunions des institutions représentatives du personnel</p>
-                    <ul class='social'>
-                        <li>
-                            <a href='#' class='icon-facebook'></a>
-                        </li><li>
-                            <a href='#' class='icon-twitter'></a>
-                        </li><li>
-                            <a href='#' class='icon-google'></a>
-                        </li><li>
-                            <a href='#' class='icon-viadeo'></a>
-                        </li>
-                    </ul>
+                    <div class='content-footer'>
+                        <p>Retrouvez cette actualité sur WebLex <a href='#' class='btn-arrow small'>cliquez ici</a></p>
+                        <div class='social-right'>
+                            <p>Partager cette fiche : </p>
+                            <ul class='social'>
+                                <li>
+                                    <a href='#' class='icon-facebook'></a>
+                                </li><li>
+                                    <a href='#' class='icon-twitter'></a>
+                                </li><li>
+                                    <a href='#' class='icon-google'></a>
+                                </li><li>
+                                    <a href='#' class='icon-viadeo'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

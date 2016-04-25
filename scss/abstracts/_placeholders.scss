@@ -19,11 +19,14 @@
         transition: transform 0.2s ease-in-out;
     }
     &:hover{
-        &:after{
+        &::after{
             transform: translate3d(5px, -0.3em, 1px);
         }
     }
     &.big{
         font-size: 1.2em;
+    }
+    &.small{
+        font-size: 0.88em;
     }
 }

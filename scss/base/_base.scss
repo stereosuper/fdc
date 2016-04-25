@@ -237,47 +237,64 @@ select{
 }
 
 .wrapper-alignment{
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-  box-sizing: border-box;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    box-sizing: border-box;
 }
 
 .content-align-middle{
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .content-align-top{
-  display: table-cell;
-  vertical-align: top;
+    display: table-cell;
+    vertical-align: top;
 }
 
 .clearfix{
-  @include clearfix;
+    @include clearfix;
 }
 
 .position-relative{
-  position: relative;
+    position: relative;
 }
 
 .center-align{
-  text-align: center;
+    text-align: center;
 }
 
 .inline-b{
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateY(-.1em);
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-.1em);
 }
 
 .full-width{
-  width: 100%;
+    width: 100%;
 }
 
 .wrapper-overflow-hidden{
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-footer{
+    position: relative;
+    margin: 50px 0 0;
+    overflow: hidden;
+    background: #eaecf1;
+    p{
+        display: inline-block;
+        max-width: 520px;
+        padding: 9px 0;
+        margin: 0;
+        font-size: 0.88em;
+        .btn-arrow{
+            margin: 0 0 0 2px;
+        }
+    }
 }
 
 .img-fit{

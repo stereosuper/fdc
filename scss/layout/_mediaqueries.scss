@@ -7,6 +7,21 @@
     .content-right{
         padding-right: 60px;
     }
+
+    .content-footer{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        p{
+            max-width: none;
+        }
+        .social-right{
+            float: none;
+            margin: 10px 0 0;
+        }
+        .social{
+            float: none;
+        }
+    }
 }
 
 @media (max-width: 767px){
@@ -17,6 +32,12 @@
     .content-default{
         padding-left: 30px;
         padding-right: 30px;
+        .content-footer{
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-left: -30px;
+            margin-right: -30px;
+        }
     }
 }
 
