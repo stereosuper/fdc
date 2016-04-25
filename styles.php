@@ -5,6 +5,11 @@
     <head>
         <title>Style guides</title>
         <?php include_once('includes/head.html'); ?>
+        <style>
+            hr{
+                margin: 70px 0 40px;
+            }
+        </style>
     </head>
 
     <body>
@@ -58,6 +63,33 @@
                     <a href='#' class='btn-block big'>.btn-block.big</a>
                     <a href='#' class='btn-arrow'>.btn-arrow</a>
                     <a href='#' class='btn-arrow big'>.btn-arrow.big</a>
+                    <hr>
+
+                    <h2>Social (components/_social.scss)</h2>
+                    <h3>Exemple 1</h3>
+                    <ul class='social'>
+                        <li>
+                            <a href='#' class='icon-facebook'></a>
+                        </li><li>
+                            <a href='#' class='icon-twitter'></a>
+                        </li><li>
+                            <a href='#' class='icon-google'></a>
+                        </li><li>
+                            <a href='#' class='icon-viadeo'></a>
+                        </li>
+                    </ul>
+                    <h3>Exemple 2</h3>
+                    <ul class='social'>
+                        <li>
+                            <a href='#' class='icon-share'></a>
+                        </li><li>
+                            <a href='#' class='icon-twitter'></a>
+                        </li><li>
+                            <a href='#' class='icon-facebook'></a>
+                        </li><li>
+                            <a href='#' class='icon-linkedin'></a>
+                        </li>
+                    </ul>
                     <hr>
 
                     <h2>Breadcrumb (layout/_breadcrumb.scss)</h2>
