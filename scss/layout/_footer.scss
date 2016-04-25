@@ -20,12 +20,14 @@ $padding-bottom-footer: 130px;
 		z-index: -1;
 	}
 	h2{
-		margin-top: 0;
+		margin: 0 0 0.8em 0;
+		padding: 0;
 		color: $blanc;
 	}
 	p{
-		font-size: 1.4em;
+		font-size: 0.875em;
 		line-height: 1.5em;
+		margin: 1em 0;
 	}
 	.container{
 		position: relative;
@@ -55,6 +57,9 @@ $padding-bottom-footer: 130px;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0 20px;
+		&::before{
+			display: none;
+		}
 		&:nth-child(1){
 			width: 50%;
 			padding-right: 140px;
@@ -88,6 +93,9 @@ $padding-bottom-footer: 130px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		padding: 0;
+		&::before{
+			display: none;
+		}
 		&:nth-child(odd){
 			margin-left: 0;
 			margin-right: 15px;
@@ -149,15 +157,19 @@ $padding-bottom-footer: 130px;
 	list-style-type: none;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 13px 160px 0 0;
+	padding: 11px 160px 0 0;
+	line-height: 1.1em;
 	> li{
 		display: inline-block;
 		vertical-align: top;
 		margin: 0 0 0 37px;
 		padding: 0;
+		&::before{
+			display: none;
+		}
 	}
 	a{
-		font-size: 1.2em;
+		font-size: 0.75em;
 		color: rgb(40, 44, 52);
 		text-decoration: none;
 	}

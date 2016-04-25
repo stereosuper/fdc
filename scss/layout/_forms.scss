@@ -39,7 +39,7 @@ input{
 		border: 2px solid rgb(193, 195, 198);
 		box-sizing: border-box;
 		vertical-align: middle;
-		@include roboto(1.4em);
+		@include roboto(0.875em);
 		background: none;
 		color: $blanc;
 		line-height: normal;

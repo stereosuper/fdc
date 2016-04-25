@@ -15,6 +15,7 @@ $tps-choice-etape-2: 0.3s;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	line-height: normal;
 	> li{
 		display: inline-block;
 		vertical-align: top;
@@ -29,6 +30,9 @@ $tps-choice-etape-2: 0.3s;
 		transform-origin: 0 50%;
 		transition: transform $tps-choice-etape-1 ease-in-out;
 		transition-delay: $tps-choice-etape-1;
+		&::before{
+			display: none;
+		}
 		&:last-child{
 			.zone-btn{
 				&:before{
@@ -489,6 +493,10 @@ $tps-choice-etape-2: 0.3s;
 	}
 	h3{
 		margin: 0;
+		font-size: 1.75em;
+	}
+	p{
+		margin: 10px 0;
 	}
 	h3, p{
 		transition: color $tps-choice-etape-1 ease-in-out;
@@ -534,7 +542,7 @@ $tps-choice-etape-2: 0.3s;
 			width: 100%;
 			box-sizing: border-box;
 			padding: 27px 22px 0 22px;
-			@include roboto-medium(1.6em);
+			@include roboto-medium(1em);
 			color: rgb(40, 44, 52);
 			text-decoration: none;
 			background-color: $blanc;
