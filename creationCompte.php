@@ -3,7 +3,7 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Créer mon compte</title>
+        <title>Créer mon compte - Bienvenue</title>
         <?php include_once('includes/head.html'); ?>
     </head>
 

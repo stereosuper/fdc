@@ -4,10 +4,6 @@
 }
 
 @media (max-width: 979px){
-    .content-right{
-        padding-right: 60px;
-    }
-
     .content-footer{
         padding-top: 10px;
         padding-bottom: 20px;
@@ -22,16 +18,25 @@
             float: none;
         }
     }
+
+    .btn-block-arrow{
+        font-size: 1em;
+    }
+
+    .content-right{
+        padding-right: 60px;
+    }
+
+    .nav-tabs{
+        li{
+            padding: 20px 20px 17px;
+        }
+    }
 }
 
 @media (max-width: 767px){
     h1{
         padding: 0 30px;
-    }
-
-    .breadcrumb{
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     .content-default{
@@ -44,10 +49,46 @@
             margin-right: -30px;
         }
     }
+
+    .breadcrumb{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .nav-tabs{
+        li{
+            padding: 15px 15px 12px;
+            &:not(:first-child){
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        padding-left: 30px;
+        padding-right: 30px;
+        &-buttons{
+            .btn-block-arrow{
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                &:first-of-type{
+                    margin-right: auto;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 480px){
-
+    .tab-content-buttons{
+        .btn-block-arrow{
+            width: 100%;
+        }
+    }
 }
 
 /* retina */
