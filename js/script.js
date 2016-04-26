@@ -66,6 +66,18 @@ $(function(){
 		}, tpsAnimChoice);
 		return false;
 	});
+	$('#logo').click(function(){
+		if(!$('body').hasClass('sidebar-links-open')){
+			$('body').addClass('sidebar-links-open');
+		}else{
+			$('body').removeClass('sidebar-links-open');
+		}
+		return false;
+	});
+	$('#btn-close-sidebar-links').click(function(){
+		$('body').removeClass('sidebar-links-open');
+		return false;
+	});
     $(document).scroll(function(){
     	myScroll = $(document).scrollTop();
     	if(myScroll + $(window).height() == $(document).height()) {
