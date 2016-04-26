@@ -2,24 +2,51 @@
 
 ::-webkit-input-placeholder{
 	font-family: $roboto-it;
+    font-size: 0.88em;
     color: rgb(139, 139, 139);
 }
 ::-moz-placeholder{
 	font-family: $roboto-it;
+    font-size: 0.88em;
     color: rgb(139, 139, 139);
 }
-:-ms-input-placeholder{
+::-ms-input-placeholder{
 	font-family: $roboto-it;
+    font-size: 0.88em;
     color: rgb(139, 139, 139);
 }
 
 fieldset{
-	padding: 0;
-	border: 0;
-	margin: 10px 0;
+	margin: 0 0 15px;
+    &.inline-b{
+        vertical-align: baseline;
+    }
+    &.block-pwd{
+        margin: 35px 0 25px;
+    }
 }
 
-input, textarea, select, button{
+legend, label{
+    display: inline-block;
+    width: 180px;
+    margin: 0 15px 0 0;
+    font-size: 0.88em;
+    letter-spacing: -0.02em;
+    .required &{
+        font-family: $roboto-bold;
+        &::after{
+            content: '*';
+            color: $theme-rouge-title;
+        }
+    }
+}
+
+legend{
+    margin-bottom: 15px;
+}
+
+input, textarea, select{
+    width: 100%;
   	transition: $transition;
   	&:focus{
       	outline: 0;
@@ -33,23 +60,82 @@ input, textarea{
 }
 
 input{
-	&[type=text], &[type=email], &[type=tel]{
+	&[type=text], &[type=email], &[type=tel], &[type=password], &[type=number]{
 		display: inline-block;
-		padding: 7px 10px;
-		border: 2px solid rgb(193, 195, 198);
-		box-sizing: border-box;
+		padding: 10px;
+		border: 1px solid #ebebeb;
 		vertical-align: middle;
-		@include roboto(0.875em);
+		font-size: 16px;
+        line-height: 1;
+        outline: 1px solid #dadada;
 		background: none;
-		color: $blanc;
-		line-height: normal;
+		color: inherit;
+        &:focus{
+            border-color: $bleu-link;
+            outline: 1px solid $bleu-link;
+            outline-offset: 0;
+        }
 	}
+    &[type=text]{
+        max-width: 250px;
+    }
+    &[type=tel]{
+        max-width: 150px;
+    }
+    &[type=email], &.big{
+        max-width: 325px;
+    }
+    &[type=number]{
+        max-width: 85px;
+    }
+    &[type=password]{
+        max-width: 140px;
+    }
+    &[type=radio]{
+        width: auto;
+        + label{
+            width: auto;
+            margin: 0 30px 0 10px;
+            font-family: $roboto;
+            cursor: pointer;
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+
+button{
+    transition: $transition;
+    &[type=submit]{
+        margin: 0 0 0 195px;
+    }
+    &:focus{
+        outline: 0;
+    }
+}
+
+.form-newsletter{
+    fieldset{
+        margin: 10px 0;
+    }
+    input{
+        &[type=text], &[type=email]{
+            padding-top: 5px;
+            padding-bottom: 6px;
+            border-width: 2px;
+            border-color: #c1c3c6;
+            outline: 0;
+            &:focus{
+                border-color: $bleu-link;
+            }
+        }
+    }
 }
 
 .wrapper-input-btn{
 	position: relative;
 	.wrapper-input{
 		padding: 0 53px 0 0;
-		box-sizing: border-box;
 	}
 }

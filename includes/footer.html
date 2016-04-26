@@ -53,17 +53,15 @@
                 --><li>
                     <h2>Newsletter Weblex</h2>
                     <p>L’information juridique en ligne</p>
-                    <form>
+                    <form action='#' method='post' class='form-newsletter'>
                         <fieldset>
-                            <input type='email' id='email' class='full-width' name='email' placeholder='E-mail'>
+                            <input type='email' id='email' name='email' placeholder='E-mail' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
                         </fieldset>
-                        <fieldset>
-                            <div class='wrapper-input-btn'>
-                                <div class='wrapper-input'>
-                                    <input type='text' id='name' class='full-width' name='name' placeholder='Nom'>
-                                </div>
-                                <button class='btn-block'>Ok</button>
+                        <fieldset class='wrapper-input-btn'>
+                            <div class='wrapper-input'>
+                                <input type='text' id='name' name='name' placeholder='Nom' required>
                             </div>
+                            <button type='submit' class='btn-block'>Ok</button>
                         </fieldset>
                     </form>
                 </li>

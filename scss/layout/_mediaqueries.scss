@@ -39,6 +39,25 @@
         padding: 0 30px;
     }
 
+    label, legend{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input{
+        &[type=radio]{
+            + label{
+                display: inline-block;
+            }
+        }
+    }
+
+    button{
+        &[type=submit]{
+            margin-left: 0;
+        }
+    }
+
     .content-default{
         padding-left: 30px;
         padding-right: 30px;
