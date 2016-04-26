@@ -17,7 +17,7 @@
                 </ul>
 
                 <h1>Mentions légales</h1>
-                <div class='content-default content-default'>
+                <div class='content-default content-right'>
                     <h2>Identification de l’éditeur</h2>
                     <p>Société LE FORUM DES COMMERCES, Société à Responsabilité Limitée au capital de 18.000,00 euros, immatriculée au RCS de NANTES sous le n° 509 118 162, ayant son siège social : Imm Hub Créatic - 6 rue Rose Dieng Kuntz - CS 70790 - 44307 NANTES Cédex 3.</p>
                     <p>Tél : 02.40.85.18.17<br>

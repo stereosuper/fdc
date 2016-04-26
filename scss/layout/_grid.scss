@@ -18,17 +18,20 @@
     margin: 0 auto;
 }
 
+.content-right{
+    padding-right: 130px;
+}
+
+.content-default, .content-tabs{
+    border: 1px solid $gris;
+    box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+}
+
 .content-default{
     padding: 20px 60px 50px;
-    border: 1px solid $gris;
     background: #fff;
-    box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
     .content-footer{
         padding-left: 60px;
         margin: 50px -60px -50px;
     }
-}
-
-.content-right{
-    padding-right: 130px;
 }

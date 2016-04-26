@@ -60,9 +60,14 @@
 
                     <h2>Buttons (components/_buttons.scss)</h2>
                     <a href='#' class='btn-block'>.btn-block</a>
+                    <a href='#' class='btn-block btn-orange'>.btn-block.btn-orange</a>
                     <a href='#' class='btn-block big'>.btn-block.big</a>
+                    <br><br>
+                    <a href='#' class='btn-arrow small'>.btn-arrow.small</a>
                     <a href='#' class='btn-arrow'>.btn-arrow</a>
                     <a href='#' class='btn-arrow big'>.btn-arrow.big</a>
+                    <br><br>
+                    <a href='#' class='btn-block-arrow'>.btn-block-arrow</a>
                     <hr>
 
                     <h2>Social (components/_social.scss)</h2>

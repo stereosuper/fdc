@@ -47,7 +47,6 @@ h2{
     color: $theme-rouge-title;
     &.h1{
         font-size: 2.5em;
-        padding: 0 115px;
         color: $txt;
   }
   &.inline-b{
@@ -270,5 +269,18 @@ a{
         img { // hide image if object fit is not supported - opacity to 0 for the link area
             opacity: 0;
         }
+    }
+}
+
+.condensed-text{
+    font-size: 0.88em;
+    p{
+        margin-bottom: 0;
+        + ul{
+            margin-top: 0;
+        }
+    }
+    ul{
+        @extend %list-small;
     }
 }
