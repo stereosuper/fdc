@@ -184,44 +184,42 @@ hr {
 
 @font-face {
   font-family: 'robotoregular';
-  src: url("../fonts/Roboto-Regular-webfont.eot");
-  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'robotoitalic';
-  src: url("../fonts/Roboto-Italic-webfont.eot");
-  src: url("../fonts/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Italic-webfont.woff") format("woff"), url("../fonts/Roboto-Italic-webfont.ttf") format("truetype"), url("../fonts/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
+  src: url("../fonts/Roboto-Italic-webfont.woff") format("woff"), url("../fonts/Roboto-Italic-webfont.ttf") format("truetype"), url("../fonts/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'robotomedium';
-  src: url("../fonts/Roboto-Medium-webfont.eot");
-  src: url("../fonts/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium-webfont.woff") format("woff"), url("../fonts/Roboto-Medium-webfont.ttf") format("truetype"), url("../fonts/Roboto-Medium-webfont.svg#robotomedium") format("svg");
+  src: url("../fonts/Roboto-Medium-webfont.woff") format("woff"), url("../fonts/Roboto-Medium-webfont.ttf") format("truetype"), url("../fonts/Roboto-Medium-webfont.svg#robotomedium") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'robotomedium_italic';
-  src: url("../fonts/Roboto-MediumItalic-webfont.eot");
-  src: url("../fonts/Roboto-MediumItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-MediumItalic-webfont.woff") format("woff"), url("../fonts/Roboto-MediumItalic-webfont.ttf") format("truetype"), url("../fonts/Roboto-MediumItalic-webfont.svg#robotomedium_italic") format("svg");
+  src: url("../fonts/Roboto-MediumItalic-webfont.woff") format("woff"), url("../fonts/Roboto-MediumItalic-webfont.ttf") format("truetype"), url("../fonts/Roboto-MediumItalic-webfont.svg#robotomedium_italic") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-bold-webfont.svg#robotobold") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'roboto_condensedbold';
-  src: url("../fonts/RobotoCondensed-Bold-webfont.eot");
-  src: url("../fonts/RobotoCondensed-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-Bold-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold") format("svg");
+  src: url("../fonts/RobotoCondensed-Bold-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-Bold-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'roboto_condensedbold_italic';
-  src: url("../fonts/RobotoCondensed-BoldItalic-webfont.eot");
-  src: url("../fonts/RobotoCondensed-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-BoldItalic-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic") format("svg");
+  src: url("../fonts/RobotoCondensed-BoldItalic-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'fdc';
-  src: url("../fonts/fdc.eot?a49uhg");
-  src: url("../fonts/fdc.eot?a49uhg#iefix") format("embedded-opentype"), url("../fonts/fdc.woff2?a49uhg") format("woff2"), url("../fonts/fdc.ttf?a49uhg") format("truetype"), url("../fonts/fdc.woff?a49uhg") format("woff"), url("../fonts/fdc.svg?a49uhg#fdc") format("svg");
+  src: url("../fonts/fdc.woff2?a49uhg") format("woff2"), url("../fonts/fdc.woff?a49uhg") format("woff"), url("../fonts/fdc.ttf?a49uhg") format("truetype"), url("../fonts/fdc.svg?a49uhg#fdc") format("svg");
   font-weight: 400;
   font-style: normal; }
 [class^='icon-'], [class*=' icon-'] {
@@ -305,7 +303,7 @@ body {
   padding: 0 0 100px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 2.5em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -362,7 +360,7 @@ p {
     font-size: 0.875em; }
 
 b, strong {
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+  font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -415,7 +413,7 @@ ol {
     ol li::before {
       content: counter(counter) ".";
       margin: 0 5px 0 0;
-      font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+      font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
       font-size: 0.85em;
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
@@ -531,7 +529,7 @@ a {
 .breadcrumb a, .breadcrumb span, .btn-arrow, .btn-block-arrow {
   position: relative;
   padding: 0 5px 0 0;
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -618,14 +616,22 @@ a {
   font-family: "robotoitalic", "robotoregular", sans-serif;
   color: #8b8b8b; }
 
-:-ms-input-placeholder {
+::-ms-input-placeholder {
   font-family: "robotoitalic", "robotoregular", sans-serif;
   color: #8b8b8b; }
 
 fieldset {
-  padding: 0;
-  border: 0;
   margin: 10px 0; }
+
+legend, label {
+  display: inline-block;
+  width: 180px;
+  font-size: 0.88em; }
+  .required legend, .required label {
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
+    .required legend::after, .required label::after {
+      content: '*';
+      color: #df5441; }
 
 input, textarea, select, button {
   -webkit-transition: 0.3s ease-in-out;
@@ -633,30 +639,26 @@ input, textarea, select, button {
   input:focus, textarea:focus, select:focus, button:focus {
     outline: 0; }
 
-input:-webkit-autofill, textarea:-webkit-autofill {
+input::-webkit-autofill, textarea::-webkit-autofill {
   box-shadow: 0 0 0 1000px white inset; }
 
-input[type=text], input[type=email], input[type=tel] {
+input[type=text], input[type=email], input[type=tel], input[type=password], input[type=number] {
   display: inline-block;
   padding: 7px 10px;
   border: 2px solid #c1c3c6;
-  box-sizing: border-box;
   vertical-align: middle;
-  font-family: "robotoregular", sans-serif;
-  font-size: 0.875em;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  font-size: 0.88em;
+  line-height: 1;
   background: none;
-  color: white;
-  line-height: normal; }
+  color: inherit; }
+input[type=radio] + label {
+  width: auto;
+  font-family: "robotoregular", sans-serif; }
 
 .wrapper-input-btn {
   position: relative; }
   .wrapper-input-btn .wrapper-input {
-    padding: 0 53px 0 0;
-    box-sizing: border-box; }
+    padding: 0 53px 0 0; }
 
 /* Header */
 #header {
@@ -728,7 +730,7 @@ input[type=text], input[type=email], input[type=tel] {
   display: inline-block;
   vertical-align: middle;
   padding: 21px 0 0 138px;
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -988,7 +990,7 @@ input[type=text], input[type=email], input[type=tel] {
   padding: 0;
   border-bottom: 4px solid #d63f39;
   margin: 0;
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+  font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: 1px; }
@@ -1195,7 +1197,7 @@ input[type=text], input[type=email], input[type=tel] {
   z-index: 1;
   overflow: hidden;
   padding: 13px 13px 12px 13px;
-  font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 0.75em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -1301,13 +1303,13 @@ input[type=text], input[type=email], input[type=tel] {
   text-align: center; }
   .bloc-top h1 {
     margin: 0;
-    padding: 130px 0 0 0;
+    padding: 130px 0 0;
     color: white; }
   .bloc-top p {
     display: inline-block;
     vertical-align: top;
     margin: 4px 0 0 0;
-    font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+    font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
     font-size: 1.25em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -1881,7 +1883,7 @@ input[type=text], input[type=email], input[type=tel] {
     display: block;
     line-height: 1em; }
   .news .day {
-    font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
     font-size: 2.313em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -1896,7 +1898,7 @@ input[type=text], input[type=email], input[type=tel] {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility; }
   .news .year {
-    font-family: "roboto_condensedbold", "robotomedium", "robotoregular", sans-serif;
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
     font-size: 0.938em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -1916,9 +1918,6 @@ input[type=text], input[type=email], input[type=tel] {
 /* Home specific style */
 /* Responsive horizontal */
 @media (max-width: 979px) {
-  .content-right {
-    padding-right: 60px; }
-
   .content-footer {
     padding-top: 10px;
     padding-bottom: 20px; }
@@ -1928,14 +1927,19 @@ input[type=text], input[type=email], input[type=tel] {
       float: none;
       margin: 10px 0 0; }
     .content-footer .social {
-      float: none; } }
+      float: none; }
+
+  .btn-block-arrow {
+    font-size: 1em; }
+
+  .content-right {
+    padding-right: 60px; }
+
+  .nav-tabs li {
+    padding: 20px 20px 17px; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px; }
-
-  .breadcrumb {
-    padding-left: 30px;
-    padding-right: 30px; }
 
   .content-default {
     padding-left: 30px;
@@ -1944,7 +1948,30 @@ input[type=text], input[type=email], input[type=tel] {
       padding-left: 30px;
       padding-right: 30px;
       margin-left: -30px;
-      margin-right: -30px; } }
+      margin-right: -30px; }
+
+  .breadcrumb {
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  .nav-tabs li {
+    padding: 15px 15px 12px; }
+    .nav-tabs li:not(:first-child)::after {
+      display: none; }
+
+  .tab-content {
+    padding-left: 30px;
+    padding-right: 30px; }
+    .tab-content-buttons .btn-block-arrow {
+      display: block;
+      width: 80%;
+      margin: 0 auto; }
+      .tab-content-buttons .btn-block-arrow:first-of-type {
+        margin-right: auto;
+        margin-bottom: 20px; } }
+@media (max-width: 480px) {
+  .tab-content-buttons .btn-block-arrow {
+    width: 100%; } }
 /* retina */
 /* Print styles */
 @media print {

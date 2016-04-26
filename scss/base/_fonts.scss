@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'robotoregular';
-    src: url('../fonts/Roboto-Regular-webfont.eot');
-    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+    src: url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
          url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: 400;
@@ -11,9 +9,7 @@
 
 @font-face {
     font-family: 'robotoitalic';
-    src: url('../fonts/Roboto-Italic-webfont.eot');
-    src: url('../fonts/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Italic-webfont.woff') format('woff'),
+    src: url('../fonts/Roboto-Italic-webfont.woff') format('woff'),
          url('../fonts/Roboto-Italic-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-Italic-webfont.svg#robotoitalic') format('svg');
     font-weight: 400;
@@ -22,9 +18,7 @@
 
 @font-face {
     font-family: 'robotomedium';
-    src: url('../fonts/Roboto-Medium-webfont.eot');
-    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+    src: url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
          url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: 400;
@@ -33,9 +27,7 @@
 
 @font-face {
     font-family: 'robotomedium_italic';
-    src: url('../fonts/Roboto-MediumItalic-webfont.eot');
-    src: url('../fonts/Roboto-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-MediumItalic-webfont.woff') format('woff'),
+    src: url('../fonts/Roboto-MediumItalic-webfont.woff') format('woff'),
          url('../fonts/Roboto-MediumItalic-webfont.ttf') format('truetype'),
          url('../fonts/Roboto-MediumItalic-webfont.svg#robotomedium_italic') format('svg');
     font-weight: 400;
@@ -43,10 +35,18 @@
 }
 
 @font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'roboto_condensedbold';
-    src: url('../fonts/RobotoCondensed-Bold-webfont.eot');
-    src: url('../fonts/RobotoCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/RobotoCondensed-Bold-webfont.woff') format('woff'),
+    src: url('../fonts/RobotoCondensed-Bold-webfont.woff') format('woff'),
          url('../fonts/RobotoCondensed-Bold-webfont.ttf') format('truetype'),
          url('../fonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
     font-weight: 400;
@@ -55,9 +55,7 @@
 
 @font-face {
     font-family: 'roboto_condensedbold_italic';
-    src: url('../fonts/RobotoCondensed-BoldItalic-webfont.eot');
-    src: url('../fonts/RobotoCondensed-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/RobotoCondensed-BoldItalic-webfont.woff') format('woff'),
+    src: url('../fonts/RobotoCondensed-BoldItalic-webfont.woff') format('woff'),
          url('../fonts/RobotoCondensed-BoldItalic-webfont.ttf') format('truetype'),
          url('../fonts/RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic') format('svg');
     font-weight: 400;
@@ -66,12 +64,10 @@
 
 @font-face {
     font-family: 'fdc';
-    src: url('../fonts/fdc.eot?a49uhg');
-    src: url('../fonts/fdc.eot?a49uhg#iefix') format('embedded-opentype'),
-        url('../fonts/fdc.woff2?a49uhg') format('woff2'),
-        url('../fonts/fdc.ttf?a49uhg') format('truetype'),
-        url('../fonts/fdc.woff?a49uhg') format('woff'),
-        url('../fonts/fdc.svg?a49uhg#fdc') format('svg');
+    src: url('../fonts/fdc.woff2?a49uhg') format('woff2'),
+         url('../fonts/fdc.woff?a49uhg') format('woff'),
+         url('../fonts/fdc.ttf?a49uhg') format('truetype'),
+         url('../fonts/fdc.svg?a49uhg#fdc') format('svg');
     font-weight: 400;
     font-style: normal;
 }

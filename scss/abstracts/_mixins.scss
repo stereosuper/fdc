@@ -103,8 +103,16 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
-@mixin roboto-bold-italic($size){
-    font-family: $roboto-bold-it;
+@mixin roboto-cd-bold($size){
+    font-family: $roboto-cd-bold;
+    font-size: $size;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+@mixin roboto-cd-bold-italic($size){
+    font-family: $roboto-cd-bold-it;
     font-size: $size;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;

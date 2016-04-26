@@ -5,14 +5,14 @@
 	text-align: center;
 	h1{
 		margin: 0;
-		padding: 130px 0 0 0;
+		padding: 130px 0 0;
 		color: $blanc;
 	}
 	p{
 		display: inline-block;
 		vertical-align: top;
 		margin: 4px 0 0 0;
-		@include roboto-bold(1.25em);
+		@include roboto-cd-bold(1.25em);
 		color: $theme-rouge-txt;
 		background-color: $blanc;
 		background-color: rgba($blanc, 0.8);

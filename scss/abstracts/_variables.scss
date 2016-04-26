@@ -37,5 +37,6 @@ $roboto: 'robotoregular', sans-serif;
 $roboto-it: 'robotoitalic', $roboto;
 $roboto-medium: 'robotomedium', $roboto;
 $roboto-medium-it: 'robotomedium_italic', $roboto-it;
-$roboto-bold: 'roboto_condensedbold', $roboto-medium;
-$roboto-bold-it: 'roboto_condensedbold_italic', $roboto-it;
+$roboto-bold: 'robotobold', $roboto-medium;
+$roboto-cd-bold: 'roboto_condensedbold', $roboto-bold;
+$roboto-cd-bold-it: 'roboto_condensedbold_italic', $roboto-it;
