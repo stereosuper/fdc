@@ -3,63 +3,12 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
 	<head>
-		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	  	<meta charset='utf-8'>
-	  	<title>Forum des Commerces</title>
-	  	<meta name='description' content=''>
-	  	<meta name='viewport' content='width=device-width,initial-scale=1'>
-
-	  	<link rel='stylesheet' href='css/main.css'>
-	  	<script src='js/modernizr-custom.js'></script>
+		<title>Forum des Commerces</title>
+	  	<?php include_once('includes/head.html'); ?>
 	</head>
 
 	<body>
-		<header id='header' class='clearfix'>
-			<div class='zone-left-header'>
-				<a href='./' class='home-link'>
-					Forum des Commerces
-				</a>
-			</div>
-			<nav role='navigation'>
-				<ul class='menu-header'>
-					<li>
-						<a href='#'>Qui sommes nous ?</a>
-					</li><!--
-					--><li>
-						<a href='#'>Achat</a>
-					</li><!--
-					--><li>
-						<a href='#'>Vente</a>
-					</li><!--
-					--><li>
-						<a href='#'>Matériel</a>
-					</li><!--
-					--><li>
-						<a href='#'>Personnel</a>
-					</li><!--
-					--><li>
-						<a href='#'>Partenaires</a>
-					</li>
-				</ul>
-				<ul class='nav-header'>
-					<li>
-						<a href='#' class='icon-mail'></a>
-					</li><!--
-					--><li>
-						<a href='#' class='icon-tool'></a>
-					</li><!--
-					--><li>
-						<button class='icon-user'></button>
-					</li>
-				</ul>
-			</nav>
-			<!--<button id='burger'></button>-->
-		</header>
-
-		<button id='logo'>
-			<span></span><span></span><span></span>
-			<img src='img/logo.png' srcset='img/logo.png 1x, img/logo@2x.png 2x' alt='Forum des Commerces'>
-		</button>
+		<?php include_once('includes/header.html'); ?>
 
 		<aside id='sidebar-links'>
 			<button id='btn-close-sidebar-links' class='icon-cross'></button>
@@ -166,7 +115,7 @@
 													<a href='#'>Coiffure Esthétique Parfumerie</a>
 												</td>
 												<td>
-													
+
 												</td>
 											</tr>
 											<tr>
@@ -412,117 +361,7 @@
 			</div>
 		</main>
 
-	  	<footer id='footer' role='contentinfo'>
-	  		<div class='wrapper-overflow-hidden'>
-		  		<div class='container'>
-		  			<div class='rects-footer'>
-						<span></span><span></span><span></span>
-		  			</div>
-					<ul class='cols-footer'>
-						<li>
-							<h2>Forum des Commerces</h2>
-							<p>Le Forum des Commerces est un portail web qui gère 16 sites d'annonces de vente de fonds de commerce, d'entreprises, de locaux et murs commerciaux, spécialisés par activité. <a href='#' class='btn-arrow'>En savoir plus</a></p>
-							<div class='wrapper-alignment'>
-								<div class='content-align-middle wrapper-address'>
-									<address>
-										<ul>
-											<li><strong>Forum des Commerces</strong></li>
-											<li>Imm Hub Créatic</li>
-											<li>6 rue Rose Dieng Kuntz</li>
-											<li>CS 70790</li>
-											<li>44307 NANTES CEDEX 3</li>
-											<li>02 40 85 18 17</li>
-										</ul>
-									</address>
-								</div><!--
-								--><div class='content-align-middle wrapper-contact center-align'>
-									<a href='#' class='btn-block big'>Contactez nous</a>
-								</div>
-							</div>
-						</li><!--
-						--><li>
-							<h2>Ils parlent de nous</h2>
-							<p>Ils recommandent Forum des Commerces :</p>
-							<ul class='logos'>
-								<li>
-									<img src='img/bpi.png'>
-								</li><!--
-								--><li>
-									<img src='img/cco.png'>
-								</li><!--
-								--><li>
-									<img src='img/atlantic.png'>
-								</li><!--
-								--><li>
-									<img src='img/lexpress.png'>
-								</li><!--
-								--><li>
-									<img src='img/bfm-business.png'>
-								</li><!--
-								--><li>
-									<img src='img/com-medias.png'>
-								</li>
-							</ul>
-						</li><!--
-						--><li>
-							<h2>Newsletter Weblex</h2>
-							<p>L’information juridique en ligne</p>
-							<form>
-								<fieldset>
-									<input type='email' id='email' class='full-width' name='email' placeholder='E-mail'>
-								</fieldset>
-								<fieldset>
-									<div class='wrapper-input-btn'>
-										<div class='wrapper-input'>
-											<input type='text' id='name' class='full-width' name='name' placeholder='Nom'>
-										</div>
-										<button class='btn-block'>Ok</button>
-									</div>
-								</fieldset>
-							</form>
-						</li>
-					</ul>
-		  		</div>
-	  		</div>
-	  		<nav class='wrapper-menu-footer'>
-	  			<div class='container-full'>
-		  			<ul class='menu-footer'>
-		  				<li>
-		  					<a href='#'>Mentions légales</a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#'>Plan du site</a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#'>Tarifs</a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#'>Conditions Générales de Vente</a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#'>Presse</a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#'>À propos</a>
-		  				</li>
-		  			</ul>
-		  			<ul class='social social-footer'>
-		  				<li>
-		  					<a href='#' class='icon-share'></a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#' class='icon-twitter'></a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#' class='icon-facebook'></a>
-		  				</li><!--
-		  				--><li>
-		  					<a href='#' class='icon-linkedin'></a>
-		  				</li>
-		  			</ul>
-	  			</div>
-	  		</nav>
-	  	</footer>
+	  	<?php include_once('includes/footer.html'); ?>
 
 		<!-- Tweens -->
 		<script src="js/libs/greensock/TweenMax.min.js"></script>
