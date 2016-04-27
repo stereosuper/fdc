@@ -128,7 +128,7 @@ legend {
 select {
   cursor: pointer;
 }
-select::-moz-focusring {
+select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
@@ -281,6 +281,10 @@ hr {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check::before {
+  content: "";
 }
 
 .icon-cross::before {
@@ -742,6 +746,21 @@ a:active {
 }
 
 /* Forms */
+.form-half {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  vertical-align: top;
+  margin: 25px 0 0;
+}
+.form-half .btn-arrow {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+}
+
 ::-webkit-input-placeholder {
   font-family: "robotoitalic", "robotoregular", sans-serif;
   font-size: 0.88em;
@@ -769,6 +788,35 @@ fieldset.inline-b {
 fieldset.block-pwd {
   margin: 35px 0 25px;
 }
+fieldset.block-grey {
+  padding: 25px;
+  margin: 40px 0 35px;
+  background: #f4f5f8;
+  /*.select{
+      width: 275px;
+  }*/
+}
+fieldset.block-grey legend {
+  width: 100%;
+  /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
+  float: left;
+  margin-right: 0;
+}
+.form-half fieldset.block-grey .label-select {
+  width: 36.99%;
+}
+.form-half fieldset.block-grey .select {
+  width: 59.91%;
+}
+fieldset.block-right {
+  margin: 10px 0 10px 175px;
+}
+fieldset.block-right input[type=checkbox] {
+  margin-left: 12px;
+}
+.form-half fieldset.block-right {
+  margin-left: 37.93%;
+}
 
 legend, label {
   display: inline-block;
@@ -789,15 +837,40 @@ legend {
   margin-bottom: 15px;
 }
 
+.legend-next-fieldset {
+  /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
+  float: left;
+}
+
+.label-select {
+  font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
+}
+.form-half .label-select {
+  width: 34.92%;
+  margin: 0 3.1% 0 0;
+}
+.label-select.small {
+  /*width: auto;
+  margin-left: 14px;
+  margin-right: 14px;*/
+}
+.form-half .label-select.small {
+  width: 8.26%;
+  margin: 0;
+  text-align: center;
+}
+
 input, textarea, select {
   width: 100%;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 input:focus, textarea:focus, select:focus {
   outline: 0;
 }
 
+input, textarea {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
 input:-webkit-autofill, textarea:-webkit-autofill {
   box-shadow: 0 0 0 1000px white inset;
 }
@@ -833,17 +906,129 @@ input[type=number] {
 input[type=password] {
   max-width: 140px;
 }
-input[type=radio] {
+input[type=radio], input[type=checkbox] {
   width: auto;
+  vertical-align: middle;
 }
-input[type=radio] + label {
+input[type=radio] + label, input[type=checkbox] + label {
   width: auto;
   margin: 0 30px 0 10px;
   font-family: "robotoregular", sans-serif;
   cursor: pointer;
 }
-input[type=radio] + label::after {
+input[type=radio] + label::after, input[type=checkbox] + label::after {
   display: none;
+}
+input[type=checkbox] {
+  position: absolute;
+  left: -99em;
+}
+input[type=checkbox] + label {
+  position: relative;
+  padding: 0 0 0 25px;
+  margin-right: 0;
+}
+input[type=checkbox] + label::before, input[type=checkbox] + label::after {
+  content: '';
+  position: absolute;
+}
+input[type=checkbox] + label::before {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ebebeb;
+  left: 0;
+  top: -1px;
+  background: #fff;
+  outline: 1px solid #dadada;
+}
+input[type=checkbox] + label::after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e907';
+  display: block;
+  top: 1px;
+  left: 2px;
+  font-size: 12px;
+  color: #7392da;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+input[type=checkbox]:checked + label::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+select {
+  height: 42px;
+  padding: 0 30px 0 12px;
+  border: 1px solid #ebebeb;
+  /* overflow pour empecher le dépassement de l'outline sur ff au focus */
+  overflow: hidden;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "robotoitalic", "robotoregular", sans-serif;
+  font-size: 0.88em;
+  background: #fff;
+  outline: 1px solid #dadada;
+  -webkit-transition: border 0.3s ease-in-out, outline 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+select::-ms-expand {
+  display: none;
+}
+.lt-ie10 select {
+  padding-right: 0;
+}
+select:focus {
+  border-color: #7392da;
+  outline: 1px solid #7392da;
+  outline-offset: 0;
+}
+
+.select {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  position: relative;
+}
+.select::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #000 transparent transparent transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 14px;
+  pointer-events: none;
+}
+.lt-ie10 .select::after {
+  display: none;
+}
+.select.small {
+  width: 130px;
+}
+.form-half .select.small {
+  width: 26.86%;
+}
+.form-half .select {
+  width: 61.9%;
 }
 
 button {
@@ -852,6 +1037,9 @@ button {
 }
 button[type=submit] {
   margin: 0 0 0 195px;
+}
+.form-half button[type=submit] {
+  margin-left: 37.93%;
 }
 button:focus {
   outline: 0;
@@ -876,6 +1064,42 @@ button:focus {
 }
 .wrapper-input-btn .wrapper-input {
   padding: 0 53px 0 0;
+}
+
+.map-container {
+  display: inline-block;
+  width: 50%;
+  padding: 0 0 0 12%;
+}
+
+.map-form .department, .map-form .country {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.map-form .department {
+  fill: #fff;
+  stroke: #7392da;
+  stroke-width: 0.05px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.map-form .department:hover {
+  fill: #7392da;
+}
+.map-form .department.active {
+  fill: #c6333e;
+}
+.map-form .department.adjacent {
+  fill: #ef8630;
+}
+.map-form .department.adjacent:hover {
+  fill: #7392da;
+}
+.map-form .country {
+  fill: none;
+  stroke: #93939a;
+  stroke-width: 0.12px;
 }
 
 /* Header */
@@ -1264,7 +1488,7 @@ button:focus {
 
 .nav-tabs {
   padding: 0;
-  border-bottom: 4px solid #d63f39;
+  border-bottom: 4px solid #c6333e;
   margin: 0;
   font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 0.75em;
@@ -1296,7 +1520,7 @@ button:focus {
   background: url(../layoutImg/arrows-tab.png) no-repeat;
 }
 .nav-tabs li.active {
-  background: #d63f39;
+  background: #c6333e;
   color: #fff;
 }
 .nav-tabs li.active + li::after {
@@ -1333,6 +1557,10 @@ button:focus {
 .tab-content-buttons .btn-block-arrow:first-of-type {
   margin-right: 4%;
 }
+.tab-content .block-grey {
+  padding-left: 60px;
+  margin-left: -60px;
+}
 
 /* Breadcrumb */
 .breadcrumb {
@@ -1353,7 +1581,7 @@ button:focus {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inline-block;
+  display: block;
   max-width: 285px;
   color: inherit;
 }
@@ -2431,7 +2659,11 @@ button:focus {
     margin-bottom: 10px;
   }
 
-  input[type=radio] + label {
+  .legend-next-fieldset {
+    float: none;
+  }
+
+  input[type=radio] + label, input[type=checkbox] + label {
     display: inline-block;
   }
 
@@ -2455,8 +2687,11 @@ button:focus {
     padding-right: 30px;
   }
 
+  .nav-tabs {
+    font-size: 0.62em;
+  }
   .nav-tabs li {
-    padding: 15px 15px 12px;
+    padding: 12px 12px 9px;
   }
   .nav-tabs li:not(:first-child)::after {
     display: none;
@@ -2474,6 +2709,21 @@ button:focus {
   .tab-content-buttons .btn-block-arrow:first-of-type {
     margin-right: auto;
     margin-bottom: 20px;
+  }
+  .tab-content .block-grey {
+    padding-left: 30px;
+    margin-left: -30px;
+  }
+}
+@media (max-width: 650px) {
+  .nav-tabs {
+    font-size: 0.75em;
+  }
+  .nav-tabs span {
+    display: none;
+  }
+  .nav-tabs li {
+    padding: 9px 9px 6px;
   }
 }
 @media (max-width: 480px) {

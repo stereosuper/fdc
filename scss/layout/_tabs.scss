@@ -1,6 +1,6 @@
 .nav-tabs{
     padding: 0;
-    border-bottom: 4px solid $theme-gradient-2;
+    border-bottom: 4px solid $theme-btn;
     margin: 0;
     font-family: $roboto-bold;
     font-size: 0.75em;
@@ -30,7 +30,7 @@
             }
         }
         &.active{
-            background: $theme-gradient-2;
+            background: $theme-btn;
             color: #fff;
             + li{
                 &::after{
@@ -71,6 +71,10 @@
                 margin-right: 4%;
             }
         }
+    }
+    .block-grey{
+        padding-left: 60px;
+        margin-left: -60px;
     }
 }
 

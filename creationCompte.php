@@ -20,13 +20,13 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs'>
                         <li class='active'>
-                            1. Bienvenue !
+                            1<span>. Bienvenue !</span>
                         </li><li>
-                            2. Mes informations
+                            2<span>. Mes informations</span>
                         </li><li>
-                            3. Je recherche...
+                            3<span>. Je recherche...</span>
                         </li><li>
-                            4. Mes besoins
+                            4<span>. Mes besoins</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
@@ -35,7 +35,7 @@
                             <a href='#' class='btn-arrow small'>Déja inscrit ?</a>
                         </div>
                         <div class='tab-content-buttons'>
-                            <a href='#' class='btn-block-arrow'>Je recherche un bien</a><a href='#' class='btn-block-arrow btn-orange'>Je vends un bien</a>
+                            <a href='creationCompte2.php' class='btn-block-arrow'>Je recherche un bien</a><a href='#' class='btn-block-arrow btn-orange'>Je vends un bien</a>
                         </div>
                         <div class='condensed-text'>
                             <p>Créer un compte vous donne accès à de nombreuses fonctionnalités.</p>

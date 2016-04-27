@@ -20,13 +20,13 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs'>
                         <li>
-                            <a href='#'>1. Bienvenue !</a>
+                            <a href='creationCompte.php'>1<span>. Bienvenue !</span></a>
                         </li><li class='active'>
-                            2. Mes informations
+                            2<span>. Mes informations</span>
                         </li><li>
-                            3. Je recherche...
+                            3<span>. Je recherche...</span>
                         </li><li>
-                            4. Mes besoins
+                            4<span>. Mes besoins</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
@@ -36,8 +36,7 @@
                         </div>
                         <form action='#' method='post'>
                             <fieldset class='required'>
-                                <legend>Civilités</legend>
-                                <fieldset class='inline-b'>
+                                <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>
                                     <input type='radio' name='civilites' id='mme'><label for='mme'>Mme</label>
                                     <input type='radio' name='civilites' id='mr'><label for='mr'>Mr</label>
                                 </fieldset>

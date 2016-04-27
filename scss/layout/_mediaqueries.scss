@@ -44,8 +44,12 @@
         margin-bottom: 10px;
     }
 
+    .legend-next-fieldset{
+        float: none;
+    }
+
     input{
-        &[type=radio]{
+        &[type=radio], &[type=checkbox]{
             + label{
                 display: inline-block;
             }
@@ -75,8 +79,9 @@
     }
 
     .nav-tabs{
+        font-size: 0.62em;
         li{
-            padding: 15px 15px 12px;
+            padding: 12px 12px 9px;
             &:not(:first-child){
                 &::after{
                     display: none;
@@ -98,6 +103,22 @@
                     margin-bottom: 20px;
                 }
             }
+        }
+        .block-grey{
+            padding-left: 30px;
+            margin-left: -30px;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .nav-tabs{
+        font-size: 0.75em;
+        span{
+            display: none;
+        }
+        li{
+            padding: 9px 9px 6px;
         }
     }
 }

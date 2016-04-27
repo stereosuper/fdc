@@ -1,5 +1,19 @@
 /* Forms */
 
+.form-half{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    vertical-align: top;
+    margin: 25px 0 0;
+    .btn-arrow{
+        position: absolute;
+        bottom: 25px;
+        right: 0;
+        transform: translateX(35%);
+    }
+}
+
 ::-webkit-input-placeholder{
 	font-family: $roboto-it;
     font-size: 0.88em;
@@ -24,6 +38,37 @@ fieldset{
     &.block-pwd{
         margin: 35px 0 25px;
     }
+    &.block-grey{
+        padding: 25px;
+        margin: 40px 0 35px;
+        background: #f4f5f8;
+        legend{
+            width: 100%;
+            /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
+            float: left;
+            margin-right: 0;
+        }
+        /*.select{
+            width: 275px;
+        }*/
+        .form-half &{
+            .label-select{
+                width: 36.99%;
+            }
+            .select{
+                width: 59.91%;
+            }
+        }
+    }
+    &.block-right{
+        margin: 10px 0 10px 175px;
+        input[type=checkbox]{
+            margin-left: 12px;
+        }
+        .form-half &{
+            margin-left: 37.93%;
+        }
+    }
 }
 
 legend, label{
@@ -45,15 +90,39 @@ legend{
     margin-bottom: 15px;
 }
 
+.legend-next-fieldset{
+    /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
+    float: left;
+}
+
+.label-select{
+    //width: 169px;
+    font-family: $roboto-bold;
+    .form-half &{
+        width: 34.92%;
+        margin: 0 3.1% 0 0
+    }
+    &.small{
+        /*width: auto;
+        margin-left: 14px;
+        margin-right: 14px;*/
+        .form-half &{
+            width: 8.26%;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+
 input, textarea, select{
     width: 100%;
-  	transition: $transition;
   	&:focus{
       	outline: 0;
   	}
 }
 
 input, textarea{
+    transition: $transition;
   	&:-webkit-autofill{
       	box-shadow: 0 0 0 1000px rgb(255, 255, 255) inset;
   	}
@@ -91,8 +160,9 @@ input{
     &[type=password]{
         max-width: 140px;
     }
-    &[type=radio]{
+    &[type=radio], &[type=checkbox]{
         width: auto;
+        vertical-align: middle;
         + label{
             width: auto;
             margin: 0 30px 0 10px;
@@ -103,12 +173,115 @@ input{
             }
         }
     }
+    &[type=checkbox]{
+        position: absolute;
+        left: -99em;
+        + label{
+            position: relative;
+            padding: 0 0 0 25px;
+            margin-right: 0;
+            &::before, &::after{
+                content: '';
+                position: absolute;
+            }
+            &::before{
+                @include size(15px);
+
+                border: 1px solid #ebebeb;
+                left: 0;
+                top: -1px;
+                background: #fff;
+                outline: 1px solid #dadada;
+            }
+            &::after{
+                @include font-icon;
+
+                content: '\e907'; // icon-check
+                display: block;
+                top: 1px;
+                left: 2px;
+                font-size: 12px;
+                color: $bleu-link;
+                opacity: 0;
+                transform: scale(0);
+                transition: $transition;
+            }
+        }
+        &:checked{
+            + label{
+                &::after{
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+select{
+    height: 42px;
+    padding: 0 30px 0 12px;
+    border: 1px solid #ebebeb;
+    /* overflow pour empecher le dépassement de l'outline sur ff au focus */
+    overflow: hidden;
+    appearance: none;
+    font-family: $roboto-it;
+    font-size: 0.88em;
+    background: #fff;
+    outline: 1px solid #dadada;
+    transition: border $transition, outline $transition;
+    &::-ms-expand{
+        display: none;
+    }
+    .lt-ie10 &{
+        padding-right: 0;
+    }
+    &:focus{
+        border-color: $bleu-link;
+        outline: 1px solid $bleu-link;
+        outline-offset: 0;
+    }
+}
+.select{
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+    &::after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 4px 0 4px;
+        border-color: #000 transparent transparent transparent;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 14px;
+        pointer-events: none;
+        .lt-ie10 &{
+            display: none;
+        }
+    }
+    &.small{
+        width: 130px;
+        .form-half &{
+            width: 26.86%;
+        }
+    }
+    .form-half &{
+        width: 61.9%;
+    }
 }
 
 button{
     transition: $transition;
     &[type=submit]{
         margin: 0 0 0 195px;
+        .form-half &{
+            margin-left: 37.93%;
+        }
     }
     &:focus{
         outline: 0;
@@ -138,4 +311,40 @@ button{
 	.wrapper-input{
 		padding: 0 53px 0 0;
 	}
+}
+
+.map-container{
+    display: inline-block;
+    width: 50%;
+    padding: 0 0 0 12%;
+}
+.map-form{
+    .department, .country{
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    .department{
+        fill: #fff;
+        stroke: $bleu-link;
+        stroke-width: 0.05px;
+        cursor: pointer;
+        transition: $transition;
+        &:hover{
+            fill: $bleu-link;
+        }
+        &.active{
+            fill: $theme-btn;
+        }
+        &.adjacent{
+            fill: #ef8630;
+            &:hover{
+                fill: $bleu-link;
+            }
+        }
+    }
+    .country{
+        fill: none;
+        stroke: #93939a;
+        stroke-width: 0.12px;
+    }
 }
