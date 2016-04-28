@@ -649,7 +649,7 @@ a:active {
 }
 
 /* Placeholders */
-.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back {
+.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-block-arrow {
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   text-decoration: none;
@@ -658,10 +658,10 @@ a:active {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back {
+.breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-block-arrow {
   font-size: 1.2em;
 }
-.breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back {
+.breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-block-arrow {
   font-size: 0.75em;
 }
 

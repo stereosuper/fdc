@@ -60,6 +60,7 @@
 }
 
 .btn-block-arrow{
+	@extend %btn-arrow-base;
 	@extend %btn-arrow;
 
 	display: inline-block;
