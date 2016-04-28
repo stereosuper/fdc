@@ -649,7 +649,7 @@ a:active {
 }
 
 /* Placeholders */
-.btn-arrow, .btn-arrow-back {
+.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back {
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   text-decoration: none;
@@ -658,10 +658,10 @@ a:active {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.big.btn-arrow, .big.btn-arrow-back {
+.breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back {
   font-size: 1.2em;
 }
-.small.btn-arrow, .small.btn-arrow-back {
+.breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back {
   font-size: 0.75em;
 }
 
@@ -884,7 +884,7 @@ legend {
 }
 .form-half .label-select {
   width: 34.92%;
-  margin: 0 3.1% 0 0;
+  margin-right: 3.1%;
 }
 .label-select.small {
   /*width: auto;
@@ -1105,9 +1105,9 @@ button:focus {
 
 .map-container {
   display: inline-block;
-  width: 38%;
+  width: 40%;
   position: relative;
-  margin: 0 0 0 12%;
+  margin: 0 0 0 10%;
 }
 .map-container .btn-metropole {
   position: relative;
@@ -1124,10 +1124,6 @@ button:focus {
   left: 0;
   right: 0;
   top: 0;
-  /*&.active{
-      z-index: 1;
-      opacity: 1;
-  }*/
 }
 .map-form .department, .map-form .country {
   stroke-linecap: round;
@@ -1208,6 +1204,8 @@ button:focus {
   left: 0;
   opacity: 0;
   z-index: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .map-btn a {
   display: inline-block;
@@ -2739,6 +2737,21 @@ button:focus {
 /* Home specific style */
 /* Responsive horizontal */
 @media (max-width: 979px) {
+  h1 {
+    padding: 0 45px;
+  }
+
+  .content-default {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .content-default .content-footer {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+
   .content-footer {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -2759,11 +2772,71 @@ button:focus {
   }
 
   .content-right {
-    padding-right: 60px;
+    padding-right: 45px;
   }
 
   .nav-tabs li {
     padding: 20px 20px 17px;
+  }
+
+  .tab-content {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .tab-content .block-grey {
+    padding-left: 45px;
+    margin-left: -45px;
+  }
+
+  .form-half {
+    margin-top: 0;
+  }
+  .form-half .select.small {
+    width: 61.9%;
+  }
+  .form-half .label-select.small {
+    width: 34.92%;
+    margin: 10px 3.1% 0 0;
+    text-align: right;
+  }
+  .form-half .label-select.small + .select {
+    margin-top: 10px;
+  }
+  .form-half .btn-arrow {
+    display: inline-block;
+    position: static;
+    margin: 10px 0 0 37.93%;
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  .map-container {
+    width: 45%;
+    margin: 0 0 0 5%;
+  }
+
+  .map-form-extra .department {
+    position: static;
+  }
+  .map-form-extra > div {
+    padding: 0;
+    margin: 1em 0;
+    text-align: center;
+  }
+  .map-form-extra > div.small {
+    padding: 0 0 0 5%;
+  }
+  .map-form-extra b {
+    display: block;
+    margin: 10px 0 0;
+  }
+
+  .map-form-dom > div.small {
+    padding: 0 0 0 5%;
+  }
+
+  .map-btn {
+    top: 175px;
   }
 }
 @media (max-width: 767px) {
@@ -2818,6 +2891,10 @@ button:focus {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .tab-content-title .h1 {
+    width: 100%;
+    max-width: none;
+  }
   .tab-content-buttons .btn-block-arrow {
     display: block;
     width: 80%;
@@ -2830,6 +2907,45 @@ button:focus {
   .tab-content .block-grey {
     padding-left: 30px;
     margin-left: -30px;
+  }
+
+  .form-half {
+    width: 100%;
+  }
+  .form-half fieldset.block-right {
+    margin-left: 0;
+  }
+  .form-half fieldset.block-grey .label-select {
+    width: auto;
+  }
+  .form-half fieldset.block-grey .select {
+    width: 300px;
+  }
+  .form-half .label-select {
+    width: 180px;
+    margin-right: 0;
+  }
+  .form-half .label-select.small {
+    width: auto;
+    margin-right: 0;
+    text-align: left;
+  }
+  .form-half .select {
+    width: 300px;
+  }
+  .form-half .select.small {
+    width: 130px;
+  }
+  .form-half button[type=submit] {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  .form-half .btn-arrow {
+    margin-left: 0;
+  }
+
+  .map-container {
+    display: none;
   }
 }
 @media (max-width: 650px) {
@@ -2845,6 +2961,17 @@ button:focus {
 }
 @media (max-width: 480px) {
   .tab-content-buttons .btn-block-arrow {
+    width: 100%;
+  }
+
+  .form-half fieldset.block-grey .select {
+    width: 100%;
+  }
+
+  .select {
+    width: 100%;
+  }
+  .form-half .select {
     width: 100%;
   }
 }

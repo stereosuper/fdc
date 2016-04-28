@@ -1,7 +1,8 @@
 $(function(){
 
 	/**** VARIABLES ****/
-	var myScroll, tpsAnimChoice = 600;
+	var myScroll, tpsAnimChoice = 600,
+		windowWidth = $(window).width();
 
 
 	// Request anim frame
@@ -35,6 +36,75 @@ $(function(){
 		myScroll = $(document).scrollTop();
 
 		requestAnimFrame(scrollPage);
+	}
+
+	// Creation de compte - Interactive map
+	function setMapForm(){
+		var mapContainer = $('#mapForm'), maps = mapContainer.find('.map-form'),
+			map = $('#mapFormMetropole'), mapExtras = mapContainer.find('.map-form-extra'),
+			departments = mapContainer.find('.department'),
+			select = $('#departement'), checkbox = $('#departement-etendre'),
+			links = mapContainer.find('a'), mapBtn = mapContainer.find('.map-btn'),
+			btnMetropole = mapContainer.find('.btn-metropole');
+
+		function lightAdjacentsOn(){
+			if(checkbox.is(':checked') && map.find('.active').length){
+				if(map.find('.active').attr('data-adjacent') !== undefined){
+					var adjacents = map.find('.active').attr('data-adjacent').split(','),
+						nbAdjacents = adjacents.length, i = 0;
+					for(i; i<nbAdjacents; i++){
+						map.find('[data-department="'+adjacents[i]+'"]').attr('class', 'department adjacent');
+					}
+				}
+			}else if(!checkbox.is(':checked') && map.find('.adjacent').length){
+				var active;
+				if(map.find('.active').length){
+					active = map.find('.active').attr('data-department');
+				}
+				departments.attr('class', 'department');
+				if(active.length){
+					map.find('[data-department="'+active+'"]').attr('class', 'department active');
+				}
+			}
+		}
+
+		departments.on('click', function(e){
+			departments.attr('class', 'department');
+			$(this).attr('class', 'department active');
+			select.val($(this).attr('data-department'));
+			lightAdjacentsOn(checkbox);
+		});
+
+		select.on('change', function(e){
+			departments.attr('class', 'department');
+			if(mapContainer.find('[data-department="'+select.val()+'"]').length){
+				mapContainer.find('[data-department="'+select.val()+'"]').attr('class', 'department active');
+			}else if(select.val() === '92' || select.val() === '93' || select.val() === '94'){
+				// ces départements sont ceux de l'ile de france et sont inclus
+				// dans le département 75 dans la carte
+				mapContainer.find('[data-department="75"]').attr('class', 'department active').siblings().attr('class', 'department');
+			}
+			lightAdjacentsOn(checkbox);
+		});
+
+		checkbox.on('change', function(e){
+			lightAdjacentsOn(checkbox);
+		});
+
+		links.on('click', function(e){
+			e.preventDefault();
+			if($(this).parents('.map-btn').length){
+				mapBtn.removeClass('active');
+				btnMetropole.addClass('active');
+				TweenMax.to($($(this).attr('href')), 0.2, {x: '0%', opacity: 1, zIndex: 1});
+				TweenMax.to(map, 0.2, {x: '-100%', opacity: 0, zIndex: 0});
+			}else{
+				mapBtn.addClass('active');
+				btnMetropole.removeClass('active');
+				TweenMax.to(map, 0.2, {x: '0%', opacity: 1, zIndex: 1});
+				TweenMax.to(mapExtras, 0.2, {x: '100%', opacity: 0, zIndex: 0});
+			}
+		});
 	}
 
 
@@ -83,77 +153,8 @@ $(function(){
 
 
 	// Creation de compte - Interactive map
-	function lightAdjacentsOn(checkbox){
-		var map = $('#mapFormMetropole');
-		if(checkbox.is(':checked') && map.find('.active').length){
-			if(map.find('.active').attr('data-adjacent') !== undefined){
-				var adjacents = map.find('.active').attr('data-adjacent').split(','),
-					nbAdjacents = adjacents.length, i = 0;
-				for(i; i<nbAdjacents; i++){
-					map.find('[data-department="'+adjacents[i]+'"]').attr('class', 'department adjacent');
-				}
-			}
-		}else if(!checkbox.is(':checked') && map.find('.adjacent').length){
-			var active;
-			if(map.find('.active').length){
-				active = map.find('.active').attr('data-department');
-			}
-			departments.attr('class', 'department');
-			if(active.length){
-				map.find('[data-department="'+active+'"]').attr('class', 'department active');
-			}
-		}
-	}
-
-	if($('#mapForm').length){
-		var mapContainer = $('#mapForm'), maps = mapContainer.find('.map-form'),
-			map = $('#mapFormMetropole'), mapExtras = mapContainer.find('.map-form-extra'),
-			departments = mapContainer.find('.department'),
-			select = $('#departement'), checkbox = $('#departement-etendre'),
-			links = mapContainer.find('a'), mapBtn = mapContainer.find('.map-btn'),
-			btnMetropole = mapContainer.find('.btn-metropole');
-
-		departments.on('click', function(e){
-			departments.attr('class', 'department');
-			$(this).attr('class', 'department active');
-			select.val($(this).attr('data-department'));
-			lightAdjacentsOn(checkbox);
-		});
-
-		select.on('change', function(e){
-			departments.attr('class', 'department');
-
-			if(mapContainer.find('[data-department="'+select.val()+'"]').length){
-				mapContainer.find('[data-department="'+select.val()+'"]').attr('class', 'department active');
-			}else if(select.val() === '92' || select.val() === '93' || select.val() === '94'){
-				// ces départements sont ceux de l'ile de france et sont inclus
-				// dans le département 75 dans la carte
-				mapContainer.find('[data-department="75"]').attr('class', 'department active').siblings().attr('class', 'department');
-			}
-
-			lightAdjacentsOn(checkbox);
-		});
-
-		checkbox.on('change', function(e){
-			lightAdjacentsOn(checkbox);
-		});
-
-		links.on('click', function(e){
-			e.preventDefault();
-			//maps.removeClass('active');
-			//$($(this).attr('href')).addClass('active');
-			if($(this).parents('.map-btn').length){
-				mapBtn.removeClass('active');
-				btnMetropole.addClass('active');
-				TweenMax.to($($(this).attr('href')), 0.2, {x: '0%', opacity: 1, zIndex: 1});
-				TweenMax.to(map, 0.2, {x: '-100%', opacity: 0, zIndex: 0});
-			}else{
-				mapBtn.addClass('active');
-				btnMetropole.removeClass('active');
-				TweenMax.to(map, 0.2, {x: '0%', opacity: 1, zIndex: 1});
-				TweenMax.to(mapExtras, 0.2, {x: '100%', opacity: 0, zIndex: 0});
-			}
-		});
+	if($('#mapForm').length && windowWidth > 767){
+		setMapForm();
 	}
 
 
@@ -173,6 +174,7 @@ $(function(){
     });
 
     $(window).resize(function(){
+    	windowWidth = $(window).width();
 	});
 
 	$(window).load(function(){

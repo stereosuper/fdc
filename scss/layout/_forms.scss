@@ -102,7 +102,7 @@ legend{
     font-family: $roboto-bold;
     .form-half &{
         width: 34.92%;
-        margin: 0 3.1% 0 0
+        margin-right: 3.1%;
     }
     &.small{
         /*width: auto;
@@ -317,9 +317,9 @@ button{
 
 .map-container{
     display: inline-block;
-    width: 38%;
+    width: 40%;
     position: relative;
-    margin: 0 0 0 12%;
+    margin: 0 0 0 10%;
     .btn-metropole{
         position: relative;
         opacity: 0;
@@ -335,7 +335,6 @@ button{
     left: 0;
     right: 0;
     top: 0;
-    //opacity: 0;
     .department, .country{
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -364,10 +363,6 @@ button{
         stroke: #93939a;
         stroke-width: 0.12px;
     }
-    /*&.active{
-        z-index: 1;
-        opacity: 1;
-    }*/
     &-extra{
         top: 50px;
         font-size: 0.88em;
@@ -422,6 +417,7 @@ button{
     left: 0;
     opacity: 0;
     z-index: 0;
+    transition: $transition;
     a{
         display: inline-block;
         margin-bottom: 5px;

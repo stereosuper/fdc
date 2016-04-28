@@ -46,7 +46,7 @@
 }
 
 .tab-content{
-    padding: 20px 60px 50px;
+    padding: 20px $gutter 50px;
     overflow: hidden;
     background: #fff;
     &-title{
@@ -74,8 +74,8 @@
         }
     }
     .block-grey{
-        padding-left: 60px;
-        margin-left: -60px;
+        padding-left: $gutter;
+        margin-left: -1*$gutter;
     }
 }
 

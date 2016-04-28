@@ -4,6 +4,23 @@
 }
 
 @media (max-width: 979px){
+    $gutter: 45px;
+
+    h1{
+        padding: 0 $gutter;
+    }
+
+    .content-default{
+        padding-left: $gutter;
+        padding-right: $gutter;
+        .content-footer{
+            padding-left: $gutter;
+            padding-right: $gutter;
+            margin-left: -1*$gutter;
+            margin-right: -1*$gutter;
+        }
+    }
+
     .content-footer{
         padding-top: 10px;
         padding-bottom: 20px;
@@ -24,7 +41,7 @@
     }
 
     .content-right{
-        padding-right: 60px;
+        padding-right: $gutter;
     }
 
     .nav-tabs{
@@ -32,11 +49,75 @@
             padding: 20px 20px 17px;
         }
     }
+
+    .tab-content{
+        padding-left: $gutter;
+        padding-right: $gutter;
+        .block-grey{
+            padding-left: $gutter;
+            margin-left: -1*$gutter;
+        }
+    }
+
+    .form-half{
+        margin-top: 0;
+        .select.small{
+            width: 61.9%;
+        }
+        .label-select.small{
+            width: 34.92%;
+            margin: 10px 3.1% 0 0;
+            text-align: right;
+            + .select{
+                margin-top: 10px;
+            }
+        }
+        .btn-arrow{
+            display: inline-block;
+            position: static;
+            margin: 10px 0 0 37.93%;
+            transform: none;
+        }
+    }
+
+    .map-container{
+        width: 45%;
+        margin: 0 0 0 5%;
+    }
+    .map-form-extra{
+        .department{
+            position: static;
+        }
+        > div{
+            padding: 0;
+            margin: 1em 0;
+            text-align: center;
+            &.small{
+                padding: 0 0 0 5%;
+            }
+        }
+        b{
+            display: block;
+            margin: 10px 0 0;
+        }
+    }
+    .map-form-dom{
+        > div{
+            &.small{
+                padding: 0 0 0 5%;
+            }
+        }
+    }
+    .map-btn{
+        top: 175px;
+    }
 }
 
 @media (max-width: 767px){
+    $gutter: 30px;
+
     h1{
-        padding: 0 30px;
+        padding: 0 $gutter;
     }
 
     label, legend{
@@ -63,19 +144,19 @@
     }
 
     .content-default{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: $gutter;
+        padding-right: $gutter;
         .content-footer{
-            padding-left: 30px;
-            padding-right: 30px;
-            margin-left: -30px;
-            margin-right: -30px;
+            padding-left: $gutter;
+            padding-right: $gutter;
+            margin-left: -1*$gutter;
+            margin-right: -1*$gutter;
         }
     }
 
     .breadcrumb{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: $gutter;
+        padding-right: $gutter;
     }
 
     .nav-tabs{
@@ -91,8 +172,14 @@
     }
 
     .tab-content{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        &-title{
+            .h1{
+                width: 100%;
+                max-width: none;
+            }
+        }
         &-buttons{
             .btn-block-arrow{
                 display: block;
@@ -105,9 +192,54 @@
             }
         }
         .block-grey{
-            padding-left: 30px;
-            margin-left: -30px;
+            padding-left: $gutter;
+            margin-left: -1*$gutter;
         }
+    }
+
+    .form-half{
+        width: 100%;
+        fieldset{
+            &.block-right{
+                margin-left: 0;
+            }
+            &.block-grey{
+                .label-select{
+                    width: auto;
+                }
+                .select{
+                    width: 300px;
+                }
+            }
+        }
+        .label-select{
+            width: 180px;
+            margin-right: 0;
+            &.small{
+                width: auto;
+                margin-right: 0;
+                text-align: left;
+            }
+        }
+        .select{
+            width: 300px;
+            &.small{
+                width: 130px;
+            }
+        }
+        button{
+            &[type=submit]{
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+        .btn-arrow{
+            margin-left: 0;
+        }
+    }
+
+    .map-container{
+        display: none;
     }
 }
 
@@ -126,6 +258,22 @@
 @media (max-width: 480px){
     .tab-content-buttons{
         .btn-block-arrow{
+            width: 100%;
+        }
+    }
+
+    .form-half{
+        fieldset{
+            &.block-grey{
+                .select{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .select{
+        width: 100%;
+        .form-half &{
             width: 100%;
         }
     }

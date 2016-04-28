@@ -28,10 +28,10 @@
 }
 
 .content-default{
-    padding: 20px 60px 50px;
+    padding: 20px $gutter 50px;
     background: #fff;
     .content-footer{
-        padding-left: 60px;
-        margin: 50px -60px -50px;
+        padding-left: $gutter;
+        margin: 50px -1*$gutter -50px;
     }
 }
