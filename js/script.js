@@ -2,7 +2,8 @@ $(function(){
 
 	/**** VARIABLES ****/
 	var myScroll, tpsAnimChoice = 600,
-		windowWidth = $(window).width();
+		windowWidth = $(window).width(),
+		setMapFormActive = false;
 
 
 	// Request anim frame
@@ -105,6 +106,8 @@ $(function(){
 				TweenMax.to(mapExtras, 0.2, {x: '100%', opacity: 0, zIndex: 0});
 			}
 		});
+
+		setMapFormActive = true;
 	}
 
 
@@ -154,7 +157,9 @@ $(function(){
 
 	// Creation de compte - Interactive map
 	if($('#mapForm').length && windowWidth > 767){
-		setMapForm();
+		if(!setMapFormActive){
+			setMapForm();
+		}
 	}
 
 
@@ -175,6 +180,13 @@ $(function(){
 
     $(window).resize(function(){
     	windowWidth = $(window).width();
+
+    	// Creation de compte - Interactive map
+    	if($('#mapForm').length && windowWidth > 767){
+    		if(!setMapFormActive){
+    			setMapForm();
+    		}
+    	}
 	});
 
 	$(window).load(function(){
