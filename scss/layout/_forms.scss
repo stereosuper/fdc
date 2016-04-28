@@ -315,10 +315,25 @@ button{
 
 .map-container{
     display: inline-block;
-    width: 50%;
-    padding: 0 0 0 12%;
+    width: 38%;
+    margin: 0 0 0 12%;
+    position: relative;
+    .btn-metropole{
+        position: relative;
+        opacity: 0;
+        z-index: 0;
+        &.active{
+            z-index: 2;
+            opacity: 1;
+        }
+    }
 }
 .map-form{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
     .department, .country{
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -346,5 +361,69 @@ button{
         fill: none;
         stroke: #93939a;
         stroke-width: 0.12px;
+    }
+    &.active{
+        z-index: 1;
+        opacity: 1;
+    }
+    &-extra{
+        top: 50px;
+        font-size: 0.88em;
+        .department{
+            stroke: #93939a;
+            stroke-width: 0.12px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        > div{
+            display: inline-block;
+            width: 50%;
+            padding: 0 0 0 23%;
+            position: relative;
+            margin: 2.2em 0;
+            &.small{
+                width: 42%;
+                padding: 0 0 0 17%;
+                margin: 0 0 0 8%;
+            }
+            &.tiny{
+                .department{
+                    left: 6%;
+                }
+            }
+        }
+        b{
+            font-family: $roboto-cd-bold;
+        }
+    }
+    &-dom{
+        > div{
+            padding: 0 0 0 21%;
+            &.small{
+                width: 43%;
+                margin: 0 0 0 7%;
+                padding: 0 0 0 19%;
+            }
+        }
+    }
+}
+
+.map-btn{
+    max-width: 65px;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    a{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    &.active{
+        z-index: 2;
+        opacity: 1;
     }
 }

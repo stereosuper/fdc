@@ -1,7 +1,13 @@
 /* Buttons */
 
 .btn-arrow{
+	@extend %btn-arrow-base;
 	@extend %btn-arrow;
+}
+
+.btn-arrow-back{
+	@extend %btn-arrow-base;
+	@extend %btn-arrow-back;
 }
 
 .btn-block{

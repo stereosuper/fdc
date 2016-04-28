@@ -68,6 +68,8 @@
                     <a href='#' class='btn-arrow'>.btn-arrow</a>
                     <a href='#' class='btn-arrow big'>.btn-arrow.big</a>
                     <br><br>
+                    <a href='#' class='btn-arrow-back'>.btn-arrow-back</a>
+                    <br><br>
                     <a href='#' class='btn-block-arrow'>.btn-block-arrow</a>
                     <hr>
 

@@ -649,15 +649,24 @@ a:active {
 }
 
 /* Placeholders */
-.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-block-arrow {
+.btn-arrow, .btn-arrow-back {
   position: relative;
-  padding: 0 5px 0 0;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+.big.btn-arrow, .big.btn-arrow-back {
+  font-size: 1.2em;
+}
+.small.btn-arrow, .small.btn-arrow-back {
+  font-size: 0.75em;
+}
+
+.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-block-arrow {
+  padding: 0 5px 0 0;
 }
 .breadcrumb a::after, .breadcrumb span::after, .btn-arrow::after, .btn-block-arrow::after {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -672,7 +681,7 @@ a:active {
   -moz-osx-font-smoothing: grayscale;
   content: '\e900';
   display: inline-block;
-  padding-left: 1px;
+  padding: 0 0 0 1px;
   margin: 0 0 0 5px;
   vertical-align: middle;
   -webkit-transform: translate3d(0, -0.2em, 1px);
@@ -687,11 +696,37 @@ a:active {
   -webkit-transform: translate3d(5px, -0.2em, 1px);
           transform: translate3d(5px, -0.2em, 1px);
 }
-.breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-block-arrow {
-  font-size: 1.2em;
+
+.btn-arrow-back {
+  padding: 0 0 0 5px;
 }
-.breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-block-arrow {
-  font-size: 0.75em;
+.btn-arrow-back::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e900';
+  display: inline-block;
+  padding: 0 1px 0 0;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  -webkit-transform: translate3d(0, -0.2em, 1px) rotate(180deg);
+          transform: translate3d(0, -0.2em, 1px) rotate(180deg);
+  font-size: 6px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.btn-arrow-back:hover::before {
+  -webkit-transform: translate3d(-5px, -0.2em, 1px) rotate(180deg);
+          transform: translate3d(-5px, -0.2em, 1px) rotate(180deg);
 }
 
 .condensed-text ul {
@@ -1068,10 +1103,27 @@ button:focus {
 
 .map-container {
   display: inline-block;
-  width: 50%;
-  padding: 0 0 0 12%;
+  width: 38%;
+  margin: 0 0 0 12%;
+  position: relative;
+}
+.map-container .btn-metropole {
+  position: relative;
+  opacity: 0;
+  z-index: 0;
+}
+.map-container .btn-metropole.active {
+  z-index: 2;
+  opacity: 1;
 }
 
+.map-form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
 .map-form .department, .map-form .country {
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -1100,6 +1152,66 @@ button:focus {
   fill: none;
   stroke: #93939a;
   stroke-width: 0.12px;
+}
+.map-form.active {
+  z-index: 1;
+  opacity: 1;
+}
+.map-form-extra {
+  top: 50px;
+  font-size: 0.88em;
+}
+.map-form-extra .department {
+  stroke: #93939a;
+  stroke-width: 0.12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.map-form-extra > div {
+  display: inline-block;
+  width: 50%;
+  padding: 0 0 0 23%;
+  position: relative;
+  margin: 2.2em 0;
+}
+.map-form-extra > div.small {
+  width: 42%;
+  padding: 0 0 0 17%;
+  margin: 0 0 0 8%;
+}
+.map-form-extra > div.tiny .department {
+  left: 6%;
+}
+.map-form-extra b {
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+}
+.map-form-dom > div {
+  padding: 0 0 0 21%;
+}
+.map-form-dom > div.small {
+  width: 43%;
+  margin: 0 0 0 7%;
+  padding: 0 0 0 19%;
+}
+
+.map-btn {
+  max-width: 65px;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+}
+.map-btn a {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.map-btn.active {
+  z-index: 2;
+  opacity: 1;
 }
 
 /* Header */

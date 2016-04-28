@@ -84,6 +84,7 @@ $(function(){
 
 	// Creation de compte - Interactive map
 	function lightAdjacentsOn(checkbox){
+		var map = $('#mapFormMetropole');
 		if(checkbox.is(':checked') && map.find('.active').length){
 			if(map.find('.active').attr('data-adjacent') !== undefined){
 				var adjacents = map.find('.active').attr('data-adjacent').split(','),
@@ -105,11 +106,15 @@ $(function(){
 	}
 
 	if($('#mapForm').length){
-		var map = $('#mapForm'), departments = map.find('.department'), select = $('#departement'),
-			checkbox = $('#departement-etendre');
+		var mapContainer = $('#mapForm'), maps = mapContainer.find('.map-form'),
+			departments = mapContainer.find('.department'),
+			select = $('#departement'), checkbox = $('#departement-etendre'),
+			links = mapContainer.find('a'), mapBtn = mapContainer.find('.map-btn'),
+			btnMetropole = mapContainer.find('.btn-metropole');
 
 		departments.on('click', function(e){
-			$(this).attr('class', 'department active').siblings().attr('class', 'department');
+			departments.attr('class', 'department');
+			$(this).attr('class', 'department active');
 			select.val($(this).attr('data-department'));
 			lightAdjacentsOn(checkbox);
 		});
@@ -117,12 +122,12 @@ $(function(){
 		select.on('change', function(e){
 			departments.attr('class', 'department');
 
-			if(map.find('[data-department="'+select.val()+'"]').length){
-				map.find('[data-department="'+select.val()+'"]').attr('class', 'department active');
+			if(mapContainer.find('[data-department="'+select.val()+'"]').length){
+				mapContainer.find('[data-department="'+select.val()+'"]').attr('class', 'department active');
 			}else if(select.val() === '92' || select.val() === '93' || select.val() === '94'){
 				// ces départements sont ceux de l'ile de france et sont inclus
 				// dans le département 75 dans la carte
-				map.find('[data-department="75"]').attr('class', 'department active').siblings().attr('class', 'department');
+				mapContainer.find('[data-department="75"]').attr('class', 'department active').siblings().attr('class', 'department');
 			}
 
 			lightAdjacentsOn(checkbox);
@@ -130,6 +135,19 @@ $(function(){
 
 		checkbox.on('change', function(e){
 			lightAdjacentsOn(checkbox);
+		});
+
+		links.on('click', function(e){
+			e.preventDefault();
+			maps.removeClass('active');
+			$($(this).attr('href')).addClass('active');
+			if($(this).parents('.map-btn').length){
+				mapBtn.removeClass('active');
+				btnMetropole.addClass('active');
+			}else{
+				mapBtn.addClass('active');
+				btnMetropole.removeClass('active');
+			}
 		});
 	}
 
