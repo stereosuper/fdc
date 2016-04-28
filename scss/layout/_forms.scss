@@ -77,7 +77,9 @@ legend, label{
     display: inline-block;
     width: 180px;
     margin: 0 15px 0 0;
+    vertical-align: middle;
     font-size: 0.88em;
+    line-height: 1.5;
     letter-spacing: -0.02em;
     .required &{
         font-family: $roboto-bold;
@@ -185,6 +187,8 @@ input{
             &::before, &::after{
                 content: '';
                 position: absolute;
+                bottom: 0;
+                margin: auto;
             }
             &::before{
                 @include size(15px);
@@ -200,9 +204,10 @@ input{
 
                 content: '\e907'; // icon-check
                 display: block;
-                top: 1px;
+                height: 15px;
+                top: 2px;
                 left: 2px;
-                font-size: 12px;
+                font-size: 11px;
                 color: $bleu-link;
                 opacity: 0;
                 transform: scale(0);

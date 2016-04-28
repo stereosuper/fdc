@@ -859,7 +859,9 @@ legend, label {
   display: inline-block;
   width: 180px;
   margin: 0 15px 0 0;
+  vertical-align: middle;
   font-size: 0.88em;
+  line-height: 1.5;
   letter-spacing: -0.02em;
 }
 .required legend, .required label {
@@ -968,6 +970,8 @@ input[type=checkbox] + label {
 input[type=checkbox] + label::before, input[type=checkbox] + label::after {
   content: '';
   position: absolute;
+  bottom: 0;
+  margin: auto;
 }
 input[type=checkbox] + label::before {
   width: 15px;
@@ -991,9 +995,10 @@ input[type=checkbox] + label::after {
   -moz-osx-font-smoothing: grayscale;
   content: '\e907';
   display: block;
-  top: 1px;
+  height: 15px;
+  top: 2px;
   left: 2px;
-  font-size: 12px;
+  font-size: 11px;
   color: #7392da;
   opacity: 0;
   -webkit-transform: scale(0);
