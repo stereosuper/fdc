@@ -212,7 +212,7 @@
                             <button type='submit' class='btn-block huge'>Valider</button>
                             <a href='#' class='btn-arrow small'>Remplir plus tard</a>
                         </form><div class='map-container' id='mapForm'>
-                            <div class='map-form active' id='mapFormMetropole'>
+                            <div id='mapFormMetropole' class='map-form active'>
                                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36.88 40.5'>
                                   <polygon data-department='56' data-adjacent='29,22,35,44' class='department' points='3.44 13.61 3.44 13.35 3.89 13.18 3.89 12.85 3.19 12.57 3.05 11.86 3.66 11.71 4.07 11.93 4.64 12.03 4.96 11.85 5.61 12.14 6.05 12.22 6.19 12.36 6.6 11.97 7.19 12.32 7.11 12.77 7.6 13.05 7.6 13.61 7.49 14.19 7.52 14.8 6.82 15.13 6.39 15.03 6.08 14.8 5.32 14.71 5.64 14.55 5.32 14.16 4.83 14.27 4.66 14.44 4.55 14.86 4.46 14.5 4.5 14.32 4.03 13.96 3.44 13.61'/>
                                   <polygon data-department='35' data-adjacent='22,56,44,49,53,50' class='department' points='8.1 9.94 8 10.39 8.21 10.83 8 11.64 7.5 11.8 7.19 12.32 7.11 12.77 7.6 13.05 7.6 13.61 7.49 14.19 8.86 14.19 9.49 13.63 10 13.94 10.57 12.88 10.64 11.08 10.08 10.64 9.68 11 9.21 10.36 8.33 10.19 8.1 9.94'/>

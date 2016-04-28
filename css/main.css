@@ -787,6 +787,8 @@ a:active {
   position: relative;
   vertical-align: top;
   margin: 25px 0 0;
+  z-index: 1;
+  background: #fff;
 }
 .form-half .btn-arrow {
   position: absolute;
@@ -1104,8 +1106,8 @@ button:focus {
 .map-container {
   display: inline-block;
   width: 38%;
-  margin: 0 0 0 12%;
   position: relative;
+  margin: 0 0 0 12%;
 }
 .map-container .btn-metropole {
   position: relative;
@@ -1122,7 +1124,10 @@ button:focus {
   left: 0;
   right: 0;
   top: 0;
-  opacity: 0;
+  /*&.active{
+      z-index: 1;
+      opacity: 1;
+  }*/
 }
 .map-form .department, .map-form .country {
   stroke-linecap: round;
@@ -1153,13 +1158,12 @@ button:focus {
   stroke: #93939a;
   stroke-width: 0.12px;
 }
-.map-form.active {
-  z-index: 1;
-  opacity: 1;
-}
 .map-form-extra {
   top: 50px;
   font-size: 0.88em;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
 }
 .map-form-extra .department {
   stroke: #93939a;
@@ -1645,6 +1649,7 @@ button:focus {
 
 .tab-content {
   padding: 20px 60px 50px;
+  overflow: hidden;
   background: #fff;
 }
 .tab-content-title {

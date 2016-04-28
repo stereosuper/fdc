@@ -6,6 +6,8 @@
     position: relative;
     vertical-align: top;
     margin: 25px 0 0;
+    z-index: 1;
+    background: #fff;
     .btn-arrow{
         position: absolute;
         bottom: 25px;
@@ -316,8 +318,8 @@ button{
 .map-container{
     display: inline-block;
     width: 38%;
-    margin: 0 0 0 12%;
     position: relative;
+    margin: 0 0 0 12%;
     .btn-metropole{
         position: relative;
         opacity: 0;
@@ -333,7 +335,7 @@ button{
     left: 0;
     right: 0;
     top: 0;
-    opacity: 0;
+    //opacity: 0;
     .department, .country{
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -362,13 +364,15 @@ button{
         stroke: #93939a;
         stroke-width: 0.12px;
     }
-    &.active{
+    /*&.active{
         z-index: 1;
         opacity: 1;
-    }
+    }*/
     &-extra{
         top: 50px;
         font-size: 0.88em;
+        transform: translateX(100%);
+        opacity: 0;
         .department{
             stroke: #93939a;
             stroke-width: 0.12px;

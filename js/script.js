@@ -107,6 +107,7 @@ $(function(){
 
 	if($('#mapForm').length){
 		var mapContainer = $('#mapForm'), maps = mapContainer.find('.map-form'),
+			map = $('#mapFormMetropole'), mapExtras = mapContainer.find('.map-form-extra'),
 			departments = mapContainer.find('.department'),
 			select = $('#departement'), checkbox = $('#departement-etendre'),
 			links = mapContainer.find('a'), mapBtn = mapContainer.find('.map-btn'),
@@ -139,14 +140,18 @@ $(function(){
 
 		links.on('click', function(e){
 			e.preventDefault();
-			maps.removeClass('active');
-			$($(this).attr('href')).addClass('active');
+			//maps.removeClass('active');
+			//$($(this).attr('href')).addClass('active');
 			if($(this).parents('.map-btn').length){
 				mapBtn.removeClass('active');
 				btnMetropole.addClass('active');
+				TweenMax.to($($(this).attr('href')), 0.2, {x: '0%', opacity: 1, zIndex: 1});
+				TweenMax.to(map, 0.2, {x: '-100%', opacity: 0, zIndex: 0});
 			}else{
 				mapBtn.addClass('active');
 				btnMetropole.removeClass('active');
+				TweenMax.to(map, 0.2, {x: '0%', opacity: 1, zIndex: 1});
+				TweenMax.to(mapExtras, 0.2, {x: '100%', opacity: 0, zIndex: 0});
 			}
 		});
 	}
