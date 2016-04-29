@@ -176,7 +176,7 @@ $(function(){
 				if($(this).prop('checked')){
 					thisSubInputs.eq(0).focus();
 				}
-				if((thisSubInputs !== 'checkbox' && thisSubInputs.val()) || (thisSubInputs.attr('type') === 'checkbox' && thisSubInputs.prop('checked'))){
+				if((thisSubInputs.attr('type') !== 'checkbox' && thisSubInputs.val()) || (thisSubInputs.attr('type') === 'checkbox' && thisSubInputs.prop('checked'))){
 					$(this).prop('checked', true);
 				}
 			});

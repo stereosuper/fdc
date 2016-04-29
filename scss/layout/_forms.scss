@@ -217,7 +217,7 @@ input{
                 margin: auto;
             }
             &::before{
-                @include size(15px);
+                @include size(15px, 16px);
 
                 border: 1px solid #ebebeb;
                 left: 0;
@@ -257,6 +257,7 @@ textarea{
 
     max-width: 370px;
     height: 125px;
+    line-height: 1.5;
 }
 
 select{

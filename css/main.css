@@ -1016,7 +1016,7 @@ input[type=checkbox] + label::before, input[type=checkbox] + label::after {
 }
 input[type=checkbox] + label::before {
   width: 15px;
-  height: 15px;
+  height: 16px;
   border: 1px solid #ebebeb;
   left: 0;
   top: -1px;
@@ -1057,6 +1057,7 @@ input[type=checkbox]:checked + label::after {
 textarea {
   max-width: 370px;
   height: 125px;
+  line-height: 1.5;
 }
 
 select {
