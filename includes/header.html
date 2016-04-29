@@ -33,7 +33,7 @@
                 <a href='#' class='icon-tool'></a>
             </li><!--
             --><li>
-                <button class='icon-user'></button>
+                <button id='btn-account' class='icon-user'></button>
             </li>
         </ul>
     </nav>
@@ -45,8 +45,8 @@
     <img src='img/logo.png' srcset='img/logo.png 1x, img/logo@2x.png 2x' alt='Forum des Commerces'>
 </button>
 
-<aside id='sidebar-links'>
-    <button id='btn-close-sidebar-links' class='icon-cross'></button>
+<aside id='sidebar-links' class='sidebar'>
+    <button id='btn-close-sidebar-links' class='btn-close icon-cross'></button>
     <p class='small'>16 sites d'annonces dédiés aux entrepreneurs et spécialisés dans leurs activités respectives&nbsp;:</p>
     <nav>
         <ul>
@@ -103,4 +103,33 @@
             </li>
         </ul>
     </nav>
+</aside>
+
+<aside id='sidebar-account' class='sidebar auth-off'>
+    <button id='btn-close-sidebar-account' class='btn-close icon-cross'></button>
+    <div class='title-sidebar'>Mon compte</div>
+    <div class='wrapper-login'>
+        <form action='#' method='post'>
+            <fieldset class='required'>
+                <label for='account-login' class='block'>Identifiant</label>
+                <input type='text' name='account-login' id='account-login' required>
+            </fieldset>
+            <fieldset class='required'>
+                <label for='account-password' class='block'>Mot de passe</label>
+                <div class='wrapper-input-btn'>
+                    <div class='wrapper-input big'>
+                        <input type='password' name='account-password' id='account-password' required>
+                        <button type='submit' class='btn-block medium'>Ok</button>
+                    </div>
+                </div>
+                <div class='center-align info-form'>
+                    <a href='#' class='btn-simple'>Mot de passe oublié&nbsp;?</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class='content-sidebar'>
+        <p class='small'><strong class='block'>Pas encore inscrit ?</strong> Alertes personnalisées, publication d’annonces… Chaque entrepreneur trouve son compte au Forum des Commerces !</p>
+        <a href='#' class='btn-block light medium no-square'>Créer un compte</a>
+    </div>
 </aside>

@@ -81,6 +81,10 @@ legend, label{
     font-size: 0.88em;
     line-height: 1.5;
     letter-spacing: -0.02em;
+    &.block{
+        display: block;
+        margin: 0 0 6px 0;
+    }
     .required &{
         font-family: $roboto-bold;
         &::after{
@@ -307,6 +311,10 @@ button{
     }
 }
 
+.info-form{
+    margin-top: 8px;
+}
+
 /* Newsletter */
 
 .form-newsletter{
@@ -331,6 +339,15 @@ button{
 	position: relative;
 	.wrapper-input{
 		padding: 0 53px 0 0;
+        &.big{
+            padding: 0 60px 0 0;
+        }
+        input[type=password]{
+            max-width: none;
+        }
+        button{
+            margin-top: -1px;
+        }
 	}
 }
 

@@ -97,6 +97,10 @@ p{
 
 b, strong{
     @include roboto-bold(1em);
+    &.block{
+        display: block;
+        margin: 0 0 10px 0;
+    }
 }
 
 i, em{
