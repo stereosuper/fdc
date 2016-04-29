@@ -120,29 +120,6 @@
         padding: 0 $gutter;
     }
 
-    label, legend{
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .legend-next-fieldset{
-        float: none;
-    }
-
-    input{
-        &[type=radio], &[type=checkbox]{
-            + label{
-                display: inline-block;
-            }
-        }
-    }
-
-    button{
-        &[type=submit]{
-            margin-left: 0;
-        }
-    }
-
     .content-default{
         padding-left: $gutter;
         padding-right: $gutter;
@@ -194,6 +171,36 @@
         .block-grey{
             padding-left: $gutter;
             margin-left: -1*$gutter;
+        }
+    }
+
+    label, legend{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .legend-next-fieldset{
+        float: none;
+    }
+
+    input{
+        &[type=radio], &[type=checkbox]{
+            + label{
+                display: inline-block;
+            }
+        }
+    }
+
+    button{
+        &[type=submit]{
+            margin-left: 0;
+        }
+    }
+
+    .label-error{
+        margin-left: 0;
+        .form-half &{
+            margin-left: 0;
         }
     }
 

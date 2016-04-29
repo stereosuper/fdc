@@ -871,6 +871,9 @@ legend, label {
   content: '*';
   color: #df5441;
 }
+.error legend, .error label {
+  color: #c6333e;
+}
 
 legend {
   margin-bottom: 15px;
@@ -929,6 +932,10 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
   border-color: #7392da;
   outline: 1px solid #7392da;
   outline-offset: 0;
+}
+.error input[type=text], .error input[type=email], .error input[type=tel], .error input[type=password], .error input[type=number] {
+  border-color: #c6333e;
+  outline: 1px solid #c6333e;
 }
 input[type=text] {
   max-width: 250px;
@@ -996,9 +1003,10 @@ input[type=checkbox] + label::after {
   content: '\e907';
   display: block;
   height: 15px;
-  top: 2px;
+  top: 0;
   left: 2px;
   font-size: 11px;
+  line-height: 15px;
   color: #7392da;
   opacity: 0;
   -webkit-transform: scale(0);
@@ -1038,6 +1046,10 @@ select:focus {
   border-color: #7392da;
   outline: 1px solid #7392da;
   outline-offset: 0;
+}
+.error select {
+  border-color: #c6333e;
+  outline: 1px solid #c6333e;
 }
 
 .select {
@@ -1087,6 +1099,7 @@ button:focus {
   outline: 0;
 }
 
+/* Newsletter */
 .form-newsletter fieldset {
   margin: 10px 0;
 }
@@ -1108,6 +1121,23 @@ button:focus {
   padding: 0 53px 0 0;
 }
 
+/* Form error */
+.p-error {
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 1.2em;
+}
+
+.label-error {
+  margin: 5px 0 10px 195px;
+  font-size: 0.88em;
+  clear: both;
+  color: #c6333e;
+}
+.form-half .label-error {
+  margin-left: 37.93%;
+}
+
+/* Map form */
 .map-container {
   display: inline-block;
   width: 40%;
@@ -2849,23 +2879,6 @@ button:focus {
     padding: 0 30px;
   }
 
-  label, legend {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .legend-next-fieldset {
-    float: none;
-  }
-
-  input[type=radio] + label, input[type=checkbox] + label {
-    display: inline-block;
-  }
-
-  button[type=submit] {
-    margin-left: 0;
-  }
-
   .content-default {
     padding-left: 30px;
     padding-right: 30px;
@@ -2912,6 +2925,30 @@ button:focus {
   .tab-content .block-grey {
     padding-left: 30px;
     margin-left: -30px;
+  }
+
+  label, legend {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .legend-next-fieldset {
+    float: none;
+  }
+
+  input[type=radio] + label, input[type=checkbox] + label {
+    display: inline-block;
+  }
+
+  button[type=submit] {
+    margin-left: 0;
+  }
+
+  .label-error {
+    margin-left: 0;
+  }
+  .form-half .label-error {
+    margin-left: 0;
   }
 
   .form-half {

@@ -88,6 +88,9 @@ legend, label{
             color: $theme-rouge-title;
         }
     }
+    .error &{
+        color: $theme-btn;
+    }
 }
 
 legend{
@@ -148,6 +151,10 @@ input{
             outline: 1px solid $bleu-link;
             outline-offset: 0;
         }
+        .error &{
+            border-color: $theme-btn;
+            outline: 1px solid $theme-btn;
+        }
 	}
     &[type=text]{
         max-width: 250px;
@@ -205,9 +212,10 @@ input{
                 content: '\e907'; // icon-check
                 display: block;
                 height: 15px;
-                top: 2px;
+                top: 0;
                 left: 2px;
                 font-size: 11px;
+                line-height: 15px;
                 color: $bleu-link;
                 opacity: 0;
                 transform: scale(0);
@@ -247,6 +255,10 @@ select{
         border-color: $bleu-link;
         outline: 1px solid $bleu-link;
         outline-offset: 0;
+    }
+    .error &{
+        border-color: $theme-btn;
+        outline: 1px solid $theme-btn;
     }
 }
 .select{
@@ -295,6 +307,8 @@ button{
     }
 }
 
+/* Newsletter */
+
 .form-newsletter{
     fieldset{
         margin: 10px 0;
@@ -319,6 +333,26 @@ button{
 		padding: 0 53px 0 0;
 	}
 }
+
+
+/* Form error */
+
+.p-error{
+    font-family: $roboto-cd-bold;
+    font-size: 1.2em;
+}
+.label-error{
+    margin: 5px 0 10px 195px;
+    font-size: 0.88em;
+    clear: both;
+    color: $theme-btn;
+    .form-half &{
+        margin-left: 37.93%;
+    }
+}
+
+
+/* Map form */
 
 .map-container{
     display: inline-block;

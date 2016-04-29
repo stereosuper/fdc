@@ -39,7 +39,7 @@
                                     Secteur d'activité
                                 </label><div class='select'>
                                     <select name='secteur' id='secteur'>
-                                        <option disabled selected value=''>— Sélectionner le secteur</option>
+                                        <option selected value=''>— Sélectionner le secteur</option>
                                         <option value='1'>Bar Tabac / PMU</option>
                                         <option value='2'>Bar / Brasserie</option>
                                         <option value='3'>Boucherie / Charcuterie / Traiteur</option>
@@ -65,7 +65,7 @@
                                     Département
                                 </label><div class='select'>
                                     <select name='departement' id='departement'>
-                                        <option disabled selected value=''>— Sélectionner le département</option>
+                                        <option selected value=''>— Sélectionner le département</option>
                                         <option value='01'>01 - Ain</option>
                                         <option value='02'>02 - Aisne</option>
                                         <option value='03'>03 - Allier</option>
@@ -184,7 +184,7 @@
                                     Prix entre
                                 </label><div class='select small'>
                                     <select name='prix-min' id='prix-min'>
-                                        <option selected value=''>Prix min</option>
+                                        <option selected value=''>— Prix min</option>
                                         <option value='100000'>100 000</option>
                                         <option value='250000'>250 000</option>
                                         <option value='500000'>500 000</option>
@@ -193,7 +193,7 @@
                                     et
                                 </label><div class='select small'>
                                     <select name='prix-max' id='prix-max'>
-                                        <option selected value=''>Prix max</option>
+                                        <option selected value=''>— Prix max</option>
                                         <option value='100000'>100 000</option>
                                         <option value='250000'>250 000</option>
                                         <option value='500000'>500 000</option>
