@@ -1153,6 +1153,9 @@ button:focus {
   z-index: 2;
   opacity: 1;
 }
+.no-js .map-container {
+  display: none;
+}
 
 .map-form {
   position: absolute;
@@ -1924,7 +1927,7 @@ button:focus {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.12;
 }
 .btn-block::before {
   width: 45px;

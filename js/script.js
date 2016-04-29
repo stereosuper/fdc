@@ -144,11 +144,7 @@ $(function(){
 	});
 
 	$('#logo').on('click', function(){
-		if(!$('body').hasClass('sidebar-links-open')){
-			$('body').addClass('sidebar-links-open');
-		}else{
-			$('body').removeClass('sidebar-links-open');
-		}
+		$('body').toggleClass('sidebar-links-open');
 	});
 	$('#btn-close-sidebar-links').click(function(){
 		$('body').removeClass('sidebar-links-open');

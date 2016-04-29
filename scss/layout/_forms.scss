@@ -368,6 +368,9 @@ button{
             opacity: 1;
         }
     }
+    .no-js &{
+        display: none;
+    }
 }
 .map-form{
     position: absolute;
