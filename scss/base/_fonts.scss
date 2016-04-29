@@ -63,6 +63,25 @@
 }
 
 @font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('../fonts/robotocondensed-regular-webfont.woff') format('woff'),
+         url('../fonts/robotocondensed-regular-webfont.ttf') format('truetype'),
+         url('../fonts/robotocondensed-regular-webfont.svg#roboto_condensed_regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condenseditalic';
+    src: url('../fonts/robotocondensed-italic-webfont.woff') format('woff'),
+         url('../fonts/robotocondensed-italic-webfont.ttf') format('truetype'),
+         url('../fonts/robotocondensed-italic-webfont.svg#roboto_condensed_italic') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'fdc';
     src: url('../fonts/fdc.woff2?a49uhg') format('woff2'),
          url('../fonts/fdc.woff?a49uhg') format('woff'),
