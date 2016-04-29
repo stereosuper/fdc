@@ -143,13 +143,22 @@ $(function(){
 		}, tpsAnimChoice);
 	});
 
-	$('#logo').on('click', function(){
+	$('#logo').on('click', function(e){
+		e.preventDefault();
 		$('body').toggleClass('sidebar-links-open');
 	});
-	$('#btn-close-sidebar-links').click(function(){
+	$('#btn-close-sidebar-links').click(function(e){
+		e.preventDefault();
 		$('body').removeClass('sidebar-links-open');
 	});
-
+	$('#btn-account').on('click', function(e){
+		e.preventDefault();
+		$('body').toggleClass('sidebar-account-open');
+	});
+	$('#btn-close-sidebar-account').click(function(e){
+		e.preventDefault();
+		$('body').removeClass('sidebar-account-open');
+	});
 
 	// Creation de compte - Interactive map
 	if($('#mapForm').length && windowWidth > 767){
