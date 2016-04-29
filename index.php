@@ -303,13 +303,6 @@
 
 	  	<?php include_once('includes/footer.html'); ?>
 
-		<!-- Tweens -->
-		<script src="js/libs/greensock/TweenMax.min.js"></script>
-		<script src="js/libs/greensock/TimelineMax.min.js"></script>
-
-	  	<script src='js/jquery-1.11.2.min.js'></script>
-	  	<script src='js/script.js'></script>
-
 	</body>
 
 </html>
