@@ -37,8 +37,8 @@
                         <form action='#' method='post'>
                             <fieldset class='required'>
                                 <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>
-                                    <input type='radio' name='civilites' id='mme'><label for='mme'>Mme</label>
-                                    <input type='radio' name='civilites' id='mr'><label for='mr'>Mr</label>
+                                    <input type='radio' name='civilites' value='mme' id='mme'><label for='mme' class='has-margin'>Mme</label>
+                                    <input type='radio' name='civilites' value='mr' id='mr'><label for='mr'>Mr</label>
                                 </fieldset>
                             </fieldset>
                             <fieldset class='required'>
@@ -47,7 +47,7 @@
                                 </label><input type='text' name='nom' id='nom' required>
                             </fieldset>
                             <fieldset class='required'>
-                                <label for='nom'>
+                                <label for='prenom'>
                                     Prénom
                                 </label><input type='text' name='prenom' id='prenom' required>
                             </fieldset>

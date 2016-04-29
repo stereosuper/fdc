@@ -479,8 +479,7 @@ a {
 .wrapper-alignment {
   display: table;
   width: 100%;
-  table-layout: fixed;
-  box-sizing: border-box; }
+  table-layout: fixed; }
 
 .content-align-middle {
   display: table-cell;
@@ -541,6 +540,12 @@ a {
     margin-bottom: 0; }
     .condensed-text p + ul {
       margin-top: 0; }
+
+.uppercase {
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e5600f; }
 
 /* Placeholders */
 .breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-block-arrow {
@@ -621,6 +626,23 @@ a {
       border-radius: 50%;
       background: #d63f39; }
 
+input[type=text], input[type=email], input[type=tel], input[type=password], input[type=number], textarea {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  font-size: 16px;
+  line-height: 1;
+  outline: 1px solid #dadada;
+  background: none;
+  color: inherit; }
+  input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=number]:focus, textarea:focus {
+    border-color: #7392da;
+    outline: 1px solid #7392da;
+    outline-offset: 0; }
+  .error input[type=text], .error input[type=email], .error input[type=tel], .error input[type=password], .error input[type=number], .error textarea {
+    border-color: #c6333e;
+    outline: 1px solid #c6333e; }
+
 /* Grid */
 .container {
   max-width: 1240px;
@@ -684,7 +706,7 @@ a {
   color: #8b8b8b; }
 
 fieldset {
-  margin: 0 0 15px; }
+  margin: 0 0 17px; }
   fieldset.inline-b {
     vertical-align: baseline; }
   fieldset.block-pwd {
@@ -707,10 +729,21 @@ fieldset {
       width: 59.91%; }
   fieldset.block-right {
     margin: 10px 0 10px 175px; }
-    fieldset.block-right input[type=checkbox] {
+    fieldset.block-right input[type=checkbox] + label {
       margin-left: 12px; }
     .form-half fieldset.block-right {
       margin-left: 37.93%; }
+  fieldset.block-sub-fields {
+    margin-top: 45px; }
+    fieldset.block-sub-fields > div {
+      padding: 15px 0 0 15px;
+      border-left: 4px solid #ebebeb;
+      margin: 10px 0 0 5px; }
+      fieldset.block-sub-fields > div label {
+        width: 130px; }
+      fieldset.block-sub-fields > div input[type=checkbox] + label {
+        width: auto;
+        margin-left: 70px; }
 
 legend, label {
   display: inline-block;
@@ -734,6 +767,9 @@ legend, label {
 legend {
   margin-bottom: 15px; }
 
+label {
+  cursor: pointer; }
+
 .legend-next-fieldset {
   /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
   float: left; }
@@ -743,19 +779,13 @@ legend {
   .form-half .label-select {
     width: 34.92%;
     margin-right: 3.1%; }
-  .label-select.small {
-    /*width: auto;
-    margin-left: 14px;
-    margin-right: 14px;*/ }
-    .form-half .label-select.small {
-      width: 8.26%;
-      margin: 0;
-      text-align: center; }
+  .form-half .label-select.small {
+    width: 8.26%;
+    margin: 0;
+    text-align: center; }
 
 input, textarea, select {
   width: 100%; }
-  input:focus, textarea:focus, select:focus {
-    outline: 0; }
 
 input, textarea {
   -webkit-transition: 0.3s ease-in-out;
@@ -764,30 +794,23 @@ input, textarea {
     box-shadow: 0 0 0 1000px white inset; }
 
 input[type=text], input[type=email], input[type=tel], input[type=password], input[type=number] {
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid #ebebeb;
-  vertical-align: middle;
-  font-size: 16px;
-  line-height: 1;
-  outline: 1px solid #dadada;
-  background: none;
-  color: inherit; }
-  input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=number]:focus {
-    border-color: #7392da;
-    outline: 1px solid #7392da;
-    outline-offset: 0; }
-  .error input[type=text], .error input[type=email], .error input[type=tel], .error input[type=password], .error input[type=number] {
-    border-color: #c6333e;
-    outline: 1px solid #c6333e; }
+  vertical-align: middle; }
 input[type=text] {
   max-width: 250px; }
+  input[type=text].small {
+    padding-top: 7px;
+    padding-bottom: 7px; }
 input[type=tel] {
   max-width: 150px; }
 input[type=email], input.big {
   max-width: 325px; }
 input[type=number] {
   max-width: 85px; }
+  input[type=number].price {
+    max-width: 160px; }
+    input[type=number].price + b {
+      display: inline-block;
+      margin: 0 0 0 8px; }
 input[type=password] {
   max-width: 140px; }
 input[type=radio], input[type=checkbox] {
@@ -795,18 +818,19 @@ input[type=radio], input[type=checkbox] {
   vertical-align: middle; }
   input[type=radio] + label, input[type=checkbox] + label {
     width: auto;
-    margin: 0 30px 0 10px;
-    font-family: "robotoregular", sans-serif;
-    cursor: pointer; }
+    font-family: "robotoregular", sans-serif; }
     input[type=radio] + label::after, input[type=checkbox] + label::after {
       display: none; }
+    input[type=radio] + label:not(.has-margin), input[type=checkbox] + label:not(.has-margin) {
+      margin-right: 0; }
+input[type=radio] + label {
+  margin: 0 30px 0 10px; }
 input[type=checkbox] {
   position: absolute;
   left: -99em; }
   input[type=checkbox] + label {
     position: relative;
-    padding: 0 0 0 25px;
-    margin-right: 0; }
+    padding: 0 0 0 25px; }
     input[type=checkbox] + label::before, input[type=checkbox] + label::after {
       content: '';
       position: absolute;
@@ -814,7 +838,7 @@ input[type=checkbox] {
       margin: auto; }
     input[type=checkbox] + label::before {
       width: 15px;
-      height: 15px;
+      height: 16px;
       border: 1px solid #ebebeb;
       left: 0;
       top: -1px;
@@ -850,6 +874,11 @@ input[type=checkbox] {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1); }
+
+textarea {
+  max-width: 370px;
+  height: 125px;
+  line-height: 1.5; }
 
 select {
   height: 42px;
@@ -912,6 +941,8 @@ button {
       margin-left: 37.93%; }
   button:focus {
     outline: 0; }
+  button.no-margin {
+    margin-left: 0; }
 
 .info-form {
   margin-top: 8px; }
@@ -2520,6 +2551,9 @@ button {
     .tab-content .block-grey {
       padding-left: 30px;
       margin-left: -30px; }
+
+  fieldset.block-sub-fields > div input[type=checkbox] + label {
+    margin-left: 0; }
 
   label, legend {
     display: block;

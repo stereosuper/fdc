@@ -50,7 +50,7 @@
                                 <p class='label-error'>Merci de compléter ce champ.</p>
                             </fieldset>
                             <fieldset class='required'>
-                                <label for='nom'>
+                                <label for='prenom'>
                                     Prénom
                                 </label><input type='text' name='prenom' id='prenom' required value='Eli'>
                             </fieldset>
