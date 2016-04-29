@@ -211,7 +211,6 @@ a{
     display: table;
     width: 100%;
     table-layout: fixed;
-    box-sizing: border-box;
 }
 
 .content-align-middle{
@@ -289,4 +288,11 @@ a{
     ul{
         @extend %list-small;
     }
+}
+
+.uppercase{
+    font-family: $roboto-cd-bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #e5600f;
 }

@@ -570,7 +570,6 @@ a:active {
   display: table;
   width: 100%;
   table-layout: fixed;
-  box-sizing: border-box;
 }
 
 .content-align-middle {
@@ -646,6 +645,13 @@ a:active {
 }
 .condensed-text p + ul {
   margin-top: 0;
+}
+
+.uppercase {
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e5600f;
 }
 
 /* Placeholders */
@@ -743,6 +749,26 @@ a:active {
   background: #d63f39;
 }
 
+input[type=text], input[type=email], input[type=tel], input[type=password], input[type=number], textarea {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  font-size: 16px;
+  line-height: 1;
+  outline: 1px solid #dadada;
+  background: none;
+  color: inherit;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=number]:focus, textarea:focus {
+  border-color: #7392da;
+  outline: 1px solid #7392da;
+  outline-offset: 0;
+}
+.error input[type=text], .error input[type=email], .error input[type=tel], .error input[type=password], .error input[type=number], .error textarea {
+  border-color: #c6333e;
+  outline: 1px solid #c6333e;
+}
+
 /* Grid */
 .container {
   max-width: 1240px;
@@ -817,7 +843,7 @@ a:active {
 }
 
 fieldset {
-  margin: 0 0 15px;
+  margin: 0 0 17px;
 }
 fieldset.inline-b {
   vertical-align: baseline;
@@ -848,11 +874,26 @@ fieldset.block-grey legend {
 fieldset.block-right {
   margin: 10px 0 10px 175px;
 }
-fieldset.block-right input[type=checkbox] {
+fieldset.block-right input[type=checkbox] + label {
   margin-left: 12px;
 }
 .form-half fieldset.block-right {
   margin-left: 37.93%;
+}
+fieldset.block-sub-fields {
+  margin-top: 45px;
+}
+fieldset.block-sub-fields > div {
+  padding: 15px 0 0 15px;
+  border-left: 4px solid #ebebeb;
+  margin: 10px 0 0 5px;
+}
+fieldset.block-sub-fields > div label {
+  width: 130px;
+}
+fieldset.block-sub-fields > div input[type=checkbox] + label {
+  width: auto;
+  margin-left: 70px;
 }
 
 legend, label {
@@ -879,6 +920,10 @@ legend {
   margin-bottom: 15px;
 }
 
+label {
+  cursor: pointer;
+}
+
 .legend-next-fieldset {
   /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
   float: left;
@@ -891,11 +936,6 @@ legend {
   width: 34.92%;
   margin-right: 3.1%;
 }
-.label-select.small {
-  /*width: auto;
-  margin-left: 14px;
-  margin-right: 14px;*/
-}
 .form-half .label-select.small {
   width: 8.26%;
   margin: 0;
@@ -904,9 +944,6 @@ legend {
 
 input, textarea, select {
   width: 100%;
-}
-input:focus, textarea:focus, select:focus {
-  outline: 0;
 }
 
 input, textarea {
@@ -918,27 +955,14 @@ input:-webkit-autofill, textarea:-webkit-autofill {
 }
 
 input[type=text], input[type=email], input[type=tel], input[type=password], input[type=number] {
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid #ebebeb;
   vertical-align: middle;
-  font-size: 16px;
-  line-height: 1;
-  outline: 1px solid #dadada;
-  background: none;
-  color: inherit;
-}
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=number]:focus {
-  border-color: #7392da;
-  outline: 1px solid #7392da;
-  outline-offset: 0;
-}
-.error input[type=text], .error input[type=email], .error input[type=tel], .error input[type=password], .error input[type=number] {
-  border-color: #c6333e;
-  outline: 1px solid #c6333e;
 }
 input[type=text] {
   max-width: 250px;
+}
+input[type=text].small {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 input[type=tel] {
   max-width: 150px;
@@ -949,6 +973,13 @@ input[type=email], input.big {
 input[type=number] {
   max-width: 85px;
 }
+input[type=number].price {
+  max-width: 160px;
+}
+input[type=number].price + b {
+  display: inline-block;
+  margin: 0 0 0 8px;
+}
 input[type=password] {
   max-width: 140px;
 }
@@ -958,12 +989,16 @@ input[type=radio], input[type=checkbox] {
 }
 input[type=radio] + label, input[type=checkbox] + label {
   width: auto;
-  margin: 0 30px 0 10px;
   font-family: "robotoregular", sans-serif;
-  cursor: pointer;
 }
 input[type=radio] + label::after, input[type=checkbox] + label::after {
   display: none;
+}
+input[type=radio] + label:not(.has-margin), input[type=checkbox] + label:not(.has-margin) {
+  margin-right: 0;
+}
+input[type=radio] + label {
+  margin: 0 30px 0 10px;
 }
 input[type=checkbox] {
   position: absolute;
@@ -972,7 +1007,6 @@ input[type=checkbox] {
 input[type=checkbox] + label {
   position: relative;
   padding: 0 0 0 25px;
-  margin-right: 0;
 }
 input[type=checkbox] + label::before, input[type=checkbox] + label::after {
   content: '';
@@ -1018,6 +1052,11 @@ input[type=checkbox]:checked + label::after {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+textarea {
+  max-width: 370px;
+  height: 125px;
 }
 
 select {
@@ -1097,6 +1136,9 @@ button[type=submit] {
 }
 button:focus {
   outline: 0;
+}
+button.no-margin {
+  margin-left: 0;
 }
 
 /* Newsletter */
@@ -2928,6 +2970,10 @@ button:focus {
   .tab-content .block-grey {
     padding-left: 30px;
     margin-left: -30px;
+  }
+
+  fieldset.block-sub-fields > div input[type=checkbox] + label {
+    margin-left: 0;
   }
 
   label, legend {

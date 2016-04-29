@@ -176,7 +176,7 @@
                                     </select>
                                 </div>
                                 <fieldset class='block-right'>
-                                    <input type='checkbox' name='departement-etendre' id='departement-etendre'><label for='departement-etendre'>Etendre aux départements limitrophes</label>
+                                    <input type='checkbox' name='departement-etendre' id='departement-etendre' value='1'><label for='departement-etendre'>Etendre aux départements limitrophes</label>
                                 </fieldset>
                             </fieldset>
                             <fieldset>

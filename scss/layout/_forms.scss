@@ -33,7 +33,7 @@
 }
 
 fieldset{
-	margin: 0 0 15px;
+	margin: 0 0 17px;
     &.inline-b{
         vertical-align: baseline;
     }
@@ -65,10 +65,31 @@ fieldset{
     &.block-right{
         margin: 10px 0 10px 175px;
         input[type=checkbox]{
-            margin-left: 12px;
+            + label{
+                margin-left: 12px;
+            }
         }
         .form-half &{
             margin-left: 37.93%;
+        }
+    }
+    &.block-sub-fields{
+        margin-top: 45px;
+        > div{
+            padding: 15px 0 0 15px;
+            border-left: 4px solid #ebebeb;
+            margin: 10px 0 0 5px;
+            label{
+                width: 130px;
+            }
+            input{
+                &[type=checkbox]{
+                    + label{
+                        width: auto;
+                        margin-left: 70px;
+                    }
+                }
+            }
         }
     }
 }
@@ -97,22 +118,22 @@ legend{
     margin-bottom: 15px;
 }
 
+label{
+    cursor: pointer;
+}
+
 .legend-next-fieldset{
     /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
     float: left;
 }
 
 .label-select{
-    //width: 169px;
     font-family: $roboto-bold;
     .form-half &{
         width: 34.92%;
         margin-right: 3.1%;
     }
     &.small{
-        /*width: auto;
-        margin-left: 14px;
-        margin-right: 14px;*/
         .form-half &{
             width: 8.26%;
             margin: 0;
@@ -123,9 +144,6 @@ legend{
 
 input, textarea, select{
     width: 100%;
-  	&:focus{
-      	outline: 0;
-  	}
 }
 
 input, textarea{
@@ -137,27 +155,16 @@ input, textarea{
 
 input{
 	&[type=text], &[type=email], &[type=tel], &[type=password], &[type=number]{
-		display: inline-block;
-		padding: 10px;
-		border: 1px solid #ebebeb;
+		@extend %input;
+
 		vertical-align: middle;
-		font-size: 16px;
-        line-height: 1;
-        outline: 1px solid #dadada;
-		background: none;
-		color: inherit;
-        &:focus{
-            border-color: $bleu-link;
-            outline: 1px solid $bleu-link;
-            outline-offset: 0;
-        }
-        .error &{
-            border-color: $theme-btn;
-            outline: 1px solid $theme-btn;
-        }
 	}
     &[type=text]{
         max-width: 250px;
+        &.small{
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
     }
     &[type=tel]{
         max-width: 150px;
@@ -167,6 +174,13 @@ input{
     }
     &[type=number]{
         max-width: 85px;
+        &.price{
+            max-width: 160px;
+            + b{
+                display: inline-block;
+                margin: 0 0 0 8px;
+            }
+        }
     }
     &[type=password]{
         max-width: 140px;
@@ -176,12 +190,18 @@ input{
         vertical-align: middle;
         + label{
             width: auto;
-            margin: 0 30px 0 10px;
             font-family: $roboto;
-            cursor: pointer;
             &::after{
                 display: none;
             }
+            &:not(.has-margin){
+                margin-right: 0;
+            }
+        }
+    }
+    &[type=radio]{
+        +label{
+            margin: 0 30px 0 10px;
         }
     }
     &[type=checkbox]{
@@ -190,7 +210,6 @@ input{
         + label{
             position: relative;
             padding: 0 0 0 25px;
-            margin-right: 0;
             &::before, &::after{
                 content: '';
                 position: absolute;
@@ -231,6 +250,13 @@ input{
             }
         }
     }
+}
+
+textarea{
+    @extend %input;
+
+    max-width: 370px;
+    height: 125px;
 }
 
 select{
@@ -304,6 +330,9 @@ button{
     }
     &:focus{
         outline: 0;
+    }
+    &.no-margin{
+        margin-left: 0;
     }
 }
 

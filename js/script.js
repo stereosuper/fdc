@@ -158,6 +158,31 @@ $(function(){
 		}
 	}
 
+	// Creation de compte - Check main checkbox from sub fields
+	if($('.block-sub-fields').length){
+		var blockSubFields = $('.block-sub-fields'),
+			subInputs = blockSubFields.find('> div').find('input'),
+			mainInputs = blockSubFields.find('> input');
+
+		if(subInputs.length){
+			subInputs.on('change', function(e){
+				if(($(this).attr('type') !== 'checkbox' && $(this).val()) || ($(this).attr('type') === 'checkbox' && $(this).prop('checked'))){
+					$(this).parents('.block-sub-fields').find('> input').prop('checked', true);
+				}
+			});
+
+			mainInputs.on('click', function(e){
+				var thisSubInputs = $(this).parents('.block-sub-fields').find('> div').find('input');
+				if($(this).prop('checked')){
+					thisSubInputs.eq(0).focus();
+				}
+				if((thisSubInputs !== 'checkbox' && thisSubInputs.val()) || (thisSubInputs.attr('type') === 'checkbox' && thisSubInputs.prop('checked'))){
+					$(this).prop('checked', true);
+				}
+			});
+		}
+	}
+
 
 	scrollPage();
 

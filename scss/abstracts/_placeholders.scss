@@ -68,3 +68,23 @@
         }
     }
 }
+
+%input{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    font-size: 16px;
+    line-height: 1;
+    outline: 1px solid #dadada;
+    background: none;
+    color: inherit;
+    &:focus{
+        border-color: $bleu-link;
+        outline: 1px solid $bleu-link;
+        outline-offset: 0;
+    }
+    .error &{
+        border-color: $theme-btn;
+        outline: 1px solid $theme-btn;
+    }
+}
