@@ -1660,7 +1660,7 @@ button.no-margin {
   vertical-align: top;
   box-sizing: border-box;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 26px;
 }
 .cols-footer > li::before {
   display: none;
@@ -2040,6 +2040,9 @@ button.no-margin {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
+#sidebar-links ul a:hover {
+  color: white;
+}
 #sidebar-links ul a:hover::before {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -2276,6 +2279,7 @@ button.no-margin {
   display: inline-block;
   vertical-align: top;
   margin: 4px 0 0 0;
+  padding: 0 8px;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1.25em;
   font-weight: 400;
@@ -2317,6 +2321,26 @@ button.no-margin {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+.choices.three-choices .zone-btn {
+  width: 33.333333%;
+}
+.choices.three-choices .zone-content {
+  width: 66.666666%;
+}
+.choices.three-choices > li:nth-child(2) {
+  left: 33.333333%;
+}
+.choices.three-choices > li:nth-child(3) {
+  left: 66.666666%;
+}
+.choices.three-choices.choice-2-active > li:nth-child(2) {
+  -webkit-transform: translateX(-33.333333%);
+          transform: translateX(-33.333333%);
+}
+.choices.three-choices.choice-3-active > li:nth-child(3) {
+  -webkit-transform: translateX(-66.666666%);
+          transform: translateX(-66.666666%);
 }
 .choices > li {
   display: inline-block;
@@ -2836,6 +2860,57 @@ button.no-margin {
   margin: 0;
   padding: 0;
 }
+.choices .table-types tr:nth-child(1) td:nth-child(1) a::before {
+  background-color: #c52d38;
+}
+.choices .table-types tr:nth-child(1) td:nth-child(2) a::before {
+  background-color: #d63f39;
+}
+.choices .table-types tr:nth-child(2) td:nth-child(1) a::before {
+  background-color: #d63f39;
+}
+.choices .table-types tr:nth-child(2) td:nth-child(2) a::before {
+  background-color: #de5340;
+}
+.choices .table-types tr:nth-child(2) td:nth-child(3) a::before {
+  background-color: #e85d1f;
+}
+.choices .table-types tr:nth-child(3) td:nth-child(1) a::before {
+  background-color: #de5340;
+}
+.choices .table-types tr:nth-child(3) td:nth-child(2) a::before {
+  background-color: #e85d1f;
+}
+.choices .table-types tr:nth-child(3) td:nth-child(3) a::before {
+  background-color: #e8741f;
+}
+.choices .table-types tr:nth-child(4) td:nth-child(1) a::before {
+  background-color: #e85d1f;
+}
+.choices .table-types tr:nth-child(4) td:nth-child(2) a::before {
+  background-color: #e8741f;
+}
+.choices .table-types tr:nth-child(4) td:nth-child(3) a::before {
+  background-color: #e8911f;
+}
+.choices .table-types tr:nth-child(5) td:nth-child(1) a::before {
+  background-color: #e8741f;
+}
+.choices .table-types tr:nth-child(5) td:nth-child(2) a::before {
+  background-color: #e8911f;
+}
+.choices .table-types tr:nth-child(5) td:nth-child(3) a::before {
+  background-color: #c52d38;
+}
+.choices .table-types tr:nth-child(6) td:nth-child(1) a::before {
+  background-color: #e8911f;
+}
+.choices .table-types tr:nth-child(6) td:nth-child(2) a::before {
+  background-color: #c52d38;
+}
+.choices .table-types tr:nth-child(6) td:nth-child(3) a::before {
+  background-color: #d63f39;
+}
 .choices .table-types tr td {
   margin: 0;
   padding: 0;
@@ -2845,6 +2920,7 @@ button.no-margin {
 }
 .choices .table-types a {
   display: block;
+  position: relative;
   height: 71px;
   width: 100%;
   box-sizing: border-box;
@@ -2859,10 +2935,35 @@ button.no-margin {
   text-decoration: none;
   background-color: white;
   margin: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+.choices .table-types a::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .choices .table-types a span {
   margin: 0;
   padding: 0;
+}
+.choices .table-types a:hover {
+  color: white;
+}
+.choices .table-types a:hover::before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 .choices .types {
   display: none;

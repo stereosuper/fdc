@@ -24,7 +24,7 @@
 			<div class='container position-relative'>
 				<section>
 					<div class='wrapper-choices'>
-						<ul class='choices'>
+						<ul class='choices three-choices'>
 							<li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
@@ -194,7 +194,7 @@
 									</div>
 								</div>
 							</li><!--
-							--><li>
+							--><!--<li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
 									<div class='bg-choice'></div>
@@ -211,14 +211,14 @@
 											<p>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</p>
 										</div>
 									</div>
-								</div><!--
-								--><div class='zone-content'>
+								</div>--><!--
+								--><!--<div class='zone-content'>
 									<div class='content'>
 										<button class='btn-close-choice icon-cross'></button>
 									</div>
 								</div>
-							</li><!--
-							--><li>
+							</li>--><!--
+							--><!--<li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
 									<div class='bg-choice'></div>
@@ -235,13 +235,13 @@
 											<p>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</p>
 										</div>
 									</div>
-								</div><!--
-								--><div class='zone-content'>
+								</div>--><!--
+								--><!--<div class='zone-content'>
 									<div class='content'>
 										<button class='btn-close-choice icon-cross'></button>
 									</div>
 								</div>
-							</li><!--
+							</li>--><!--
 							--><li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
