@@ -16,7 +16,7 @@
 					<img src='img/visuel-home.jpg'>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Notre projet : concrétiser le vôtre</h1>
+					<h1 class='big'>Notre projet : concrétiser le&nbsp;vôtre</h1>
 					<p>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</p>
 				</div>
 			</div>
