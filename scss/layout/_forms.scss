@@ -63,10 +63,12 @@ fieldset{
         }
     }
     &.block-right{
-        margin: 10px 0 10px 175px;
-        input[type=checkbox]{
-            + label{
-                margin-left: 12px;
+        margin: 10px 0 10px 195px;
+        &:not(.block-sub-fields){
+            input[type=checkbox]{
+                + label{
+                    margin-left: 12px;
+                }
             }
         }
         .form-half &{
@@ -91,6 +93,36 @@ fieldset{
                 }
             }
         }
+        .form-disabled &{
+            fieldset{
+                margin-bottom: 0;
+            }
+            > div{
+                display: inline-block;
+                padding: 0;
+                border: 0;
+                vertical-align: top;
+                margin: 0;
+            }
+            input{
+                &[type=checkbox]{
+                    + label{
+                        margin-left: 0;
+                    }
+                }
+                &[type=text]{
+                    padding: 0;
+                }
+            }
+            > input[type=checkbox]{
+                + label{
+                    display: none;
+                }
+            }
+        }
+    }
+    .form-disabled &{
+        margin-bottom: 7px;
     }
 }
 
@@ -112,6 +144,12 @@ legend, label{
             content: '*';
             color: $theme-rouge-title;
         }
+        .form-disabled &{
+            font-family: $roboto;
+            &::after{
+                display: none;
+            }
+        }
     }
     .error &{
         color: $theme-btn;
@@ -120,15 +158,27 @@ legend, label{
 
 legend{
     margin-bottom: 15px;
+    .block-sub-fields &{
+        margin-left: -195px; /* = margin-left .block-sub-fields */
+    }
 }
 
 label{
     cursor: pointer;
+    .form-disabled &{
+        cursor: auto;
+    }
 }
 
 .legend-next-fieldset{
     /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
     float: left;
+    .form-disabled &{
+        margin-bottom: 0;
+        + fieldset{
+            margin-bottom: 5px;
+        }
+    }
 }
 
 .label-select{
@@ -207,6 +257,18 @@ input{
         +label{
             margin: 0 30px 0 10px;
         }
+        &[disabled]{
+            display: none;
+            + label{
+                display: none;
+                font-family: $roboto-bold;
+            }
+            &:checked{
+                + label{
+                    display: inline-block;
+                }
+            }
+        }
     }
     &[type=checkbox]{
         position: absolute;
@@ -252,6 +314,35 @@ input{
                     transform: scale(1);
                 }
             }
+        }
+        &[disabled]{
+            display: none;
+            + label{
+                display: none;
+                padding-left: 0;
+                font-family: $roboto-bold;
+                &::after, &::before{
+                    display: none;
+                }
+            }
+            &:checked{
+                + label{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    &[disabled]{
+        border: 0;
+        outline: 0;
+        font-size: 0.88em;
+        font-family: $roboto-bold;
+        + span{
+            display: block;
+            margin: -28px 0 14px 205px;
+            font-size: 0.88em;
+            font-family: $roboto-it;
+            color: #b6b8bb;
         }
     }
 }
@@ -326,6 +417,7 @@ select{
 }
 
 button{
+    border: 0;
     transition: $transition;
     &[type=submit]{
         margin: 0 0 0 195px;

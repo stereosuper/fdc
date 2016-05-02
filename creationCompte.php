@@ -18,7 +18,7 @@
 
                 <h1>Créer mon compte</h1>
                 <div class='content-tabs'>
-                    <ul class='nav-tabs'>
+                    <ul class='nav-tabs nav-tabs-indicator'>
                         <li class='active'>
                             1<span>. Bienvenue !</span>
                         </li><li>

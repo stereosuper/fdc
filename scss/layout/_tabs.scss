@@ -15,33 +15,39 @@
         &::before{
             display: none;
         }
-        &:not(:first-child){
-            position: relative;
-            &::after{
-                content: '';
-                width: 11px;
-                height: 10px;
-                position: absolute;
-                top: 3px;
-                bottom: 0;
-                left: -1px;
-                margin: auto;
-                background: url(../layoutImg/arrows-tab.png) no-repeat;
-            }
-        }
         &.active{
             background: $theme-btn;
             color: #fff;
-            + li{
-                &::after{
-                    background-position: -11px 0;
-                }
-            }
         }
     }
     a{
         color: inherit;
         text-decoration: none;
+    }
+    &-indicator{
+        li{
+            &:not(:first-child){
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 11px;
+                    height: 10px;
+                    position: absolute;
+                    top: 3px;
+                    bottom: 0;
+                    left: -1px;
+                    margin: auto;
+                    background: url(../layoutImg/arrows-tab.png) no-repeat;
+                }
+            }
+            &.active{
+                + li{
+                    &::after{
+                        background-position: -11px 0;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -60,7 +66,7 @@
             vertical-align: top;
             margin: 0;
         }
-        .btn-arrow{
+        a, button{
             display: inline-block;
             margin: 1.5em 0 0 2.6%;
         }

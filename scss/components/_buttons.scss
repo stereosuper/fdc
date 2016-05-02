@@ -10,6 +10,14 @@
 	@extend %btn-arrow-back;
 }
 
+.btn-pen{
+	@extend %btn-arrow-base;
+}
+
+.btn-cancel{
+	@extend %btn-arrow-base;
+}
+
 .btn-simple{
 	@include roboto-cd-bold(0.625em);
 	letter-spacing: 1px;
