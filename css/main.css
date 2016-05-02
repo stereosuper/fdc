@@ -1608,10 +1608,12 @@ button {
                 transform: translateX(276px);
         -webkit-transition: -webkit-transform 0.3s ease-in-out;
                 transition: transform 0.3s ease-in-out; }
-      #sidebar-links ul a:hover::before {
-        -webkit-transform: translateX(0);
-            -ms-transform: translateX(0);
-                transform: translateX(0); }
+      #sidebar-links ul a:hover {
+        color: white; }
+        #sidebar-links ul a:hover::before {
+          -webkit-transform: translateX(0);
+              -ms-transform: translateX(0);
+                  transform: translateX(0); }
   #sidebar-links p {
     display: block;
     position: relative;
