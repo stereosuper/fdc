@@ -201,7 +201,7 @@ address{
 
 /******* LIENS / BOUTONS *******/
 
-a{
+a, button{
     color: $bleu-link;
     transition: $transition;
     &:focus, &:hover{

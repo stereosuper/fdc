@@ -469,15 +469,15 @@ address {
     letter-spacing: 1px; }
 
 /******* LIENS / BOUTONS *******/
-a {
+a, button {
   color: #7392da;
   -webkit-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out; }
-  a:focus, a:hover {
+  a:focus, a:hover, button:focus, button:hover {
     color: #9db2e5; }
-  a:focus {
+  a:focus, button:focus {
     outline: 0; }
-  a:active {
+  a:active, button:active {
     color: #506698; }
 
 /******* CLASSES GENERALES  *******/
@@ -556,7 +556,7 @@ a {
   color: #e5600f; }
 
 /* Placeholders */
-.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-block-arrow {
+.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-block-arrow {
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   text-decoration: none;
@@ -564,9 +564,9 @@ a {
   letter-spacing: 1px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
-  .breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-block-arrow {
+  .breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-block-arrow {
     font-size: 1.2em; }
-  .breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-block-arrow {
+  .breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-block-arrow {
     font-size: 0.75em; }
 
 .breadcrumb a, .breadcrumb span, .btn-arrow, .btn-block-arrow {
@@ -736,8 +736,8 @@ fieldset {
     .form-half fieldset.block-grey .select {
       width: 59.91%; }
   fieldset.block-right {
-    margin: 10px 0 10px 175px; }
-    fieldset.block-right input[type=checkbox] + label {
+    margin: 10px 0 10px 195px; }
+    fieldset.block-right:not(.block-sub-fields) input[type=checkbox] + label {
       margin-left: 12px; }
     .form-half fieldset.block-right {
       margin-left: 37.93%; }
@@ -752,6 +752,22 @@ fieldset {
       fieldset.block-sub-fields > div input[type=checkbox] + label {
         width: auto;
         margin-left: 70px; }
+    .form-disabled fieldset.block-sub-fields fieldset {
+      margin-bottom: 0; }
+    .form-disabled fieldset.block-sub-fields > div {
+      display: inline-block;
+      padding: 0;
+      border: 0;
+      vertical-align: top;
+      margin: 0; }
+    .form-disabled fieldset.block-sub-fields input[type=checkbox] + label {
+      margin-left: 0; }
+    .form-disabled fieldset.block-sub-fields input[type=text] {
+      padding: 0; }
+    .form-disabled fieldset.block-sub-fields > input[type=checkbox] + label {
+      display: none; }
+  .form-disabled fieldset {
+    margin-bottom: 7px; }
 
 legend, label {
   display: inline-block;
@@ -769,18 +785,31 @@ legend, label {
     .required legend::after, .required label::after {
       content: '*';
       color: #df5441; }
+    .form-disabled .required legend, .form-disabled .required label {
+      font-family: "robotoregular", sans-serif; }
+      .form-disabled .required legend::after, .form-disabled .required label::after {
+        display: none; }
   .error legend, .error label {
     color: #c6333e; }
 
 legend {
   margin-bottom: 15px; }
+  .block-sub-fields legend {
+    margin-left: -195px;
+    /* = margin-left .block-sub-fields */ }
 
 label {
   cursor: pointer; }
+  .form-disabled label {
+    cursor: auto; }
 
 .legend-next-fieldset {
   /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
   float: left; }
+  .form-disabled .legend-next-fieldset {
+    margin-bottom: 0; }
+    .form-disabled .legend-next-fieldset + fieldset {
+      margin-bottom: 5px; }
 
 .label-select {
   font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
@@ -833,6 +862,13 @@ input[type=radio], input[type=checkbox] {
       margin-right: 0; }
 input[type=radio] + label {
   margin: 0 30px 0 10px; }
+input[type=radio][disabled] {
+  display: none; }
+  input[type=radio][disabled] + label {
+    display: none;
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
+  input[type=radio][disabled]:checked + label {
+    display: inline-block; }
 input[type=checkbox] {
   position: absolute;
   left: -99em; }
@@ -882,6 +918,27 @@ input[type=checkbox] {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1); }
+  input[type=checkbox][disabled] {
+    display: none; }
+    input[type=checkbox][disabled] + label {
+      display: none;
+      padding-left: 0;
+      font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
+      input[type=checkbox][disabled] + label::after, input[type=checkbox][disabled] + label::before {
+        display: none; }
+    input[type=checkbox][disabled]:checked + label {
+      display: inline-block; }
+input[disabled] {
+  border: 0;
+  outline: 0;
+  font-size: 0.88em;
+  font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
+  input[disabled] + span {
+    display: block;
+    margin: -28px 0 14px 205px;
+    font-size: 0.88em;
+    font-family: "robotoitalic", "robotoregular", sans-serif;
+    color: #b6b8bb; }
 
 textarea {
   max-width: 370px;
@@ -941,6 +998,7 @@ select {
     width: 61.9%; }
 
 button {
+  border: 0;
   -webkit-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out; }
   button[type=submit] {
@@ -1431,26 +1489,26 @@ button {
     background: #fff; }
     .nav-tabs li::before {
       display: none; }
-    .nav-tabs li:not(:first-child) {
-      position: relative; }
-      .nav-tabs li:not(:first-child)::after {
-        content: '';
-        width: 11px;
-        height: 10px;
-        position: absolute;
-        top: 3px;
-        bottom: 0;
-        left: -1px;
-        margin: auto;
-        background: url(../layoutImg/arrows-tab.png) no-repeat; }
     .nav-tabs li.active {
       background: #c6333e;
       color: #fff; }
-      .nav-tabs li.active + li::after {
-        background-position: -11px 0; }
   .nav-tabs a {
     color: inherit;
     text-decoration: none; }
+  .nav-tabs-indicator li:not(:first-child) {
+    position: relative; }
+    .nav-tabs-indicator li:not(:first-child)::after {
+      content: '';
+      width: 11px;
+      height: 10px;
+      position: absolute;
+      top: 3px;
+      bottom: 0;
+      left: -1px;
+      margin: auto;
+      background: url(../layoutImg/arrows-tab.png) no-repeat; }
+  .nav-tabs-indicator li.active + li::after {
+    background-position: -11px 0; }
 
 .tab-content {
   padding: 20px 60px 50px;
@@ -1466,7 +1524,7 @@ button {
       max-width: 80%;
       vertical-align: top;
       margin: 0; }
-    .tab-content-title .btn-arrow {
+    .tab-content-title a, .tab-content-title button {
       display: inline-block;
       margin: 1.5em 0 0 2.6%; }
   .tab-content-buttons {
@@ -2621,8 +2679,8 @@ button {
     font-size: 0.62em; }
     .nav-tabs li {
       padding: 12px 12px 9px; }
-      .nav-tabs li:not(:first-child)::after {
-        display: none; }
+    .nav-tabs-indicator li:not(:first-child)::after {
+      display: none; }
 
   .tab-content {
     padding-left: 30px;
@@ -2690,11 +2748,13 @@ button {
   .map-container {
     display: none; } }
 @media (max-width: 650px) {
-  .nav-tabs {
+  .nav-tabs:not(.nav-tabs-indicator) {
+    display: none; }
+  .nav-tabs-indicator {
     font-size: 0.75em; }
-    .nav-tabs span {
+    .nav-tabs-indicator span {
       display: none; }
-    .nav-tabs li {
+    .nav-tabs-indicator li {
       padding: 9px 9px 6px; } }
 @media (max-width: 480px) {
   .tab-content-buttons .btn-block-arrow {

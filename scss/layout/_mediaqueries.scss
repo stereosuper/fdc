@@ -140,9 +140,13 @@
         font-size: 0.62em;
         li{
             padding: 12px 12px 9px;
-            &:not(:first-child){
-                &::after{
-                    display: none;
+        }
+        &-indicator{
+            li{
+                &:not(:first-child){
+                    &::after{
+                        display: none;
+                    }
                 }
             }
         }
@@ -266,12 +270,17 @@
 
 @media (max-width: 650px){
     .nav-tabs{
-        font-size: 0.75em;
-        span{
+        &:not(.nav-tabs-indicator){
             display: none;
         }
-        li{
-            padding: 9px 9px 6px;
+        &-indicator{
+            font-size: 0.75em;
+            span{
+                display: none;
+            }
+            li{
+                padding: 9px 9px 6px;
+            }
         }
     }
 }
