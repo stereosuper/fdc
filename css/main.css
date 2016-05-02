@@ -1294,7 +1294,7 @@ button {
     vertical-align: top;
     box-sizing: border-box;
     margin: 0;
-    padding: 0 20px; }
+    padding: 0 26px; }
     .cols-footer > li::before {
       display: none; }
     .cols-footer > li:nth-child(1) {
@@ -1809,6 +1809,7 @@ button {
     display: inline-block;
     vertical-align: top;
     margin: 4px 0 0 0;
+    padding: 0 8px;
     font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
     font-size: 1.25em;
     font-weight: 400;
