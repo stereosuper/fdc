@@ -39,6 +39,7 @@
 #sidebar-links{
 	left: 0;
 	transform: translateX(-100%);
+	transform: translateX(calc(-100% - 58px));
 	.sidebar-links-open &{
 		transform: translateX(0%);
 	}

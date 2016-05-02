@@ -10,6 +10,32 @@
 	display: inline-block;
 	vertical-align: top;
 }
+#burger{
+	display: none;
+	vertical-align: top;
+	width: 58px;
+	height: 58px;
+	border: none;
+	position: relative;
+	span{
+		display: block;
+		width: 40px;
+		height: 5px;
+		background-color: $blanc;
+		position: absolute;
+		left: 50%;
+		margin: 0 0 0 -20px;
+		&:nth-child(1){
+		top: 16px;
+		}
+		&:nth-child(2){
+		top: 27px;
+		}
+		&:nth-child(3){
+		top: 38px;
+		}
+	}
+}
 #logo{
   	display: inline-block;
  	vertical-align: middle;
@@ -31,7 +57,7 @@
   	img{
   		vertical-align: middle;
   	}
-  	span{
+  	.rect-logo{
   		display: block;
   		position: absolute;
   		&:nth-child(1){
