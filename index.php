@@ -39,7 +39,7 @@
 									<div class='zone-txt wrapper-alignment'>
 										<div class='content-align-middle'>
 											<h3>Achat</h3>
-											<p>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local commercial…</p>
+											<p>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
 										</div>
 									</div>
 								</div><!--
@@ -184,7 +184,7 @@
 									<div class='zone-txt wrapper-alignment'>
 										<div class='content-align-middle'>
 											<h3>Vente</h3>
-											<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local commercial…</p>
+											<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
 										</div>
 									</div>
 								</div><!--

@@ -16,12 +16,17 @@ $tps-choice-etape-2: 0.3s;
 	margin: 0;
 	padding: 0;
 	line-height: normal;
+	backface-visibility: hidden;
 	&.three-choices{
 		.zone-btn{
 			width: 33.333333%;
 		}
 		.zone-content{
 			width: 66.666666%;
+		}
+		.zone-txt{
+			max-width: 310px;
+			margin: 0 auto;
 		}
 		> li{
 			&:nth-child(2){

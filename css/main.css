@@ -312,6 +312,10 @@ body {
   line-height: 1;
   height: 100%; }
 
+#wrapper-page {
+  position: relative;
+  overflow: hidden; }
+
 #main {
   padding: 0 0 100px; }
 
@@ -1848,11 +1852,16 @@ button {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  line-height: normal; }
+  line-height: normal;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
   .choices.three-choices .zone-btn {
     width: 33.333333%; }
   .choices.three-choices .zone-content {
     width: 66.666666%; }
+  .choices.three-choices .zone-txt {
+    max-width: 310px;
+    margin: 0 auto; }
   .choices.three-choices > li:nth-child(2) {
     left: 33.333333%; }
   .choices.three-choices > li:nth-child(3) {
