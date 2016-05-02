@@ -16,6 +16,36 @@ $tps-choice-etape-2: 0.3s;
 	margin: 0;
 	padding: 0;
 	line-height: normal;
+	&.three-choices{
+		.zone-btn{
+			width: 33.333333%;
+		}
+		.zone-content{
+			width: 66.666666%;
+		}
+		> li{
+			&:nth-child(2){
+				left: 33.333333%;
+			}
+			&:nth-child(3){
+				left: 66.666666%;
+			}
+		}
+		&.choice-2-active{
+			> li{
+				&:nth-child(2){
+					transform: translateX(-33.333333%);
+				}
+			}
+		}
+		&.choice-3-active{
+			> li{
+				&:nth-child(3){
+					transform: translateX(-66.666666%);
+				}
+			}
+		}
+	}
 	> li{
 		display: inline-block;
 		vertical-align: top;
