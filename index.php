@@ -269,8 +269,8 @@
 						</ul>
 					</div>
 
-					<h2 class='h1 inline-b'>À la une</h2>
-					<a href='#' class='btn-arrow big inline-b'>Toute l'actualité</a>
+					<h2 class='h1 inline-b no-margin padding-grid'>À la une</h2>
+					<a href='#' class='btn-arrow small inline-b'>Toute l'actualité</a>
 					<ul class='news'>
 						<li>
 							<article class='wrapper-alignment'>

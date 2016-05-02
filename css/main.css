@@ -322,6 +322,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
+  h1.no-margin, h2.no-margin, h3.no-margin, h4.no-margin, h5.no-margin, h6.no-margin {
+    margin: 0; }
+  h1.padding-grid, h2.padding-grid, h3.padding-grid, h4.padding-grid, h5.padding-grid, h6.padding-grid {
+    padding: 0 118px; }
 
 h1 {
   margin: 0.13em 0 0.85em;
@@ -1185,7 +1189,7 @@ button {
   vertical-align: top;
   list-style-type: none;
   margin: 0;
-  padding: 19px 0 0; }
+  padding: 18px 0 0; }
   .menu-header > li {
     display: inline-block;
     vertical-align: top;

@@ -31,6 +31,12 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     @include roboto-cd-bold(2.5em);
+    &.no-margin{
+        margin: 0;
+    }
+    &.padding-grid{
+        padding: 0 118px;
+    }
 }
 
 h1{
