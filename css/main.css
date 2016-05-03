@@ -605,7 +605,11 @@ a:active, button:active {
   display: table;
   width: 100%;
   table-layout: fixed;
+<<<<<<< HEAD
 }
+=======
+  border-spacing: 0; }
+>>>>>>> 531c74b54dcca3eaefd463fccac9592d1038b409
 
 .content-align-middle {
   display: table-cell;
@@ -641,6 +645,9 @@ a:active, button:active {
 .full-width {
   width: 100%;
 }
+
+.full-height {
+  height: 100%; }
 
 .wrapper-overflow-hidden {
   position: relative;
@@ -1496,7 +1503,7 @@ button.no-margin {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   box-sizing: border-box;
   margin: 0;
   padding: 0 0 0 16px;
@@ -1669,6 +1676,7 @@ button.no-margin {
   background-color: #393d47;
   color: white;
   position: relative;
+<<<<<<< HEAD
   z-index: 1;
 }
 #footer:before {
@@ -1708,6 +1716,41 @@ button.no-margin {
   bottom: 0;
   background-color: #31353e;
 }
+=======
+  z-index: 2; }
+  #footer:before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #282c34;
+    z-index: -1; }
+  #footer h2 {
+    margin: 0 0 0.8em 0;
+    padding: 0;
+    color: white; }
+  #footer p {
+    font-size: 0.875em;
+    line-height: 1.5em;
+    margin: 1em 0; }
+  #footer .container {
+    position: relative;
+    padding: 45px 0 130px 0; }
+    #footer .container:before {
+      content: '';
+      display: block;
+      width: 30%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      bottom: 0;
+      background-color: #31353e; }
+>>>>>>> 531c74b54dcca3eaefd463fccac9592d1038b409
 
 .cols-footer {
   display: block;
@@ -1996,7 +2039,7 @@ button.no-margin {
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: white;
   -webkit-filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
@@ -3152,6 +3195,7 @@ button.no-margin {
 
 /* News */
 .news {
+<<<<<<< HEAD
   display: block;
   padding: 0;
 }
@@ -3255,6 +3299,109 @@ button.no-margin {
   text-rendering: optimizeLegibility;
   margin: 6px 0 0 0;
 }
+=======
+  display: table;
+  width: 100%;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 0;
+  border-spacing: 40px 0; }
+  .news > li {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #dadada; }
+    .news > li::before {
+      display: none; }
+    .news > li:nth-child(odd) .article-date {
+      background: -webkit-linear-gradient(top, #e46336 0%, #e15220 100%);
+      background: linear-gradient(to bottom, #e46336 0%, #e15220 100%); }
+      .news > li:nth-child(odd) .article-date:before {
+        background-color: #d04c28;
+        opacity: 0.3; }
+    .news > li:nth-child(odd) h4 {
+      color: #e35837; }
+    .news > li:nth-child(even) .article-date {
+      background: -webkit-linear-gradient(top, #dd4f3e 0%, #d93b28 100%);
+      background: linear-gradient(to bottom, #dd4f3e 0%, #d93b28 100%); }
+      .news > li:nth-child(even) .article-date:before {
+        background-color: #c63c2f;
+        opacity: 0.5; }
+    .news > li:nth-child(even) h4 {
+      color: #dd503e; }
+  .news .article-date {
+    position: relative;
+    width: 73px;
+    height: auto;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-right: 1px solid #dadada; }
+    .news .article-date:before {
+      content: '';
+      display: block;
+      width: 172px;
+      height: 172px;
+      position: absolute;
+      top: -67px;
+      left: -7px;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+  .news .article-desc {
+    padding: 30px 15px 30px 93px; }
+  .news time {
+    position: relative; }
+  .news .day, .news .month, .news .year {
+    display: block;
+    line-height: 1em; }
+  .news .day {
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
+    font-size: 2.313em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 0.9em; }
+  .news .month {
+    font-family: "robotoregular", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; }
+  .news .year {
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
+    font-size: 0.938em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 1px;
+    margin: 3px 0 0 0; }
+  .news h4 {
+    line-height: 1em; }
+  .news h3 {
+    line-height: 1em;
+    margin: 5px 0 2px 0; }
+  .news p {
+    font-family: "robotoregular", sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    margin: 0; }
+>>>>>>> 531c74b54dcca3eaefd463fccac9592d1038b409
 
 /* Home specific style */
 /* Responsive horizontal */
@@ -3311,9 +3458,15 @@ button.no-margin {
   }
 }
 @media (max-width: 979px) {
+  h1.padding-grid, h2.padding-grid, h3.padding-grid, h4.padding-grid, h5.padding-grid, h6.padding-grid {
+    padding: 0; }
+
   h1 {
     padding: 0 45px;
   }
+
+  h2.inline-b {
+    padding-right: 10px; }
 
   .content-default {
     padding-left: 45px;
@@ -3426,6 +3579,7 @@ button.no-margin {
   }
 
   .bloc-top {
+<<<<<<< HEAD
     height: 440px;
   }
   .bloc-top h1 {
@@ -3436,6 +3590,25 @@ button.no-margin {
     padding: 0 6px;
   }
 }
+=======
+    height: 440px; }
+    .bloc-top h1 {
+      padding: 110px 0 0; }
+    .bloc-top p {
+      font-size: 1.1em;
+      padding: 0 6px; }
+
+  .news {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+    .news > li {
+      display: block;
+      width: 100%;
+      margin: 20px 0; } }
+>>>>>>> 531c74b54dcca3eaefd463fccac9592d1038b409
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;

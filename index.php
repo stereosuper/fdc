@@ -273,11 +273,13 @@
 					<a href='#' class='btn-arrow small inline-b'>Toute l'actualité</a>
 					<ul class='news'>
 						<li>
-							<article class='wrapper-alignment'>
-								<div class='content-align-middle center-align article-date'>
-									<time><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+							<article>
+								<div class='center-align article-date'>
+									<div class='wrapper-alignment full-height'>
+										<time class='content-align-middle'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									</div>
 								</div><!--
-								--><div class='content-align-middle article-desc'>
+								--><div class='article-desc'>
 									<h4 class='small'>Actualité fiscale</h4>
 									<h3 class='h2'>Crédit d’impôt : tout un art…</h3>
 									<p>Une entreprise exerçant une activité de conseil en communication et en création publicitaire a sollicité le bénéfice… <a href='#' class='btn-arrow'>Lire la suite</a></p>
@@ -285,11 +287,13 @@
 							</article>
 						</li><!--
 						--><li>
-							<article class='wrapper-alignment'>
-								<div class='content-align-middle center-align article-date'>
-									<time><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+							<article>
+								<div class='center-align article-date'>
+									<div class='wrapper-alignment full-height'>
+										<time class='content-align-middle'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									</div>
 								</div><!--
-								--><div class='content-align-middle article-desc'>
+								--><div class='article-desc'>
 									<h4 class='small'>Actualité sociale</h4>
 									<h3 class='h2'>Des indemnités de préavis en cas de maladie ?</h3>
 									<p>Un employeur licencie un salarié pour motif économique. Cependant, ce salarié est en arrêt maladie… <a href='#' class='btn-arrow'>Lire la suite</a></p>
