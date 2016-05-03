@@ -15,7 +15,6 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-
 		background-color: $blanc;
 		border: 1px solid $gris;
 		&::before{
@@ -53,9 +52,10 @@
 		color: $blanc;
 		overflow: hidden;
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
+		top: -1px;
+		bottom: -1px;
+		left: -1px;
+		border-right: 1px solid $gris;
 		&:before{
 			content: '';
 			display: block;

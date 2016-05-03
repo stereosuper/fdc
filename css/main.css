@@ -2561,9 +2561,10 @@ button {
     color: white;
     overflow: hidden;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0; }
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-right: 1px solid #dadada; }
     .news .article-date:before {
       content: '';
       display: block;
@@ -2662,8 +2663,14 @@ button {
   h1.big {
     font-size: 3em; } }
 @media (max-width: 979px) {
+  h1.padding-grid, h2.padding-grid, h3.padding-grid, h4.padding-grid, h5.padding-grid, h6.padding-grid {
+    padding: 0; }
+
   h1 {
     padding: 0 45px; }
+
+  h2.inline-b {
+    padding-right: 10px; }
 
   .content-default {
     padding-left: 45px;
@@ -2747,7 +2754,18 @@ button {
       padding: 110px 0 0; }
     .bloc-top p {
       font-size: 1.1em;
-      padding: 0 6px; } }
+      padding: 0 6px; }
+
+  .news {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+    .news > li {
+      display: block;
+      width: 100%;
+      margin: 20px 0; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px; }
