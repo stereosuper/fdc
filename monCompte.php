@@ -22,7 +22,7 @@
                         <li>
                             <a href='#'>Tableau de bord</a>
                         </li><li class='active'>
-                            <span>Mes informations</a>
+                            <span>Mes informations</span>
                         </li><li>
                             <a href='#'>Alertes</a>
                             <span class='notif'>5</span>
@@ -112,8 +112,8 @@
                                     <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' disabled><label for='adresse-facturation'>Adresse de facturation identique</label>
                                 </fieldset>
                             </fieldset>
-                            <fieldset class='adresse-facturation'>
-                                <legend class='legend-title'>Adresse de facturation</legend>
+                            <fieldset class='block-optionnal'>
+                                <legend>Adresse de facturation</legend>
                                 <fieldset class='required'>
                                     <label for='nom-facturation'>
                                         Nom

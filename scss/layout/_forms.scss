@@ -124,6 +124,24 @@ fieldset{
             }
         }
     }
+    &.block-optionnal{
+        margin-top: 35px;
+        legend{
+            width: 100%;
+            max-width: 650px;
+            border-bottom: 1px dashed;
+            margin-bottom: 20px;
+            font-family: $roboto-cd-bold;
+            font-size: 1.5em;
+        }
+        &::after{
+            content: '';
+            display: block;
+            max-width: 650px;
+            border-bottom: 1px dashed;
+            margin: 3px 0 0;
+        }
+    }
     .form-disabled &{
         margin-bottom: 7px;
     }
