@@ -695,7 +695,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
 /* Forms */
 .form-half {
   display: inline-block;
-  width: 50%;
+  width: 52%;
   position: relative;
   vertical-align: top;
   margin: 25px 0 0;
@@ -779,6 +779,25 @@ fieldset {
       padding: 0; }
     .form-disabled fieldset.block-sub-fields > input[type=checkbox] + label {
       display: none; }
+  fieldset.block-optionnal {
+    margin-top: 35px; }
+    fieldset.block-optionnal legend {
+      width: 100%;
+      max-width: 650px;
+      border-bottom: 1px dashed;
+      margin-bottom: 20px;
+      font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+      font-size: 1.5em; }
+    fieldset.block-optionnal::after {
+      content: '';
+      display: block;
+      max-width: 650px;
+      border-bottom: 1px dashed;
+      margin: 3px 0 0; }
+  .form-half fieldset {
+    margin-bottom: 25px; }
+    .form-half fieldset fieldset {
+      margin-bottom: 0; }
   .form-disabled fieldset {
     margin-bottom: 7px; }
 
@@ -1082,8 +1101,9 @@ button {
 .map-container {
   display: inline-block;
   width: 40%;
+  padding: 0 0 43%;
   position: relative;
-  margin: 0 0 0 10%; }
+  margin: 0 0 0 8%; }
   .map-container .btn-metropole {
     position: relative;
     opacity: 0;
@@ -2872,7 +2892,7 @@ button {
               transform: none; }
 
   .map-container {
-    width: 45%;
+    width: 43%;
     margin: 0 0 0 5%; }
 
   .map-form-extra .department {

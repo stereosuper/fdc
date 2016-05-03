@@ -2,7 +2,7 @@
 
 .form-half{
     display: inline-block;
-    width: 50%;
+    width: 52%;
     position: relative;
     vertical-align: top;
     margin: 25px 0 0;
@@ -122,6 +122,30 @@ fieldset{
                     display: none;
                 }
             }
+        }
+    }
+    &.block-optionnal{
+        margin-top: 35px;
+        legend{
+            width: 100%;
+            max-width: 650px;
+            border-bottom: 1px dashed;
+            margin-bottom: 20px;
+            font-family: $roboto-cd-bold;
+            font-size: 1.5em;
+        }
+        &::after{
+            content: '';
+            display: block;
+            max-width: 650px;
+            border-bottom: 1px dashed;
+            margin: 3px 0 0;
+        }
+    }
+    .form-half &{
+        margin-bottom: 25px;
+        fieldset{
+            margin-bottom: 0;
         }
     }
     .form-disabled &{
@@ -507,8 +531,9 @@ button{
 .map-container{
     display: inline-block;
     width: 40%;
+    padding: 0 0 43%;
     position: relative;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 8%;
     .btn-metropole{
         position: relative;
         opacity: 0;
