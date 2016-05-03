@@ -156,7 +156,17 @@ $(function(){
 
 	$('#logo').on('click', function(e){
 		e.preventDefault();
-		$('body').toggleClass('sidebar-links-open');
+		if($(window).width()>1150){
+			$('body').toggleClass('sidebar-links-open');
+		}else{
+			if(!$('body').hasClass('sidebar-links-open')){
+				$('body').addClass('sidebar-links-open');
+			}else if(!$('body').hasClass('nav-header-open')){
+				$('body').addClass('nav-header-open');
+			}else{
+				$('body').removeClass('nav-header-open');
+			}
+		}
 	});
 	$('#btn-close-sidebar-links').click(function(e){
 		e.preventDefault();
