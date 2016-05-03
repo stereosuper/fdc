@@ -271,13 +271,17 @@ a, button{
     overflow: hidden;
     background: #eaecf1;
     p{
-        display: inline-block;
-        max-width: 520px;
         padding: 9px 0;
         margin: 0;
         font-size: 0.88em;
         .btn-arrow{
             margin: 0 0 0 2px;
+        }
+    }
+    &.has-social{
+        p{
+            display: inline-block;
+            max-width: 520px;
         }
     }
 }

@@ -39,6 +39,9 @@ fieldset{
     }
     &.block-pwd{
         margin: 35px 0 25px;
+        input{
+            margin-right: 25px;
+        }
     }
     &.block-grey{
         padding: 25px;
@@ -152,7 +155,7 @@ legend, label{
         }
     }
     .error &{
-        color: $theme-btn;
+        color: $error;
     }
 }
 
@@ -337,13 +340,6 @@ input{
         outline: 0;
         font-size: 0.88em;
         font-family: $roboto-bold;
-        + span{
-            display: block;
-            margin: -28px 0 14px 205px;
-            font-size: 0.88em;
-            font-family: $roboto-it;
-            color: #b6b8bb;
-        }
     }
 }
 
@@ -379,8 +375,8 @@ select{
         outline-offset: 0;
     }
     .error &{
-        border-color: $theme-btn;
-        outline: 1px solid $theme-btn;
+        border-color: $error;
+        outline: 1px solid $error;
     }
 }
 .select{
@@ -433,6 +429,14 @@ button{
     }
 }
 
+.not-filled{
+    display: block;
+    margin: -28px 0 14px 205px;
+    font-size: 0.88em;
+    font-family: $roboto-it;
+    color: #b6b8bb;
+}
+
 .info-form{
     margin-top: 8px;
 }
@@ -477,16 +481,23 @@ button{
 /* Form error */
 
 .p-error{
-    font-family: $roboto-cd-bold;
-    font-size: 1.2em;
-}
-.label-error{
-    margin: 5px 0 10px 195px;
+    padding: 15px 30px 15px 70px;
+    position: relative;
+    font-family: $roboto-bold;
     font-size: 0.88em;
-    clear: both;
-    color: $theme-btn;
-    .form-half &{
-        margin-left: 37.93%;
+    background: #f3f4e1;
+    color: $error;
+    &::before{
+        @include font-icon;
+
+        content: '\e908';
+        height: 40px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 15px;
+        margin: auto;
+        font-size: 40px;
     }
 }
 

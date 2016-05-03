@@ -109,7 +109,9 @@ $icons: (
     user: '\e901',
     mail: '\e902',
     tool: '\e903',
-    arrow: '\e900'
+    arrow: '\e900',
+    error: '\e908',
+    pen: '\e909'
 );
 @each $name, $icon in $icons {
     .icon-#{$name}::before {

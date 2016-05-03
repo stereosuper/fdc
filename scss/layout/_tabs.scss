@@ -5,11 +5,12 @@
     font-family: $roboto-bold;
     font-size: 0.75em;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.04em;
     li{
         display: inline-block;
         padding: 25px 25px 21px;
         border-right: 1px solid $gris;
+        position: relative;
         margin: 0;
         background: #fff;
         &::before{
@@ -19,15 +20,32 @@
             background: $theme-btn;
             color: #fff;
         }
+        &.tab-right{
+            border-right: 0;
+            border-left: 1px solid $gris;
+            float: right;
+        }
+        &.tab-orange{
+            .notif, &.active{
+                background: #f18832;
+            }
+            a{
+                &:hover, &:focus{
+                    color: #f18832;
+                }
+            }
+        }
     }
     a{
         color: inherit;
         text-decoration: none;
+        &:hover, &:focus{
+            color: $theme-btn;
+        }
     }
     &-indicator{
         li{
             &:not(:first-child){
-                position: relative;
                 &::after{
                     content: '';
                     width: 11px;
@@ -49,6 +67,15 @@
             }
         }
     }
+    .notif{
+        padding: 3px 4px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 0.8;
+        background: $theme-btn;
+        color: #fff;
+    }
 }
 
 .tab-content{
@@ -64,11 +91,11 @@
             padding: 0;
             max-width: 80%;
             vertical-align: top;
-            margin: 0;
+            margin: 0 2.6% 0 0;
         }
         a, button{
             display: inline-block;
-            margin: 1.5em 0 0 2.6%;
+            margin: 1.5em 0 0;
         }
     }
     &-buttons{
@@ -82,6 +109,10 @@
     .block-grey{
         padding-left: $gutter;
         margin-left: -1*$gutter;
+    }
+    .content-footer{
+        padding-left: $gutter;
+        margin: 50px -1*$gutter -50px;
     }
 }
 

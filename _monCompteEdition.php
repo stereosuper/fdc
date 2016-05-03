@@ -20,27 +20,27 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs'>
                         <li>
-                            <a href='creationCompte.php'>Tableau de bord</a>
+                            <a href='#'>Tableau de bord</a>
                         </li><li class='active'>
-                            <span>Mes informations</span>
+                            <span>Mes informations</a>
                         </li><li>
-                            <span>Alertes</span>
+                            <a href='#'>Alertes</a>
                             <span class='notif'>5</span>
                         </li><li>
-                            <span>Ventes</span>
+                            <a href='#'>Ventes</a>
                         </li><li>
-                            <span>Correspondances</span>
-                        </li><li>
-                            <span>Ma sélection</span>
+                            <a href='#'>Correspondances</a>
+                        </li><li class='tab-right tab-orange'>
+                            <a href='#'>Ma sélection</a>
                             <span class='notif'>1</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
                         <div class='tab-content-title'>
                             <h2 class='h1'>Mes informations personnelles</h2>
-                            <button class='btn-cancel small'>Annuler les modifications</button>
+                            <button class='btn-cancel small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Annuler les modifications</button>
                         </div>
-                        <form action='#' method='post'>
+                        <form action='#' method='post' id='formToEdit'>
                             <fieldset class='required'>
                                 <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>
                                     <input type='radio' name='civilites' value='mme' id='mme'><label for='mme' class='has-margin'>Mme</label>
@@ -61,12 +61,12 @@
                                 <label for='societe'>
                                     Société
                                 </label><input type='text' name='societe' id='societe' class='big'>
-                                <span class='hidden'>non renseigné</span>
+                                <span class='not-filled hidden'>non renseigné</span>
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='tel'>
                                     Téléphone
-                                </label><input type='tel' name='tel' id='tel' value='06 78 67 56 90' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
+                                </label><input type='tel' name='tel' id='tel' value='0678675690' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='email'>
@@ -78,9 +78,9 @@
                                     <label for='mdp1'>
                                         Mot de passe
                                     </label><input type='password' name='mdp1' id='mdp1' value='motdepasse' disabled required>
-                                    <button class='btn-pen small'>Changer de mot de passe</button>
+                                    <button class='btn-pen small' id='editPwd'>Changer de mot de passe</button>
                                 </fieldset>
-                                <fieldset class='hidden'>
+                                <fieldset class='block-pwd2 hidden'>
                                     <label for='mdp2'>
                                         Confirmer ce mot de passe
                                     </label><input type='password' name='mdp2' id='mdp2' value='motdepasse' disabled required>
@@ -90,13 +90,13 @@
                                 <label for='adresse'>
                                     Adresse
                                 </label><input type='text' name='adresse' id='adresse' class='huge'>
-                                <span class='hidden'>non renseigné</span>
+                                <span class='not-filled hidden'>non renseigné</span>
                             </fieldset>
                             <fieldset>
                                 <label for='adresse2'>
                                     Compl. adresse
                                 </label><input type='text' name='adresse2' id='adresse2' class='huge'>
-                                <span class='hidden'>non renseigné</span>
+                                <span class='not-filled hidden'>non renseigné</span>
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='code'>
@@ -107,7 +107,7 @@
                                 <label for='ville'>
                                     Ville
                                 </label><input type='text' name='ville' id='ville' class='big'>
-                                <span class='hidden'>non renseigné</span>
+                                <span class='not-filled hidden'>non renseigné</span>
                                 <fieldset class='block-right'>
                                     <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' checked><label for='adresse-facturation'>Adresse de facturation identique</label>
                                 </fieldset>
