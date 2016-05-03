@@ -851,7 +851,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 /* Forms */
 .form-half {
   display: inline-block;
-  width: 50%;
+  width: 52%;
   position: relative;
   vertical-align: top;
   margin: 25px 0 0;
@@ -976,6 +976,12 @@ fieldset.block-optionnal::after {
   max-width: 650px;
   border-bottom: 1px dashed;
   margin: 3px 0 0;
+}
+.form-half fieldset {
+  margin-bottom: 25px;
+}
+.form-half fieldset fieldset {
+  margin-bottom: 0;
 }
 .form-disabled fieldset {
   margin-bottom: 7px;
@@ -1358,8 +1364,9 @@ button.no-margin {
 .map-container {
   display: inline-block;
   width: 40%;
+  padding: 0 0 43%;
   position: relative;
-  margin: 0 0 0 10%;
+  margin: 0 0 0 8%;
 }
 .map-container .btn-metropole {
   position: relative;
@@ -3462,7 +3469,7 @@ button.no-margin {
   }
 
   .map-container {
-    width: 45%;
+    width: 43%;
     margin: 0 0 0 5%;
   }
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang='fr-FR' class='no-js lt-ie10'> <![endif]-->
+<!--[if IE 9]> <html lang='fr-FR' class="no-js lt-ie10"> <![endif]-->
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Créer mon compte - Infos</title>
+        <title>Mon compte - Alertes Edition</title>
         <?php include_once('includes/head.html'); ?>
     </head>
 
@@ -16,22 +16,28 @@
                     <li><a href='./'>Accueil</a></li>
                 </ul>
 
-                <h1>Créer mon compte</h1>
+                <h1>Mon compte</h1>
                 <div class='content-tabs'>
-                    <ul class='nav-tabs nav-tabs-indicator'>
+                    <ul class='nav-tabs'>
                         <li>
-                            <a href='creationCompte.php'>1<span>. Bienvenue !</span></a>
+                            <a href='#'>Tableau de bord</a>
                         </li><li>
-                            <a href='creationCompte2.php'>2<span>. Mes informations</span></a>
+                            <a href='#'>Mes informations</a>
                         </li><li class='active'>
-                            3<span>. Je recherche...</span>
+                            <span>Alertes</span>
                         </li><li>
-                            <a href='creationCompte4.php'>4<span>. Mes besoins</span></a>
+                            <a href='#'>Ventes</a>
+                        </li><li>
+                            <a href='#'>Correspondances</a>
+                        </li><li class='tab-right tab-orange'>
+                            <a href='#'>Ma sélection</a>
+                            <span class='notif'>1</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
                         <div class='tab-content-title'>
-                            <h2 class='h1'>Créer mon alerte</h2>
+                            <h2 class='h1'>Créer / Modifier mon alerte</h2>
+                            <button class='btn-cancel small'>Annuler les modifications</button>
                         </div>
                         <form action='#' method='post' class='form-half'>
                             <fieldset>
@@ -200,17 +206,15 @@
                                     </select>
                                 </div>
                             </fieldset>
-                            <fieldset class='block-grey'>
-                                <legend>A quelle fréquence souhaitez-vous <b>être prévenus</b> qu’un bien correspondant à ces critères est proposé à la vente ?</legend>
-                                <label class='label-select' for='envoi-email'>Envoyez-moi un email&nbsp;:</label><div class='select'>
+                            <fieldset>
+                                <label class='label-select' for='envoi-email'>Fréquence des alertes</label><div class='select'>
                                     <select name='envoi-email' id='envoi-email'>
                                         <option value='1'>Toutes les semaines</option>
                                         <option value='2'>Tous les jours</option>
                                     </select>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge'>Valider</button>
-                            <a href='#' class='btn-arrow small'>Remplir plus tard</a>
+                            <button type='submit' class='btn-block huge'>Enregistrer</button>
                         </form><div class='map-container' id='mapForm'>
                             <div id='mapFormMetropole' class='map-form active'>
                                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36.88 40.5'>
