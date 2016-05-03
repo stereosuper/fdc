@@ -1743,21 +1743,42 @@ button.no-margin {
   vertical-align: top;
   box-sizing: border-box;
   margin: 0;
-  padding: 0 26px;
+  padding: 0;
+  width: 50%;
 }
 .cols-footer > li::before {
   display: none;
 }
 .cols-footer > li:nth-child(1) {
-  width: 50%;
-  padding-right: 140px;
+  padding: 0 140px 0 26px;
 }
-.cols-footer > li:nth-child(2) {
-  width: 30%;
+
+.cols-right-footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.cols-right-footer > li {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 26px;
+}
+.cols-right-footer > li::before {
+  display: none;
+}
+.cols-right-footer > li:nth-child(1) {
+  width: 60%;
   position: relative;
 }
-.cols-footer > li:nth-child(3) {
-  width: 20%;
+.cols-right-footer > li:nth-child(2) {
+  width: 40%;
+}
+
+.wrapper-address-contact {
+  max-width: 500px;
 }
 
 .wrapper-address, .wrapper-contact {
@@ -1778,20 +1799,11 @@ button.no-margin {
 .logos > li {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 15px;
   padding: 0;
 }
 .logos > li::before {
   display: none;
-}
-.logos > li:nth-child(odd) {
-  margin-left: 0;
-  margin-right: 15px;
-}
-.logos > li:nth-child(even) {
-  margin-left: 15px;
-  margin-right: 0;
 }
 
 .rects-footer {
@@ -1836,7 +1848,8 @@ button.no-margin {
 
 .wrapper-menu-footer {
   width: 100%;
-  height: 39px;
+  height: auto;
+  min-height: 39px;
   background-color: white;
   position: absolute;
   bottom: 25px;
@@ -1848,7 +1861,7 @@ button.no-margin {
   list-style-type: none;
   box-sizing: border-box;
   margin: 0;
-  padding: 11px 160px 0 0;
+  padding: 10px 160px 10px 0;
   line-height: 1.1em;
 }
 .menu-footer > li {
@@ -3344,6 +3357,10 @@ button.no-margin {
   .home-link {
     padding-left: 194px;
   }
+
+  .cols-footer > li:nth-child(1) {
+    padding-right: 52px;
+  }
 }
 @media (max-width: 1024px) {
   h1.big {
@@ -3496,6 +3513,78 @@ button.no-margin {
     width: 100%;
     margin: 20px 0;
   }
+
+  #footer::before {
+    width: 100%;
+  }
+  #footer .container {
+    padding: 45px 0 0 0;
+  }
+  #footer .container::before {
+    display: none;
+  }
+
+  .cols-footer > li {
+    display: block;
+    width: 100%;
+  }
+  .cols-footer > li:nth-child(1) {
+    padding: 0 26px 26px 26px;
+  }
+
+  .cols-right-footer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #393d47;
+    padding: 0 0 130px 0;
+  }
+  .cols-right-footer > li {
+    display: table-cell;
+    vertical-align: top;
+    padding: 26px;
+  }
+  .cols-right-footer > li:nth-child(1) {
+    background-color: #31353e;
+  }
+  .cols-right-footer > li:nth-child(2) {
+    width: 230px;
+  }
+
+  .wrapper-menu-footer {
+    background: none;
+  }
+
+  .social-footer {
+    position: relative;
+    bottom: inherit;
+    right: inherit;
+  }
+  .social-footer.closed {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .menu-footer {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .menu-footer > li {
+    margin: 4px 16px;
+  }
+
+  /*.choices{
+      &.three-choices{
+          height: auto;
+          > li{
+              position: relative;
+              &:nth-child(2), &:nth-child(3){
+                  left: 0;
+              }
+          }
+      }
+  }*/
 }
 @media (max-width: 767px) {
   h1 {
@@ -3645,6 +3734,21 @@ button.no-margin {
     font-size: 1em;
     padding: 0 4px;
   }
+
+  .cols-right-footer {
+    display: block;
+  }
+  .cols-right-footer > li {
+    display: block;
+    width: 100%;
+    padding: 26px;
+  }
+  .cols-right-footer > li:nth-child(1) {
+    width: 100%;
+  }
+  .cols-right-footer > li:nth-child(2) {
+    width: 280px;
+  }
 }
 @media (max-width: 650px) {
   .nav-tabs {
@@ -3706,6 +3810,24 @@ button.no-margin {
 
   .home-link {
     display: none;
+  }
+
+  .wrapper-alignment.wrapper-address-contact {
+    display: block;
+  }
+
+  .content-align-middle.wrapper-address, .content-align-middle.wrapper-contact {
+    display: block;
+    width: 100%;
+  }
+
+  .content-align-middle.wrapper-contact {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .menu-footer > li {
+    margin: 4px 10px;
   }
 }
 /* retina */

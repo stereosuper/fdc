@@ -249,14 +249,18 @@ $(function(){
 
     $(document).scroll(function(){
     	myScroll = $(document).scrollTop();
-    	if(myScroll + $(window).height() == $(document).height()) {
-    		if($('.social-footer').hasClass('closed')){
-    			TweenMax.set($('.social-footer'), {className:'-=closed'});
+    	if($(window).width()>979){
+    		if(myScroll + $(window).height() == $(document).height()) {
+    			if($('.social-footer').hasClass('closed')){
+    				TweenMax.set($('.social-footer'), {className:'-=closed'});
+    			}
+    		}else{
+    			if(!$('.social-footer').hasClass('closed')){
+    				TweenMax.set($('.social-footer'), {className:'+=closed'});
+    			}
     		}
     	}else{
-    		if(!$('.social-footer').hasClass('closed')){
-    			TweenMax.set($('.social-footer'), {className:'+=closed'});
-    		}
+    		TweenMax.set($('.social-footer'), {className:'-=closed'});
     	}
     });
 

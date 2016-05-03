@@ -44,6 +44,14 @@
     .home-link{
         padding-left: 194px;
     }
+
+    .cols-footer{
+        > li{
+            &:nth-child(1){
+                padding-right: 52px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px){
@@ -214,6 +222,77 @@
             margin: 20px 0;
         }
     }
+    
+    #footer{
+        &::before{
+            width: 100%;
+        }
+        .container{
+            padding: 45px 0 0 0;
+            &::before{
+                display: none;
+            }
+        }
+    }
+    .cols-footer{
+        > li{
+            display: block;
+            width: 100%;
+            &:nth-child(1){
+                padding: 0 26px 26px 26px;
+            }
+        }
+    }
+    .cols-right-footer{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        background-color: rgb(57, 61, 71);
+        padding: 0 0 130px 0;
+        > li{
+            display: table-cell;
+            vertical-align: top;
+            padding: 26px;
+            &:nth-child(1){
+                background-color: rgb(49, 53, 62);
+            }
+            &:nth-child(2){
+                width: 230px;
+            }
+        }
+    }
+    
+    .wrapper-menu-footer{
+        background: none;
+    }
+    .social-footer{
+        position: relative;
+        bottom: inherit;
+        right: inherit;
+        &.closed{
+            transform: translateX(0);
+        }
+    }
+    .menu-footer{
+        background-color: $blanc;
+        padding: 10px 0;
+        text-align: center;
+        > li{
+            margin: 4px 16px;
+        }
+    }
+
+    /*.choices{
+        &.three-choices{
+            height: auto;
+            > li{
+                position: relative;
+                &:nth-child(2), &:nth-child(3){
+                    left: 0;
+                }
+            }
+        }
+    }*/
 }
 
 @media (max-width: 767px){
@@ -404,6 +483,21 @@
             padding: 0 4px;
         }
     }
+
+    .cols-right-footer{
+        display: block;
+        > li{
+            display: block;
+            width: 100%;
+            padding: 26px;
+            &:nth-child(1){
+                width: 100%;
+            }
+            &:nth-child(2){
+                width: 280px;
+            }
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -475,6 +569,24 @@
 
     .home-link{
         display: none;
+    }
+
+    .wrapper-alignment.wrapper-address-contact{
+        display: block;
+    }
+    .content-align-middle.wrapper-address, .content-align-middle.wrapper-contact{
+        display: block;
+        width: 100%;
+    }
+    .content-align-middle.wrapper-contact{
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .menu-footer{
+        > li{
+            margin: 4px 10px;
+        }
     }
 }
 
