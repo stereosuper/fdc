@@ -12,14 +12,45 @@
 
 .btn-pen{
 	@extend %btn-arrow-base;
+
+	&::after{
+		@include font-icon;
+
+		content: '\e909';
+		display: inline-block;
+		margin: 0 0 0 5px;
+		transform-origin: 50% 50%;
+		transition: transform $transition;
+	}
+	&:hover, &:focus{
+		&::after{
+			transform: rotate(-90deg);
+		}
+	}
 }
 
 .btn-cancel{
 	@extend %btn-arrow-base;
+
+	&::before{
+		@include font-icon;
+
+		content: '\e906'; // cross
+		display: inline-block;
+		margin: 0 5px 0 0;
+		transform-origin: 50% 50%;
+		transition: transform $transition;
+	}
+	&:hover, &:focus{
+		&::before{
+			transform: rotate(90deg);
+		}
+	}
 }
 
 .btn-simple{
 	@include roboto-cd-bold(0.625em);
+
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -62,11 +93,13 @@
 	}
 	&::before{
 		@include size(45px);
+
 		top: 25px;
 		right: 3px;
 	}
 	&::after{
 		@include size(36px);
+
 		top: -28px;
 		right: 62px;
 	}
@@ -75,6 +108,7 @@
 	}
 	&.medium{
 		@include roboto-cd-bold(1em);
+
 		padding: 15px 13px;
 	}
 	&.big{
@@ -98,7 +132,7 @@
 	text-align: center;
 	background: $theme-btn;
 	color: $blanc;
-	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
 	&::after{
 		margin-left: 15px;
 		font-size: 9px;

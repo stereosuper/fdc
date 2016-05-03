@@ -84,7 +84,7 @@
         outline-offset: 0;
     }
     .error &{
-        border-color: $theme-btn;
-        outline: 1px solid $theme-btn;
+        border-color: $error;
+        outline: 1px solid $error;
     }
 }

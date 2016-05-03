@@ -20,27 +20,27 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs'>
                         <li>
-                            <a href='creationCompte.php'>Tableau de bord</a>
+                            <a href='#'>Tableau de bord</a>
                         </li><li class='active'>
-                            <span>Mes informations</span>
+                            <span>Mes informations</a>
                         </li><li>
-                            <span>Alertes</span>
+                            <a href='#'>Alertes</a>
                             <span class='notif'>5</span>
                         </li><li>
-                            <span>Ventes</span>
+                            <a href='#'>Ventes</a>
                         </li><li>
-                            <span>Correspondances</span>
-                        </li><li>
-                            <span>Ma sélection</span>
+                            <a href='#'>Correspondances</a>
+                        </li><li class='tab-right tab-orange'>
+                            <a href='#'>Ma sélection</a>
                             <span class='notif'>1</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
                         <div class='tab-content-title'>
                             <h2 class='h1'>Mes informations personnelles</h2>
-                            <button class='btn-pen small'>Modifier</button>
+                            <button class='btn-pen small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Modifier</button>
                         </div>
-                        <form action='#' method='post' class='form-disabled'>
+                        <form action='#' method='post' class='form-disabled' id='formToEdit'>
                             <fieldset class='required'>
                                 <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>
                                     <input type='radio' name='civilites' value='mme' id='mme' disabled><label for='mme' class='has-margin'>Mme</label>
@@ -61,12 +61,12 @@
                                 <label for='societe'>
                                     Société
                                 </label><input type='text' name='societe' id='societe' class='big' disabled>
-                                <span>non renseigné</span>
+                                <span class='not-filled'>non renseigné</span>
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='tel'>
                                     Téléphone
-                                </label><input type='tel' name='tel' id='tel' value='06 78 67 56 90' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" disabled>
+                                </label><input type='tel' name='tel' id='tel' value='0678675690' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" disabled>
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='email'>
@@ -77,25 +77,26 @@
                                 <fieldset>
                                     <label for='mdp1'>
                                         Mot de passe
-                                    </label><input type='password' name='mdp1' id='mdp1' required disabled>
+                                    </label><input type='password' name='mdp1' id='mdp1' value='motdepasse' required disabled>
+                                    <button class='btn-pen small hidden' id='editPwd' data-edit='Changer de mot de passe' data-cancel='Ne pas changer de mot de passe'>Changer de mot de passe</button>
                                 </fieldset>
-                                <fieldset>
+                                <fieldset class='block-pwd2'>
                                     <label for='mdp2'>
                                         Confirmer ce mot de passe
-                                    </label><input type='password' name='mdp2' id='mdp2' required disabled>
+                                    </label><input type='password' name='mdp2' id='mdp2' value='motdepasse' required disabled>
                                 </fieldset>
                             </fieldset>
                             <fieldset>
                                 <label for='adresse'>
                                     Adresse
                                 </label><input type='text' name='adresse' id='adresse' class='huge' disabled>
-                                <span>non renseigné</span>
+                                <span class='not-filled'>non renseigné</span>
                             </fieldset>
                             <fieldset>
                                 <label for='adresse2'>
                                     Compl. adresse
                                 </label><input type='text' name='adresse2' id='adresse2' class='huge' disabled>
-                                <span>non renseigné</span>
+                                <span class='not-filled'>non renseigné</span>
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='code'>
@@ -106,9 +107,51 @@
                                 <label for='ville'>
                                     Ville
                                 </label><input type='text' name='ville' id='ville' class='big' disabled>
-                                <span>non renseigné</span>
-                                <fieldset class='block-right hidden'>
-                                    <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1'><label for='adresse-facturation'>Adresse de facturation identique</label>
+                                <span class='not-filled'>non renseigné</span>
+                                <fieldset class='block-right'>
+                                    <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' disabled><label for='adresse-facturation'>Adresse de facturation identique</label>
+                                </fieldset>
+                            </fieldset>
+                            <fieldset class='adresse-facturation'>
+                                <legend class='legend-title'>Adresse de facturation</legend>
+                                <fieldset class='required'>
+                                    <label for='nom-facturation'>
+                                        Nom
+                                    </label><input type='text' name='nom-facturation' id='nom-facturation' value='Dus' required disabled>
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='prenom-facturation'>
+                                        Prénom
+                                    </label><input type='text' name='prenom-facturation' id='prenom-facturation' value='Jean-Claude' required disabled>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='societe-facturation'>
+                                        Société
+                                    </label><input type='text' name='societe-facturation' id='societe-facturation' class='big' disabled>
+                                    <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='adresse-facturation'>
+                                        Adresse
+                                    </label><input type='text' name='adresse-facturation' id='adresse-facturation' class='huge' disabled>
+                                    <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='adresse2-facturation'>
+                                        Compl. adresse
+                                    </label><input type='text' name='adresse2-facturation' id='adresse2-facturation' class='huge' disabled>
+                                    <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='code-facturation'>
+                                        Code postal
+                                    </label><input type='number' name='code-facturation' id='code-facturation' value='75000' min='0' max='99999' required disabled>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='ville'>
+                                        Ville
+                                    </label><input type='text' name='ville' id='ville' class='big' disabled>
+                                    <span class='not-filled'>non renseigné</span>
                                 </fieldset>
                             </fieldset>
                             <fieldset class='block-sub-fields block-right'>
@@ -141,6 +184,9 @@
                             </fieldset>
                             <button type='submit' class='btn-block huge hidden'>Valider</button>
                         </form>
+                        <div class='content-footer hidden'>
+                            <p>Si vous ne voulez plus faire partie du Forum des Commerces, nous en sommes désolés! Pour supprimer votre compte, <a href="#" class="btn-arrow small">cliquez ici</a></p>
+                        </div>
                     </div>
                 </div>
             </div>

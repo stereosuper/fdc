@@ -35,19 +35,17 @@
                             <a href='#' class='btn-arrow small'>Déja inscrit ?</a>
                         </div>
                         <form action='#' method='post'>
-                            <p class='p-error'>Le formulaire comporte des erreurs et n'a pas pu être envoyé.</p>
+                            <p class='p-error'>Le champ <i>"Civilités"</i> est obligatoire. Le champ <i>"Nom"</i> est obligatoire. Le champ <i>"Téléphone"</i> est obligatoire. Le champ <i>"Email"</i> est invalide. Les champs <i>"Mot de passe"</i> sont obligatoires.</p>
                             <fieldset class='required error'>
                                 <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>
-                                    <input type='radio' name='civilites' id='mme'><label for='mme'>Mme</label>
+                                    <input type='radio' name='civilites' id='mme'><label for='mme' class='has-margin'>Mme</label>
                                     <input type='radio' name='civilites' id='mr'><label for='mr'>Mr</label>
                                 </fieldset>
-                                <p class='label-error'>Merci de sélectionner un choix.</p>
                             </fieldset>
                             <fieldset class='required error'>
                                 <label for='nom'>
                                     Nom
                                 </label><input type='text' name='nom' id='nom' required>
-                                <p class='label-error'>Merci de compléter ce champ.</p>
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='prenom'>
@@ -63,13 +61,11 @@
                                 <label for='tel'>
                                     Téléphone
                                 </label><input type='tel' name='tel' id='tel' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
-                                <p class='label-error'>Le numéro de téléphone est invalide.</p>
                             </fieldset>
                             <fieldset class='required error'>
                                 <label for='email'>
                                     Email
                                 </label><input type='email' name='email' id='email' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
-                                <p class='label-error'>L'adresse email est invalide.</p>
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='code'>
@@ -81,13 +77,11 @@
                                     <label for='mdp1'>
                                         Mot de passe
                                     </label><input type='password' name='mdp1' id='mdp1' required>
-                                    <p class='label-error'>Merci de compléter ce champ.</p>
                                 </fieldset>
                                 <fieldset class='error'>
                                     <label for='mdp2'>
                                         Confirmer ce mot de passe
                                     </label><input type='password' name='mdp2' id='mdp2' required>
-                                    <p class='label-error'>Merci de compléter ce champ.</p>
                                 </fieldset>
                             </fieldset>
                             <button type='submit' class='btn-block huge'>Valider</button>

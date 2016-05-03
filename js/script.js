@@ -16,6 +16,17 @@ $(function(){
 				function(callback){ window.setTimeout(callback, 1000/60); };
 	})();
 
+	// toggleAttr() jQuery plugin
+	// @link http://github.com/mathiasbynens/toggleAttr-jQuery-Plugin
+	// @description Used to toggle selected="selected", disabled="disabled", checked="checked" etc…
+	// @author Mathias Bynens <http://mathiasbynens.be/>
+	jQuery.fn.toggleAttr = function(attr) {
+	 	return this.each(function() {
+	  	var $this = $(this);
+	  	$this.attr(attr) ? $this.removeAttr(attr) : $this.attr(attr, attr);
+	 	});
+	};
+
 	// Alternative au CSS object-fit
 	// Fonction pour adapter la taille d'une image à son container
 	// Basé sur le script de Primož Cigler https://medium.com/@primozcigler/neat-trick-for-css-object-fit-fallback-on-edge-and-other-browsers-afbc53bbb2c3#.n2teu1z9m
@@ -191,6 +202,47 @@ $(function(){
 			});
 		}
 	}
+
+
+	// Mon compte - Edit form
+	$('#editForm').on('click', function(e){
+		var form = $('#formToEdit'), pwd, btn = $(this);
+		e.preventDefault();
+		if(form.length){
+			form.toggleClass('form-disabled').find('input').toggleAttr('disabled');
+			form.find('button[type=submit]').toggleClass('hidden');
+			form.hasClass('form-disabled') ? btn.html(btn.attr('data-edit')) : btn.html(btn.attr('data-cancel'));
+			btn.toggleClass('btn-pen').toggleClass('btn-cancel').blur();
+			if(form.find('.not-filled').length){
+				form.find('.not-filled').toggleClass('hidden');
+			}
+			if(form.find('.block-pwd').length){
+				pwd = form.find('.block-pwd');
+				pwd.toggleClass('hidden').find('input').toggleAttr('disabled');
+				pwd.find('button').toggleClass('hidden');
+				if(form.find('.block-pwd2').length){
+					form.find('.block-pwd2').toggleClass('hidden');
+				}
+			}
+			if(form.siblings('.content-footer').length){
+				form.siblings('.content-footer').toggleClass('hidden');
+			}
+		}
+	});
+
+	$('#editPwd').on('click', function(e){
+		e.preventDefault();
+		var pwd, btn = $(this);
+		if(btn.parents('.block-pwd').length){
+			pwd = $(this).parents('.block-pwd');
+			pwd.find('input').toggleAttr('disabled');
+			pwd.find('input').attr('disabled') ? btn.html(btn.attr('data-edit')) : btn.html(btn.attr('data-cancel'));
+			btn.toggleClass('btn-pen').toggleClass('btn-cancel').blur();
+			if(pwd.find('.block-pwd2').length){
+				pwd.find('.block-pwd2').toggleClass('hidden');
+			}
+		}
+	});
 
 
 	scrollPage();
