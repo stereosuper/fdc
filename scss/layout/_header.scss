@@ -175,14 +175,33 @@
 		text-align: center;
 		color: $blanc;
 		text-decoration: none;
-		&.icon-mail{
+		@include roboto-medium(0.875em);
+		.icon-mail{
 			font-size: 15px;
 		}
-		&.icon-tool{
+		.icon-tool{
 			font-size: 21px;
 		}
-		&.icon-user{
+		.icon-user{
 			font-size: 17px;
 		}
+		.txt-nav{
+			display: block;
+			text-indent: -9999px;
+		}
+	}
+}
+
+#btn-close-header-responsive{
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(100%);
+	z-index: 4;
+	display: none;
+	transition: transform 0.3s ease-in-out;
+	transition-delay: 0.3s;
+	.sidebar-links-open &, .nav-header-open &{
+	    transform: translateX(0);
 	}
 }
