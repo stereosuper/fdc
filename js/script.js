@@ -2,7 +2,7 @@ $(function(){
 
 	/**** VARIABLES ****/
 	var myScroll, tpsAnimChoice = 600,
-		windowWidth = $(window).width(),
+		windowHeight = $(window).height(), windowWidth = $(window).width(),
 		setMapFormActive = false;
 
 
@@ -156,7 +156,7 @@ $(function(){
 
 	$('#logo').on('click', function(e){
 		e.preventDefault();
-		if($(window).width()>1150){
+		if(windowWidth>1150){
 			$('body').toggleClass('sidebar-links-open');
 		}else{
 			if(!$('body').hasClass('sidebar-links-open')){
@@ -170,7 +170,7 @@ $(function(){
 	});
 	$('#btn-close-sidebar-links').click(function(e){
 		e.preventDefault();
-		if($(window).width()>1150){
+		if(windowWidth>1150){
 			$('body').removeClass('sidebar-links-open');
 		}else{
 			if($('body').hasClass('nav-header-open')){
@@ -204,7 +204,7 @@ $(function(){
 		}
 	}
 
-	// Creation de compte - Check main checkbox from sub fields
+	// Mon compte - Check main checkbox from sub fields
 	if($('.block-sub-fields').length){
 		var blockSubFields = $('.block-sub-fields'),
 			subInputs = blockSubFields.find('> div').find('input'),
@@ -290,23 +290,22 @@ $(function(){
     	}
     });
 
-    var h = $(window).height(), w = $(window).width();
+
     $(window).resize(function(){
-    	windowWidth = $(window).width();
-
-    	// Creation de compte - Interactive map
-    	if($('#mapForm').length && windowWidth > 767){
-    		if(!setMapFormActive){
-    			setMapForm();
-    		}
-    	}
-
     	var nh = $(window).height(), nw = $(window).width();
-    	if (nw != w){
+    	if (nw != windowWidth){
 			// Si le resize se fait sur la largeur seulement
 			$('body').removeClass('sidebar-links-open sidebar-account-open nav-header-open');
 		}
-		h = nh; w = nw;
+		windowHeight = nh;
+		windowWidth = nw;
+
+		// Creation de compte - Interactive map
+		if($('#mapForm').length && windowWidth > 767){
+			if(!setMapFormActive){
+				setMapForm();
+			}
+		}
 	});
 
 
