@@ -5,17 +5,6 @@
         position: relative;
         margin: 10px 0 4.3em;
         clear: both;
-        time, .title-grey{
-            &::after{
-                content: '';
-                display: inline-block;
-                @include size(3px);
-                vertical-align: middle;
-                margin: 0 15px;
-                border-radius: 50%;
-                background: $theme-btn;
-            }
-        }
         time{
             font-family: $roboto-cd-bold;
             font-size: 0.88em;
@@ -24,6 +13,15 @@
             display: inline-block;
             position: relative;
             margin: 0;
+            &::before, &::after{
+                content: '';
+                display: inline-block;
+                @include size(3px);
+                vertical-align: middle;
+                margin: 0 15px;
+                border-radius: 50%;
+                background: $theme-btn;
+            }
             &::after{
                 margin-left: 30px;
             }

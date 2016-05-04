@@ -26,12 +26,13 @@
 		content: '\e909';
 		display: inline-block;
 		margin: 0 0 0 5px;
+		transform: translate3d(0, 0, 0);
 		transform-origin: 50% 50%;
 		transition: transform $transition;
 	}
 	&:hover, &:focus{
 		&::after{
-			transform: rotate(-90deg);
+			transform: translate3d(0, 0, 0) rotate(-90deg);
 		}
 	}
 	&.btn-no-text{
@@ -54,12 +55,13 @@
 		content: '\e906'; // cross
 		display: inline-block;
 		margin: 0 5px 0 0;
+		transform: translate3d(0, 0, 0);
 		transform-origin: 50% 50%;
 		transition: transform $transition;
 	}
 	&:hover, &:focus{
 		&::before{
-			transform: rotate(90deg);
+			transform: translate3d(0, 0, 0) rotate(90deg);
 		}
 	}
 }
@@ -73,12 +75,13 @@
 		content: '\e90b'; //trash
 		display: inline-block;
 		margin: 0 0 0 5px;
+		transform: translate3d(0, 0, 0);
 		transform-origin: 50% 50%;
 		transition: transform $transition;
 	}
 	&:hover, &:focus{
 		&::after{
-			transform: scale(0.95);
+			transform: translate3d(0, 0, 0) scale(0.95);
 		}
 	}
 	&.btn-no-text{
@@ -116,16 +119,6 @@
 	border: none;
 	backface-visibility: hidden;
 	line-height: 1em;
-	&.no-square{
-		&::before, &::after{
-			display: none;
-		}
-	}
-	.wrapper-input-btn &{
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
 	&::before, &::after{
 		content: '';
 		display: block;
@@ -180,7 +173,7 @@
 			z-index: auto;
 			opacity: 1;
 			background: none;
-			transform: none;
+			transform: translate3d(0, 0, 0);
 			transform-origin: 50% 50%;
 			transition: transform $transition;
 		}
@@ -189,9 +182,22 @@
 		}
 		&:hover, &:focus{
 			&::before{
-				transform: scale(1.2);
+				transform: translate3d(0, 0, 0) scale(1.2);
 			}
 		}
+	}
+	&.no-square{
+		&::before, &::after{
+			display: none;
+		}
+	}
+	.wrapper-input-btn &{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	&:hover, &:focus{
+		color: #fff;
 	}
 }
 

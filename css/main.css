@@ -1061,6 +1061,8 @@ legend {
   margin-bottom: 15px;
 }
 .block-sub-fields legend {
+  /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
+  float: left;
   margin-left: -195px;
   /* = margin-left .block-sub-fields */
 }
@@ -1126,6 +1128,12 @@ input[type=email], input.big {
 }
 input[type=number] {
   max-width: 85px;
+  -moz-appearance: textfield;
+  /* to hide the persistent indicator on FF */
+  /*&::-webkit-inner-spin-button, &::-webkit-outer-spin-button{
+      -webkit-appearance: none;
+      margin: 0;
+  }*/
 }
 input[type=number].price {
   max-width: 160px;
@@ -1236,6 +1244,8 @@ input[disabled] {
   outline: 0;
   font-size: 0.88em;
   font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
+  /* pour safari qui affiche les input disabled en gris */
+  -webkit-text-fill-color: #282c34;
 }
 
 textarea {
@@ -2319,6 +2329,8 @@ button.no-margin {
   content: '\e909';
   display: inline-block;
   margin: 0 0 0 5px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -2327,8 +2339,8 @@ button.no-margin {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .btn-pen:hover::after, .btn-pen:focus::after {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: translate3d(0, 0, 0) rotate(-90deg);
+          transform: translate3d(0, 0, 0) rotate(-90deg);
 }
 .btn-pen.btn-no-text {
   display: inline-block;
@@ -2354,6 +2366,8 @@ button.no-margin {
   content: '\e906';
   display: inline-block;
   margin: 0 5px 0 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -2362,8 +2376,8 @@ button.no-margin {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .btn-cancel:hover::before, .btn-cancel:focus::before {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
+          transform: translate3d(0, 0, 0) rotate(90deg);
 }
 
 .btn-delete::after {
@@ -2380,6 +2394,8 @@ button.no-margin {
   content: '\e90b';
   display: inline-block;
   margin: 0 0 0 5px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -2388,8 +2404,8 @@ button.no-margin {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .btn-delete:hover::after, .btn-delete:focus::after {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  -webkit-transform: translate3d(0, 0, 0) scale(0.95);
+          transform: translate3d(0, 0, 0) scale(0.95);
 }
 .btn-delete.btn-no-text {
   display: inline-block;
@@ -2435,14 +2451,6 @@ button.no-margin {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   line-height: 1em;
-}
-.btn-block.no-square::before, .btn-block.no-square::after {
-  display: none;
-}
-.wrapper-input-btn .btn-block {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 .btn-block::before, .btn-block::after {
   content: '';
@@ -2512,8 +2520,8 @@ button.no-margin {
   z-index: auto;
   opacity: 1;
   background: none;
-  -webkit-transform: none;
-          transform: none;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -2525,8 +2533,19 @@ button.no-margin {
   display: none;
 }
 .btn-block.btn-plus:hover::before, .btn-block.btn-plus:focus::before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: translate3d(0, 0, 0) scale(1.2);
+          transform: translate3d(0, 0, 0) scale(1.2);
+}
+.btn-block.no-square::before, .btn-block.no-square::after {
+  display: none;
+}
+.wrapper-input-btn .btn-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-block:hover, .btn-block:focus {
+  color: #fff;
 }
 
 .btn-block-arrow {
@@ -3489,16 +3508,6 @@ button.no-margin {
   margin: 10px 0 4.3em;
   clear: both;
 }
-.alerts-block time::after, .alerts-block .title-grey::after {
-  content: '';
-  display: inline-block;
-  width: 3px;
-  height: 3px;
-  vertical-align: middle;
-  margin: 0 15px;
-  border-radius: 50%;
-  background: #c6333e;
-}
 .alerts-block time {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 0.88em;
@@ -3507,6 +3516,16 @@ button.no-margin {
   display: inline-block;
   position: relative;
   margin: 0;
+}
+.alerts-block .title-grey::before, .alerts-block .title-grey::after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  vertical-align: middle;
+  margin: 0 15px;
+  border-radius: 50%;
+  background: #c6333e;
 }
 .alerts-block .title-grey::after {
   margin-left: 30px;
@@ -4002,7 +4021,17 @@ button.no-margin {
           }
       }
   }*/
-  .alerts-block .title-grey::after {
+  .alerts-block time::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    vertical-align: middle;
+    margin: 0 15px;
+    border-radius: 50%;
+    background: #c6333e;
+  }
+  .alerts-block .title-grey::after, .alerts-block .title-grey::before {
     display: none;
   }
   .alerts-block .title-grey .notif {

@@ -439,8 +439,20 @@
 
     .alerts{
         &-block{
-            .title-grey{
+            time{
                 &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 3px;
+                    height: 3px;
+                    vertical-align: middle;
+                    margin: 0 15px;
+                    border-radius: 50%;
+                    background: #c6333e;
+                }
+            }
+            .title-grey{
+                &::after, &::before{
                     display: none;
                 }
                 .notif{
