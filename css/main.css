@@ -2052,7 +2052,7 @@ button.no-margin {
 }
 .tab-content-title.has-btn {
   display: inline-block;
-  width: 65%;
+  width: 63%;
 }
 .tab-content-title.has-btn + .btn-block {
   float: right;
@@ -3654,12 +3654,12 @@ button.no-margin {
 
   .menu-header {
     display: block;
-    padding: 1px 0 0 0;
+    padding: 1px 0 0;
   }
   .menu-header > li {
     display: block;
     position: relative;
-    margin: -1px 0 0 0;
+    margin: -1px 0 0;
     overflow: hidden;
   }
   .menu-header > li:nth-child(10n+1) a::before {
@@ -3848,6 +3848,9 @@ button.no-margin {
     margin-left: -45px;
     margin-right: -45px;
   }
+  .tab-content-title.has-btn {
+    width: 50%;
+  }
 
   .form-half {
     margin-top: 0;
@@ -3995,6 +3998,20 @@ button.no-margin {
           }
       }
   }*/
+  .alerts-block .title-grey::after {
+    display: none;
+  }
+  .alerts-block .title-grey .notif {
+    right: -18px;
+  }
+  .alerts-list li {
+    padding-right: 170px;
+  }
+  .alerts-place {
+    display: block;
+    margin: 5px 0 0 102px;
+    white-space: initial;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -4027,6 +4044,16 @@ button.no-margin {
   .tab-content-title .h1 {
     width: 100%;
     max-width: none;
+  }
+  .tab-content-title.has-btn {
+    width: 100%;
+  }
+  .tab-content-title.has-btn .h1 {
+    width: auto;
+  }
+  .tab-content-title.has-btn + .btn-block {
+    float: none;
+    margin: -30px 0 50px;
   }
   .tab-content-buttons .btn-block-arrow {
     display: block;
@@ -4159,6 +4186,42 @@ button.no-margin {
   .cols-right-footer > li:nth-child(2) {
     width: 280px;
   }
+
+  .alerts-block time {
+    display: block;
+    margin: 0 0 5px;
+  }
+  .alerts-block time::after {
+    display: none;
+  }
+  .alerts-block .title-grey {
+    text-indent: 18px;
+  }
+  .alerts-block .title-grey .notif {
+    right: auto;
+    left: 0;
+    text-indent: 0;
+  }
+  .alerts-block-btn {
+    right: 0;
+    top: 22px;
+  }
+  .alerts-header {
+    margin: 0 70px 0 0;
+  }
+  .alerts-list li {
+    padding-right: 25px;
+  }
+  .alerts-list .title-simple {
+    display: block;
+    margin-right: 0;
+  }
+  .alerts-place {
+    margin-left: 0;
+  }
+  .alerts-price {
+    position: static;
+  }
 }
 @media (max-width: 650px) {
   .nav-tabs {
@@ -4174,6 +4237,25 @@ button.no-margin {
   }
   .nav-tabs-indicator li {
     padding: 9px 9px 6px;
+  }
+}
+@media (max-width: 600px) {
+  .alerts-block-btn {
+    position: static;
+    margin: 15px 0 0;
+    text-align: right;
+  }
+  .alerts-header {
+    margin: 0;
+  }
+  .alerts-list li {
+    padding-left: 25px;
+  }
+  .alerts-img {
+    display: block;
+    position: relative;
+    left: 0;
+    margin: 0 0 10px;
   }
 }
 @media (max-width: 480px) {
