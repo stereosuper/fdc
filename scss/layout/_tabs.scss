@@ -67,15 +67,6 @@
             }
         }
     }
-    .notif{
-        padding: 3px 4px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        line-height: 0.8;
-        background: $theme-btn;
-        color: #fff;
-    }
 }
 
 .tab-content{
@@ -90,12 +81,24 @@
             display: inline-block;
             padding: 0;
             max-width: 80%;
+            position: relative;
             vertical-align: top;
             margin: 0 2.6% 0 0;
+            .notif{
+                right: -15px;
+            }
         }
         a, button{
             display: inline-block;
             margin: 1.5em 0 0;
+        }
+        &.has-btn{
+            display: inline-block;
+            width: 65%;
+            + .btn-block{
+                float: right;
+                margin: 35px 0 0;
+            }
         }
     }
     &-buttons{

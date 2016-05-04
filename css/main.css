@@ -355,6 +355,14 @@ hr {
   content: "";
 }
 
+.icon-trash::before {
+  content: "";
+}
+
+.icon-plus::before {
+  content: "";
+}
+
 /******* GÉNÉRAL *******/
 ::-moz-selection {
   background: black;
@@ -618,9 +626,11 @@ a:active, button:active {
   vertical-align: top;
 }
 
-.clearfix::after {
+.clearfix::before, .clearfix::after {
   content: '';
   display: table;
+}
+.clearfix::after {
   clear: both;
 }
 
@@ -696,8 +706,34 @@ a:active, button:active {
   color: #e5600f;
 }
 
+.notif {
+  padding: 3px 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  line-height: 0.8;
+  background: #c6333e;
+  color: #fff;
+}
+
+.title-grey {
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 1.5em;
+  color: #566282;
+}
+
+.title-simple {
+  margin: 0;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 /* Placeholders */
-.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-block-arrow {
+.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-delete, .btn-block-arrow {
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   text-decoration: none;
@@ -706,10 +742,10 @@ a:active, button:active {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-block-arrow {
+.breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-delete, .big.btn-block-arrow {
   font-size: 1.2em;
 }
-.breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-block-arrow {
+.breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-delete, .small.btn-block-arrow {
   font-size: 0.75em;
 }
 
@@ -1958,15 +1994,6 @@ button.no-margin {
 .nav-tabs-indicator li.active + li::after {
   background-position: -11px 0;
 }
-.nav-tabs .notif {
-  padding: 3px 4px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 0.8;
-  background: #c6333e;
-  color: #fff;
-}
 
 .tab-content {
   padding: 20px 60px 50px;
@@ -1982,12 +2009,24 @@ button.no-margin {
   display: inline-block;
   padding: 0;
   max-width: 80%;
+  position: relative;
   vertical-align: top;
   margin: 0 2.6% 0 0;
+}
+.tab-content-title .h1 .notif {
+  right: -15px;
 }
 .tab-content-title a, .tab-content-title button {
   display: inline-block;
   margin: 1.5em 0 0;
+}
+.tab-content-title.has-btn {
+  display: inline-block;
+  width: 65%;
+}
+.tab-content-title.has-btn + .btn-block {
+  float: right;
+  margin: 35px 0 0;
 }
 .tab-content-buttons {
   margin: 5em 0 5.3em;
@@ -2225,6 +2264,13 @@ button.no-margin {
 }
 
 /* Buttons */
+.btn-no-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 99em;
+  line-height: 0;
+}
+
 .btn-pen::after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
@@ -2249,6 +2295,15 @@ button.no-margin {
 .btn-pen:hover::after, .btn-pen:focus::after {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+.btn-pen.btn-no-text {
+  display: inline-block;
+  width: 17px;
+}
+.btn-pen.btn-no-text::after {
+  float: left;
+  margin: 0;
+  text-indent: 0;
 }
 
 .btn-cancel::before {
@@ -2275,6 +2330,41 @@ button.no-margin {
 .btn-cancel:hover::before, .btn-cancel:focus::before {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.btn-delete::after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e90b';
+  display: inline-block;
+  margin: 0 0 0 5px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.btn-delete:hover::after, .btn-delete:focus::after {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.btn-delete.btn-no-text {
+  display: inline-block;
+  width: 15px;
+}
+.btn-delete.btn-no-text::after {
+  float: left;
+  margin: 0;
+  text-indent: 0;
 }
 
 .btn-simple {
@@ -2360,6 +2450,49 @@ button.no-margin {
 .btn-block.huge {
   padding: 22px 40px;
   font-size: 1em;
+}
+.btn-block.btn-plus {
+  padding: 16px 16px 15px 50px;
+  font-size: 1em;
+}
+.btn-block.btn-plus::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e90a';
+  display: inline-block;
+  width: auto;
+  height: 16px;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: auto;
+  margin: auto;
+  z-index: auto;
+  opacity: 1;
+  background: none;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.btn-block.btn-plus::after {
+  display: none;
+}
+.btn-block.btn-plus:hover::before, .btn-block.btn-plus:focus::before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .btn-block-arrow {
@@ -3314,6 +3447,133 @@ button.no-margin {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 0;
+}
+
+/* Alerts */
+.alerts-block {
+  position: relative;
+  margin: 10px 0 4.3em;
+  clear: both;
+}
+.alerts-block time::after, .alerts-block .title-grey::after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  vertical-align: middle;
+  margin: 0 15px;
+  border-radius: 50%;
+  background: #c6333e;
+}
+.alerts-block time {
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 0.88em;
+}
+.alerts-block .title-grey {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+.alerts-block .title-grey::after {
+  margin-left: 30px;
+}
+.alerts-block .title-grey .notif {
+  right: 30px;
+}
+.alerts-block-btn {
+  position: absolute;
+  top: 3px;
+  right: 20px;
+}
+.alerts-header {
+  margin: 0 100px 0 20px;
+}
+.alerts-list {
+  padding: 0;
+  border-top: 1px solid;
+  margin: 0.5em 0 0;
+}
+.alerts-list li {
+  padding: 18px 240px 23px 125px;
+  position: relative;
+  margin: 0;
+}
+.alerts-list li:nth-of-type(2n+1) {
+  background: #f5f5f6;
+}
+.alerts-list li::before {
+  display: none;
+}
+.alerts-list .title-simple {
+  display: inline-block;
+  margin-right: 10px;
+}
+.alerts-list p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+  font-size: 0.88em;
+}
+.alerts-place {
+  font-size: 0.88em;
+  white-space: nowrap;
+}
+.alerts-img {
+  width: 68px;
+  height: 51px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin: auto;
+  background: url(../layoutImg/no-img-alerts.png) no-repeat;
+  color: #fff;
+  text-decoration: none;
+}
+.alerts-img::after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 13px;
+  height: 13px;
+  content: '\e90a';
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-size: 8px;
+  line-height: 12px;
+  text-align: center;
+  background: #c6333e;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.alerts-img:hover, .alerts-img:focus {
+  color: #c6333e;
+}
+.alerts-img:hover::after, .alerts-img:focus::after {
+  background: #fff;
+}
+.alerts-img.no-img::after {
+  display: none;
+}
+.alerts-price {
+  height: 27px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 1.14em;
 }
 
 /* Home specific style */

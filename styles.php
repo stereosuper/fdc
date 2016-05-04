@@ -56,6 +56,9 @@
                     <span class='icon-mail'></span>
                     <span class='icon-tool'></span>
                     <span class='icon-arrow'></span>
+                    <span class='icon-pen'></span>
+                    <span class='icon-error'></span>
+                    <span class='icon-check'></span>
                     <hr>
 
                     <h2>Buttons (components/_buttons.scss)</h2>
@@ -64,13 +67,17 @@
                     <a href='#' class='btn-block big'>.btn-block.big</a>
                     <a href='#' class='btn-block huge'>.btn-block.huge</a>
                     <br><br>
+                    <a href='#' class='btn-block-arrow'>.btn-block-arrow</a>
+                    <br><br><br><br>
                     <a href='#' class='btn-arrow small'>.btn-arrow.small</a>
                     <a href='#' class='btn-arrow'>.btn-arrow</a>
                     <a href='#' class='btn-arrow big'>.btn-arrow.big</a>
                     <br><br>
                     <a href='#' class='btn-arrow-back'>.btn-arrow-back</a>
                     <br><br>
-                    <a href='#' class='btn-block-arrow'>.btn-block-arrow</a>
+                    <a href='#' class='btn-cancel'>.btn-cancel</a>
+                    <br><br>
+                    <a href='#' class='btn-pen'>.btn-pen</a>
                     <hr>
 
                     <h2>Social (components/_social.scss)</h2>

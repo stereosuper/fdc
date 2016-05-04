@@ -1,5 +1,12 @@
 /* Buttons */
 
+.btn-no-text{
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: 99em;
+	line-height: 0;
+}
+
 .btn-arrow{
 	@extend %btn-arrow-base;
 	@extend %btn-arrow;
@@ -27,6 +34,15 @@
 			transform: rotate(-90deg);
 		}
 	}
+	&.btn-no-text{
+		display: inline-block;
+		width: 17px;
+		&::after{
+			float: left;
+			margin: 0;
+			text-indent: 0;
+		}
+	}
 }
 
 .btn-cancel{
@@ -44,6 +60,34 @@
 	&:hover, &:focus{
 		&::before{
 			transform: rotate(90deg);
+		}
+	}
+}
+
+.btn-delete{
+	@extend %btn-arrow-base;
+
+	&::after{
+		@include font-icon;
+
+		content: '\e90b'; //trash
+		display: inline-block;
+		margin: 0 0 0 5px;
+		transform-origin: 50% 50%;
+		transition: transform $transition;
+	}
+	&:hover, &:focus{
+		&::after{
+			transform: scale(0.95);
+		}
+	}
+	&.btn-no-text{
+		display: inline-block;
+		width: 15px;
+		&::after{
+			float: left;
+			margin: 0;
+			text-indent: 0;
 		}
 	}
 }
@@ -117,6 +161,37 @@
 	&.huge{
 		padding: 22px 40px;
 		font-size: 1em;
+	}
+	&.btn-plus{
+		padding: 16px 16px 15px 50px;
+		font-size: 1em;
+		&::before{
+			@include font-icon;
+
+			content: '\e90a';
+			display: inline-block;
+			width: auto;
+			height: 16px;
+			top: 0;
+			bottom: 0;
+			left: 20px;
+			right: auto;
+			margin: auto;
+			z-index: auto;
+			opacity: 1;
+			background: none;
+			transform: none;
+			transform-origin: 50% 50%;
+			transition: transform $transition;
+		}
+		&::after{
+			display: none;
+		}
+		&:hover, &:focus{
+			&::before{
+				transform: scale(1.2);
+			}
+		}
 	}
 }
 
