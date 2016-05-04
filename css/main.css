@@ -732,6 +732,10 @@ a:active, button:active {
   letter-spacing: 0;
 }
 
+.text-grey {
+  color: #a1a3a7;
+}
+
 /* Placeholders */
 .breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-delete, .btn-block-arrow {
   position: relative;
