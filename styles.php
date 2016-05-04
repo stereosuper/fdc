@@ -59,6 +59,8 @@
                     <span class='icon-pen'></span>
                     <span class='icon-error'></span>
                     <span class='icon-check'></span>
+                    <span class='icon-plus'></span>
+                    <span class='icon-trash'></span>
                     <hr>
 
                     <h2>Buttons (components/_buttons.scss)</h2>
@@ -68,6 +70,8 @@
                     <a href='#' class='btn-block huge'>.btn-block.huge</a>
                     <br><br>
                     <a href='#' class='btn-block-arrow'>.btn-block-arrow</a>
+                    <br><br>
+                    <a href='#' class='btn-block btn-plus'>.btn-block.btn-plus</a>
                     <br><br><br><br>
                     <a href='#' class='btn-arrow small'>.btn-arrow.small</a>
                     <a href='#' class='btn-arrow'>.btn-arrow</a>
@@ -78,6 +82,10 @@
                     <a href='#' class='btn-cancel'>.btn-cancel</a>
                     <br><br>
                     <a href='#' class='btn-pen'>.btn-pen</a>
+                    <br><br>
+                    <a href='#' class='btn-delete'>.btn-delete</a>
+                    <br><br>
+                    <a href='#' class='btn-pen btn-no-text'>.btn-pen.btn-no-text</a><a href='#' class='btn-delete btn-no-text'>.btn-delete.btn-no-text</a>
                     <hr>
 
                     <h2>Social (components/_social.scss)</h2>
