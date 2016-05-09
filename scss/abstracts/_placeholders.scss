@@ -16,41 +16,49 @@
 }
 
 %btn-arrow{
-    padding: 0 5px 0 0;
+    padding: 0 20px 0 0;
+    position: relative;
     &::after{
         @include font-icon;
         content: '\e900';
-        display: inline-block;
-        padding: 0 0 0 1px;
-        margin: 0 0 0 5px;
-        vertical-align: middle;
-        transform: translate3d(0, -0.2em, 1px);
+        width: 15px;
+        height: 7px;
+        position: absolute;
+        top: 1px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
         font-size: 6px;
-        transition: transform 0.2s ease-in-out;
+        transform: translate3d(0, 0, 0);
+        transition: transform $transition;
     }
     &:hover{
         &::after{
-            transform: translate3d(5px, -0.2em, 1px);
+            transform: translate3d(5px, 0, 0);
         }
     }
 }
 
 %btn-arrow-back{
-    padding: 0 0 0 5px;
+    padding: 0 0 0 15px;
+    position: relative;
     &::before{
         @include font-icon;
         content: '\e900';
-        display: inline-block;
-        padding: 0 1px 0 0;
-        margin: 0 5px 0 0;
-        vertical-align: middle;
-        transform: translate3d(0, -0.2em, 1px) rotate(180deg);
+        width: 15px;
+        height: 7px;
+        position: absolute;
+        top: 1px;
+        bottom: 0;
+        left: -5px;
+        margin: auto;
         font-size: 6px;
-        transition: transform 0.2s ease-in-out;
+        transform: translate3d(0, 0, 0) rotate(180deg);
+        transition: transform $transition;
     }
     &:hover{
         &::before{
-            transform: translate3d(-5px, -0.2em, 1px) rotate(180deg);
+            transform: translate3d(-5px, 0, 0) rotate(180deg);
         }
     }
 }
