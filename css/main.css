@@ -2121,6 +2121,12 @@ button.no-margin {
 .breadcrumb span::after {
   display: none;
 }
+.breadcrumb a:focus, .breadcrumb a:hover {
+  color: #d8d4d4;
+}
+.breadcrumb a:active {
+  color: #8b8888;
+}
 
 /* Sidebar */
 .sidebar {

@@ -28,4 +28,12 @@
             display: none;
         }
     }
+    a{
+        &:focus, &:hover{
+            color: mix(white, #c7c2c2, 30%);
+        }
+        &:active{
+            color: mix(black, #c7c2c2, 30%);
+        }
+    }
 }
