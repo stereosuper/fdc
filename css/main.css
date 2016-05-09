@@ -614,7 +614,8 @@ a, button {
     font-size: 0.75em; }
 
 .breadcrumb a, .breadcrumb span, .btn-arrow, .btn-block-arrow {
-  padding: 0 5px 0 0; }
+  padding: 0 20px 0 0;
+  position: relative; }
   .breadcrumb a::after, .breadcrumb span::after, .btn-arrow::after, .btn-block-arrow::after {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'fdc' !important;
@@ -627,21 +628,25 @@ a, button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: '\e900';
-    display: inline-block;
-    padding: 0 0 0 1px;
-    margin: 0 0 0 5px;
-    vertical-align: middle;
-    -webkit-transform: translate3d(0, -0.2em, 1px);
-            transform: translate3d(0, -0.2em, 1px);
+    width: 15px;
+    height: 7px;
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     font-size: 6px;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-            transition: transform 0.2s ease-in-out; }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out; }
   .breadcrumb a:hover::after, .breadcrumb span:hover::after, .btn-arrow:hover::after, .btn-block-arrow:hover::after {
-    -webkit-transform: translate3d(5px, -0.2em, 1px);
-            transform: translate3d(5px, -0.2em, 1px); }
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0); }
 
 .btn-arrow-back {
-  padding: 0 0 0 5px; }
+  padding: 0 0 0 15px;
+  position: relative; }
   .btn-arrow-back::before {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'fdc' !important;
@@ -654,18 +659,21 @@ a, button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: '\e900';
-    display: inline-block;
-    padding: 0 1px 0 0;
-    margin: 0 5px 0 0;
-    vertical-align: middle;
-    -webkit-transform: translate3d(0, -0.2em, 1px) rotate(180deg);
-            transform: translate3d(0, -0.2em, 1px) rotate(180deg);
+    width: 15px;
+    height: 7px;
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    left: -5px;
+    margin: auto;
     font-size: 6px;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-            transition: transform 0.2s ease-in-out; }
+    -webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+            transform: translate3d(0, 0, 0) rotate(180deg);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out; }
   .btn-arrow-back:hover::before {
-    -webkit-transform: translate3d(-5px, -0.2em, 1px) rotate(180deg);
-            transform: translate3d(-5px, -0.2em, 1px) rotate(180deg); }
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(180deg);
+            transform: translate3d(-5px, 0, 0) rotate(180deg); }
 
 .condensed-text ul {
   padding: 0; }
