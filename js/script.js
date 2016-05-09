@@ -168,6 +168,10 @@ $(function(){
 			}
 		}
 	});
+	$('#mask').on('click', function(e){
+		e.preventDefault();
+		$('body').removeClass('nav-header-open sidebar-links-open sidebar-account-open');
+	});
 	$('#btn-close-sidebar-links').click(function(e){
 		e.preventDefault();
 		if(windowWidth>1150){
