@@ -78,7 +78,7 @@
                                 <fieldset>
                                     <label for='mdp1'>
                                         Mot de passe
-                                    </label><input type='password' name='mdp1' id='mdp1' value='motdepasse' required>
+                                    </label><input type='password' name='mdp1' id='mdp1' value='motdepasse' required disabled>
                                     <button class='btn-pen small' id='editPwd' data-edit='Changer de mot de passe' data-cancel='Ne pas changer de mot de passe'>Changer de mot de passe</button>
                                 </fieldset>
                                 <fieldset class='block-pwd2 hidden'>
