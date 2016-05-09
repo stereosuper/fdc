@@ -171,6 +171,13 @@
     }
     #burger{
         display: inline-block;
+        .sidebar-links-open.nav-header-open &{
+            span{
+                &:before{
+                    transform: translateX(10px);
+                }
+            }
+        }
     }
     #logo{
         width: auto;
