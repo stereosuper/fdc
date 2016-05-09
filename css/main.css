@@ -1751,6 +1751,10 @@ button {
     color: inherit; }
   .breadcrumb span::after {
     display: none; }
+  .breadcrumb a:focus, .breadcrumb a:hover {
+    color: #d7d4d4; }
+  .breadcrumb a:active {
+    color: #8b8787; }
 
 /* Sidebar */
 .sidebar {
