@@ -1540,6 +1540,7 @@ button.no-margin {
 /* Header */
 #header {
   height: 58px;
+  background-color: white;
 }
 #header nav {
   float: right;
@@ -1801,6 +1802,27 @@ button.no-margin {
 .sidebar-links-open #btn-close-header-responsive, .nav-header-open #btn-close-header-responsive {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+#mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 58px;
+  left: 0;
+  background-color: #282c34;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.sidebar-links-open #mask, .sidebar-account-open #mask {
+  display: block;
+  opacity: 0.3;
 }
 
 /* Footer */
