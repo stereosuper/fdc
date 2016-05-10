@@ -236,14 +236,22 @@
     }
 
     .content-footer{
-        padding-top: 10px;
-        padding-bottom: 20px;
         .social-right{
             float: none;
-            margin: 10px 0 0;
+            p{
+                padding-top: 7px;
+                padding-bottom: 10px;
+            }
+            li{
+                @include size(39px);
+            }
+            a{
+                line-height: 39px;
+            }
         }
         .social{
             float: none;
+            margin-bottom: 20px;
         }
         .has-social &{
             p{

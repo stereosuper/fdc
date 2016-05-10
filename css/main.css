@@ -669,16 +669,26 @@ a:active, button:active {
   background: #eaecf1;
 }
 .content-footer p {
-  padding: 9px 0;
+  padding: 20px 0;
   margin: 0;
   font-size: 0.88em;
 }
 .content-footer p .btn-arrow {
   margin: 0 0 0 2px;
 }
+.content-footer .social-right p {
+  width: auto;
+}
+.content-footer .social-right li {
+  width: 61px;
+  height: 61px;
+}
+.content-footer .social-right a {
+  line-height: 61px;
+}
 .content-footer.has-social p {
   display: inline-block;
-  max-width: 520px;
+  max-width: 460px;
 }
 
 .img-fit.compat-object-fit {
@@ -738,6 +748,7 @@ a:active, button:active {
 
 /* Placeholders */
 .breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-delete, .btn-block-arrow {
+  display: inline-block;
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   text-decoration: none;
@@ -3900,16 +3911,23 @@ button.no-margin {
     margin-right: -45px;
   }
 
-  .content-footer {
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
   .content-footer .social-right {
     float: none;
-    margin: 10px 0 0;
+  }
+  .content-footer .social-right p {
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+  .content-footer .social-right li {
+    width: 39px;
+    height: 39px;
+  }
+  .content-footer .social-right a {
+    line-height: 39px;
   }
   .content-footer .social {
     float: none;
+    margin-bottom: 20px;
   }
   .has-social .content-footer p {
     max-width: none;
