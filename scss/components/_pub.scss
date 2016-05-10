@@ -1,0 +1,22 @@
+/* Pub */
+
+.wrapper-pub{
+	margin: 50px 0 60px 0;
+}
+
+.indic-pub{
+	color: rgb(205, 205, 210);
+	@include roboto-cd-italic(0.875em);
+	transform: translateY(-50%) rotate(-90deg);
+	position: absolute;
+	top: 50%;
+	left: -50px;
+}
+
+.pub{
+	position: relative;
+	width: 728px;
+	height: 90px;
+	background-color: #000;
+	margin: 0 auto;
+}

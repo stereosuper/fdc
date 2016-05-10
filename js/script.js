@@ -313,6 +313,11 @@ $(function(){
 		}
 	});
 
+	// Detect adblock
+	if(isBlocked){
+		$('.wrapper-pub').addClass('hidden');
+	}
+
 
 	scrollPage();
 

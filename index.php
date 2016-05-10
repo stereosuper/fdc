@@ -24,7 +24,7 @@
 			<div class='container position-relative'>
 				<section>
 					<div class='wrapper-choices'>
-						<ul class='choices three-choices'>
+						<ul class='choices'>
 							<li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
@@ -38,7 +38,7 @@
 									</div>
 									<div class='zone-txt wrapper-alignment'>
 										<div class='content-align-middle'>
-											<h3>Achat</h3>
+											<h3>Acheter<br /> son affaire</h3>
 											<p>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
 										</div>
 									</div>
@@ -177,14 +177,14 @@
 									<div class='visuel'>
 										<div class='wrapper-alignment'>
 											<div class='content-align-middle'>
-												<img src="img/vente.png" srcset="img/vente.png 1x, img/vente@2x.png 2x" alt="Vente">
+												<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="Partenaires">
 											</div>
 										</div>
 									</div>
 									<div class='zone-txt wrapper-alignment'>
 										<div class='content-align-middle'>
-											<h3>Vente</h3>
-											<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
+											<h3>Être (bien) <br />accompagné</h3>
+											<p>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</p>
 										</div>
 									</div>
 								</div><!--
@@ -194,7 +194,7 @@
 									</div>
 								</div>
 							</li><!--
-							--><!--<li>
+							--><li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
 									<div class='bg-choice'></div>
@@ -207,18 +207,18 @@
 									</div>
 									<div class='zone-txt wrapper-alignment'>
 										<div class='content-align-middle'>
-											<h3>Matériel</h3>
+											<h3>Optimiser <br />son matériel</h3>
 											<p>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</p>
 										</div>
 									</div>
-								</div>--><!--
-								--><!--<div class='zone-content'>
+								</div><!--
+								--><div class='zone-content'>
 									<div class='content'>
 										<button class='btn-close-choice icon-cross'></button>
 									</div>
 								</div>
-							</li>--><!--
-							--><!--<li>
+							</li><!--
+							--><li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
 									<div class='bg-choice'></div>
@@ -231,17 +231,17 @@
 									</div>
 									<div class='zone-txt wrapper-alignment'>
 										<div class='content-align-middle'>
-											<h3>Personnel</h3>
+											<h3>Compléter <br />son équipe</h3>
 											<p>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</p>
 										</div>
 									</div>
-								</div>--><!--
-								--><!--<div class='zone-content'>
+								</div><!--
+								--><div class='zone-content'>
 									<div class='content'>
 										<button class='btn-close-choice icon-cross'></button>
 									</div>
 								</div>
-							</li>--><!--
+							</li><!--
 							--><li>
 								<div class='zone-btn'>
 									<button class='btn-choice'></button>
@@ -249,14 +249,14 @@
 									<div class='visuel'>
 										<div class='wrapper-alignment'>
 											<div class='content-align-middle'>
-												<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="Partenaires">
+												<img src="img/vente.png" srcset="img/vente.png 1x, img/vente@2x.png 2x" alt="Vente">
 											</div>
 										</div>
 									</div>
 									<div class='zone-txt wrapper-alignment'>
 										<div class='content-align-middle'>
-											<h3>Partenaires</h3>
-											<p>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</p>
+											<h3>Vendre <br />son affaire</h3>
+											<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
 										</div>
 									</div>
 								</div><!--
@@ -267,6 +267,12 @@
 								</div>
 							</li>
 						</ul>
+					</div>
+					
+					<div class='wrapper-pub'>
+						<div class='pub'>
+							<div class='indic-pub'>— publicité —</div>
+						</div>
 					</div>
 
 					<h2 class='h1 inline-b no-margin padding-grid'>À la une</h2>
