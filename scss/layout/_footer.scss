@@ -58,7 +58,7 @@ $padding-bottom-footer: 130px;
 		margin: 0;
 		padding: 0;
 		width: 50%;
-		&::before{
+		&:before{
 			display: none;
 		}
 		&:nth-child(1){
@@ -78,7 +78,7 @@ $padding-bottom-footer: 130px;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0 26px;
-		&::before{
+		&:before{
 			display: none;
 		}
 		&:nth-child(1){
@@ -112,7 +112,7 @@ $padding-bottom-footer: 130px;
 		vertical-align: middle;
 		margin: 10px 15px;
 		padding: 0;
-		&::before{
+		&:before{
 			display: none;
 		}
 	}
@@ -176,7 +176,7 @@ $padding-bottom-footer: 130px;
 		vertical-align: top;
 		margin: 0 0 0 37px;
 		padding: 0;
-		&::before{
+		&:before{
 			display: none;
 		}
 	}

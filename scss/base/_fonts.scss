@@ -116,7 +116,7 @@ $icons: (
     plus: '\e90a'
 );
 @each $name, $icon in $icons {
-    .icon-#{$name}::before {
+    .icon-#{$name}:before {
         content: $icon;
     }
 }

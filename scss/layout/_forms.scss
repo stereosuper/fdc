@@ -135,7 +135,7 @@ fieldset{
             font-family: $roboto-cd-bold;
             font-size: 1.5em;
         }
-        &::after{
+        &:after{
             content: '';
             display: block;
             max-width: 650px;
@@ -168,13 +168,13 @@ legend, label{
     }
     .required &{
         font-family: $roboto-bold;
-        &::after{
+        &:after{
             content: '*';
             color: $theme-rouge-title;
         }
         .form-disabled &{
             font-family: $roboto;
-            &::after{
+            &:after{
                 display: none;
             }
         }
@@ -280,7 +280,7 @@ input{
         + label{
             width: auto;
             font-family: $roboto;
-            &::after{
+            &:after{
                 display: none;
             }
             &:not(.has-margin){
@@ -311,13 +311,13 @@ input{
         + label{
             position: relative;
             padding: 0 0 0 25px;
-            &::before, &::after{
+            &:before, &:after{
                 content: '';
                 position: absolute;
                 bottom: 0;
                 margin: auto;
             }
-            &::before{
+            &:before{
                 @include size(15px, 16px);
 
                 border: 1px solid #ebebeb;
@@ -326,7 +326,7 @@ input{
                 background: #fff;
                 outline: 1px solid #dadada;
             }
-            &::after{
+            &:after{
                 @include font-icon;
 
                 content: '\e907'; // icon-check
@@ -344,7 +344,7 @@ input{
         }
         &:checked{
             + label{
-                &::after{
+                &:after{
                     opacity: 1;
                     transform: scale(1);
                 }
@@ -356,7 +356,7 @@ input{
                 display: none;
                 padding-left: 0;
                 font-family: $roboto-bold;
-                &::after, &::before{
+                &:after, &:before{
                     display: none;
                 }
             }
@@ -418,7 +418,7 @@ select{
     width: 300px;
     max-width: 100%;
     position: relative;
-    &::after{
+    &:after{
         content: '';
         width: 0;
         height: 0;
@@ -521,7 +521,7 @@ button{
     font-size: 0.88em;
     background: #f3f4e1;
     color: $error;
-    &::before{
+    &:before{
         @include font-icon;
 
         content: '\e908';

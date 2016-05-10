@@ -6,7 +6,7 @@ $tps-choice-etape-2: 0.3s;
 	position: relative;
 	overflow: hidden;
 	margin: -100px 0 75px 0;
-	box-shadow: 0px 24px 76px 0px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.06);
 }
 .choices{
 	display: block;
@@ -65,7 +65,7 @@ $tps-choice-etape-2: 0.3s;
 		transform-origin: 0 50%;
 		transition: transform $tps-choice-etape-1 ease-in-out;
 		transition-delay: $tps-choice-etape-1;
-		&::before{
+		&:before{
 			display: none;
 		}
 		&:last-child{
@@ -443,7 +443,7 @@ $tps-choice-etape-2: 0.3s;
 			box-sizing: border-box;
 			z-index: -1;
 		}
-		
+
 		transition: transform $tps-choice-etape-1 ease-in-out;
 		//transition-delay: $tps-transition-choice;
 		transform: scaleX(0);
@@ -567,14 +567,14 @@ $tps-choice-etape-2: 0.3s;
 				td{
 					&:nth-child(1){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-1;
 							}
 						}
 					}
 					&:nth-child(2){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-2;
 							}
 						}
@@ -585,21 +585,21 @@ $tps-choice-etape-2: 0.3s;
 				td{
 					&:nth-child(1){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-2;
 							}
 						}
 					}
 					&:nth-child(2){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-3;
 							}
 						}
 					}
 					&:nth-child(3){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-4;
 							}
 						}
@@ -610,21 +610,21 @@ $tps-choice-etape-2: 0.3s;
 				td{
 					&:nth-child(1){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-3;
 							}
 						}
 					}
 					&:nth-child(2){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-4;
 							}
 						}
 					}
 					&:nth-child(3){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-5;
 							}
 						}
@@ -635,21 +635,21 @@ $tps-choice-etape-2: 0.3s;
 				td{
 					&:nth-child(1){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-4;
 							}
 						}
 					}
 					&:nth-child(2){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-5;
 							}
 						}
 					}
 					&:nth-child(3){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-6;
 							}
 						}
@@ -660,21 +660,21 @@ $tps-choice-etape-2: 0.3s;
 				td{
 					&:nth-child(1){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-5;
 							}
 						}
 					}
 					&:nth-child(2){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-6;
 							}
 						}
 					}
 					&:nth-child(3){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-1;
 							}
 						}
@@ -685,21 +685,21 @@ $tps-choice-etape-2: 0.3s;
 				td{
 					&:nth-child(1){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-6;
 							}
 						}
 					}
 					&:nth-child(2){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-1;
 							}
 						}
 					}
 					&:nth-child(3){
 						a{
-							&::before{
+							&:before{
 								background-color: $theme-gradient-2;
 							}
 						}
@@ -728,7 +728,7 @@ $tps-choice-etape-2: 0.3s;
 			margin: 0;
 			z-index: 2;
 			overflow: hidden;
-			&::before{
+			&:before{
 				content: '';
 				display: block;
 				width: 100%;
@@ -745,7 +745,7 @@ $tps-choice-etape-2: 0.3s;
 				padding: 0;
 			}
 			&:hover{
-				&::before{
+				&:before{
 					transform: translateX(0%);
 				}
 				color: $blanc;

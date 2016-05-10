@@ -13,7 +13,7 @@
         position: relative;
         margin: 0;
         background: #fff;
-        &::before{
+        &:before{
             display: none;
         }
         &.active{
@@ -46,7 +46,7 @@
     &-indicator{
         li{
             &:not(:first-child){
-                &::after{
+                &:after{
                     content: '';
                     width: 11px;
                     height: 10px;
@@ -60,7 +60,7 @@
             }
             &.active{
                 + li{
-                    &::after{
+                    &:after{
                         background-position: -11px 0;
                     }
                 }

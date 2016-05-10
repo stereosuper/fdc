@@ -10,7 +10,7 @@
 	background-color: $blanc;
 	filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
 	transition: transform 0.3s ease-in-out;
-	&::before{
+	&:before{
 		content: '';
 		display: block;
 		width: 8px;
@@ -43,7 +43,7 @@
 	.sidebar-links-open &{
 		transform: translateX(0%);
 	}
-	&::before{
+	&:before{
 		right: 0;
 	}
 	ul{
@@ -56,75 +56,75 @@
 			padding: 0;
 			position: relative;
 			overflow: hidden;
-			&::before{
+			&:before{
 				display: none;
 			}
 			&:nth-child(10n+1){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-1;
 					}
 				}
 			}
 			&:nth-child(10n+2){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-2;
 					}
 				}
 			}
 			&:nth-child(10n+3){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-3;
 					}
 				}
 			}
 			&:nth-child(10n+4){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-4;
 					}
 				}
 			}
 			&:nth-child(10n+5){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-5;
 					}
 				}
 			}
 			&:nth-child(10n+6){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-6;
 					}
 				}
 			}
 			&:nth-child(10n+7){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-5;
 					}
 				}
 			}
 			&:nth-child(10n+8){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-4;
 					}
 				}
 			}
 			&:nth-child(10n+9){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-3;
 					}
 				}
 			}
 			&:nth-child(10n+10){
 				a{
-					&::before{
+					&:before{
 						background-color: $theme-gradient-2;
 					}
 				}
@@ -140,7 +140,7 @@
 			border-bottom: 1px solid rgb(229, 229, 229);
 			padding: 14px 28px;
 			z-index: 1;
-			&::before{
+			&:before{
 				content: '';
 				display: block;
 				width: 100%;
@@ -154,7 +154,7 @@
 				transition: transform 0.3s ease-in-out;
 			}
 			&:hover{
-				&::before{
+				&:before{
 					transform: translateX(0);
 				}
 				color: $blanc;
@@ -168,7 +168,7 @@
 		color: $blanc;
 		margin: 0;
 		padding: 60px 28px 28px 28px;
-		&::before{
+		&:before{
 			content: '';
 			display: block;
 			width: 8px;
@@ -194,7 +194,7 @@
 	&.auth-off{
 		background-color: rgb(234, 236, 241);
 	}
-	&::before{
+	&:before{
 		left: 0;
 	}
 	.btn-close{

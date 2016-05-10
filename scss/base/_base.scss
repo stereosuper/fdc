@@ -123,7 +123,7 @@ blockquote{
     margin: 1em 40px;
     font-family: $roboto-it;
     font-size: 1.2em;
-    &::before{
+    &:before{
         content: '"';
         position: absolute;
         top: 0;
@@ -140,14 +140,14 @@ ol, ul{
     list-style: none;
     li{
         margin: 0 0 8px;
-        &::before{
+        &:before{
             display: inline-block;
         }
     }
 }
 ul{
     li{
-        &::before{
+        &:before{
             content: '';
             @include size(4px);
             margin: 0 10px 0 0;
@@ -160,7 +160,7 @@ ol{
     counter-reset: counter;
     li{
         counter-increment: counter;
-        &::before{
+        &:before{
             content: counter(counter)'.';
             margin: 0 5px 0 0;
             @include roboto-bold(0.85em);
@@ -187,7 +187,7 @@ address{
             margin: 6px 0;
             padding: 0;
             font-size: 0.875em;
-            &::before{
+            &:before{
                 display: none;
             }
         }

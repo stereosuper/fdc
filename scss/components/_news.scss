@@ -17,7 +17,7 @@
 		box-sizing: border-box;
 		background-color: $blanc;
 		border: 1px solid $gris;
-		&::before{
+		&:before{
 			display: none;
 		}
 		&:nth-child(odd){
