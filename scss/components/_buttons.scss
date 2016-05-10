@@ -226,10 +226,20 @@
 
 .btn-close{
 	display: block;
-	width: 58px;
-	height: 58px;
-	border: none;
+	@include size(58px);
+
 	color: $blanc;
-	background-color: rgb(174, 46, 57);
+	background: rgb(174, 46, 57);
 	font-size: 18px;
+	&::before{
+		display: block;
+		transform: translate3d(0, 0, 0);
+		transition: transform $transition;
+	}
+	&:hover, &:focus{
+		color: $blanc;
+		&::before{
+			transform: translate3d(0, 0, 0) rotate(90deg);
+		}
+	}
 }

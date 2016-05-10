@@ -558,8 +558,13 @@
                         }
                     }
                 }
+                .form-disabled &{
+                    display: block;
+                    margin: 0;
+                }
             }
             legend{
+                float: none;
                 margin-left: 0;
             }
         }

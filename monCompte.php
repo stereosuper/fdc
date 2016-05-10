@@ -109,10 +109,10 @@
                                 </label><input type='text' name='ville' id='ville' class='big' disabled>
                                 <span class='not-filled'>non renseigné</span>
                                 <fieldset class='block-right'>
-                                    <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' disabled><label for='adresse-facturation'>Adresse de facturation identique</label>
+                                    <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' checked disabled><label for='adresse-facturation'>Adresse de facturation identique <i>(pour les vendeurs)</i></label>
                                 </fieldset>
                             </fieldset>
-                            <fieldset class='block-optionnal'>
+                            <fieldset class='block-optionnal hidden' data-name='adresse-facturation'>
                                 <legend>Adresse de facturation</legend>
                                 <fieldset class='required'>
                                     <label for='nom-facturation'>
@@ -161,18 +161,43 @@
                                 </label>
                                 <div>
                                     <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='vente' value='vente' checked disabled><label for='vente'>
-                                            dans la vente de mon bar-tabac
+                                        <input type='checkbox' name='accompagnement[]' id='gerer' value='gerer' checked disabled><label for='gerer'>
+                                            Gérer mon entreprise
                                         </label>
                                     </fieldset>
                                     <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='placement' value='placement' checked disabled><label for='placement'>
-                                            dans le placement du fruit de la vente de mon bar-tabac
+                                        <input type='checkbox' name='accompagnement[]' id='equiper' value='equiper' checked disabled><label for='equiper'>
+                                            Équiper / aménager mon entreprise
                                         </label>
                                     </fieldset>
                                     <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='achat' value='achat' disabled><label for='achat'>
-                                            dans l'achat de mon futur bien
+                                        <input type='checkbox' name='accompagnement[]' id='financer' value='financer' disabled><label for='financer'>
+                                            Financer mon entreprise
+                                        </label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type='checkbox' name='accompagnement[]' id='assurer' value='assurer' disabled><label for='assurer'>
+                                            Assure mon entreprise
+                                        </label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type='checkbox' name='accompagnement[]' id='recruter' value='recruter' disabled><label for='recruter'>
+                                            Recruter pour mon entreprise
+                                        </label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type='checkbox' name='accompagnement[]' id='vendre' value='vendre' disabled><label for='vendre'>
+                                            Vendre mon entreprise
+                                        </label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type='checkbox' name='accompagnement[]' id='placer' value='placer' disabled><label for='placer'>
+                                            Placer la vente de mon entreprise
+                                        </label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type='checkbox' name='accompagnement[]' id='acheter' value='acheter' disabled><label for='acheter'>
+                                            Acheter ma future entreprise
                                         </label>
                                     </fieldset>
                                     <fieldset>

@@ -15,7 +15,6 @@
 	vertical-align: top;
 	width: 58px;
 	height: 58px;
-	border: none;
 	position: relative;
 	span{
 		display: block;
@@ -26,13 +25,13 @@
 		margin: 0 0 0 -20px;
 		overflow: hidden;
 		&:nth-child(1){
-		top: 16px;
+		  top: 16px;
 		}
 		&:nth-child(2){
-		top: 27px;
+		  top: 27px;
 		}
 		&:nth-child(3){
-		top: 38px;
+		  top: 38px;
 		}
 		&:before, &:after{
 			content: '';
@@ -120,6 +119,7 @@
 		vertical-align: top;
 		padding: 0 0 0 3px;
 		opacity: 0;
+        transition: opacity $transition;
 	}
 	&:hover{
 		&:after{

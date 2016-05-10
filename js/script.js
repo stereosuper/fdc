@@ -229,12 +229,23 @@ $(function(){
 		}
 	}
 
+	// Mon compte - Block optionnal
+	if($('.block-optionnal').length){
+		var i = 0, blocks = $('.block-optionnal'), nbBlocks = blocks.length;
+		for(i; i<nbBlocks; i++){
+			var thisBlock = blocks.eq(i), checkbox = $('#'+thisBlock.attr('data-name'));
+			checkbox.on('change', function(e){
+				$(this).prop('checked') ? thisBlock.addClass('hidden') : thisBlock.removeClass('hidden');
+			});
+		}
+	}
+
 
 	// Mon compte - Edit form
 	$('#editForm').on('click', function(e){
 		var form = $('#formToEdit'), pwd, btn = $(this);
 		e.preventDefault();
-		if(form.length){
+		if(form.length && !form.find('.p-error').length){
 			form.toggleClass('form-disabled').find('input').toggleAttr('disabled');
 			form.find('button[type=submit]').toggleClass('hidden');
 			form.hasClass('form-disabled') ? btn.html(btn.attr('data-edit')) : btn.html(btn.attr('data-cancel'));
