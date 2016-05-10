@@ -87,6 +87,10 @@
     outline: 1px solid #dadada;
     background: none;
     color: inherit;
+    &:not([disabled]):hover{
+        border-color: mix(white, #ebebeb, 20%);
+        outline: 1px solid mix(white, #ebebeb, 20%);
+    }
     &:focus{
         border-color: $bleu-link;
         outline: 1px solid $bleu-link;

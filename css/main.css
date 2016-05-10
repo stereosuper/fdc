@@ -705,6 +705,9 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   outline: 1px solid #dadada;
   background: none;
   color: inherit; }
+  input[type=text]:not([disabled]):hover, input[type=email]:not([disabled]):hover, input[type=tel]:not([disabled]):hover, input[type=password]:not([disabled]):hover, input[type=number]:not([disabled]):hover, textarea:not([disabled]):hover {
+    border-color: #efefef;
+    outline: 1px solid #efefef; }
   input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=number]:focus, textarea:focus {
     border-color: #7392da;
     outline: 1px solid #7392da;
@@ -953,6 +956,8 @@ input[type=radio], input[type=checkbox] {
       margin-right: 0; }
 input[type=radio] + label {
   margin: 0 30px 0 10px; }
+input[type=radio]:hover {
+  opacity: 0.8; }
 input[type=radio][disabled] {
   display: none; }
   input[type=radio][disabled] + label {
@@ -978,7 +983,9 @@ input[type=checkbox] {
       left: 0;
       top: -1px;
       background: #fff;
-      outline: 1px solid #dadada; }
+      outline: 1px solid #dadada;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
     input[type=checkbox] + label:after {
       /* use !important to prevent issues with browser extensions that change fonts */
       font-family: 'fdc' !important;
@@ -1003,6 +1010,9 @@ input[type=checkbox] {
               transform: scale(0);
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out; }
+    input[type=checkbox] + label:hover:before {
+      border-color: #efefef;
+      outline: 1px solid #efefef; }
   input[type=checkbox]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
