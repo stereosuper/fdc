@@ -193,6 +193,11 @@
 		color: $blanc;
 		text-decoration: none;
 		@include roboto-medium(0.875em);
+		.icon-mail, .icon-tool, .icon-user{
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 58px;
+		}
 		.icon-mail{
 			font-size: 15px;
 		}
