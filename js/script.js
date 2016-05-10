@@ -122,6 +122,29 @@ $(function(){
 	}
 
 
+	function setResponsiveNavTabs(){
+		if($('.nav-tabs').length){
+			var nav = $('.nav-tabs');
+			if(!nav.hasClass('nav-tabs-indicator')){
+				if(windowWidth < 768){
+					nav.height(0).find('.active').on('click', function(e){
+						var heightNav = 0, i = 0, tabs = nav.find('li'), nbTabs = tabs.length;
+						for(i; i<nbTabs; i++){
+							if(!tabs.eq(i).hasClass('active')){
+								heightNav += tabs.eq(i).outerHeight();
+							}
+						}
+						nav.height() > 0 ? nav.height(0) : nav.height(heightNav);
+						nav.toggleClass('on');
+					});
+				}else{
+					nav.css('height', 'auto');
+				}
+			}
+		}
+	}
+
+
 	/**** INIT ****/
 	imgFit();
 
@@ -200,6 +223,11 @@ $(function(){
 		e.preventDefault();
 		$('body').removeClass('sidebar-account-open');
 	});
+
+
+	// Nav tabs responsive
+	setResponsiveNavTabs();
+
 
 	// Creation de compte - Interactive map
 	if($('#mapForm').length && windowWidth > 767){
@@ -319,6 +347,8 @@ $(function(){
 		}
 		windowHeight = nh;
 		windowWidth = nw;
+
+		setResponsiveNavTabs();
 
 		// Creation de compte - Interactive map
 		if($('#mapForm').length && windowWidth > 767){
