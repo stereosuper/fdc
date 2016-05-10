@@ -2053,7 +2053,6 @@ button.no-margin {
 }
 .nav-tabs li {
   display: inline-block;
-  padding: 25px 25px 21px;
   border-right: 1px solid #dadada;
   position: relative;
   margin: 0;
@@ -2084,6 +2083,9 @@ button.no-margin {
 .nav-tabs a:hover, .nav-tabs a:focus {
   color: #c6333e;
 }
+.nav-tabs-indicator li {
+  padding: 25px 25px 21px;
+}
 .nav-tabs-indicator li:not(:first-child):after {
   content: '';
   width: 11px;
@@ -2097,6 +2099,19 @@ button.no-margin {
 }
 .nav-tabs-indicator li.active + li:after {
   background-position: -11px 0;
+}
+.nav-tabs:not(.nav-tabs-indicator) a {
+  display: block;
+  padding: 25px 25px 21px;
+  color: inherit;
+  text-decoration: none;
+}
+.nav-tabs:not(.nav-tabs-indicator) a:hover, .nav-tabs:not(.nav-tabs-indicator) a:focus {
+  color: #c6333e;
+}
+.nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
+  display: block;
+  padding: 25px 25px 21px;
 }
 
 .tab-content {
@@ -2126,11 +2141,11 @@ button.no-margin {
 }
 .tab-content-title.has-btn {
   display: inline-block;
-  width: 63%;
+  width: 66%;
 }
 .tab-content-title.has-btn + .btn-block {
   float: right;
-  margin: 35px 0 0;
+  margin: 36px 0 0;
 }
 .tab-content-buttons {
   margin: 5em 0 5.3em;
@@ -2562,6 +2577,7 @@ button.no-margin {
 .btn-block.btn-plus {
   padding: 16px 16px 15px 50px;
   font-size: 1em;
+  letter-spacing: 0;
 }
 .btn-block.btn-plus:before {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -3680,8 +3696,8 @@ button.no-margin {
   right: 0;
   bottom: 0;
   z-index: -1;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   background: #c52d38;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -4009,11 +4025,17 @@ button.no-margin {
   .nav-tabs {
     font-size: 0.62em;
   }
-  .nav-tabs li {
+  .nav-tabs-indicator li {
     padding: 15px 15px 12px;
   }
   .nav-tabs-indicator li:not(:first-child):after {
     display: none;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) a {
+    padding: 15px 15px 12px;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
+    padding: 15px 15px 12px;
   }
 
   .tab-content {
@@ -4208,9 +4230,14 @@ button.no-margin {
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
+    font-size: 2.2em;
   }
   h1.big {
     font-size: 2.8em;
+  }
+
+  h2.h1 {
+    font-size: 2.2em;
   }
 
   .content-default {
@@ -4227,6 +4254,92 @@ button.no-margin {
   .breadcrumb {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .nav-tabs:not(.nav-tabs-indicator) {
+    padding-top: 47px;
+    border: 0;
+    position: relative;
+    font-size: 0.7em;
+    -webkit-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
+  .js .nav-tabs:not(.nav-tabs-indicator) {
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-tabs:not(.nav-tabs-indicator).on li.active:before {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  .nav-tabs:not(.nav-tabs-indicator) li {
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #dadada;
+    cursor: pointer;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) li.active {
+    border-right: 1px solid #dadada;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 30px;
+    background: #fff;
+    color: #c6333e;
+  }
+  .no-js .nav-tabs:not(.nav-tabs-indicator) li.active {
+    right: 0;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) li.active:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'fdc' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\e900';
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin: 0;
+    font-size: 8px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    background: none;
+  }
+  .no-js .nav-tabs:not(.nav-tabs-indicator) li.active:before {
+    display: none;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) li.active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: -31px;
+    bottom: -4px;
+    border-bottom: 4px solid #c6333e;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) li.tab-right {
+    border-left: 0;
+    float: none;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) a, .nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) .notif {
+    height: 15px;
+    bottom: 0;
+    margin: auto;
+    right: 15px;
   }
 
   .tab-content {
@@ -4460,8 +4573,38 @@ button.no-margin {
   }
 }
 @media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
   h1.big {
     font-size: 2.4em;
+  }
+
+  h2.h1 {
+    font-size: 1.8em;
+  }
+
+  ol, ul {
+    padding-left: 0;
+  }
+
+  .title-grey {
+    font-size: 1.2em;
+  }
+
+  .title-simple {
+    font-size: 1.1em;
+  }
+
+  .alerts-block .title-grey .notif {
+    top: 2px;
+  }
+  .alerts-price {
+    font-size: 1em;
+  }
+
+  .content-default {
+    font-size: 0.88em;
   }
 
   .tab-content-buttons .btn-block-arrow {

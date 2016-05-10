@@ -270,16 +270,22 @@
 
     .nav-tabs{
         font-size: 0.62em;
-        li{
-            padding: 15px 15px 12px;
-        }
         &-indicator{
             li{
+                padding: 15px 15px 12px;
                 &:not(:first-child){
                     &:after{
                         display: none;
                     }
                 }
+            }
+        }
+        &:not(.nav-tabs-indicator){
+            a{
+                padding: 15px 15px 12px;
+            }
+            span:not(.notif){
+                padding: 15px 15px 12px;
             }
         }
     }
@@ -493,8 +499,15 @@
 
     h1{
         padding: 0 $gutter;
+        font-size: 2.2em;
         &.big{
             font-size: 2.8em;
+        }
+    }
+
+    h2{
+        &.h1{
+            font-size: 2.2em;
         }
     }
 
@@ -512,6 +525,88 @@
     .breadcrumb{
         padding-left: $gutter;
         padding-right: $gutter;
+    }
+
+    .nav-tabs{
+        &:not(.nav-tabs-indicator){
+            padding-top: 47px;
+            border: 0;
+            position: relative;
+            font-size: 0.7em;
+            transition: height $transition;
+            .js &{
+                height: 0;
+                overflow: hidden;
+            }
+            &.on{
+                li{
+                    &.active{
+                        &:before{
+                            transform: rotate(270deg);
+                        }
+                    }
+                }
+            }
+            li{
+                display: block;
+                border: 0;
+                border-bottom: 1px solid #dadada;
+                cursor: pointer;
+                &.active{
+                    border-right: 1px solid #dadada;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: $gutter;
+                    background: #fff;
+                    color: $theme-btn;
+                    .no-js &{
+                        right: 0;
+                    }
+                    &:before{
+                        @include font-icon;
+
+                        content: '\e900'; //arrow
+                        display: block;
+                        width: auto;
+                        height: auto;
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        margin: 0;
+                        font-size: 8px;
+                        transform: rotate(90deg);
+                        transition: $transition;
+                        background: none;
+                        .no-js &{
+                            display: none;
+                        }
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: -1-1*$gutter;
+                        bottom: -4px;
+                        border-bottom: 4px solid $theme-btn;
+                    }
+                }
+                &.tab-right{
+                    border-left: 0;
+                    float: none;
+                }
+            }
+            a, span:not(.notif){
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+            .notif{
+                height: 15px;
+                bottom: 0;
+                margin: auto;
+                right: 15px;
+            }
+        }
     }
 
     .tab-content{
@@ -799,9 +894,45 @@
 
 @media (max-width: 480px){
     h1{
+        font-size: 1.8em;
         &.big{
             font-size: 2.4em;
         }
+    }
+
+    h2{
+        &.h1{
+            font-size: 1.8em;
+        }
+    }
+
+    ol, ul{
+        padding-left: 0;
+    }
+
+    .title-grey{
+        font-size: 1.2em;
+    }
+
+    .title-simple{
+        font-size: 1.1em;
+    }
+
+    .alerts{
+        &-block{
+            .title-grey{
+                .notif{
+                    top: 2px;
+                }
+            }
+        }
+        &-price{
+            font-size: 1em;
+        }
+    }
+
+    .content-default{
+        font-size: 0.88em;
     }
 
     .tab-content-buttons{
