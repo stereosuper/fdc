@@ -476,7 +476,7 @@
             }
         }
         &-list{
-            li{
+            a{
                 padding-right: 170px;
             }
         }
@@ -724,6 +724,7 @@
             .title-grey{
                 text-indent: 18px;
                 .notif{
+                    top: 6px;
                     right: auto;
                     left: 0;
                     text-indent: 0;
@@ -738,7 +739,7 @@
             margin: 0 70px 0 0;
         }
         &-list{
-            li{
+            a{
                 padding-right: 25px;
             }
             .title-simple{
@@ -785,8 +786,11 @@
             margin: 0;
         }
         &-list{
-            li{
+            a{
                 padding-left: 25px;
+            }
+            .btn-arrow{
+                display: none;
             }
         }
         &-img{

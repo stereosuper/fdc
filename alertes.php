@@ -51,25 +51,31 @@
                             </div>
                             <ul class='alerts-list'>
                                 <li>
-                                    <a href='#' class='alerts-img'><img src='img/sandwicherie.jpg' alt=''></a>
-                                    <h4 class='title-simple'>Terminal de cuisson, sandwicherie</h4>
-                                    <a href='#' class='btn-arrow small'>Voir</a>
-                                    <p>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</p>
-                                    <span class='alerts-price'>235 000 € FAI</span>
+                                    <a href='#'>
+                                        <span class='alerts-img'><img src='img/sandwicherie.jpg' alt=''></span>
+                                        <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
+                                        <span href='#' class='btn-arrow small'>Voir</span>
+                                        <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
+                                        <span class='alerts-price'>235 000 € FAI</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='#' class='alerts-img no-img'></a>
-                                    <h4 class='title-simple'>Boulangerie pâtisserie confiserie</h4>
-                                    <a href='#' class='btn-arrow small'>Voir</a>
-                                    <p>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</p>
-                                    <span class='alerts-price'>140 000 € FAI</span>
+                                    <a href='#'>
+                                        <span class='alerts-img no-img'></span>
+                                        <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
+                                        <span class='alerts-price'>140 000 € FAI</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='#' class='alerts-img no-img'></a>
-                                    <h4 class='title-simple'>Boulangerie pâtisserie confiserie</h4>
-                                    <a href='#' class='btn-arrow small'>Voir</a>
-                                    <p>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</p>
-                                    <span class='alerts-price'>140 000 € FAI</span>
+                                    <a href='#'>
+                                        <span class='alerts-img no-img'></span>
+                                        <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
+                                        <span class='alerts-price'>140 000 € FAI</span>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -85,18 +91,22 @@
                             </div>
                             <ul class='alerts-list'>
                                 <li>
-                                    <a href='#' class='alerts-img'><img src='img/sandwicherie.jpg' alt=''></a>
-                                    <h4 class='title-simple'>Terminal de cuisson, sandwicherie</h4>
-                                    <a href='#' class='btn-arrow small'>Voir</a>
-                                    <p>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</p>
-                                    <span class='alerts-price'>235 000 € FAI</span>
+                                    <a href='#'>
+                                        <span class='alerts-img'><img src='img/sandwicherie.jpg' alt=''></span>
+                                        <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
+                                        <span class='alerts-price'>235 000 € FAI</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='#' class='alerts-img no-img'></a>
-                                    <h4 class='title-simple'>Boulangerie pâtisserie confiserie</h4>
-                                    <a href='#' class='btn-arrow small'>Voir</a>
-                                    <p>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</p>
-                                    <span class='alerts-price'>140 000 € FAI</span>
+                                    <a href='#'>
+                                        <span class='alerts-img no-img'></span>
+                                        <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
+                                        <span class='alerts-price'>140 000 € FAI</span>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
