@@ -497,7 +497,7 @@ button{
             padding-bottom: 6px;
             border-width: 2px;
             border-color: #c1c3c6;
-            outline: 0;
+            outline: 0 !important;
             &:focus{
                 border-color: $bleu-link;
             }
