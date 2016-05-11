@@ -64,6 +64,25 @@
     }
 }
 
+%btn-before{
+    @include font-icon;
+
+    display: inline-block;
+    margin: 0 5px 0 0;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 50% 50%;
+    transition: transform $transition;
+}
+%btn-after{
+    @include font-icon;
+
+    display: inline-block;
+    margin: 0 0 0 5px;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 50% 50%;
+    transition: transform $transition;
+}
+
 
 %list-small{
     padding: 0;
@@ -287,7 +306,7 @@
         button{
             vertical-align: middle;
         }
-        .btn-pen{
+        .btn-pen, .btn-mail{
             margin-right: 10px;
         }
     }

@@ -295,6 +295,9 @@ hr {
 .icon-plus:before {
   content: ""; }
 
+.icon-mail2:before {
+  content: ""; }
+
 /******* GÉNÉRAL *******/
 ::-moz-selection {
   background: black;
@@ -589,6 +592,8 @@ a, button {
   line-height: 0.8;
   background: #c6333e;
   color: #fff; }
+  .notif.orange {
+    background: #f18832; }
 
 .title-grey {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
@@ -605,7 +610,7 @@ a, button {
   color: #a1a3a7; }
 
 /* Placeholders */
-.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-delete, .btn-block-arrow {
+.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-delete, .btn-mail, .btn-block-arrow {
   display: inline-block;
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
@@ -614,9 +619,9 @@ a, button {
   letter-spacing: 1px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
-  .breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-delete, .big.btn-block-arrow {
+  .breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-delete, .big.btn-mail, .big.btn-block-arrow {
     font-size: 1.2em; }
-  .breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-delete, .small.btn-block-arrow {
+  .breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-delete, .small.btn-mail, .small.btn-block-arrow {
     font-size: 0.75em; }
 
 .breadcrumb a, .breadcrumb span, .btn-arrow, .btn-block-arrow {
@@ -684,6 +689,50 @@ a, button {
   .btn-arrow-back:hover:before {
     -webkit-transform: translate3d(-5px, 0, 0) rotate(180deg);
             transform: translate3d(-5px, 0, 0) rotate(180deg); }
+
+.btn-cancel:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+
+.btn-pen:after, .btn-delete:after, .btn-mail:after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
 
 .condensed-text ul {
   padding: 0; }
@@ -841,7 +890,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   margin: auto; }
   .alerts-list .right button, .sales-list .right button {
     vertical-align: middle; }
-  .alerts-list .right .btn-pen, .sales-list .right .btn-pen {
+  .alerts-list .right .btn-pen, .sales-list .right .btn-pen, .alerts-list .right .btn-mail, .sales-list .right .btn-mail {
     margin-right: 10px; }
 
 /* Grid */
@@ -1841,7 +1890,7 @@ button {
       border-right: 0;
       border-left: 1px solid #dadada;
       float: right; }
-    .nav-tabs li.tab-orange .notif, .nav-tabs li.tab-orange.active {
+    .nav-tabs li.tab-orange .notif {
       background: #f18832; }
     .nav-tabs li.tab-orange a:hover, .nav-tabs li.tab-orange a:focus {
       color: #f18832; }
@@ -2103,98 +2152,41 @@ button {
   overflow: hidden;
   text-indent: 99em;
   line-height: 0; }
-
-.btn-pen:after {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'fdc' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: '\e909';
-  display: inline-block;
-  margin: 0 0 0 5px;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
-.btn-pen:hover:after, .btn-pen:focus:after {
-  -webkit-transform: translate3d(0, 0, 0) rotate(-90deg);
-          transform: translate3d(0, 0, 0) rotate(-90deg); }
-.btn-pen.btn-no-text {
-  display: inline-block;
-  width: 17px; }
-  .btn-pen.btn-no-text:after {
+  .btn-no-text:after {
     float: left;
     margin: 0;
     text-indent: 0; }
 
+.btn-pen:after {
+  content: '\e909'; }
+.btn-pen:hover:after, .btn-pen:focus:after {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-90deg);
+          transform: translate3d(0, 0, 0) rotate(-90deg); }
+.btn-pen.btn-no-text {
+  width: 17px; }
+
 .btn-cancel:before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'fdc' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: '\e906';
-  display: inline-block;
-  margin: 0 5px 0 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  content: '\e906'; }
 .btn-cancel:hover:before, .btn-cancel:focus:before {
   -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
           transform: translate3d(0, 0, 0) rotate(90deg); }
 
 .btn-delete:after {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'fdc' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: '\e90b';
-  display: inline-block;
-  margin: 0 0 0 5px;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  content: '\e90b'; }
 .btn-delete:hover:after, .btn-delete:focus:after {
   -webkit-transform: translate3d(0, 0, 0) scale(0.95);
           transform: translate3d(0, 0, 0) scale(0.95); }
 .btn-delete.btn-no-text {
-  display: inline-block;
   width: 15px; }
-  .btn-delete.btn-no-text:after {
-    float: left;
-    margin: 0;
-    text-indent: 0; }
+
+.btn-mail:after {
+  content: '\e90c'; }
+.btn-mail:hover:after, .btn-mail:focus:after {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.95);
+          transform: translate3d(0, 0, 0) scale(0.95); }
+.btn-mail.btn-no-text {
+  width: 16px;
+  height: 15px; }
 
 .btn-simple {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
@@ -3575,7 +3567,7 @@ button {
     margin: 5px 0 0 102px;
     white-space: initial; }
 
-  .sales-list .right .btn-pen {
+  .sales-list .right .btn-pen, .sales-list .right .btn-mail {
     margin-right: 0; }
   .sales-views {
     margin-right: 10px;

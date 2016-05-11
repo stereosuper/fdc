@@ -113,7 +113,8 @@ $icons: (
     error: '\e908',
     pen: '\e909',
     trash: '\e90b',
-    plus: '\e90a'
+    plus: '\e90a',
+    mail2: '\e90c'
 );
 @each $name, $icon in $icons {
     .icon-#{$name}:before {

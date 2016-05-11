@@ -5,6 +5,11 @@
 	overflow: hidden;
 	text-indent: 99em;
 	line-height: 0;
+	&:after{
+		float: left;
+		margin: 0;
+		text-indent: 0;
+	}
 }
 
 .btn-arrow{
@@ -21,14 +26,9 @@
 	@extend %btn-arrow-base;
 
 	&:after{
-		@include font-icon;
+		@extend %btn-after;
 
 		content: '\e909';
-		display: inline-block;
-		margin: 0 0 0 5px;
-		transform: translate3d(0, 0, 0);
-		transform-origin: 50% 50%;
-		transition: transform $transition;
 	}
 	&:hover, &:focus{
 		&:after{
@@ -36,13 +36,7 @@
 		}
 	}
 	&.btn-no-text{
-		display: inline-block;
 		width: 17px;
-		&:after{
-			float: left;
-			margin: 0;
-			text-indent: 0;
-		}
 	}
 }
 
@@ -50,14 +44,9 @@
 	@extend %btn-arrow-base;
 
 	&:before{
-		@include font-icon;
+		@extend %btn-before;
 
 		content: '\e906'; // cross
-		display: inline-block;
-		margin: 0 5px 0 0;
-		transform: translate3d(0, 0, 0);
-		transform-origin: 50% 50%;
-		transition: transform $transition;
 	}
 	&:hover, &:focus{
 		&:before{
@@ -70,14 +59,9 @@
 	@extend %btn-arrow-base;
 
 	&:after{
-		@include font-icon;
+		@extend %btn-after;
 
 		content: '\e90b'; //trash
-		display: inline-block;
-		margin: 0 0 0 5px;
-		transform: translate3d(0, 0, 0);
-		transform-origin: 50% 50%;
-		transition: transform $transition;
 	}
 	&:hover, &:focus{
 		&:after{
@@ -85,13 +69,26 @@
 		}
 	}
 	&.btn-no-text{
-		display: inline-block;
 		width: 15px;
+	}
+}
+
+.btn-mail{
+	@extend %btn-arrow-base;
+
+	&:after{
+		@extend %btn-after;
+
+		content: '\e90c'; //mail2
+	}
+	&:hover, &:focus{
 		&:after{
-			float: left;
-			margin: 0;
-			text-indent: 0;
+			transform: translate3d(0, 0, 0) scale(0.95);
 		}
+	}
+	&.btn-no-text{
+		width: 16px;
+		height: 15px;
 	}
 }
 

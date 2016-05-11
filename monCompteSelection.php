@@ -3,7 +3,7 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Mon compte - Ventes</title>
+        <title>Mon compte - Sélection</title>
         <?php include_once('includes/head.html'); ?>
     </head>
 
@@ -26,18 +26,17 @@
                         </li><li>
                             <a href='#'>Alertes</a>
                             <span class='notif'>1</span>
-                        </li><li class='active'>
-                            <span>Ventes</span>
+                        </li><li>
+                            <a href='#'>Ventes</a>
                         </li><li>
                             <a href='#'>Correspondances</a>
-                        </li><li class='tab-right tab-orange'>
-                            <a href='#'>Ma sélection</a>
-                            <span class='notif'>1</span>
+                        </li><li class='tab-right tab-orange active'>
+                            <span>Ma sélection</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
                         <div class='tab-content-title'>
-                            <h2 class='h1'>Mes ventes</h2>
+                            <h2 class='h1'>Ma sélection <span class='notif orange'>3</span></h2>
                         </div>
                         <ul class='sales-list'>
                             <li>
@@ -47,9 +46,8 @@
                                     <span href='#' class='btn-arrow small'>Voir</span>
                                     <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
                                     <span class='right'>
-                                        <span class='sales-views'><b>174</b> <span>vues</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
+                                        <button class='btn-mail btn-no-text'>Envoyer</button>
+                                        <button class='btn-delete btn-no-text'>Supprimer</button>
                                     </span>
                                 </a>
                             </li>
@@ -60,9 +58,8 @@
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right'>
-                                        <span class='sales-views'><b>90</b> <span>vues</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
+                                        <button class='btn-mail btn-no-text'>Envoyer</button>
+                                        <button class='btn-delete btn-no-text'>Supprimer</button>
                                     </span>
                                 </a>
                             </li>
@@ -73,9 +70,8 @@
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right'>
-                                        <span class='sales-views'><b>1</b> <span>vue</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
+                                        <button class='btn-mail btn-no-text'>Envoyer</button>
+                                        <button class='btn-delete btn-no-text'>Supprimer</button>
                                     </span>
                                 </a>
                             </li>
