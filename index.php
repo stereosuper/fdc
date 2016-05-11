@@ -268,7 +268,7 @@
 							</li>
 						</ul>
 					</div>
-					
+
 					<div class='wrapper-pub'>
 						<div class='pub'>
 							<div class='indic-pub'>— publicité —</div>

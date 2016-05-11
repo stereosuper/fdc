@@ -1,14 +1,21 @@
 <?php
-    copy('http://localhost/index.php', 'index.html');
-    copy('http://localhost/actu-detail.php', 'actu-detail.html');
-    copy('http://localhost/mentions.php', 'mentions.html');
+    $path = 'http://localhost/';
+    $filesToIgnore = ['styles.php', 'generate.php'];
 
-    copy('http://localhost/monCompte.php', 'monCompte.html');
-    copy('http://localhost/monCompte_error.php', 'monCompte_error.html');
-    copy('http://localhost/monCompteAlertes.php', 'monCompteAlertes.html');
-    copy('http://localhost/monCompteAlerteEdition.php', 'monCompteAlerteEdition.html');
-    copy('http://localhost/monCompteAlertesEmpty.php', 'monCompteAlertesEmpty.html');
-    copy('http://localhost/monCompteCorrespondance.php', 'monCompteCorrespondance.html');
-    copy('http://localhost/monCompteSelection.php', 'monCompteSelection.html');
-    copy('http://localhost/monCompteVentes.php', 'monCompteVentes.html');
+    $files = glob(dirname(__FILE__) . '/*.php');
+    foreach($files as $file){
+        $fileName = basename($file);
+        if(strpos($fileName, '_') !== 0){
+            if(!in_array($fileName, $filesToIgnore)){
+                $phpFile = $path . $fileName;
+                $htmlFile = pathinfo($fileName, PATHINFO_FILENAME) . '.html';
+
+                if(copy($phpFile, $htmlFile)){
+                    echo 'SUCCESS <br>' . $phpFile . ' ----> ' . $htmlFile . '<br><br>';
+                }else{
+                    echo 'ERROR <br>' . $phpFile . ' ----> ' . $htmlFile . '<br><br>';
+                }
+            }
+        }
+    }
 ?>
