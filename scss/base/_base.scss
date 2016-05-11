@@ -62,10 +62,14 @@ h2{
     &.h1{
         font-size: 2.5em;
         color: $txt;
-  }
-  &.inline-b{
+    }
+    &.inline-b{
         padding-right: 10px;
-  }
+    }
+    &.title-simple-big{
+        padding: 0;
+        color: $txt;
+    }
 }
 
 h3{
@@ -216,6 +220,12 @@ a, button{
     }
 }
 
+.link{
+    color: $bleu-link;
+    text-decoration: underline;
+    transition: $transition;
+}
+
 
 /******* CLASSES GENERALES  *******/
 
@@ -353,11 +363,14 @@ a, button{
     color: #566282;
 }
 
-.title-simple{
+.title-simple, .title-simple-big{
     margin: 0;
     font-family: $roboto-cd-bold;
     font-size: 1.25em;
     line-height: 1.2;
+}
+.title-simple-big{
+    font-size: 1.75em;
 }
 
 .text-grey{
