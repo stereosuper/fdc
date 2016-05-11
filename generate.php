@@ -11,9 +11,9 @@
                 $htmlFile = pathinfo($fileName, PATHINFO_FILENAME) . '.html';
 
                 if(copy($phpFile, $htmlFile)){
-                    echo 'SUCCESS <br>' . $phpFile . ' ----> ' . $htmlFile . '<br><br>';
+                    echo '<span style="color:green;">SUCCESS</span> <br>' . $phpFile . ' ----> <a href="' . $htmlFile . '" target="_blank">' . $htmlFile . '</a><br><br>';
                 }else{
-                    echo 'ERROR <br>' . $phpFile . ' ----> ' . $htmlFile . '<br><br>';
+                    echo '<span style="color:red;">ERROR</span> <br>' . $phpFile . ' ----> ' . $htmlFile . '<br><br>';
                 }
             }
         }
