@@ -25,11 +25,6 @@
     a{
         padding: 12px 25px;
         border-top: 2px solid #f5f5f6;
-        &:hover, &:focus{
-            .btn-delete{
-                color: #fff;
-            }
-        }
     }
     time, b{
         display: inline-block;

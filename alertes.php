@@ -52,29 +52,29 @@
                             <ul class='alerts-list'>
                                 <li>
                                     <a href='#'>
-                                        <span class='alerts-img'><img src='img/sandwicherie.jpg' alt=''></span>
+                                        <span class='img'><img src='img/sandwicherie.jpg' alt=''></span>
                                         <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
                                         <span href='#' class='btn-arrow small'>Voir</span>
                                         <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
-                                        <span class='alerts-price'>235 000 € FAI</span>
+                                        <span class='right alerts-price'>235 000 € FAI</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <span class='alerts-img no-img'></span>
+                                        <span class='img no-img'></span>
                                         <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                         <span class='btn-arrow small'>Voir</span>
                                         <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
-                                        <span class='alerts-price'>140 000 € FAI</span>
+                                        <span class='right alerts-price'>140 000 € FAI</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <span class='alerts-img no-img'></span>
+                                        <span class='img no-img'></span>
                                         <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                         <span class='btn-arrow small'>Voir</span>
                                         <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
-                                        <span class='alerts-price'>140 000 € FAI</span>
+                                        <span class='right alerts-price'>140 000 € FAI</span>
                                     </a>
                                 </li>
                             </ul>
@@ -92,20 +92,20 @@
                             <ul class='alerts-list'>
                                 <li>
                                     <a href='#'>
-                                        <span class='alerts-img'><img src='img/sandwicherie.jpg' alt=''></span>
+                                        <span class='img'><img src='img/sandwicherie.jpg' alt=''></span>
                                         <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
                                         <span class='btn-arrow small'>Voir</span>
                                         <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
-                                        <span class='alerts-price'>235 000 € FAI</span>
+                                        <span class='right alerts-price'>235 000 € FAI</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <span class='alerts-img no-img'></span>
+                                        <span class='img no-img'></span>
                                         <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                         <span class='btn-arrow small'>Voir</span>
                                         <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
-                                        <span class='alerts-price'>140 000 € FAI</span>
+                                        <span class='right alerts-price'>140 000 € FAI</span>
                                     </a>
                                 </li>
                             </ul>

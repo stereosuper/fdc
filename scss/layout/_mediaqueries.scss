@@ -458,6 +458,12 @@
         }
     }*/
 
+    .alerts-list, .sales-list{
+        a{
+            padding-right: 170px;
+        }
+    }
+
     .alerts{
         &-block{
             time{
@@ -481,15 +487,24 @@
                 }
             }
         }
-        &-list{
-            a{
-                padding-right: 170px;
-            }
-        }
         &-place{
             display: block;
             margin: 5px 0 0 102px;
             white-space: initial;
+        }
+    }
+
+    .sales{
+        &-list{
+            .right{
+                .btn-pen{
+                    margin-right: 0;
+                }
+            }
+        }
+        &-views{
+            margin-right: 10px;
+            font-size: 0.88em;
         }
     }
 
@@ -807,6 +822,19 @@
         }
     }
 
+    .alerts-list, .sales-list{
+        a{
+            padding-right: 25px;
+        }
+        .title-simple{
+            display: block;
+            margin-right: 0;
+        }
+        .right{
+            position: static;
+        }
+    }
+
     .alerts{
         &-block{
             time{
@@ -833,20 +861,8 @@
         &-header{
             margin: 0 70px 0 0;
         }
-        &-list{
-            a{
-                padding-right: 25px;
-            }
-            .title-simple{
-                display: block;
-                margin-right: 0;
-            }
-        }
         &-place{
             margin-left: 0;
-        }
-        &-price{
-            position: static;
         }
     }
 }
@@ -869,6 +885,21 @@
 }
 
 @media (max-width: 600px){
+    .alerts-list, .sales-list{
+        a{
+            padding-left: 25px;
+        }
+        .btn-arrow{
+            display: none;
+        }
+        .img{
+            display: block;
+            position: relative;
+            left: 0;
+            margin: 0 0 10px;
+        }
+    }
+
     .alerts{
         &-block{
             &-btn{
@@ -879,20 +910,6 @@
         }
         &-header{
             margin: 0;
-        }
-        &-list{
-            a{
-                padding-left: 25px;
-            }
-            .btn-arrow{
-                display: none;
-            }
-        }
-        &-img{
-            display: block;
-            position: relative;
-            left: 0;
-            margin: 0 0 10px;
         }
     }
 
