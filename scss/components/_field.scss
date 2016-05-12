@@ -1,9 +1,9 @@
-/* Field header */
+/* Field */
 
-.field-header{
+.field{
 	position: relative;
 	margin: -100px 0 45px;
-	&-title{
+	&-header{
 		padding: 45px $gutter 50px 185px;
 		position: relative;
 		overflow: hidden;
@@ -46,7 +46,7 @@
 		}
 	}
 	&.field-sale{
-		.field-header-title{
+		.field-header{
 			background: linear-gradient(to bottom, rgba(#f2821e, 0.95) 0, rgba(#ec4610, 0.95) 100%);
 			&:before{
 				width: 129px;
@@ -68,7 +68,7 @@
 		}
 	}
 	&.field-buy{
-		.field-header-title{
+		.field-header{
 			background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
 			&:before{
 				width: 84px;
@@ -101,17 +101,25 @@
 		margin-bottom: 0;
 		z-index: 1;
 	}
-	&-text{
-		padding: 40px $gutter;
-		border: 1px solid $gris;
-		border-top: 0;
-		box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
-		background: #fff;
-		p{
-			margin: 5px 0 15px;
-			line-height: 1.3;
-			letter-spacing: -0.5px;
-		}
+}
+
+.field-content{
+	padding: 40px $gutter;
+	border: 1px solid $gris;
+	border-top: 0;
+	box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+	background: #fff;
+	p{
+		margin: 5px 0 15px;
+		line-height: 1.3;
+		letter-spacing: -0.5px;
+	}
+	.tab-content-title{
+		width: 45%;
+		padding-top: 0;
+	}
+	.form-half{
+		width: 45%;
 	}
 }
 
