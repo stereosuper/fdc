@@ -18,12 +18,13 @@
             </div>
 
             <div class='container-small'>
-                <header class='field-header'>
-                    <div class='field-header-title field-sale'>
+                <header class='field-header field-sale'>
+                    <div class='field-header-title'>
                         <ul class='breadcrumb'>
                             <li><a href='./'>Accueil</a></li>
                         </ul>
                         <h1>Vendre son affaire</h1>
+                        <div class='rect'></div>
                     </div>
                     <div class='field-header-text'>
                         <h2 class='title-simple-big'>Lorem Ipsum</h2>
@@ -34,7 +35,7 @@
                 <ul class='field-list'>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Bar / Tabac / PMU</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -46,7 +47,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Bar / Brasserie</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -58,7 +59,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Boucherie / Charcuterie / Traiteur</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -70,7 +71,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Boulangerie / Patisserie / Salon de thé</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -82,7 +83,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Boutiques / Magasins</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -94,7 +95,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Bureaux / Locaux / Entrepôts</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -106,7 +107,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Coiffure / Esthétique / Parfumerie</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -118,7 +119,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Commerce / Alimentation</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -130,7 +131,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Crêperie / Pizzeria</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -142,7 +143,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Entreprises de services</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -154,7 +155,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Entreprises du bâtiment</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -166,7 +167,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Hôtel Bureau</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -178,7 +179,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Hôtel Restaurant</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -190,7 +191,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Restaurant</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -202,7 +203,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Restauration rapide</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -214,7 +215,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <img src='img/restaurant.jpg' alt=''>
+                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Tabac / Loto / Presse</strong>
                                 <span class='btn-arrow small'>Voir</span>

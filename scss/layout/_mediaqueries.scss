@@ -512,6 +512,21 @@
         width: 300px;
         height: 250px;
     }
+
+    .field-header{
+        &-text{
+            padding-left: $gutter;
+            padding-right: $gutter;
+        }
+        &-title{
+            padding-right: $gutter;
+        }
+    }
+    .field-list{
+        .field-txt{
+            padding-right: $gutter;
+        }
+    }
 }
 
 @media (max-width: 767px){
@@ -865,6 +880,37 @@
             margin-left: 0;
         }
     }
+
+    .field-header{
+        &.field-sale{
+            .field-header-title{
+                &:before{
+                    width: 100px;
+                    height: 58px;
+                }
+            }
+        }
+        &-text{
+            padding-left: $gutter;
+            padding-right: $gutter;
+            padding-bottom: 20px;
+        }
+        &-title{
+            padding-right: $gutter;
+            padding-left: 160px;
+        }
+    }
+    .field-list{
+        .field-txt{
+            padding-right: $gutter;
+        }
+        .img{
+            width: 30%;
+        }
+        .field-txt{
+            padding-left: 36%;
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -1062,6 +1108,36 @@
         b{
             display: block;
             max-width: 75%;
+        }
+    }
+
+    .field-header{
+        &.field-sale{
+            .field-header-title{
+                &:before{
+                    width: 80px;
+                    height: 46px;
+                    left: 25px;
+                }
+            }
+        }
+        &-title{
+            padding-left: 125px;
+        }
+    }
+
+    .field-list{
+        .img{
+            width: 100%;
+            height: 80px;
+            left: 0;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .field-txt{
+            padding: 100px 30px 25px;
         }
     }
 }
