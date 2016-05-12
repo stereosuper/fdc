@@ -3253,20 +3253,6 @@ button {
 .field-header {
   position: relative;
   margin: -100px 0 45px; }
-  .field-header.field-sale .field-header-title {
-    background: -webkit-linear-gradient(top, rgba(242, 130, 30, 0.95) 0, rgba(236, 70, 16, 0.95) 100%);
-    background: linear-gradient(to bottom, rgba(242, 130, 30, 0.95) 0, rgba(236, 70, 16, 0.95) 100%); }
-    .field-header.field-sale .field-header-title:before {
-      width: 129px;
-      height: 75px;
-      background: url(../img/vente@2x.png) no-repeat;
-      background-size: 100%; }
-    .field-header.field-sale .field-header-title:after {
-      background: #ec4113; }
-    .field-header.field-sale .field-header-title .rect:before {
-      background: #f1661e; }
-    .field-header.field-sale .field-header-title .rect:after {
-      background: #ec4113; }
   .field-header-title {
     padding: 45px 60px 50px 185px;
     position: relative;
@@ -3303,6 +3289,31 @@ button {
     .field-header-title .rect:after {
       bottom: -50px;
       right: -50px; }
+  .field-header.field-sale .field-header-title {
+    background: -webkit-linear-gradient(top, rgba(242, 130, 30, 0.95) 0, rgba(236, 70, 16, 0.95) 100%);
+    background: linear-gradient(to bottom, rgba(242, 130, 30, 0.95) 0, rgba(236, 70, 16, 0.95) 100%); }
+    .field-header.field-sale .field-header-title:before {
+      width: 129px;
+      height: 75px;
+      background: url(../img/vente@2x.png) no-repeat;
+      background-size: 100%; }
+    .field-header.field-sale .field-header-title:after {
+      background: #ec4113; }
+    .field-header.field-sale .field-header-title .rect:before {
+      background: #f1661e; }
+    .field-header.field-sale .field-header-title .rect:after {
+      background: #ec4113; }
+  .field-header.field-buy .field-header-title {
+    background: -webkit-linear-gradient(top, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
+    background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%); }
+    .field-header.field-buy .field-header-title:before {
+      width: 84px;
+      height: 83px;
+      left: 70px;
+      background: url(../img/achat@2x.png) no-repeat;
+      background-size: 100%; }
+    .field-header.field-buy .field-header-title:after, .field-header.field-buy .field-header-title .rect:before, .field-header.field-buy .field-header-title .rect:after {
+      background: #be2b36; }
   .field-header .breadcrumb {
     padding: 0;
     margin: 0;
@@ -3976,9 +3987,6 @@ button {
   .alerts-place {
     margin-left: 0; }
 
-  .field-header.field-sale .field-header-title:before {
-    width: 100px;
-    height: 58px; }
   .field-header-text {
     padding-left: 30px;
     padding-right: 30px;
@@ -3986,6 +3994,13 @@ button {
   .field-header-title {
     padding-right: 30px;
     padding-left: 160px; }
+  .field-header.field-sale .field-header-title:before {
+    width: 100px;
+    height: 58px; }
+  .field-header.field-buy .field-header-title:before {
+    width: 70px;
+    height: 69px;
+    left: 50px; }
 
   .field-list .field-txt {
     padding-right: 30px; }
@@ -4120,12 +4135,16 @@ button {
     display: block;
     max-width: 75%; }
 
+  .field-header-title {
+    padding-left: 125px; }
   .field-header.field-sale .field-header-title:before {
     width: 80px;
     height: 46px;
     left: 25px; }
-  .field-header-title {
-    padding-left: 125px; }
+  .field-header.field-buy .field-header-title:before {
+    width: 55px;
+    height: 54px;
+    left: 30px; }
 
   .field-list .img {
     width: 100%;

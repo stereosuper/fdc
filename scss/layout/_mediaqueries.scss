@@ -882,14 +882,6 @@
     }
 
     .field-header{
-        &.field-sale{
-            .field-header-title{
-                &:before{
-                    width: 100px;
-                    height: 58px;
-                }
-            }
-        }
         &-text{
             padding-left: $gutter;
             padding-right: $gutter;
@@ -898,6 +890,23 @@
         &-title{
             padding-right: $gutter;
             padding-left: 160px;
+        }
+        &.field-sale{
+            .field-header-title{
+                &:before{
+                    width: 100px;
+                    height: 58px;
+                }
+            }
+        }
+        &.field-buy{
+            .field-header-title{
+                &:before{
+                    width: 70px;
+                    height: 69px;
+                    left: 50px;
+                }
+            }
         }
     }
     .field-list{
@@ -1112,6 +1121,9 @@
     }
 
     .field-header{
+        &-title{
+            padding-left: 125px;
+        }
         &.field-sale{
             .field-header-title{
                 &:before{
@@ -1121,8 +1133,14 @@
                 }
             }
         }
-        &-title{
-            padding-left: 125px;
+        &.field-buy{
+            .field-header-title{
+                &:before{
+                    width: 55px;
+                    height: 54px;
+                    left: 30px;
+                }
+            }
         }
     }
 

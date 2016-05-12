@@ -3,28 +3,6 @@
 .field-header{
 	position: relative;
 	margin: -100px 0 45px;
-	&.field-sale{
-		.field-header-title{
-			background: linear-gradient(to bottom, rgba(#f2821e, 0.95) 0, rgba(#ec4610, 0.95) 100%);
-			&:before{
-				width: 129px;
-				height: 75px;
-				background: url(../img/vente@2x.png) no-repeat;
-				background-size: 100%;
-			}
-			&:after{
-				background: #ec4113;
-			}
-			.rect{
-				&:before{
-					background: #f1661e;
-				}
-				&:after{
-					background: #ec4113;
-				}
-			}
-		}
-	}
 	&-title{
 		padding: 45px $gutter 50px 185px;
 		position: relative;
@@ -64,6 +42,43 @@
 			&:after{
 				bottom: -50px;
 				right: -50px;
+			}
+		}
+	}
+	&.field-sale{
+		.field-header-title{
+			background: linear-gradient(to bottom, rgba(#f2821e, 0.95) 0, rgba(#ec4610, 0.95) 100%);
+			&:before{
+				width: 129px;
+				height: 75px;
+				background: url(../img/vente@2x.png) no-repeat;
+				background-size: 100%;
+			}
+			&:after{
+				background: #ec4113;
+			}
+			.rect{
+				&:before{
+					background: #f1661e;
+				}
+				&:after{
+					background: #ec4113;
+				}
+			}
+		}
+	}
+	&.field-buy{
+		.field-header-title{
+			background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
+			&:before{
+				width: 84px;
+				height: 83px;
+				left: 70px;
+				background: url(../img/achat@2x.png) no-repeat;
+				background-size: 100%;
+			}
+			&:after, .rect:before, .rect:after{
+				background: #be2b36;
 			}
 		}
 	}
