@@ -2431,7 +2431,6 @@ button {
 /* Choices */
 .wrapper-choices {
   position: relative;
-  overflow: hidden;
   margin: -100px 0 75px 0;
   box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.06); }
 
@@ -2444,7 +2443,11 @@ button {
   padding: 0;
   line-height: normal;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s; }
   .choices.three-choices .zone-btn {
     width: 33.333333%; }
   .choices.three-choices .zone-content {
@@ -2474,12 +2477,12 @@ button {
     text-align: center;
     -webkit-transform-origin: 0 50%;
             transform-origin: 0 50%;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s; }
+    -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s; }
     .choices > li:before {
       display: none; }
     .choices > li:last-child .zone-btn:before {
@@ -2573,7 +2576,12 @@ button {
         color: #e68025; }
   .choices.choice-1-active, .choices.choice-2-active, .choices.choice-3-active, .choices.choice-4-active, .choices.choice-5-active {
     -webkit-transition-delay: 0s;
-            transition-delay: 0s; }
+            transition-delay: 0s;
+    background-color: white; }
+    .choices.choice-1-active > li, .choices.choice-2-active > li, .choices.choice-3-active > li, .choices.choice-4-active > li, .choices.choice-5-active > li {
+      opacity: 0;
+      -webkit-transition-delay: 0.3s;
+              transition-delay: 0.3s; }
     .choices.choice-1-active .visuel, .choices.choice-2-active .visuel, .choices.choice-3-active .visuel, .choices.choice-4-active .visuel, .choices.choice-5-active .visuel {
       -webkit-transition-delay: 0s;
               transition-delay: 0s; }
@@ -2590,31 +2598,36 @@ button {
       -webkit-transition-delay: 0s;
               transition-delay: 0s; }
     .choices.choice-1-active .zone-content, .choices.choice-2-active .zone-content, .choices.choice-3-active .zone-content, .choices.choice-4-active .zone-content, .choices.choice-5-active .zone-content {
-      -webkit-transition-delay: 0s;
-              transition-delay: 0s; }
+      -webkit-transition-delay: 0.6s;
+              transition-delay: 0.6s; }
     .choices.choice-1-active .content, .choices.choice-2-active .content, .choices.choice-3-active .content, .choices.choice-4-active .content, .choices.choice-5-active .content {
-      -webkit-transition-delay: 0.3s;
-              transition-delay: 0.3s; }
+      -webkit-transition-delay: 0.9s;
+              transition-delay: 0.9s; }
   .choices.choice-1-animating > li:nth-child(1) {
-    z-index: 4; }
+    z-index: 4;
+    opacity: 1; }
   .choices.choice-2-animating > li:nth-child(2) {
+    opacity: 1;
     z-index: 4; }
   .choices.choice-3-animating > li:nth-child(3) {
+    opacity: 1;
     z-index: 4; }
   .choices.choice-4-animating > li:nth-child(4) {
+    opacity: 1;
     z-index: 4; }
   .choices.choice-5-animating > li:nth-child(5) {
+    opacity: 1;
     z-index: 4; }
   .choices.choice-1-active > li:nth-child(1) {
     z-index: 4; }
     .choices.choice-1-active > li:nth-child(1) .zone-content {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1); }
+      -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+              transform: translate3d(0, 0, 0) scaleX(1); }
     .choices.choice-1-active > li:nth-child(1) .content {
       opacity: 1; }
     .choices.choice-1-active > li:nth-child(1) .zone-btn:before {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%); }
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0);
+              transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-1-active > li:nth-child(1) .visuel {
       -webkit-transform: translateY(36px);
               transform: translateY(36px); }
@@ -2630,13 +2643,13 @@ button {
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%); }
     .choices.choice-2-active > li:nth-child(2) .zone-content {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1); }
+      -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+              transform: translate3d(0, 0, 0) scaleX(1); }
     .choices.choice-2-active > li:nth-child(2) .content {
       opacity: 1; }
     .choices.choice-2-active > li:nth-child(2) .zone-btn:before {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%); }
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0);
+              transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-2-active > li:nth-child(2) .visuel {
       -webkit-transform: translateY(36px);
               transform: translateY(36px); }
@@ -2652,13 +2665,13 @@ button {
     -webkit-transform: translateX(-40%);
             transform: translateX(-40%); }
     .choices.choice-3-active > li:nth-child(3) .zone-content {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1); }
+      -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+              transform: translate3d(0, 0, 0) scaleX(1); }
     .choices.choice-3-active > li:nth-child(3) .content {
       opacity: 1; }
     .choices.choice-3-active > li:nth-child(3) .zone-btn:before {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%); }
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0);
+              transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-3-active > li:nth-child(3) .visuel {
       -webkit-transform: translateY(36px);
               transform: translateY(36px); }
@@ -2674,13 +2687,13 @@ button {
     -webkit-transform: translateX(-60%);
             transform: translateX(-60%); }
     .choices.choice-4-active > li:nth-child(4) .zone-content {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1); }
+      -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+              transform: translate3d(0, 0, 0) scaleX(1); }
     .choices.choice-4-active > li:nth-child(4) .content {
       opacity: 1; }
     .choices.choice-4-active > li:nth-child(4) .zone-btn:before {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%); }
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0);
+              transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-4-active > li:nth-child(4) .visuel {
       -webkit-transform: translateY(36px);
               transform: translateY(36px); }
@@ -2696,13 +2709,13 @@ button {
     -webkit-transform: translateX(-80%);
             transform: translateX(-80%); }
     .choices.choice-5-active > li:nth-child(5) .zone-content {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1); }
+      -webkit-transform: translate3d(0, 0, 0) scaleX(1);
+              transform: translate3d(0, 0, 0) scaleX(1); }
     .choices.choice-5-active > li:nth-child(5) .content {
       opacity: 1; }
     .choices.choice-5-active > li:nth-child(5) .zone-btn:before {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%); }
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0);
+              transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-5-active > li:nth-child(5) .visuel {
       -webkit-transform: translateY(36px);
               transform: translateY(36px); }
@@ -2733,6 +2746,10 @@ button {
       bottom: 0;
       left: 0;
       z-index: 2;
+      -webkit-transform: translate3d(0, 0, 0) scaleY(1);
+              transform: translate3d(0, 0, 0) scaleY(1);
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%;
       -webkit-transition: -webkit-transform 0.3s ease-in-out;
       transition: -webkit-transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out;
@@ -2749,12 +2766,10 @@ button {
     box-sizing: border-box;
     text-align: left;
     z-index: 1;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0) scaleX(0);
+            transform: translate3d(0, 0, 0) scaleX(0);
     -webkit-transform-origin: 0 50%;
             transform-origin: 0 50%;
     -webkit-transition-delay: 0.3s;
