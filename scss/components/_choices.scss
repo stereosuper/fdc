@@ -4,7 +4,7 @@ $tps-choice-etape-2: 0.3s;
 /* Choices */
 .wrapper-choices{
 	position: relative;
-	overflow: hidden;
+	//overflow: hidden;
 	margin: -100px 0 75px 0;
 	box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.06);
 }
@@ -17,6 +17,8 @@ $tps-choice-etape-2: 0.3s;
 	padding: 0;
 	line-height: normal;
 	backface-visibility: hidden;
+	transition: background 0.3s ease-in-out;
+	transition-delay: 0.9s;
 	&.three-choices{
 		.zone-btn{
 			width: 33.333333%;
@@ -63,8 +65,8 @@ $tps-choice-etape-2: 0.3s;
 		text-align: center;
 
 		transform-origin: 0 50%;
-		transition: transform $tps-choice-etape-1 ease-in-out;
-		transition-delay: $tps-choice-etape-1;
+		transition: transform $tps-choice-etape-1 ease-in-out, opacity 0.2s ease-in-out;
+		transition-delay: 0.6s;
 		&:before{
 			display: none;
 		}
@@ -183,6 +185,11 @@ $tps-choice-etape-2: 0.3s;
 	}
 	&.choice-1-active, &.choice-2-active, &.choice-3-active, &.choice-4-active, &.choice-5-active{
 		transition-delay: 0s;
+		background-color: $blanc;
+		> li{
+			opacity: 0;
+			transition-delay: 0.3s;
+		}
 		.visuel{
 			transition-delay: 0s;
 		}
@@ -201,22 +208,25 @@ $tps-choice-etape-2: 0.3s;
 			transition-delay: 0s;
 		}
 		.zone-content{
-			transition-delay: 0s;
+			//transition-delay: 0.3s;
+			transition-delay: 0.6s;
 		}
 		.content{
-			transition-delay: 0.3s;
+			transition-delay: 0.9s;
 		}
 	}
 	&.choice-1-animating{
 		> li{
 			&:nth-child(1){
 				z-index: 4;
+				opacity: 1;
 			}
 		}
 	}
 	&.choice-2-animating{
 		> li{
 			&:nth-child(2){
+				opacity: 1;
 				z-index: 4;
 			}
 		}
@@ -224,6 +234,7 @@ $tps-choice-etape-2: 0.3s;
 	&.choice-3-animating{
 		> li{
 			&:nth-child(3){
+				opacity: 1;
 				z-index: 4;
 			}
 		}
@@ -231,6 +242,7 @@ $tps-choice-etape-2: 0.3s;
 	&.choice-4-animating{
 		> li{
 			&:nth-child(4){
+				opacity: 1;
 				z-index: 4;
 			}
 		}
@@ -238,6 +250,7 @@ $tps-choice-etape-2: 0.3s;
 	&.choice-5-animating{
 		> li{
 			&:nth-child(5){
+				opacity: 1;
 				z-index: 4;
 			}
 		}
@@ -247,14 +260,15 @@ $tps-choice-etape-2: 0.3s;
 			&:nth-child(1){
 				z-index: 4;
 				.zone-content{
-					transform: scaleX(1);
+					transform: translate3d(0, 0, 0) scaleX(1);
+					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
-						transform: translateY(100%);
+						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
@@ -278,14 +292,15 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-20%);
 				.zone-content{
-					transform: scaleX(1);
+					transform: translate3d(0, 0, 0) scaleX(1);
+					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
-						transform: translateY(100%);
+						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
@@ -309,14 +324,15 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-40%);
 				.zone-content{
-					transform: scaleX(1);
+					transform: translate3d(0, 0, 0) scaleX(1);
+					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
-						transform: translateY(100%);
+						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
@@ -340,14 +356,15 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-60%);
 				.zone-content{
-					transform: scaleX(1);
+					transform: translate3d(0, 0, 0) scaleX(1);
+					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
-						transform: translateY(100%);
+						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
@@ -371,14 +388,15 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-80%);
 				.zone-content{
-					transform: scaleX(1);
+					transform: translate3d(0, 0, 0) scaleX(1);
+					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
-						transform: translateY(100%);
+						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
@@ -417,6 +435,8 @@ $tps-choice-etape-2: 0.3s;
 			left: 0;
 			z-index: 2;
 
+			transform: translate3d(0, 0, 0) scaleY(1);
+			transform-origin: 0 100%;
 			transition: transform $tps-choice-etape-1 ease-in-out;
 			transition-delay: $tps-choice-etape-1;
 		}
@@ -444,9 +464,9 @@ $tps-choice-etape-2: 0.3s;
 			z-index: -1;
 		}
 
-		transition: transform $tps-choice-etape-1 ease-in-out;
+		transition: $tps-choice-etape-1 ease-in-out;
 		//transition-delay: $tps-transition-choice;
-		transform: scaleX(0);
+		transform: translate3d(0, 0, 0) scaleX(0);
 		transform-origin: 0 50%;
 		transition-delay: 0.3s;
 	}
