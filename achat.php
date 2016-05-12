@@ -3,7 +3,7 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Forum des Commerces - Vente</title>
+        <title>Forum des Commerces - Achat</title>
         <?php include_once('includes/head.html'); ?>
     </head>
 
@@ -18,12 +18,12 @@
             </div>
 
             <div class='container-small'>
-                <div class='field field-sale'>
+                <div class='field field-buy'>
                     <header class='field-header'>
                         <ul class='breadcrumb'>
                             <li><a href='./'>Accueil</a></li>
                         </ul>
-                        <h1>Vendre son affaire</h1>
+                        <h1>Acheter son affaire</h1>
                         <div class='rect'></div>
                     </header>
                     <div class='field-content'>
