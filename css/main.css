@@ -3583,10 +3583,12 @@ button {
 
   #burger {
     display: inline-block; }
-    .nav-header-open #burger span:before {
-      -webkit-transform: translateX(5px);
-          -ms-transform: translateX(5px);
-              transform: translateX(5px); }
+    .nav-header-open #burger {
+      background-color: #b62933; }
+      .nav-header-open #burger span:before {
+        -webkit-transform: translateX(5px);
+            -ms-transform: translateX(5px);
+                transform: translateX(5px); }
 
   #logo {
     width: auto;
@@ -3594,7 +3596,7 @@ button {
     margin: 0 0 0 -12px; }
     #logo img {
       display: inline-block;
-      padding: 16px 50px 0 0; }
+      padding: 16px 50px 0 5px; }
 
   .home-link {
     padding-left: 178px; }
