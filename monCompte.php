@@ -36,10 +36,10 @@
                         </li>
                     </ul>
                     <div class='tab-content'>
-                        <div class='tab-content-title'>
+                        <header class='tab-content-title'>
                             <h2 class='h1'>Mes informations personnelles</h2>
                             <button class='btn-pen small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Modifier</button>
-                        </div>
+                        </header>
                         <form action='#' method='post' class='form-disabled' id='formToEdit'>
                             <fieldset class='required'>
                                 <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>

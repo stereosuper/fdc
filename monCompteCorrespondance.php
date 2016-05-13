@@ -35,9 +35,9 @@
                         </li>
                     </ul>
                     <div class='tab-content'>
-                        <div class='tab-content-title'>
+                        <header class='tab-content-title'>
                             <h2 class='h1'>Correspondance <span class='notif'>1</span></h2>
-                        </div>
+                        </header>
                         <ul class='messages-list'>
                             <li class='new'>
                                 <a href='#'>
