@@ -33,6 +33,9 @@
             z-index: 4;
             transition: transform $transition;
             border-top: 58px solid rgb(192, 47, 60);
+            &.no-transition{
+                transition: none;
+            }
             .nav-header-open &{
                 transform: translateX(0);
             }

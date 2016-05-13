@@ -3483,6 +3483,9 @@ button {
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
             transition: transform 0.3s ease-in-out;
     border-top: 58px solid #c02f3c; }
+    #header nav.no-transition {
+      -webkit-transition: none;
+              transition: none; }
     .nav-header-open #header nav {
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
