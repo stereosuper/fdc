@@ -506,6 +506,23 @@
             &.has-btn{
                 width: 50%;
             }
+            .right{
+                display: block;
+                float: none;
+                span{
+                    margin: 10px 10px 5px 0;
+                }
+                a{
+                    margin-top: 0;
+                }
+            }
+        }
+        &-footer{
+            text-align: left;
+            label{
+                display: block;
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -1274,6 +1291,14 @@
 }
 
 @media (max-width: 600px){
+    .tab-content-footer{
+        .select{
+            display: block;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+
     .alerts-list, .sales-list{
         a{
             padding-left: 25px;

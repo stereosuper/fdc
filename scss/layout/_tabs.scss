@@ -107,6 +107,14 @@
             display: inline-block;
             margin: 1.5em 0 0;
         }
+        .right{
+            float: right;
+            font-size: 0.88em;
+            span{
+                display: inline-block;
+                margin: 0 10px 0 0;
+            }
+        }
         &.has-btn{
             display: inline-block;
             width: 66%;
@@ -131,6 +139,25 @@
     .content-footer{
         padding-left: $gutter;
         margin: 50px -1*$gutter -50px;
+    }
+    &-footer{
+        padding: 15px 0 0;
+        border-top: 1px solid;
+        margin: 100px 0 0;
+        text-align: right;
+        label{
+            width: auto;
+        }
+        .select{
+            vertical-align: middle;
+            margin: 0 10px 0 0;
+        }
+        button{
+            &[type=submit]{
+                padding: 16px 17px;
+                margin-left: 0;
+            }
+        }
     }
 }
 
