@@ -8,7 +8,11 @@
     </head>
 
     <body>
-        <?php include_once('includes/header.html'); ?>
+        <?php
+            global $field;
+            $field = 'Boulangerie - Pâtisserie - Salon de thé';
+            include_once('includes/header.php');
+        ?>
 
         <main id='main' role='main'>
             <div class='bloc-top'>
@@ -26,7 +30,7 @@
                         <h1>Achat de boulangerie - pâtisserie - salon de thé</h1>
                         <div class='rect'></div>
                     </header>
-                    <div class='field-content'>
+                    <div class='field-content searchform'>
                         <div class='tab-content-title'>
                             <h2 class='h1'>Recherche</h2>
                         </div>
