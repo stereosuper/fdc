@@ -3788,6 +3788,24 @@ button {
   .map-btn {
     top: 175px; }
 
+  .searchform .tab-content-title {
+    width: 52%; }
+  .searchform .form-half {
+    width: 52%; }
+    .searchform .form-half .label-select {
+      width: 25.92%; }
+      .searchform .form-half .label-select.small {
+        width: 25.92%; }
+    .searchform .form-half fieldset.block-right {
+      margin-left: 28.93%; }
+    .searchform .form-half .select {
+      width: 70.9%; }
+      .searchform .form-half .select.small {
+        width: 70.9%; }
+  .searchform .map-container {
+    width: 43%;
+    margin: 0 0 0 5%; }
+
   .bloc-top {
     height: 440px; }
     .bloc-top h1 {
@@ -3895,10 +3913,10 @@ button {
     width: 300px;
     height: 250px; }
 
-  .field-header-text {
+  .field-content {
     padding-left: 45px;
     padding-right: 45px; }
-  .field-header-title {
+  .field-header {
     padding-right: 45px; }
 
   .field-list .field-txt {
@@ -4095,6 +4113,26 @@ button {
   .map-container {
     display: none; }
 
+  .searchform .tab-content-title {
+    width: 100%; }
+  .searchform .form-half {
+    width: 100%; }
+    .searchform .form-half fieldset.block-right {
+      margin-left: 0; }
+    .searchform .form-half .label-select {
+      width: 180px;
+      margin-right: 0; }
+      .searchform .form-half .label-select.small {
+        width: auto;
+        margin-right: 0;
+        text-align: left; }
+    .searchform .form-half .select {
+      width: 300px; }
+      .searchform .form-half .select.small {
+        width: 130px; }
+    .searchform .form-half button {
+      float: none; }
+
   .bloc-top {
     height: 380px; }
     .bloc-top h1 {
@@ -4142,27 +4180,25 @@ button {
   .alerts-place {
     margin-left: 0; }
 
-  .field-header-text {
+  .field-content {
     padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px; }
-  .field-header-title {
+    padding-right: 30px; }
+  .field-header {
     padding-right: 30px;
     padding-left: 160px; }
-  .field-header.field-sale .field-header-title:before {
+  .field.field-sale .field-header:before {
     width: 100px;
     height: 58px; }
-  .field-header.field-buy .field-header-title:before {
+  .field.field-buy .field-header:before {
     width: 70px;
     height: 69px;
     left: 50px; }
 
   .field-list .field-txt {
-    padding-right: 30px; }
+    padding-right: 30px;
+    padding-left: 36%; }
   .field-list .img {
-    width: 30%; }
-  .field-list .field-txt {
-    padding-left: 36%; } }
+    width: 30%; } }
 @media (max-width: 650px) {
   .nav-tabs {
     /*&:not(.nav-tabs-indicator){
@@ -4290,13 +4326,13 @@ button {
     display: block;
     max-width: 75%; }
 
-  .field-header-title {
+  .field-header {
     padding-left: 125px; }
-  .field-header.field-sale .field-header-title:before {
+  .field.field-sale .field-header:before {
     width: 80px;
     height: 46px;
     left: 25px; }
-  .field-header.field-buy .field-header-title:before {
+  .field.field-buy .field-header:before {
     width: 55px;
     height: 54px;
     left: 30px; }
