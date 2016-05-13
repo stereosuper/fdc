@@ -36,10 +36,10 @@
                         </li>
                     </ul>
                     <div class='tab-content'>
-                        <div class='tab-content-title'>
+                        <header class='tab-content-title'>
                             <h2 class='h1'>Mes informations personnelles</h2>
                             <button class='btn-cancel small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Annuler les modifications</button>
-                        </div>
+                        </header>
                         <form action='#' method='post' id='formToEdit'>
                             <p class='p-error'>Le champ <i>"Nom"</i> est obligatoire. Le champ <i>"Email"</i> est invalide.</p>
                             <fieldset class='required'>

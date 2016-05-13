@@ -177,9 +177,10 @@
                         </li>
                     </ul>
                     <div class='tab-content'>
-                        <div class='tab-content-title'>
+                        <header class='tab-content-title'>
                             <h2 class='h1'>Mes ventes</h2>
-                        </div>
+                            <span class='right'><span>Vous disposez de <b>2 crédits</b> pour poster vos annonces.</span><a href='#' class='btn-arrow'>Acheter des crédits</a></span>
+                        </header>
                         <ul class='sales-list'>
                             <li>
                                 <a href='#'>
@@ -221,6 +222,33 @@
                                 </a>
                             </li>
                         </ul>
+                        <footer class='tab-content-footer'>
+                            <form action='#' method='POST'>
+                                <label for='secteur' class='label-select'>Poster une nouvelle annonce dans le secteur :</label><div class='select'>
+                                    <select name='secteur' id='secteur'>
+                                        <option selected value=''>— Sélectionner le secteur</option>
+                                        <option value='1'>Bar Tabac / PMU</option>
+                                        <option value='2'>Bar / Brasserie</option>
+                                        <option value='3'>Boucherie / Charcuterie / Traiteur</option>
+                                        <option value='4'>Boulangerie / Pâtisserie / Salon de thé</option>
+                                        <option value='5'>Boutique et Magasins</option>
+                                        <option value='6'>Bureaux Locaux / Entrepôts</option>
+                                        <option value='7'>Coiffure / Esthétique / Parfumerie</option>
+                                        <option value='8'>Commerce / Alimentation</option>
+                                        <option value='9'>Crêperie / Pizzeria</option>
+                                        <option value='10'>Entreprise du Bâtiment</option>
+                                        <option value='11'>Hôtel / Bureau</option>
+                                        <option value='12'>Hôtel / Restaurant</option>
+                                        <option value='13'>Murs Commerciaux</option>
+                                        <option value='14'>Restaurant</option>
+                                        <option value='15'>Restauration rapide</option>
+                                        <option value='16'>Salon de thé</option>
+                                        <option value='17'>Tabac Loto / Presse</option>
+                                    </select>
+                                </div>
+                                <button type='submit' class='btn-block'>Ok</button>
+                            </form>
+                        </footer>
                     </div>
                 </div>
             </div>
