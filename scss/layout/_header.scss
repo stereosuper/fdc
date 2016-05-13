@@ -4,6 +4,13 @@
 	background-color: $blanc;
 	nav{
 		float: right;
+		.btn-close{
+			display: none;
+			position: absolute;
+			top: -58px;
+			z-index: 2;
+			right: -50px;
+		}
 	}
 }
 
@@ -100,7 +107,7 @@
   			right: 18px;
   		}
   	}
-  	.sidebar-links-open &{
+  	.sidebar-links-open &, .nav-header-open &{
 		transform: translateX(12px);
   	}
 }
@@ -240,7 +247,7 @@
 	z-index: 1;
 	transition: transform 0.3s ease-in-out;
 	cursor: pointer;
-	.sidebar-links-open &, .sidebar-account-open &{
+	.sidebar-links-open &, .nav-header-open &, .sidebar-account-open &{
 		display: block;
 		opacity: 0.3;
 	}

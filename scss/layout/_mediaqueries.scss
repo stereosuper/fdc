@@ -21,6 +21,7 @@
             top: 0;
             left: 0;
             transform: translateX(-100%);
+            transform: translateX(calc(-100% - 58px));
             display: inline-block;
             vertical-align: top;
             width: 283px;
@@ -44,6 +45,9 @@
                 top: 0;
                 right: 0;
                 background-color: rgb(234, 236, 241);
+            }
+            .btn-close{
+                display: block;
             }
         }
     }
@@ -177,7 +181,7 @@
     }
     #burger{
         display: inline-block;
-        .sidebar-links-open.nav-header-open &{
+        .nav-header-open &{
             span{
                 &:before{
                     transform: translateX(5px);
@@ -187,7 +191,8 @@
     }
     #logo{
         width: auto;
-        padding: 0;
+        padding: 0 0 0 12px;
+        margin: 0 0 0 -12px;
         img{
             display: inline-block;
             padding: 16px 50px 0 0;

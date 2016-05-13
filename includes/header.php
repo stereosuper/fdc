@@ -6,6 +6,7 @@
                 </a>
             </div>
             <nav role='navigation'>
+                <button id="btn-close-nav-header" class="btn-close icon-cross"></button>
                 <ul class='menu-header'>
                     <li>
                         <a href='#'>Qui sommes nous ?</a>

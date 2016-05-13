@@ -1493,6 +1493,12 @@ button {
   background-color: white; }
   #header nav {
     float: right; }
+    #header nav .btn-close {
+      display: none;
+      position: absolute;
+      top: -58px;
+      z-index: 2;
+      right: -50px; }
 
 .zone-left-header {
   display: inline-block;
@@ -1587,7 +1593,7 @@ button {
               transform: rotate(-15deg);
       top: 12px;
       right: 18px; }
-  .sidebar-links-open #logo {
+  .sidebar-links-open #logo, .nav-header-open #logo {
     -webkit-transform: translateX(12px);
         -ms-transform: translateX(12px);
             transform: translateX(12px); }
@@ -1732,7 +1738,7 @@ button {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
           transition: transform 0.3s ease-in-out;
   cursor: pointer; }
-  .sidebar-links-open #mask, .sidebar-account-open #mask {
+  .sidebar-links-open #mask, .nav-header-open #mask, .sidebar-account-open #mask {
     display: block;
     opacity: 0.3; }
 
@@ -3461,6 +3467,9 @@ button {
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
+    -webkit-transform: translateX(calc(-100% - 58px));
+        -ms-transform: translateX(calc(-100% - 58px));
+            transform: translateX(calc(-100% - 58px));
     display: inline-block;
     vertical-align: top;
     width: 283px;
@@ -3487,6 +3496,8 @@ button {
       top: 0;
       right: 0;
       background-color: #eaecf1; }
+    #header nav .btn-close {
+      display: block; }
 
   .menu-header {
     display: block;
@@ -3569,14 +3580,15 @@ button {
 
   #burger {
     display: inline-block; }
-    .sidebar-links-open.nav-header-open #burger span:before {
+    .nav-header-open #burger span:before {
       -webkit-transform: translateX(5px);
           -ms-transform: translateX(5px);
               transform: translateX(5px); }
 
   #logo {
     width: auto;
-    padding: 0; }
+    padding: 0 0 0 12px;
+    margin: 0 0 0 -12px; }
     #logo img {
       display: inline-block;
       padding: 16px 50px 0 0; }
