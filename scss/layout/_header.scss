@@ -4,6 +4,13 @@
 	background-color: $blanc;
 	nav{
 		float: right;
+		.btn-close{
+			display: none;
+			position: absolute;
+			top: -58px;
+			z-index: 2;
+			right: -50px;
+		}
 	}
 }
 
@@ -19,20 +26,20 @@
 	position: relative;
 	span{
 		display: block;
-		width: 40px;
-		height: 5px;
+		width: 18px;
+		height: 2px;
 		position: absolute;
 		left: 50%;
-		margin: 0 0 0 -20px;
+		margin: 0 0 0 -9px;
 		overflow: hidden;
 		&:nth-child(1){
-		  top: 16px;
+		  top: 20px;
 		}
 		&:nth-child(2){
 		  top: 27px;
 		}
 		&:nth-child(3){
-		  top: 38px;
+		  top: 34px;
 		}
 		&:before, &:after{
 			content: '';
@@ -48,7 +55,7 @@
 			width: 100%;
 		}
 		&:after{
-			width: 5px;
+			width: 3px;
 		}
 	}
 }
@@ -100,7 +107,7 @@
   			right: 18px;
   		}
   	}
-  	.sidebar-links-open &{
+  	.sidebar-links-open &, .nav-header-open &{
 		transform: translateX(12px);
   	}
 }
@@ -237,10 +244,11 @@
 	left: 0;
 	background-color: rgb(40, 44, 52);
 	opacity: 0;
-	z-index: 1;
+	//z-index: 1;
+	z-index: 3;
 	transition: transform 0.3s ease-in-out;
 	cursor: pointer;
-	.sidebar-links-open &, .sidebar-account-open &{
+	.sidebar-links-open &, .nav-header-open &, .sidebar-account-open &{
 		display: block;
 		opacity: 0.3;
 	}
