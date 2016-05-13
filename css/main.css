@@ -3904,12 +3904,18 @@ button {
         width: 230px; }
 
   .wrapper-menu-footer {
-    background: none; }
+    background: none;
+    bottom: 0; }
 
   .social-footer {
     position: relative;
     bottom: inherit;
-    right: inherit; }
+    right: inherit;
+    background-color: white;
+    text-align: center;
+    padding: 5px 0 20px 0; }
+    .social-footer.social {
+      display: block; }
     .social-footer.closed {
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);

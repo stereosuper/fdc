@@ -655,11 +655,18 @@
 
     .wrapper-menu-footer{
         background: none;
+        bottom: 0;
     }
     .social-footer{
         position: relative;
         bottom: inherit;
         right: inherit;
+        background-color: $blanc;
+        text-align: center;
+        padding: 5px 0 20px 0;
+        &.social{
+            display: block;
+        }
         &.closed{
             transform: translateX(0);
         }
