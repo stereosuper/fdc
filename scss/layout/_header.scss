@@ -244,7 +244,8 @@
 	left: 0;
 	background-color: rgb(40, 44, 52);
 	opacity: 0;
-	z-index: 1;
+	//z-index: 1;
+	z-index: 3;
 	transition: transform 0.3s ease-in-out;
 	cursor: pointer;
 	.sidebar-links-open &, .nav-header-open &, .sidebar-account-open &{
