@@ -2167,7 +2167,7 @@ button {
     background-color: #c02f3c;
     color: white;
     margin: 0;
-    padding: 60px 28px 28px 28px; }
+    padding: 70px 28px 28px 28px; }
     #sidebar-links p:before {
       content: '';
       display: block;
@@ -3583,9 +3583,9 @@ button {
 
   #burger {
     display: inline-block; }
-    .nav-header-open #burger {
+    .sidebar-links-open #burger {
       background-color: #b62933; }
-      .nav-header-open #burger span:before {
+      .sidebar-links-open #burger span:before {
         -webkit-transform: translateX(5px);
             -ms-transform: translateX(5px);
                 transform: translateX(5px); }
@@ -3600,6 +3600,16 @@ button {
 
   .home-link {
     padding-left: 178px; }
+
+  #sidebar-account {
+    right: inherit;
+    left: 0;
+    -webkit-transform: translateX(calc(-100% + 58px));
+        -ms-transform: translateX(calc(-100% + 58px));
+            transform: translateX(calc(-100% + 58px)); }
+    #sidebar-account .btn-close {
+      left: auto;
+      right: -50px; }
 
   .cols-footer > li:nth-child(1) {
     padding-right: 52px; }
@@ -4421,6 +4431,9 @@ button {
             transform: translateX(calc(100% - 8px)); }
 
   #btn-close-sidebar-links {
+    display: none; }
+
+  #header nav .btn-close {
     display: none; }
 
   #btn-close-header-responsive {
