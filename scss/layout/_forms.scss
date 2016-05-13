@@ -664,3 +664,38 @@ button{
         opacity: 1;
     }
 }
+
+.searchform{
+    .tab-content-title{
+        width: 45%;
+        padding-top: 0;
+        float: left;
+    }
+    .form-half{
+        width: 45%;
+        float: left;
+        clear: left;
+        .label-select{
+            width: 20.92%;
+            &.small{
+                width: 14.26%;
+            }
+        }
+        fieldset.block-right {
+            margin-left: 24.93%;
+        }
+        .select{
+            width: 75.9%;
+            &.small{
+                width: 30.86%;
+            }
+        }
+        button{
+            margin-left: 0;
+            float: right;
+        }
+    }
+    .map-container{
+        margin: 0 0 0 15%;
+    }
+}

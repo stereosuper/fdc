@@ -779,6 +779,8 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
 
 .alerts-list, .sales-list, .messages-list, .field-list {
   padding: 0;
+  border-top: 1px solid #f5f5f6;
+  border-bottom: 1px solid #f5f5f6;
   margin: 0.5em 0 0; }
   .alerts-list li, .sales-list li, .messages-list li, .field-list li {
     margin: 0; }
@@ -804,6 +806,8 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
       background-color: #d63f39; }
   .alerts-list a, .sales-list a, .messages-list a, .field-list a {
     display: block;
+    border-top: 1px solid #f5f5f6;
+    border-bottom: 1px solid #f5f5f6;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -824,7 +828,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
       transition: 0.3s ease-in-out; }
     .alerts-list a:focus, .sales-list a:focus, .messages-list a:focus, .field-list a:focus, .alerts-list a:hover, .sales-list a:hover, .messages-list a:hover, .field-list a:hover {
       color: #fff; }
-      .alerts-list a:focus .btn-arrow, .sales-list a:focus .btn-arrow, .messages-list a:focus .btn-arrow, .field-list a:focus .btn-arrow, .alerts-list a:hover .btn-arrow, .sales-list a:hover .btn-arrow, .messages-list a:hover .btn-arrow, .field-list a:hover .btn-arrow {
+      .alerts-list a:focus .btn-arrow, .sales-list a:focus .btn-arrow, .messages-list a:focus .btn-arrow, .field-list a:focus .btn-arrow, .alerts-list a:focus button, .sales-list a:focus button, .messages-list a:focus button, .field-list a:focus button, .alerts-list a:hover .btn-arrow, .sales-list a:hover .btn-arrow, .messages-list a:hover .btn-arrow, .field-list a:hover .btn-arrow, .alerts-list a:hover button, .sales-list a:hover button, .messages-list a:hover button, .field-list a:hover button {
         color: #fff; }
       .alerts-list a:focus:before, .sales-list a:focus:before, .messages-list a:focus:before, .field-list a:focus:before, .alerts-list a:hover:before, .sales-list a:hover:before, .messages-list a:hover:before, .field-list a:hover:before {
         -webkit-transform: translateX(0);
@@ -840,8 +844,6 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   background: #f5f5f6; }
 .alerts-list a, .sales-list a {
   padding: 18px 240px 23px 125px; }
-  .alerts-list a:hover button, .sales-list a:hover button, .alerts-list a:focus button, .sales-list a:focus button {
-    color: #fff; }
 .alerts-list .title-simple, .sales-list .title-simple {
   display: inline-block;
   margin-right: 10px; }
@@ -1451,6 +1453,30 @@ button {
   .map-btn.active {
     z-index: 2;
     opacity: 1; }
+
+.searchform .tab-content-title {
+  width: 45%;
+  padding-top: 0;
+  float: left; }
+.searchform .form-half {
+  width: 45%;
+  float: left;
+  clear: left; }
+  .searchform .form-half .label-select {
+    width: 20.92%; }
+    .searchform .form-half .label-select.small {
+      width: 14.26%; }
+  .searchform .form-half fieldset.block-right {
+    margin-left: 24.93%; }
+  .searchform .form-half .select {
+    width: 75.9%; }
+    .searchform .form-half .select.small {
+      width: 30.86%; }
+  .searchform .form-half button {
+    margin-left: 0;
+    float: right; }
+.searchform .map-container {
+  margin: 0 0 0 15%; }
 
 /* Header */
 #header {
@@ -3226,8 +3252,7 @@ button {
   .messages-list li.new a {
     background: #f5f5f6; }
 .messages-list a {
-  padding: 12px 25px;
-  border-top: 2px solid #f5f5f6; }
+  padding: 12px 25px; }
 .messages-list time, .messages-list b {
   display: inline-block;
   vertical-align: middle;
@@ -3332,17 +3357,13 @@ button {
   padding: 40px 60px;
   border: 1px solid #dadada;
   border-top: 0;
+  overflow: hidden;
   box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
   background: #fff; }
   .field-content p {
     margin: 5px 0 15px;
     line-height: 1.3;
     letter-spacing: -0.5px; }
-  .field-content .tab-content-title {
-    width: 45%;
-    padding-top: 0; }
-  .field-content .form-half {
-    width: 45%; }
 
 /* Field list */
 .field-list li {
@@ -3549,15 +3570,12 @@ button {
               transform: translate3d(0, 0, 0) scaleY(1); }
     .choices.choice-1-active > li:nth-child(1) .visuel {
       -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
               transform: translateY(0); }
     .choices.choice-1-active > li:nth-child(1) .zone-txt {
       -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
               transform: translateY(0); }
     .choices.choice-2-active > li:nth-child(2) {
       -webkit-transform: translateX(0%);
-          -ms-transform: translateX(0%);
               transform: translateX(0%); }
       .choices.choice-2-active > li:nth-child(2) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
@@ -3567,15 +3585,12 @@ button {
                 transform: translate3d(0, 0, 0) scaleY(1); }
       .choices.choice-2-active > li:nth-child(2) .visuel {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
       .choices.choice-2-active > li:nth-child(2) .zone-txt {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
     .choices.choice-3-active > li:nth-child(3) {
       -webkit-transform: translateX(0%);
-          -ms-transform: translateX(0%);
               transform: translateX(0%); }
       .choices.choice-3-active > li:nth-child(3) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
@@ -3585,15 +3600,12 @@ button {
                 transform: translate3d(0, 0, 0) scaleY(1); }
       .choices.choice-3-active > li:nth-child(3) .visuel {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
       .choices.choice-3-active > li:nth-child(3) .zone-txt {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
     .choices.choice-4-active > li:nth-child(4) {
       -webkit-transform: translateX(0%);
-          -ms-transform: translateX(0%);
               transform: translateX(0%); }
       .choices.choice-4-active > li:nth-child(4) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
@@ -3603,15 +3615,12 @@ button {
                 transform: translate3d(0, 0, 0) scaleY(1); }
       .choices.choice-4-active > li:nth-child(4) .visuel {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
       .choices.choice-4-active > li:nth-child(4) .zone-txt {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
     .choices.choice-5-active > li:nth-child(5) {
       -webkit-transform: translateX(0%);
-          -ms-transform: translateX(0%);
               transform: translateX(0%); }
       .choices.choice-5-active > li:nth-child(5) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
@@ -3621,11 +3630,9 @@ button {
                 transform: translate3d(0, 0, 0) scaleY(1); }
       .choices.choice-5-active > li:nth-child(5) .visuel {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
       .choices.choice-5-active > li:nth-child(5) .zone-txt {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
     .choices > li {
       display: block;
@@ -3655,7 +3662,6 @@ button {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
                 transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
         -webkit-transform-origin: 100% 0;
-            -ms-transform-origin: 100% 0;
                 transform-origin: 100% 0; }
     .choices .visuel {
       width: 250px;
@@ -3673,7 +3679,6 @@ button {
       -webkit-transform: translate3d(0, 0, 0) scaleY(0);
               transform: translate3d(0, 0, 0) scaleY(0);
       -webkit-transform-origin: 50% 0;
-          -ms-transform-origin: 50% 0;
               transform-origin: 50% 0; } }
 @media (max-width: 1024px) {
   h1.big {
