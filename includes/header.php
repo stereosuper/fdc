@@ -2,7 +2,7 @@
         <header id='header' class='clearfix'>
             <div class='zone-left-header'>
                 <a href='./' class='home-link'>
-                    Forum des Commerces
+                    <?php echo isset($field) ? $field : 'Forum des Commerces'; ?>
                 </a>
             </div>
             <nav role='navigation'>

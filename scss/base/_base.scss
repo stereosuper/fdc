@@ -357,10 +357,16 @@ a, button{
     }
 }
 
-.title-grey{
+.title-grey, .title-grey-small{
     font-family: $roboto-cd-bold;
     font-size: 1.5em;
     color: #566282;
+}
+.title-grey-small{
+    display: inline-block;
+    padding: 0;
+    margin: 5px 10px 5px 0;
+    font-size: 1.25em;
 }
 
 .title-simple, .title-simple-big{

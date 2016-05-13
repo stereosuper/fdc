@@ -562,6 +562,34 @@
         top: 175px;
     }
 
+    .searchform{
+        .tab-content-title{
+            width: 52%;
+        }
+        .form-half{
+            width: 52%;
+            .label-select{
+                width: 25.92%;
+                &.small{
+                    width: 25.92%;
+                }
+            }
+            fieldset.block-right {
+                margin-left: 28.93%;
+            }
+            .select{
+                width: 70.9%;
+                &.small{
+                    width: 70.9%;
+                }
+            }
+        }
+        .map-container{
+            width: 43%;
+            margin: 0 0 0 5%;
+        }
+    }
+
     .bloc-top{
         height: 440px;
         h1{
@@ -720,12 +748,12 @@
         height: 250px;
     }
 
-    .field-header{
-        &-text{
+    .field{
+        &-content{
             padding-left: $gutter;
             padding-right: $gutter;
         }
-        &-title{
+        &-header{
             padding-right: $gutter;
         }
     }
@@ -1018,6 +1046,38 @@
         display: none;
     }
 
+    .searchform{
+        .tab-content-title{
+            width: 100%;
+        }
+        .form-half{
+            width: 100%;
+            fieldset{
+                &.block-right{
+                    margin-left: 0;
+                }
+            }
+            .label-select{
+                width: 180px;
+                margin-right: 0;
+                &.small{
+                    width: auto;
+                    margin-right: 0;
+                    text-align: left;
+                }
+            }
+            .select{
+                width: 300px;
+                &.small{
+                    width: 130px;
+                }
+            }
+            button{
+                float: none;
+            }
+        }
+    }
+
     .bloc-top{
         height: 380px;
         h1{
@@ -1088,18 +1148,17 @@
         }
     }
 
-    .field-header{
-        &-text{
+    .field{
+        &-content{
             padding-left: $gutter;
             padding-right: $gutter;
-            padding-bottom: 20px;
         }
-        &-title{
+        &-header{
             padding-right: $gutter;
             padding-left: 160px;
         }
         &.field-sale{
-            .field-header-title{
+            .field-header{
                 &:before{
                     width: 100px;
                     height: 58px;
@@ -1107,7 +1166,7 @@
             }
         }
         &.field-buy{
-            .field-header-title{
+            .field-header{
                 &:before{
                     width: 70px;
                     height: 69px;
@@ -1119,12 +1178,10 @@
     .field-list{
         .field-txt{
             padding-right: $gutter;
+            padding-left: 36%;
         }
         .img{
             width: 30%;
-        }
-        .field-txt{
-            padding-left: 36%;
         }
     }
 
@@ -1390,12 +1447,12 @@
         }
     }
 
-    .field-header{
-        &-title{
+    .field{
+        &-header{
             padding-left: 125px;
         }
         &.field-sale{
-            .field-header-title{
+            .field-header{
                 &:before{
                     width: 80px;
                     height: 46px;
@@ -1404,7 +1461,7 @@
             }
         }
         &.field-buy{
-            .field-header-title{
+            .field-header{
                 &:before{
                     width: 55px;
                     height: 54px;

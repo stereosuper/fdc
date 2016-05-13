@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <?php include_once('includes/header.html'); ?>
+        <?php include_once('includes/header.php'); ?>
 
         <main id='main' role='main'>
             <div class='container-small'>
@@ -46,7 +46,7 @@
                                     <span href='#' class='btn-arrow small'>Voir</span>
                                     <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
                                     <span class='right'>
-                                        <button class='btn-mail btn-no-text'>Envoyer</button>
+                                        <!--<button class='btn-mail btn-no-text'>Envoyer</button>-->
                                         <button class='btn-delete btn-no-text'>Supprimer</button>
                                     </span>
                                 </a>
@@ -58,7 +58,7 @@
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right'>
-                                        <button class='btn-mail btn-no-text'>Envoyer</button>
+                                        <!--<button class='btn-mail btn-no-text'>Envoyer</button>-->
                                         <button class='btn-delete btn-no-text'>Supprimer</button>
                                     </span>
                                 </a>
@@ -70,7 +70,7 @@
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right'>
-                                        <button class='btn-mail btn-no-text'>Envoyer</button>
+                                        <!--<button class='btn-mail btn-no-text'>Envoyer</button>-->
                                         <button class='btn-delete btn-no-text'>Supprimer</button>
                                     </span>
                                 </a>

@@ -107,19 +107,13 @@
 	padding: 40px $gutter;
 	border: 1px solid $gris;
 	border-top: 0;
+	overflow: hidden;
 	box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
 	background: #fff;
 	p{
 		margin: 5px 0 15px;
 		line-height: 1.3;
 		letter-spacing: -0.5px;
-	}
-	.tab-content-title{
-		width: 45%;
-		padding-top: 0;
-	}
-	.form-half{
-		width: 45%;
 	}
 }
 

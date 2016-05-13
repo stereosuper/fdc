@@ -8,7 +8,7 @@
 	</head>
 
 	<body class='home'>
-		<?php include_once('includes/header.html'); ?>
+		<?php include_once('includes/header.php'); ?>
 
 		<main id='main' role='main'>
 			<div class='bloc-top'>
