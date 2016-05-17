@@ -176,6 +176,7 @@
                                 </div>
                             </fieldset>
                             <button type='submit' class='btn-block huge'>Rechercher</button>
+                            <a href='#' class='btn-arrow small'>Nous confier gratuitement votre recherche</a>
                         </form><div class='map-container' id='mapForm'>
                             <div id='mapFormMetropole' class='map-form active'>
                                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36.88 40.5'>

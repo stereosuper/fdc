@@ -694,6 +694,13 @@ button{
             margin-left: 0;
             float: right;
         }
+        .btn-arrow{
+            position: relative;
+            bottom: auto;
+            float: right;
+            margin: 40px 0 0 0;
+            transform: translateX(20px);
+        }
     }
     .map-container{
         margin: 0 0 0 15%;

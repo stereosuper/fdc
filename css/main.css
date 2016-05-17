@@ -1490,6 +1490,13 @@ button {
   .searchform .form-half button {
     margin-left: 0;
     float: right; }
+  .searchform .form-half .btn-arrow {
+    position: relative;
+    bottom: auto;
+    float: right;
+    margin: 40px 0 0 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
 .searchform .map-container {
   margin: 0 0 0 15%; }
 
@@ -4208,8 +4215,11 @@ button {
       width: 300px; }
       .searchform .form-half .select.small {
         width: 130px; }
-    .searchform .form-half button {
+    .searchform .form-half button, .searchform .form-half .btn-arrow {
       float: none; }
+    .searchform .form-half .btn-arrow {
+      -webkit-transform: none;
+              transform: none; }
 
   .bloc-top, .home .bloc-top {
     height: 380px; }

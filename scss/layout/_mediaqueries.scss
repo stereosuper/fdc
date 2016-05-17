@@ -1106,8 +1106,11 @@
                     width: 130px;
                 }
             }
-            button{
+            button, .btn-arrow{
                 float: none;
+            }
+            .btn-arrow{
+                transform: none;
             }
         }
     }
