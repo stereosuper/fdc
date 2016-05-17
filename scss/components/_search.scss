@@ -1,0 +1,6 @@
+/* Search list */
+
+.search-list{
+	@extend %list-base;
+	@extend %list-result;
+}
