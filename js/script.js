@@ -252,7 +252,7 @@ $(function(){
 	}
 
 	// Mon compte - Check main checkbox from sub fields
-	if($('.block-sub-fields').length){
+	/*if($('.block-sub-fields').length){
 		var blockSubFields = $('.block-sub-fields'),
 			subInputs = blockSubFields.find('> div').find('input'),
 			mainInputs = blockSubFields.find('> input');
@@ -274,7 +274,7 @@ $(function(){
 				}
 			});
 		}
-	}
+	}*/
 
 	// Mon compte - Block optionnal
 	if($('.block-optionnal').length){
