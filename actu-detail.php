@@ -12,10 +12,22 @@
 
         <main id='main' role='main'>
             <div class='container-small'>
-                <ul class='breadcrumb'>
-                    <li><a href='./'>Accueil</a></li>
-                    <li><a href='./'>Actualités</a></li>
-                    <li><a href='./'>Actualités sociales</a></li>
+                <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='./'>
+                            <span property='name'>Accueil</span>
+                        </a>
+                    </li>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='#'>
+                            <span property='name'>Actualités</span>
+                        </a>
+                    </li>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='#'>
+                            <span property='name'>Actualités sociales</span>
+                        </a>
+                    </li>
                 </ul>
 
                 <h1>Vers une nouvelle organisation des réunions des institutions représentatives du personnel ?</h1>

@@ -12,8 +12,12 @@
 
         <main id='main' role='main'>
             <div class='container-small'>
-                <ul class='breadcrumb'>
-                    <li><a href='./'>Accueil</a></li>
+                <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='./'>
+                            <span property='name'>Accueil</span>
+                        </a>
+                    </li>
                 </ul>
 
                 <h1>Mentions légales</h1>

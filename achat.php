@@ -20,8 +20,12 @@
             <div class='container-small'>
                 <div class='field field-buy'>
                     <header class='field-header'>
-                        <ul class='breadcrumb'>
-                            <li><a href='./'>Accueil</a></li>
+                        <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
+                            <li property='itemListElement' typeof='ListItem'>
+                                <a property='item' typeof='WebPage' href='./'>
+                                    <span property='name'>Accueil</span>
+                                </a>
+                            </li>
                         </ul>
                         <h1>Acheter son affaire</h1>
                         <div class='rect'></div>
