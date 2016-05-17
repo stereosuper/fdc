@@ -184,7 +184,7 @@
     }
     #burger{
         display: inline-block;
-        .nav-header-open &{
+        .sidebar-links-open &{
             background-color: rgb(182, 41, 51);
             span{
                 &:before{
@@ -204,6 +204,15 @@
     }
     .home-link{
         padding-left: 178px;
+    }
+    #sidebar-account{
+        right: inherit;
+        left: 0;
+        transform: translateX(calc(-100% + 58px));
+        .btn-close{
+            left: auto;
+            right: -50px;
+        }
     }
 
     .cols-footer{
@@ -1476,6 +1485,9 @@
         }
     }
     #btn-close-sidebar-links{
+        display: none;
+    }
+    #header nav .btn-close{
         display: none;
     }
     #btn-close-header-responsive{
