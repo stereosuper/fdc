@@ -327,13 +327,6 @@ body {
   line-height: 1;
   height: 100%; }
 
-#wrapper-page {
-  position: relative;
-  overflow: hidden; }
-
-#main {
-  padding: 0 0 100px; }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 2.5em;
@@ -628,7 +621,7 @@ a, button {
   color: #a1a3a7; }
 
 /* Placeholders */
-.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-delete, .btn-mail, .btn-block-arrow {
+.breadcrumb a, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-delete, .btn-mail, .btn-block-arrow {
   display: inline-block;
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
@@ -637,15 +630,15 @@ a, button {
   letter-spacing: 1px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
-  .breadcrumb a.big, .breadcrumb span.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-delete, .big.btn-mail, .big.btn-block-arrow {
+  .breadcrumb a.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-delete, .big.btn-mail, .big.btn-block-arrow {
     font-size: 1.2em; }
-  .breadcrumb a.small, .breadcrumb span.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-delete, .small.btn-mail, .small.btn-block-arrow {
+  .breadcrumb a.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-delete, .small.btn-mail, .small.btn-block-arrow {
     font-size: 0.75em; }
 
-.breadcrumb a, .breadcrumb span, .btn-arrow, .btn-block-arrow {
+.breadcrumb a, .btn-arrow, .btn-block-arrow {
   padding: 0 20px 0 0;
   position: relative; }
-  .breadcrumb a:after, .breadcrumb span:after, .btn-arrow:after, .btn-block-arrow:after {
+  .breadcrumb a:after, .btn-arrow:after, .btn-block-arrow:after {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'fdc' !important;
     speak: none;
@@ -671,7 +664,7 @@ a, button {
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
-  .breadcrumb a:hover:after, .breadcrumb span:hover:after, .btn-arrow:hover:after, .btn-block-arrow:hover:after {
+  .breadcrumb a:hover:after, .btn-arrow:hover:after, .btn-block-arrow:hover:after {
     -webkit-transform: translate3d(5px, 0, 0);
             transform: translate3d(5px, 0, 0); }
 
@@ -918,6 +911,13 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
       margin-right: 10px; }
 
 /* Grid */
+#wrapper-page {
+  position: relative;
+  overflow: hidden; }
+
+#main {
+  padding: 0 0 100px; }
+
 .container {
   max-width: 1240px;
   padding: 0 20px;
@@ -932,6 +932,11 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   max-width: 1080px;
   padding: 0 20px;
   margin: 0 auto; }
+  .container-small:before, .container-small:after {
+    content: '';
+    display: table; }
+  .container-small:after {
+    clear: both; }
 
 .content-right {
   padding-right: 130px; }
@@ -2046,15 +2051,13 @@ button {
     margin: 0; }
     .breadcrumb li:before {
       display: none; }
-  .breadcrumb a, .breadcrumb span {
+  .breadcrumb a {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     display: block;
     max-width: 285px;
     color: inherit; }
-  .breadcrumb span:after {
-    display: none; }
   .breadcrumb a:focus, .breadcrumb a:hover {
     color: #d8d4d4; }
   .breadcrumb a:active {
@@ -3451,6 +3454,10 @@ button {
   letter-spacing: -0.5px; }
 
 /* Home specific style */
+.dashboard-block {
+  margin: 0 12px 12px;
+  float: left; }
+
 /* Responsive horizontal */
 @media (max-width: 1300px) {
   .menu-header > li {

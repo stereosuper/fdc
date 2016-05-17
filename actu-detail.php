@@ -16,7 +16,6 @@
                     <li><a href='./'>Accueil</a></li>
                     <li><a href='./'>Actualités</a></li>
                     <li><a href='./'>Actualités sociales</a></li>
-                    <li><span>Vers une nouvelle organisation des réunions des institutions</span></li>
                 </ul>
 
                 <h1>Vers une nouvelle organisation des réunions des institutions représentatives du personnel ?</h1>
