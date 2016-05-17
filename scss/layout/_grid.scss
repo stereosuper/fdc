@@ -1,5 +1,14 @@
 /* Grid */
 
+#wrapper-page{
+    position: relative;
+    overflow: hidden;
+}
+
+#main{
+    padding: 0 0 100px;
+}
+
 .container{
     max-width: 1240px;
     padding: 0 20px;
@@ -13,6 +22,8 @@
 }
 
 .container-small{
+    @include clearfix;
+
     max-width: 1080px;
     padding: 0 20px;
     margin: 0 auto;
