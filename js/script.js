@@ -205,7 +205,7 @@ $(function(){
 	});
 	$('#mask').on('click', function(e){
 		e.preventDefault();
-		$('body').removeClass('nav-header-open sidebar-links-open sidebar-account-open');
+		$('body').removeClass('nav-header-open sidebar-links-open sidebar-account-open sidebar-tools-open');
 	});
 	$('#btn-close-sidebar-links').click(function(e){
 		e.preventDefault();
@@ -382,6 +382,7 @@ $(function(){
         // Haven't resized in 100ms!
         $('#header nav').removeClass('no-transition');
         $('#sidebar-account').removeClass('no-transition');
+        $('#sidebar-tools').removeClass('no-transition');
     }
 
     var doit;
@@ -389,12 +390,13 @@ $(function(){
     	var nh = $(window).height(), nw = $(window).width();
     	if (nw != windowWidth){
 			// Si le resize se fait sur la largeur seulement
-			$('body').removeClass('sidebar-links-open sidebar-account-open nav-header-open');
+			$('body').removeClass('sidebar-links-open sidebar-account-open nav-header-open sidebar-tools-open');
 			$('.choices').removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active choice-1-animating choice-2-animating choice-4-animating choice-5-animating');
 			$('.choices .zone-content').attr('style', '');
 
 			$('#header nav').addClass('no-transition');
 			$('#sidebar-account').addClass('no-transition');
+			$('#sidebar-tools').addClass('no-transition');
 			clearTimeout(doit);
 			doit = setTimeout(resizedw, 100);
 		}

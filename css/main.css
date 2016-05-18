@@ -244,6 +244,9 @@ hr {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-lock:before {
+  content: ""; }
+
 .icon-bulb:before {
   content: ""; }
 
@@ -1766,7 +1769,7 @@ button {
   background-color: #393d47;
   color: white;
   position: relative;
-  z-index: 6; }
+  z-index: 2; }
   #footer:before {
     content: '';
     display: block;
@@ -2126,26 +2129,56 @@ button {
       overflow: hidden; }
       .sidebar .menu-sidebar > li:before {
         display: none; }
-      .sidebar .menu-sidebar > li:nth-child(10n+1) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+1) a:before, .sidebar .menu-sidebar > li:nth-child(10n+1) a .notif {
         background-color: #c52d38; }
-      .sidebar .menu-sidebar > li:nth-child(10n+2) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+1) a:hover .notif {
+        background-color: white;
+        color: #c52d38; }
+      .sidebar .menu-sidebar > li:nth-child(10n+2) a:before, .sidebar .menu-sidebar > li:nth-child(10n+2) a .notif {
         background-color: #d63f39; }
-      .sidebar .menu-sidebar > li:nth-child(10n+3) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+2) a:hover .notif {
+        background-color: white;
+        color: #d63f39; }
+      .sidebar .menu-sidebar > li:nth-child(10n+3) a:before, .sidebar .menu-sidebar > li:nth-child(10n+3) a .notif {
         background-color: #de5340; }
-      .sidebar .menu-sidebar > li:nth-child(10n+4) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+3) a:hover .notif {
+        background-color: white;
+        color: #de5340; }
+      .sidebar .menu-sidebar > li:nth-child(10n+4) a:before, .sidebar .menu-sidebar > li:nth-child(10n+4) a .notif {
         background-color: #e85d1f; }
-      .sidebar .menu-sidebar > li:nth-child(10n+5) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+4) a:hover .notif {
+        background-color: white;
+        color: #e85d1f; }
+      .sidebar .menu-sidebar > li:nth-child(10n+5) a:before, .sidebar .menu-sidebar > li:nth-child(10n+5) a .notif {
         background-color: #e8741f; }
-      .sidebar .menu-sidebar > li:nth-child(10n+6) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+5) a:hover .notif {
+        background-color: white;
+        color: #e8741f; }
+      .sidebar .menu-sidebar > li:nth-child(10n+6) a:before, .sidebar .menu-sidebar > li:nth-child(10n+6) a .notif {
         background-color: #e8911f; }
-      .sidebar .menu-sidebar > li:nth-child(10n+7) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+6) a:hover .notif {
+        background-color: white;
+        color: #e8911f; }
+      .sidebar .menu-sidebar > li:nth-child(10n+7) a:before, .sidebar .menu-sidebar > li:nth-child(10n+7) a .notif {
         background-color: #e8741f; }
-      .sidebar .menu-sidebar > li:nth-child(10n+8) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+7) a:hover .notif {
+        background-color: white;
+        color: #e8741f; }
+      .sidebar .menu-sidebar > li:nth-child(10n+8) a:before, .sidebar .menu-sidebar > li:nth-child(10n+8) a .notif {
         background-color: #e85d1f; }
-      .sidebar .menu-sidebar > li:nth-child(10n+9) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+8) a:hover .notif {
+        background-color: white;
+        color: #e85d1f; }
+      .sidebar .menu-sidebar > li:nth-child(10n+9) a:before, .sidebar .menu-sidebar > li:nth-child(10n+9) a .notif {
         background-color: #de5340; }
-      .sidebar .menu-sidebar > li:nth-child(10n+10) a:before {
+      .sidebar .menu-sidebar > li:nth-child(10n+9) a:hover .notif {
+        background-color: white;
+        color: #de5340; }
+      .sidebar .menu-sidebar > li:nth-child(10n+10) a:before, .sidebar .menu-sidebar > li:nth-child(10n+10) a .notif {
         background-color: #d63f39; }
+      .sidebar .menu-sidebar > li:nth-child(10n+10) a:hover .notif {
+        background-color: white;
+        color: #d63f39; }
     .sidebar .menu-sidebar a {
       display: block;
       position: relative;
@@ -2161,6 +2194,19 @@ button {
       border-bottom: 1px solid #e5e5e5;
       padding: 14px 28px;
       z-index: 1; }
+      .sidebar .menu-sidebar a .notif {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateY(-0.1em);
+            -ms-transform: translateY(-0.1em);
+                transform: translateY(-0.1em);
+        position: relative;
+        font-size: 1.4rem;
+        padding: 3px 6px;
+        margin: 0 0 0 2px;
+        line-height: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out; }
       .sidebar .menu-sidebar a:before {
         content: '';
         display: block;
@@ -2182,16 +2228,16 @@ button {
         .sidebar .menu-sidebar a:hover:before {
           -webkit-transform: translateX(0);
                   transform: translateX(0); }
-  .sidebar#sidebar-tools .title-sidebar {
-    background-color: #d94d3e; }
-  .sidebar#sidebar-tools .menu-sidebar a:before {
+  .sidebar#sidebar-tools .menu-sidebar a:before, .sidebar#sidebar-account .menu-sidebar a:before {
     right: auto;
     left: 0;
     -webkit-transform: translateX(-276px);
             transform: translateX(-276px); }
-  .sidebar#sidebar-tools .menu-sidebar a:hover:before {
+  .sidebar#sidebar-tools .menu-sidebar a:hover:before, .sidebar#sidebar-account .menu-sidebar a:hover:before {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
+  .sidebar#sidebar-tools .title-sidebar {
+    background-color: #d94d3e; }
   .sidebar#sidebar-tools .btn-close {
     background-color: #c64535; }
 
@@ -2238,6 +2284,9 @@ button {
     left: 0; }
   #sidebar-tools .btn-close {
     left: -50px; }
+  #sidebar-tools.no-transition {
+    -webkit-transition: none;
+            transition: none; }
 
 #sidebar-account {
   right: 0;
@@ -2260,6 +2309,26 @@ button {
   #sidebar-account .wrapper-login {
     background-color: white;
     padding: 30px 34px 55px 30px; }
+  #sidebar-account .wrapper-name {
+    padding: 30px 34px 30px 30px;
+    font-family: "roboto_condensedregular", "robotoregular", sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; }
+  #sidebar-account .name {
+    font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+    font-size: 1.625em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    margin: 2px 0 0 0;
+    color: #c43441; }
+  #sidebar-account .wrapper-deconnexion {
+    padding: 18px 20px;
+    text-align: right; }
 
 /* Pagination */
 .pagination {
@@ -2510,6 +2579,34 @@ button {
       -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
               transform: translate3d(0, 0, 0) rotate(90deg); }
 
+.btn-deconnexion {
+  position: relative;
+  font-family: "robotoregular", sans-serif;
+  font-size: 0.75em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  padding: 0 0 0 12px; }
+  .btn-deconnexion:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'fdc' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\e90e';
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -4px 0 0 0;
+    text-decoration: none; }
+
 .social-right {
   float: right; }
   .social-right p {
@@ -2588,7 +2685,9 @@ button {
 .wrapper-choices {
   position: relative;
   margin: -100px 0 75px 0;
-  box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.06); }
+  box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.06);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
 
 .choices {
   display: block;
@@ -4570,7 +4669,7 @@ button {
   .sidebar .menu-sidebar > li a:before {
     -webkit-transform: translateX(calc(100% - 8px));
             transform: translateX(calc(100% - 8px)); }
-  .sidebar#sidebar-tools .menu-sidebar > li a:before {
+  .sidebar#sidebar-tools .menu-sidebar > li a:before, .sidebar#sidebar-account .menu-sidebar > li a:before {
     -webkit-transform: translateX(calc(-100% + 8px));
             transform: translateX(calc(-100% + 8px)); }
 
