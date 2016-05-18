@@ -230,6 +230,9 @@ $(function(){
 		}else if($('body').hasClass('sidebar-account-open')){
 			$('body').removeClass('sidebar-account-open');
 			$('body').addClass('nav-header-open');
+		}else if($('body').hasClass('sidebar-tools-open')){
+			$('body').removeClass('sidebar-tools-open');
+			$('body').addClass('nav-header-open');
 		}
 	});
 	$('#btn-account').on('click', function(e){
@@ -242,6 +245,20 @@ $(function(){
 	$('#btn-close-sidebar-account').click(function(e){
 		e.preventDefault();
 		$('body').removeClass('sidebar-account-open');
+		if(windowWidth<=1150){
+			$('body').addClass('nav-header-open');
+		}
+	});
+	$('#btn-tools').on('click', function(e){
+		e.preventDefault();
+		$('body').toggleClass('sidebar-tools-open');
+		if(windowWidth<=1150){
+			$('body').removeClass('nav-header-open');
+		}
+	});
+	$('#btn-close-sidebar-tools').click(function(e){
+		e.preventDefault();
+		$('body').removeClass('sidebar-tools-open');
 		if(windowWidth<=1150){
 			$('body').addClass('nav-header-open');
 		}

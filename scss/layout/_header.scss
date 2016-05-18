@@ -230,7 +230,7 @@
 	display: none;
 	transition: transform 0.3s ease-in-out;
 	transition-delay: 0.3s;
-	.sidebar-links-open &, .nav-header-open &, .sidebar-account-open &{
+	.sidebar-links-open &, .nav-header-open &, .sidebar-account-open &, .sidebar-tools-open &{
 	    transform: translateX(0);
 	}
 }
@@ -248,7 +248,7 @@
 	z-index: 3;
 	transition: transform 0.3s ease-in-out;
 	cursor: pointer;
-	.sidebar-links-open &, .nav-header-open &, .sidebar-account-open &{
+	.sidebar-links-open &, .nav-header-open &, .sidebar-account-open &, .sidebar-tools-open &{
 		display: block;
 		opacity: 0.3;
 	}
