@@ -5,6 +5,9 @@
     <head>
         <title>Forum des Commerces - Achat résultats de recherche</title>
         <?php include_once('includes/head.html'); ?>
+
+        <link rel='prev' href='/page1.html'>
+        <link rel='next' href='/page2.html'>
     </head>
 
     <body>
@@ -43,19 +46,22 @@
                         <span>Votre recherche :</span>
                         <h2 class='title-grey-small'>Loire-Atlantique et départements voisins, max 400 000 €</h2>
                         <a href='#' class='btn-arrow-back small'>Modifier</a>
+                        <a href='#' class='btn-alert small right'>Créer une alerte</a>
                         <ul class='search-list'>
                             <li class='pole-pos'>
                                 <a href='#'>
                                     <span class='img'><img src='img/sandwicherie.jpg' alt=''></span>
+                                    <span class='notif-pole'>Pole Position</span>
                                     <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
                                     <span href='#' class='btn-arrow small'>Voir</span>
                                     <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
                                     <span class='right alerts-price'>235 000 € FAI</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class='pole-pos'>
                                 <a href='#'>
-                                    <span class='img no-img'></span>
+                                    <span class='img'></span>
+                                    <span class='notif-pole'>Pole Position</span>
                                     <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
@@ -64,7 +70,7 @@
                             </li>
                             <li>
                                 <a href='#'>
-                                    <span class='img no-img'></span>
+                                    <span class='img'></span>
                                     <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
@@ -72,6 +78,17 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div class='pagination'>
+                    <div>
+                        <a href='/page1.html' class='btn-no-text prev'>
+                            Page précédente
+                        </a><span>
+                            Page 2/3
+                        </span><a href='/page2.html' class='btn-no-text next'>
+                            Page suivante
+                        </a>
                     </div>
                 </div>
             </div>

@@ -295,7 +295,7 @@
                 background: #fff;
             }
         }
-        &.no-img{
+        &:empty{
             &:after{
                 display: none;
             }

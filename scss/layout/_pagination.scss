@@ -1,0 +1,59 @@
+/* Pagination */
+
+.pagination{
+    text-align: center;
+    > div{
+        display: inline-block;
+        border: 1px solid #dadada;
+        background: #fff;
+        box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+    }
+    span{
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px 30px;
+        font-size: 0.88em;
+    }
+    a{
+        @include size(40px);
+
+        display: inline-block;
+        vertical-align: middle;
+        background: $theme-btn;
+        color: #fff;
+        text-decoration: none;
+        &:after{
+            @include font-icon;
+
+            display: block;
+            width: 100%;
+            content: '\e900';
+            font-size: 7px;
+            line-height: 40px;
+            transform: translate3d(0, 0, 0);
+            transition: $transition;
+        }
+        &:hover, &:focus{
+            &:after{
+                opacity: .7;
+            }
+        }
+    }
+    .prev{
+        &:after{
+            transform: translate3d(0, 0, 0) rotate(180deg);
+        }
+        &:hover, &:focus{
+            &:after{
+                transform: translate3d(-5px, 0, 0) rotate(180deg);
+            }
+        }
+    }
+    .next{
+        &:hover, &:focus{
+            &:after{
+                transform: translate3d(5px, 0, 0);
+            }
+        }
+    }
+}

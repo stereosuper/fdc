@@ -747,7 +747,7 @@
         }
     }
 
-    .alerts-list, .sales-list{
+    .alerts-list, .sales-list, .search-list{
         a{
             padding-right: 170px;
         }
@@ -806,6 +806,10 @@
         &-content{
             padding-left: $gutter;
             padding-right: $gutter;
+            a.right{
+                float: none;
+                margin: 0;
+            }
         }
         &-header{
             padding-right: $gutter;
@@ -1161,7 +1165,7 @@
         }
     }
 
-    .alerts-list, .sales-list{
+    .alerts-list, .sales-list, .search-list{
         a{
             padding-right: 25px;
         }
@@ -1332,7 +1336,7 @@
         }
     }
 
-    .alerts-list, .sales-list{
+    .alerts-list, .sales-list, .search-list{
         a{
             padding-left: 25px;
         }

@@ -57,7 +57,7 @@
                         </li>
                         <li>
                             <a href='#'>
-                                <span class='img no-img'></span>
+                                <span class='img'></span>
                                 <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                 <span class='btn-arrow small btn-no-text'>Voir</span>
                                 <span class='p'>90 vues</span>
