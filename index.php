@@ -26,7 +26,7 @@
 					<ul class='choices'>
 						<li>
 							<div class='zone-btn'>
-								<button class='btn-choice'></button>
+								<a href='#' class='btn-choice'></a>
 								<div class='bg-choice'></div>
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
@@ -171,7 +171,7 @@
 						</li><!--
 						--><li>
 							<div class='zone-btn'>
-								<button class='btn-choice'></button>
+								<a href='#' class='btn-choice'></a>
 								<div class='bg-choice'></div>
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
@@ -195,7 +195,7 @@
 						</li><!--
 						--><li>
 							<div class='zone-btn'>
-								<button class='btn-choice'></button>
+								<a href='#' class='btn-choice'></a>
 								<div class='bg-choice'></div>
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
@@ -219,7 +219,7 @@
 						</li><!--
 						--><li>
 							<div class='zone-btn'>
-								<button class='btn-choice'></button>
+								<a href='#' class='btn-choice'></a>
 								<div class='bg-choice'></div>
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
@@ -243,7 +243,7 @@
 						</li><!--
 						--><li>
 							<div class='zone-btn'>
-								<button class='btn-choice'></button>
+								<a href='#' class='btn-choice'></a>
 								<div class='bg-choice'></div>
 								<div class='visuel'>
 									<div class='wrapper-alignment'>

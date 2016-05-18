@@ -194,6 +194,9 @@
 	&.auth-off{
 		background-color: rgb(234, 236, 241);
 	}
+	&.no-transition{
+	    transition: none;
+	}
 	&:before{
 		left: 0;
 	}

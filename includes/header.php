@@ -32,7 +32,7 @@
                         <a href='#'><span class='icon-mail'></span><span class='txt-nav'>Contact</span></a>
                     </li><!--
                     --><li>
-                        <a href='#'><span class='icon-tool'></span><span class='txt-nav'>Paramètres</span></a>
+                        <a href='#'><span class='icon-bulb'></span><span class='txt-nav'>Paramètres</span></a>
                     </li><!--
                     --><li>
                         <button id='btn-account'><span class='icon-user'></span><span class='txt-nav'>S'identifier</span></button>
