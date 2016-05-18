@@ -32,7 +32,7 @@
                         <a href='#'><span class='icon-mail'></span><span class='txt-nav'>Contact</span></a>
                     </li><!--
                     --><li>
-                        <a href='#'><span class='icon-tool'></span><span class='txt-nav'>Paramètres</span></a>
+                        <button id='btn-tools'><span class='icon-bulb'></span><span class='txt-nav'>Paramètres</span></button>
                     </li><!--
                     --><li>
                         <button id='btn-account'><span class='icon-user'></span><span class='txt-nav'>S'identifier</span></button>
@@ -55,7 +55,7 @@
             <button id='btn-close-sidebar-links' class='btn-close icon-cross'></button>
             <p class='small'>16 sites d'annonces dédiés aux entrepreneurs et spécialisés dans leurs activités respectives&nbsp;:</p>
             <nav>
-                <ul>
+                <ul class='menu-sidebar'>
                     <li>
                         <a href='#'>Bar Tabac PMU</a>
                     </li><!--
@@ -134,4 +134,31 @@
                     </fieldset>
                 </form>
             </div>
+        </aside>
+
+        <aside id='sidebar-tools' class='sidebar'>
+            <button id='btn-close-sidebar-tools' class='btn-close icon-cross'></button>
+            <div class='title-sidebar'>Outils</div>
+            <nav>
+                <ul class='menu-sidebar'>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li><!--
+                    --><li>
+                        <a href="#">Liens utiles</a>
+                    </li><!--
+                    --><li>
+                        <a href="#">Calculatrice taux d’intérêt</a>
+                    </li><!--
+                    --><li>
+                        <a href="#">ABC du métier</a>
+                    </li><!--
+                    --><li>
+                        <a href="#">Glossaire</a>
+                    </li><!--
+                    --><li>
+                        <a href="#">Offres et Tarifs</a>
+                    </li>
+                </ul>
+            </nav>
         </aside>
