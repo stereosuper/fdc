@@ -241,3 +241,19 @@
 		}
 	}
 }
+
+.btn-deconnexion{
+	position: relative;
+	@include roboto(0.75em);
+	padding: 0 0 0 12px;
+	&:before{
+		@include font-icon;
+		content: '\e90e';
+		font-size: 10px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin: -4px 0 0 0;
+		text-decoration: none;
+	}
+}

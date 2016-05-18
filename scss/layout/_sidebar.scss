@@ -49,71 +49,131 @@
 			}
 			&:nth-child(10n+1){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-1;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-1;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+2){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-2;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-2;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+3){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-3;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-3;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+4){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-4;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-4;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+5){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-5;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-5;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+6){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-6;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-6;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+7){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-5;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-5;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+8){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-4;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-4;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+9){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-3;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-3;
+						}
 					}
 				}
 			}
 			&:nth-child(10n+10){
 				a{
-					&:before{
+					&:before, .notif{
 						background-color: $theme-gradient-2;
+					}
+					&:hover{
+						.notif{
+							background-color: $blanc;
+							color: $theme-gradient-2;
+						}
 					}
 				}
 			}
@@ -128,6 +188,17 @@
 			border-bottom: 1px solid rgb(229, 229, 229);
 			padding: 14px 28px;
 			z-index: 1;
+			.notif{
+				display: inline-block; 
+				vertical-align: middle;
+				transform: translateY(-.1em);
+				position: relative;
+				font-size: 1.4rem;
+				padding: 3px 6px;
+				margin: 0 0 0 2px;
+				line-height: 1;
+				transition: all 0.3s ease-in-out;
+			}
 			&:before{
 				content: '';
 				display: block;
@@ -149,10 +220,7 @@
 			}
 		}
 	}
-	&#sidebar-tools{
-		.title-sidebar{
-			background-color: rgb(217, 77, 62);
-		}
+	&#sidebar-tools, &#sidebar-account{
 		.menu-sidebar{
 			a{
 				&:before{
@@ -166,6 +234,11 @@
 					}
 				}
 			}
+		}
+	}
+	&#sidebar-tools{
+		.title-sidebar{
+			background-color: rgb(217, 77, 62);
 		}
 		.btn-close{
 			background-color: rgb(198, 69, 53);
@@ -219,6 +292,9 @@
 	.btn-close{
 		left: -50px;
 	}
+	&.no-transition{
+	    transition: none;
+	}
 }
 
 #sidebar-account{
@@ -243,5 +319,18 @@
 	.wrapper-login{
 		background-color: $blanc;
 		padding: 30px 34px 55px 30px;
+	}
+	.wrapper-name{
+		padding: 30px 34px 30px 30px;
+		@include roboto-cd(0.875em);
+	}
+	.name{
+		@include roboto-cd-bold(1.625em);
+		margin: 2px 0 0 0;
+		color: rgb(196, 52, 65);
+	}
+	.wrapper-deconnexion{
+		padding: 18px 20px;
+		text-align: right;
 	}
 }
