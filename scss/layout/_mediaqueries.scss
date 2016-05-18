@@ -806,6 +806,10 @@
         &-content{
             padding-left: $gutter;
             padding-right: $gutter;
+            a.right{
+                float: none;
+                margin: 0;
+            }
         }
         &-header{
             padding-right: $gutter;

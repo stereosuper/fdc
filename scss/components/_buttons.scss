@@ -92,6 +92,10 @@
 	}
 }
 
+.btn-alert{
+	@extend %btn-arrow-base;
+}
+
 .btn-simple{
 	@include roboto-cd-bold(0.625em);
 
