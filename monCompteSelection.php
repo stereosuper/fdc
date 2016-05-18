@@ -57,7 +57,7 @@
                             </li>
                             <li>
                                 <a href='#'>
-                                    <span class='img no-img'></span>
+                                    <span class='img'></span>
                                     <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
@@ -69,7 +69,7 @@
                             </li>
                             <li>
                                 <a href='#'>
-                                    <span class='img no-img'></span>
+                                    <span class='img'></span>
                                     <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
