@@ -6,6 +6,9 @@
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    .content-tabs-sale &{
+        border-color: #ef6a2b;
+    }
     &.no-border{
         border: 0;
     }
@@ -21,6 +24,9 @@
         &.active{
             background: $theme-btn;
             color: #fff;
+            .content-tabs-sale &{
+                background: #ef6a2b;
+            }
         }
         &.tab-right{
             border-right: 0;
@@ -43,6 +49,9 @@
         text-decoration: none;
         &:hover, &:focus{
             color: $theme-btn;
+            .content-tabs-sale &{
+                color: #ef6a2b;
+            }
         }
     }
     &-indicator{
@@ -166,6 +175,12 @@
                 margin-left: 0;
             }
         }
+    }
+}
+
+.content-tabs-sale{
+    .btn-block{
+        background: #ef6a2b;
     }
 }
 
