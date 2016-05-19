@@ -20,28 +20,28 @@
                     </li>
                 </ul>
 
-                <h1>Mon compte</h1>
+                <h1>Votre compte</h1>
                 <div class='content-tabs'>
                     <ul class='nav-tabs'>
-                        <li>
-                            <a href='#'>Tableau de bord</a>
-                        </li><li class='active'>
-                            <span>Mes informations</span>
+                        <li class='active'>
+                            <a href='#'>Vos informations</a>
                         </li><li>
-                            <a href='#'>Alertes</a>
+                            <span>Les leads proposés</span>
+                        </li><li>
+                            <a href='#'>Les leads achetés</a>
                             <span class='notif'>5</span>
                         </li><li>
-                            <a href='#'>Ventes</a>
+                            <a href='#'>Votre entreprise</a>
                         </li><li>
-                            <a href='#'>Correspondance</a>
-                        </li><li class='tab-right tab-orange'>
+                            <a href='#'>Correspondances</a>
+                        <!-- </li><li class='tab-right tab-orange'>
                             <a href='#'>Ma sélection</a>
                             <span class='notif'>1</span>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class='tab-content'>
                         <header class='tab-content-title'>
-                            <h2 class='h1'>Mes informations personnelles</h2>
+                            <h2 class='h1'>Vos informations personnelles</h2>
                             <button class='btn-pen small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Modifier</button>
                         </header>
                         <form action='#' method='post' class='form-disabled' id='formToEdit'>
@@ -91,42 +91,47 @@
                                 </fieldset>
                             </fieldset>
                             <fieldset>
-                                <label for='adresse'>
-                                    Adresse
-                                </label><input type='text' name='adresse' id='adresse' class='huge' disabled>
-                                <span class='not-filled'>non renseigné</span>
-                            </fieldset>
-                            <fieldset>
-                                <label for='adresse2'>
-                                    Compl. adresse
-                                </label><input type='text' name='adresse2' id='adresse2' class='huge' disabled>
-                                <span class='not-filled'>non renseigné</span>
-                            </fieldset>
-                            <fieldset class='required'>
-                                <label for='code'>
-                                    Code postal
-                                </label><input type='number' name='code' id='code' value='75000' min='0' max='99999' required disabled>
-                            </fieldset>
-                            <fieldset>
-                                <label for='ville'>
-                                    Ville
-                                </label><input type='text' name='ville' id='ville' class='big' disabled>
-                                <span class='not-filled'>non renseigné</span>
-                                <fieldset class='block-right'>
-                                    <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' checked disabled><label for='adresse-facturation'>Adresse de facturation identique <i>(pour les vendeurs)</i></label>
+                                <legend class='big-legend'>Société</legend>
+                                <fieldset>
+                                    <label for='societe'>
+                                        Société
+                                    </label><input type='text' name='societe' id='societe' class='huge' disabled>
+                                    <span class='not-filled'>non renseigné</span>
                                 </fieldset>
-                            </fieldset>
-                            <fieldset class='block-optionnal block-optionnal-border hidden' data-name='adresse-facturation'>
-                                <legend class='big-legend'>Adresse de facturation</legend>
-                                <fieldset class='required'>
-                                    <label for='nom-facturation'>
-                                        Nom
-                                    </label><input type='text' name='nom-facturation' id='nom-facturation' value='Dus' required disabled>
+                                <fieldset>
+                                    <label for='adresse'>
+                                        Adresse
+                                    </label><input type='text' name='adresse' id='adresse' class='huge' disabled>
+                                    <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='adresse2'>
+                                        Compl. adresse
+                                    </label><input type='text' name='adresse2' id='adresse2' class='huge' disabled>
+                                    <span class='not-filled'>non renseigné</span>
                                 </fieldset>
                                 <fieldset class='required'>
-                                    <label for='prenom-facturation'>
-                                        Prénom
-                                    </label><input type='text' name='prenom-facturation' id='prenom-facturation' value='Jean-Claude' required disabled>
+                                    <label for='code'>
+                                        Code postal
+                                    </label><input type='number' name='code' id='code' value='75000' min='0' max='99999' required disabled>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='ville'>
+                                        Ville
+                                    </label><input type='text' name='ville' id='ville' class='big' disabled>
+                                    <span class='not-filled'>non renseigné</span>
+                                    <fieldset class='block-right'>
+                                        <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' checked disabled><label for='adresse-facturation'>Adresse de facturation identique <i>(pour les vendeurs)</i></label>
+                                    </fieldset>
+                                </fieldset>
+                            </fieldset>
+                            <fieldset class='block-optionnal hidden' data-name='adresse-facturation'>
+                                <legend class='big-legend'>Facturation</legend>
+                                <fieldset>
+                                    <label for='societe'>
+                                        Société
+                                    </label><input type='text' name='societe' id='societe' class='huge' disabled>
+                                    <span class='not-filled'>non renseigné</span>
                                 </fieldset>
                                 <fieldset>
                                     <label for='societe-facturation'>
@@ -156,6 +161,16 @@
                                         Ville
                                     </label><input type='text' name='ville' id='ville' class='big' disabled>
                                     <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='tel'>
+                                        Téléphone
+                                    </label><input type='tel' name='tel' id='tel' value='0678675690' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" disabled>
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='email'>
+                                        Email
+                                    </label><input type='email' name='email' id='email' value='jc.dus@caramail.fr' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" disabled>
                                 </fieldset>
                             </fieldset>
                             <!--<fieldset class='block-sub-fields block-right'>
