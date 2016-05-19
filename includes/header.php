@@ -26,8 +26,7 @@
                     --><li>
                         <a href='#'>Vente</a>
                     </li>
-                </ul>
-                <ul class='nav-header'>
+                </ul><ul class='nav-header'>
                     <li>
                         <a href='#'><span class='icon-mail'></span><span class='txt-nav'>Contact</span></a>
                     </li><!--

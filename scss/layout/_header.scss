@@ -141,20 +141,44 @@
 	vertical-align: top;
 	list-style-type: none;
 	margin: 0;
-	padding: 18px 0 0;
+	//padding: 18px 0 0;
+	padding: 0;
 	> li{
 		display: inline-block;
 		vertical-align: top;
-		margin: 0 50px 0 0;
+		margin: 0;
 		padding: 0;
 		&:before{
 			display: none;
 		}
 	}
 	a{
+		display: block;
+		padding: 0 25px;
+		position: relative;
 		@include roboto-medium(1em);
+		line-height: 58px;
 		color: $txt;
 		text-decoration: none;
+		z-index: 1;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			background: $theme-btn;
+			transform: translateY(-100%);
+			transition: .2s ease-in-out;
+		}
+		&:hover, &:focus{
+			color: #fff;
+			&:before{
+				transform: translateY(0);
+			}
+		}
 	}
 }
 .nav-header{
