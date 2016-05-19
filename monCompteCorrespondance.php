@@ -32,7 +32,7 @@
                         </li><li>
                             <a href='#'>Ventes</a>
                         </li><li class='active'>
-                            <span>Correspondances</span>
+                            <span>Correspondance</span>
                         </li><li class='tab-right tab-orange'>
                             <a href='#'>Ma sélection</a>
                             <span class='notif'>1</span>
