@@ -206,6 +206,9 @@
 	&:hover, &:focus{
 		color: #fff;
 	}
+	&.right{
+		float: right;
+	}
 }
 
 .btn-block-arrow{
