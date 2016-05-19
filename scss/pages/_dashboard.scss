@@ -1,4 +1,108 @@
 .dashboard-block{
-    margin: 0 12px 12px;
+    width: 50%;
+    padding: 24px 12px 0 0;
     float: left;
+    &:nth-of-type(2n+1){
+        padding: 24px 0 0 12px;
+        float: right;
+    }
+    > div{
+        background: $theme-btn;
+    }
+    .alerts-list{
+        display: inline-block;
+        width: 80%;
+        padding: 4px 4px 4px 0;
+        vertical-align: top;
+        margin: 0;
+        border: 0;
+        li{
+            position: relative;
+            a{
+                padding: 18px 20px 23px 110px;
+                border: 0;
+                background: #fff;
+                &:before{
+                    background: $theme-btn;
+                }
+            }
+            &:before, &:after{
+                content: '';
+                height: 1px;
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                z-index: 2;
+                background: $gris;
+            }
+            &:before{
+                display: block;
+                width: auto;
+                top: 0;
+                margin: 0;
+            }
+            &:after{
+                bottom: 0;
+            }
+            &:first-of-type{
+                &:before{
+                    display: none;
+                }
+            }
+            &:last-of-type{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+        &.has-num{
+            li{
+                a{
+                    padding-left: 60px;
+                }
+            }
+        }
+        .title-simple{
+            display: inline;
+            font-size: 1.05em;
+            margin: 0;
+        }
+        .btn-arrow{
+            vertical-align: middle;
+        }
+    }
+    &.orange{
+        > div{
+            background: #f18832;
+        }
+        .alerts-list{
+            li{
+                a{
+                    &:before{
+                        background: #f18832;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dashboard-title{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    h2{
+        padding-bottom: 5px;
+        margin: 0;
+        font-size: 1.35em;
+        letter-spacing: -0.03em;
+        color: #fff;
+        span{
+            display: block;
+            font-size: 2.2em;
+        }
+        + a{
+            color: #fff;
+        }
+    }
 }

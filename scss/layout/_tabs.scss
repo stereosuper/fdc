@@ -6,6 +6,9 @@
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    &.no-border{
+        border: 0;
+    }
     li{
         display: inline-block;
         border-right: 1px solid $gris;
@@ -80,6 +83,11 @@
         span:not(.notif){
             display: block;
             padding: 25px 25px 21px;
+        }
+        &.no-border{
+            a, span:not(.notif){
+                padding-bottom: 25px;
+            }
         }
     }
 }

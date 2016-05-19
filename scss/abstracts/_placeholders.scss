@@ -218,7 +218,7 @@
         }
         &:focus, &:hover{
             color: #fff;
-            .btn-arrow, button{
+            .btn-arrow, button, .num{
                 color: #fff;
             }
             &:before{
@@ -274,7 +274,6 @@
         margin: auto;
         background: url(../layoutImg/no-img-alerts.png) no-repeat;
         color: #fff;
-        text-decoration: none;
         &:after{
             @include font-icon;
             @include size(13px);
@@ -300,6 +299,19 @@
                 display: none;
             }
         }
+    }
+    .num{
+        height: 51px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        margin: auto;
+        font-family: $roboto-cd-bold;
+        font-size: 2.97em;
+        line-height: 1;
+        color: $theme-btn;
+        transition: $transition;
     }
     .right{
         height: 27px;

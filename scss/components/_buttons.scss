@@ -15,6 +15,11 @@
 .btn-arrow{
 	@extend %btn-arrow-base;
 	@extend %btn-arrow;
+
+	&.btn-no-text{
+		width: 15px;
+		height: 11px;
+	}
 }
 
 .btn-arrow-back{
