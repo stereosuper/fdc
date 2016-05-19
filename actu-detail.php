@@ -63,13 +63,13 @@
                             <p>Partager cette fiche : </p>
                             <ul class='social'>
                                 <li>
-                                    <a href='#' class='icon-facebook'></a>
+                                    <a href='http://www.facebook.com/sharer.php?u=http://localhost/actu-detail.html&t=Vers une nouvelle organisation des réunions des institutions représentatives du personnel ?' class='icon-facebook' rel='nofollow' target='_blank'></a>
                                 </li><li>
-                                    <a href='#' class='icon-twitter'></a>
+                                    <a href='http://twitter.com/share?url=http://localhost/actu-detail.html&text=Vers une nouvelle organisation des réunions des institutions représentatives du personnel ?&via=FDCommerces' class='icon-twitter' rel='nofollow' target='_blank'></a>
                                 </li><li>
-                                    <a href='#' class='icon-google'></a>
+                                    <a href='https://plus.google.com/share?url=http://localhost/actu-detail.html' class='icon-google' rel='nofollow' target='_blank'></a>
                                 </li><li>
-                                    <a href='#' class='icon-viadeo'></a>
+                                    <a href='http://www.viadeo.com/shareit/share/?url=http://localhost/actu-detail.html&title=Vers une nouvelle organisation des réunions des institutions représentatives du personnel ?' class='icon-viadeo' rel='nofollow' target='_blank'></a>
                                 </li>
                             </ul>
                         </div>
