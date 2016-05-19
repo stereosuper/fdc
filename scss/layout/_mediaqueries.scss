@@ -1,8 +1,8 @@
 /* Responsive horizontal */
 @media (max-width: 1300px){
     .menu-header{
-        > li{
-            margin: 0 30px 0 0;
+        a{
+            padding: 0 15px;
         }
     }
 
@@ -134,28 +134,21 @@
             }
         }
         a{
-            display: block;
             @include roboto-medium(0.875em);
             border-top: 1px solid #e5e5e5;
             border-bottom: 1px solid #e5e5e5;
             padding: 14px 28px;
-            position: relative;
-            z-index: 1;
+            line-height: normal;
             &:before{
                 content: '';
-                display: block;
-                width: 100%;
-                height: auto;
                 position: absolute;
                 top: -1px;
                 bottom: 0;
                 right: 0;
-                z-index: -1;
                 transform: translateX(276px);
-                transition: transform 0.3s ease-in-out;
+                transition: transform $transition;
             }
-            &:hover{
-                color: $blanc;
+            &:hover, &:focus{
                 &:before{
                     transform: translateX(0);
                 }
@@ -407,6 +400,11 @@
             position: absolute;
             top: 0;
             left: 0;
+            margin: 0;
+            background: none !important;
+            .wrapper-alignment{
+                display: table;
+            }
         }
         .zone-txt{
             height: auto;
@@ -1686,7 +1684,38 @@
 
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-
+    .choices{
+        > li{
+            &:nth-child(1){
+                .visuel{
+                    background: url(../layoutImg/loupe@2x.png) no-repeat;
+                    background-size: 800px 1200px;
+                }
+            }
+            &:nth-child(2){
+                .visuel{
+                    background: url(../layoutImg/logo@2x.png) no-repeat;
+                    background-size: 800px 1200px;
+                }
+            }
+            &:nth-child(3){
+                .visuel{
+                    background: url(../layoutImg/box@2x.png) no-repeat;
+                    background-size: 800px 1200px;
+                }
+            }
+            &:nth-child(4){
+                .visuel{
+                }
+            }
+            &:nth-child(5){
+                .visuel{
+                    background: url(../layoutImg/hp@2x.png) no-repeat;
+                    background-size: 800px 1200px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {

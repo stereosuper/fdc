@@ -3,7 +3,7 @@ $(function(){
 	/**** VARIABLES ****/
 	var myScroll, tpsAnimChoice = 600,
 		windowHeight = $(window).height(), windowWidth = $(window).width(),
-		setMapFormActive = false;
+		setMapFormActive = false, doit;
 
 
 	// Request anim frame
@@ -22,8 +22,8 @@ $(function(){
 	// @author Mathias Bynens <http://mathiasbynens.be/>
 	jQuery.fn.toggleAttr = function(attr) {
 	 	return this.each(function() {
-	  	var $this = $(this);
-	  	$this.attr(attr) ? $this.removeAttr(attr) : $this.attr(attr, attr);
+	  		var $this = $(this);
+	  		$this.attr(attr) ? $this.removeAttr(attr) : $this.attr(attr, attr);
 	 	});
 	};
 
@@ -353,6 +353,33 @@ $(function(){
 		}
 	});
 
+	if($('.choices').length){
+		var choices = $('.choices'),
+			btnsChoices = choices.find('.btn-choice'),
+			visualsChoices = choices.find('.visuel'),
+			nbChoices = choices.find('li').length, j = 0,
+			numCols = 4, numRows = 5, frameHeight = 200, frameWidth = 200,
+			steppedEase = new SteppedEase(numCols-1),
+			spritesTl = [];
+
+		for(j; j<nbChoices; j++){
+			var i = 0, sprite = visualsChoices.eq(j);
+			spritesTl[j] = new TimelineMax({paused: true});
+			for(i; i<numRows; i++){
+			   spritesTl[j].add(TweenMax.fromTo(sprite, 0.15, {backgroundPosition: '0 -'+(frameHeight*i)+'px'}, {backgroundPosition: '-'+(frameWidth*(numCols-1))+'px -'+(frameHeight*i)+'px', ease: steppedEase}));
+			}
+			TweenMax.set(sprite, {backgroundPosition: '0 0'});
+		}
+
+		btnsChoices.on('mouseenter', function(){
+			var index = $(this).parents('li').index();
+			spritesTl[index].play();
+		}).on('mouseout', function(){
+			var index = $(this).parents('li').index();
+			spritesTl[index].reverse();
+		});
+	}
+
 	// Detect adblock
 	if(isBlocked){
 		$('.wrapper-pub').addClass('hidden');
@@ -385,7 +412,6 @@ $(function(){
         $('#sidebar-tools').removeClass('no-transition');
     }
 
-    var doit;
     $(window).resize(function(){
     	var nh = $(window).height(), nw = $(window).width();
     	if (nw != windowWidth){
