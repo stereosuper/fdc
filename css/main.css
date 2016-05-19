@@ -1057,16 +1057,9 @@ fieldset {
       padding: 0; }
     .form-disabled fieldset.block-sub-fields > input[type=checkbox] + label {
       display: none; }
-  fieldset.block-optionnal {
+  fieldset.block-optionnal-border {
     margin-top: 35px; }
-    fieldset.block-optionnal legend {
-      width: 100%;
-      max-width: 650px;
-      border-bottom: 1px dashed;
-      margin-bottom: 20px;
-      font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
-      font-size: 1.5em; }
-    fieldset.block-optionnal:after {
+    fieldset.block-optionnal-border:after {
       content: '';
       display: block;
       max-width: 650px;
@@ -1114,6 +1107,14 @@ label {
   cursor: pointer; }
   .form-disabled label {
     cursor: auto; }
+
+.big-legend {
+  width: 100%;
+  max-width: 650px;
+  border-bottom: 1px dashed;
+  margin-bottom: 20px;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 1.5em; }
 
 .legend-next-fieldset {
   /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */

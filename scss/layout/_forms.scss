@@ -125,16 +125,8 @@ fieldset{
             }
         }
     }
-    &.block-optionnal{
+    &.block-optionnal-border{
         margin-top: 35px;
-        legend{
-            width: 100%;
-            max-width: 650px;
-            border-bottom: 1px dashed;
-            margin-bottom: 20px;
-            font-family: $roboto-cd-bold;
-            font-size: 1.5em;
-        }
         &:after{
             content: '';
             display: block;
@@ -198,6 +190,15 @@ label{
     .form-disabled &{
         cursor: auto;
     }
+}
+
+.big-legend{
+    width: 100%;
+    max-width: 650px;
+    border-bottom: 1px dashed;
+    margin-bottom: 20px;
+    font-family: $roboto-cd-bold;
+    font-size: 1.5em;
 }
 
 .legend-next-fieldset{
