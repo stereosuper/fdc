@@ -317,7 +317,7 @@ $(function(){
 	$('#editForm').on('click', function(e){
 		var form = $('#formToEdit'), pwd, btn = $(this);
 		e.preventDefault();
-		if(form.length && !form.find('.p-error').length){
+		if(form.length /*&& !form.find('.p-error').length*/){
 			form.toggleClass('form-disabled').find('input').toggleAttr('disabled');
 			form.find('button[type=submit]').toggleClass('hidden');
 			form.hasClass('form-disabled') ? btn.html(btn.attr('data-edit')) : btn.html(btn.attr('data-cancel'));

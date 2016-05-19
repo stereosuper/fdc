@@ -159,7 +159,7 @@
                                     <span class='not-filled hidden'>non renseigné</span>
                                 </fieldset>
                             </fieldset>
-                            <fieldset class='block-sub-fields block-right'>
+                            <!--<fieldset class='block-sub-fields block-right'>
                                 <legend>Accompagnement</legend>
                                 <input type='checkbox' name='equipe' id='equipe' value='1' checked><label for='equipe'>
                                     <b>Je souhaite complêter mon équipe d'expert. Pour m'accompagner&nbsp;:</b>
@@ -211,7 +211,7 @@
                                         </label><input type='text' name='autre-texte' class='small' value='que-sais-je'>
                                     </fieldset>
                                 </div>
-                            </fieldset>
+                            </fieldset>-->
                             <button type='submit' class='btn-block huge'>Valider</button>
                         </form>
                         <div class='content-footer hidden'>

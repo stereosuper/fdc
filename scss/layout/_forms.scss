@@ -379,11 +379,15 @@ input{
     }
     &[disabled]{
         border: 0;
-        outline: 0;
+        outline: 0 !important;
         font-size: 0.88em;
         font-family: $roboto-bold;
         /* pour safari qui affiche les input disabled en gris */
         -webkit-text-fill-color: $txt;
+        .error &{
+            color: $error;
+            -webkit-text-fill-color: $error;
+        }
     }
 }
 

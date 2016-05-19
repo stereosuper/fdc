@@ -1253,11 +1253,14 @@ input[type=checkbox] {
       display: inline-block; }
 input[disabled] {
   border: 0;
-  outline: 0;
+  outline: 0 !important;
   font-size: 0.88em;
   font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
   /* pour safari qui affiche les input disabled en gris */
   -webkit-text-fill-color: #282c34; }
+  .error input[disabled] {
+    color: #ff0000;
+    -webkit-text-fill-color: #ff0000; }
 
 textarea {
   max-width: 370px;
