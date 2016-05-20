@@ -4756,7 +4756,7 @@ button.no-margin {
 }
 
 /* Responsive horizontal */
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .menu-header a {
     padding: 0 15px;
   }
@@ -4765,7 +4765,7 @@ button.no-margin {
     font-size: 0.92em;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1280px) {
   #header nav {
     float: none;
     position: absolute;
@@ -4952,7 +4952,8 @@ button.no-margin {
     left: auto;
     right: -50px;
   }
-
+}
+@media (max-width: 1150px) {
   .cols-footer > li:nth-child(1) {
     padding-right: 52px;
   }
@@ -5949,6 +5950,11 @@ button.no-margin {
   }
 }
 @media (max-width: 600px) {
+  .home-link {
+    padding-top: 23px;
+    font-size: 0.88em;
+  }
+
   .tab-content-footer .select {
     display: block;
     margin-right: 0;

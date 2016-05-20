@@ -3,7 +3,8 @@ $(function(){
 	/**** VARIABLES ****/
 	var myScroll, tpsAnimChoice = 600,
 		windowHeight = $(window).height(), windowWidth = $(window).width(),
-		setMapFormActive = false, doit;
+		setMapFormActive = false, doit,
+		body = $('body');
 
 
 	// Request anim frame
@@ -168,7 +169,7 @@ $(function(){
 		if(windowWidth>767){
 			e.preventDefault();
 			$(this).closest('.choices').addClass('choice-'+($(this).closest('li').index()+1)+'-active choice-'+($(this).closest('li').index()+1)+'-animating');
-			if(windowWidth<=1150){
+			if(windowWidth<=1280){
 				var liParent = $(this).closest('li');
 				$('.zone-content', liParent).slideToggle(300);
 			}
@@ -186,81 +187,101 @@ $(function(){
 			$('.zone-content', liParent).slideToggle(300);
 		}
 	});
+	if($('.choices').length){
+		var choices = $('.choices'),
+			btnsChoices = choices.find('.btn-choice'),
+			visualsChoices = choices.find('.visuel'),
+			nbChoices = choices.find('li').length, j = 0,
+			numCols = 4, numRows = 5, frameHeight = 200, frameWidth = 200,
+			steppedEase = new SteppedEase(numCols-1),
+			spritesTl = [];
+
+		for(j; j<nbChoices; j++){
+			var i = 0, sprite = visualsChoices.eq(j);
+			spritesTl[j] = new TimelineMax({paused: true});
+			for(i; i<numRows; i++){
+			   spritesTl[j].add(TweenMax.fromTo(sprite, 0.15, {backgroundPosition: '0 -'+(frameHeight*i)+'px'}, {backgroundPosition: '-'+(frameWidth*(numCols-1))+'px -'+(frameHeight*i)+'px', ease: steppedEase}));
+			}
+			TweenMax.set(sprite, {backgroundPosition: '0 0'});
+		}
+
+		btnsChoices.on('mouseenter', function(){
+			var index = $(this).parents('li').index();
+			spritesTl[index].play();
+		}).on('mouseout', function(){
+			var index = $(this).parents('li').index();
+			spritesTl[index].reverse();
+		});
+	}
 
 	$('#logo').on('click', function(e){
 		e.preventDefault();
-		if(windowWidth>1150){
-			$('body').toggleClass('sidebar-links-open');
+		if(windowWidth>1280){
+			body.toggleClass('sidebar-links-open');
 		}else{
-			if(!$('body').hasClass('sidebar-links-open') && !$('body').hasClass('nav-header-open')){
-				$('body').addClass('nav-header-open');
-			}else if(!$('body').hasClass('sidebar-links-open')){
-				$('body').removeClass('nav-header-open');
-				$('body').addClass('sidebar-links-open');
+			if(!body.hasClass('sidebar-links-open') && !body.hasClass('nav-header-open')){
+				body.addClass('nav-header-open');
+			}else if(!body.hasClass('sidebar-links-open')){
+				body.removeClass('nav-header-open').addClass('sidebar-links-open');
 			}else{
-				$('body').removeClass('sidebar-links-open');
-				$('body').addClass('nav-header-open');
+				body.removeClass('sidebar-links-open').addClass('nav-header-open');
 			}
 		}
 	});
 	$('#mask').on('click', function(e){
 		e.preventDefault();
-		$('body').removeClass('nav-header-open sidebar-links-open sidebar-account-open sidebar-tools-open');
+		body.removeClass('nav-header-open sidebar-links-open sidebar-account-open sidebar-tools-open');
 	});
 	$('#btn-close-sidebar-links').click(function(e){
 		e.preventDefault();
-		if(windowWidth>1150){
-			$('body').removeClass('sidebar-links-open');
+		if(windowWidth>1280){
+			body.removeClass('sidebar-links-open');
 		}else{
-			$('body').removeClass('sidebar-links-open');
-			$('body').addClass('nav-header-open');
+			body.removeClass('sidebar-links-open').addClass('nav-header-open');
 		}
 	});
 	$('#btn-close-nav-header').click(function(e){
 		e.preventDefault();
-		$('body').removeClass('nav-header-open');
+		body.removeClass('nav-header-open');
 	});
 	$('#btn-close-header-responsive').click(function(e){
 		e.preventDefault();
-		if($('body').hasClass('nav-header-open')){
-			$('body').removeClass('nav-header-open');
-		}else if($('body').hasClass('sidebar-links-open')){
-			$('body').removeClass('sidebar-links-open');
-			$('body').addClass('nav-header-open');
-		}else if($('body').hasClass('sidebar-account-open')){
-			$('body').removeClass('sidebar-account-open');
-			$('body').addClass('nav-header-open');
-		}else if($('body').hasClass('sidebar-tools-open')){
-			$('body').removeClass('sidebar-tools-open');
-			$('body').addClass('nav-header-open');
+		if(body.hasClass('nav-header-open')){
+			body.removeClass('nav-header-open');
+		}else if(body.hasClass('sidebar-links-open')){
+			body.removeClass('sidebar-links-open').addClass('nav-header-open');
+		}else if(body.hasClass('sidebar-account-open')){
+			body.removeClass('sidebar-account-open').addClass('nav-header-open');
+		}else if(body.hasClass('sidebar-tools-open')){
+			body.removeClass('sidebar-tools-open').addClass('nav-header-open');
 		}
 	});
 	$('#btn-account').on('click', function(e){
 		e.preventDefault();
-		$('body').toggleClass('sidebar-account-open');
-		if(windowWidth<=1150){
-			$('body').removeClass('nav-header-open');
+		body.toggleClass('sidebar-account-open');
+		if(windowWidth<=1280){
+			body.removeClass('nav-header-open');
 		}
 	});
 	$('#btn-close-sidebar-account').click(function(e){
 		e.preventDefault();
-		$('body').removeClass('sidebar-account-open');
-		if(windowWidth<=1150){
-			$('body').addClass('nav-header-open');
+		body.removeClass('sidebar-account-open');
+		if(windowWidth<=1280){
+			body.addClass('nav-header-open');
 		}
 	});
 	$('#btn-tools').on('click', function(e){
 		e.preventDefault();
-		$('body').toggleClass('sidebar-tools-open');
-		if(windowWidth<=1150){
-			$('body').removeClass('nav-header-open');
+		body.toggleClass('sidebar-tools-open');
+		if(windowWidth<=1280){
+			body.removeClass('nav-header-open');
 		}
 	});
 	$('#btn-close-sidebar-tools').click(function(e){
 		e.preventDefault();
-		$('body').removeClass('sidebar-tools-open');
-		if(windowWidth<=1150){
-			$('body').addClass('nav-header-open');
+		body.removeClass('sidebar-tools-open');
+		if(windowWidth<=1280){
+			body.addClass('nav-header-open');
 		}
 	});
 
@@ -353,32 +374,6 @@ $(function(){
 		}
 	});
 
-	if($('.choices').length){
-		var choices = $('.choices'),
-			btnsChoices = choices.find('.btn-choice'),
-			visualsChoices = choices.find('.visuel'),
-			nbChoices = choices.find('li').length, j = 0,
-			numCols = 4, numRows = 5, frameHeight = 200, frameWidth = 200,
-			steppedEase = new SteppedEase(numCols-1),
-			spritesTl = [];
-
-		for(j; j<nbChoices; j++){
-			var i = 0, sprite = visualsChoices.eq(j);
-			spritesTl[j] = new TimelineMax({paused: true});
-			for(i; i<numRows; i++){
-			   spritesTl[j].add(TweenMax.fromTo(sprite, 0.15, {backgroundPosition: '0 -'+(frameHeight*i)+'px'}, {backgroundPosition: '-'+(frameWidth*(numCols-1))+'px -'+(frameHeight*i)+'px', ease: steppedEase}));
-			}
-			TweenMax.set(sprite, {backgroundPosition: '0 0'});
-		}
-
-		btnsChoices.on('mouseenter', function(){
-			var index = $(this).parents('li').index();
-			spritesTl[index].play();
-		}).on('mouseout', function(){
-			var index = $(this).parents('li').index();
-			spritesTl[index].reverse();
-		});
-	}
 
 	// Detect adblock
 	if(isBlocked){
@@ -416,13 +411,23 @@ $(function(){
     	var nh = $(window).height(), nw = $(window).width();
     	if (nw != windowWidth){
 			// Si le resize se fait sur la largeur seulement
-			$('body').removeClass('sidebar-links-open sidebar-account-open nav-header-open sidebar-tools-open');
-			$('.choices').removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active choice-1-animating choice-2-animating choice-4-animating choice-5-animating');
-			$('.choices .zone-content').attr('style', '');
+			body.removeClass('sidebar-links-open sidebar-account-open nav-header-open sidebar-tools-open');
 
-			$('#header nav').addClass('no-transition');
-			$('#sidebar-account').addClass('no-transition');
-			$('#sidebar-tools').addClass('no-transition');
+			if($('.choices').length){
+				$('.choices').removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active choice-1-animating choice-2-animating choice-4-animating choice-5-animating')
+							 .find('.zone-content').attr('style', '');
+			}
+
+			if($('#header nav').length){
+				$('#header nav').addClass('no-transition');
+			}
+			if($('#sidebar-account').length){
+				$('#sidebar-account').addClass('no-transition');
+			}
+			if($('#sidebar-account').length){
+				$('#sidebar-account').addClass('no-transition');
+			}
+
 			clearTimeout(doit);
 			doit = setTimeout(resizedw, 100);
 		}

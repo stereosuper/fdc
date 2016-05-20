@@ -1,5 +1,5 @@
 /* Responsive horizontal */
-@media (max-width: 1300px){
+@media (max-width: 1400px){
     .menu-header{
         a{
             padding: 0 15px;
@@ -13,7 +13,7 @@
     }
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1280px){
     #header{
         nav{
             float: none;
@@ -218,7 +218,9 @@
             right: -50px;
         }
     }
+}
 
+@media (max-width: 1150px){
     .cols-footer{
         > li{
             &:nth-child(1){
@@ -1388,6 +1390,11 @@
 }
 
 @media (max-width: 600px){
+    .home-link{
+        padding-top: 23px;
+        font-size: 0.88em;
+    }
+
     .tab-content-footer{
         .select{
             display: block;
