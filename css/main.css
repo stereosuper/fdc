@@ -782,7 +782,7 @@ a:active, button:active {
 }
 
 /* Placeholders */
-.breadcrumb a, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-alert, .btn-delete, .btn-mail, .btn-block-arrow {
+.breadcrumb a, .btn-arrow, .btn-arrow-back, .btn-pen, .btn-cancel, .btn-alert, .btn-delete {
   display: inline-block;
   position: relative;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
@@ -792,18 +792,18 @@ a:active, button:active {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.breadcrumb a.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-alert, .big.btn-delete, .big.btn-mail, .big.btn-block-arrow {
+.breadcrumb a.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-alert, .big.btn-delete {
   font-size: 1.2em;
 }
-.breadcrumb a.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-alert, .small.btn-delete, .small.btn-mail, .small.btn-block-arrow {
+.breadcrumb a.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-alert, .small.btn-delete {
   font-size: 0.75em;
 }
 
-.breadcrumb a, .btn-arrow, .btn-block-arrow {
+.breadcrumb a, .btn-arrow {
   padding: 0 20px 0 0;
   position: relative;
 }
-.breadcrumb a:after, .btn-arrow:after, .btn-block-arrow:after {
+.breadcrumb a:after, .btn-arrow:after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -830,7 +830,7 @@ a:active, button:active {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-.breadcrumb a:hover:after, .btn-arrow:hover:after, .btn-block-arrow:hover:after {
+.breadcrumb a:hover:after, .btn-arrow:hover:after {
   -webkit-transform: translate3d(5px, 0, 0);
           transform: translate3d(5px, 0, 0);
 }
@@ -894,7 +894,7 @@ a:active, button:active {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-.btn-pen:after, .btn-delete:after, .btn-mail:after {
+.btn-pen:after, .btn-delete:after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -3055,18 +3055,24 @@ button.no-margin {
   width: 15px;
 }
 
-.btn-mail:after {
-  content: '\e90c';
-}
-.btn-mail:hover:after, .btn-mail:focus:after {
-  -webkit-transform: translate3d(0, 0, 0) scale(0.95);
-          transform: translate3d(0, 0, 0) scale(0.95);
-}
-.btn-mail.btn-no-text {
-  width: 16px;
-  height: 15px;
-}
+/*.btn-mail{
+	@extend %btn-arrow-base;
 
+	&:after{
+		@extend %btn-after;
+
+		content: '\e90c'; //mail2
+	}
+	&:hover, &:focus{
+		&:after{
+			transform: translate3d(0, 0, 0) scale(0.95);
+		}
+	}
+	&.btn-no-text{
+		width: 16px;
+		height: 15px;
+	}
+}*/
 .btn-simple {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 0.625em;
@@ -3143,12 +3149,12 @@ button.no-margin {
   padding: 22px 40px;
   font-size: 1em;
 }
-.btn-block.btn-plus {
+.btn-block.btn-alert {
   padding: 16px 16px 15px 50px;
   font-size: 1em;
   letter-spacing: 0;
 }
-.btn-block.btn-plus:before {
+.btn-block.btn-alert:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -3159,17 +3165,18 @@ button.no-margin {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: '\e90a';
+  content: '\e90f';
   display: inline-block;
   width: auto;
   height: 16px;
-  top: 0;
+  top: -2px;
   bottom: 0;
   left: 20px;
   right: auto;
   margin: auto;
   z-index: auto;
   opacity: 1;
+  font-size: 18px;
   background: none;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -3180,12 +3187,12 @@ button.no-margin {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-.btn-block.btn-plus:after {
+.btn-block.btn-alert:after {
   display: none;
 }
-.btn-block.btn-plus:hover:before, .btn-block.btn-plus:focus:before {
-  -webkit-transform: translate3d(0, 0, 0) scale(1.2);
-          transform: translate3d(0, 0, 0) scale(1.2);
+.btn-block.btn-alert:hover:before, .btn-block.btn-alert:focus:before {
+  -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
+          transform: translate3d(0, 0, 0) rotate(20deg);
 }
 .btn-block.no-square:before, .btn-block.no-square:after {
   display: none;
@@ -3202,22 +3209,24 @@ button.no-margin {
   float: right;
 }
 
-.btn-block-arrow {
-  display: inline-block;
-  width: 48%;
-  padding: 22px 25px;
-  vertical-align: middle;
-  font-size: 1.2em;
-  text-align: center;
-  background: #c6333e;
-  color: white;
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
-}
-.btn-block-arrow:after {
-  margin-left: 15px;
-  font-size: 9px;
-}
+/*.btn-block-arrow{
+	@extend %btn-arrow-base;
+	@extend %btn-arrow;
 
+	display: inline-block;
+	width: 48%;
+	padding: 22px 25px;
+	vertical-align: middle;
+	font-size: 1.2em;
+	text-align: center;
+	background: $theme-btn;
+	color: $blanc;
+	box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+	&:after{
+		margin-left: 15px;
+		font-size: 9px;
+	}
+}*/
 .btn-orange {
   background: #de3d25;
 }

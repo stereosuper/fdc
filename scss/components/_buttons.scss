@@ -94,7 +94,7 @@
 	}
 }
 
-.btn-mail{
+/*.btn-mail{
 	@extend %btn-arrow-base;
 
 	&:after{
@@ -111,7 +111,7 @@
 		width: 16px;
 		height: 15px;
 	}
-}
+}*/
 
 .btn-alert{
 	@extend %btn-arrow-base;
@@ -177,24 +177,25 @@
 		padding: 22px 40px;
 		font-size: 1em;
 	}
-	&.btn-plus{
+	&.btn-alert{
 		padding: 16px 16px 15px 50px;
 		font-size: 1em;
 		letter-spacing: 0;
 		&:before{
 			@include font-icon;
 
-			content: '\e90a';
+			content: '\e90f';
 			display: inline-block;
 			width: auto;
 			height: 16px;
-			top: 0;
+			top: -2px;
 			bottom: 0;
 			left: 20px;
 			right: auto;
 			margin: auto;
 			z-index: auto;
 			opacity: 1;
+			font-size: 18px;
 			background: none;
 			transform: translate3d(0, 0, 0);
 			transform-origin: 50% 50%;
@@ -205,7 +206,7 @@
 		}
 		&:hover, &:focus{
 			&:before{
-				transform: translate3d(0, 0, 0) scale(1.2);
+				transform: translate3d(0, 0, 0) rotate(20deg);
 			}
 		}
 	}
@@ -227,7 +228,7 @@
 	}
 }
 
-.btn-block-arrow{
+/*.btn-block-arrow{
 	@extend %btn-arrow-base;
 	@extend %btn-arrow;
 
@@ -244,7 +245,7 @@
 		margin-left: 15px;
 		font-size: 9px;
 	}
-}
+}*/
 
 .btn-orange{
 	background: #de3d25;

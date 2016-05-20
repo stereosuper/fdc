@@ -42,7 +42,7 @@
                         <header class='tab-content-title has-btn'>
                             <h2 class='h1'>Mes alertes <span class='notif'>5</span></h2>
                         </header>
-                        <a href='alerteEdition.php' class='btn-block btn-plus'>Créer une nouvelle alerte</a>
+                        <a href='alerteEdition.php' class='btn-block btn-alert'>Créer une nouvelle alerte</a>
                         <div class='alerts-block'>
                             <div class='alerts-header'>
                                 <time datetime='2014-10-12'>12/10/2014</time>

@@ -26,6 +26,10 @@
                     <h4>Titre h4</h4>
                     <h5>Titre h5</h5>
                     <h6>Titre h6</h6>
+                    <span class='title-grey'>.title-grey</span><br>
+                    <span class='title-grey-small'>.title-grey-small</span><br>
+                    <span class='title-simple'>.title-simple</span><br>
+                    <span class='title-simple-big'>.title-simple-big</span>
                     <hr>
 
                     <h2>Texts (base/_base.scss)</h2>
@@ -61,6 +65,8 @@
                     <span class='icon-check'></span>
                     <span class='icon-plus'></span>
                     <span class='icon-trash'></span>
+                    <span class='icon-ding'></span>
+                    <span class='icon-flash'></span>
                     <hr>
 
                     <h2>Buttons (components/_buttons.scss)</h2>
@@ -69,9 +75,7 @@
                     <a href='#' class='btn-block big'>.btn-block.big</a>
                     <a href='#' class='btn-block huge'>.btn-block.huge</a>
                     <br><br>
-                    <a href='#' class='btn-block-arrow'>.btn-block-arrow</a>
-                    <br><br>
-                    <a href='#' class='btn-block btn-plus'>.btn-block.btn-plus</a>
+                    <a href='#' class='btn-block btn-alert'>.btn-block.btn-alert</a>
                     <br><br><br><br>
                     <a href='#' class='btn-arrow small'>.btn-arrow.small</a>
                     <a href='#' class='btn-arrow'>.btn-arrow</a>
@@ -84,6 +88,8 @@
                     <a href='#' class='btn-pen'>.btn-pen</a>
                     <br><br>
                     <a href='#' class='btn-delete'>.btn-delete</a>
+                    <br><br>
+                    <a href='#' class='btn-alert'>.btn-alert</a>
                     <br><br>
                     <a href='#' class='btn-pen btn-no-text'>.btn-pen.btn-no-text</a><a href='#' class='btn-delete btn-no-text'>.btn-delete.btn-no-text</a>
                     <hr>
@@ -119,7 +125,6 @@
                     <ul class='breadcrumb'>
                         <li><a href='./'>Accueil</a></li>
                         <li><a href='./'>Exemple</a></li>
-                        <li><span>Page actuelle</span></li>
                     </ul>
                 </div>
             </div>
