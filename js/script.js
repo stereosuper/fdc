@@ -424,8 +424,8 @@ $(function(){
 			if($('#sidebar-account').length){
 				$('#sidebar-account').addClass('no-transition');
 			}
-			if($('#sidebar-account').length){
-				$('#sidebar-account').addClass('no-transition');
+			if($('#sidebar-tools').length){
+				$('#sidebar-tools').addClass('no-transition');
 			}
 
 			clearTimeout(doit);
