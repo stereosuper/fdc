@@ -13,7 +13,7 @@
 		<main id='main' role='main'>
 			<div class='bloc-top'>
 				<div class='wrapper-img img-fit'>
-					<img src='img/visuel-home.jpg'>
+					<img src='img/visuel-home.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
 					<h1 class='big'>Notre projet : concrétiser le&nbsp;vôtre</h1>
@@ -31,7 +31,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/achat.png" srcset="img/achat.png 1x, img/achat@2x.png 2x" alt="Achat">
+											<img src="img/achat.png" srcset="img/achat.png 1x, img/achat@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -176,7 +176,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="Partenaires">
+											<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -200,7 +200,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/materiel.png" srcset="img/materiel.png 1x, img/materiel@2x.png 2x" alt="Matériel">
+											<img src="img/materiel.png" srcset="img/materiel.png 1x, img/materiel@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -224,7 +224,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/personnel.png" srcset="img/personnel.png 1x, img/personnel@2x.png 2x" alt="Personnel">
+											<img src="img/personnel.png" srcset="img/personnel.png 1x, img/personnel@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -248,7 +248,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/vente.png" srcset="img/vente.png 1x, img/vente@2x.png 2x" alt="Vente">
+											<img src="img/vente.png" srcset="img/vente.png 1x, img/vente@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -281,7 +281,7 @@
 						<article>
 							<div class='center-align article-date'>
 								<div class='wrapper-alignment full-height'>
-									<time class='content-align-middle'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
 								</div>
 							</div><!--
 							--><div class='article-desc'>
@@ -295,7 +295,7 @@
 						<article>
 							<div class='center-align article-date'>
 								<div class='wrapper-alignment full-height'>
-									<time class='content-align-middle'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
 								</div>
 							</div><!--
 							--><div class='article-desc'>

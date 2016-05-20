@@ -13,7 +13,7 @@
         <main id='main' role='main'>
             <div class='bloc-top'>
                 <div class='wrapper-img img-fit'>
-                    <img src='img/visuel-home.jpg'>
+                    <img src='img/visuel-home.jpg' alt=''>
                 </div>
             </div>
 
