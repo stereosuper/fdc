@@ -1015,8 +1015,8 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   background: #c52d38;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 .alerts-list a:focus, .sales-list a:focus, .messages-list a:focus, .field-list a:focus, .search-list a:focus, .alerts-list a:hover, .sales-list a:hover, .messages-list a:hover, .field-list a:hover, .search-list a:hover {
   color: #fff;
@@ -1027,6 +1027,8 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
 .alerts-list a:focus:before, .sales-list a:focus:before, .messages-list a:focus:before, .field-list a:focus:before, .search-list a:focus:before, .alerts-list a:hover:before, .sales-list a:hover:before, .messages-list a:hover:before, .field-list a:hover:before, .search-list a:hover:before {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .alerts-list a:active, .sales-list a:active, .messages-list a:active, .field-list a:active, .search-list a:active {
   opacity: 0.8;
@@ -3352,11 +3354,26 @@ button.no-margin {
   text-decoration: none;
   color: white;
 }
+.social a:before {
+  display: block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
 .social a.icon-share {
   font-size: 16px;
 }
+.social a.icon-share:hover:before, .social a.icon-share:focus:before {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.9);
+          transform: translate3d(0, 0, 0) scale(0.9);
+}
 .social a.icon-viadeo {
   font-size: 18px;
+}
+.social a:hover:before, .social a:focus:before {
+  -webkit-transform: translate3d(0, 0, 0) scale(1.2);
+          transform: translate3d(0, 0, 0) scale(1.2);
 }
 
 /* Bloc top */

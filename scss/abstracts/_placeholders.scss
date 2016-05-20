@@ -214,7 +214,7 @@
             z-index: -1;
             transform: translateX(-100%);
             background: $theme-gradient-1;
-            transition: $transition;
+            transition: .5s ease-in-out;
         }
         &:focus, &:hover{
             color: #fff;
@@ -223,6 +223,7 @@
             }
             &:before{
                 transform: translateX(0);
+                transition: $transition;
             }
         }
         &:active{
