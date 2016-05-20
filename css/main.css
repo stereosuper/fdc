@@ -5585,7 +5585,7 @@ button.no-margin {
     padding-right: 30px;
   }
   .tab-content-title .h1 {
-    width: 100%;
+    width: auto;
     max-width: none;
   }
   .tab-content-title.has-btn {
