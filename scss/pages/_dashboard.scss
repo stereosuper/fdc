@@ -63,12 +63,17 @@
             }
         }
         .title-simple{
-            display: inline;
-            font-size: 1.05em;
+            @include ellipsis;
+
+            max-width: 89%;
             margin: 0;
+            font-size: 1.05em;
         }
         .btn-arrow{
-            vertical-align: middle;
+            height: 20px;
+            &:after{
+                line-height: 20px;
+            }
         }
     }
     &.orange{
@@ -103,6 +108,7 @@
         }
         + a{
             color: #fff;
+            opacity: 0.8;
         }
     }
 }

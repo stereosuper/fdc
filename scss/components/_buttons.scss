@@ -1,6 +1,6 @@
 /* Buttons */
 
-.btn-no-text{
+.btn-no-text, .btn-home{
 	white-space: nowrap;
 	overflow: hidden;
 	text-indent: 99em;
@@ -9,6 +9,16 @@
 		float: left;
 		margin: 0;
 		text-indent: 0;
+	}
+}
+
+.btn-home{
+	width: 68px;
+	&:after{
+		@include font-icon;
+
+		content: '\e911';
+		font-size: 18px;
 	}
 }
 

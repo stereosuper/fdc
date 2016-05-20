@@ -24,7 +24,7 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs no-border'>
                         <li class='active'>
-                            <span>Tableau de bord</span>
+                            <span class='btn-home'>Tableau de bord</span>
                         </li><li>
                             <a href='#'>Mes informations</a>
                         </li><li>

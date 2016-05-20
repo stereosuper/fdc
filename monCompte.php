@@ -24,9 +24,11 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs'>
                         <li>
-                            <a href='#'>Tableau de bord</a>
+                            <a href='#' class='btn-home'>Tableau de bord</a>
                         </li><li class='active'>
                             <span>Mes informations</span>
+                        </li><li>
+                            <a href='#'>Accompagnement <span class='notif'>nouveau</span></a>
                         </li><li>
                             <a href='#'>Alertes</a>
                             <span class='notif'>5</span>

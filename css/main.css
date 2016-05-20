@@ -312,7 +312,7 @@ hr {
 }
 
 .icon-home:before {
-  content: "";
+  content: "";
 }
 
 .icon-twitter:before {
@@ -2039,7 +2039,7 @@ button.no-margin {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: '\e905';
+  content: '\e911';
   font-size: 14px;
   display: inline-block;
   vertical-align: top;
@@ -2450,6 +2450,7 @@ button.no-margin {
   display: inline-block;
   border-right: 1px solid #dadada;
   position: relative;
+  vertical-align: top;
   margin: 0;
   background: #fff;
 }
@@ -2999,16 +3000,34 @@ button.no-margin {
 }
 
 /* Buttons */
-.btn-no-text {
+.btn-no-text, .btn-home {
   white-space: nowrap;
   overflow: hidden;
   text-indent: 99em;
   line-height: 0;
 }
-.btn-no-text:after {
+.btn-no-text:after, .btn-home:after {
   float: left;
   margin: 0;
   text-indent: 0;
+}
+
+.btn-home {
+  width: 68px;
+}
+.btn-home:after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e911';
+  font-size: 18px;
 }
 
 .btn-arrow.btn-no-text {
@@ -4695,12 +4714,18 @@ button.no-margin {
   padding-left: 60px;
 }
 .dashboard-block .alerts-list .title-simple {
-  display: inline;
-  font-size: 1.05em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 89%;
   margin: 0;
+  font-size: 1.05em;
 }
 .dashboard-block .alerts-list .btn-arrow {
-  vertical-align: middle;
+  height: 20px;
+}
+.dashboard-block .alerts-list .btn-arrow:after {
+  line-height: 20px;
 }
 .dashboard-block.orange > div {
   background: #f18832;
@@ -4727,6 +4752,7 @@ button.no-margin {
 }
 .dashboard-title h2 + a {
   color: #fff;
+  opacity: 0.8;
 }
 
 /* Responsive horizontal */
@@ -5120,6 +5146,10 @@ button.no-margin {
     padding-right: 10px;
   }
 
+  .notif {
+    font-size: 0.95em;
+  }
+
   .content-default {
     padding-left: 45px;
     padding-right: 45px;
@@ -5157,6 +5187,13 @@ button.no-margin {
     font-size: 1em;
   }
 
+  .btn-home {
+    width: 44px;
+  }
+  .btn-home:after {
+    font-size: 14px;
+  }
+
   .content-right {
     padding-right: 45px;
   }
@@ -5170,11 +5207,11 @@ button.no-margin {
   .nav-tabs-indicator li:not(:first-child):after {
     display: none;
   }
-  .nav-tabs:not(.nav-tabs-indicator) a {
+  .nav-tabs:not(.nav-tabs-indicator) a, .nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
     padding: 15px 15px 12px;
   }
-  .nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
-    padding: 15px 15px 12px;
+  .nav-tabs:not(.nav-tabs-indicator).no-border a, .nav-tabs:not(.nav-tabs-indicator).no-border span:not(.notif) {
+    padding-bottom: 15px;
   }
 
   .tab-content {
@@ -5451,12 +5488,11 @@ button.no-margin {
     padding-right: 45px;
   }
 
-  .dashboard-block .alerts-list {
-    width: 72%;
-  }
-
-  .dashboard-title {
-    width: 28%;
+  .dashboard-block {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    float: none !important;
   }
 }
 @media (max-width: 767px) {
@@ -5486,6 +5522,22 @@ button.no-margin {
   .breadcrumb {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .btn-home {
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    line-height: 1.5;
+  }
+  .btn-home:after {
+    height: 14px;
+    float: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    margin: auto;
   }
 
   .nav-tabs:not(.nav-tabs-indicator) {
@@ -5572,6 +5624,9 @@ button.no-margin {
   .nav-tabs:not(.nav-tabs-indicator) a, .nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .nav-tabs:not(.nav-tabs-indicator) a.btn-home, .nav-tabs:not(.nav-tabs-indicator) span:not(.notif).btn-home {
+    padding-left: 50px;
   }
   .nav-tabs:not(.nav-tabs-indicator) .notif {
     height: 15px;
@@ -5865,11 +5920,16 @@ button.no-margin {
     padding: 27px 15px 0 15px;
   }
 
-  .dashboard-block {
-    width: 100%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    float: none !important;
+  .dashboard-block .alerts-list {
+    width: 72%;
+  }
+  .dashboard-block .alerts-list .title-simple {
+    display: inline-block;
+    max-width: 90%;
+  }
+
+  .dashboard-title {
+    width: 28%;
   }
 }
 @media (max-width: 650px) {
@@ -5930,6 +5990,10 @@ button.no-margin {
 
   .dashboard-block .alerts-list li a {
     padding-left: 20px;
+  }
+  .dashboard-block .alerts-list .title-simple {
+    max-width: none;
+    white-space: normal;
   }
 }
 @media (max-width: 480px) {

@@ -451,6 +451,10 @@
         }
     }
 
+    .notif{
+        font-size: 0.95em;
+    }
+
     .content-default{
         padding-left: $gutter;
         padding-right: $gutter;
@@ -491,6 +495,13 @@
         font-size: 1em;
     }
 
+    .btn-home{
+        width: 44px;
+        &:after{
+            font-size: 14px;
+        }
+    }
+
     .content-right{
         padding-right: $gutter;
     }
@@ -508,11 +519,13 @@
             }
         }
         &:not(.nav-tabs-indicator){
-            a{
+            a, span:not(.notif){
                 padding: 15px 15px 12px;
             }
-            span:not(.notif){
-                padding: 15px 15px 12px;
+            &.no-border{
+                a, span:not(.notif){
+                    padding-bottom: 15px;
+                }
             }
         }
     }
@@ -820,12 +833,10 @@
     }
 
     .dashboard-block{
-        .alerts-list{
-            width: 72%;
-        }
-    }
-    .dashboard-title{
-        width: 28%;
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        float: none !important;
     }
 }
 
@@ -860,6 +871,22 @@
     .breadcrumb{
         padding-left: $gutter;
         padding-right: $gutter;
+    }
+
+    .btn-home{
+        width: auto;
+        height: auto;
+        text-indent: 0;
+        line-height: 1.5;
+        &:after{
+            height: 14px;
+            float: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 30px;
+            margin: auto;
+        }
     }
 
     .nav-tabs{
@@ -944,6 +971,9 @@
             a, span:not(.notif){
                 padding-left: $gutter;
                 padding-right: $gutter;
+                &.btn-home{
+                    padding-left: 50px;
+                }
             }
             .notif{
                 height: 15px;
@@ -1327,10 +1357,16 @@
     }
 
     .dashboard-block{
-        width: 100%;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        float: none !important;
+        .alerts-list{
+            width: 72%;
+            .title-simple{
+                display: inline-block;
+                max-width: 90%;
+            }
+        }
+    }
+    .dashboard-title{
+        width: 28%;
     }
 }
 
@@ -1409,6 +1445,10 @@
                 a{
                     padding-left: 20px;
                 }
+            }
+            .title-simple{
+                max-width: none;
+                white-space: normal;
             }
         }
     }
