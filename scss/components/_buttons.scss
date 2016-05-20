@@ -60,6 +60,22 @@
 	}
 }
 
+.btn-alert{
+	@extend %btn-arrow-base;
+
+	&:before{
+		@extend %btn-before;
+
+		content: '\e90f'; // ding
+		font-size: 13px;
+	}
+	&:hover, &:focus{
+		&:before{
+			transform: translate3d(0, 0, 0) rotate(20deg);
+		}
+	}
+}
+
 .btn-delete{
 	@extend %btn-arrow-base;
 

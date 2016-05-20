@@ -44,7 +44,7 @@
                     </header>
                     <div class='field-content'>
                         <span>Votre recherche :</span>
-                        <h2 class='title-grey-small'>Loire-Atlantique et départements voisins, max 400 000 €</h2>
+                        <h2 class='title-grey-small'>Loire-Atlantique et départements voisins, max 400&nbsp;000&nbsp;€</h2>
                         <a href='#' class='btn-arrow-back small'>Modifier</a>
                         <a href='#' class='btn-alert small right'>Créer une alerte</a>
                         <ul class='search-list'>

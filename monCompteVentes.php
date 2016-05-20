@@ -28,8 +28,6 @@
                         </li><li>
                             <a href='#'>Mes informations</a>
                         </li><li>
-                            <a href='#'>Accompagnement <span class='notif'>nouveau</span></a>
-                        </li><li>
                             <a href='#'>Alertes</a>
                             <span class='notif'>1</span>
                         </li><li class='active'>

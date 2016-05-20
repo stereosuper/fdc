@@ -230,6 +230,7 @@
         }
     }
     .btn-arrow{
+        vertical-align: middle;
         color: $bleu-link;
         transition: $transition;
     }
@@ -254,6 +255,7 @@
     }
     .title-simple{
         display: inline-block;
+        vertical-align: middle;
         margin-right: 10px;
     }
     .p{

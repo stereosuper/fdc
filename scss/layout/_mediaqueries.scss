@@ -1360,6 +1360,12 @@
         }
     }
 
+    .breadcrumb{
+        a{
+            max-width: 255px;
+        }
+    }
+
     .alerts-list, .sales-list, .search-list{
         a{
             padding-left: 25px;
@@ -1568,24 +1574,9 @@
 
     .field{
         &-header{
-            padding-left: 125px;
-        }
-        &.field-sale{
-            .field-header{
-                &:before{
-                    width: 80px;
-                    height: 46px;
-                    left: 25px;
-                }
-            }
-        }
-        &.field-buy{
-            .field-header{
-                &:before{
-                    width: 55px;
-                    height: 54px;
-                    left: 30px;
-                }
+            padding-left: 30px;
+            &:before{
+                display: none;
             }
         }
     }
@@ -1682,6 +1673,17 @@
     }
 }
 
+@media (max-width: 400px){
+    .breadcrumb{
+        a{
+            max-width: 215px;
+        }
+    }
+}
+
+
+
+
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
     .choices{
@@ -1706,6 +1708,8 @@
             }
             &:nth-child(4){
                 .visuel{
+                    background: url(../layoutImg/team@2x.png) no-repeat;
+                    background-size: 800px 1200px;
                 }
             }
             &:nth-child(5){

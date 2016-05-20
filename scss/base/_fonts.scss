@@ -116,7 +116,9 @@ $icons: (
     pen: '\e909',
     trash: '\e90b',
     plus: '\e90a',
-    mail2: '\e90c'
+    mail2: '\e90c',
+    ding: '\e90f',
+    flash: '\e910'
 );
 @each $name, $icon in $icons {
     .icon-#{$name}:before {
