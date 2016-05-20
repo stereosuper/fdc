@@ -499,6 +499,7 @@
 
     .btn-home{
         width: 44px;
+        height: 40px;
         &:after{
             font-size: 14px;
         }
@@ -527,6 +528,9 @@
             &.no-border{
                 a, span:not(.notif){
                     padding-bottom: 15px;
+                }
+                .btn-home{
+                    height: 45px;
                 }
             }
         }

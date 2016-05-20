@@ -2520,6 +2520,9 @@ button.no-margin {
 .nav-tabs:not(.nav-tabs-indicator).no-border a, .nav-tabs:not(.nav-tabs-indicator).no-border span:not(.notif) {
   padding-bottom: 25px;
 }
+.nav-tabs:not(.nav-tabs-indicator).no-border .btn-home {
+  height: 68px;
+}
 
 .tab-content {
   padding: 20px 60px 50px;
@@ -3016,6 +3019,7 @@ button.no-margin {
 
 .btn-home {
   width: 68px;
+  height: 64px;
 }
 .btn-home:after {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -5207,6 +5211,7 @@ button.no-margin {
 
   .btn-home {
     width: 44px;
+    height: 40px;
   }
   .btn-home:after {
     font-size: 14px;
@@ -5230,6 +5235,9 @@ button.no-margin {
   }
   .nav-tabs:not(.nav-tabs-indicator).no-border a, .nav-tabs:not(.nav-tabs-indicator).no-border span:not(.notif) {
     padding-bottom: 15px;
+  }
+  .nav-tabs:not(.nav-tabs-indicator).no-border .btn-home {
+    height: 45px;
   }
 
   .tab-content {
