@@ -1,3 +1,12 @@
+/* Responsive vertical */
+@media (max-height: 800px){
+    .home{
+        .bloc-top{
+            height: 390px;
+        }
+    }
+}
+
 /* Responsive horizontal */
 @media (max-width: 1400px){
     .menu-header{
