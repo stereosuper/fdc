@@ -1692,6 +1692,26 @@ button {
     padding: 0; }
     .menu-header > li:before {
       display: none; }
+    .menu-header > li:nth-child(10n+1) a:before {
+      background-color: #c52d38; }
+    .menu-header > li:nth-child(10n+2) a:before {
+      background-color: #d63f39; }
+    .menu-header > li:nth-child(10n+3) a:before {
+      background-color: #de5340; }
+    .menu-header > li:nth-child(10n+4) a:before {
+      background-color: #e85d1f; }
+    .menu-header > li:nth-child(10n+5) a:before {
+      background-color: #e8741f; }
+    .menu-header > li:nth-child(10n+6) a:before {
+      background-color: #e8911f; }
+    .menu-header > li:nth-child(10n+7) a:before {
+      background-color: #e8741f; }
+    .menu-header > li:nth-child(10n+8) a:before {
+      background-color: #e85d1f; }
+    .menu-header > li:nth-child(10n+9) a:before {
+      background-color: #de5340; }
+    .menu-header > li:nth-child(10n+10) a:before {
+      background-color: #d63f39; }
   .menu-header a {
     display: block;
     padding: 0 25px;

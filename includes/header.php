@@ -147,9 +147,6 @@
                         <a href="#">Liens utiles</a>
                     </li><!--
                     --><li>
-                        <a href="#">Calculatrice taux d’intérêt</a>
-                    </li><!--
-                    --><li>
                         <a href="#">ABC du métier</a>
                     </li><!--
                     --><li>
