@@ -115,11 +115,11 @@
             <div class='title-sidebar'>Mon compte</div>
             <div class='wrapper-login'>
                 <form action='#' method='post'>
-                    <fieldset class='required'>
+                    <fieldset class='required no-asterisk'>
                         <label for='account-login' class='block'>Identifiant</label>
                         <input type='text' name='account-login' id='account-login' required>
                     </fieldset>
-                    <fieldset class='required'>
+                    <fieldset class='required no-asterisk'>
                         <label for='account-password' class='block'>Mot de passe</label>
                         <div class='wrapper-input-btn'>
                             <div class='wrapper-input big'>

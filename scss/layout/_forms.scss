@@ -171,6 +171,11 @@ legend, label{
             }
         }
     }
+    .required.no-asterisk &{
+        &:after{
+            display: none;
+        }
+    }
     .error &{
         color: $error;
     }
