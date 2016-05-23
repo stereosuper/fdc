@@ -39,7 +39,7 @@
                             <span class='notif'>1</span>
                         </li> -->
                     </ul>
-                    <div class='tab-content'>
+                    <div class='tab-content content-tabs-partner'>
                         <header class='tab-content-title'>
                             <h2 class='h1'>Vos informations personnelles</h2>
                             <button class='btn-pen small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Modifier</button>
@@ -173,59 +173,6 @@
                                     </label><input type='email' name='email' id='email' value='jc.dus@caramail.fr' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" disabled>
                                 </fieldset>
                             </fieldset>
-                            <!--<fieldset class='block-sub-fields block-right'>
-                                <legend>Accompagnement</legend>
-                                <input type='checkbox' name='equipe' id='equipe' value='1' checked disabled><label for='equipe'>
-                                    <b>Je souhaite complêter mon équipe d'expert. Pour m'accompagner&nbsp;:</b>
-                                </label>
-                                <div>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='gerer' value='gerer' checked disabled><label for='gerer'>
-                                            Gérer mon entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='equiper' value='equiper' checked disabled><label for='equiper'>
-                                            Équiper / aménager mon entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='financer' value='financer' disabled><label for='financer'>
-                                            Financer mon entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='assurer' value='assurer' disabled><label for='assurer'>
-                                            Assure mon entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='recruter' value='recruter' disabled><label for='recruter'>
-                                            Recruter pour mon entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='vendre' value='vendre' disabled><label for='vendre'>
-                                            Vendre mon entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='placer' value='placer' disabled><label for='placer'>
-                                            Placer la vente de mon entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='acheter' value='acheter' disabled><label for='acheter'>
-                                            Acheter ma future entreprise
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <input type='checkbox' name='accompagnement[]' id='autre' value='autre' checked disabled><label for='autre' class='has-margin'>
-                                            autre&nbsp;:
-                                        </label><input type='text' name='autre-texte' class='small' value='que-sais-je' disabled>
-                                    </fieldset>
-                                </div>
-                            </fieldset>-->
                             <button type='submit' class='btn-block huge hidden'>Valider</button>
                         </form>
                         <div class='content-footer hidden'>

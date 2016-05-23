@@ -11,11 +11,12 @@
 
                 display: block;
                 position: absolute;
-                left: -20px;
+                left: -15px;
                 top: 0;
                 bottom: 0;
                 margin: auto;
                 background: $theme-btn;
+                z-index: 2;
             }
             a{
                 background: #f5f5f6;
@@ -48,5 +49,143 @@
         bottom: 0;
         right: 20px;
         margin: auto;
+    }
+}
+
+
+/* Leads */
+
+.leads-title{
+    min-width: 918px;
+    vertical-align: middle;
+    font-size: 0.88em;
+    margin: 0;
+    padding-left: 0;
+    background-color: #535866;
+    color: #FFF;
+    font-family: $roboto-bold;
+    li{
+        display: inline-block;
+        padding: 14px 20px;
+        vertical-align: top;
+        margin-bottom: 0;
+        &:before{
+            display: none;
+        }
+    }
+    
+    .reference{
+        width: 13%;
+    }
+    .date{
+        width: 11.5%;
+    }
+    .activite{
+        @include ellipsis;
+        width: 36%;
+    }
+    .ville{
+        width: 16.7%;
+    }
+}
+
+.leads-list{
+    margin-top: 0;
+    min-width: 918px;
+    a{
+        padding-left: 20px;
+        padding-right: 20px;
+        > span, > b{
+            font-size: 0.88em;
+        }
+    }
+    span, b, time{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .btn-arrow{
+        vertical-align: baseline;
+        font-size: 0.88em;
+    }
+    .reference{
+        width: 13%;
+        margin-right: 0;
+    }
+    .activite{
+        width: 38%;
+        span{
+            &:first-child{
+                @include ellipsis;
+                max-width: 85%;
+                margin-right: 25px;
+
+            }
+        }
+    }
+    .ville{
+        @include ellipsis;
+        width: 17%;
+        max-width: 17%;
+    }
+    .new{
+        span:not(.btn-arrow), b, time{
+            font-family: $roboto-bold;
+        }
+    }
+    time{
+        width: 12.5%;
+    }
+}
+
+.leads-criteres{
+    margin: 0 0 60px;
+    > div{
+        margin: 1em 0;
+    }
+    span{
+        display: inline-block;
+        width: 20%;
+        min-width: 150px;
+        vertical-align: top;
+        font-size: 0.88em;
+            line-height: 1.8;
+    }
+    ul{
+        display: inline-block;
+        width: 80%;
+        padding-left: 0;
+        vertical-align: top;
+        margin: 0;
+    }
+    li{
+        display: inline-block;
+        margin: 0 20px 0 0;
+        font-family: $roboto-bold;
+        letter-spacing: -0.1px;
+        font-size: 0.88em;
+        &:last-child{
+           &:after{
+                display: none;
+           }
+        }
+        &:after{
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            margin: 0 0 0 20px;
+            vertical-align: middle;
+            //background: #ef792d;
+            border-radius: 50%;
+            background: #d63e37;
+        }
+        &:before{
+            display: none;
+        }
+    }
+    .big-legend{
+        margin-top: 50px;
+        padding-bottom: 10px;
+        font-family: $roboto-cd-bold;
     }
 }

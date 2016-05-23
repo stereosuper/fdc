@@ -435,6 +435,17 @@
             height: auto;
         }
     }
+    .tab-leads{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        .leads-list{
+            .new{
+                &:before{
+                    left: 0;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px){
@@ -443,6 +454,7 @@
             font-size: 3em;
         }
     }
+
 }
 
 @media (max-width: 979px){
@@ -853,6 +865,24 @@
         padding-right: 0 !important;
         float: none !important;
     }
+
+    /* .leads-list{
+        .btn-arrow{
+            display: none;
+        }
+        .activite{
+            width: 35%;
+        }
+        .ville{
+            width: 20%;
+            margin-right: 25px;
+        }
+    }
+    .leads-title{
+        .activite{
+            width: 33.8%;
+        }
+    } */
 }
 
 @media (max-width: 767px){
@@ -1383,6 +1413,12 @@
     .dashboard-title{
         width: 28%;
     }
+    .criteres{
+        margin-bottom: 2em;
+        span, ul{
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -1397,6 +1433,16 @@
             }
             li{
                 padding: 9px 9px 6px;
+            }
+        }
+    }
+
+    .criteres{
+        li{
+            display: block;
+            margin-right: 0;
+            &:after{
+                display: none;
             }
         }
     }
