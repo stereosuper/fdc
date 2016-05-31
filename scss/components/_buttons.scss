@@ -141,7 +141,6 @@
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
-	overflow: hidden;
 	padding: 13px 13px 12px 13px;
 	@include roboto-cd-bold(0.75em);
 	text-transform: uppercase;
@@ -152,27 +151,6 @@
 	border: none;
 	backface-visibility: hidden;
 	line-height: 1em;
-	&:before, &:after{
-		content: '';
-		display: block;
-		position: absolute;
-		background: rgb(134, 48, 58);
-		transform: rotate(45deg);
-		z-index: -1;
-		opacity: 0.12;
-	}
-	&:before{
-		@include size(45px);
-
-		top: 25px;
-		right: 3px;
-	}
-	&:after{
-		@include size(36px);
-
-		top: -28px;
-		right: 62px;
-	}
 	&.light{
 		background-color: $theme-btn-light;
 	}
@@ -187,6 +165,11 @@
 	&.huge{
 		padding: 22px 40px;
 		font-size: 1em;
+	}
+	&.btn-orange{
+		.border{
+			border-color: #de3d25;
+		}
 	}
 	&.btn-alert{
 		padding: 16px 16px 15px 50px;
@@ -212,18 +195,10 @@
 			transform-origin: 50% 50%;
 			transition: transform $transition;
 		}
-		&:after{
-			display: none;
-		}
 		&:hover, &:focus{
 			&:before{
 				transform: translate3d(0, 0, 0) rotate(20deg);
 			}
-		}
-	}
-	&.no-square{
-		&:before, &:after{
-			display: none;
 		}
 	}
 	.wrapper-input-btn &{
@@ -233,6 +208,18 @@
 	}
 	&.right{
 		float: right;
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.2);
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
 	}
 	.border{
 		display: block;
@@ -246,7 +233,6 @@
 		box-sizing: border-box;
 		border: 3px solid $theme-btn;
 		pointer-events: none;
-		overflow: hidden;
 		&:before{
 			content: '';
 			display: block;
@@ -256,7 +242,8 @@
 			bottom: 0;
 			left: 0;
 			background-color: $blanc;
-			transform: translateX(-101%);
+			transform: scaleX(0);
+			transform-origin: 0 50%;
 			transition: transform 0.3s ease-in-out;
 		}
 	}
@@ -267,8 +254,11 @@
 		color: $theme-btn;
 		.border{
 			&:before{
-				transform: translateX(0);
+				transform: scaleX(1);
 			}
+		}
+		&:after{
+			opacity: 1;
 		}
 	}
 }
