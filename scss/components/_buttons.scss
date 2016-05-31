@@ -231,11 +231,45 @@
 		top: 0;
 		right: 0;
 	}
-	&:hover, &:focus{
-		color: #fff;
-	}
 	&.right{
 		float: right;
+	}
+	.border{
+		display: block;
+		position: absolute;
+		width: auto;
+		height: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-sizing: border-box;
+		border: 3px solid $theme-btn;
+		pointer-events: none;
+		overflow: hidden;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: $blanc;
+			transform: translateX(-101%);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+	.txt-btn{
+		position: relative;
+	}
+	&:hover, &:focus{
+		color: $theme-btn;
+		.border{
+			&:before{
+				transform: translateX(0);
+			}
+		}
 	}
 }
 

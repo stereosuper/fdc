@@ -111,7 +111,7 @@
                                         <option value='17'>Tabac Loto / Presse</option>
                                     </select>
                                 </div>
-                                <button type='submit' class='btn-block'>Ok</button>
+                                <button type='submit' class='btn-block'><span class='border'></span><span class='txt-btn'>Ok</span></button>
                             </form>
                         </footer>
                     </div>

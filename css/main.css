@@ -2042,6 +2042,8 @@ button {
   letter-spacing: 0.04em; }
   .content-tabs-sale .nav-tabs {
     border-color: #ef6a2b; }
+  .content-tabs-partner .nav-tabs {
+    border-color: #d63e37; }
   .nav-tabs.no-border {
     border: 0; }
   .nav-tabs li {
@@ -2058,6 +2060,8 @@ button {
       color: #fff; }
       .content-tabs-sale .nav-tabs li.active {
         background: #ef6a2b; }
+      .content-tabs-partner .nav-tabs li.active {
+        background: #d63e37; }
     .nav-tabs li.tab-right {
       border-right: 0;
       border-left: 1px solid #dadada;
@@ -2073,6 +2077,8 @@ button {
       color: #c6333e; }
       .content-tabs-sale .nav-tabs a:hover, .content-tabs-sale .nav-tabs a:focus {
         color: #ef6a2b; }
+      .content-tabs-partner .nav-tabs a:hover, .content-tabs-partner .nav-tabs a:focus {
+        color: #d63e37; }
   .nav-tabs-indicator li {
     padding: 25px 25px 21px; }
     .nav-tabs-indicator li:not(:first-child):after {
@@ -2694,10 +2700,43 @@ button {
     position: absolute;
     top: 0;
     right: 0; }
-  .btn-block:hover, .btn-block:focus {
-    color: #fff; }
   .btn-block.right {
     float: right; }
+  .btn-block .border {
+    display: block;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    border: 3px solid #c6333e;
+    pointer-events: none;
+    overflow: hidden; }
+    .btn-block .border:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      -webkit-transform: translateX(-101%);
+          -ms-transform: translateX(-101%);
+              transform: translateX(-101%);
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+              transition: transform 0.3s ease-in-out; }
+  .btn-block .txt-btn {
+    position: relative; }
+  .btn-block:hover, .btn-block:focus {
+    color: #c6333e; }
+    .btn-block:hover .border:before, .btn-block:focus .border:before {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0); }
 
 /*.btn-block-arrow{
 	@extend %btn-arrow-base;
@@ -3686,7 +3725,8 @@ button {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: #c6333e; }
+    background: #c6333e;
+    z-index: 2; }
   .messages-list li.new a {
     background: #f5f5f6; }
 .messages-list a {
@@ -3711,6 +3751,112 @@ button {
   bottom: 0;
   right: 20px;
   margin: auto; }
+
+/* Leads */
+.leads-title {
+  min-width: 918px;
+  vertical-align: middle;
+  font-size: 0.88em;
+  margin: 0;
+  padding-left: 0;
+  background-color: #535866;
+  color: #FFF;
+  font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
+  .leads-title li {
+    display: inline-block;
+    padding: 14px 20px;
+    vertical-align: top;
+    margin-bottom: 0; }
+    .leads-title li:before {
+      display: none; }
+  .leads-title .reference {
+    width: 13%; }
+  .leads-title .date {
+    width: 11.5%; }
+  .leads-title .activite {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 36%; }
+  .leads-title .ville {
+    width: 16.7%; }
+
+.leads-list {
+  margin-top: 0;
+  min-width: 918px; }
+  .leads-list a {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .leads-list a > span, .leads-list a > b {
+      font-size: 0.88em; }
+  .leads-list span, .leads-list b, .leads-list time {
+    display: inline-block;
+    vertical-align: top; }
+  .leads-list .btn-arrow {
+    vertical-align: baseline;
+    font-size: 0.88em; }
+  .leads-list .reference {
+    width: 13%;
+    margin-right: 0; }
+  .leads-list .activite {
+    width: 38%; }
+    .leads-list .activite span:first-child {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 85%;
+      margin-right: 25px; }
+  .leads-list .ville {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 17%;
+    max-width: 17%; }
+  .leads-list .new span:not(.btn-arrow), .leads-list .new b, .leads-list .new time {
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
+  .leads-list time {
+    width: 12.5%; }
+
+.leads-criteres {
+  margin: 0 0 60px; }
+  .leads-criteres > div {
+    margin: 1em 0; }
+  .leads-criteres span {
+    display: inline-block;
+    width: 20%;
+    min-width: 150px;
+    vertical-align: top;
+    font-size: 0.88em;
+    line-height: 1.8; }
+  .leads-criteres ul {
+    display: inline-block;
+    width: 80%;
+    padding-left: 0;
+    vertical-align: top;
+    margin: 0; }
+  .leads-criteres li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
+    letter-spacing: -0.1px;
+    font-size: 0.88em; }
+    .leads-criteres li:last-child:after {
+      display: none; }
+    .leads-criteres li:after {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      margin: 0 0 0 20px;
+      vertical-align: middle;
+      border-radius: 50%;
+      background: #d63e37; }
+    .leads-criteres li:before {
+      display: none; }
+  .leads-criteres .big-legend {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif; }
 
 /* Field */
 .field {
@@ -4307,7 +4453,13 @@ button {
       -webkit-transition-delay: none;
               transition-delay: none; }
     .choices .content {
-      height: auto; } }
+      height: auto; }
+
+  .tab-leads {
+    overflow-x: scroll;
+    overflow-y: hidden; }
+    .tab-leads .leads-list .new:before {
+      left: 0; } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; } }
@@ -4928,7 +5080,12 @@ button {
       max-width: 90%; }
 
   .dashboard-title {
-    width: 28%; } }
+    width: 28%; }
+
+  .leads-criteres {
+    margin-bottom: 2em; }
+    .leads-criteres span, .leads-criteres ul {
+      width: 100%; } }
 @media (max-width: 650px) {
   .nav-tabs {
     /*&:not(.nav-tabs-indicator){
@@ -4939,7 +5096,13 @@ button {
       .nav-tabs-indicator span {
         display: none; }
       .nav-tabs-indicator li {
-        padding: 9px 9px 6px; } }
+        padding: 9px 9px 6px; }
+
+  .leads-criteres li {
+    display: block;
+    margin-right: 0; }
+    .leads-criteres li:after {
+      display: none; } }
 @media (max-width: 600px) {
   .home-link {
     padding-top: 23px;

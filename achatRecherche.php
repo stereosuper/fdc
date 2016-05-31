@@ -179,7 +179,7 @@
                                     </select>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge right'>Rechercher</button>
+                            <button type='submit' class='btn-block huge right'><span class='border'></span><span class='txt-btn'>Recherche</span></button>
                             <a href='#' class='btn-arrow small'>Nous confier gratuitement votre recherche</a>
                         </form><div class='map-container' id='mapForm'>
                             <div id='mapFormMetropole' class='map-form active'>

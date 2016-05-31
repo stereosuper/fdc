@@ -67,7 +67,7 @@
                             <li><strong>Modifiez votre annonce</strong> quand vous le souhaitez</li>
                             <li>Profitez de <strong>statistiques</strong> de consultation</li>
                         </ul>
-                        <a href='#' class='btn-block huge right'>Déposer mon annonce</a>
+                        <a href='#' class='btn-block huge right'><span class='border'></span><span class='txt-btn'>Déposer mon annonce</span></a>
                     </div>
                 </div>
             </div>

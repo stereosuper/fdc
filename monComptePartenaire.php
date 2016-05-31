@@ -173,7 +173,7 @@
                                     </label><input type='email' name='email' id='email' value='jc.dus@caramail.fr' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" disabled>
                                 </fieldset>
                             </fieldset>
-                            <button type='submit' class='btn-block huge hidden'>Valider</button>
+                            <button type='submit' class='btn-block huge hidden'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </form>
                         <div class='content-footer hidden'>
                             <p>Si vous ne voulez plus faire partie du Forum des Commerces, nous en sommes désolés! Pour supprimer votre compte, <a href="#" class="btn-arrow small">cliquez ici</a></p>

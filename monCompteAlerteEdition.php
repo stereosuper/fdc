@@ -220,7 +220,7 @@
                                     </select>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge'>Enregistrer</button>
+                            <button type='submit' class='btn-block huge'><span class='border'></span><span class='txt-btn'>Enregistrer</span></button>
                         </form><div class='map-container' id='mapForm'>
                             <div id='mapFormMetropole' class='map-form active'>
                                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36.88 40.5'>

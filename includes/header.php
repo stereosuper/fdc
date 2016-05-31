@@ -124,7 +124,7 @@
                         <div class='wrapper-input-btn'>
                             <div class='wrapper-input big'>
                                 <input type='password' name='account-password' id='account-password' required>
-                                <button type='submit' class='btn-block medium'>Ok</button>
+                                <button type='submit' class='btn-block medium'><span class='border'></span><span class='txt-btn'>Ok</span></button>
                             </div>
                         </div>
                         <div class='center-align info-form'>
