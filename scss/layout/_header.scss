@@ -243,10 +243,17 @@
 			transform: translateY(-100%);
 			transition: .2s ease-in-out;
 		}
+		&:after{
+			content: '';
+			@include shadow-button;
+		}
 		&:hover, &:focus{
 			color: #fff;
 			&:before{
 				transform: translateY(0);
+			}
+			&:after{
+				opacity: 1;
 			}
 		}
 	}
