@@ -130,16 +130,16 @@
             <div class='title-sidebar'>Mon compte</div>
             <div class='wrapper-login'>
                 <form action='#' method='post'>
-                    <fieldset class='required'>
+                    <fieldset class='required no-asterisk'>
                         <label for='account-login' class='block'>Identifiant</label>
                         <input type='text' name='account-login' id='account-login' required>
                     </fieldset>
-                    <fieldset class='required'>
+                    <fieldset class='required no-asterisk'>
                         <label for='account-password' class='block'>Mot de passe</label>
                         <div class='wrapper-input-btn'>
                             <div class='wrapper-input big'>
                                 <input type='password' name='account-password' id='account-password' required>
-                                <button type='submit' class='btn-block medium'>Ok</button>
+                                <button type='submit' class='btn-block medium'><span class='border'></span><span class='txt-btn'>Ok</span></button>
                             </div>
                         </div>
                         <div class='center-align info-form'>
@@ -160,9 +160,6 @@
                     </li><!--
                     --><li>
                         <a href="#">Liens utiles</a>
-                    </li><!--
-                    --><li>
-                        <a href="#">Calculatrice taux d’intérêt</a>
                     </li><!--
                     --><li>
                         <a href="#">ABC du métier</a>
@@ -191,9 +188,11 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs'>
                         <li>
-                            <a href='#'>Tableau de bord</a>
+                            <a href='#' class='btn-home'>Tableau de bord</a>
                         </li><li class='active'>
                             <span>Mes informations</span>
+                        </li><li>
+                            <a href='#'>Accompagnement <span class='notif'>nouveau</span></a>
                         </li><li>
                             <a href='#'>Alertes</a>
                             <span class='notif'>5</span>
@@ -379,7 +378,7 @@
                                     </fieldset>
                                 </div>
                             </fieldset>-->
-                            <button type='submit' class='btn-block huge'>Valider</button>
+                            <button type='submit' class='btn-block huge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </form>
                         <div class='content-footer hidden'>
                             <p>Si vous ne voulez plus faire partie du Forum des Commerces, nous en sommes désolés! Pour supprimer votre compte, <a href="#" class="btn-arrow small">cliquez ici</a></p>
@@ -413,7 +412,7 @@
                                     </address>
                                 </div><!--
                                 --><div class='content-align-middle wrapper-contact center-align'>
-                                    <a href='#' class='btn-block big'>Contactez nous</a>
+                                    <a href='#' class='btn-block big'><span class='border'></span><span class='txt-btn'>Contactez nous</span></a>
                                 </div>
                             </div>
                         </li><!--
@@ -454,7 +453,7 @@
                                             <div class='wrapper-input'>
                                                 <input type='text' id='name' name='name' placeholder='Nom' required>
                                             </div>
-                                            <button type='submit' class='btn-block'>Ok</button>
+                                            <button type='submit' class='btn-block'><span class='border'></span><span class='txt-btn'>Ok</span></button>
                                         </fieldset>
                                     </form>
                                 </li>
