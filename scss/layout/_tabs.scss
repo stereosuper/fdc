@@ -9,6 +9,9 @@
     .content-tabs-sale &{
         border-color: #ef6a2b;
     }
+    .content-tabs-partner &{
+        border-color: #d63e37;
+    }
     &.no-border{
         border: 0;
     }
@@ -27,6 +30,9 @@
             color: #fff;
             .content-tabs-sale &{
                 background: #ef6a2b;
+            }
+            .content-tabs-partner &{
+                background: #d63e37;
             }
         }
         &.tab-right{
@@ -52,6 +58,9 @@
             color: $theme-btn;
             .content-tabs-sale &{
                 color: #ef6a2b;
+            }
+            .content-tabs-partner &{
+                color: #d63e37;
             }
         }
     }
@@ -187,5 +196,4 @@
         background: #ef6a2b;
     }
 }
-
 
