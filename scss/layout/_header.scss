@@ -301,6 +301,12 @@
 		color: $blanc;
 		text-decoration: none;
 		@include roboto-medium(0.875em);
+		position: relative;
+		z-index: 1;
+		&:after{
+			content: '';
+			@include shadow-button;
+		}
 		span{
 			transform: translate3d(0, 0, 0);
 			transition: transform $transition;
@@ -322,10 +328,14 @@
 		.txt-nav{
 			display: block;
 			text-indent: -9999px;
+			height: 0;
 		}
 		&:hover, &:focus{
 			span{
 				transform: translate3d(0, 0, 0) scale(1.2);
+			}
+			&:after{
+				opacity: 1;
 			}
 		}
 	}

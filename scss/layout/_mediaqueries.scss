@@ -3,6 +3,9 @@
     .home{
         .bloc-top{
             height: 390px;
+            h1{
+                padding: 96px 0 0;
+            }
         }
     }
 }
@@ -166,6 +169,7 @@
     }
     .nav-header{
         display: block;
+        margin: -1px 0 0 0;
         > li{
             display: block;
             width: 100%;
@@ -176,11 +180,24 @@
             padding: 14px 28px;
             height: auto;
             line-height: normal;
+            overflow: hidden;
+            &:before{
+                display: none;
+            }
+            &:after{
+                display: none;
+            }
             .icon-mail, .icon-bulb, .icon-user{
                 display: none;
             }
             .txt-nav{
                 text-indent: 0;
+                height: auto;
+            }
+            &:hover, &:focus{
+                span{
+                    transform: scale(1);
+                }
             }
         }
     }
@@ -724,7 +741,7 @@
         table-layout: fixed;
         width: 100%;
         background-color: rgb(57, 61, 71);
-        padding: 0 0 130px 0;
+        padding: 0;
         > li{
             display: table-cell;
             vertical-align: top;
@@ -741,6 +758,7 @@
     .wrapper-menu-footer{
         background: none;
         bottom: 0;
+        position: relative;
     }
     .social-footer{
         position: relative;
@@ -761,7 +779,7 @@
         padding: 10px 0;
         text-align: center;
         > li{
-            margin: 4px 16px;
+           // margin: 4px 16px;
         }
     }
 
@@ -1606,7 +1624,7 @@
 
     .menu-footer{
         > li{
-            margin: 4px 10px;
+            //margin: 4px 10px;
         }
     }
 
