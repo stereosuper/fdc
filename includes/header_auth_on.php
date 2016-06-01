@@ -127,6 +127,12 @@
                         <a href='#'>Alertes <span class="notif">5</span></a>
                     </li><!--
                     --><li>
+                        <a href='#'>Ventes</a>
+                    </li><!--
+                    --><li>
+                        <a href='#'>Correspondances</a>
+                    </li><!--
+                    --><li>
                         <a href='#'>Ma sélection <span class="notif">2</span></a>
                     </li>
                 </ul>
