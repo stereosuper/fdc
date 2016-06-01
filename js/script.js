@@ -194,8 +194,10 @@ $(function(){
 		}
 
 		btnsChoices.on('mouseenter', function(){
-			var index = $(this).parents('li').index();
-			spritesTl[index].play();
+			if(!choices.hasClass('choice-1-active') && !choices.hasClass('choice-2-active') && !choices.hasClass('choice-3-active') && !choices.hasClass('choice-4-active') && !choices.hasClass('choice-5-active')){
+				var index = $(this).parents('li').index();
+				spritesTl[index].play();
+			}
 		}).on('mouseout', function(){
 			var index = $(this).parents('li').index();
 			spritesTl[index].reverse();
@@ -204,8 +206,17 @@ $(function(){
 	btnsChoices.click(function(e){
 		if(windowWidth>767){
 			e.preventDefault();
-			$(this).closest('.choices').addClass('choice-'+($(this).closest('li').index()+1)+'-active choice-'+($(this).closest('li').index()+1)+'-animating');
-			if(windowWidth<=1280){
+			if(!$(this).closest('.choices').hasClass('choice-'+($(this).closest('li').index()+1)+'-active')){
+				$(this).closest('.choices').addClass('choice-'+($(this).closest('li').index()+1)+'-active choice-'+($(this).closest('li').index()+1)+'-animating');
+			}else{
+				var choices = $(this).closest('.choices');
+				choices.removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active');
+				setTimeout(function(){
+					choices.removeClass('choice-1-animating choice-2-animating choice-3-animating choice-4-animating choice-5-animating');
+				}, tpsAnimChoice);
+			}
+			//if(windowWidth<=1280){		
+			if(windowWidth<=1150){
 				var liParent = $(this).closest('li');
 				$('.zone-content', liParent).slideToggle(300);
 			}else{

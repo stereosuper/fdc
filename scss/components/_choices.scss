@@ -286,10 +286,10 @@ $tps-choice-etape-2: 0.3s;
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -318,10 +318,10 @@ $tps-choice-etape-2: 0.3s;
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -350,10 +350,10 @@ $tps-choice-etape-2: 0.3s;
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -382,10 +382,10 @@ $tps-choice-etape-2: 0.3s;
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -414,10 +414,10 @@ $tps-choice-etape-2: 0.3s;
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -604,6 +604,7 @@ $tps-choice-etape-2: 0.3s;
 		color: rgb(218, 218, 218);
 		text-align: center;
 		line-height: 40px;
+		z-index: 3;
 	}
 	.table-types{
 		table-layout: fixed;
@@ -626,6 +627,13 @@ $tps-choice-etape-2: 0.3s;
 						}
 					}
 					&:nth-child(2){
+						a{
+							&:before{
+								background-color: $theme-gradient-2;
+							}
+						}
+					}
+					&:nth-child(3){
 						a{
 							&:before{
 								background-color: $theme-gradient-2;

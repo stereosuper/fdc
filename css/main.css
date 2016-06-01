@@ -3197,13 +3197,13 @@ button {
       -webkit-transform: translate3d(0, 0, 0) scaleY(0);
               transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-1-active > li:nth-child(1) .visuel {
-      -webkit-transform: translateY(36px);
-          -ms-transform: translateY(36px);
-              transform: translateY(36px); }
+      -webkit-transform: translateY(30px);
+          -ms-transform: translateY(30px);
+              transform: translateY(30px); }
     .choices.choice-1-active > li:nth-child(1) .zone-txt {
-      -webkit-transform: translateY(-50px);
-          -ms-transform: translateY(-50px);
-              transform: translateY(-50px); }
+      -webkit-transform: translateY(-35px);
+          -ms-transform: translateY(-35px);
+              transform: translateY(-35px); }
     .choices.choice-1-active > li:nth-child(1) h3, .choices.choice-1-active > li:nth-child(1) p {
       color: white; }
   .choices.choice-1-active .bg-choice {
@@ -3222,13 +3222,13 @@ button {
       -webkit-transform: translate3d(0, 0, 0) scaleY(0);
               transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-2-active > li:nth-child(2) .visuel {
-      -webkit-transform: translateY(36px);
-          -ms-transform: translateY(36px);
-              transform: translateY(36px); }
+      -webkit-transform: translateY(30px);
+          -ms-transform: translateY(30px);
+              transform: translateY(30px); }
     .choices.choice-2-active > li:nth-child(2) .zone-txt {
-      -webkit-transform: translateY(-50px);
-          -ms-transform: translateY(-50px);
-              transform: translateY(-50px); }
+      -webkit-transform: translateY(-35px);
+          -ms-transform: translateY(-35px);
+              transform: translateY(-35px); }
     .choices.choice-2-active > li:nth-child(2) h3, .choices.choice-2-active > li:nth-child(2) p {
       color: white; }
   .choices.choice-2-active .bg-choice {
@@ -3247,13 +3247,13 @@ button {
       -webkit-transform: translate3d(0, 0, 0) scaleY(0);
               transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-3-active > li:nth-child(3) .visuel {
-      -webkit-transform: translateY(36px);
-          -ms-transform: translateY(36px);
-              transform: translateY(36px); }
+      -webkit-transform: translateY(30px);
+          -ms-transform: translateY(30px);
+              transform: translateY(30px); }
     .choices.choice-3-active > li:nth-child(3) .zone-txt {
-      -webkit-transform: translateY(-50px);
-          -ms-transform: translateY(-50px);
-              transform: translateY(-50px); }
+      -webkit-transform: translateY(-35px);
+          -ms-transform: translateY(-35px);
+              transform: translateY(-35px); }
     .choices.choice-3-active > li:nth-child(3) h3, .choices.choice-3-active > li:nth-child(3) p {
       color: white; }
   .choices.choice-3-active .bg-choice {
@@ -3272,13 +3272,13 @@ button {
       -webkit-transform: translate3d(0, 0, 0) scaleY(0);
               transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-4-active > li:nth-child(4) .visuel {
-      -webkit-transform: translateY(36px);
-          -ms-transform: translateY(36px);
-              transform: translateY(36px); }
+      -webkit-transform: translateY(30px);
+          -ms-transform: translateY(30px);
+              transform: translateY(30px); }
     .choices.choice-4-active > li:nth-child(4) .zone-txt {
-      -webkit-transform: translateY(-50px);
-          -ms-transform: translateY(-50px);
-              transform: translateY(-50px); }
+      -webkit-transform: translateY(-35px);
+          -ms-transform: translateY(-35px);
+              transform: translateY(-35px); }
     .choices.choice-4-active > li:nth-child(4) h3, .choices.choice-4-active > li:nth-child(4) p {
       color: white; }
   .choices.choice-4-active .bg-choice {
@@ -3297,13 +3297,13 @@ button {
       -webkit-transform: translate3d(0, 0, 0) scaleY(0);
               transform: translate3d(0, 0, 0) scaleY(0); }
     .choices.choice-5-active > li:nth-child(5) .visuel {
-      -webkit-transform: translateY(36px);
-          -ms-transform: translateY(36px);
-              transform: translateY(36px); }
+      -webkit-transform: translateY(30px);
+          -ms-transform: translateY(30px);
+              transform: translateY(30px); }
     .choices.choice-5-active > li:nth-child(5) .zone-txt {
-      -webkit-transform: translateY(-50px);
-          -ms-transform: translateY(-50px);
-              transform: translateY(-50px); }
+      -webkit-transform: translateY(-35px);
+          -ms-transform: translateY(-35px);
+              transform: translateY(-35px); }
     .choices.choice-5-active > li:nth-child(5) h3, .choices.choice-5-active > li:nth-child(5) p {
       color: white; }
   .choices.choice-5-active .bg-choice {
@@ -3479,7 +3479,8 @@ button {
     font-size: 15px;
     color: #dadada;
     text-align: center;
-    line-height: 40px; }
+    line-height: 40px;
+    z-index: 3; }
   .choices .table-types {
     table-layout: fixed;
     border-collapse: collapse;
@@ -3494,6 +3495,8 @@ button {
       .choices .table-types tr:nth-child(1) td:nth-child(1) a:before {
         background-color: #c52d38; }
       .choices .table-types tr:nth-child(1) td:nth-child(2) a:before {
+        background-color: #d63f39; }
+      .choices .table-types tr:nth-child(1) td:nth-child(3) a:before {
         background-color: #d63f39; }
       .choices .table-types tr:nth-child(2) td:nth-child(1) a:before {
         background-color: #d63f39; }
