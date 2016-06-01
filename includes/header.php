@@ -133,6 +133,16 @@
                     </fieldset>
                 </form>
             </div>
+            <div class='wrapper-link-cercle'>
+                <a href='#' class='link-cercle'>
+                    <span class='rect'></span><span class='rect'></span><span class='rect'></span><span class='rect'></span><span class='rect'></span>
+                    <img class='illus-cercle' src='img/illus-service.png' srcset='img/illus-service.png 1x, img/illus-service@2x.png 2x' alt='Le cercle FDC'>
+                    <img class='logo-cercle' src='img/logo-cercle.png' srcset='img/logo-cercle.png 1x, img/logo-cercle@2x.png 2x' alt='Le cercle FDC'>
+                    <span class='txt-link'>Pour réussir<br /> et vous simplifier la vie,<br /> faites-vous (bien)<br /> accompagner par un<br /> membre du cercle !</span>
+                    <span class='pseudo-link'>En savoir plus</span>
+                    <span class='service'>Service + <strong>gratuit</strong></span>
+                </a>
+            </div>
         </aside>
 
         <aside id='sidebar-tools' class='sidebar'>
