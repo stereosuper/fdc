@@ -8,6 +8,8 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     backface-visibility: hidden;
+    color: $bleu-link;
+    transition: color 0.3s ease-in-out;
     &.big{
         font-size: 1.2em;
     }

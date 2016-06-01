@@ -145,9 +145,19 @@ $(function(){
 		}
 	}
 
+	function newsHeight(){
+		if($('.news').length){
+			TweenMax.set($('.news > li article'), { clearProps: 'height'});
+			$('.news > li article').each(function(index){
+				TweenMax.set($(this), {height: $(this).closest('li').height()+'px'});
+			});
+		}
+	}
+
 
 	/**** INIT ****/
 	imgFit();
+	newsHeight();
 
 	// Footer
 	if($('.social-footer').length){
@@ -451,10 +461,13 @@ $(function(){
 				setMapForm();
 			}
 		}
+
+		newsHeight();
 	});
 
 
 	$(window).load(function(){
+		newsHeight();
 	});
 
 });

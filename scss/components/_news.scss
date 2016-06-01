@@ -17,6 +17,47 @@
 		box-sizing: border-box;
 		background-color: $blanc;
 		border: 1px solid $gris;
+		a{
+			display: block;
+			height: 100%;
+			position: relative;
+			z-index: 1;
+			text-decoration: none;
+			color: $txt;
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+				transform: scaleX(0);
+				transition: .3s ease-in-out;
+				transform-origin: 0 50%;
+			}
+			&:after{
+				content: '';
+				@include shadow-button;
+				z-index: -1;
+			}
+			&:hover{
+				&:before{
+					transform: scaleX(1);
+				}
+				&:after{
+					opacity: 1;
+				}
+				.btn-arrow{
+					color: $blanc;
+					&:after{
+					    transform: translate3d(5px, 0, 0);
+					}
+				}
+				color: $blanc;
+			}
+		}
 		&:before{
 			display: none;
 		}
@@ -31,6 +72,16 @@
 			h4{
 				color: rgb(227, 88, 55);
 			}
+			a{
+				&:before{
+					background-color: rgb(228, 99, 54);
+				}
+				&:hover{
+					h4{
+						color: $blanc;
+					}
+				}
+			}
 		}
 		&:nth-child(even){
 			.article-date{
@@ -43,9 +94,20 @@
 			h4{
 				color: rgb(221, 80, 62);
 			}
+			a{
+				&:before{
+					background-color: rgb(221, 79, 62);
+				}
+				&:hover{
+					h4{
+						color: $blanc;
+					}
+				}
+			}
 		}
 	}
 	.article-date{
+		display: block;
 		position: relative;
 		width: 73px;
 		height: auto;
@@ -68,6 +130,7 @@
 		}
 	}
 	.article-desc{
+		display: block;
 		padding: 30px 15px 30px 93px;
 	}
 	time{
@@ -91,6 +154,7 @@
 	}
 	h4{
 		line-height: 1em;
+		transition: .3s ease-in-out;
 	}
 	h3{
 		line-height: 1em;

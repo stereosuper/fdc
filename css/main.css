@@ -642,7 +642,10 @@ a, button {
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+  color: #7392da;
+  -webkit-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out; }
   .breadcrumb a.big, .big.btn-arrow, .big.btn-arrow-back, .big.btn-pen, .big.btn-cancel, .big.btn-alert, .big.btn-delete {
     font-size: 1.2em; }
   .breadcrumb a.small, .small.btn-arrow, .small.btn-arrow-back, .small.btn-pen, .small.btn-cancel, .small.btn-alert, .small.btn-delete {
@@ -3625,6 +3628,56 @@ button {
     box-sizing: border-box;
     background-color: white;
     border: 1px solid #dadada; }
+    .news > li a {
+      display: block;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      color: #282c34; }
+      .news > li a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+                transform: scaleX(0);
+        -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+        -webkit-transform-origin: 0 50%;
+            -ms-transform-origin: 0 50%;
+                transform-origin: 0 50%; }
+      .news > li a:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.2);
+        -webkit-transition: opacity 0.3s ease-in-out;
+                transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+        z-index: -1; }
+      .news > li a:hover {
+        color: white; }
+        .news > li a:hover:before {
+          -webkit-transform: scaleX(1);
+              -ms-transform: scaleX(1);
+                  transform: scaleX(1); }
+        .news > li a:hover:after {
+          opacity: 1; }
+        .news > li a:hover .btn-arrow {
+          color: white; }
+          .news > li a:hover .btn-arrow:after {
+            -webkit-transform: translate3d(5px, 0, 0);
+                    transform: translate3d(5px, 0, 0); }
     .news > li:before {
       display: none; }
     .news > li:nth-child(odd) .article-date {
@@ -3635,6 +3688,10 @@ button {
         opacity: 0.3; }
     .news > li:nth-child(odd) h4 {
       color: #e35837; }
+    .news > li:nth-child(odd) a:before {
+      background-color: #e46336; }
+    .news > li:nth-child(odd) a:hover h4 {
+      color: white; }
     .news > li:nth-child(even) .article-date {
       background: -webkit-linear-gradient(top, #dd4f3e 0%, #d93b28 100%);
       background: linear-gradient(to bottom, #dd4f3e 0%, #d93b28 100%); }
@@ -3643,7 +3700,12 @@ button {
         opacity: 0.5; }
     .news > li:nth-child(even) h4 {
       color: #dd503e; }
+    .news > li:nth-child(even) a:before {
+      background-color: #dd4f3e; }
+    .news > li:nth-child(even) a:hover h4 {
+      color: white; }
   .news .article-date {
+    display: block;
     position: relative;
     width: 73px;
     height: auto;
@@ -3666,6 +3728,7 @@ button {
           -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
   .news .article-desc {
+    display: block;
     padding: 30px 15px 30px 93px; }
   .news time {
     position: relative; }
@@ -3697,7 +3760,9 @@ button {
     letter-spacing: 1px;
     margin: 3px 0 0 0; }
   .news h4 {
-    line-height: 1em; }
+    line-height: 1em;
+    -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out; }
   .news h3 {
     line-height: 1em;
     margin: 5px 0 2px 0; }
