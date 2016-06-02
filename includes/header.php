@@ -5,39 +5,41 @@
                     <?php echo isset($field) ? $field : 'Forum des Commerces'; ?>
                 </a>
             </div>
-            <nav role='navigation'>
+            <nav role='navigation' id='nav-header'>
                 <button id='btn-close-nav-header' class='btn-close icon-cross'></button>
                 <div class='wrapper-content-nav'>
-                    <ul class='menu-header'>
-                        <li>
-                            <a href='#'>Qui sommes nous ?</a>
-                        </li><!--
-                        --><li>
-                            <a href='#'>Achat</a>
-                        </li><!--
-                        --><li>
-                            <a href='#'>Partenaires</a>
-                        </li><!--
-                        --><li>
-                            <a href='#'>Matériel</a>
-                        </li><!--
-                        --><li>
-                            <a href='#'>Personnel</a>
-                        </li><!--
-                        --><li>
-                            <a href='#'>Vente</a>
-                        </li>
-                    </ul><ul class='nav-header'>
-                        <li>
-                            <a href='#'><span class='icon-mail'></span><span class='txt-nav'>Contact</span></a>
-                        </li><!--
-                        --><li>
-                            <button id='btn-tools'><span class='icon-bulb'></span><span class='txt-nav'>Paramètres</span></button>
-                        </li><!--
-                        --><li>
-                            <button id='btn-account'><span class='icon-user'></span><span class='txt-nav'>S'identifier</span></button>
-                        </li>
-                    </ul>
+                    <div class='content-nav-header'>
+                        <ul class='menu-header'>
+                            <li>
+                                <a href='#'>Qui sommes nous ?</a>
+                            </li><!--
+                            --><li>
+                                <a href='#'>Achat</a>
+                            </li><!--
+                            --><li>
+                                <a href='#'>Partenaires</a>
+                            </li><!--
+                            --><li>
+                                <a href='#'>Matériel</a>
+                            </li><!--
+                            --><li>
+                                <a href='#'>Personnel</a>
+                            </li><!--
+                            --><li>
+                                <a href='#'>Vente</a>
+                            </li>
+                        </ul><ul class='nav-header'>
+                            <li>
+                                <a href='#'><span class='icon-mail'></span><span class='txt-nav'>Contact</span></a>
+                            </li><!--
+                            --><li>
+                                <button id='btn-tools'><span class='icon-bulb'></span><span class='txt-nav'>Paramètres</span></button>
+                            </li><!--
+                            --><li>
+                                <button id='btn-account'><span class='icon-user'></span><span class='txt-nav'>S'identifier</span></button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -51,7 +53,8 @@
         </a>
 
         <button id='btn-close-header-responsive' class='btn-close icon-cross'></button>
-
+        
+        <div class='bg-sidebar'></div>
         <aside id='sidebar-links' class='sidebar'>
             <button id='btn-close-sidebar-links' class='btn-close icon-cross'></button>
             <div class='wrapper-content-sidebar'>

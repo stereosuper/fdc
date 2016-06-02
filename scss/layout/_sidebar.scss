@@ -261,6 +261,10 @@
 	&:before{
 		right: 0;
 	}
+	.content-sidebar-links{
+		height: 100%;
+		background-color: $blanc;
+	}
 	p{
 		display: block;
 		position: relative;

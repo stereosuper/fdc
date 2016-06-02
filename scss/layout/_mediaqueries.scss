@@ -26,6 +26,53 @@
 }
 
 @media (max-width: 1280px){
+    /* AAA */
+    #logo{
+        z-index: 5;
+    }
+    #header{
+        nav{
+            background: none;
+            .content-nav-header{
+                transform: translateX(0);
+                transition: transform 0.3s ease-in-out;
+            }
+            .sidebar-links-open &{
+                transform: translateX(0);
+                .content-nav-header{
+                    transform: translateX(100%);
+                }
+                .btn-close{
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+    #sidebar-links{
+        z-index: 4;
+        transform: translateX(-100%);
+        filter: none;
+        &:before{
+            display: none;
+        }
+    }
+    .bg-sidebar{
+        display: block;
+        width: 283px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $blanc;
+        z-index: 3;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
+        .nav-header-open &, .sidebar-links-open &{
+            transform: translateX(0);
+        }
+    }
+    /* END AAA */
     #header{
         nav{
             float: none;
@@ -33,14 +80,14 @@
             top: 0;
             left: 0;
             transform: translateX(-100%);
-            transform: translateX(calc(-100% - 58px));
+            //transform: translateX(calc(-100% - 58px));
             display: inline-block;
             vertical-align: top;
             width: 283px;
             padding: 0;
             margin: 0;
-            background-color: $blanc;
-            filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
+            //background-color: $blanc;
+            //filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
             height: 100%;
             z-index: 4;
             transition: transform $transition;
@@ -216,6 +263,9 @@
         width: auto;
         padding: 0 0 0 12px;
         margin: 0 0 0 -12px;
+        .sidebar-links-open &, .sidebar-account-open &, .nav-header-open &, .sidebar-tools-open &{
+            transform: translateX(12px);
+        }
         &:before{
             left: -12px;
             width: 295px;
@@ -1636,6 +1686,9 @@
     }
 
     .sidebar, #header nav{
+        width: 100%;
+    }
+    .bg-sidebar{
         width: 100%;
     }
     .sidebar{

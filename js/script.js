@@ -437,6 +437,32 @@ $(function(){
         }
     }
 
+    var hammertime = new Hammer(document.getElementById('sidebar-links'));
+    hammertime.on('swipeleft', function(ev) {
+    	if(windowWidth<=1280){
+	    	if(!body.hasClass('sidebar-links-open') && !body.hasClass('nav-header-open')){
+	    		body.addClass('nav-header-open');
+	    	}else if(!body.hasClass('sidebar-links-open')){
+	    		body.removeClass('nav-header-open').addClass('sidebar-links-open');
+	    	}else{
+	    		body.removeClass('sidebar-links-open').addClass('nav-header-open');
+	    	}
+	    }
+    });
+
+    var hammertimeNav = new Hammer(document.getElementById('nav-header'));
+    hammertimeNav.on('swiperight', function(ev) {
+    	if(windowWidth<=1280){
+	    	if(!body.hasClass('sidebar-links-open') && !body.hasClass('nav-header-open')){
+	    		body.addClass('nav-header-open');
+	    	}else if(!body.hasClass('sidebar-links-open')){
+	    		body.removeClass('nav-header-open').addClass('sidebar-links-open');
+	    	}else{
+	    		body.removeClass('sidebar-links-open').addClass('nav-header-open');
+	    	}
+	    }
+    });
+
     $(window).resize(function(){
     	var nh = $(window).height(), nw = $(window).width();
     	if (nw != windowWidth){
