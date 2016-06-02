@@ -942,6 +942,8 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
 #wrapper-page {
   position: relative;
   overflow: hidden; }
+  .sidebar-links-open #wrapper-page, .sidebar-account-open #wrapper-page, .nav-header-open #wrapper-page, .sidebar-tools-open #wrapper-page {
+    max-height: 100vh; }
 
 #main {
   padding: 0 0 100px; }
@@ -1542,6 +1544,10 @@ button {
   background-color: white; }
   #header nav {
     float: right; }
+    #header nav .wrapper-content-nav {
+      height: 100%;
+      max-height: 100%;
+      overflow: auto; }
     #header nav .btn-close {
       display: none;
       position: absolute;
@@ -1599,8 +1605,9 @@ button {
   z-index: 4;
   box-sizing: border-box;
   margin: 0;
-  padding: 0 0 0 16px;
+  padding: 16px 0 0 16px;
   background-color: #c02f3c;
+  color: #c02f3c;
   border: 0;
   appearance: none;
   text-align: left;
@@ -1608,6 +1615,27 @@ button {
   -webkit-transform: translate 0.3s ease-in-out;
       -ms-transform: translate 0.3s ease-in-out;
           transform: translate 0.3s ease-in-out; }
+  #logo:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -12px;
+    width: 283px;
+    height: auto;
+    background-color: #c02f3c;
+    z-index: -1;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+    border-right: 8px solid #ae2f3a; }
+    .sidebar-links-open #logo:before {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0); }
   #logo img {
     vertical-align: middle; }
   #logo .rect-logo {
@@ -2291,6 +2319,10 @@ button {
           filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
           transition: transform 0.3s ease-in-out; }
+  .sidebar .wrapper-content-sidebar {
+    height: 100%;
+    max-height: 100%;
+    overflow: auto; }
   .sidebar:before {
     content: '';
     display: block;
@@ -4563,6 +4595,13 @@ button {
     width: auto;
     padding: 0 0 0 12px;
     margin: 0 0 0 -12px; }
+    #logo:before {
+      left: -12px;
+      width: 295px; }
+      .sidebar-links-open #logo:before, .sidebar-account-open #logo:before, .nav-header-open #logo:before, .sidebar-tools-open #logo:before {
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0); }
     #logo img {
       display: inline-block;
       padding: 16px 50px 0 5px; }
@@ -5523,6 +5562,10 @@ button {
 
   #btn-close-header-responsive {
     display: block; }
+
+  #logo:before {
+    width: 480px;
+    border: none; }
 
   .messages-list a {
     padding: 8px 20px 10px; }

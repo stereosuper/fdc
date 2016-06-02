@@ -43,11 +43,11 @@
 
         <div id='mask'></div>
 
-        <button id='logo'>
+        <a href='#' id='logo'>
             <span class='rect-logo'></span><span class='rect-logo'></span><span class='rect-logo'></span>
             <span id='burger'><span></span><span></span><span></span></span>
             <img src='img/logo.png' srcset='img/logo.png 1x, img/logo@2x.png 2x' alt='Forum des Commerces'>
-        </button>
+        </a>
 
         <button id='btn-close-header-responsive' class='btn-close icon-cross'></button>
 

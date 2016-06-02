@@ -216,6 +216,13 @@
         width: auto;
         padding: 0 0 0 12px;
         margin: 0 0 0 -12px;
+        &:before{
+            left: -12px;
+            width: 295px;
+            .sidebar-links-open &, .sidebar-account-open &, .nav-header-open &, .sidebar-tools-open &{
+               transform: translateX(0);
+            }
+        }
         img{
             display: inline-block;
             padding: 16px 50px 0 5px;
@@ -1666,6 +1673,13 @@
     }
     #btn-close-header-responsive{
         display: block;
+    }
+    #logo{
+        &:before{
+            //display: none;
+            width: 480px;
+            border: none;
+        }
     }
 
     .messages-list{
