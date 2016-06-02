@@ -63,6 +63,7 @@
 		}
 		&:nth-child(odd){
 			.article-date{
+				background: rgb(228, 99, 54);
 				background: linear-gradient(to bottom, rgb(228, 99, 54) 0%, darken(rgb(228, 99, 54), 5%) 100%);
 				&:before{
 					background-color: rgb(208, 76, 40);
@@ -85,6 +86,7 @@
 		}
 		&:nth-child(even){
 			.article-date{
+				background: rgb(221, 79, 62);
 				background: linear-gradient(to bottom, rgb(221, 79, 62) 0%, darken(rgb(221, 79, 62), 5%) 100%);
 				&:before{
 					background-color: rgb(198, 60, 47);

@@ -33,6 +33,9 @@
     #header{
         nav{
             background: none;
+            .wrapper-content-nav{
+                overflow: auto;
+            }
             .content-nav-header{
                 transform: translateX(0);
                 transition: transform 0.3s ease-in-out;

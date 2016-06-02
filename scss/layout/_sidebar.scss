@@ -253,7 +253,7 @@
 
 #sidebar-links{
 	left: 0;
-	transform: translateX(-100%);
+	transform: translateX(-120%);
 	transform: translateX(calc(-100% - 58px));
 	.sidebar-links-open &{
 		transform: translateX(0%);
@@ -290,7 +290,7 @@
 
 #sidebar-tools{
 	right: 0;
-	transform: translateX(100%);
+	transform: translateX(120%);
 	transform: translateX(calc(100% + 58px));
 	.sidebar-tools-open &{
 		transform: translateX(0%);
@@ -308,7 +308,7 @@
 
 #sidebar-account{
 	right: 0;
-	transform: translateX(100%);
+	transform: translateX(120%);
 	transform: translateX(calc(100% + 58px));
 	.sidebar-account-open &{
 		transform: translateX(0%);
