@@ -73,7 +73,7 @@
                         <a href='#' class='btn-block huge right'><span class='border'></span><span class='txt-btn'>Déposer mon annonce</span></a>
                         <div class='pub-pack'>
                             <p>Plusieurs affaires à vendre ?</p>
-                            <p >Découvrez nos packs d'annonces<span class='icon-arrow'></span></p>
+                            <p >Achetez des crédits d'annonces<span class='icon-arrow'></span></p>
                         </div>
                     </div>
                 </div>
