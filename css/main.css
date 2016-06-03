@@ -505,6 +505,9 @@ ol {
 img {
   max-width: 100%;
   height: auto; }
+  .content-default img {
+    float: left;
+    padding: 30px 32px 20px 0; }
 
 address {
   font-style: normal;
@@ -2727,13 +2730,6 @@ button {
   .pagination .next:hover:after, .pagination .next:focus:after {
     -webkit-transform: translate3d(5px, 0, 0);
             transform: translate3d(5px, 0, 0); }
-
-.img-post {
-  float: left;
-  padding: 2.5em 40px 20px 0; }
-
-.p-post {
-  margin-top: 2.2em; }
 
 /* Buttons */
 .btn-no-text, .btn-home {
@@ -5073,6 +5069,9 @@ button {
   h1 {
     padding: 0 45px; }
 
+  .breadcrumb {
+    padding: 0 45px; }
+
   .title-zone.inline-b {
     padding-right: 10px; }
 
@@ -5347,7 +5346,11 @@ button {
     width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    float: none !important; } }
+    float: none !important; }
+
+  .content-default img {
+    float: none;
+    padding: 20px 0 0 0; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -5689,13 +5692,6 @@ button {
   .leads-criteres {
     margin-bottom: 2em; }
     .leads-criteres span, .leads-criteres ul {
-      width: 100%; }
-
-  .img-post {
-    float: none;
-    padding: 0; }
-    .img-post img {
-      max-width: none;
       width: 100%; } }
 @media (max-width: 650px) {
   .nav-tabs {

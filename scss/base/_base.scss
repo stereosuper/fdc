@@ -192,6 +192,10 @@ ol{
 img{
     max-width: 100%;
     height: auto;
+    .content-default &{
+        float: left;
+        padding: 30px 32px 20px 0;
+    }
 }
 
 address{

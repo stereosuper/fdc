@@ -544,6 +544,9 @@
     h1{
         padding: 0 $gutter;
     }
+    .breadcrumb{
+        padding: 0 $gutter;
+    }
     .title-zone{
         &.inline-b{
             padding-right: 10px;
@@ -942,6 +945,13 @@
         padding-left: 0 !important;
         padding-right: 0 !important;
         float: none !important;
+    }
+
+    img{
+        .content-default &{
+            float: none;
+            padding: 20px 0 0 0;
+        }
     }
 }
 
@@ -1477,14 +1487,6 @@
     .leads-criteres{
         margin-bottom: 2em;
         span, ul{
-            width: 100%;
-        }
-    }
-    .img-post{
-        float: none;
-        padding: 0;
-        img{
-            max-width: none;
             width: 100%;
         }
     }
