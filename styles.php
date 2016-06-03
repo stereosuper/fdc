@@ -123,8 +123,8 @@
 
                     <h2>Breadcrumb (layout/_breadcrumb.scss)</h2>
                     <ul class='breadcrumb'>
-                        <li><a href='./'>Accueil</a></li>
-                        <li><a href='./'>Exemple</a></li>
+                        <li><h6><a href='./'>Accueil</a></h6></li>
+                        <li><h6><a href='./'>Exemple</a></h6></li>
                     </ul>
                 </div>
             </div>

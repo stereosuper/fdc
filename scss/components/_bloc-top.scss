@@ -6,12 +6,15 @@
 	.home &{
 		height: 505px;
 	}
-	h1{
+	strong{
+		display: block;
 		margin: 0;
 		padding: 130px 0 0;
 		color: $blanc;
+		@include roboto-cd-bold(4.063em);
+		text-align: center;
 	}
-	p{
+	h1{
 		display: inline-block;
 		vertical-align: top;
 		margin: 4px 0 0;

@@ -14,14 +14,14 @@
             <div class='container-small'>
                 <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                     <li property='itemListElement' typeof='ListItem'>
-                        <a property='item' typeof='WebPage' href='./'>
+                        <h6><a property='item' typeof='WebPage' href='./'>
                             <span property='name'>Accueil</span>
-                        </a>
+                        </a></h6>
                     </li>
                     <li property='itemListElement' typeof='ListItem'>
-                        <a property='item' typeof='WebPage' href='#'>
+                        <h6><a property='item' typeof='WebPage' href='#'>
                             <span property='name'>Actualités</span>
-                        </a>
+                        </a></h6>
                     </li>
                     <li property='itemListElement' typeof='ListItem'>
                         <a property='item' typeof='WebPage' href='#'>
@@ -32,9 +32,8 @@
 
                 <h1>Vers une nouvelle organisation des réunions des institutions représentatives du personnel ?</h1>
                 <div class='content-default'>
-                    <p>Si votre entreprise comporte au moins 50 salariés, vous disposez très certainement d’un comité d’entreprise et d’un comité d’hygiène et de sécurité. Chargé d’en assurer la présidence, vous devez connaître les nouvelles possibilités qui s’offrent à vous en matière de réunion de ces institutions…</p>
-
-                    <h2>Des réunions en visioconférence, enregistrées et sténographiées</h2>
+                    <h2>Si votre entreprise comporte au moins 50 salariés, vous disposez très certainement d’un comité d’entreprise et d’un comité d’hygiène et de sécurité. Chargé d’en assurer la présidence, vous devez connaître les nouvelles possibilités qui s’offrent à vous en matière de réunion de ces institutions…</h2>
+                    <h3>Des réunions en visioconférence, enregistrées et sténographiées</h3>
                     <p>Depuis août 2015, il est possible, avec l’accord des représentants du personnel concernés, de recourir à la visioconférence lors des réunions&nbsp;:</p>
                     <ul>
                         <li>du comité d’entreprise (CE),</li>

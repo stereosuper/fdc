@@ -46,10 +46,14 @@ h1{
 }
 
 h2{
-    font-size: 1.25em;
-    padding: 2em 0 0.5em;
-    margin: 0 0 1em;
-    color: $theme-rouge-title;
+    line-height: 1.5;
+    margin: 1.55em 0;
+    padding: 0;
+    @include roboto(1em);
+    //font-size: 1.25em;
+    //padding: 2em 0 0.5em;
+    //margin: 0 0 1em;
+    //color: $theme-rouge-title;
     &.h1{
         font-size: 2.5em;
         color: $txt;
@@ -63,13 +67,31 @@ h2{
     }
 }
 
+.title-zone{
+    @include roboto-cd-bold(2.5em);
+    &.padding-grid{
+        padding: 0 118px;
+    }
+    &.inline-b{
+        padding-right: 10px;
+    }
+    &.small{
+        font-size: 1.25em;
+    }
+}
+
 h3{
-    font-size: 1.1em;
-    margin: 1.5em 0 1em;
-    line-height: 1em;
+    font-size: 1.25em;
+    padding: 2em 0 0.5em;
+    margin: 0 0 1em;
+    color: $theme-rouge-title;
     &.h2{
         font-size: 1.25em;
         margin: 0;
+    }
+    &.small{
+        @include roboto(1em);
+        color: $txt;
     }
 }
 
@@ -85,13 +107,15 @@ h4{
 }
 
 h5{
-    font-size: 1em;
-    margin: 1.67em 0;
+    font-size: 1.25em;
+    line-height: 1em;
+    margin: 5px 0 2px 0;
+    padding: 0;
 }
 
 h6{
-    font-size: 0.9em;
-    margin: 2.33em 0;
+    font-size: 1em;
+    margin: 0;
 }
 
 p{

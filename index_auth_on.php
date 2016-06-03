@@ -16,8 +16,8 @@
 					<img src='img/visuel-home.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Notre projet : concrétiser le&nbsp;vôtre</h1>
-					<p>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</p>
+					<strong>Notre projet : concrétiser le&nbsp;vôtre</strong>
+					<h1>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</h1>
 				</div>
 			</div>
 
@@ -395,7 +395,7 @@
 					</div>
 				</div>
 
-				<h2 class='h1 inline-b no-margin padding-grid'>À la une</h2>
+				<div class='title-zone inline-b no-margin padding-grid'>À la une</div>
 				<a href='#' class='btn-arrow small inline-b'>Toute l'actualité</a>
 				<ul class='news'>
 					<li>
@@ -408,7 +408,7 @@
 								</span><!--
 								--><span class='article-desc'>
 									<h4 class='small'>Actualité fiscale</h4>
-									<h3 class='h2'>Crédit d’impôt : tout un art…</h3>
+									<h5>Crédit d’impôt : tout un art…</h5>
 									<p>Une entreprise exerçant une activité de conseil en communication et en création publicitaire a sollicité le bénéfice… <span class='btn-arrow'>Lire la suite</span></p>
 								</span>
 							</a>
@@ -424,7 +424,7 @@
 								</span><!--
 								--><span class='article-desc'>
 									<h4 class='small'>Actualité sociale</h4>
-									<h3 class='h2'>Des indemnités de préavis en cas de maladie&nbsp;?</h3>
+									<h5>Des indemnités de préavis en cas de maladie&nbsp;?</h5>
 									<p>Un employeur licencie un salarié pour motif économique. Cependant, ce salarié est en arrêt maladie… <span class='btn-arrow'>Lire la suite</span></p>
 								</span>
 							</a>
@@ -434,7 +434,7 @@
 			</div>
 		</main>
 
-	  	<?php include_once('includes/footer.html'); ?>
+	  	<?php include_once('includes/footer_home.html'); ?>
 
 	</body>
 

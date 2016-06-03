@@ -29,14 +29,14 @@
                     <header class='field-header'>
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
-                                <a property='item' typeof='WebPage' href='./'>
+                                <h6><a property='item' typeof='WebPage' href='./'>
                                     <span property='name'>Accueil</span>
-                                </a>
+                                </a></h6>
                             </li>
                             <li property='itemListElement' typeof='ListItem'>
-                                <a property='item' typeof='WebPage' href='#'>
+                                <h6><a property='item' typeof='WebPage' href='#'>
                                     <span property='name'>Achat de boulangerie - pâtisserie - salon de thé</span>
-                                </a>
+                                </a></h6>
                             </li>
                         </ul>
                         <h1>23 résultats</h1>
