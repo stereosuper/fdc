@@ -3,7 +3,7 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Mentions légales</title>
+        <title>Mon compte - Infos</title>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta charset='utf-8'>
         <meta name='description' content=''>
@@ -199,30 +199,75 @@
             <div class='container-small'>
                 <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                     <li property='itemListElement' typeof='ListItem'>
-                        <h6><a property='item' typeof='WebPage' href='./'>
+                        <a property='item' typeof='WebPage' href='./'>
                             <span property='name'>Accueil</span>
-                        </a></h6>
+                        </a>
                     </li>
                 </ul>
 
-                <h1>Mentions légales</h1>
-                <div class='content-default content-right'>
-                    <h3>Identification de l’éditeur</h3>
-                    <h2>Société LE FORUM DES COMMERCES, Société à Responsabilité Limitée au capital de 18.000,00 euros, immatriculée au RCS de NANTES sous le n° 509 118 162, ayant son siège social : Imm Hub Créatic - 6 rue Rose Dieng Kuntz - CS 70790 - 44307 NANTES Cédex 3.</h2>
-                    <p><strong>Tél :</strong> 02.40.85.18.17<br>
-                    <strong>E-mail :</strong> <a href='mailto:contact@forum-des-commerces.fr'>contact@forum-des-commerces.fr</a><br>
-                    <strong>N° TVA intracommunautaire :</strong> FR64509118162</p>
-                    <p>Le directeur de la publication du Site est <i>Céline MENGUY</i> en qualité de gérante de la société LE FORUM DES COMMERCES.</p>
-
-                    <h3>Identification de l’hébergeur</h3>
-                    <p><strong>OVH</strong> – 140 Quai du Sartel – 59100 ROUBAIX Tél : 08 203 203 63</p>
-
-                    <h3>Conception du site</h3>
-                    <p><strong>Réalisation et conception graphique :</strong> Stéréosuper (<a href='http://stereosuper.fr'>www.stereosuper.fr</a>)<br>
-                    <strong>Conception technique :</strong> Nicolas GOSSMANN [nicogoss].</p>
-
-                    <h3>Informatique et libertés</h3>
-                    <p>Le Site met en œuvre un système de collecte et de traitement de données personnelles échangées à l'occasion de son accès par le visiteur. Les données personnelles du visiteur qui sont collectées directement (par le formulaire de la page <a href='/contact'>contactez-nous</a>) ou indirectement (les données de connexions), sont utilisées par LE FORUM DES COMMERCES soit à des fins statistiques, pour enrichir le contenu éditorial et l'adapter aux besoins des visiteurs, soit pour répondre aux questions sur les informations diffusées sur le Site. LE FORUM DES COMMERCE est également susceptible d'utiliser les informations susvisées à des fins commerciales et/ou de les céder à des tiers, ce que le visiteur déclare accepter expressément en divulguant au FORUM DES COMMERCES les informations personnelles le concernant. LE FORUM DES COMMERCES précise que le site comporte des cookies.</p>
+                <h1>Formulaire de contact</h1>
+                <p class='gutter-left'>Vous avez une question ? Nous sommes à votre écoute et répondrons à toutes vos intérogations.<br/>Merci de remplir le formulaire suivant, nous vous recontacterons rapidement.</p>
+                <div class='content-tabs'>
+                    <div class='tab-content form-contact'>
+                        <form action='#' method='post' id='formToEdit'>
+                            <fieldset class='required'>
+                                <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>
+                                    <input type='radio' name='civilites' value='mme' id='mme' ><label for='mme' class='has-margin'>Mme</label>
+                                    <input type='radio' name='civilites' value='mr' id='mr' checked ><label for='mr'>Mr</label>
+                                </fieldset>
+                            </fieldset>
+                            <fieldset class='required'>
+                                <label for='nom'>
+                                    Nom
+                                </label><input type='text' name='nom' id='nom' value='Dus' >
+                            </fieldset>
+                            <fieldset class='required'>
+                                <label for='prenom'>
+                                    Prénom
+                                </label><input type='text' name='prenom' id='prenom' value='Jean-Claude' required >
+                            </fieldset>
+                            <fieldset>
+                                <label for='societe'>
+                                    Société
+                                </label><input type='text' name='societe' id='societe' class='big' >
+                                
+                            </fieldset>
+                            <fieldset class='required'>
+                                <label for='code' >
+                                    Code postal
+                                </label><input type='number' name='code' id='code' value='75000' min='0' max='99999' required >
+                            </fieldset>
+                            <fieldset class='required'>
+                                <label for='tel'>
+                                    Téléphone
+                                </label><input type='tel' name='tel' id='tel' value='0678675690' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" >
+                            </fieldset>
+                            <fieldset class='required'>
+                                <label for='email'>
+                                    Email
+                                </label><input type='email' name='email' id='email' value='jc.dus@caramail.fr'  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+                            </fieldset>
+                            <fieldset class='required'>
+                                <label for='objet'>
+                                    Objet
+                                </label>
+                                <div class=' huge objet select'>
+                                    <select name="objet">
+                                        <option>Contact
+                                        <option>Demande d'accompagnement
+                                        <option>Demande de renseignement 
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label for='message'>
+                                    Message
+                                </label><textarea id="message"></textarea>
+                            </fieldset>
+                            
+                            <button type='submit' class='btn-block huge '>Valider</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </main>
