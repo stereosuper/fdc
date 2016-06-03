@@ -39,7 +39,7 @@
                 <ul class='field-list'>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-bartabac.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Bar / Tabac / PMU</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -51,7 +51,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-barbrasserie.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Bar / Brasserie</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -63,7 +63,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-boucher.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Boucherie / Charcuterie / Traiteur</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -75,7 +75,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-boulangerie.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Boulangerie / Patisserie / Salon de thé</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -87,7 +87,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-boutiquemagasins.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Boutiques / Magasins</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -99,7 +99,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-bureaux.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Bureaux / Locaux / Entrepôts</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -111,7 +111,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-coiffure.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Coiffure / Esthétique / Parfumerie</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -123,7 +123,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-commerce.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Commerce / Alimentation</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -135,7 +135,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-crepe_pizza.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Crêperie / Pizzeria</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -147,7 +147,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-entreprise-service.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Entreprises de services</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -159,7 +159,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-entreprise-batiment.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Entreprises du bâtiment</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -171,7 +171,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-hotelbureau.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Hôtel Bureau</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -183,7 +183,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-hotel_resto.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Hôtel Restaurant</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -195,7 +195,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Restaurant</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -207,7 +207,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-resto_rapide.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Restauration rapide</strong>
                                 <span class='btn-arrow small'>Voir</span>
@@ -219,7 +219,7 @@
                     </li>
                     <li>
                         <a href='#'>
-                            <span class='img'><img src='img/restaurant.jpg' alt=''></span>
+                            <span class='img'><img src='img/img-lotopresse.jpg' alt=''></span>
                             <span class='field-txt'>
                                 <strong class='title-simple-big'>Tabac / Loto / Presse</strong>
                                 <span class='btn-arrow small'>Voir</span>

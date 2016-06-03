@@ -24,7 +24,8 @@
   'layout/tabs',
   'layout/breadcrumb',
   'layout/sidebar',
-  'layout/pagination';
+  'layout/pagination',
+  'layout/post';
 
 @import
   'components/buttons',
@@ -36,7 +37,9 @@
   'components/pub',
   'components/list-messages',
   'components/field',
-  'components/list-search';
+  'components/list-search',
+  'components/popup';
+
 
 @import
   'pages/home',

@@ -454,7 +454,6 @@
             font-size: 3em;
         }
     }
-
 }
 
 @media (max-width: 979px){
@@ -1401,6 +1400,14 @@
             width: 100%;
         }
     }
+    .img-post{
+        float: none;
+        padding: 0;
+        img{
+            max-width: none;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -1770,6 +1777,10 @@
         left: 0;
         right: 0;
         text-align: center;
+    }
+    .img-post {
+        float: left;
+        padding: 10px 0 25px 0;
     }
 }
 

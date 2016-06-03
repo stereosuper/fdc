@@ -32,9 +32,11 @@
 
                 <h1>Vers une nouvelle organisation des réunions des institutions représentatives du personnel ?</h1>
                 <div class='content-default'>
-                    <p>Si votre entreprise comporte au moins 50 salariés, vous disposez très certainement d’un comité d’entreprise et d’un comité d’hygiène et de sécurité. Chargé d’en assurer la présidence, vous devez connaître les nouvelles possibilités qui s’offrent à vous en matière de réunion de ces institutions…</p>
+                    <span class='img img-post'><img src="img/img-actu.jpg" alt=""></span>
+                    <p class='p-post'>Si votre entreprise comporte au moins 50 salariés, vous disposez très certainement d’un comité d’entreprise et d’un comité d’hygiène et de sécurité. Chargé d’en assurer la présidence, vous devez connaître les nouvelles possibilités qui s’offrent à vous en matière de réunion de ces institutions…</p>
 
                     <h2>Des réunions en visioconférence, enregistrées et sténographiées</h2>
+                    <p>Le système de visioconférence doit garantir <strong>l’identification des membres présents</strong> et le caractère secret de leur vote : c’est-à-dire que le dispositif ne doit pas mettre en relation l’identité de l’électeur et son vote. Les participants ont tous le même temps imparti pour voter.</p>
                     <p>Depuis août 2015, il est possible, avec l’accord des représentants du personnel concernés, de recourir à la visioconférence lors des réunions&nbsp;:</p>
                     <ul>
                         <li>du comité d’entreprise (CE),</li>

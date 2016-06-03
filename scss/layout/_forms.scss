@@ -715,3 +715,16 @@ button{
         margin: 0 0 0 15%;
     }
 }
+ /* form inscription */
+
+ #message {
+    resize: none;
+ }
+ .objet {
+    margin-left: -4px;
+    width: 24%;
+ }
+
+.gutter-left{
+    padding-left: $gutter;
+}
