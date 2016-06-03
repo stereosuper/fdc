@@ -3,6 +3,9 @@
 #wrapper-page{
     position: relative;
     overflow: hidden;
+    .sidebar-links-open &, .sidebar-account-open &, .nav-header-open &, .sidebar-tools-open &{
+        max-height: 100vh;
+    }
 }
 
 #main{

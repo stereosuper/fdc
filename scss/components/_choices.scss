@@ -63,6 +63,7 @@ $tps-choice-etape-2: 0.3s;
 		margin: 0;
 		padding: 0;
 		text-align: center;
+		backface-visibility: hidden;
 
 		transform-origin: 0 50%;
 		transition: transform $tps-choice-etape-1 ease-in-out, opacity 0.2s ease-in-out;
@@ -80,6 +81,7 @@ $tps-choice-etape-2: 0.3s;
 		&:nth-child(1){
 			left: 0;
 			.bg-choice{
+				background: $theme2-gradient-1;
 				background: linear-gradient(to bottom, $theme2-gradient-1 0%, darken($theme2-gradient-1, 5%) 100%);
 				&:before{
 					width: 300px;
@@ -106,6 +108,7 @@ $tps-choice-etape-2: 0.3s;
 		&:nth-child(2){
 			left: 20%;
 			.bg-choice{
+				background: $theme2-gradient-2;
 				background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
 				&:before{
 					width: 300px;
@@ -126,6 +129,7 @@ $tps-choice-etape-2: 0.3s;
 		&:nth-child(3){
 			left: 40%;
 			.bg-choice{
+				background: $theme2-gradient-3;
 				background: linear-gradient(to bottom, $theme2-gradient-3 0%, darken($theme2-gradient-3, 5%) 100%);
 				&:before{
 					width: 84px;
@@ -146,6 +150,7 @@ $tps-choice-etape-2: 0.3s;
 		&:nth-child(4){
 			left: 60%;
 			.bg-choice{
+				background: $theme2-gradient-4;
 				background: linear-gradient(to bottom, $theme2-gradient-4 0%, darken($theme2-gradient-4, 5%) 100%);
 				&:before, &:after{
 					width: 235px;
@@ -171,6 +176,7 @@ $tps-choice-etape-2: 0.3s;
 		&:nth-child(5){
 			left: 80%;
 			.bg-choice{
+				background: $theme2-gradient-5;
 				background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
 				&:before, &:after{
 					background: rgb(241, 103, 30);
@@ -274,22 +280,23 @@ $tps-choice-etape-2: 0.3s;
 			&:nth-child(1){
 				z-index: 4;
 				.zone-content{
+					transform: scaleX(1);
 					transform: translate3d(0, 0, 0) scaleX(1);
-					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
+						transform: scaleY(0);
 						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -306,22 +313,23 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-20%);
 				.zone-content{
+					transform: scaleX(1);
 					transform: translate3d(0, 0, 0) scaleX(1);
-					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
+						transform: scaleY(0);
 						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -338,22 +346,23 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-40%);
 				.zone-content{
+					transform: scaleX(1);
 					transform: translate3d(0, 0, 0) scaleX(1);
-					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
+						transform: scaleY(0);
 						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -370,22 +379,23 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-60%);
 				.zone-content{
+					transform: scaleX(1);
 					transform: translate3d(0, 0, 0) scaleX(1);
-					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
+						transform: scaleY(0);
 						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -402,22 +412,23 @@ $tps-choice-etape-2: 0.3s;
 				z-index: 4;
 				transform: translateX(-80%);
 				.zone-content{
+					transform: scaleX(1);
 					transform: translate3d(0, 0, 0) scaleX(1);
-					//width: 80%;
 				}
 				.content{
 					opacity: 1;
 				}
 				.zone-btn{
 					&:before{
+						transform: scaleY(0);
 						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
 				.visuel{
-					transform: translateY(36px);
+					transform: translateY(30px);
 				}
 				.zone-txt{
-					transform: translateY(-50px);
+					transform: translateY(-35px);
 				}
 				h3, p{
 					color: $blanc;
@@ -434,6 +445,8 @@ $tps-choice-etape-2: 0.3s;
 		width: 20%;
 		height: 100%;
 		position: relative;
+		backface-visibility: hidden;
+		transform-style: preserve-3d;
 		&:before{
 			content: '';
 			display: block;
@@ -448,6 +461,7 @@ $tps-choice-etape-2: 0.3s;
 			left: 0;
 			z-index: 2;
 
+			transform: scaleY(1);
 			transform: translate3d(0, 0, 0) scaleY(1);
 			transform-origin: 0 100%;
 			transition: transform $tps-choice-etape-1 ease-in-out;
@@ -478,6 +492,7 @@ $tps-choice-etape-2: 0.3s;
 
 		transition: $tps-choice-etape-1 ease-in-out;
 		//transition-delay: $tps-transition-choice;
+		transform: scaleX(0);
 		transform: translate3d(0, 0, 0) scaleX(0);
 		transform-origin: 0 50%;
 		transition-delay: 0.3s;
@@ -582,6 +597,8 @@ $tps-choice-etape-2: 0.3s;
 	h3{
 		margin: 0;
 		font-size: 1.75em;
+		padding: 0;
+		line-height: 1em;
 	}
 	p{
 		margin: 10px 0;
@@ -604,6 +621,7 @@ $tps-choice-etape-2: 0.3s;
 		color: rgb(218, 218, 218);
 		text-align: center;
 		line-height: 40px;
+		z-index: 3;
 	}
 	.table-types{
 		table-layout: fixed;
@@ -626,6 +644,13 @@ $tps-choice-etape-2: 0.3s;
 						}
 					}
 					&:nth-child(2){
+						a{
+							&:before{
+								background-color: $theme-gradient-2;
+							}
+						}
+					}
+					&:nth-child(3){
 						a{
 							&:before{
 								background-color: $theme-gradient-2;

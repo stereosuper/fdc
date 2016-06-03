@@ -14,9 +14,9 @@
             <div class='container-small'>
                 <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                     <li property='itemListElement' typeof='ListItem'>
-                        <a property='item' typeof='WebPage' href='./'>
+                        <h6><a property='item' typeof='WebPage' href='./'>
                             <span property='name'>Accueil</span>
-                        </a>
+                        </a></h6>
                     </li>
                 </ul>
 
@@ -214,7 +214,7 @@
                                     </fieldset>
                                 </div>
                             </fieldset>-->
-                            <button type='submit' class='btn-block huge'>Valider</button>
+                            <button type='submit' class='btn-block huge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </form>
                         <div class='content-footer hidden'>
                             <p>Si vous ne voulez plus faire partie du Forum des Commerces, nous en sommes désolés! Pour supprimer votre compte, <a href="#" class="btn-arrow small">cliquez ici</a></p>

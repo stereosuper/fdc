@@ -14,9 +14,9 @@
             <div class='container-small'>
                 <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                     <li property='itemListElement' typeof='ListItem'>
-                        <a property='item' typeof='WebPage' href='./'>
+                        <h6><a property='item' typeof='WebPage' href='./'>
                             <span property='name'>Accueil</span>
-                        </a>
+                        </a></h6>
                     </li>
                 </ul>
 
@@ -44,7 +44,7 @@
                         <header class='tab-content-title has-btn'>
                             <h2 class='h1'>Mes alertes</h2>
                         </header>
-                        <a href='alerteEdition.php' class='btn-block btn-plus'>Créer une nouvelle alerte</a>
+                        <a href='alerteEdition.php' class='btn-block btn-plus'><span class='border'></span><span class='txt-btn'>Créer une nouvelle alerte</span></a>
                         <div class='alerts-block'>
                             <p><i class='text-grey'>Vous n'avez pas encore crée d'alertes.</i></p>
                         </div>

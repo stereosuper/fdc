@@ -26,9 +26,9 @@
                     <header class='field-header'>
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
-                                <a property='item' typeof='WebPage' href='./'>
+                                <h6><a property='item' typeof='WebPage' href='./'>
                                     <span property='name'>Accueil</span>
-                                </a>
+                                </a></h6>
                             </li>
                         </ul>
                         <h1>Achat de boulangerie - pâtisserie - salon de thé</h1>
@@ -179,7 +179,7 @@
                                     </select>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge right'>Rechercher</button>
+                            <button type='submit' class='btn-block huge right'><span class='border'></span><span class='txt-btn'>Recherche</span></button>
                             <a href='#' class='btn-arrow small'>Nous confier gratuitement votre recherche</a>
                         </form><div class='map-container' id='mapForm'>
                             <div id='mapFormMetropole' class='map-form active'>

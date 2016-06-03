@@ -26,9 +26,9 @@
                     <header class='field-header'>
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
-                                <a property='item' typeof='WebPage' href='./'>
+                                <h6><a property='item' typeof='WebPage' href='./'>
                                     <span property='name'>Accueil</span>
-                                </a>
+                                </a></h6>
                             </li>
                         </ul>
                         <h1>Vente de boulangerie - pâtisserie - salon de thé</h1>
@@ -70,11 +70,10 @@
                             <li><strong>Modifiez votre annonce</strong> quand vous le souhaitez</li>
                             <li>Profitez de <strong>statistiques</strong> de consultation</li>
                         </ul>
-                        <a href='#' class='btn-block huge right'>Déposer mon annonce</a>
+                        <a href='#' class='btn-block huge right'><span class='border'></span><span class='txt-btn'>Déposer mon annonce</span></a>
                         <div class='pub-pack'>
                             <p>Plusieurs affaires à vendre ?</p>
                             <p >Découvrez nos packs d'annonces<span class='icon-arrow'></span></p>
-                            
                         </div>
                     </div>
                 </div>

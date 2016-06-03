@@ -13,11 +13,11 @@
 		<main id='main' role='main'>
 			<div class='bloc-top'>
 				<div class='wrapper-img img-fit'>
-					<img src='img/visuel-home.jpg'>
+					<img src='img/visuel-home.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Notre projet : concrétiser le&nbsp;vôtre</h1>
-					<p>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</p>
+					<strong>Notre projet : concrétiser le&nbsp;vôtre</strong>
+					<h1>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</h1>
 				</div>
 			</div>
 
@@ -31,7 +31,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/achat.png" srcset="img/achat.png 1x, img/achat@2x.png 2x" alt="Achat">
+											<img src="img/achat.png" srcset="img/achat.png 1x, img/achat@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -54,7 +54,7 @@
 												<a href='#'>Coiffure Esthétique Parfumerie</a>
 											</td>
 											<td>
-
+												<a href='#'>Murs Commerciaux</a>
 											</td>
 										</tr>
 										<tr>
@@ -65,7 +65,7 @@
 												<a href='#'>Commerce Alimentation</a>
 											</td>
 											<td>
-												<a href='#'>Murs Commerciaux</a>
+												<a href='#'>Restaurant</a>
 											</td>
 										</tr>
 										<tr>
@@ -76,7 +76,7 @@
 												<a href='#'>Creperie Pizzeria</a>
 											</td>
 											<td>
-												<a href='#'>Restaurant</a>
+												<a href='#'>Restauration rapide</a>
 											</td>
 										</tr>
 										<tr>
@@ -87,7 +87,7 @@
 												<a href='#'>Entreprise du bâtiment</a>
 											</td>
 											<td>
-												<a href='#'>Restauration rapide</a>
+												<a href='#'>Salon de thé</a>
 											</td>
 										</tr>
 										<tr>
@@ -98,7 +98,7 @@
 												<a href='#'>Hôtel Bureau</a>
 											</td>
 											<td>
-												<a href='#'>Salon de thé</a>
+												<a href='#'>Tabac Loto Presse</a>
 											</td>
 										</tr>
 										<tr>
@@ -109,7 +109,7 @@
 												<a href='#'>Hôtel Restaurant</a>
 											</td>
 											<td>
-												<a href='#'>Tabac Loto Presse</a>
+												
 											</td>
 										</tr>
 									</table>
@@ -176,7 +176,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="Partenaires">
+											<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -200,7 +200,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/materiel.png" srcset="img/materiel.png 1x, img/materiel@2x.png 2x" alt="Matériel">
+											<img src="img/materiel.png" srcset="img/materiel.png 1x, img/materiel@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -224,7 +224,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/personnel.png" srcset="img/personnel.png 1x, img/personnel@2x.png 2x" alt="Personnel">
+											<img src="img/personnel.png" srcset="img/personnel.png 1x, img/personnel@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -248,7 +248,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/vente.png" srcset="img/vente.png 1x, img/vente@2x.png 2x" alt="Vente">
+											<img src="img/vente.png" srcset="img/vente.png 1x, img/vente@2x.png 2x" alt="">
 										</div>
 									</div>
 								</div>
@@ -262,6 +262,127 @@
 							--><div class='zone-content'>
 								<div class='content'>
 									<button class='btn-close-choice icon-cross'></button>
+									<table cellpadding='0' cellspacing='0' border='0' class='table-types'>
+										<tr>
+											<td>
+												<a href='#'>Bar Tabac PMU</a>
+											</td>
+											<td>
+												<a href='#'>Coiffure Esthétique Parfumerie</a>
+											</td>
+											<td>
+												<a href='#'>Murs Commerciaux</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href='#'>Bar Brasserie</a>
+											</td>
+											<td>
+												<a href='#'>Commerce Alimentation</a>
+											</td>
+											<td>
+												<a href='#'>Restaurant</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href='#'>Boucherie Charcuterie Traiteur</a>
+											</td>
+											<td>
+												<a href='#'>Creperie Pizzeria</a>
+											</td>
+											<td>
+												<a href='#'>Restauration rapide</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href='#'>Boulangerie Pâtisserie</a>
+											</td>
+											<td>
+												<a href='#'>Entreprise du bâtiment</a>
+											</td>
+											<td>
+												<a href='#'>Salon de thé</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href='#'>Boutique et Magasins</a>
+											</td>
+											<td>
+												<a href='#'>Hôtel Bureau</a>
+											</td>
+											<td>
+												<a href='#'>Tabac Loto Presse</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href='#'>Bureaux Locaux Entrepôts</a>
+											</td>
+											<td>
+												<a href='#'>Hôtel Restaurant</a>
+											</td>
+											<td>
+												
+											</td>
+										</tr>
+									</table>
+									<ul class='types'>
+										<li>
+											<a href=''>Bar Tabac PMU</a>
+										</li><!--
+										--><li>
+											<a href=''>Bar Brasserie</a>
+										</li><!--
+										--><li>
+											<a href=''>Boucherie Charcuterie Traiteur</a>
+										</li><!--
+										--><li>
+											<a href=''>Boulangerie Pâtisserie</a>
+										</li><!--
+										--><li>
+											<a href=''>Boutique et Magasins</a>
+										</li><!--
+										--><li>
+											<a href=''>Bureaux Locaux Entrepôts</a>
+										</li><!--
+										--><li>
+											<a href=''>Coiffure Esthétique Parfumerie</a>
+										</li><!--
+										--><li>
+											<a href=''>Commerce Alimentation</a>
+										</li><!--
+										--><li>
+											<a href=''>Creperie Pizzeria</a>
+										</li><!--
+										--><li>
+											<a href=''>Entreprise du bâtiment</a>
+										</li><!--
+										--><li>
+											<a href=''>Hôtel Bureau</a>
+										</li><!--
+										--><li>
+											<a href=''>Hôtel Restaurant</a>
+										</li><!--
+										--><li>
+											<a href=''>Murs Commerciaux</a>
+										</li><!--
+										--><li>
+											<a href=''>Restaurant</a>
+										</li><!--
+										--><li>
+											<a href=''>Restauration rapide</a>
+										</li><!--
+										--><li>
+											<a href=''>Salon de thé</a>
+										</li><!--
+										--><li>
+											<a href=''>Tabac Loto Presse</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</li>
@@ -274,42 +395,46 @@
 					</div>
 				</div>
 
-				<h2 class='h1 inline-b no-margin padding-grid'>À la une</h2>
+				<div class='title-zone inline-b no-margin padding-grid'>À la une</div>
 				<a href='#' class='btn-arrow small inline-b'>Toute l'actualité</a>
 				<ul class='news'>
 					<li>
 						<article>
-							<div class='center-align article-date'>
-								<div class='wrapper-alignment full-height'>
-									<time class='content-align-middle'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
-								</div>
-							</div><!--
-							--><div class='article-desc'>
-								<h4 class='small'>Actualité fiscale</h4>
-								<h3 class='h2'>Crédit d’impôt : tout un art…</h3>
-								<p>Une entreprise exerçant une activité de conseil en communication et en création publicitaire a sollicité le bénéfice… <a href='#' class='btn-arrow'>Lire la suite</a></p>
-							</div>
+							<a href='#'>
+								<span class='center-align article-date'>
+									<span class='wrapper-alignment full-height'>
+										<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									</span>
+								</span><!--
+								--><span class='article-desc'>
+									<h4 class='small'>Actualité fiscale</h4>
+									<h5>Crédit d’impôt : tout un art…</h5>
+									<p>Une entreprise exerçant une activité de conseil en communication et en création publicitaire a sollicité le bénéfice… <span class='btn-arrow'>Lire la suite</span></p>
+								</span>
+							</a>
 						</article>
 					</li><!--
 					--><li>
 						<article>
-							<div class='center-align article-date'>
-								<div class='wrapper-alignment full-height'>
-									<time class='content-align-middle'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
-								</div>
-							</div><!--
-							--><div class='article-desc'>
-								<h4 class='small'>Actualité sociale</h4>
-								<h3 class='h2'>Des indemnités de préavis en cas de maladie ?</h3>
-								<p>Un employeur licencie un salarié pour motif économique. Cependant, ce salarié est en arrêt maladie… <a href='#' class='btn-arrow'>Lire la suite</a></p>
-							</div>
+							<a href='#'>
+								<span class='center-align article-date'>
+									<span class='wrapper-alignment full-height'>
+										<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									</span>
+								</span><!--
+								--><span class='article-desc'>
+									<h4 class='small'>Actualité sociale</h4>
+									<h5>Des indemnités de préavis en cas de maladie&nbsp;?</h5>
+									<p>Un employeur licencie un salarié pour motif économique. Cependant, ce salarié est en arrêt maladie… <span class='btn-arrow'>Lire la suite</span></p>
+								</span>
+							</a>
 						</article>
 					</li>
 				</ul>
 			</div>
 		</main>
 
-	  	<?php include_once('includes/footer.html'); ?>
+	  	<?php include_once('includes/footer_home.html'); ?>
 
 	</body>
 

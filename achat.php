@@ -22,9 +22,9 @@
                     <header class='field-header'>
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
-                                <a property='item' typeof='WebPage' href='./'>
+                                <h6><a property='item' typeof='WebPage' href='./'>
                                     <span property='name'>Accueil</span>
-                                </a>
+                                </a></h6>
                             </li>
                         </ul>
                         <h1>Acheter son affaire</h1>
@@ -32,7 +32,7 @@
                     </header>
                     <div class='field-content'>
                         <h2 class='title-simple-big'>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod vitae veilt gravida elementum. Quisque scelerisque ante eget ipsum dignissim, vitae lagret lorem semper. Donc quis euismod nulla. Quisque ultraces manris at bibh lobortis, hendrerit dictum leo suscipit. Nullam volutpat massa enim, vel minibus manris aliquet nec. Nam et egestas nibh. Sed pretium odio eu tempor tincidunt. Sed malesuada felis at bibendum rhoncus. Donec sed odio dui. Curabitur blandir tempus porttutor. Dus mollis, est non commode luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                       <h3 class='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod vitae veilt gravida elementum. Quisque scelerisque ante eget ipsum dignissim, vitae lagret lorem semper. Donc quis euismod nulla. Quisque ultraces manris at bibh lobortis, hendrerit dictum leo suscipit. Nullam volutpat massa enim, vel minibus manris aliquet nec. Nam et egestas nibh. Sed pretium odio eu tempor tincidunt. Sed malesuada felis at bibendum rhoncus. Donec sed odio dui. Curabitur blandir tempus porttutor. Dus mollis, est non commode luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h3>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-bartabac.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Bar / Tabac / PMU</strong>
+                                <h4 class='title-simple-big'>Bar / Tabac / PMU</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.bar-tabac-pmu.fr</span>, site d'annonces spécialisé dans l'achat et la vente de bar-tabac, bar-PMU, bar-tabac-PMU, vous permet de découvrir de très nombreuses annonces dans chaque régions. Dès lors qu'une ou plusieurs annonces vous intéressent, vous pouvez accéder aux coordonnées du dépos...
@@ -53,7 +53,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-barbrasserie.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Bar / Brasserie</strong>
+                                <h4 class='title-simple-big'>Bar / Brasserie</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.bar-brasserie.fr</span> vous propose de consulter de très nombreuses annonces d'achat et de vente de bars-brasseries dans toutes les régions. Lorsqu'une annonce vous intéresse, vous pouvez accéder gratuitement aux coordonnées des vendeurs.
@@ -65,7 +65,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-boucher.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Boucherie / Charcuterie / Traiteur</strong>
+                                <h4 class='title-simple-big'>Boucherie / Charcuterie / Traiteur</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.boucherie-charcuterie-traiteur.fr</span> vous propose de consulter de nombreuses annonces d'achat et de vente de boucheries, charcuteries et de commerces de traiteurs dans toutes les régions.
@@ -77,7 +77,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-boulangerie.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Boulangerie / Patisserie / Salon de thé</strong>
+                                <h4 class='title-simple-big'>Boulangerie / Patisserie / Salon de thé</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.boulangerie-patisserie-salon-de-the.fr</span> vous propose de consulter de très nombreuses annonces d'achat et de vente de ce type de commerce dans toutes les régions. Lorsqu'une annonce vous intéresse, vous pouvez accéder gratuitement aux coordonnées des vendeurs.
@@ -89,7 +89,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-boutiquemagasins.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Boutiques / Magasins</strong>
+                                <h4 class='title-simple-big'>Boutiques / Magasins</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.boutiques-et-magasins.fr</span> vous propose de consulter de très nombreuses annonces de commerces à reprendre : prêt-à-porter, chaussures, maroquinerie, mobilier, bijouterie, décoration, loisirs, fleurs,...dans toutes les régions.
@@ -101,7 +101,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-bureaux.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Bureaux / Locaux / Entrepôts</strong>
+                                <h4 class='title-simple-big'>Bureaux / Locaux / Entrepôts</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.bureaux-locaux-entrepots.fr</span> vous propose de consulter de très nombreuses annonces de  location et vente de bureaux, locaux et entrepôts.
@@ -113,7 +113,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-coiffure.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Coiffure / Esthétique / Parfumerie</strong>
+                                <h4 class='title-simple-big'>Coiffure / Esthétique / Parfumerie</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.coiffure-esthetique-parfumerie.fr</span> vous propose de consulter de très nombreuses annonces de vente de fonds de commerce dédiés à votre activité. La consultation des annonces et la mise en relation avec le vendeurs sont gratuites.
@@ -125,7 +125,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-commerce.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Commerce / Alimentation</strong>
+                                <h4 class='title-simple-big'>Commerce / Alimentation</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.commerce-alimentation.fr</span> vous propose de consulter de très nombreuses annonces de vente d'épiceries, caves à vin, poissonneries, boucheries, boulangeries, primeurs,... à vendre.
@@ -137,7 +137,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-crepe_pizza.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Crêperie / Pizzeria</strong>
+                                <h4 class='title-simple-big'>Crêperie / Pizzeria</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.creperie-pizzeria.fr</span> vous propose de consulter de très nombreuses annonces de vente et d'achat de crêperies et pizzerias dans toutes les régions.
@@ -149,7 +149,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-entreprise-service.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Entreprises de services</strong>
+                                <h4 class='title-simple-big'>Entreprises de services</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.entreprise-services.fr</span> vous permet d'accéder à des annonces d'achat de tous types d'entreprises de services regroupées par thèmes : santé (pharmacie, optique,audition,...), conseils (immobilier, voyage, communication,...), formation (auto-école, soutien scolaire, formation profess...
@@ -161,7 +161,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-entreprise-batiment.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Entreprises du bâtiment</strong>
+                                <h4 class='title-simple-big'>Entreprises du bâtiment</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.reprise-entreprise-batiment.fr</span> vous propose de consulter des annonces d'entreprises à reprendre dans le domaine du bâtiment, quelque soit le corps de métier recherché : peinture, électricité, plomberie, gros-oeuvre, maçonnerie,...
@@ -173,7 +173,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-hotelbureau.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Hôtel Bureau</strong>
+                                <h4 class='title-simple-big'>Hôtel Bureau</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.hotel-bureau.fr</span> vous propose de consulter des annonces d’hotels bureaux.
@@ -185,7 +185,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-hotel_resto.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Hôtel Restaurant</strong>
+                                <h4 class='title-simple-big'>Hôtel Restaurant</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Sur le site <span class='link'>www.hotel-restaurant.fr</span>, vous aurez accès à de très nombreuses annonces d'hôtel-restaurant à vendre dans toutes les régions. Si une ou plusieurs annonces vous intéressent, vous pourrez accéder gratuitement aux coordonnées du dépositaire de l'annonce.
@@ -197,7 +197,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-restaurant.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Restaurant</strong>
+                                <h4 class='title-simple-big'>Restaurant</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     En vous connectant sur le site <span class='link'>www.vente-restaurants.fr</span>, vous découvrirez de très nombreuses annonces de restaurants à vendre en France, quelque soit la région de votre recherche. Le contact avec les dépositaires des annonces est totalement gratuit.
@@ -209,7 +209,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-resto_rapide.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Restauration rapide</strong>
+                                <h4 class='title-simple-big'>Restauration rapide</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Le site <span class='link'>www.vente-restauration-rapide.fr</span> met à votre disposition les annonces de vente de restaurants rapides, snacks, sandwicheries et points chauds. Dès lors qu'une annonce retient votre attention, vous pourrez obtenir gratuitement les coordonnées du dépositaire de l'annonce.
@@ -221,7 +221,7 @@
                         <a href='#'>
                             <span class='img'><img src='img/img-lotopresse.jpg' alt=''></span>
                             <span class='field-txt'>
-                                <strong class='title-simple-big'>Tabac / Loto / Presse</strong>
+                                <h4 class='title-simple-big'>Tabac / Loto / Presse</h4>
                                 <span class='btn-arrow small'>Voir</span>
                                 <span class='p'>
                                     Vous découvrirez sur le site <span class='link'>www.tabac-loto-presse.fr</span>, de très nombreuses annonces d'achat et de vente de commerces de tabac-loto-presse, de bureaux de tabac et de civettes dans votre région.

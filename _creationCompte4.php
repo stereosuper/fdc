@@ -85,7 +85,7 @@
                                     </fieldset>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge no-margin'>Valider</button>
+                            <button type='submit' class='btn-block huge no-margin'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </form>
                     </div>
                 </div>

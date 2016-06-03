@@ -14,9 +14,9 @@
             <div class='container-small'>
                 <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                     <li property='itemListElement' typeof='ListItem'>
-                        <a property='item' typeof='WebPage' href='./'>
+                        <h6><a property='item' typeof='WebPage' href='./'>
                             <span property='name'>Accueil</span>
-                        </a>
+                        </a></h6>
                     </li>
                 </ul>
 
@@ -111,7 +111,7 @@
                                         <option value='17'>Tabac Loto / Presse</option>
                                     </select>
                                 </div>
-                                <button type='submit' class='btn-block'>Ok</button>
+                                <button type='submit' class='btn-block'><span class='border'></span><span class='txt-btn'>Ok</span></button>
                             </form>
                         </footer>
                     </div>
