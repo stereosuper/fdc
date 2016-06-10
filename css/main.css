@@ -2381,15 +2381,13 @@ button {
   padding-top: 60px; }
 
 /* tab buy home */
-.wrapper-choices .field-content {
-  padding: 45px 60px 13px; }
-  .wrapper-choices .field-content .tab-content-title {
-    margin: 0 0 35px;
-    font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
-    font-size: 2.5em;
-    line-height: 1em; }
-  .wrapper-choices .field-content.searchform .form-half {
-    margin-top: 0; }
+.wrapper-choices .field-content .tab-content-title {
+  margin: 0 0 35px;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 2.5em;
+  line-height: 1em; }
+.wrapper-choices .field-content.searchform .form-half {
+  margin-top: 0; }
 
 /* Breadcrumb */
 .breadcrumb {
@@ -4427,6 +4425,9 @@ button {
     overflow: hidden;
     box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
     background: #fff; }
+    .wrapper-choices .field-content {
+      padding: 45px 60px 13px;
+      height: 100%; }
     .field-content h2 + a {
       margin-right: 15px; }
     .field-content p, .field-content h3 {
@@ -5375,6 +5376,9 @@ button {
   h2.h1 {
     font-size: 2.2em; }
 
+  .wrapper-choices .field-content .tab-content-title {
+    font-size: 2.2em; }
+
   .gutter-left {
     padding-left: 30px; }
 
@@ -5774,6 +5778,9 @@ button {
       font-size: 2.4em; }
 
   h2.h1 {
+    font-size: 1.8em; }
+
+  .wrapper-choices .field-content .tab-content-title {
     font-size: 1.8em; }
 
   ol, ul {

@@ -974,6 +974,9 @@
             font-size: 2.2em;
         }
     }
+    .wrapper-choices .field-content .tab-content-title{
+        font-size: 2.2em;
+    }
     .gutter-left{
         padding-left: $gutter;
     }
@@ -1609,6 +1612,9 @@
         &.h1{
             font-size: 1.8em;
         }
+    }
+    .wrapper-choices .field-content .tab-content-title{
+        font-size: 1.8em;
     }
 
     ol, ul{

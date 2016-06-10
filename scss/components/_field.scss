@@ -108,6 +108,10 @@
 		overflow: hidden;
 		box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
 		background: #fff;
+		.wrapper-choices &{
+			padding: 45px $gutter 13px;
+			height: 100%;
+		}
 		h2{
 			+ a{
 				margin-right: 15px;
