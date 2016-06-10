@@ -411,6 +411,8 @@ select{
     border: 1px solid #ebebeb;
     /* overflow pour empecher le dépassement de l'outline sur ff au focus */
     overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     font-family: $roboto-it;
     font-size: 0.88em;
