@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-loto.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Tabac - Loto - Presse</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Tabac - Loto - Presse</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 

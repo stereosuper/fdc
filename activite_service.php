@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-service.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Entreprise de service</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Entreprise de service</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 

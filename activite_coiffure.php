@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-coiffeur.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Coiffure - Esthétique - Parfumerie</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Coiffure - Esthétique - Parfumerie</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 

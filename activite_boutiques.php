@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-boutique.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Boutiques-et-Magasins</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Boutiques-et-Magasins</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 

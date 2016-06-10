@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-boucher.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Boucherie - Charcuterie - Traiteur</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Boucherie - Charcuterie - Traiteur</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 

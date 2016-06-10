@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-pizza.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Crêperie - Pizzeria</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Crêperie - Pizzeria</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 

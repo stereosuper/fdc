@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-restaurant.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Vente - Restaurant</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Vente - Restaurant</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 
