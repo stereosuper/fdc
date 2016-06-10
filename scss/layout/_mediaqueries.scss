@@ -956,6 +956,18 @@
             padding: 20px 0 0 0;
         }
     }
+
+    .wrapper-depot-annonce{
+        padding: 0 30px 0 0;
+    }
+    .big-price{
+        font-size: 2em;
+    }
+    .wrapper-alignment.wrapper-price-argu{
+        .content-align-middle.content-price{
+            padding: 0 10px 0 0;
+        }
+    }
 }
 
 @media (max-width: 767px){

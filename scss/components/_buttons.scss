@@ -171,6 +171,14 @@
 			border-color: #de3d25;
 		}
 	}
+	&.btn-orange-light{
+		.border{
+			border-color: #ef6a2b;
+		}
+		&:hover, &:focus{
+			color: #ef6a2b;
+		}
+	}
 	&.btn-alert{
 		padding: 16px 16px 15px 50px;
 		font-size: 1em;
@@ -284,6 +292,10 @@
 
 .btn-orange{
 	background: #de3d25;
+}
+
+.btn-orange-light{
+	background: #ef6a2b;
 }
 
 .btn-close{
