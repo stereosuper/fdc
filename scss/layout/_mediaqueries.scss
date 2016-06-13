@@ -287,6 +287,7 @@
     #sidebar-account{
         right: inherit;
         left: 0;
+        transform: translateX(-110%);
         transform: translateX(calc(-100% - 58px));
         z-index: 4;
         .btn-close{
@@ -297,6 +298,7 @@
     #sidebar-tools{
         right: inherit;
         left: 0;
+        transform: translateX(-110%);
         transform: translateX(calc(-100% - 58px));
         z-index: 4;
         .btn-close{
@@ -556,7 +558,7 @@
         }
     }
 
-    .notif{
+    .notif-nav{
         font-size: 0.95em;
     }
 
@@ -1735,6 +1737,7 @@
             > li{
                 a{
                     &:before{
+                        transform: translateX(100%);
                         transform: translateX(calc(100% - 8px));
                     }
                 }
@@ -1745,6 +1748,7 @@
                 > li{
                     a{
                         &:before{
+                            transform: translateX(-100%);
                             transform: translateX(calc(-100% + 8px));
                         }
                     }
@@ -1754,6 +1758,7 @@
     }
     .menu-header a{
         &:before{
+            transform: translateX(100%);
             transform: translateX(calc(100% - 8px));
         }
     }
@@ -1885,6 +1890,7 @@
     }
 
     .wrapper-pub{
+        width: 100%;
         width: calc(100% + 40px);
         margin-left: -20px;
     }
