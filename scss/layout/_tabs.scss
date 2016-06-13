@@ -122,22 +122,8 @@
             content: none;
         }
     }
-    .big-price{
-        background: #f5f5f6;
-        border: 1px solid #d7d7d7;
-        padding: 14px 10px;
-        width: 130px;
-        height: 100%;
-        font-family: $roboto-cd-bold;
-        font-size: 1.75em;
-        float: left;        
-        span{
-            font-family: $roboto-cd;
-            font-size: 1.71em;
-            vertical-align: text-top;
-        }
-    }
     .tab-content{
+        padding: 20px 320px 50px 60px;
         ul{
             line-height: 1em;
             padding-left: 160px;
@@ -151,32 +137,99 @@
                 }
             }
         }
-        .pub-pack{
-            margin-top: 60px;
-            background: url('../layoutImg/annonces.png') no-repeat 100%;
-            width: 207px;
-            height: 304px;
+    }
+}
+.big-price{
+    display: block;
+    background: #f5f5f6;
+    border: 1px solid #d7d7d7;
+    padding: 11px 10px;
+    width: auto;
+    height: 100%;
+    font-family: $roboto-cd;
+    font-size: 2.5em;
+    line-height: 1em;
+    span{
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1em;
+    }
+    sup{
+        display: inline-block;
+        vertical-align: top;
+        font-family: $roboto-cd-bold;
+        font-size: 0.7em;
+        line-height: 1em;
+        margin: 0 0 0 2px;
+    }
+}
+.wrapper-depot-annonce{
+    padding: 0 70px 0 0;
+    ul{
+        margin: 0;
+        li{
+            margin: 0;
+        }
+    }
+}
+.wrapper-alignment.wrapper-price-argu{
+    table-layout: auto;
+    margin: 0 0 20px 0;
+    .content-align-middle.content-price{
+        white-space: nowrap;
+        padding: 0 28px 0 0;
+    }
+}
+.wrapper-pub-pack{
+    width: 208px;
+    position: relative;
+}
+.pub-pack{
+    display: block;
+    background: url('../layoutImg/pack-annonces.jpg') no-repeat 0 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 10px;
+    color: $txt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid $gris;
+    transition: $transition;
+    .small-txt{
+        display: block;
+        font-family: $roboto-cd;
+        font-size: 0.875em;
+        margin: 0 0 4px 0;
+    }
+    .big-txt{
+        display: block;
+        font-family: $roboto-cd;
+        font-size: 2.125em;
+        line-height: 0.9em;
+        color: rgb(227, 77, 26);
+        transition: color 0.3s ease-in-out;
+        .icon-arrow{
             display: inline-block;
-            p{
-                font-size: 0.88em;
-                text-align: center;
-                &:nth-child(2){
-                    margin: 0 auto;
-                    font-family: $roboto-cd;
-                    color: #e34d1a;
-                    font-size: 2.12em;
-                    width: 150px;
-                    text-align: center;
-                    letter-spacing: -0.4px;
-                    line-height: 1em;
-                    span{ 
-                        font-size: 10px;
-                        vertical-align: middle;
-                        &:before{
-
-                        }
-                    }
-                }
+            font-size: 9px;
+            vertical-align: middle;
+            position:relative;
+            top:-.1em;
+            margin: 0 0 0 6px;
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+    &:focus, &:hover{
+        color: mix(white, $bleu-link, 30%);
+        .big-txt{
+            color: mix(white, $bleu-link, 30%);
+            .icon-arrow{
+                transform: translateX(10px);
             }
         }
     }
@@ -186,7 +239,7 @@
     overflow: hidden;
     background: #fff;
     &-title{
-        padding: 30px 0 12px;
+        padding: 30px 0 10px;
         border-bottom: 1px solid;
         margin: 0 0 2.5em;
         .h1{
@@ -270,9 +323,17 @@
 /* tab buy home */
 .wrapper-choices{
    .field-content{
-       padding: 45px $gutter 13px;
        .tab-content-title{
-           margin: 0 0 1em;
+            padding-top: 0;
+           margin: 0 0 35px;
+           font-family: $roboto-cd-bold;
+           font-size: 2.5em;
+           line-height: 1em;
+       }
+       &.searchform{
+            .form-half{
+                margin-top: 0;
+            }
        }
    }
 }

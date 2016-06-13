@@ -16,8 +16,8 @@
 					<img src='img/img-declis/head-barbrasserie.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1 class='big'>Bar - Brasserie</h1>
-					<p>Un site Forum des Commerces pour faciliter la vie des pros</p>
+					<strong>Bar - Brasserie</strong>
+					<h1>Un site Forum des Commerces pour faciliter la vie des pros</h1>
 				</div>
 			</div>
 
@@ -47,7 +47,7 @@
 									<button class='btn-close-choice icon-cross'></button>
 									<div class='field-content searchform'>
 				                        <div class='tab-content-title'>
-				                            <h2 class='h1'>Recherche</h2>
+				                            Recherche
 				                        </div>
 				                        <form action='#' method='post' class='form-half'>
 				                            <fieldset>
@@ -472,6 +472,40 @@
 							--><div class='zone-content'>
 								<div class='content'>
 									<button class='btn-close-choice icon-cross'></button>
+									<div class='field-content'>
+				                        <div class='wrapper-alignment'>
+											<div class='content-align-top wrapper-depot-annonce'>
+												<div class="tab-content-title">
+												    Déposer une annonce
+												</div>
+												<p>
+												    Vous souhaitez trouver rapidement un acquéreur pour votre bar brasserie ?<br>
+												    Vous êtes au bon endroit !
+												</p>
+												<div class='wrapper-alignment wrapper-price-argu'>
+													<div class='content-align-middle content-price'>
+														<div class="big-price">
+														    <span>40</span><sup>€ HT</sup>
+														</div>
+													</div>
+													<div class='content-align-middle'>
+														<ul>
+														    <li>Diffusion pendant <strong>6 mois</strong></li>
+														    <li><strong>Modifiez votre annonce</strong> quand vous le souhaitez</li>
+														    <li>Profitez de <strong>statistiques</strong> de consultation</li>
+														</ul>
+													</div>
+												</div>
+												<a href="#" class="btn-block btn-orange-light huge right"><span class="border"></span><span class="txt-btn">Déposer mon annonce</span></a>
+											</div>
+											<div class='content-align-top wrapper-pub-pack'>
+												<a href='#' class='pub-pack'>
+													<span class='small-txt'>Plusieurs affaires à vendre&nbsp;?</span>
+													<span class='big-txt'>Découvrez nos packs d'annonces<span class='icon-arrow'></span></span>
+												</a>
+											</div>
+				                        </div>
+				                    </div>
 								</div>
 							</div>
 						</li>
@@ -484,35 +518,39 @@
 					</div>
 				</div>
 
-				<h2 class='h1 inline-b no-margin padding-grid'>À la une</h2>
+				<div class='title-zone inline-b no-margin padding-grid'>À la une</div>
 				<a href='#' class='btn-arrow small inline-b'>Toute l'actualité</a>
 				<ul class='news'>
 					<li>
 						<article>
-							<div class='center-align article-date'>
-								<div class='wrapper-alignment full-height'>
-									<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
-								</div>
-							</div><!--
-							--><div class='article-desc'>
-								<h4 class='small'>Actualité fiscale</h4>
-								<h3 class='h2'>Crédit d’impôt : tout un art…</h3>
-								<p>Une entreprise exerçant une activité de conseil en communication et en création publicitaire a sollicité le bénéfice… <a href='#' class='btn-arrow'>Lire la suite</a></p>
-							</div>
+							<a href='#'>
+								<span class='center-align article-date'>
+									<span class='wrapper-alignment full-height'>
+										<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									</span>
+								</span><!--
+								--><span class='article-desc'>
+									<h4 class='small'>Actualité fiscale</h4>
+									<h5>Crédit d’impôt : tout un art…</h5>
+									<p>Une entreprise exerçant une activité de conseil en communication et en création publicitaire a sollicité le bénéfice… <span class='btn-arrow'>Lire la suite</span></p>
+								</span>
+							</a>
 						</article>
 					</li><!--
 					--><li>
 						<article>
-							<div class='center-align article-date'>
-								<div class='wrapper-alignment full-height'>
-									<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
-								</div>
-							</div><!--
-							--><div class='article-desc'>
-								<h4 class='small'>Actualité sociale</h4>
-								<h3 class='h2'>Des indemnités de préavis en cas de maladie ?</h3>
-								<p>Un employeur licencie un salarié pour motif économique. Cependant, ce salarié est en arrêt maladie… <a href='#' class='btn-arrow'>Lire la suite</a></p>
-							</div>
+							<a href='#'>
+								<span class='center-align article-date'>
+									<span class='wrapper-alignment full-height'>
+										<time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+									</span>
+								</span><!--
+								--><span class='article-desc'>
+									<h4 class='small'>Actualité sociale</h4>
+									<h5>Des indemnités de préavis en cas de maladie&nbsp;?</h5>
+									<p>Un employeur licencie un salarié pour motif économique. Cependant, ce salarié est en arrêt maladie… <span class='btn-arrow'>Lire la suite</span></p>
+								</span>
+							</a>
 						</article>
 					</li>
 				</ul>

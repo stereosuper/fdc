@@ -956,6 +956,18 @@
             padding: 20px 0 0 0;
         }
     }
+
+    .wrapper-depot-annonce{
+        padding: 0 30px 0 0;
+    }
+    .big-price{
+        font-size: 2em;
+    }
+    .wrapper-alignment.wrapper-price-argu{
+        .content-align-middle.content-price{
+            padding: 0 10px 0 0;
+        }
+    }
 }
 
 @media (max-width: 767px){
@@ -973,6 +985,9 @@
         &.h1{
             font-size: 2.2em;
         }
+    }
+    .wrapper-choices .field-content .tab-content-title{
+        font-size: 2.2em;
     }
     .gutter-left{
         padding-left: $gutter;
@@ -1609,6 +1624,9 @@
         &.h1{
             font-size: 1.8em;
         }
+    }
+    .wrapper-choices .field-content .tab-content-title{
+        font-size: 1.8em;
     }
 
     ol, ul{
