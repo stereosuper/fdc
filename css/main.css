@@ -2768,6 +2768,10 @@ button {
     padding: 18px 20px;
     text-align: right; }
 
+.bg-sidebar.no-transition {
+  -webkit-transition: none;
+          transition: none; }
+
 /* Pagination */
 .pagination {
   text-align: center; }

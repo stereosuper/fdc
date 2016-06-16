@@ -437,6 +437,12 @@ $(function(){
         if($('#sidebar-tools').length){
         	$('#sidebar-tools').removeClass('no-transition');
         }
+        if($('#sidebar-links').length){
+        	$('#sidebar-links').removeClass('no-transition');
+        }
+        if($('.bg-sidebar').length){
+        	$('.bg-sidebar').removeClass('no-transition');
+        }
     }
 
     var hammertime = new Hammer(document.getElementById('sidebar-links'));
@@ -487,6 +493,9 @@ $(function(){
 			}
 			if($('#sidebar-links').length){
 				$('#sidebar-links').addClass('no-transition');
+			}
+			if($('.bg-sidebar').length){
+				$('.bg-sidebar').addClass('no-transition');
 			}
 
 			clearTimeout(doit);
