@@ -665,6 +665,7 @@ button{
     top: 220px;
     left: 0;
     opacity: 0;
+    visibility: hidden;
     z-index: 0;
     transition: $transition;
     a{
@@ -674,6 +675,7 @@ button{
     &.active{
         z-index: 2;
         opacity: 1;
+        visibility: visible;
     }
 }
 
