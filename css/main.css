@@ -1490,7 +1490,8 @@ button {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0; }
+  top: 0;
+  bottom: 0; }
   .map-form .department, .map-form .country {
     stroke-linecap: round;
     stroke-linejoin: round; }
@@ -1543,11 +1544,12 @@ button {
     .map-form-extra b {
       font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif; }
   .map-form-dom > div {
-    padding: 0 0 0 21%; }
+    padding: 2.2em 0 2.2em 21%;
+    margin: 0; }
     .map-form-dom > div.small {
       width: 43%;
       margin: 0 0 0 7%;
-      padding: 0 0 0 19%; }
+      padding: 2.2em 0 2.2em 19%; }
 
 .map-btn {
   max-width: 65px;
