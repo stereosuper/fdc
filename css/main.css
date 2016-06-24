@@ -731,6 +731,10 @@ a:active, button:active {
   text-align: center;
 }
 
+.right-align {
+  text-align: right;
+}
+
 .inline-b {
   display: inline-block;
   vertical-align: middle;
@@ -1033,7 +1037,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[ty
   padding: 0;
   border-top: 1px solid #f5f5f6;
   border-bottom: 1px solid #f5f5f6;
-  margin: 0.5em 0 0;
+  margin: 0.7em 0 0;
 }
 .alerts-list li, .sales-list li, .messages-list li, .field-list li, .search-list li {
   margin: 0;
@@ -1853,6 +1857,7 @@ button.no-margin {
   left: 0;
   right: 0;
   top: 0;
+  bottom: 0;
 }
 .map-form .department, .map-form .country {
   stroke-linecap: round;
@@ -1918,12 +1923,13 @@ button.no-margin {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
 }
 .map-form-dom > div {
-  padding: 0 0 0 21%;
+  padding: 2.2em 0 2.2em 21%;
+  margin: 0;
 }
 .map-form-dom > div.small {
   width: 43%;
   margin: 0 0 0 7%;
-  padding: 0 0 0 19%;
+  padding: 2.2em 0 2.2em 19%;
 }
 
 .map-btn {
@@ -3446,6 +3452,11 @@ button.no-margin {
   text-align: right;
 }
 
+.bg-sidebar.no-transition {
+  -webkit-transition: none;
+  transition: none;
+}
+
 /* Pagination */
 .pagination {
   text-align: center;
@@ -3551,6 +3562,7 @@ button.no-margin {
   font-size: 0.7em;
   padding: 0px 2px;
   margin-left: 10px;
+  color: #c52d38;
 }
 
 .btn-photo {
@@ -5075,7 +5087,7 @@ button.no-margin {
   border-bottom: 0;
   border-top: 1px solid;
   padding: 100px 0;
-  margin-top: 0.5em;
+  margin-top: 0.7em;
 }
 
 /* Sales */
@@ -5570,6 +5582,23 @@ button.no-margin {
   float: right;
   margin: 10px 0 0;
 }
+.field-content .content-align-middle.wrapper-search-title {
+  width: 130px;
+}
+.field-content .content-align-middle.wrapper-search-txt h2 {
+  line-height: 1.1em;
+}
+.field-content .content-align-middle.wrapper-search-txt h2, .field-content .content-align-middle.wrapper-search-txt a {
+  display: inline;
+  vertical-align: middle;
+}
+.field-content .content-align-middle.wrapper-search-txt a {
+  top: 1px;
+}
+.field-content .content-align-middle.wrapper-create-alert {
+  width: 160px;
+  padding-left: 20px;
+}
 
 /* Field list */
 .field-list li {
@@ -5676,7 +5705,6 @@ button.no-margin {
 }
 .content-log .sign-up {
   display: table-cell;
-  width: 420px;
   padding-left: 60px;
 }
 .content-log .sign-up h3 {
@@ -6885,6 +6913,10 @@ button.no-margin {
   .content-tabs-sale .not-filled {
     margin: -28px 14px 0;
   }
+
+  .sale-announce-form .btn-block {
+    margin: 0;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -7338,6 +7370,28 @@ button.no-margin {
   .leads-criteres span, .leads-criteres ul {
     width: 100%;
   }
+
+  .field-content .wrapper-alignment.wrapper-search {
+    display: block;
+  }
+  .field-content .content-align-middle.wrapper-search-title {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 0;
+  }
+  .field-content .content-align-middle.wrapper-search-txt {
+    display: block;
+    width: 100%;
+  }
+  .field-content .content-align-middle.wrapper-create-alert {
+    display: block;
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 0;
+  }
+  .field-content .content-align-middle.wrapper-create-alert.right-align {
+    text-align: left;
+  }
 }
 @media (max-width: 650px) {
   .nav-tabs {
@@ -7360,6 +7414,10 @@ button.no-margin {
     margin-right: 0;
   }
   .leads-criteres li:after {
+    display: none;
+  }
+
+  .btn-info:after {
     display: none;
   }
 }
