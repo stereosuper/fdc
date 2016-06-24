@@ -6917,6 +6917,20 @@ button.no-margin {
   .sale-announce-form .btn-block {
     margin: 0;
   }
+
+  .content-log .login-vente {
+    display: block;
+    width: 100%;
+    max-width: none;
+    border: none;
+    margin: 0 0 20px 0;
+    border-bottom: 1px dashed #000;
+  }
+  .content-log .sign-up {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -7391,6 +7405,25 @@ button.no-margin {
   }
   .field-content .content-align-middle.wrapper-create-alert.right-align {
     text-align: left;
+  }
+
+  .content-log .login-vente {
+    margin-bottom: 0;
+    padding: 0 0 440px 0;
+  }
+  .content-log .login-vente .info-form {
+    margin-left: 0px;
+  }
+  .content-log .login-vente .wrapper-input-btn .btn-block {
+    margin-left: 0;
+  }
+  .content-log .login-vente #account-login, .content-log .login-vente #account-password {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .content-log .sign-up {
+    padding: 30px 0 50px 0;
   }
 }
 @media (max-width: 650px) {
