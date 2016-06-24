@@ -28,7 +28,7 @@
                         </li><li>
                             <a href='#'>Mes informations</a>
                         </li><li>
-                            <a href='#'>Accompagnement <span class='notif'>nouveau</span></a>
+                            <a href='#'>Accompagnement <span class='notif notif-nav'>nouveau</span></a>
                         </li><li class='active'>
                             <span>Alertes</span>
                         </li><li>
@@ -48,7 +48,7 @@
                         <div class='alerts-block'>
                             <div class='alerts-header'>
                                 <time datetime='2014-10-12'>12/10/2014</time>
-                                <h3 class='title-grey'>Boulangerie / Patisserie / Salon de thé<span class='notif'>3</span></h3>
+                                <h3 class='title-grey h3'>Boulangerie / Patisserie / Salon de thé<span class='notif'>3</span></h3>
                                 <span class='alerts-place'>Loire Atlantique, max 400 000 €</span>
                             </div>
                             <div class='alerts-block-btn'>
@@ -88,7 +88,7 @@
                         <div class='alerts-block'>
                             <div class='alerts-header'>
                                 <time datetime='2014-10-12'>12/10/2014</time>
-                                <h3 class='title-grey'>Bar / Tabac / PMU<span class='notif'>2</span></h3>
+                                <h3 class='title-grey h3'>Bar / Tabac / PMU<span class='notif'>2</span></h3>
                                 <span class='alerts-place'>Loire Atlantique et voisins, entre 300 000 et 900 000 €</span>
                             </div>
                             <div class='alerts-block-btn'>

@@ -1,0 +1,86 @@
+/* page achat detail */
+
+.container-xsmall{
+    .table{
+        display: table;
+        .content-tabs-detail{
+            display: table-cell;
+            vertical-align: top;
+            width: 555px;
+            font-size: 0.87em;
+            
+            em{
+                color: #7a7a7a;
+            }
+
+            &:nth-child(2){
+                width: 310px;
+                padding-left: 30px;
+                &:after{
+                    clear: both;
+                }
+                p{
+                    margin: 0;
+                }
+                .field-content-detail{
+                    padding: 40px;
+                }
+                .big-price{
+                    border: none;
+                    background: none;
+                    font-family: $roboto-cd-bold;
+                    margin-bottom: 30px;
+                    padding: 0;
+                }
+                .content-footer{
+                    padding: 0;
+                    margin: 17px -60px -40px;
+                    p{
+                        padding: 27px 0;
+                    }
+                }
+            }
+            .field-content-detail{
+                border-top: 1px solid #dadada;
+                padding: 40px 66px 40px 56px;
+                h3 {
+                    padding-top: 10px;
+                }
+                ul{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+.field-content-detail{
+    padding: 40px 60px;
+    border: 1px solid #dadada;
+    border-top: 0;
+    overflow: hidden;
+    box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+
+    ul{
+        li{
+            margin: 0;
+            &:before{
+                content: none;
+            }
+        }
+        
+    }
+    .content-footer{
+        padding: 30px 0;
+        margin: 30px -66px -40px;
+    }
+}
+.pub-right{
+    float: left;
+    width: 120px;
+    .pub{
+        margin-left: 35px;
+        width: 120px;
+        height: 600px;
+    }
+}

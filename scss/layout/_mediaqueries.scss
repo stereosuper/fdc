@@ -970,6 +970,22 @@
             padding: 0 10px 0 0;
         }
     }
+    .content-tabs-sale{
+        label, legend{
+            display: block;
+            margin-bottom: 10px;
+        }
+        input{
+            &[type=radio], &[type=checkbox]{
+                + label{
+                    display: inline-block;
+                }
+            }
+        }
+        .not-filled{
+            margin: -28px 14px 0;
+        }
+    }
 }
 
 @media (max-width: 767px){

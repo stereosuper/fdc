@@ -38,12 +38,12 @@
 
                 <div class='content-tabs content-tabs-sale'>
                     <ul class='nav-tabs nav-tabs-indicator'>
-                        <li class='active'>
-                            1<span>. Bienvenue</span>
-                        </li><li>
+                        <li >
                             <a href='#'>
-                                2<span>. Connexion</span>
+                            1<span>. Bienvenue</span>
                             </a>
+                        </li><li class='active'>
+                                2<span>. Connexion</span>
                         </li><li>
                             <a href='#'>
                                 3<span>. Mon annonce</span>
@@ -54,37 +54,32 @@
                             </a>
                         </li>
                     </ul>
-                    <div class='field-content'>
-                        <div class='wrapper-alignment'>
-                            <div class='content-align-top wrapper-depot-annonce'>
-                                <div class="tab-content-title">
-                                    Déposer une annonce
-                                </div>
-                                <p>
-                                    Vous souhaitez trouver rapidement un acquéreur pour votre bar brasserie ?<br>
-                                    Vous êtes au bon endroit !
-                                </p>
-                                <div class='wrapper-alignment wrapper-price-argu'>
-                                    <div class='content-align-middle content-price'>
-                                        <div class="big-price">
-                                            <span>40</span><sup>€ HT</sup>
-                                        </div>
+                    <div class='field-content content-log'>
+                        <div class='login-vente'>
+                            <h3 class='title-simple-med'> Déjà inscrit ? Connectez vous :</h3>
+                            <form action='#' method='post'>
+                                <fieldset class='required no-asterisk'>
+                                    <label for='account-login' class='block'>Identifiant</label>
+                                    <input type='text' name='account-login' id='account-login' required>
+                                </fieldset>
+                                <fieldset class='required no-asterisk'>
+                                    <label for='account-password' class='block'>Mot de passe</label>
+                                    <input type='password' name='account-password' id='account-password' required>
+                                    <div class='center-align info-form'>
+                                        <a href='#' class='btn-simple'>Mot de passe oublié&nbsp;?</a>
                                     </div>
-                                    <div class='content-align-middle'>
-                                        <ul>
-                                            <li>Diffusion pendant <strong>6 mois</strong></li>
-                                            <li><strong>Modifiez votre annonce</strong> quand vous le souhaitez</li>
-                                            <li>Profitez de <strong>statistiques</strong> de consultation</li>
-                                        </ul>
+                                    <div class='wrapper-input-btn'>
+                                        <button type='submit' class='btn-block medium'></span><span class='txt-btn'>Se connecter</span></button>
                                     </div>
-                                </div>
-                                <a href="#" class="btn-block btn-orange-light huge right"><span class="border"></span><span class="txt-btn">Déposer mon annonce</span></a>
-                            </div>
-                            <div class='content-align-top wrapper-pub-pack'>
-                                <a href='#' class='pub-pack'>
-                                    <span class='small-txt'>Plusieurs affaires à vendre&nbsp;?</span>
-                                    <span class='big-txt'>Découvrez nos packs d'annonces<span class='icon-arrow'></span></span>
-                                </a>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class='sign-up'>
+                            <h3 class='title-simple-med'>Pas encore inscrit ?</h3>
+                            <p>Prix, alerte personnalisées, publication d’annonces... Chaque entrepreneur trouve son compte au Forum des Commerces !<br/><b>Rapide et gratuit, pas de spams.</b>
+                            </p>
+                            <div class='wrapper-input-btn'>
+                                <button type='submit' class='btn-block medium'></span><span class='txt-btn'>Créer un compte</span></button>
                             </div>
                         </div>
                     </div>

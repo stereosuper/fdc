@@ -196,3 +196,70 @@
 		letter-spacing: -0.5px;
 	}
 }
+
+/* connexion vente */ 
+.content-log {
+    padding: 50px 70px 90px 70px;
+    display: table;
+    width: 100%;
+    .login-vente {
+    	height: 315px;
+    	max-width: 50%;
+    	display: table-cell;
+    	border-right: 1px dashed #000;
+    	h3{
+    		margin-bottom: 50px;
+    	}
+    	.info-form{
+    		display: inline-block;
+    		margin-left: 20px;
+    		.btn-simple{
+    			font-size: 0.75em;
+    		}
+    	}
+    	label{
+    		display: initial;
+    		font-size: 1em;
+    	}
+    	#account-login {
+    		margin-left: 53px;
+    	}
+    	#account-password {
+    		margin-left: 33px;
+    	}
+    	.wrapper-input-btn {
+    		input[type=password] {
+    			max-width: 140px;
+    		}
+    		.btn-block{
+    			right: auto;
+    			margin-top: 20px;
+    			margin-left: 128px;
+    			padding: 23px 34px;
+    		}
+    	}
+    }
+    .sign-up {
+    	display: table-cell;
+    	width: 420px;
+    	padding-left: 60px;
+    	h3{
+    		margin-bottom: 47px;
+    	}
+    	p {
+    		max-width: 315px;
+    		margin-bottom: 32px;
+    		line-height: 1.5;
+    	}
+    	.wrapper-input-btn {
+    		input[type=password] {
+    			max-width: 140px;
+    		}
+    		.btn-block{
+    			left: 0;
+    			padding: 23px 34px;
+    			margin-left: 0; 
+    		}
+    	}
+    }
+}

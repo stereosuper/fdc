@@ -28,7 +28,7 @@
                         </li><li>
                             <a href='#'>Mes informations</a>
                         </li><li>
-                            <a href='#'>Accompagnement <span class='notif'>nouveau</span></a>
+                            <a href='#'>Accompagnement <span class='notif notif-nav'>nouveau</span></a>
                         </li><li class='active'>
                             <span>Alertes</span>
                         </li><li>

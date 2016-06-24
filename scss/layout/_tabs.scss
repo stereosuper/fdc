@@ -35,11 +35,11 @@
                 background: #d63e37;
             }
         }
-        &.tab-right{
-            border-right: 0;
-            border-left: 1px solid $gris;
-            float: right;
-        }
+        // &.tab-right{
+        //     border-right: 0;
+        //     border-left: 1px solid $gris;
+        //     float: right;
+        // }
         &.tab-orange{
             .notif{
                 background: #f18832;
@@ -247,7 +247,7 @@
             padding: 0;
             max-width: 80%;
             position: relative;
-            vertical-align: top;
+            //vertical-align: top;
             margin: 0 2.6% 0 0;
             .notif{
                 right: -15px;
@@ -312,8 +312,18 @@
 }
 
 .content-tabs-sale{
-    .btn-block{
-        background: #ef6a2b;
+    .field-content{
+        padding: 50px 70px 90px 70px;
+        .tab-content-title{
+            padding-top: 0;
+            margin: 0 0 35px;
+            font-family: $roboto-cd-bold;
+            font-size: 2.5em;
+            line-height: 1em;
+        }
+        .btn-block{
+            background: #ef6a2b;
+        }
     }
 }
 .form-contact{
@@ -322,20 +332,19 @@
 
 /* tab buy home */
 .wrapper-choices{
-   .field-content{
-       .tab-content-title{
+    .field-content{
+        .tab-content-title{
             padding-top: 0;
-           margin: 0 0 35px;
-           font-family: $roboto-cd-bold;
-           font-size: 2.5em;
-           line-height: 1em;
-       }
-       &.searchform{
-            .form-half{
-                margin-top: 0;
+            margin: 0 0 35px;
+            font-family: $roboto-cd-bold;
+            font-size: 2.5em;
+            line-height: 1em;
+            &.searchform{
+                .form-half{
+                    margin-top: 0;
+                }
             }
-       }
-   }
+        }
+    }
 }
 
-  

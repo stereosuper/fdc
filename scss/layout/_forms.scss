@@ -244,6 +244,18 @@ input, textarea{
 }
 
 input{
+    &.small{
+        max-width: 160px;
+    }
+    &.x-small{
+        max-width: 110px;
+    }
+    &.super-big{
+        max-width: 490px;
+    }
+    &.med{
+        max-width: 180px;
+    }
 	&[type=text], &[type=email], &[type=tel], &[type=password], &[type=number]{
 		@extend %input;
 
@@ -731,4 +743,67 @@ button{
 
 .gutter-left{
     padding-left: $gutter;
+}
+
+/* form log vente */ 
+
+.content-tabs-sale {
+    .content-sale-log {
+        padding: 20px 60px 50px;
+        overflow: hidden;
+        background: #fff;
+        .btn-arrow {
+            vertical-align: top;
+        }
+    }
+}
+.sale-form {
+    fieldset{
+        .block-right{
+            margin-top: 35px;
+        }
+        .block-pwd{
+            margin-top: 18px;
+        }
+        input{
+            &.bigger{
+                max-width: 400px;
+            }
+        }
+    }
+    .btn-block {
+        background: #ef6a2b;
+    }
+}
+
+/* form annonce vente */
+
+.sale-announce-form {
+    .select{
+        width: 250px;
+    }
+    
+    fieldset{
+        select{
+            max-width: 250px;
+        }
+        textarea{
+            resize: none;
+            max-width: 595px;
+            height: 170px;
+        }
+    }
+    .btn-block {
+        background: #ef6a2b;
+        margin: 23px 0 20px 195px;
+    }
+    .orange-txt{
+        font-family: $roboto-cd-bold;
+        color: #ee5f20;
+    }
+    .border{
+        border: 1px solid #ef6a2b;
+        margin: 0 5px;
+        padding: 1px 2px;
+    }
 }
