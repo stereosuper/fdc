@@ -1529,6 +1529,34 @@
             width: 100%;
         }
     }
+
+    .field-content{
+        .wrapper-alignment{
+            &.wrapper-search{
+                display: block;
+            }
+        }
+        .content-align-middle{
+            &.wrapper-search-title{
+                display: block;
+                width: 100%;
+                margin: 0 0 5px 0;
+            }
+            &.wrapper-search-txt{
+                display: block;
+                width: 100%;
+            }
+            &.wrapper-create-alert{
+                display: block;
+                width: 100%;
+                margin: 5px 0 0 0;
+                padding: 0;
+                &.right-align{
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 650px){

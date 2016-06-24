@@ -43,10 +43,18 @@
                         <div class='rect'></div>
                     </header>
                     <div class='field-content'>
-                        <span>Votre recherche :</span>
-                        <h2 class='title-grey-small'>Loire-Atlantique et départements voisins, max 400&nbsp;000&nbsp;€</h2>
-                        <a href='#' class='btn-arrow-back small'>Modifier</a>
-                        <a href='#' class='btn-alert small right'>Créer une alerte</a>
+                        <div class='wrapper-alignment wrapper-search'>
+                            <div class='content-align-middle wrapper-search-title'>
+                                <span>Votre recherche :</span>
+                            </div>
+                            <div class='content-align-middle wrapper-search-txt'>
+                                <h2 class='title-grey-small'>Loire-Atlantique et départements voisins, max 400&nbsp;000&nbsp;€</h2>
+                                <a href='#' class='btn-arrow-back small'>Modifier</a>
+                            </div>
+                            <div class='content-align-middle right-align wrapper-create-alert'>
+                                <a href='#' class='btn-alert small'>Créer une alerte</a>
+                            </div>
+                        </div>
                         <ul class='search-list'>
                             <li class='pole-pos'>
                                 <a href='#'>

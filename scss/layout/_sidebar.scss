@@ -346,3 +346,9 @@
 		text-align: right;
 	}
 }
+
+.bg-sidebar{
+	&.no-transition{
+	    transition: none;
+	}
+}

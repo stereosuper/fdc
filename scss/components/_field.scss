@@ -128,6 +128,27 @@
 			float: right;
 			margin: 10px 0 0;
 		}
+		.content-align-middle{
+			&.wrapper-search-title{
+				width: 130px;
+			}
+			&.wrapper-search-txt{
+				h2{
+					line-height: 1.1em;
+				}
+				h2, a{
+					display: inline;
+					vertical-align: middle;
+				}
+				a{
+					top: 1px;
+				}
+			}
+			&.wrapper-create-alert{
+				width: 160px;
+				padding-left: 20px;
+			}
+		}
 	}
 }
 
