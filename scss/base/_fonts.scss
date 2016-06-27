@@ -120,7 +120,8 @@ $icons: (
     mail2: '\e90c',
     ding: '\e90f',
     flash: '\e910',
-    photo: '\e90c'
+    photo: '\e90c',
+    pointer: '\e914'
 );
 @each $name, $icon in $icons {
     .icon-#{$name}:before {
