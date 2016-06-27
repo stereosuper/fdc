@@ -733,6 +733,31 @@ button{
         margin: 0 0 0 15%;
     }
 }
+
+#map-canvas{
+    height: 200px;
+    width: calc(100% - 195px);
+    margin-left: 195px;
+    border: 1px solid $gris-bg;
+    outline: 1px solid $gris;
+ }
+.geolocalisation-container{
+    position: relative;
+    width: calc(100% - 195px);
+    display: inline-block;
+    input[type="text"]{
+        max-width: 100%;
+        padding-right: 34px;
+    }
+    i{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $gris;
+    }
+}
+
  /* form inscription */
 
  #message {

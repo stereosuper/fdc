@@ -60,7 +60,7 @@
                         </header>
 
                         <form action='#' method='post' id='formToEdit' class='sale-announce-form'>
-                            
+
                             <fieldset class='required btn-info'>
                                 <label for='titre'>
                                     Titre de l'annonce
@@ -189,7 +189,14 @@
                             <fieldset>
                                 <label for='geolocalisation'>
                                     Géolocalisation
-                                </label>
+                                </label><!-- inline
+                              --><div class="geolocalisation-container">
+                                    <input id="geolocalisation" class='search' type='text' placeholder='Rechercher une adresse...' />
+                                    <i class="icon-ding"></i>
+                                </div>
+                                <div id="map-canvas"></div>
+                                <input type="hidden" id="latitude" name="latitude" value="47.2155851">
+                                <input type="hidden" id="longitude" name="longitude" value="-1.5619139">
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='type'>
@@ -214,7 +221,7 @@
                                 <button class='btn-photo small'>séléctionner un fichier</button>
                             </fieldset>
                             <fieldset>
-                                <label for='geolocalisation'>
+                                <label for='ville'>
                                     Quintaux de farine planifiée
                                 </label></label><input type='text' name='ville' id='ville' class='big' >
                             </fieldset>

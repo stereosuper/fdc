@@ -216,7 +216,7 @@ $(function(){
 						choices.removeClass('choice-1-animating choice-2-animating choice-3-animating choice-4-animating choice-5-animating');
 					}, tpsAnimChoice);
 				}
-				//if(windowWidth<=1280){		
+				//if(windowWidth<=1280){
 				if(windowWidth<=1150){
 					var liParent = $(this).closest('li');
 					$('.zone-content', liParent).slideToggle(300);
@@ -520,5 +520,90 @@ $(function(){
 	$(window).load(function(){
 		newsHeight();
 	});
+
+	// Google map
+	if(typeof google !== typeof undefined) {
+		var $latitudeInput = $('#latitude');
+		var $longitudeInput = $('#longitude');
+		// Init geocoder
+		var geocoder = new google.maps.Geocoder();
+		// Init map
+		var initLatLng = new google.maps.LatLng(47.2155851, -1.5619139);
+		var mapOptions = {
+			zoom: 12,
+			center: initLatLng,
+		};
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		// Create a marker and set its position.
+		var marker;
+		// Google autocomplete
+		var input = (document.getElementById('geolocalisation'));
+		// Create the autocomplete helper, and associate it with
+		// an HTML text input box.
+		var autocomplete = new google.maps.places.Autocomplete(input);
+		autocomplete.bindTo('bounds', map);
+		// Get the full place details when the user selects a place from the
+		// list of suggestions.
+		google.maps.event.addListener(autocomplete, 'place_changed', function() {
+			var place = autocomplete.getPlace();
+			if (!place.geometry) {
+				return;
+			}
+			var latitude = place.geometry.location.lat();
+			var longitude = place.geometry.location.lng();
+			var markerLatLng = new google.maps.LatLng(latitude, longitude);
+			$latitudeInput.val(latitude);
+			$longitudeInput.val(longitude);
+			createMarker(markerLatLng);
+			map.setCenter(markerLatLng);
+		});
+		google.maps.event.addListener(map, 'click', function(event) {
+			var latitude = event.latLng.lat();
+			var longitude = event.latLng.lng();
+			var latLng = new google.maps.LatLng(latitude, longitude);
+			$latitudeInput.val(latitude);
+			$longitudeInput.val(longitude);
+			createMarker(latLng);
+			sync(latLng);
+		});
+		function createMarker(latLng) {
+			// Removes the markers from the map
+			if(typeof marker !== typeof undefined) {
+				marker.setMap(null);
+			}
+			// Create a marker and set its position.
+			marker = new google.maps.Marker({
+				map: map,
+				position: latLng,
+				draggable:true,
+				raiseOnDrag: 	true
+			});
+			marker.addListener('dragend',function(event) {
+				var newLatitude = event.latLng.lat();
+				var newLongitude = event.latLng.lng();
+				var newLatLng = new google.maps.LatLng(newLatitude, newLongitude);
+				$latitudeInput.val(newLatitude);
+				$longitudeInput.val(newLongitude);
+				sync(newLatLng);
+			});
+		}
+		// Sync marker with map
+		function sync(latLng) {
+			geocoder.geocode({ 'latLng' : latLng }, function( results, status ){
+				// validate
+				if( status != google.maps.GeocoderStatus.OK ) {
+					console.log('Geocoder failed due to: ' + status);
+					return;
+				} else if( !results[0] ) {
+					console.log('No results found');
+					return;
+				}
+				// get location
+				var location = results[0];
+				// update input
+				$('#geolocalisation').val(location.formatted_address);
+			});
+		}
+	}
 
 });
