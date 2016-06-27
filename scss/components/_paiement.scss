@@ -1,0 +1,116 @@
+/* tab paiement vente */
+
+.content-sale-paiement{
+    .orange-txt{
+        font-size: 0.59em;
+        vertical-align: middle;
+    }
+    .border{
+        background: #FFF;
+        padding: 0 4px;
+    }
+    .paiement-block{
+        position: relative;
+        margin: 10px 0 4.3em;
+        clear: both;
+        .paiement-list{
+            line-height: 1.5;
+            li{
+                &:before{
+                    content: none;
+                }
+                border: 2px #FFF solid;
+                margin: 0;
+                .recap{
+                    background: #f5f5f6;
+                    padding: 25px 240px 25px 30px;
+                    position: relative;
+                    .title-simple{
+                        font-size: 1.5em;
+                    }
+                    
+                    .right{
+                        height: 27px;
+                        position: absolute;
+                        right: 20px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        font-size: 1.25em;
+                    }
+                    .btn-cancel{
+                        font-size: 0.7em;
+                        margin-left: 10px;
+                        vertical-align: baseline;
+                    }
+                }
+            }
+        }
+        .total{
+            position: relative;
+            margin: -20px 0 0 480px;
+            li{
+
+                &:before{
+                    content: none;
+                }
+            }
+            .recap{
+                padding: 20px 0;
+                position: relative;
+            }
+            .right{
+                height: 27px;
+                position: absolute;
+                right: 20px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+    .p{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        font-size: 1em;
+    }
+    .paiement-block{
+        
+        .border-top{
+            border-top: 1px #000 solid;
+        }
+    }
+
+    .paiement-option{
+       .checked {
+           border: 2px #ee5f20 solid;
+           border-radius: 5px;
+       }
+       .unchecked{
+        border: 2px #dadada solid;
+        border-radius: 5px;
+       }
+       .option {
+           width: 48%;
+           display: inline-block;
+           margin: 0 10px;
+           padding: 20px 10px;
+           &.left{
+               margin-left: 0;
+            }
+           &.right{
+               margin-right: 0;
+            }
+        } 
+    }
+    fieldset{
+        margin: 35px 0;
+    }
+}
+
+
+

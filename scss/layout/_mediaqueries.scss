@@ -731,6 +731,15 @@
         top: 175px;
     }
 
+    #map-canvas{
+        height: 200px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .geolocalisation-container{
+        width: 100%;
+    }
+
     .searchform{
         .tab-content-title{
             width: 52%;
