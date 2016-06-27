@@ -1000,6 +1000,21 @@
             margin: 0;
         }
     }
+    .content-log{
+        .login-vente{
+            display: block;
+            width: 100%;
+            max-width: none;
+            border: none;
+            margin: 0 0 20px 0;
+            border-bottom: 1px dashed #000;
+        }
+        .sign-up{
+            display: block;
+            width: 100%;
+            padding: 0;
+        }
+    }
 }
 
 @media (max-width: 767px){
@@ -1571,6 +1586,28 @@
             }
         }
     }
+    .content-log {
+        .login-vente{
+            margin-bottom: 0;
+            padding: 0 0 440px 0;
+            .info-form{
+                margin-left: 0px;
+            }
+            .wrapper-input-btn{
+                .btn-block{
+                    margin-left: 0;
+                }
+            } 
+            #account-login, #account-password{
+                display: block;
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+        .sign-up{
+            padding: 30px 0 50px 0;
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -1675,6 +1712,7 @@
             }
         }
     }
+    
 }
 
 @media (max-width: 480px){
