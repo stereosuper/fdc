@@ -46,8 +46,10 @@
                 <div class='dashboard-block orange'>
                     <div>
                         <div class='dashboard-title'>
-                            <h2><span>2</span> ventes</h2>
-                            <a href='#' class='btn-arrow small'>Voir</a>
+                            <div class='wrapper-alignment'>
+                                <div class='content-align-middle'><h2><span>2</span> ventes</h2>
+                                <a href='#' class='btn-arrow small'>Voir</a></div>
+                            </div>
                         </div><ul class='alerts-list'>
                             <li>
                                 <a href='#'>
@@ -70,8 +72,12 @@
                 </div><div class='dashboard-block'>
                     <div>
                         <div class='dashboard-title'>
-                            <h2><span>3</span> sélections</h2>
-                            <a href='#' class='btn-arrow small'>Voir</a>
+                            <div class='wrapper-alignment'>
+                                <div class='content-align-middle'>
+                                    <h2><span>3</span> sélections</h2>
+                                    <a href='#' class='btn-arrow small'>Voir</a>
+                                </div>
+                            </div>
                         </div><ul class='alerts-list'>
                             <li>
                                 <a href='#'>
@@ -102,8 +108,12 @@
                 </div><div class='dashboard-block'>
                     <div>
                         <div class='dashboard-title'>
-                            <h2><span>5</span> alertes</h2>
-                            <a href='#' class='btn-arrow small'>Voir</a>
+                            <div class='wrapper-alignment'>
+                                <div class='content-align-middle'>
+                                    <h2><span>5</span> alertes</h2>
+                                    <a href='#' class='btn-arrow small'>Voir</a>
+                                </div>
+                            </div>
                         </div><ul class='alerts-list has-num'>
                             <li>
                                 <a href='#'>
