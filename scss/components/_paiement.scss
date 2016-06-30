@@ -112,7 +112,9 @@
     }
     .grey{
         position: relative;
-        text-align: right;
+        span{
+            text-align: right;
+        }
         .btn-align-right{
             vertical-align: middle;
             float: none;

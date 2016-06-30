@@ -65,14 +65,14 @@
                                 <div class='recap'>
                                     <strong class='title-simple'>Pack de 1 crédit</strong>
                                     <span class='btn-plus small btn-blue txt-middle'>Pack de 5 crédits - 40&nbsp;€</span><span class='btn-plus small btn-blue txt-middle'>Pack de 10 crédits - 150&nbsp;€</span>
-                                    <span class='p'>Prix par annonce : 20€ HT  •  Crédits utilisables sans limite de durée</span>
+                                    <p>Prix par annonce : 20€ HT  •  Crédits utilisables sans limite de durée</p>
                                     <span class='right alerts-price'>100 €</span>
                                 </div>
                             </li>
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Publication d'une annonce</strong>
-                                        <span class='p'>Boulangerie - Pâtisserie - Salon de thé  •  6 mois  •  modifications illimités</span>
+                                        <p>Boulangerie - Pâtisserie - Salon de thé  •  6 mois  •  modifications illimités</p>
                                         <span class='right alerts-price'>1 crédit</span>
                                     </div>
                                 </li>
@@ -80,7 +80,7 @@
                                     <div class='recap'>
                                         <strong class='title-simple'>Option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
                                         <span class='btn-cancel btn-blue txt-middle'>désactiver</span>
-                                        <span class='p'>Votre annonce apparaîtra en tête des résultats de recherche</span>
+                                        <p>Votre annonce apparaîtra en tête des résultats de recherche</p>
                                         <span class='right alerts-price'>1 crédit</span>
                                     </div>
                                 </li>
@@ -104,32 +104,35 @@
                         </div>
                         
                         <div class='paiement-option'>
-                            <div class='option option-left check'>
-                                <div class='paiement-txt'>
-                                    <input type="checkbox" id="checkbox" />
-                                    <label class='title-simple'>Paiement par carte bancaire</label>
-                                    <label class='p'>Sécurisé via le Crédit Mutuel</label>
-                                    <span class='icon-cb'></span>
+                            <div class='option option-left'>
+                                <div class='paiement-type'>
+                                    <input type='radio' name='paiement-type' value='cb' class='invisible' id='radio-cb' checked>
+                                    <label class='title-simple' for='radio-cb'>
+                                        <span class='visu-type icon-cb'></span>
+                                        <strong>Paiement par carte bancaire</strong>
+                                        Sécurisé via le Crédit Mutuel
+                                    </label>
                                 </div>
-                            </div>
-                            <div class='option option-right unchecked'>
-                                <div class='paiement-txt'>
-                                    <input type="checkbox" id="checkbox" />
-                                    <label class='title-simple'>Paiement par chèque</label>
-                                    <label class='p'>Commande validé à la récéption</label>
-                                    <span class='icon-chq'></span>
+                            </div><!--
+                            --><div class='option option-right'>
+                                <div class='paiement-type'>
+                                    <input type='radio' name='paiement-type' value='cheque' class='invisible' id='radio-cheque'>
+                                    <label class='title-simple' for='radio-cheque'>
+                                        <span class='visu-type icon-chq'></span>
+                                        <strong>Paiement par chèque</strong>
+                                        Commande validé à la récéption
+                                    </label>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <fieldset>
-                                <input type='checkbox' name='cgv' id='cgv' value='1' checked><label for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a>conditions générales de vente</a></label>
-
+                            <fieldset class='footer'>
+                                <input type='checkbox' name='cgv' id='cgv' value='1'><label class='medium' for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a href='#' class='btn-underlined'>conditions générales de vente</a></label>
                             </fieldset>
                         </div>
-                        <div class='grey'>
+                        <div class='grey right-align'>
                             <span>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</span>
-                            <button type='submit' class='btn-block huge btn-align-right'>Valider</button>
+                            <button type='submit' class='btn-block btn-orange-light huge btn-align-right'><span class='border'></span><span class='txt-btn'>Payer</span></button>
                         </div>
                     </div>
                 </div>
