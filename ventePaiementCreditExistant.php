@@ -27,7 +27,7 @@
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
                                 <h6><a property='item' typeof='WebPage' href='./'>
-                         @           <span property='name'>Accueil</span>
+                                   <span property='name'>Accueil</span>
                                 </a></h6>
                             </li>
                         </ul>
@@ -61,8 +61,8 @@
 
                         <div class='paiement-block'>
                             <div class='credit'>
-                                <span>Vous disposer de <span class='big-txt'>4 crédits</span> sur votre comtpe.</span>
-                                <span class='btn-arrow small btn-blue'>Acheter des crédits</span>
+                                <p>Vous disposer de <span class='big-txt'>4 crédits</span> sur votre comtpe.</p>
+                                <a href='#' class='btn-arrow small'>Acheter des crédits</a>
                             </div>
                             <ul class='paiement-list'>
                                 <li>
@@ -75,7 +75,7 @@
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple grey'>Option <span class='orange-txt uppercase has-border grey-border '><span class='icon-flash grey'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
-                                        <span class='btn-arrow small btn-blue txt-middle'>Activer - 1 crédit</span>
+                                        <a href='#' class='btn-arrow small txt-middle'>Activer - 1 crédit</a>
                                         <p class='grey'>Cette option fait apparaitre votre annonce en tête des résultats de recherche</p>
                                         <span class='right alerts-price'>0 crédit</span>
                                     </div>
@@ -98,8 +98,8 @@
                                 <input type='checkbox' name='cgv' id='cgv' value='1'><label class='medium' for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a href='#' class='btn-underlined'>conditions générales de vente</a></label>
                             </fieldset>
                         </div>
-                        <div class='grey right-align'>
-                            <span>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</span>
+                        <div class='grey right-align wrapper-pay'>
+                            <p>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</p>
                             <button type='submit' class='btn-block btn-orange-light huge btn-align-right'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </div>
                     </div>
