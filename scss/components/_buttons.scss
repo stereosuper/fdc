@@ -123,15 +123,32 @@
 
 .btn-delete{
 	@extend %btn-arrow-base;
-
+	width: 12px;
+	height: 24px;
+	position: relative;
+	&:before, &:after{
+		text-indent: 0;
+		position: absolute;
+	}
+	&:before{
+		@extend %btn-before;
+		margin: 0;
+		content: '\e90b'; //trash-cover
+		top: 5px;
+		left: 0;
+		font-size: 3px;
+		transform-origin: 100% 0%;
+	}
 	&:after{
 		@extend %btn-after;
-
-		content: '\e90b'; //trash-cover
+		content: '\e909';
+		top: 8px;
+		left: 1px;
+		font-size: 11.5px;
 	}
 	&:hover, &:focus{
-		&:after{
-			transform: translate3d(0, 0, 0) scale(0.95);
+		&:before{
+			transform: translate3d(1px, -3px, 0) rotate(10deg);
 		}
 	}
 	&.btn-no-text{
