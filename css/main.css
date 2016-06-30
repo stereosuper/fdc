@@ -3097,7 +3097,7 @@ button {
 
 .btn-delete {
   width: 12px;
-  height: 14px;
+  height: 24px;
   position: relative; }
   .btn-delete:before, .btn-delete:after {
     text-indent: 0;
@@ -3105,15 +3105,20 @@ button {
   .btn-delete:before {
     margin: 0;
     content: '\e90b';
-    top: 0;
-    left: 0; }
+    top: 5px;
+    left: 0;
+    font-size: 3px;
+    -webkit-transform-origin: 100% 0%;
+        -ms-transform-origin: 100% 0%;
+            transform-origin: 100% 0%; }
   .btn-delete:after {
     content: '\e909';
-    top: 3px;
-    left: 0; }
-  .btn-delete:hover:after, .btn-delete:focus:after {
-    -webkit-transform: translate3d(0, 0, 0) scale(0.95);
-            transform: translate3d(0, 0, 0) scale(0.95); }
+    top: 8px;
+    left: 1px;
+    font-size: 11.5px; }
+  .btn-delete:hover:before, .btn-delete:focus:before {
+    -webkit-transform: translate3d(1px, -3px, 0) rotate(10deg);
+            transform: translate3d(1px, -3px, 0) rotate(10deg); }
   .btn-delete.btn-no-text {
     width: 15px; }
 
