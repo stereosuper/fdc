@@ -84,15 +84,24 @@ $(function(){
 		departments.on('click', function(e){
 			departments.attr('class', 'department');
 			$(this).attr('class', 'department active');
-			select.val($(this).attr('data-department'));
+
+			var departmentCode = $(this).attr('data-department');
+			var $option = select.find("option[data-value='" + departmentCode + "']");
+
+			select.val($option.val());
 			lightAdjacentsOn(checkbox);
 		});
 
-		select.on('change', function(e){
-			departments.attr('class', 'department');
-			if(mapContainer.find('[data-department="'+select.val()+'"]').length){
-				mapContainer.find('[data-department="'+select.val()+'"]').attr('class', 'department active');
-			}else if(select.val() === '92' || select.val() === '93' || select.val() === '94'){
+		select.on('change', function (e) {
+		    departments.attr('class', 'department');
+
+		    var departmentCode = select.find(":selected").data("value");
+		    var $mapDepartment = mapContainer.find('[data-department="' + departmentCode + '"]');
+
+		    if ($mapDepartment.length) {
+		        $mapDepartment.attr('class', 'department active');
+
+		    } else if (departmentCode == '92' || departmentCode == '93' || departmentCode == '94') {
 				// ces départements sont ceux de l'ile de france et sont inclus
 				// dans le département 75 dans la carte
 				mapContainer.find('[data-department="75"]').attr('class', 'department active').siblings().attr('class', 'department');
@@ -216,7 +225,6 @@ $(function(){
 						choices.removeClass('choice-1-animating choice-2-animating choice-3-animating choice-4-animating choice-5-animating');
 					}, tpsAnimChoice);
 				}
-				//if(windowWidth<=1280){
 				if(windowWidth<=1150){
 					var liParent = $(this).closest('li');
 					$('.zone-content', liParent).slideToggle(300);
