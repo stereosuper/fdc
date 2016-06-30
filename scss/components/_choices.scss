@@ -54,8 +54,11 @@ $tps-choice-etape-2: 0.3s;
 		}
 	}
 	> li{
-		display: inline-block;
-		vertical-align: top;
+		/*display: inline-block;
+		vertical-align: top;*/
+		display: table;
+		table-layout: fixed;
+
 		position: absolute;
 		top: 0;
 		width: 100%;
@@ -450,7 +453,9 @@ $tps-choice-etape-2: 0.3s;
 		}
 	}
 	.zone-btn{
-		display: inline-block;
+		//display: inline-block;
+		display: table-cell;
+
 		vertical-align: top;
 		width: 20%;
 		height: 100%;
@@ -479,7 +484,9 @@ $tps-choice-etape-2: 0.3s;
 		}
 	}
 	.zone-content{
-		display: inline-block;
+		//display: inline-block;
+		display: table-cell;
+		
 		vertical-align: top;
 		width: 80%;
 		height: 100%;
