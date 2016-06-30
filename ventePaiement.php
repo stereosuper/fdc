@@ -64,7 +64,7 @@
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Publication d'une annonce</strong>
-                                        <span class='p'>Boulangerie - Pâtisserie - Salon de thé  •  6 mois  •  modifications illimités</span>
+                                        <p>Boulangerie - Pâtisserie - Salon de thé  •  6 mois  •  modifications illimités</p>
                                         <span class='right alerts-price'>40 €</span>
                                     </div>
                                 </li>
@@ -72,7 +72,7 @@
                                     <div class='recap'>
                                         <strong class='title-simple'>Option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
                                         <span class='btn-cancel'>désactiver</span>
-                                        <span class='p'>Votre annonce apparaîtra en tête des résultats de recherche</span>
+                                        <p>Votre annonce apparaîtra en tête des résultats de recherche</p>
                                         <span class='right alerts-price'>40 €</span>
                                     </div>
                                 </li>
@@ -118,8 +118,8 @@
                             </div>
                         </div>
                         <div>
-                            <fieldset>
-                                <input type='checkbox' name='cgv' id='cgv' value='1'><label for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a>conditions générales de vente</a></label>
+                            <fieldset class='footer'>
+                                <input type='checkbox' name='cgv' id='cgv' value='1'><label class='medium' for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a href='#' class='btn-underlined'>conditions générales de vente</a></label>
 
                             </fieldset>
                         </div>

@@ -34,6 +34,9 @@
 
 fieldset{
 	margin: 0 0 17px;
+    &.footer{
+        margin: 35px 18px;
+    }
     &.inline-b{
         vertical-align: baseline;
     }
@@ -154,6 +157,9 @@ legend, label{
     font-size: 0.88em;
     line-height: 1.5;
     letter-spacing: -0.02em;
+    &.medium{
+        font-size: 1em;
+    }
     &.block{
         display: block;
         margin: 0 0 6px 0;
@@ -319,6 +325,7 @@ input{
             + label{
                 position: relative;
                 padding-left: 60px;
+                padding-right: 110px;
                 margin: 0;
                 border: 2px #dadada solid;
                 border-radius: 5px;
@@ -926,4 +933,5 @@ button{
     border: 1px solid #ef6a2b;
     margin: 0 5px;
     padding: 1px 2px;
+    background-color: #fff;
 }
