@@ -123,11 +123,25 @@
 
 .btn-delete{
 	@extend %btn-arrow-base;
-
+	width: 12px;
+	height: 14px;
+	position: relative;
+	&:before, &:after{
+		text-indent: 0;
+		position: absolute;
+	}
+	&:before{
+		@extend %btn-before;
+		margin: 0;
+		content: '\e90b'; //trash-cover
+		top: 0;
+		left: 0;
+	}
 	&:after{
 		@extend %btn-after;
-
-		content: '\e90b'; //trash-cover
+		content: '\e909';
+		top: 3px;
+		left: 0;
 	}
 	&:hover, &:focus{
 		&:after{

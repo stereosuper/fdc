@@ -791,7 +791,7 @@ a, button {
     -webkit-transform: translate3d(-5px, 0, 0) rotate(180deg);
             transform: translate3d(-5px, 0, 0) rotate(180deg); }
 
-.btn-cancel:before, .btn-alert:before {
+.btn-cancel:before, .btn-alert:before, .btn-delete:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -3095,13 +3095,27 @@ button {
   -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
           transform: translate3d(0, 0, 0) rotate(20deg); }
 
-.btn-delete:after {
-  content: '\e90b'; }
-.btn-delete:hover:after, .btn-delete:focus:after {
-  -webkit-transform: translate3d(0, 0, 0) scale(0.95);
-          transform: translate3d(0, 0, 0) scale(0.95); }
-.btn-delete.btn-no-text {
-  width: 15px; }
+.btn-delete {
+  width: 12px;
+  height: 14px;
+  position: relative; }
+  .btn-delete:before, .btn-delete:after {
+    text-indent: 0;
+    position: absolute; }
+  .btn-delete:before {
+    margin: 0;
+    content: '\e90b';
+    top: 0;
+    left: 0; }
+  .btn-delete:after {
+    content: '\e909';
+    top: 3px;
+    left: 0; }
+  .btn-delete:hover:after, .btn-delete:focus:after {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.95);
+            transform: translate3d(0, 0, 0) scale(0.95); }
+  .btn-delete.btn-no-text {
+    width: 15px; }
 
 /*.btn-mail{
 	@extend %btn-arrow-base;
