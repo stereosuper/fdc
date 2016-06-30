@@ -78,7 +78,7 @@
                                 </li>
                                 <li>
                                     <div class='recap'>
-                                        <strong class='title-simple'>Option <span class='orange-txt uppercase border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
+                                        <strong class='title-simple'>Option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
                                         <span class='btn-cancel btn-blue txt-middle'>désactiver</span>
                                         <span class='p'>Votre annonce apparaîtra en tête des résultats de recherche</span>
                                         <span class='right alerts-price'>1 crédit</span>

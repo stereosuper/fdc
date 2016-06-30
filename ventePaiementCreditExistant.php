@@ -74,7 +74,7 @@
                                 </li>
                                 <li>
                                     <div class='recap'>
-                                        <strong class='title-simple grey'>Option <span class='orange-txt uppercase border grey-border '><span class='icon-flash grey'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
+                                        <strong class='title-simple grey'>Option <span class='orange-txt uppercase has-border grey-border '><span class='icon-flash grey'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
                                         <span class='btn-arrow small btn-blue txt-middle'>Activer - 1 crédit</span>
                                         <span class='p grey'>Cette option fait apparaitre votre annonce en tête des résultats de recherche</span>
                                         <span class='right alerts-price'>0 crédit</span>

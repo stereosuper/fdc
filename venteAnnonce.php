@@ -291,7 +291,7 @@
                             <fieldset>
                                 <label for='urgent'>
                                     Annonce urgente ?
-                                </label><input type='checkbox' name='annonce-urgente' id='annonce-urgente' value='1' checked ><label for='annonce-urgente'>Souscrire à l'option <span class='orange-txt uppercase border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> pour un supplément de <span class='orange-txt'>40&nbsp;€&nbsp;HT</span></label>
+                                </label><input type='checkbox' name='annonce-urgente' id='annonce-urgente' value='1' checked ><label for='annonce-urgente'>Souscrire à l'option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> pour un supplément de <span class='orange-txt'>40&nbsp;€&nbsp;HT</span></label>
                             </fieldset>
 
                             <button type='submit' class='btn-block huge '>Valider et payer</button>

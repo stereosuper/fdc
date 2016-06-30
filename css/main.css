@@ -320,10 +320,10 @@ hr {
   content: ""; }
 
 .icon-cb:before {
-  content: ""; }
+  content: ""; }
 
 .icon-chq:before {
-  content: ""; }
+  content: ""; }
 
 .icon-plus2:before {
   content: ""; }
@@ -1332,25 +1332,11 @@ input[type=radio].invisible {
       right: 0;
       z-index: 1; }
       input[type=radio].invisible + label .visu-type.icon-cb:before {
-        /*position: absolute;
-        vertical-align: middle;
-        right: 20px;
-        bottom: 5px;
-        z-index: 2;
-        color: #FFF;
-        font-size: 2.5em;*/
         font-size: 23px;
-        margin: -11px 0 0 -17px; }
+        margin: -11px 0 0 -18px; }
       input[type=radio].invisible + label .visu-type.icon-chq:before {
-        /*position: absolute;
-        vertical-align: middle;
-        right: 11px;
-        top: -5px;
-        z-index: 2;
-        color: #FFF;
-        font-size: 3.5em;*/
         font-size: 26px;
-        margin: -13px 0 0 -26px; }
+        margin: -13px 0 0 -25px; }
       input[type=radio].invisible + label .visu-type:before {
         position: absolute;
         top: 50%;
@@ -1787,7 +1773,7 @@ button {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   color: #ee5f20; }
 
-.border {
+.has-border {
   border: 1px solid #ef6a2b;
   margin: 0 5px;
   padding: 1px 2px; }
@@ -5043,9 +5029,6 @@ button {
   .content-sale-paiement .orange-txt {
     font-size: 0.59em;
     vertical-align: middle; }
-  .content-sale-paiement .border {
-    background: #FFF;
-    padding: 0 4px; }
   .content-sale-paiement .paiement-block {
     position: relative;
     margin: 10px 0 4.3em;
@@ -5127,8 +5110,6 @@ button {
       font-size: 1em; }
       .content-sale-paiement fieldset label a {
         text-decoration: underline; }
-  .content-sale-paiement .btn-block {
-    background: #ee5f20; }
   .content-sale-paiement .grey {
     position: relative;
     text-align: right; }

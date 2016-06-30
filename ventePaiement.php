@@ -70,7 +70,7 @@
                                 </li>
                                 <li>
                                     <div class='recap'>
-                                        <strong class='title-simple'>Option <span class='orange-txt uppercase border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
+                                        <strong class='title-simple'>Option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
                                         <span class='btn-cancel'>désactiver</span>
                                         <span class='p'>Votre annonce apparaîtra en tête des résultats de recherche</span>
                                         <span class='right alerts-price'>40 €</span>
@@ -119,11 +119,11 @@
                         </div>
                         <div>
                             <fieldset>
-                                <input type='checkbox' name='cgv' id='cgv' value='1' checked><label for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a>conditions générales de vente</a></label>
+                                <input type='checkbox' name='cgv' id='cgv' value='1'><label for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a>conditions générales de vente</a></label>
 
                             </fieldset>
                         </div>
-                        <button type='submit' class='btn-block huge btn-align-right'>payer</button>
+                        <button type='submit' class='btn-block btn-orange-light huge btn-align-right'><span class='border'></span><span class='txt-btn'>Payer</span></button>
                     </div>
                 </div>
             </div>
