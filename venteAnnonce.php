@@ -192,7 +192,7 @@
                                 </label><!-- inline
                               --><div class="geolocalisation-container">
                                     <input id="geolocalisation" class='search' type='text' placeholder='Rechercher une adresse...' />
-                                    <i class="icon-ding"></i>
+                                    <i class="icon-pointer"></i>
                                 </div>
                                 <div id="map-canvas"></div>
                                 <input type="hidden" id="latitude" name="latitude" value="47.2155851">

@@ -61,19 +61,27 @@
 
                         <div class='paiement-block'>
                             <ul class='paiement-list'>
+                            <li>
+                                <div class='recap'>
+                                    <strong class='title-simple'>Pack de 1 crédit</strong>
+                                    <span class='btn-plus small btn-blue txt-middle'>Pack de 5 crédits - 40&nbsp;€</span><span class='btn-plus small btn-blue txt-middle'>Pack de 10 crédits - 150&nbsp;€</span>
+                                    <span class='p'>Prix par annonce : 20€ HT  •  Crédits utilisables sans limite de durée</span>
+                                    <span class='right alerts-price'>100 €</span>
+                                </div>
+                            </li>
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Publication d'une annonce</strong>
                                         <span class='p'>Boulangerie - Pâtisserie - Salon de thé  •  6 mois  •  modifications illimités</span>
-                                        <span class='right alerts-price'>40 €</span>
+                                        <span class='right alerts-price'>1 crédit</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Option <span class='orange-txt uppercase border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
-                                        <span class='btn-cancel'>désactiver</span>
+                                        <span class='btn-cancel btn-blue txt-middle'>désactiver</span>
                                         <span class='p'>Votre annonce apparaîtra en tête des résultats de recherche</span>
-                                        <span class='right alerts-price'>40 €</span>
+                                        <span class='right alerts-price'>1 crédit</span>
                                     </div>
                                 </li>
                             </ul>
@@ -82,13 +90,13 @@
                                     <li>
                                     <div class='recap'>
                                         <span>TVA</span>
-                                        <span class='right'>16 €</span>
+                                        <span class='right'>20 €</span>
                                     </div>
                                     </li>
                                     <li class='border-top'>
                                     <div class='recap'>
                                         <span class='big-txt'>Total TTC</span>
-                                        <span class='big-txt right alerts-price'>96 €</span>
+                                        <span class='big-txt right alerts-price'>120 €</span>
                                     </div>
                                     </li>
                                 </ul>
@@ -119,7 +127,10 @@
 
                             </fieldset>
                         </div>
-                        <button type='submit' class='btn-block huge btn-align-right'>payer</button>
+                        <div class='grey'>
+                            <span>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</span>
+                            <button type='submit' class='btn-block huge btn-align-right'>Valider</button>
+                        </div>
                     </div>
                 </div>
             </div>

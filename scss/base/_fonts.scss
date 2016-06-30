@@ -121,7 +121,11 @@ $icons: (
     ding: '\e90f',
     flash: '\e910',
     photo: '\e90c',
-    pointer: '\e914'
+    pointer: '\e914',
+    cb: '\e916',
+    chq: '\e915',
+    plus2: '\e918',
+    minus: '\e917'
 );
 @each $name, $icon in $icons {
     .icon-#{$name}:before {

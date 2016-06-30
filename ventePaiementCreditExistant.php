@@ -60,66 +60,49 @@
                         </header>
 
                         <div class='paiement-block'>
+                            <div class='credit'>
+                                <span>Vous disposer de <span class='big-txt'>4 crédits</span> sur votre comtpe.</span>
+                                <span class='btn-arrow small btn-blue'>Acheter des crédits</span>
+                            </div>
                             <ul class='paiement-list'>
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Publication d'une annonce</strong>
                                         <span class='p'>Boulangerie - Pâtisserie - Salon de thé  •  6 mois  •  modifications illimités</span>
-                                        <span class='right alerts-price'>40 €</span>
+                                        <span class='right alerts-price'>1 crédit</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class='recap'>
-                                        <strong class='title-simple'>Option <span class='orange-txt uppercase border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
-                                        <span class='btn-cancel'>désactiver</span>
-                                        <span class='p'>Votre annonce apparaîtra en tête des résultats de recherche</span>
-                                        <span class='right alerts-price'>40 €</span>
+                                        <strong class='title-simple grey'>Option <span class='orange-txt uppercase border grey-border '><span class='icon-flash grey'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
+                                        <span class='btn-arrow small btn-blue txt-middle'>Activer - 1 crédit</span>
+                                        <span class='p grey'>Cette option fait apparaitre votre annonce en tête des résultats de recherche</span>
+                                        <span class='right alerts-price'>0 crédit</span>
                                     </div>
                                 </li>
                             </ul>
                             <div class='total'>
                                 <ul>
-                                    <li>
-                                    <div class='recap'>
-                                        <span>TVA</span>
-                                        <span class='right'>16 €</span>
-                                    </div>
-                                    </li>
                                     <li class='border-top'>
                                     <div class='recap'>
-                                        <span class='big-txt'>Total TTC</span>
-                                        <span class='big-txt right alerts-price'>96 €</span>
+                                        <span class='big-txt'>Total</span>
+                                        <span class='big-txt right alerts-price'>1 crédit</span>
                                     </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         
-                        <div class='paiement-option'>
-                            <div class='option option-left check'>
-                                <div class='paiement-txt'>
-                                    <input type="checkbox" id="checkbox" />
-                                    <label class='title-simple'>Paiement par carte bancaire</label>
-                                    <label class='p'>Sécurisé via le Crédit Mutuel</label>
-                                    <span class='icon-cb'></span>
-                                </div>
-                            </div>
-                            <div class='option option-right unchecked'>
-                                <div class='paiement-txt'>
-                                    <input type="checkbox" id="checkbox" />
-                                    <label class='title-simple'>Paiement par chèque</label>
-                                    <label class='p'>Commande validé à la récéption</label>
-                                    <span class='icon-chq'></span>
-                                </div>
-                            </div>
-                        </div>
                         <div>
                             <fieldset>
                                 <input type='checkbox' name='cgv' id='cgv' value='1' checked><label for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a>conditions générales de vente</a></label>
 
                             </fieldset>
                         </div>
-                        <button type='submit' class='btn-block huge btn-align-right'>payer</button>
+                        <div class='grey'>
+                            <span>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</span>
+                            <button type='submit' class='btn-block huge btn-align-right'>Valider</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,5 +111,5 @@
         <?php include_once('includes/footer.html'); ?>
 
     </body>
-
+<
 </html>

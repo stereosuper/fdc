@@ -57,7 +57,7 @@
                     <div class='content-sale-log'>
                         <header class='tab-content-title'>
                             <h2 class='h1'>Vos informations </h2>
-                            <button class='btn-arrow small' >Déjà inscrit ?</button>
+                            <button class='btn-arrow small align-top' >Déjà inscrit ?</button>
                         </header>
                         <form action='#' method='post' id='formToEdit' class='sale-form'>
                             <fieldset class='required'>

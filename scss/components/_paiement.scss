@@ -1,6 +1,8 @@
 /* tab paiement vente */
 
 .content-sale-paiement{
+    position: relative;
+    padding-bottom: 60px;
     .orange-txt{
         font-size: 0.59em;
         vertical-align: middle;
@@ -15,6 +17,8 @@
         clear: both;
         .paiement-list{
             line-height: 1.5;
+            padding-left: 0;
+            margin-bottom: 0;
             li{
                 &:before{
                     content: none;
@@ -49,8 +53,13 @@
         .total{
             position: relative;
             margin: -20px 0 0 480px;
+            ul{
+                padding-left: 0;
+                margin-top: 20px;
+            }
+            
             li{
-
+                margin: 0;
                 &:before{
                     content: none;
                 }
@@ -79,13 +88,20 @@
         font-size: 1em;
     }
     .paiement-block{
-        
         .border-top{
             border-top: 1px #000 solid;
+        }
+        .credit{
+            margin: 40px 0 30px;
+            .big-txt{
+                padding: 0 5px;
+            }
         }
     }
 
     .paiement-option{
+        position: relative;
+        margin-bottom: 190px;
        .checked {
            border: 2px #ee5f20 solid;
            border-radius: 5px;
@@ -99,18 +115,124 @@
            display: inline-block;
            margin: 0 10px;
            padding: 20px 10px;
-           &.left{
-               margin-left: 0;
+           .paiement-txt{
+                padding-left: 30px;
+                position: relative;
+                max-width: 440px;
+           }
+           &.option-left{
+                margin-left: 0;
+                position: absolute;
+                max-width: 440px;
+               .icon-cb{
+                    &:before{
+                        position: absolute;
+                        vertical-align: middle;
+                        right: 20px;
+                        bottom: 5px;
+                        z-index: 2;
+                        color: #FFF;
+                        font-size: 2.5em;
+                    }
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50px;
+                    border: 2px #dadada solid;
+                    z-index: 1;
+                    margin-top: 15px;
+                    margin-left: 10px;
+                }
+                &:after{
+                   content: "";
+                   position: absolute;
+                   border-bottom-right-radius: 5px;
+                   border-top-right-radius: 5px;
+                   right: 0;
+                   bottom: 0;
+                   height: 90px;
+                   width: 100px;
+                   z-index: 1;
+                   background: #ee5f20; 
+                }
             }
-           &.right{
-               margin-right: 0;
+            &.option-right{
+                position: absolute;
+                max-width: 440px;
+                right: 0;
+                .icon-chq{
+                    &:before{
+                        position: absolute;
+                        vertical-align: middle;
+                        right: 11px;
+                        top: -5px;
+                        z-index: 2;
+                        color: #FFF;
+                        font-size: 3.5em;
+                    }
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50px;
+                    border: 2px #dadada solid;
+                    z-index: 1;
+                    margin-top: 15px;
+                    margin-left: 10px;
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    right: 0;
+                    bottom: 0;
+                    height: 90px;
+                    width: 100px;
+                    z-index: 1;
+                    background: #dadada;
+                }
             }
-        } 
+        }
+
     }
     fieldset{
         margin: 35px 0;
+        label{
+            font-size: 1em;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    .btn-block{
+        background: #ee5f20;
+    }
+    .grey{
+        position: relative;
+        text-align: right;
+        .btn-align-right{
+            vertical-align: middle;
+            float: none;
+            margin-left: 45px;
+        }
     }
 }
 
+.grey{
+    color: #9b9b9c;
+}
+.grey-border{
+    color: #9b9b9c;
+    border: 1px #9b9b9c solid;
+}
 
-
+.big-txt{
+    font-family: $roboto-bold;
+    font-size: 1.25em;
+}

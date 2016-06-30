@@ -1015,6 +1015,23 @@
             padding: 0;
         }
     }
+    .content-tabs-sale{
+        .field-content{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            .wrapper-alignment{
+                min-width: 795px;
+                .big-price{
+                    max-width: 100px;
+                }
+            }
+        }
+        .paiement-block{
+            .total{
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px){
