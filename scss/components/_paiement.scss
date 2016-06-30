@@ -65,7 +65,7 @@
                 }
             }
             .recap{
-                padding: 20px 0;
+                padding: 13px 100px 13px 20px;
                 position: relative;
             }
             .right{
@@ -101,105 +101,18 @@
 
     .paiement-option{
         position: relative;
-        margin-bottom: 190px;
-       .checked {
-           border: 2px #ee5f20 solid;
-           border-radius: 5px;
-       }
-       .unchecked{
-        border: 2px #dadada solid;
-        border-radius: 5px;
-       }
-       .option {
-           width: 48%;
+
+       .option{
+           width: 50%;
            display: inline-block;
-           margin: 0 10px;
-           padding: 20px 10px;
-           .paiement-txt{
-                padding-left: 30px;
-                position: relative;
-                max-width: 440px;
-           }
+           vertical-align: middle;
            &.option-left{
-                margin-left: 0;
-                position: absolute;
-                max-width: 440px;
-               .icon-cb{
-                    &:before{
-                        position: absolute;
-                        vertical-align: middle;
-                        right: 20px;
-                        bottom: 5px;
-                        z-index: 2;
-                        color: #FFF;
-                        font-size: 2.5em;
-                    }
-                }
-                &:before{
-                    content: "";
-                    position: absolute;
-                    height: 20px;
-                    width: 20px;
-                    border-radius: 50px;
-                    border: 2px #dadada solid;
-                    z-index: 1;
-                    margin-top: 15px;
-                    margin-left: 10px;
-                }
-                &:after{
-                   content: "";
-                   position: absolute;
-                   border-bottom-right-radius: 5px;
-                   border-top-right-radius: 5px;
-                   right: 0;
-                   bottom: 0;
-                   height: 90px;
-                   width: 100px;
-                   z-index: 1;
-                   background: #ee5f20; 
-                }
+                padding-right: 10px;
             }
             &.option-right{
-                position: absolute;
-                max-width: 440px;
-                right: 0;
-                .icon-chq{
-                    &:before{
-                        position: absolute;
-                        vertical-align: middle;
-                        right: 11px;
-                        top: -5px;
-                        z-index: 2;
-                        color: #FFF;
-                        font-size: 3.5em;
-                    }
-                }
-                &:before{
-                    content: "";
-                    position: absolute;
-                    height: 20px;
-                    width: 20px;
-                    border-radius: 50px;
-                    border: 2px #dadada solid;
-                    z-index: 1;
-                    margin-top: 15px;
-                    margin-left: 10px;
-                }
-                &:after{
-                    content: "";
-                    position: absolute;
-                    border-bottom-right-radius: 5px;
-                    border-top-right-radius: 5px;
-                    right: 0;
-                    bottom: 0;
-                    height: 90px;
-                    width: 100px;
-                    z-index: 1;
-                    background: #dadada;
-                }
+                padding-left: 10px;
             }
         }
-
     }
     fieldset{
         margin: 35px 0;

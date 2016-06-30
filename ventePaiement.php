@@ -96,20 +96,24 @@
                         </div>
                         
                         <div class='paiement-option'>
-                            <div class='option option-left check'>
-                                <div class='paiement-txt'>
-                                    <input type="checkbox" id="checkbox" />
-                                    <label class='title-simple'>Paiement par carte bancaire</label>
-                                    <label class='p'>Sécurisé via le Crédit Mutuel</label>
-                                    <span class='icon-cb'></span>
+                            <div class='option option-left'>
+                                <div class='paiement-type'>
+                                    <input type='radio' name='paiement-type' value='cb' class='invisible' id='radio-cb' checked>
+                                    <label class='title-simple' for='radio-cb'>
+                                        <span class='visu-type icon-cb'></span>
+                                        <strong>Paiement par carte bancaire</strong>
+                                        Sécurisé via le Crédit Mutuel
+                                    </label>
                                 </div>
-                            </div>
-                            <div class='option option-right unchecked'>
-                                <div class='paiement-txt'>
-                                    <input type="checkbox" id="checkbox" />
-                                    <label class='title-simple'>Paiement par chèque</label>
-                                    <label class='p'>Commande validé à la récéption</label>
-                                    <span class='icon-chq'></span>
+                            </div><!--
+                            --><div class='option option-right'>
+                                <div class='paiement-type'>
+                                    <input type='radio' name='paiement-type' value='cheque' class='invisible' id='radio-cheque'>
+                                    <label class='title-simple' for='radio-cheque'>
+                                        <span class='visu-type icon-chq'></span>
+                                        <strong>Paiement par chèque</strong>
+                                        Commande validé à la récéption
+                                    </label>
                                 </div>
                             </div>
                         </div>

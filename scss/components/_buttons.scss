@@ -375,34 +375,35 @@
 }
 
 .option {
-	border: 2px #ee5f20 solid;
-	background: #FFF;
-	width: 300px;
-	border-radius: 7px;
 	label {
 		display: block;
-		
 		cursor: pointer;
-		background-color: #FFF;
-		}
-		.title-simple{
-		    font-family: $roboto-cd-bold;
-		    letter-spacing: 0;
-		    &:before{
-		    	position: absolute;
-		    	left: -9999px;
-		    }
-		}
-		.p{
-			padding: 0;
-			width: auto;
-			padding-left: 20px;
-		}
-		#checkbox {
-			position: absolute;
-			left: -9999em;
-			&:checked {
-				+ label {
+	}
+	.title-simple{
+	    font-family: $roboto;
+	    font-size: 1em;
+	    letter-spacing: 0;
+	    padding: 17px 0;
+	    &:before{
+	    	//position: absolute;
+	    	//left: -9999px;
+	    }
+	    strong{
+			display: block;
+			font-family: $roboto-cd-bold;
+			font-size: 1.25em;
+	    }
+	}
+	.p{
+		padding: 0;
+		width: auto;
+		padding-left: 20px;
+	}
+	#checkbox {
+		position: absolute;
+		left: -9999em;
+		&:checked {
+			+ label {
 				color: #fff;
 				background: #ee5f20;
 			}
