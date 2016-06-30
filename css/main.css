@@ -969,7 +969,7 @@ a:active, button:active {
           transform: translate3d(-5px, 0, 0) rotate(180deg);
 }
 
-.btn-cancel:before, .btn-alert:before {
+.btn-cancel:before, .btn-alert:before, .btn-delete:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -3768,12 +3768,33 @@ button.no-margin {
           transform: translate3d(0, 0, 0) rotate(20deg);
 }
 
-.btn-delete:after {
-  content: '\e90b';
+.btn-delete {
+  width: 12px;
+  height: 24px;
+  position: relative;
 }
-.btn-delete:hover:after, .btn-delete:focus:after {
-  -webkit-transform: translate3d(0, 0, 0) scale(0.95);
-          transform: translate3d(0, 0, 0) scale(0.95);
+.btn-delete:before, .btn-delete:after {
+  text-indent: 0;
+  position: absolute;
+}
+.btn-delete:before {
+  margin: 0;
+  content: '\e90b';
+  top: 5px;
+  left: 0;
+  font-size: 3px;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+}
+.btn-delete:after {
+  content: '\e909';
+  top: 8px;
+  left: 1px;
+  font-size: 11.5px;
+}
+.btn-delete:hover:before, .btn-delete:focus:before {
+  -webkit-transform: translate3d(1px, -3px, 0) rotate(10deg);
+          transform: translate3d(1px, -3px, 0) rotate(10deg);
 }
 .btn-delete.btn-no-text {
   width: 15px;
@@ -6171,9 +6192,6 @@ button.no-margin {
 }
 .content-sale-paiement .grey {
   position: relative;
-}
-.content-sale-paiement .grey span {
-  text-align: right;
 }
 .content-sale-paiement .grey .btn-align-right {
   vertical-align: middle;

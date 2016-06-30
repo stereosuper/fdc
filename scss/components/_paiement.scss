@@ -112,9 +112,6 @@
     }
     .grey{
         position: relative;
-        span{
-            text-align: right;
-        }
         .btn-align-right{
             vertical-align: middle;
             float: none;
@@ -135,3 +132,4 @@
     font-family: $roboto-bold;
     font-size: 1.25em;
 }
+
