@@ -412,6 +412,23 @@ input{
                 }
             }
         }
+        &.red{
+            &:checked{
+                +label{
+                border-color: #c6333e;
+                    &:after{
+                        opacity: 1;
+                        background: #c6333e;
+                        top: -1px;
+                    }
+                    .visu-type{
+                        &:after{
+                            background: #c6333e;
+                        }
+                    }
+                }
+            }
+        }
         &[disabled]{
             display: none;
             + label{

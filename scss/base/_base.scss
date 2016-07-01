@@ -45,6 +45,13 @@ h1{
   }
 }
 
+.h1{
+    @include roboto-cd-bold(1em);
+    font-size: 2.5em;
+    color: $txt;
+    line-height: 1;
+}
+
 h2{
     line-height: 1.5;
     margin: 1.55em 0;
@@ -231,7 +238,14 @@ address{
     }
 }
 
-
+.mega-huge{
+    font-size: 141px;
+    font-family: $roboto-cd-bold;
+}
+.super-huge{
+    font-size: 100px;
+    font-family: $roboto-cd-bold;
+}
 /******* LIENS / BOUTONS *******/
 
 a, button{
@@ -418,3 +432,4 @@ a, button{
 .text-grey{
     color: #a1a3a7;
 }
+

@@ -469,6 +469,18 @@ h1.big {
   padding: 0;
 }
 
+.h1 {
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 2.5em;
+  color: #282c34;
+  line-height: 1;
+}
+
 h2 {
   line-height: 1.5;
   margin: 1.55em 0;
@@ -688,6 +700,16 @@ address ul > li:before {
 address strong {
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.mega-huge {
+  font-size: 141px;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+}
+
+.super-huge {
+  font-size: 100px;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
 }
 
 /******* LIENS / BOUTONS *******/
@@ -1683,6 +1705,17 @@ input[type=radio].invisible:checked + label:after {
 }
 input[type=radio].invisible:checked + label .visu-type:after {
   background: #ee5f20;
+}
+input[type=radio].red:checked + label {
+  border-color: #c6333e;
+}
+input[type=radio].red:checked + label:after {
+  opacity: 1;
+  background: #c6333e;
+  top: -1px;
+}
+input[type=radio].red:checked + label .visu-type:after {
+  background: #c6333e;
 }
 input[type=radio][disabled] {
   display: none;
@@ -2929,6 +2962,9 @@ button.no-margin {
 .content-tabs-partner .nav-tabs {
   border-color: #d63e37;
 }
+.nav-tabs.nav-tabs-white {
+  border: 1px #dadada solid;
+}
 .nav-tabs.no-border {
   border: 0;
 }
@@ -3236,6 +3272,100 @@ button.no-margin {
 }
 .wrapper-choices .field-content .tab-content-title.searchform .form-half {
   margin-top: 0;
+}
+
+/* achat crédits recap */
+.content-sale-paiement .no-padding {
+  padding: 0;
+}
+.content-sale-paiement .no-padding .h1 {
+  margin-bottom: 10px;
+}
+
+.detail-paiement li:before {
+  display: none;
+}
+.detail-paiement > li {
+  display: block;
+  margin-bottom: 23px;
+}
+.detail-paiement > li:nth-child(3) {
+  margin-bottom: 60px;
+}
+.detail-paiement > li ul {
+  display: block;
+  margin-bottom: 1.4em;
+}
+.detail-paiement > li ul > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-bottom: 0;
+}
+.detail-paiement > li ul > li:first-child {
+  text-align: right;
+  padding-right: 27px;
+}
+.detail-paiement > li ul > li:last-child {
+  padding-left: 27px;
+}
+
+.table-offres-tarifs {
+  table-layout: fixed;
+  width: 100%;
+  width: calc(100% + 30px);
+  margin: 0 0 0 -15px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+.table-offres-tarifs tr td {
+  border: 1px solid red;
+}
+.table-offres-tarifs tr td.no-border {
+  border: 0;
+}
+.table-offres-tarifs tr td.super-border {
+  border: 6px #000 solid;
+}
+.table-offres-tarifs tr td.dark-red {
+  border-color: #c63643;
+  color: #c63643;
+}
+.table-offres-tarifs tr td.red {
+  border-color: #d43c34;
+  color: #d43c34;
+}
+.table-offres-tarifs tr td.orange {
+  border-color: #e96740;
+  color: #e96740;
+}
+.table-offres-tarifs tr td.orange-light {
+  border-color: #f28e3c;
+  color: #f28e3c;
+}
+.table-offres-tarifs tr td .undercover {
+  text-transform: uppercase;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 0 20px;
+}
+.table-offres-tarifs tr td p {
+  margin: 0;
+  color: inherit;
+}
+.table-offres-tarifs tr td p.h1 {
+  margin-bottom: 20px;
+}
+.table-offres-tarifs tr td .mega-huge, .table-offres-tarifs tr td .super-huge {
+  line-height: 0.9;
+}
+.table-offres-tarifs tr:nth-child(1) td:nth-child(1) {
+  width: 40%;
+}
+.table-offres-tarifs tr:nth-child(1) td:nth-child(2) {
+  padding: 5px 0 30px 0;
 }
 
 /* Breadcrumb */
@@ -6176,6 +6306,9 @@ button.no-margin {
 .content-sale-paiement .paiement-block .credit .big-txt {
   padding: 0 5px;
 }
+.content-sale-paiement .paiement-block.small-margin-bottom {
+  margin-bottom: 3.3em;
+}
 .content-sale-paiement .paiement-option {
   position: relative;
 }
@@ -6190,6 +6323,15 @@ button.no-margin {
 .content-sale-paiement .paiement-option .option.option-right {
   padding-left: 10px;
 }
+.content-sale-paiement .paiement-option.big-margin-bottom {
+  margin-bottom: 2.3em;
+}
+.content-sale-paiement .paiement-option.big-margin-bottom p {
+  margin-bottom: 20px;
+}
+.content-sale-paiement .paiement-option .detail-paiement {
+  margin-bottom: 90px;
+}
 .content-sale-paiement .grey {
   position: relative;
 }
@@ -6197,6 +6339,9 @@ button.no-margin {
   vertical-align: middle;
   float: none;
   margin-left: 45px;
+}
+.content-sale-paiement .content-chq {
+  margin-bottom: 60px;
 }
 
 .grey {
@@ -7341,6 +7486,9 @@ button.no-margin {
 
   .content-sale-paiement .paiement-block .paiement-list li .recap {
     padding-right: 168px;
+  }
+  .content-sale-paiement .paiement-block .total {
+    margin-left: 0;
   }
   .content-sale-paiement .paiement-block .total .recap {
     padding-left: 35px;

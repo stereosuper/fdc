@@ -93,6 +93,9 @@
                 padding: 0 5px;
             }
         }
+        &.small-margin-bottom{
+            margin-bottom: 3.3em;
+        }
     }
 
     .paiement-option{
@@ -109,6 +112,15 @@
                 padding-left: 10px;
             }
         }
+        &.big-margin-bottom{
+            margin-bottom: 2.3em;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+        .detail-paiement{
+            margin-bottom: 90px;
+        }
     }
     .grey{
         position: relative;
@@ -117,6 +129,9 @@
             float: none;
             margin-left: 45px;
         }
+    }
+    .content-chq{
+        margin-bottom: 60px;
     }
 }
 
