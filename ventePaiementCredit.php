@@ -27,7 +27,7 @@
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
                                 <h6><a property='item' typeof='WebPage' href='./'>
-                         @           <span property='name'>Accueil</span>
+                                   <span property='name'>Accueil</span>
                                 </a></h6>
                             </li>
                         </ul>
@@ -64,7 +64,7 @@
                             <li>
                                 <div class='recap'>
                                     <strong class='title-simple'>Pack de 1 crédit</strong>
-                                    <span class='btn-plus small btn-blue txt-middle'>Pack de 5 crédits - 40&nbsp;€</span><span class='btn-plus small btn-blue txt-middle'>Pack de 10 crédits - 150&nbsp;€</span>
+                                    <a href='#' class='btn-plus small txt-middle'>Pack de 5 crédits - 40&nbsp;€</a><a href='#' class='btn-plus small txt-middle'>Pack de 10 crédits - 150&nbsp;€</a>
                                     <p>Prix par annonce : 20€ HT  •  Crédits utilisables sans limite de durée</p>
                                     <span class='right alerts-price'>100 €</span>
                                 </div>
@@ -79,7 +79,7 @@
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
-                                        <span class='btn-cancel btn-blue txt-middle'>désactiver</span>
+                                        <a href='#' class='btn-cancel txt-middle'>désactiver</a>
                                         <p>Votre annonce apparaîtra en tête des résultats de recherche</p>
                                         <span class='right alerts-price'>1 crédit</span>
                                     </div>
@@ -130,8 +130,8 @@
                                 <input type='checkbox' name='cgv' id='cgv' value='1'><label class='medium' for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a href='#' class='btn-underlined'>conditions générales de vente</a></label>
                             </fieldset>
                         </div>
-                        <div class='grey right-align'>
-                            <span>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</span>
+                        <div class='grey right-align wrapper-pay'>
+                            <p>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</p>
                             <button type='submit' class='btn-block btn-orange-light huge btn-align-right'><span class='border'></span><span class='txt-btn'>Payer</span></button>
                         </div>
                     </div>

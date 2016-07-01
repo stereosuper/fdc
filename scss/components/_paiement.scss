@@ -11,6 +11,9 @@
         position: relative;
         margin: 10px 0 4.3em;
         clear: both;
+        .btn-arrow{
+            margin-left: 15px;
+        }
         .paiement-list{
             line-height: 1.5;
             padding-left: 0;
@@ -37,6 +40,9 @@
                         bottom: 0;
                         margin: auto;
                         font-size: 1.25em;
+                    }
+                    .btn-plus{
+                        margin-left: 15px;
                     }
                     .btn-cancel{
                         font-size: 0.7em;
@@ -89,8 +95,16 @@
         }
         .credit{
             margin: 40px 0 30px;
+            p{
+                display: inline-block;
+                vertical-align: middle;
+            }
             .big-txt{
                 padding: 0 5px;
+            }
+            .btn-arrow{
+                margin-top: 3px;
+                vertical-align: middle;
             }
         }
         &.small-margin-bottom{
@@ -127,7 +141,13 @@
         .btn-align-right{
             vertical-align: middle;
             float: none;
-            margin-left: 45px;
+            margin-left: 30px;
+        }
+    }
+    .wrapper-pay{
+        p{
+            display: inline-block;
+            vertical-align: middle;
         }
     }
     .content-chq{

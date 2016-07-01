@@ -241,7 +241,7 @@
                         </header>
 
                         <form action='#' method='post' id='formToEdit' class='sale-announce-form'>
-                            
+
                             <fieldset class='required btn-info'>
                                 <label for='titre'>
                                     Titre de l'annonce
@@ -370,7 +370,14 @@
                             <fieldset>
                                 <label for='geolocalisation'>
                                     Géolocalisation
-                                </label>
+                                </label><!-- inline
+                              --><div class="geolocalisation-container">
+                                    <input id="geolocalisation" class='search' type='text' placeholder='Rechercher une adresse...' />
+                                    <i class="icon-pointer"></i>
+                                </div>
+                                <div id="map-canvas"></div>
+                                <input type="hidden" id="latitude" name="latitude" value="47.2155851">
+                                <input type="hidden" id="longitude" name="longitude" value="-1.5619139">
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='type'>
@@ -395,7 +402,7 @@
                                 <button class='btn-photo small'>séléctionner un fichier</button>
                             </fieldset>
                             <fieldset>
-                                <label for='geolocalisation'>
+                                <label for='ville'>
                                     Quintaux de farine planifiée
                                 </label></label><input type='text' name='ville' id='ville' class='big' >
                             </fieldset>
@@ -465,10 +472,9 @@
                             <fieldset>
                                 <label for='urgent'>
                                     Annonce urgente ?
-                                </label><input type='checkbox' name='annonce-urgente' id='annonce-urgente' value='1' checked ><label for='annonce-urgente'>Souscrire à l'option <span class='orange-txt uppercase border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> pour un supplément de <span class='orange-txt'>40&nbsp;€&nbsp;HT</span></label>
+                                </label><input type='checkbox' name='annonce-urgente' id='annonce-urgente' value='1' checked ><label for='annonce-urgente'>Souscrire à l'option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> pour un supplément de <span class='orange-txt'>40&nbsp;€&nbsp;HT</span></label>
                             </fieldset>
-
-                            <button type='submit' class='btn-block huge '>Valider et payer</button>
+                            <button type='submit' class='btn-block btn-orange-light huge'><span class='border'></span><span class='txt-btn'>Valider et payer</span></button>
                         </form>
                     </div>
                 </div>
@@ -591,6 +597,8 @@
     <!-- Fin du wrapper page -->
     </div>
 
+    <!-- Google map : replace api key https://developers.google.com/maps/documentation/javascript/get-api-key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=api_key&libraries=places" type="text/javascript"></script>
 
     <!-- Tweens -->
     <script src='js/libs/greensock/TweenMax.min.js'></script>

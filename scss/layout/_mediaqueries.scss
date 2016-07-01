@@ -1704,6 +1704,14 @@
             }
         }
     }
+    .content-sale-paiement{
+        .wrapper-pay{
+            p{
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 650px){

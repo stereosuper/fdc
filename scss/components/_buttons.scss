@@ -435,10 +435,6 @@
 	}
 }
 
-.btn-blue {
-	padding-left: 15px;
-}
-
 .txt-middle{
 	bottom: 2px;
 }
@@ -450,6 +446,10 @@
 		content: '\e918';
 		@include font-icon;
 		margin-right: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		position:relative;
+		top:-.1em;
 	}
 }
 

@@ -27,7 +27,7 @@
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
                                 <h6><a property='item' typeof='WebPage' href='./'>
-                         @           <span property='name'>Accueil</span>
+                                   <span property='name'>Accueil</span>
                                 </a></h6>
                             </li>
                         </ul>
