@@ -83,6 +83,7 @@
   	text-align: left;
   	line-height: normal;
   	transform: translate 0.3s ease-in-out;
+  	#safari { background-color:rgb(192, 47, 60); }
   	&:before{
   		content: '';
   		display: block;
@@ -100,6 +101,17 @@
   		.sidebar-links-open &{
   		   transform: translateX(0);
   		}
+  	}
+  	&:after{
+  		content: '';
+  		display: block;
+  		width: 100%;
+  		height: 100%;
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		background-color: rgb(192, 47, 60);
+  		z-index: -1;
   	}
   	img{
   		vertical-align: middle;
