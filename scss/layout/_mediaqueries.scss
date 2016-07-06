@@ -263,7 +263,7 @@
         }
     }
     #logo{
-        width: auto;
+        width: 180px;
         padding: 0 0 0 12px;
         margin: 0 0 0 -12px;
         .sidebar-links-open &, .sidebar-account-open &, .nav-header-open &, .sidebar-tools-open &{
@@ -276,9 +276,8 @@
                transform: translateX(0);
             }
         }
-        img{
-            display: inline-block;
-            padding: 16px 50px 0 5px;
+        &:after{
+            background-position: 80px 16px;
         }
     }
     .home-link{
@@ -2204,6 +2203,12 @@
 
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+    #logo{
+        &:after{
+            background-image: url(../img/logo@2x.png);
+            background-size: 50px 26px;
+        }
+    }
     .choices{
         > li{
             &:nth-child(1){
