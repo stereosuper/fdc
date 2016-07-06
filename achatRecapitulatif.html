@@ -3,7 +3,7 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Forum des Commerces - Vente</title>
+        <title>Forum des Commerces - Achat</title>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta charset='utf-8'>
         <meta name='description' content=''>
@@ -18,7 +18,7 @@
         <header id='header' class='clearfix'>
             <div class='zone-left-header'>
                 <a href='./' class='home-link'>
-                    Boulangerie - Pâtisserie - Salon de thé                </a>
+                    Forum des Commerces                </a>
             </div>
             <nav role='navigation' id='nav-header'>
                 <button id='btn-close-nav-header' class='btn-close icon-cross'></button>
@@ -196,73 +196,76 @@
         </aside>
 
         <main id='main' role='main'>
-            <div class='bloc-top'>
-                <div class='wrapper-img img-fit'>
-                    <img src='img/visuel-home.jpg' alt=''>
-                </div>
-            </div>
-
             <div class='container-small'>
-                <div class='field field-sale'>
-                    <header class='field-header'>
-                        <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
-                            <li property='itemListElement' typeof='ListItem'>
-                                <h6><a property='item' typeof='WebPage' href='./'>
-                                    <span property='name'>Accueil</span>
-                                </a></h6>
-                            </li>
-                        </ul>
-                        <h1>Vente de boulangerie - pâtisserie - salon de thé</h1>
-                        <div class='rect'></div>
-                    </header>
-                </div>
+                <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='./'>
+                            <span property='name'>Accueil</span>
+                        </a>
+                    </li>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='./'>
+                            <span property='name'>Offres & tarifs</span>
+                        </a>
+                    </li>
+                </ul>
 
-                <div class='content-tabs content-tabs-sale'>
+                <h1>Acheter des crédits d'annonce</h1>
+                
+                <div class='content-tabs'>
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li >
                             <a href='#'>
-                            1<span>. Bienvenue</span>
+                                <span>Identification</span>
                             </a>
                         </li><li class='active'>
-                                2<span>. Connexion</span>
+                                <span>Récapitulatif</span>
                         </li><li>
                             <a href='#'>
-                                3<span>. Mon annonce</span>
-                            </a>
-                        </li><li>
-                            <a href='#'>
-                                4<span>. Paiement</span>
+                                <span>Paiement</span>
                             </a>
                         </li>
                     </ul>
-                    <div class='field-content content-log'>
-                        <div class='login-vente'>
-                            <h3 class='title-simple-med'> Déjà inscrit ? Connectez vous :</h3>
-                            <form action='#' method='post'>
-                                <fieldset class='required no-asterisk'>
-                                    <label for='account-login' class='block'>Identifiant</label>
-                                    <input type='text' name='account-login' id='account-login' required>
-                                </fieldset>
-                                <fieldset class='required no-asterisk'>
-                                    <label for='account-password' class='block'>Mot de passe</label>
-                                    <input type='password' name='account-password' id='account-password' required>
-                                    <div class='center-align info-form'>
-                                        <a href='#' class='btn-simple'>Mot de passe oublié&nbsp;?</a>
+                    <div class='content-sale-paiement field-content'>
+                        <header class='tab-content-title no-padding'>
+                            <h2 class='h1'>Récapitulatif </h2>
+                        </header>
+
+                        <div class='paiement-block small-margin-bottom'>
+                            <ul class='paiement-list'>
+                                <li>
+                                    <div class='recap'>
+                                        <strong class='title-simple'>Pack de 5 crédits</strong>
+                                        <p>Annonces diffusées 6 mois après leurs parution; modifications illimités, statistiques.</p>
+                                        <p>Date de valeur illimitée.</p>
+                                        <span class='right alerts-price'>100 €</span>
                                     </div>
-                                    <div class='wrapper-input-btn'>
-                                        <button type='submit' class='btn-block btn-orange-light medium'><span class='border'></span><span class='txt-btn'>Se connecter</span></button>
+                                </li>
+                                
+                            </ul>
+                            <div class='total'>
+                                <ul>
+                                    <li>
+                                    <div class='recap'>
+                                        <span>TVA</span>
+                                        <span class='right'>20 €</span>
                                     </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                        <div class='sign-up'>
-                            <h3 class='title-simple-med'>Pas encore inscrit ?</h3>
-                            <p>Prix, alerte personnalisées, publication d’annonces... Chaque entrepreneur trouve son compte au Forum des Commerces !<br/><b>Rapide et gratuit, pas de spams.</b>
-                            </p>
-                            <div class='wrapper-input-btn'>
-                                <button type='submit' class='btn-block btn-orange-light medium'><span class='border'></span><span class='txt-btn'>Créer un compte</span></button>
+                                    </li>
+                                    <li class='border-top'>
+                                    <div class='recap'>
+                                        <span class='big-txt'>Total TTC</span>
+                                        <span class='big-txt right alerts-price'>120 €</span>
+                                    </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                        <div>
+                            <fieldset class='footer'>
+                                <input type='checkbox' name='cgv' id='cgv' value='1'><label class='medium' for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a href='#' class='btn-underlined'>conditions générales de vente</a></label>
+                            </fieldset>
+                        </div>
+                        <button type='submit' class='btn-block huge btn-align-right'><span class='border'></span><span class='txt-btn'>Commander & Payer</span></button>
                     </div>
                 </div>
             </div>
