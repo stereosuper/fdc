@@ -39,18 +39,18 @@
                 <div class='content-tabs content-tabs-sale'>
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li class='active'>
-                            1<span>. Bienvenue</span>
+                            <span>1. Bienvenue</span>
                         </li><li>
                             <a href='#'>
-                                2<span>. Connexion</span>
+                                <span>2. Connexion</span>
                             </a>
                         </li><li>
                             <a href='#'>
-                                3<span>. Mon annonce</span>
+                                <span>3. Mon annonce</span>
                             </a>
                         </li><li>
                             <a href='#'>
-                                4<span>. Paiement</span>
+                                <span>4. Paiement</span>
                             </a>
                         </li>
                     </ul>

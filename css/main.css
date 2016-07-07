@@ -6306,16 +6306,27 @@ button {
     display: block;
     margin-bottom: 10px; } }
 @media (max-width: 650px) {
-  .nav-tabs {
+  ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){
         display: none;
     }*/ }
-    .nav-tabs-indicator {
-      font-size: 0.75em; }
-      .nav-tabs-indicator span {
+    ul.nav-tabs-indicator {
+      font-size: 0.75em;
+      counter-reset: counter; }
+      ul.nav-tabs-indicator span {
         display: none; }
-      .nav-tabs-indicator li {
-        padding: 9px 9px 6px; }
+      ul.nav-tabs-indicator li {
+        padding: 9px 9px 9px;
+        counter-increment: counter; }
+        ul.nav-tabs-indicator li:before {
+          content: counter(counter);
+          display: block;
+          background: none;
+          margin: 0 0 2px 0;
+          padding: 0;
+          width: 15px;
+          height: 15px;
+          text-align: center; }
 
   .leads-criteres li {
     display: block;

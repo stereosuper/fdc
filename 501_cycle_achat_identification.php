@@ -26,7 +26,7 @@
                 </ul>
 
                 <h1>Acheter des crédits d'annonce</h1>
-                
+
                 <div class='content-tabs'>
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li class='active'>

@@ -1740,7 +1740,7 @@
 }
 
 @media (max-width: 650px){
-    .nav-tabs{
+    ul.nav-tabs{
         /*&:not(.nav-tabs-indicator){
             display: none;
         }*/
@@ -1749,8 +1749,20 @@
             span{
                 display: none;
             }
+            counter-reset: counter;
             li{
-                padding: 9px 9px 6px;
+                padding: 9px 9px 9px;
+                counter-increment: counter;
+                &:before{
+                    content: counter(counter);
+                    display:block;
+                    background: none;
+                    margin:0 0 2px 0;
+                    padding: 0;
+                    width:15px;
+                    height:15px;
+                    text-align: center;
+                }
             }
         }
     }

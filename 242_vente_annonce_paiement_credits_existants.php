@@ -40,18 +40,18 @@
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li >
                             <a href='#'>
-                            1<span>. Bienvenue</span>
+                            <span>1. Bienvenue</span>
                             </a>
                         </li><li >
                                 <a href='#'>
-                                2<span>. Connexion</span>
+                                <span>2. Connexion</span>
                                 </a>
                         </li><li>
                             <a href='#'>
-                                3<span>. Mon annonce</span>
+                                <span>3. Mon annonce</span>
                             </a>
                         </li><li class='active'>
-                                4<span>. Paiement</span>
+                                <span>4. Paiement</span>
                         </li>
                     </ul>
                     <div class='content-sale-paiement'>
@@ -92,7 +92,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div>
                             <fieldset class='footer'>
                                 <input type='checkbox' name='cgv' id='cgv' value='1'><label class='medium' for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a href='#' class='btn-underlined'>conditions générales de vente</a></label>
