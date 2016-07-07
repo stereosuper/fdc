@@ -59,6 +59,18 @@
 		width: 15px;
 		height: 11px;
 	}
+
+	&.plain {
+		color:$blanc;
+		background: $theme-gradient-1;
+		display:inline-block;
+		padding: 0.5em 1.8em 0.5em 1em;
+		margin:1em 0;
+		font-size:0.9em;
+		&:after{
+			right: 1.6em;
+		}
+	}
 }
 
 .btn-arrow-back{
@@ -441,7 +453,7 @@
 
 .btn-plus{
 	@extend %btn-arrow-base;
-	
+
 	&:before{
 		content: '\e918';
 		@include font-icon;

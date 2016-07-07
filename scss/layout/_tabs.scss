@@ -120,8 +120,6 @@
     }
 }
 
-
-
 .content-tabs-sale{
     .btn-block{
         &:before, &:after{
@@ -134,7 +132,7 @@
             line-height: 1em;
             padding-left: 160px;
             margin-top: 1.8em;
-            
+
             li{
                 &:before{
                     background: #d23a33;
@@ -143,30 +141,6 @@
                 }
             }
         }
-    }
-}
-.big-price{
-    display: block;
-    background: #f5f5f6;
-    border: 1px solid #d7d7d7;
-    padding: 11px 10px;
-    width: auto;
-    height: 100%;
-    font-family: $roboto-cd;
-    font-size: 2.5em;
-    line-height: 1em;
-    span{
-        display: inline-block;
-        vertical-align: top;
-        line-height: 1em;
-    }
-    sup{
-        display: inline-block;
-        vertical-align: top;
-        font-family: $roboto-cd-bold;
-        font-size: 0.7em;
-        line-height: 1em;
-        margin: 0 0 0 2px;
     }
 }
 .wrapper-depot-annonce{
@@ -184,60 +158,6 @@
     .content-align-middle.content-price{
         white-space: nowrap;
         padding: 0 28px 0 0;
-    }
-}
-.wrapper-pub-pack{
-    width: 208px;
-    position: relative;
-}
-.pub-pack{
-    display: block;
-    background: url('../layoutImg/pack-annonces.jpg') no-repeat 0 100%;
-    width: auto;
-    height: auto;
-    text-align: center;
-    text-decoration: none;
-    padding: 30px 10px;
-    color: $txt;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 1px solid $gris;
-    transition: $transition;
-    .small-txt{
-        display: block;
-        font-family: $roboto-cd;
-        font-size: 0.875em;
-        margin: 0 0 4px 0;
-    }
-    .big-txt{
-        display: block;
-        font-family: $roboto-cd;
-        font-size: 2.125em;
-        line-height: 0.9em;
-        color: rgb(227, 77, 26);
-        transition: color 0.3s ease-in-out;
-        .icon-arrow{
-            display: inline-block;
-            font-size: 9px;
-            vertical-align: middle;
-            position:relative;
-            top:-.1em;
-            margin: 0 0 0 6px;
-            transform: translateX(0);
-            transition: transform 0.3s ease-in-out;
-        }
-    }
-    &:focus, &:hover{
-        color: mix(white, $bleu-link, 30%);
-        .big-txt{
-            color: mix(white, $bleu-link, 30%);
-            .icon-arrow{
-                transform: translateX(10px);
-            }
-        }
     }
 }
 .tab-content{
@@ -355,7 +275,6 @@
 }
 
 /* achat crédits recap */
-
 .content-sale-paiement{
     .no-padding{
         padding: 0;
@@ -394,71 +313,6 @@
                 }
                 &:last-child{
                     padding-left: 27px;
-                }
-            }
-        }
-    }
-}
-
-.table-offres-tarifs{
-    table-layout: fixed;
-    width: 100%;
-    width: calc(100% + 30px);
-    margin: 0 0 0 -15px;
-    text-align: center;
-    border-collapse: separate;
-    border-spacing: 15px;
-    tr{ // 1ere ligne
-        td{
-            border: 1px solid red;
-            &.no-border{
-                border: 0;
-            }
-            &.super-border{
-                border: 6px #000 solid;
-            }
-            &.dark-red{
-                border-color: #c63643;
-                color: #c63643;
-            }
-            &.red{
-                border-color: #d43c34;
-                color: #d43c34;
-            }
-            &.orange{
-                border-color: #e96740;
-                color: #e96740;
-            }
-            &.orange-light{
-                border-color: #f28e3c;
-                color: #f28e3c;
-            }
-            .undercover{
-                text-transform: uppercase;
-                font-family: $roboto-cd-bold;
-                border-top: 2px solid;
-                border-bottom: 2px solid;
-                padding: 0 20px;
-            }
-            p{
-                margin: 0;
-                color: inherit;
-                &.h1{
-                    margin-bottom: 20px;
-                }
-            }
-            .mega-huge, .super-huge{
-                line-height: 0.9;
-            }
-        }
-
-        &:nth-child(1){ // vise la première ligne seulement
-            td{ 
-                &:nth-child(1){// puis la 1ère colone
-                width: 40%;
-            }
-                &:nth-child(2){// seconde
-                    padding: 5px 0 30px 0;
                 }
             }
         }
