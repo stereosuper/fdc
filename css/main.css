@@ -765,6 +765,7 @@ a, button {
     right: 0;
     margin: auto;
     font-size: 6px;
+    text-align: center;
     transform: translate3d(0, 0, 0);
     transition: transform 0.3s ease-in-out; }
   .breadcrumb a:hover:after, .btn-arrow:hover:after {
@@ -2338,7 +2339,7 @@ button {
   padding: 0;
   border-bottom: 4px solid #c6333e;
   margin: 0;
-  font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: 0.04em; }
@@ -4646,12 +4647,9 @@ button {
       .content-log .login-vente .info-form .btn-simple {
         font-size: 0.75em; }
     .content-log .login-vente label {
-      display: initial;
-      font-size: 1em; }
-    .content-log .login-vente #account-login {
-      margin-left: 53px; }
-    .content-log .login-vente #account-password {
-      margin-left: 33px; }
+      display: inline-block;
+      font-size: 1em;
+      width: 125px; }
     .content-log .login-vente .wrapper-input-btn input[type=password] {
       max-width: 140px; }
     .content-log .login-vente .wrapper-input-btn .btn-block {
@@ -4810,7 +4808,9 @@ button {
     .field-content .table-offres-tarifs tr td.super-border {
       border: 6px #000 solid;
       z-index: 1;
-      position: relative; }
+      position: relative;
+      overflow: hidden;
+      /* ie10 sa mère */ }
       .field-content .table-offres-tarifs tr td.super-border a {
         text-decoration: none;
         display: block;
@@ -4825,7 +4825,8 @@ button {
           left: 0;
           right: 0;
           z-index: -1;
-          bottom: 0;
+          bottom: -20px;
+          /* ie10 sa mère */
           transform: scaleX(0);
           transform-origin: 0;
           transition: .6s ease-in-out; }
@@ -4909,32 +4910,32 @@ button {
       border-bottom: 2px solid;
       padding: 0 20px;
       letter-spacing: 2px; }
-    .field-content .table-offres-tarifs tr td p {
+    .field-content .table-offres-tarifs tr td p, .field-content .table-offres-tarifs tr td li {
       margin: 0;
       color: inherit; }
-      .field-content .table-offres-tarifs tr td p.h1 {
+      .field-content .table-offres-tarifs tr td p.h1, .field-content .table-offres-tarifs tr td li.h1 {
         margin: 0.2em auto -0.1em;
         letter-spacing: -1px;
         font-size: 2em; }
-      .field-content .table-offres-tarifs tr td p.super-huge {
+      .field-content .table-offres-tarifs tr td p.super-huge, .field-content .table-offres-tarifs tr td li.super-huge {
         line-height: 0.9;
         display: block;
         margin: 0 auto 0.15em;
         letter-spacing: -5px; }
-    .field-content .table-offres-tarifs tr td.big-pricing .undercover {
-      font-size: 1.2em; }
-    .field-content .table-offres-tarifs tr td.big-pricing p.h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.2em; }
-    .field-content .table-offres-tarifs tr td.big-pricing p.super-huge {
-      font-size: 9em;
-      margin-bottom: 0.1em; }
-    .field-content .table-offres-tarifs tr td.big-pricing .btn-arrow {
-      padding: 0.65em 1.8em 0.7em 1em;
-      font-size: 1em; }
-  .field-content .table-offres-tarifs tr:nth-child(1) td:nth-child(1) {
-    width: 40%; }
-  .field-content .table-offres-tarifs tr:nth-child(1) td:nth-child(2) {
+    .field-content .table-offres-tarifs tr td.big-pricing {
+      width: 40%; }
+      .field-content .table-offres-tarifs tr td.big-pricing .undercover {
+        font-size: 1.2em; }
+      .field-content .table-offres-tarifs tr td.big-pricing p.h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.2em; }
+      .field-content .table-offres-tarifs tr td.big-pricing p.super-huge {
+        font-size: 9em;
+        margin-bottom: 0.1em; }
+      .field-content .table-offres-tarifs tr td.big-pricing .btn-arrow {
+        padding: 0.65em 1.8em 0.7em 1em;
+        font-size: 1em; }
+  .field-content .table-offres-tarifs tr td.no-border {
     padding: 5px 0 30px 0; }
 
 /* tab paiement vente */
@@ -5532,7 +5533,25 @@ button {
     overflow-x: scroll;
     overflow-y: hidden; }
     .tab-leads .leads-list .new:before {
-      left: 0; } }
+      left: 0; }
+
+  /* Pricing */
+  .field-content .table-offres-tarifs tr td, .field-content .table-offres-tarifs tr td.big-pricing, .field-content .table-offres-tarifs tr td.no-border {
+    margin: 1em auto 1em;
+    padding: 0;
+    width: 650px;
+    max-width: 100%;
+    display: block;
+    height: auto; }
+    .field-content .table-offres-tarifs tr td p.h1, .field-content .table-offres-tarifs tr td.big-pricing p.h1, .field-content .table-offres-tarifs tr td.no-border p.h1 {
+      font-size: 1.2em;
+      margin-bottom: 0.1em; }
+    .field-content .table-offres-tarifs tr td p.super-huge, .field-content .table-offres-tarifs tr td.big-pricing p.super-huge, .field-content .table-offres-tarifs tr td.no-border p.super-huge {
+      font-size: 5em;
+      margin-bottom: 0.1em;
+      text-indent: -5px; }
+  .field-content .table-offres-tarifs tr td.no-border {
+    margin-bottom: 0; } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; } }
@@ -6251,13 +6270,11 @@ button {
     margin-bottom: 0;
     padding: 0 0 440px 0; }
     .content-log .login-vente .info-form {
-      margin-left: 0px; }
+      margin-left: 5px; }
+    .content-log .login-vente label {
+      width: 100%; }
     .content-log .login-vente .wrapper-input-btn .btn-block {
       margin-left: 0; }
-    .content-log .login-vente #account-login, .content-log .login-vente #account-password {
-      display: block;
-      margin-left: 0;
-      margin-top: 15px; }
   .content-log .sign-up {
     padding: 30px 0 50px 0; }
 
@@ -6391,7 +6408,16 @@ button {
     padding-left: 20px; }
   .dashboard-block .alerts-list .title-simple {
     max-width: none;
-    white-space: normal; } }
+    white-space: normal; }
+
+  /* pricing */
+  .field-content .table-offres-tarifs tr td.option, .field-content .table-offres-tarifs tr td.big-pricing.option, .field-content .table-offres-tarifs tr td.no-border.option {
+    padding: 1em;
+    text-align: center; }
+    .field-content .table-offres-tarifs tr td.option .option-title, .field-content .table-offres-tarifs tr td.big-pricing.option .option-title, .field-content .table-offres-tarifs tr td.no-border.option .option-title {
+      position: static;
+      display: block;
+      margin: 0 auto 1em; } }
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8em; }
@@ -6572,6 +6598,9 @@ button {
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; } }
+@media (max-width: 380px) {
+  .content-log .login-vente .info-form {
+    margin-left: 0; } }
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   #logo:after {

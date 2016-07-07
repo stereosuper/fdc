@@ -201,7 +201,8 @@
                             <fieldset class='required'>
                                 <label for='type'>
                                     Type de vente
-                                    </label> <div class='select'><select name="typevente" id="typevente" >
+                                    </label><!-- inline
+                              --><div class='select'><select name="typevente" id="typevente" >
                                         <option value="">-- Sélectionner --</option>
                                         <option value="01"></option>
                                         <option value="02"></option>

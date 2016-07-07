@@ -524,6 +524,34 @@
             }
         }
     }
+    /* Pricing */
+    .field-content .table-offres-tarifs {
+        tr {
+
+            td, td.big-pricing, td.no-border {
+                margin: 1em auto 1em;
+                padding:0;
+                width:650px;
+                max-width:100%;
+                display:block;
+                height: auto;
+                p {
+                    &.h1{
+                        font-size:1.2em;
+                        margin-bottom:0.1em;
+                    }
+                    &.super-huge{
+                        font-size:5em;
+                        margin-bottom:0.1em;
+                        text-indent:-5px;
+                    }
+                }
+            }
+            td.no-border {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px){
@@ -1639,17 +1667,15 @@
             margin-bottom: 0;
             padding: 0 0 440px 0;
             .info-form{
-                margin-left: 0px;
+                margin-left: 5px;
+            }
+            label {
+                width:100%;
             }
             .wrapper-input-btn{
                 .btn-block{
                     margin-left: 0;
                 }
-            } 
-            #account-login, #account-password{
-                display: block;
-                margin-left: 0;
-                margin-top: 15px;
             }
         }
         .sign-up{
@@ -1890,7 +1916,23 @@
             }
         }
     }
-    
+    /* pricing */
+    .field-content .table-offres-tarifs {
+        tr {
+            td, td.big-pricing, td.no-border {
+                &.option {
+                    padding:1em;
+                    text-align: center;
+                    .option-title {
+                        position:static;
+                        display:block;
+                        margin:0 auto 1em;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 480px){
@@ -2194,6 +2236,16 @@
     .breadcrumb{
         a{
             max-width: 215px;
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .content-log {
+        .login-vente{
+            .info-form{
+                margin-left: 0;
+            }
         }
     }
 }

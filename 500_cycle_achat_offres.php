@@ -51,7 +51,7 @@
                                     <p class='super-huge'>5</p>
                                     <span class='undercover'>crédits</span>
                                     <p class='h1'>100&nbsp;€ HT</p>
-                                    <p>20€/annonce</p>
+                                    <p>(20€/annonce)</p>
                                     <span class="btn-arrow plain">Acheter</span>
                                 </a>
                             </td>
@@ -60,7 +60,7 @@
                                     <p class='super-huge'>10</p>
                                     <span class='undercover'>crédits</span>
                                     <p class='h1'>150&nbsp;€ HT</p>
-                                    <p>15€/annonce</p>
+                                    <p>(15€/annonce)</p>
                                     <span class="btn-arrow plain">Acheter</span>
                                 </a>
                             </td>
@@ -69,7 +69,7 @@
                                     <p class='super-huge'>20</p>
                                     <span class='undercover'>crédits</span>
                                     <p class='h1'>250&nbsp;€ HT</p>
-                                    <p>10€/annonce</p>
+                                    <p>(10€/annonce)</p>
                                     <span class="btn-arrow plain">Acheter</span>
                                 </a>
                             </td>

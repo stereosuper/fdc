@@ -218,7 +218,7 @@
 	}
 }
 
-/* connexion vente */ 
+/* connexion vente */
 .content-log {
     padding: 50px 70px 90px 70px;
     display: table;
@@ -239,14 +239,9 @@
     		}
     	}
     	label{
-    		display: initial;
+    		display: inline-block;
     		font-size: 1em;
-    	}
-    	#account-login {
-    		margin-left: 53px;
-    	}
-    	#account-password {
-    		margin-left: 33px;
+            width:125px;
     	}
     	.wrapper-input-btn {
     		input[type=password] {
@@ -279,7 +274,7 @@
     		.btn-block{
     			left: 0;
     			padding: 23px 34px;
-    			margin-left: 0; 
+    			margin-left: 0;
     		}
     	}
     }
