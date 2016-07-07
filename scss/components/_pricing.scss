@@ -145,6 +145,32 @@
                     }
                 }
             }
+            &.deep-blue{
+                border-color: $deep-blue;
+            }
+            &.option {
+                background:#fffcea;
+                text-align:left;
+                padding:0.8em 0.5em 0.8em 9em;
+                position:relative;
+                .option-title {
+                    position:absolute;
+                    text-transform:uppercase;
+                    left:1.4em;
+                    font-size:1em;
+                    letter-spacing:1px;
+                    top:0;
+                    height:30px;
+                    margin: auto 0;
+                    bottom:0;
+                    display:block;
+                    width:100px;
+                    padding:0.2em 0;
+                    text-align:center;
+                    border-top:2px solid $deep-blue;
+                    border-bottom:2px solid $deep-blue;
+                }
+            }
             .undercover{
                 text-transform: uppercase;
                 font-family: $roboto-cd-bold;

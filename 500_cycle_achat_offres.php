@@ -74,6 +74,13 @@
                                 </a>
                             </td>
                         </tr>
+                        <tr></tr>
+                        <tr>
+                            <td colspan='4' class='super-border deep-blue option'>
+                                <p class="option-title h1">Option</p>
+                                <p>Vous souhaitez que votre annonce apparaisse systématiquement en tête des résultats de recherche&nbsp;? Choisissez notre offre <span class='notif-pole'>Pole Position</span> à seulement un crédit de plus par annonce.</p>
+                            </td>
+                        </tr>
                     </table>
                     </div>
                 </div>
