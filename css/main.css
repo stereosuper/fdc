@@ -1269,7 +1269,7 @@ input[type=password] {
   max-width: 140px; }
 input[type=radio], input[type=checkbox] {
   width: auto;
-  vertical-align: middle; }
+  vertical-align: top; }
   input[type=radio] + label, input[type=checkbox] + label {
     width: auto;
     font-family: "robotoregular", sans-serif; }
@@ -1278,7 +1278,8 @@ input[type=radio], input[type=checkbox] {
     input[type=radio] + label:not(.has-margin), input[type=checkbox] + label:not(.has-margin) {
       margin-right: 0; }
 input[type=radio] + label {
-  margin: 0 30px 0 10px; }
+  margin: 0 30px 0 10px;
+  vertical-align: top; }
 input[type=radio]:hover {
   opacity: 0.8; }
 input[type=radio].invisible {
@@ -1375,7 +1376,7 @@ input[type=checkbox] {
       content: '';
       position: absolute;
       bottom: 0;
-      margin: auto; }
+      margin: 5px auto; }
     input[type=checkbox] + label:before {
       width: 15px;
       height: 16px;
@@ -4663,7 +4664,7 @@ button {
     .content-log .sign-up h3 {
       margin-bottom: 47px; }
     .content-log .sign-up p {
-      max-width: 315px;
+      max-width: 335px;
       margin-bottom: 32px;
       line-height: 1.5; }
     .content-log .sign-up .wrapper-input-btn input[type=password] {
@@ -5869,6 +5870,9 @@ button {
   .content-tabs-sale .not-filled {
     margin: -28px 14px 0; }
 
+  input[type=radio].invisible + label {
+    width: 100%; }
+
   .sale-announce-form .btn-block {
     margin: 0; }
 
@@ -5883,6 +5887,10 @@ button {
     display: block;
     width: 100%;
     padding: 0; }
+    .content-log .sign-up p {
+      max-width: 100%; }
+    .content-log .sign-up br {
+      display: none; }
 
   .content-tabs-sale .field-content {
     overflow-x: scroll;
@@ -5901,10 +5909,20 @@ button {
     .content-sale-paiement .paiement-block .total .recap {
       padding-left: 35px; }
 
+  ul.detail-paiement {
+    padding-left: 0; }
+    ul.detail-paiement > li ul {
+      padding-left: 0; }
+      ul.detail-paiement > li ul > li {
+        width: 100%; }
+        ul.detail-paiement > li ul > li:first-child {
+          text-align: left; }
+        ul.detail-paiement > li ul > li:last-child {
+          padding-left: 0; }
+
   .content-sale-paiement .paiement-option .option {
     display: block;
     width: 100%;
-    max-width: 400px;
     margin: 10px auto; }
     .content-sale-paiement .paiement-option .option.option-left, .content-sale-paiement .paiement-option .option.option-right {
       padding: 0; } }
@@ -6277,6 +6295,10 @@ button {
       margin-left: 0; }
   .content-log .sign-up {
     padding: 30px 0 50px 0; }
+    .content-log .sign-up p {
+      max-width: 100%; }
+    .content-log .sign-up br {
+      display: none; }
 
   .content-tabs-sale .content-sale-log, .content-tabs-sale .content-sale-paiement {
     padding: 20px 20px 50px; }
@@ -6378,6 +6400,9 @@ button {
     font-size: 0.9em;
     line-height: 1.2em; }
 
+  input[type=checkbox] + label.medium:before, input[type=checkbox] + label.medium:after {
+    margin: 2px auto; }
+
   .content-sale-paiement .paiement-block {
     margin-bottom: 20px; } }
 @media (max-width: 600px) {
@@ -6452,8 +6477,6 @@ button {
 
   .alerts-block .title-grey .notif {
     top: 2px; }
-  .alerts-price {
-    font-size: 1em; }
 
   .content-default {
     font-size: 0.88em; }

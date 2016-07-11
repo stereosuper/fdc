@@ -1,5 +1,5 @@
 <?php
-    $path = 'http://localhost/';
+    $path = 'http://'.$_SERVER['HTTP_HOST'].'/';
     $filesToIgnore = ['styles.php', 'generate.php'];
 
     $files = glob(dirname(__FILE__) . '/*.php');

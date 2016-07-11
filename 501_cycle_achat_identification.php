@@ -32,13 +32,9 @@
                         <li class='active'>
                                 <span>Identification</span>
                         </li><li>
-                            <a href='#'>
                                 <span>Récapitulatif</span>
-                            </a>
                         </li><li>
-                            <a href='#'>
                                 <span>Paiement</span>
-                            </a>
                         </li>
                     </ul>
                     <div class='field-content content-log'>
@@ -63,8 +59,7 @@
                         </div>
                         <div class='sign-up'>
                             <h3 class='title-simple-med'>Pas encore inscrit ?</h3>
-                            <p>Prix, alerte personnalisées, publication d’annonces... Chaque entrepreneur trouve son compte au Forum des Commerces !<br/><b>Rapide et gratuit, pas de spams.</b>
-                            </p>
+                            <p>Prix, alerte personnalisées, publication d’annonces... Chaque entrepreneur trouve son compte au Forum des Commerces&nbsp;! <br /><b>Rapide et gratuit, pas de spams.</b></p>
                             <div class='wrapper-input-btn'>
                                 <button type='submit' class='btn-block medium'><span class='border'></span><span class='txt-btn'>Créer un compte</span></button>
                             </div>
