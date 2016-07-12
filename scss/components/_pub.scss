@@ -6,7 +6,7 @@
 
 .indic-pub{
 	color: rgb(205, 205, 210);
-	@include roboto-cd-italic(0.875em);
+	@include roboto-cd-bold-italic(0.875em);
 	transform: translateY(-50%) rotate(-90deg);
 	position: absolute;
 	top: 50%;
@@ -186,5 +186,22 @@
                 transform: translateX(10px);
             }
         }
+    }
+}
+
+.wrapper-pub.pub-right{
+    width: 120px;
+    margin:0;
+    .pub{
+        margin-left: 35px;
+        width: 120px;
+        height: 600px;
+    }
+    .indic-pub{
+        width:120px;
+        text-align:center;
+        transform: translateY(0) rotate(0);
+        top: -20px;
+        left: 0;
     }
 }

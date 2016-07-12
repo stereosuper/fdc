@@ -78,12 +78,26 @@
 	@extend %btn-arrow-back;
 }
 
+.btn-print {
+	@extend %btn-arrow-base;
+	&:before{
+		@extend %btn-before;
+		content: '\e913'; // printer
+	}
+}
+
+.btn-heart {
+	@extend %btn-arrow-base;
+	&:before{
+		@extend %btn-before;
+		content: '\e912'; // heart
+	}
+}
+
 .btn-pen{
 	@extend %btn-arrow-base;
-
 	&:after{
 		@extend %btn-after;
-
 		content: '\e905';
 	}
 	&:hover, &:focus{
