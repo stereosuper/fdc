@@ -5649,6 +5649,12 @@ button {
         margin: 30px -66px -30px; }
         .detail .table .content-tabs-detail .field-content-detail .content-footer .btn-print {
           float: right; }
+      .detail .table .content-tabs-detail .field-content-detail .btn-block {
+        margin-top: 20px; }
+      .detail .table .content-tabs-detail .field-content-detail .blurred {
+        -webkit-filter: blur(9px);
+                filter: blur(9px);
+        margin: 0 5px; }
     .detail .table .content-tabs-detail #map-canvas {
       width: 100%;
       height: 240px;
@@ -6578,6 +6584,8 @@ button {
     width: 100%;
     margin-bottom: 30px;
     padding-top: 0; }
+    .detail .table .content-tabs-detail.small-col address, .detail .table .content-tabs-detail.small-col.small-col address {
+      margin-right: 300px; }
     .detail .table .content-tabs-detail ul.detail-photos, .detail .table .content-tabs-detail.small-col ul.detail-photos {
       position: absolute;
       max-width: 300px;
@@ -7086,6 +7094,8 @@ button {
   /* detail */
   .detail .table .content-tabs-detail, .detail .table .content-tabs-detail.small-col {
     padding: 10px; }
+    .detail .table .content-tabs-detail.small-col address, .detail .table .content-tabs-detail.small-col.small-col address {
+      margin-right: 0; }
     .detail .table .content-tabs-detail ul.detail-photos, .detail .table .content-tabs-detail.small-col ul.detail-photos {
       position: relative;
       max-width: 100%;

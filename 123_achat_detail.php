@@ -59,12 +59,9 @@
                                 </ul>
                                 <div class='field-content-detail'>
                                     <address>
-                                        <p class='big-price'>Prix&nbsp;: 50&#8239;000&nbsp;€</p>
-                                        <p><strong>Cabinet d'affaires d'Artagnan</strong></p>
-                                        <p>7 avenue des Cols Verts</p>
-                                        <p>33115 LE PYLA SUR MER</p>
-                                        <p>Téléphone&nbsp;: <strong>05 53 87 20 00</strong></p>
-                                        <a href="#" class='btn-arrow'>Écrire à l'annonceur</a>
+                                        <p class='big-price'>Prix&nbsp;: <span class="blurred">XX&#8239;XXX</span>&nbsp;€</p>
+                                        <p>pour connaître le prix exact et obtenir les coordonnées du vendeur, vous devez être connecté.</p>
+                                        <a href="#" class='btn-block btn-orange huge'><span class='border'></span><span class='txt-btn'>Voir le prix</span></a>
                                     </address>
                                     <div class='content-footer'>
                                         <a href="#" class='btn-heart' >Ajouter à ma séléction</a>

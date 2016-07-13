@@ -43,6 +43,13 @@
                         float: right;
                     }
                 }
+                .btn-block {
+                    margin-top:20px;
+                }
+                .blurred {
+                    filter:blur(9px);
+                    margin:0 5px;
+                }
             }
             #map-canvas {
                 width:100%;

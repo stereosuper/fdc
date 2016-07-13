@@ -10,13 +10,14 @@
         <meta name='viewport' content='width=device-width,initial-scale=1'>
 
         <link rel='stylesheet' href='css/main.css'>
+        <link rel='stylesheet' href='css/author/jquery.tosrus.all.css'>
         <script src='js/modernizr-custom.js'></script>
 
         <link rel='prev' href='/page1.html'>
         <link rel='next' href='/page2.html'>
     </head>
 
-    <body>
+    <body class="hasMaps">
         <div id='wrapper-page'>
         <header id='header' class='clearfix'>
             <div class='zone-left-header'>
@@ -203,76 +204,83 @@
                     <img src='img/visuel-home.jpg' alt=''>
                 </div>
             </div>
-
-            <div class='container-xsmall'>
-                <div class='field field-buy'>
-                    <header class='field-header'>
-                        <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
-                            <li property='itemListElement' typeof='ListItem'>
-                                <h6><a property='item' typeof='WebPage' href='./'>
-                                    <span property='name'>Accueil</span>
-                                </a></h6>
-                            </li>
-                            <li property='itemListElement' typeof='ListItem'>
-                                <h6><a property='item' typeof='WebPage' href='#'>
-                                    <span property='name'>Achat de boulangerie - pâtisserie - salon de thé</span>
-                                </a></h6>
-                            </li>
-                            <li property='itemListElement' typeof='ListItem'>
-                                <h6><a property='item' typeof='WebPage' href='#'>
-                                    <span property='name'>Résultats</span>
-                                </a></h6>
-                            </li>
-                        </ul>
-                        <h1>Boulangerie pâtisserie en Vendée</h1>
-                        <div class='rect'></div>
-                    </header>
-                </div>
-                <div class='table'>
-                    <div class="content-tabs-detail">
-                        <div class='field-content-detail'>
-                            <h3>Achat - Ref 1254</h3>
-                            <p>Boulangerie-Pâtisserie située dans une ville du littoral Atlantique. Ce produit est idéal pour une première installation, il n'y a aucun travaux à prévoir. Proche tous commerces et administratif. Emplacement N&nbsp;°1. Matériel et agencement complets. Logement F3 avec petite cour intérieure. Marge de progression. Produit exceptionnel à voir rapidement</p>
-                            <ul>
-                                <li>Département : <strong>Vendée</strong></li>
-                                <li>Ville : <strong>Saint Jean de Monts</strong></li>
-                                <li>Type de vente : <strong>fonds</strong></li>
-                                <li>Masse salariale : <strong>1</strong></li>
-                                <li>CA HT du dernier exercice : <strong>112&nbsp;730&nbsp;€</strong></li>
-                                <li>EBE : <strong>38&nbsp;886&nbsp;€</strong></li>
-                            </ul>
-                            <p><em>Annonce mise en ligne le 19/04/2016</em></p>
-                            <div class='content-footer center-align'>
-                                <span class='btn-arrow-back'>Retour à la recherche</span>
-                                <span>Imprimer</span>
+            <div class='container'>
+                <div class="table-layout detail">
+                    <div class="content-tab-layout">
+                        <div class='field field-buy'>
+                            <header class='field-header'>
+                                <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
+                                    <li property='itemListElement' typeof='ListItem'>
+                                        <h6><a property='item' typeof='WebPage' href='./'>
+                                            <span property='name'>Accueil</span>
+                                        </a></h6>
+                                    </li>
+                                    <li property='itemListElement' typeof='ListItem'>
+                                        <h6><a property='item' typeof='WebPage' href='#'>
+                                            <span property='name'>Achat de boulangerie - pâtisserie - salon de thé</span>
+                                        </a></h6>
+                                    </li>
+                                    <li property='itemListElement' typeof='ListItem'>
+                                        <h6><a property='item' typeof='WebPage' href='#'>
+                                            <span property='name'>Résultats</span>
+                                        </a></h6>
+                                    </li>
+                                </ul>
+                                <h1>Boulangerie pâtisserie en Vendée</h1>
+                                <div class='rect'></div>
+                            </header>
+                        </div>
+                        <div class='table'>
+                            <div class='content-tabs-detail small-col'>
+                                <ul class="detail-photos" id="toSlide"> <!-- POUR NETIL : NE PAS METTRE DE UL SI VIDE -->
+                                    <li><a href="img/comptoireBoul_Big.jpg" href="#" class="lBslider"><img src="img/comptoireBoul.png"></a></li>
+                                    <li><a href="img/comptoireBoul2.jpg" href="#" class="lBslider"><img src="img/comptoireBoul2.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul3.jpg" href="#" class="lBslider"><img src="img/comptoireBoul3.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul4.jpg" href="#" class="lBslider"><img src="img/comptoireBoul4.jpg"></a></li>
+                                </ul>
+                                <div class='field-content-detail'>
+                                    <address>
+                                        <p class='big-price'>Prix&nbsp;: 50&#8239;000&nbsp;€</p>
+                                        <p><strong>Cabinet d'affaires d'Artagnan</strong></p>
+                                        <p>7 avenue des Cols Verts</p>
+                                        <p>33115 LE PYLA SUR MER</p>
+                                        <p>Téléphone&nbsp;: <strong>05 53 87 20 00</strong></p>
+                                        <a href="#" class='btn-arrow'>Écrire à l'annonceur</a>
+                                    </address>
+                                    <div class='content-footer'>
+                                        <a href="#" class='btn-heart' >Ajouter à ma séléction</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-tabs-detail">
+                                <div id="map-canvas" data-latIni="46.7833" data-longIni="-2.0667" data-pinLat="46.7833" data-pinLong="-2.0667"></div> <!-- POUR NETIL : NE PAS METTRE CETTE DIV SI VIDE -->
+                                <div class='field-content-detail'>
+                                    <mark class="detail-ref">Achat - Ref 1254</mark>
+                                    <p>Boulangerie-Pâtisserie située dans une ville du littoral Atlantique. Ce produit est idéal pour une première installation, il n'y a aucun travaux à prévoir. Proche tous commerces et administratif. Emplacement N&nbsp;°1. Matériel et agencement complets. Logement F3 avec petite cour intérieure. Marge de progression. Produit exceptionnel à voir rapidement</p>
+                                    <ul>
+                                        <li>Département&nbsp;: <strong>Vendée</strong></li>
+                                        <li>Ville&nbsp;: <strong>Saint Jean de Monts</strong></li>
+                                        <li>Type de vente&nbsp;: <strong>fonds</strong></li>
+                                        <li>Masse salariale&nbsp;: <strong>1</strong></li>
+                                        <li>CA HT du dernier exercice&nbsp;: <strong>112&#8239;730&nbsp;€</strong></li>
+                                        <li>EBE&nbsp;: <strong>38&#8239;886&nbsp;€</strong></li>
+                                    </ul>
+                                    <p><em>Annonce mise en ligne le 19/04/2016</em></p>
+                                    <div class='content-footer'>
+                                        <a href="#" class='btn-arrow-back'>Retour à la recherche</a>
+                                        <a href="#" class='btn-print'>Imprimer</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class='content-tabs-detail'>
-                    <img src="img/comptoireBoul.png">
-                        <div class='field-content-detail'>
-                            
-                            <p class='big-price'>Prix : 50 000 €</p>
-                            <p><strong>Cabinet d'affaires d'Artagnan</strong></p>
-                            <p>7 avenue des Cols Verts</p>
-                            <p>33115 LE PYLA SUR MER</p>
-                            <p>Téléphone : <strong>05 53 87 20 00</strong></p>
-                            <p class='btn-arrow'>Ecrire à l'annonceur</p>
-                            <div class='content-footer center-align'>
-                                <p>Ajouter à ma séléction</p>
-                            </div>
+                    <div class='wrapper-pub pub-right content-tab-layout'>
+                        <div class='pub'>
+                            <div class='indic-pub'>— publicité —</div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <!-- <div class='wrapper-pub pub-right'>
-                <div class='pub'>
-                    <div class='indic-pub'>— publicité —</div>
-                </div>
-            </div> -->
         </main>
 
         <footer id='footer' role='contentinfo'>
@@ -392,7 +400,7 @@
     </div>
 
     <!-- Google map : replace api key https://developers.google.com/maps/documentation/javascript/get-api-key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=api_key&libraries=places" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj5knsI3Ytci8kEFHr9GaIjtcG7fDZ_as&libraries=places" type="text/javascript"></script>
 
     <!-- Tweens -->
     <script src='js/libs/greensock/TweenMax.min.js'></script>
@@ -408,6 +416,8 @@
     <script src='js/jquery-1.11.2.min.js'></script>
     <script src='js/script.js'></script>
 
+    <!-- Lightbox -->
+    <script src='js/libs/jquery.tosrus.all.min.js'></script>
     </body>
 
 </html>

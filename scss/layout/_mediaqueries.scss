@@ -1137,6 +1137,9 @@
         width:100%;
         margin-bottom:30px;
         padding-top:0;
+        &.small-col address {
+            margin-right: 300px;
+        }
         ul.detail-photos {
             position:absolute;
             max-width:300px;
@@ -1946,6 +1949,9 @@
     .detail {
         .table .content-tabs-detail, .table .content-tabs-detail.small-col{
             padding:10px;
+            &.small-col address {
+                margin-right: 0;
+            }
             ul.detail-photos {
                 position:relative;
                 max-width:100%;

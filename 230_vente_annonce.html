@@ -10,10 +10,11 @@
         <meta name='viewport' content='width=device-width,initial-scale=1'>
 
         <link rel='stylesheet' href='css/main.css'>
+        <link rel='stylesheet' href='css/author/jquery.tosrus.all.css'>
         <script src='js/modernizr-custom.js'></script>
     </head>
 
-    <body>
+    <body class="hasMaps">
         <div id='wrapper-page'>
         <header id='header' class='clearfix'>
             <div class='zone-left-header'>
@@ -374,7 +375,7 @@
                                     <input id="geolocalisation" class='search' type='text' placeholder='Rechercher une adresse...' />
                                     <i class="icon-pointer"></i>
                                 </div>
-                                <div id="map-canvas"></div>
+                                <div id="map-canvas" data-latIni="47.2155851" data-longIni="-1.5619139" data-mode="edit"></div>
                                 <input type="hidden" id="latitude" name="latitude" value="47.2155851">
                                 <input type="hidden" id="longitude" name="longitude" value="-1.5619139">
                             </fieldset>
@@ -598,7 +599,7 @@
     </div>
 
     <!-- Google map : replace api key https://developers.google.com/maps/documentation/javascript/get-api-key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=api_key&libraries=places" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj5knsI3Ytci8kEFHr9GaIjtcG7fDZ_as&libraries=places" type="text/javascript"></script>
 
     <!-- Tweens -->
     <script src='js/libs/greensock/TweenMax.min.js'></script>
@@ -614,6 +615,8 @@
     <script src='js/jquery-1.11.2.min.js'></script>
     <script src='js/script.js'></script>
 
+    <!-- Lightbox -->
+    <script src='js/libs/jquery.tosrus.all.min.js'></script>
     </body>
 
 </html>

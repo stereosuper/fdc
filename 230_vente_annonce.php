@@ -194,7 +194,7 @@
                                     <input id="geolocalisation" class='search' type='text' placeholder='Rechercher une adresse...' />
                                     <i class="icon-pointer"></i>
                                 </div>
-                                <div id="map-canvas"></div>
+                                <div id="map-canvas" data-latIni="47.2155851" data-longIni="-1.5619139" data-mode="edit"></div>
                                 <input type="hidden" id="latitude" name="latitude" value="47.2155851">
                                 <input type="hidden" id="longitude" name="longitude" value="-1.5619139">
                             </fieldset>

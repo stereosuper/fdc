@@ -604,9 +604,9 @@ $(function(){
 		// Init geocoder
 		var geocoder = new google.maps.Geocoder();
 		// Init map
-		var initLatLng = new google.maps.LatLng(47.2155851, -1.5619139);
+		var initLatLng = new google.maps.LatLng($('#map-canvas').attr('data-latIni'), $('#map-canvas').attr('data-longIni'));
 		var mapOptions = {
-			zoom: 12,
+			zoom: 9,
 			center: initLatLng,
 		};
 		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
@@ -633,26 +633,46 @@ $(function(){
 			createMarker(markerLatLng);
 			map.setCenter(markerLatLng);
 		});
-		google.maps.event.addListener(map, 'click', function(event) {
-			var latitude = event.latLng.lat();
-			var longitude = event.latLng.lng();
-			var latLng = new google.maps.LatLng(latitude, longitude);
-			$latitudeInput.val(latitude);
-			$longitudeInput.val(longitude);
+		if ($('#map-canvas').attr('data-mode') == "edit") {
+			google.maps.event.addListener(map, 'click', function(event) {
+				var latitude = event.latLng.lat();
+				var longitude = event.latLng.lng();
+				var latLng = new google.maps.LatLng(latitude, longitude);
+				$latitudeInput.val(latitude);
+				$longitudeInput.val(longitude);
+				createMarker(latLng);
+				sync(latLng);
+			});
+		}
+		if ($('#map-canvas').attr('data-pinLat') != undefined && $('#map-canvas').attr('data-pinLong') != undefined) {
+			var latLng = new google.maps.LatLng($('#map-canvas').attr('data-pinLat'), $('#map-canvas').attr('data-pinLong'));
 			createMarker(latLng);
-			sync(latLng);
-		});
+		}
 		function createMarker(latLng) {
 			// Removes the markers from the map
 			if(typeof marker !== typeof undefined) {
 				marker.setMap(null);
 			}
 			// Create a marker and set its position.
+			var isDrag = false;
+			var image;
+			if ($('#map-canvas').attr('data-mode') == "edit") {
+				isDrag = true;
+			} else {
+				image = {
+				    url: 'layoutImg/pin@2x.png',
+				    scaledSize: new google.maps.Size(45, 39),
+				    origin: new google.maps.Point(0, 0),
+				    anchor: new google.maps.Point(12, 38)
+				  };
+			}
+
 			marker = new google.maps.Marker({
 				map: map,
 				position: latLng,
-				draggable:true,
-				raiseOnDrag: 	true
+				icon:image,
+				draggable:isDrag,
+				raiseOnDrag:isDrag
 			});
 			marker.addListener('dragend',function(event) {
 				var newLatitude = event.latLng.lat();
