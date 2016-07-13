@@ -7,7 +7,7 @@
         <?php include_once('includes/head.html'); ?>
     </head>
 
-    <body>
+    <body class="hasMaps">
         <?php
             global $field;
             $field = 'Boulangerie - Pâtisserie - Salon de thé';

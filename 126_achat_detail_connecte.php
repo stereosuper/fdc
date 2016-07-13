@@ -10,7 +10,7 @@
         <link rel='next' href='/page2.html'>
     </head>
 
-    <body>
+    <body class="hasMaps">
         <?php
             global $field;
             $field = 'Boulangerie - Pâtisserie - Salon de thé';
@@ -49,9 +49,30 @@
                                 <div class='rect'></div>
                             </header>
                         </div>
-                        <div class='table table-layout'>
-                            <div class="content-tabs-detail content-tab-layout">
-                                <div id="map-canvas"></div>
+                        <div class='table'>
+                            <div class='content-tabs-detail small-col'>
+                                <ul class="detail-photos" id="toSlide"> <!-- POUR NETIL : NE PAS METTRE DE UL SI VIDE -->
+                                    <li><a href="img/comptoireBoul_Big.jpg" href="#" class="lBslider"><img src="img/comptoireBoul.png"></a></li>
+                                    <li><a href="img/comptoireBoul2.jpg" href="#" class="lBslider"><img src="img/comptoireBoul2.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul3.jpg" href="#" class="lBslider"><img src="img/comptoireBoul3.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul4.jpg" href="#" class="lBslider"><img src="img/comptoireBoul4.jpg"></a></li>
+                                </ul>
+                                <div class='field-content-detail'>
+                                    <address>
+                                        <p class='big-price'>Prix&nbsp;: 50&#8239;000&nbsp;€</p>
+                                        <p><strong>Cabinet d'affaires d'Artagnan</strong></p>
+                                        <p>7 avenue des Cols Verts</p>
+                                        <p>33115 LE PYLA SUR MER</p>
+                                        <p>Téléphone&nbsp;: <strong>05 53 87 20 00</strong></p>
+                                        <a href="#" class='btn-arrow'>Écrire à l'annonceur</a>
+                                    </address>
+                                    <div class='content-footer'>
+                                        <a href="#" class='btn-heart' >Ajouter à ma séléction</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-tabs-detail">
+                                <div id="map-canvas"></div> <!-- POUR NETIL : NE PAS METTRE CETTE DIV SI VIDE -->
                                 <div class='field-content-detail'>
                                     <mark class="detail-ref">Achat - Ref 1254</mark>
                                     <p>Boulangerie-Pâtisserie située dans une ville du littoral Atlantique. Ce produit est idéal pour une première installation, il n'y a aucun travaux à prévoir. Proche tous commerces et administratif. Emplacement N&nbsp;°1. Matériel et agencement complets. Logement F3 avec petite cour intérieure. Marge de progression. Produit exceptionnel à voir rapidement</p>
@@ -67,23 +88,6 @@
                                     <div class='content-footer'>
                                         <a href="#" class='btn-arrow-back'>Retour à la recherche</a>
                                         <a href="#" class='btn-print'>Imprimer</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class='content-tabs-detail content-tab-layout'>
-                                <ul class="detail-photos"><!-- POUR NETIL : NE PAS METTRE DE UL SI VIDE -->
-                                    <li><a href="img/comptoireBoul_Big.png" href="#"><img src="img/comptoireBoul.png"></a></li>
-                                </ul>
-                                <div class='field-content-detail'>
-                                    <p class='big-price'>Prix&nbsp;: 50&#8239;000&nbsp;€</p>
-                                    <p><strong>Cabinet d'affaires d'Artagnan</strong></p>
-                                    <p>7 avenue des Cols Verts</p>
-                                    <p>33115 LE PYLA SUR MER</p>
-                                    <p>Téléphone&nbsp;: <strong>05 53 87 20 00</strong></p>
-                                    <a href="#" class='btn-arrow'>Écrire à l'annonceur</a>
-                                    <div class='content-footer'>
-                                        <a href="#" class='btn-heart' >Ajouter à ma séléction</a>
                                     </div>
                                 </div>
                             </div>

@@ -4,7 +4,8 @@ $(function(){
 	var myScroll, tpsAnimChoice = 600,
 		windowHeight = $(window).height(), windowWidth = $(window).width(),
 		setMapFormActive = false, doit,
-		body = $('body');
+		body = $('body'),
+		slideIndex = 0;
 
 
 	// Request anim frame
@@ -521,6 +522,15 @@ $(function(){
 			}
 		}
 
+		// slider
+		if($('#toSlide').length>0) {
+			$('#toSlide li').each(function(index, el) {
+				$(this).css('left',index*$(this).width());
+			});
+			setPosSlides();
+		}
+
+
 		newsHeight();
 	});
 
@@ -529,8 +539,66 @@ $(function(){
 		newsHeight();
 	});
 
+	// Slider page detail
+	function showHidePrevNext() {
+		if (slideIndex == 0) {
+			$('.prev-slide').hide();
+		} else {
+			$('.prev-slide').show();
+		}
+		if (slideIndex == $('#toSlide li').length-1) {
+			$('.next-slide').hide();
+		} else {
+			$('.next-slide').show();
+		}
+	};
+	function setPosSlides() {
+		var valWidth = -$('#toSlide li').eq(0).width()*slideIndex;
+		TweenMax.to($('#toSlide li'), 0.2, {x: valWidth});
+	}
+	if($('#toSlide').length>0) {
+		$('#toSlide').prepend('<button class="prev-slide" />');
+		$('#toSlide').append('<button class="next-slide" />');
+		$('#toSlide li').each(function(index, el) {
+			$(this).css('left',index*$(this).width()-1);
+		});
+
+		showHidePrevNext();
+
+		$('.prev-slide').click(function(event) {
+			slideIndex--;
+			showHidePrevNext()
+			setPosSlides();
+		});
+
+		$('.next-slide').click(function(event) {
+			slideIndex++;
+			showHidePrevNext()
+			setPosSlides();
+		});
+
+		var hammerSlide = new Hammer(document.getElementById('toSlide'));
+		hammerSlide.on('swipeleft', function(ev) {
+		    if (slideIndex < $('#toSlide li').length-1) {
+		    	slideIndex++;
+				showHidePrevNext()
+				setPosSlides();
+			}
+		});
+		hammerSlide.on('swiperight', function(ev) {
+			if (slideIndex > 0) {
+			    slideIndex--;
+				showHidePrevNext()
+				setPosSlides();
+			}
+		});
+	}
+	//lightbox
+    $(".lBslider").tosrus();
+	// fin slider
+
 	// Google map
-	if(typeof google !== typeof undefined) {
+	if(typeof google !== typeof undefined && $("body").hasClass('hasMaps')) {
 		var $latitudeInput = $('#latitude');
 		var $longitudeInput = $('#longitude');
 		// Init geocoder

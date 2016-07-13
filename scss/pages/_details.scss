@@ -2,7 +2,7 @@
 
 .detail{
     .table {
-        margin-top:-10px;
+        margin:-10px -15px 0;
         .content-tabs-detail{
             vertical-align: top;
             width: 62%;
@@ -11,6 +11,7 @@
             em{
                 color: #7a7a7a;
             }
+            padding: 0 15px;
             .field-content-detail{
                 padding: 30px 50px;
                 border: 1px solid #dadada;
@@ -53,12 +54,10 @@
                 border: 1px solid #dadada;
                 border-bottom: 0 none;
             }
-            &:nth-child(2){
+            &.small-col{
                 width: 38%;
-                padding-left: 30px;
-                &:after{
-                    clear: both;
-                }
+                position:relative;
+                float: right;
                 p{
                     margin: 0;
                 }
@@ -75,49 +74,97 @@
                 .btn-heart {
                     margin-left:-5px;
                 }
-                ul.detail-photos {
+                address {
                     margin:0;
-                    padding:0;
+                    min-height:180px;
+                }
+                ul.detail-photos {
+                    position:relative;
                     width:100%;
                     height:240px;
+                    max-height:240px;
                     overflow:hidden;
-                    position:relative;
-                    li {
-                        width:100%;
-                        margin:0;
-                        padding:0;
-                        height:240px;
+                    margin: 0;
+                    padding:0;
+                    &:after{
+                        @include font-icon;
+                        @include size(22px);
+                        content: '\e90a';
+                        position: absolute;
+                        top: 9px;
+                        right: 9px;
+                        font-size: 13px;
+                        line-height: 22px;
+                        text-align: center;
+                        background: $theme-btn;
+                        transition: background $transition;
+                        color:$blanc;
+                        text-decoration: none;
+                        z-index: 3;
+                        pointer-events: none;
+                    }
+                    &:hover:after {
+                        color:$theme-btn;
+                        background: $blanc;
+                    }
+                    button {
                         position:absolute;
+                        display:block;
+                        width:40px;
+                        height:120px;
+                        top:60px;
+                        background: rgba(0,0,0,0.1);
+                        transition: background $transition;
+                        &:after{
+                            @include font-icon;
+                            @include size(40px);
+                            font-size: 23px;
+                            color:$blanc;
+                            text-shadow: 5px 5px 10px $noir;
+                        }
+                        z-index: 1;
+                        &:hover {
+                            background: rgba(0,0,0,0.5);
+                        }
+                        &.prev-slide {
+                            left:0;
+                            &:after {
+                                content: '\e919';
+                            }
+                        }
+                        &.next-slide {
+                            right:0;
+                            &:after {
+                                content: '\e91a';
+                            }
+                        }
+                    }
+
+                    li {
+                        position:absolute;
+                        height:240px;
+                        display:block;
+                        left:0;
+                        top:0;
+                        width:100%;
+                        height:240px;
                         &:before {
                             display:none;
                         }
                         a {
-                            position:relative;
                             display:block;
                             height:240px;
                             width:100%;
                             text-align: center;
                             background:$noir;
-                            &:after{
-                                @include font-icon;
-                                @include size(22px);
-                                content: '\e90a';
-                                position: absolute;
-                                top: 5px;
-                                right: 5px;
-                                font-size: 13px;
-                                line-height: 22px;
-                                text-align: center;
-                                background: $theme-btn;
-                                transition: background $transition;
-                                color:$blanc;
-                                text-decoration: none;
-                            }
-                            &:hover:after {
-                                color:$theme-btn;
-                                background: $blanc;
-                            }
+                            overflow:hidden;
+                            position:relative;
                             img {
+                                position:absolute;
+                                left:0;
+                                top:0;
+                                right:0;
+                                bottom:0;
                                 width:100%;
                                 height:auto;
                                 margin:auto;
@@ -128,7 +175,7 @@
             }
         }
     }
-    .wrapper-pub {
+    .wrapper-pub.pub-right {
         width:120px;
         display:table-cell;
         .pub {

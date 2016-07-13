@@ -552,6 +552,26 @@
             }
         }
     }
+    /* details */
+    .detail{
+        .wrapper-pub.pub-right {
+            display:block;
+            margin: 50px 0 60px 0;
+            width:100%;
+            .pub {
+                margin-top:0;
+                width: 728px;
+                height: 90px;
+                margin:0 auto;
+                .indic-pub{
+                    color: rgb(205, 205, 210);
+                    transform: translateY(-50%) rotate(-90deg);
+                    top: 50%;
+                    left: -75px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px){
@@ -957,11 +977,6 @@
         }
     }
 
-    .pub{
-        width: 300px;
-        height: 250px;
-    }
-
     .field{
         &-content{
             padding-left: $gutter;
@@ -1115,6 +1130,22 @@
             }
         }
     }
+
+    /* page detail */
+    .detail .table .content-tabs-detail, .detail .table .content-tabs-detail.small-col{
+        display:block;
+        width:100%;
+        margin-bottom:30px;
+        padding-top:0;
+        ul.detail-photos {
+            position:absolute;
+            max-width:300px;
+            left:auto;
+            right:16px;
+            top:1px;
+            width:100%;
+        }
+    }
 }
 
 @media (max-width: 767px){
@@ -1149,6 +1180,13 @@
             margin-left: -1*$gutter;
             margin-right: -1*$gutter;
         }
+    }
+
+    .pub{
+        width: 300px;
+        height: 250px;
+        max-width:100%;
+        max-height:auto;
     }
 
     .breadcrumb{
@@ -1767,6 +1805,15 @@
             }
         }
     }
+    /* details */
+    .detail {
+        .wrapper-pub.pub-right .pub {
+            width: 300px;
+            height: 250px;
+            max-width:100%;
+            max-height:auto;
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -1895,6 +1942,33 @@
             margin-bottom: 20px;
         }
     }
+    /* detail */
+    .detail {
+        .table .content-tabs-detail, .table .content-tabs-detail.small-col{
+            padding:10px;
+            ul.detail-photos {
+                position:relative;
+                max-width:100%;
+                left:0;
+                right:0;
+                width:auto;
+            }
+            .field-content-detail {
+                padding:30px;
+                .content-footer {
+                    .btn-print {
+                        float: none;
+                        display:block;
+                        margin-top:10px;
+                        margin-left:14px;
+                    }
+                    .btn-heart, .btn-arrow-back {
+                        margin-left:18px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 600px){
@@ -1983,7 +2057,6 @@
             }
         }
     }
-
 }
 
 @media (max-width: 480px){
