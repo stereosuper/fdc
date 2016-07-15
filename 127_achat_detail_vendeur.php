@@ -59,20 +59,26 @@
                                 </ul>
                                 <div class='field-content-detail'>
                                     <address>
-                                        <p class='big-price'>Prix&nbsp;: <span class="blurred">XX&#8239;XXX</span>&nbsp;€</p>
-                                        <p>pour connaître le prix exact et obtenir les coordonnées du vendeur, vous devez être connecté.</p>
-                                        <!-- POUR NETIL : LE LIEN, C'EST POUR TESTER -->
-                                        <a href="124_achat_detail_connection.html" class='btn-block btn-rouge huge open-lighbox'><span class='border'></span><span class='txt-btn'>Voir le prix</span></a>
+                                        <p class='big-price'>Prix&nbsp;: 50&#8239;000&nbsp;€</p>
+                                        <p><strong>Cabinet d'affaires d'Artagnan</strong></p>
+                                        <p>7 avenue des Cols Verts</p>
+                                        <p>33115 LE PYLA SUR MER</p>
+                                        <p>Téléphone&nbsp;: <strong>05 53 87 20 00</strong></p>
+                                        <a href="#" class='btn-arrow'>Écrire à l'annonceur</a>
                                     </address>
                                     <div class='content-footer'>
-                                        <!-- POUR NETIL : LE LIEN, C'EST POUR TESTER -->
-                                        <a href="124_achat_detail_connection.html" class='btn-heart open-lighbox' >Ajouter à ma séléction</a>
+                                        <a href="#" class='btn-heart' >Ajouter à ma séléction</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="content-tabs-detail">
                                 <div id="map-canvas" data-latIni="46.7833" data-longIni="-2.0667" data-pinLat="46.7833" data-pinLong="-2.0667"></div> <!-- POUR NETIL : NE PAS METTRE CETTE DIV SI VIDE -->
                                 <div class='field-content-detail'>
+                                    <div class='content-saler'>
+                                        <span class="views"><b>174</b> <i>vues</i></span><!--
+                                        --><a href="#" class='btn-delete'>Supprimer</a><!--
+                                        --><a href="#" class='btn-pen left-icon'>Modifier</a>
+                                    </div>
                                     <mark class="detail-ref">Achat - Ref 1254</mark>
                                     <p>Boulangerie-Pâtisserie située dans une ville du littoral Atlantique. Ce produit est idéal pour une première installation, il n'y a aucun travaux à prévoir. Proche tous commerces et administratif. Emplacement N&nbsp;°1. Matériel et agencement complets. Logement F3 avec petite cour intérieure. Marge de progression. Produit exceptionnel à voir rapidement</p>
                                     <ul>

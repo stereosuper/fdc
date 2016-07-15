@@ -43,6 +43,42 @@
                         float: right;
                     }
                 }
+                .content-saler {
+                    padding: 25px 50px;
+                    margin: -30px -66px 30px;
+                    position: relative;
+                    overflow: hidden;
+                    background: #eaecf1;
+                    a, .views {
+                        display:inline-block;
+                        margin:0 10px;
+                        vertical-align: middle;
+                        &.btn-pen {
+                            margin-right: 9.6%;
+                            float: right;
+                        }
+                        &.btn-delete {
+                            float:right;
+                        }
+                        &.views {
+                            b {
+                                font-weight: bold;
+                                font-size:1.4em;
+                                display:inline-block;
+                                letter-spacing: -1px;
+                                vertical-align: middle;
+                                margin-top: -3px;
+                            }
+                            i {
+                                font-variant:none;
+                                display:inline-block;
+                                vertical-align: middle;
+                                margin-top: -3px;
+                                margin-left:2px;
+                            }
+                        }
+                    }
+                }
                 .btn-block {
                     margin-top:20px;
                 }
@@ -113,38 +149,6 @@
                     &:hover:after {
                         color:$theme-btn;
                         background: $blanc;
-                    }
-                    button {
-                        position:absolute;
-                        display:block;
-                        width:40px;
-                        height:120px;
-                        top:60px;
-                        background: rgba(0,0,0,0.1);
-                        transition: background $transition;
-                        &:after{
-                            @include font-icon;
-                            @include size(40px);
-                            font-size: 23px;
-                            color:$blanc;
-                            text-shadow: 5px 5px 10px $noir;
-                        }
-                        z-index: 1;
-                        &:hover {
-                            background: rgba(0,0,0,0.5);
-                        }
-                        &.prev-slide {
-                            left:0;
-                            &:after {
-                                content: '\e919';
-                            }
-                        }
-                        &.next-slide {
-                            right:0;
-                            &:after {
-                                content: '\e91a';
-                            }
-                        }
                     }
 
                     li {

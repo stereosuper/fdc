@@ -61,12 +61,10 @@
                                     <address>
                                         <p class='big-price'>Prix&nbsp;: <span class="blurred">XX&#8239;XXX</span>&nbsp;€</p>
                                         <p>pour connaître le prix exact et obtenir les coordonnées du vendeur, vous devez être connecté.</p>
-                                        <!-- POUR NETIL : LE LIEN, C'EST POUR TESTER -->
-                                        <a href="124_achat_detail_connection.html" class='btn-block btn-rouge huge open-lighbox'><span class='border'></span><span class='txt-btn'>Voir le prix</span></a>
+                                        <a href="#" class='btn-block btn-rouge huge'><span class='border'></span><span class='txt-btn'>Voir le prix</span></a>
                                     </address>
                                     <div class='content-footer'>
-                                        <!-- POUR NETIL : LE LIEN, C'EST POUR TESTER -->
-                                        <a href="124_achat_detail_connection.html" class='btn-heart open-lighbox' >Ajouter à ma séléction</a>
+                                        <a href="#" class='btn-heart' >Ajouter à ma séléction</a>
                                     </div>
                                 </div>
                             </div>
@@ -95,6 +93,49 @@
                     <div class='wrapper-pub pub-right content-tab-layout'>
                         <div class='pub'>
                             <div class='indic-pub'>— publicité —</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lb" class="on">
+                <div class="black-mask"></div>
+                <button class="close-btn icon-cross"></button>
+                <div class="lightbox-content">
+                    <div class="wrapper">
+                        <div class='field field-buy'>
+                            <header>
+                                <h1>Pour afficher le prix, vous devez être enregistré</h1>
+                                <p>Si vous n'avez pas encore de compte gratuit MyForum, il est temps d'en profiter&nbsp;!</p>
+                            </header>
+                        </div>
+                        <div class='field-content content-log'>
+                            <div class='login-vente'>
+                                <h3 class='title-simple-med'> Déjà inscrit ? Connectez vous :</h3>
+                                <form action='#' method='post'>
+                                    <fieldset class='required no-asterisk'>
+                                        <label for='account-login' class='block'>Identifiant</label>
+                                        <input type='text' name='account-login' id='account-login' required>
+                                    </fieldset>
+                                    <fieldset class='required no-asterisk'>
+                                        <label for='account-password' class='block'>Mot de passe</label>
+                                        <input type='password' name='account-password' id='account-password' required>
+                                        <div class='center-align info-form'>
+                                            <a href='#' class='btn-simple'>Mot de passe oublié&nbsp;?</a>
+                                        </div>
+                                        <div class='wrapper-input-btn'>
+                                            <button type='submit' class='btn-block btn-rouge medium'><span class='border'></span><span class='txt-btn'>Se connecter</span></button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class='sign-up'>
+                                <h3 class='title-simple-med'>Pas encore inscrit ?</h3>
+                                <p>Prix, alerte personnalisées, publication d’annonces... Chaque entrepreneur trouve son compte au Forum des Commerces !<br/><b>Rapide et gratuit, pas de spams.</b>
+                                </p>
+                                <div class='wrapper-input-btn'>
+                                    <button type='submit' class='btn-block btn-rouge medium'><span class='border'></span><span class='txt-btn'>Créer un compte</span></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

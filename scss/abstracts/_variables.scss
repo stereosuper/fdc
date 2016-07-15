@@ -31,6 +31,10 @@ $theme2-gradient-5: rgb(242, 130, 30);
 
 $error: #ff0000;
 
+$black-less-masking: rgba(0,0,0,0.3);
+$black-masking: rgba(0,0,0,0.7);
+$black-more-masking: rgba(0,0,0,0.8);
+
 
 // Grid
 
@@ -53,3 +57,5 @@ $roboto-cd-bold: 'roboto_condensedbold', $roboto-bold;
 $roboto-cd-bold-it: 'roboto_condensedbold_italic', $roboto-it;
 $roboto-cd: 'roboto_condensedregular', $roboto;
 $roboto-cd-it: 'roboto_condensedregular_italic', $roboto-it;
+
+
