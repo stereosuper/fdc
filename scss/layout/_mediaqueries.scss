@@ -263,7 +263,7 @@
         }
     }
     #logo{
-        width: 180px;
+        width: 210px;
         padding: 0 0 0 12px;
         margin: 0 0 0 -12px;
         .sidebar-links-open &, .sidebar-account-open &, .nav-header-open &, .sidebar-tools-open &{
@@ -277,11 +277,11 @@
             }
         }
         &:after{
-            background-position: 80px 16px;
+            background-position: 80px 9px;
         }
     }
     .home-link{
-        padding-left: 178px;
+        padding-left: 218px;
     }
     #sidebar-account{
         right: inherit;
@@ -2392,7 +2392,7 @@
     #logo{
         &:after{
             background-image: url(../img/logo@2x.png);
-            background-size: 50px 26px;
+            background-size: 114px 40px;
         }
     }
     .choices{

@@ -47,12 +47,11 @@
         <div id='mask'></div>
 
         <a href='#' id='logo'>
-            <span class='rect-logo'></span><span class='rect-logo'></span><span class='rect-logo'></span>
             <span id='burger'><span></span><span></span><span></span></span>
         </a>
 
         <button id='btn-close-header-responsive' class='btn-close icon-cross'></button>
-        
+
         <div class='bg-sidebar'></div>
         <aside id='sidebar-links' class='sidebar'>
             <button id='btn-close-sidebar-links' class='btn-close icon-cross'></button>

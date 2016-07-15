@@ -1876,7 +1876,7 @@ button {
 #logo {
   display: inline-block;
   vertical-align: middle;
-  width: 118px;
+  width: 145px;
   height: 58px;
   position: absolute;
   top: 0;
@@ -1936,7 +1936,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/logo.png") no-repeat 16px 16px; }
+    background: url("../img/logo.png") no-repeat 16px 9px; }
   #logo .rect-logo {
     display: block;
     position: absolute; }
@@ -1973,7 +1973,7 @@ button {
 .home-link {
   display: inline-block;
   vertical-align: middle;
-  padding: 21px 0 0 138px;
+  padding: 21px 0 0 165px;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -6011,7 +6011,7 @@ button {
                 transform: translateX(5px); }
 
   #logo {
-    width: 180px;
+    width: 210px;
     padding: 0 0 0 12px;
     margin: 0 0 0 -12px; }
     .sidebar-links-open #logo, .sidebar-account-open #logo, .nav-header-open #logo, .sidebar-tools-open #logo {
@@ -6024,10 +6024,10 @@ button {
         -webkit-transform: translateX(0);
                 transform: translateX(0); }
     #logo:after {
-      background-position: 80px 16px; }
+      background-position: 80px 9px; }
 
   .home-link {
-    padding-left: 178px; }
+    padding-left: 218px; }
 
   #sidebar-account {
     right: inherit;
@@ -7381,7 +7381,7 @@ button {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   #logo:after {
     background-image: url(../img/logo@2x.png);
-    background-size: 50px 26px; }
+    background-size: 114px 40px; }
 
   .choices > li:nth-child(1) .visuel {
     background: url(../layoutImg/loupe@2x.png) no-repeat;

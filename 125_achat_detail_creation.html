@@ -288,34 +288,127 @@
                                 <p>Si vous n'avez pas encore de compte gratuit MyForum, il est temps d'en profiter&nbsp;!</p>
                             </header>
                         </div>
-                        <div class='field-content content-log'>
-                            <div class='login-vente'>
-                                <h3 class='title-simple-med'> Déjà inscrit ? Connectez vous :</h3>
-                                <form action='#' method='post'>
-                                    <fieldset class='required no-asterisk'>
-                                        <label for='account-login' class='block'>Identifiant</label>
-                                        <input type='text' name='account-login' id='account-login' required>
+                        <div class='field-content low-padding-top'>
+                            <header class='tab-content-title'>
+                                <h2 class='h1'>Vos informations </h2>
+                                <button class='btn-arrow small align-top' >Déjà inscrit ?</button>
+                            </header>
+                            <form action='#' method='post' id='formToEdit' class='sale-form'>
+                                <fieldset class='required'>
+                                    <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>
+                                        <input type='radio' name='civilites' value='mme' id='mme' ><label for='mme' class='has-margin'>Mme</label>
+                                        <input type='radio' name='civilites' value='mr' id='mr' checked ><label for='mr'>Mr</label>
                                     </fieldset>
-                                    <fieldset class='required no-asterisk'>
-                                        <label for='account-password' class='block'>Mot de passe</label>
-                                        <input type='password' name='account-password' id='account-password' required>
-                                        <div class='center-align info-form'>
-                                            <a href='#' class='btn-simple'>Mot de passe oublié&nbsp;?</a>
-                                        </div>
-                                        <div class='wrapper-input-btn'>
-                                            <button type='submit' class='btn-block btn-rouge medium'><span class='border'></span><span class='txt-btn'>Se connecter</span></button>
-                                        </div>
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='nom'>
+                                        Nom
+                                    </label><input type='text' name='nom' id='nom' value='Dus' required >
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='prenom'>
+                                        Prénom
+                                    </label><input type='text' name='prenom' id='prenom' value='Jean-Claude' required >
+                                </fieldset>
+                                <fieldset>
+                                    <label for='societe'>
+                                        Société
+                                    </label><input type='text' name='societe' id='societe' class='big' >
+                                    <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='tel'>
+                                        Téléphone
+                                    </label><input type='tel' name='tel' id='tel' value='0678675690' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" >
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='email'>
+                                        Email
+                                    </label><input type='email' name='email' id='email' value='jc.dus@caramail.fr' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" >
+                                </fieldset>
+                                <fieldset>
+                                    <label for='adresse'>
+                                        Adresse
+                                    </label><input type='text' name='adresse' id='adresse' class='bigger' >
+                                    <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset>
+                                    <label for='adresse2'>
+                                        Compl. adresse
+                                    </label><input type='text' name='adresse2' id='adresse2' class='bigger' >
+                                    <span class='not-filled'>non renseigné</span>
+                                </fieldset>
+                                <fieldset class='required'>
+                                    <label for='code'>
+                                        Code postal
+                                    </label><input type='number' name='code' id='code' value='75000' min='0' max='99999' required >
+                                </fieldset>
+                                <fieldset>
+                                    <label for='ville'>
+                                        Ville
+                                    </label><input type='text' name='ville' id='ville' class='big' >
+                                    <span class='not-filled'>non renseigné</span>
+                                    <fieldset class='block-right'>
+                                        <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' checked ><label for='adresse-facturation'>Adresse de facturation identique <i>(pour les vendeurs)</i></label>
                                     </fieldset>
-                                </form>
-                            </div>
-                            <div class='sign-up'>
-                                <h3 class='title-simple-med'>Pas encore inscrit ?</h3>
-                                <p>Prix, alerte personnalisées, publication d’annonces... Chaque entrepreneur trouve son compte au Forum des Commerces !<br/><b>Rapide et gratuit, pas de spams.</b>
-                                </p>
-                                <div class='wrapper-input-btn'>
-                                    <button type='submit' class='btn-block btn-rouge medium'><span class='border'></span><span class='txt-btn'>Créer un compte</span></button>
-                                </div>
-                            </div>
+                                </fieldset>
+                                <fieldset class='block-optionnal block-optionnal-border hidden' data-name='adresse-facturation'>
+                                    <legend class='big-legend'>Adresse de facturation</legend>
+                                    <fieldset class='required'>
+                                        <label for='nom-facturation'>
+                                            Nom
+                                        </label><input type='text' name='nom-facturation' id='nom-facturation' value='Dus' required disabled>
+                                    </fieldset>
+                                    <fieldset class='required'>
+                                        <label for='prenom-facturation'>
+                                            Prénom
+                                        </label><input type='text' name='prenom-facturation' id='prenom-facturation' value='Jean-Claude' required disabled>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for='societe-facturation'>
+                                            Société
+                                        </label><input type='text' name='societe-facturation' id='societe-facturation' class='big' disabled>
+                                        <span class='not-filled'>non renseigné</span>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for='adresse-facturation'>
+                                            Adresse
+                                        </label><input type='text' name='adresse-facturation' id='adresse-facturation' class='bigger' disabled>
+                                        <span class='not-filled'>non renseigné</span>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for='adresse2-facturation'>
+                                            Compl. adresse
+                                        </label><input type='text' name='adresse2-facturation' id='adresse2-facturation' class='bigger' disabled>
+                                        <span class='not-filled'>non renseigné</span>
+                                    </fieldset>
+                                    <fieldset class='required'>
+                                        <label for='code-facturation'>
+                                            Code postal
+                                        </label><input type='number' name='code-facturation' id='code-facturation' value='75000' min='0' max='99999' required disabled>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for='ville'>
+                                            Ville
+                                        </label><input type='text' name='ville' id='ville' class='big' disabled>
+                                        <span class='not-filled'>non renseigné</span>
+                                    </fieldset>
+                                </fieldset>
+                                <fieldset class='required block-pwd'>
+                                    <fieldset>
+                                        <label for='mdp1'>
+                                            Mot de passe
+                                        </label><input type='password' name='mdp1' id='mdp1' value='motdepasse' required >
+                                        <button class='btn-pen small hidden' id='editPwd' data-edit='Changer de mot de passe' data-cancel='Ne pas changer de mot de passe'>Changer de mot de passe</button>
+                                    </fieldset>
+                                    <fieldset class='block-pwd2'>
+                                        <label for='mdp2'>
+                                            Confirmer ce mot de passe
+                                        </label><input type='password' name='mdp2' id='mdp2' value='motdepasse' required >
+                                    </fieldset>
+                                </fieldset>
+                                <button type='submit' class='btn-block huge btn-rouge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
+                            </form>
                         </div>
                     </div>
                 </div>

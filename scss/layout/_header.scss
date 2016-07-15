@@ -67,7 +67,7 @@
 #logo{
   	display: inline-block;
  	vertical-align: middle;
-  	width: 118px;
+  	width: 145px;
   	height: 58px;
   	position: absolute;
   	top: 0;
@@ -109,7 +109,7 @@
   		position: absolute;
   		top: 0;
   		left: 0;
-  		background: url('../img/logo.png') no-repeat 16px 16px;
+  		background: url('../img/logo.png') no-repeat 16px 9px;
   	}
   	/*&:after{
   		content: '';
@@ -157,7 +157,7 @@
 .home-link{
 	display: inline-block;
 	vertical-align: middle;
-	padding: 21px 0 0 138px;
+	padding: 21px 0 0 165px;
 	@include roboto-cd-bold(1em);
 	text-transform: uppercase;
 	text-decoration: none;
