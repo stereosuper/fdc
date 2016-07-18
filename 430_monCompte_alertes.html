@@ -3,7 +3,7 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Mon compte - Ventes</title>
+        <title>Mon compte - Alertes Edition</title>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta charset='utf-8'>
         <meta name='description' content=''>
@@ -62,12 +62,11 @@
         <div id='mask'></div>
 
         <a href='#' id='logo'>
-            <span class='rect-logo'></span><span class='rect-logo'></span><span class='rect-logo'></span>
             <span id='burger'><span></span><span></span><span></span></span>
         </a>
 
         <button id='btn-close-header-responsive' class='btn-close icon-cross'></button>
-        
+
         <div class='bg-sidebar'></div>
         <aside id='sidebar-links' class='sidebar'>
             <button id='btn-close-sidebar-links' class='btn-close icon-cross'></button>
@@ -213,11 +212,10 @@
                             <a href='#'>Mes informations</a>
                         </li><li>
                             <a href='#'>Accompagnement <span class='notif notif-nav'>nouveau</span></a>
-                        </li><li>
-                            <a href='#'>Alertes</a>
-                            <span class='notif'>1</span>
                         </li><li class='active'>
-                            <span>Ventes</span>
+                            <span>Alertes</span>
+                        </li><li>
+                            <a href='#'>Ventes</a>
                         </li><li>
                             <a href='#'>Correspondance</a>
                         </li><li class='tab-right tab-orange'>
@@ -226,78 +224,81 @@
                         </li>
                     </ul>
                     <div class='tab-content'>
-                        <header class='tab-content-title'>
-                            <h2 class='h1'>Mes ventes</h2>
-                            <span class='right'><span>Vous disposez de <b>2 crédits</b> pour poster vos annonces.</span><a href='#' class='btn-arrow'>Acheter des crédits</a></span>
+                        <header class='tab-content-title has-btn'>
+                            <h2 class='h1'>Mes alertes <span class='notif'>5</span></h2>
                         </header>
-                        <ul class='sales-list'>
-                            <li>
-                                <a href='#'>
-                                    <span class='img'><img src='img/sandwicherie.jpg' alt=''></span>
-                                    <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
-                                    <span href='#' class='btn-arrow small'>Voir</span>
-                                    <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
-                                    <span class='right'>
-                                        <span class='sales-views'><b>174</b> <span>vues</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#'>
-                                    <span class='img'></span>
-                                    <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
-                                    <span class='btn-arrow small'>Voir</span>
-                                    <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
-                                    <span class='right'>
-                                        <span class='sales-views'><b>90</b> <span>vues</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#'>
-                                    <span class='img'></span>
-                                    <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
-                                    <span class='btn-arrow small'>Voir</span>
-                                    <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
-                                    <span class='right'>
-                                        <span class='sales-views'><b>1</b> <span>vue</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <footer class='tab-content-footer'>
-                            <form action='#' method='POST'>
-                                <label for='secteur' class='label-select'>Poster une nouvelle annonce dans le secteur :</label><div class='select'>
-                                    <select name='secteur' id='secteur'>
-                                        <option selected value=''>— Sélectionner le secteur</option>
-                                        <option value='1'>Bar Tabac / PMU</option>
-                                        <option value='2'>Bar / Brasserie</option>
-                                        <option value='3'>Boucherie / Charcuterie / Traiteur</option>
-                                        <option value='4'>Boulangerie / Pâtisserie / Salon de thé</option>
-                                        <option value='5'>Boutique et Magasins</option>
-                                        <option value='6'>Bureaux Locaux / Entrepôts</option>
-                                        <option value='7'>Coiffure / Esthétique / Parfumerie</option>
-                                        <option value='8'>Commerce / Alimentation</option>
-                                        <option value='9'>Crêperie / Pizzeria</option>
-                                        <option value='10'>Entreprise du Bâtiment</option>
-                                        <option value='11'>Hôtel / Bureau</option>
-                                        <option value='12'>Hôtel / Restaurant</option>
-                                        <option value='13'>Murs Commerciaux</option>
-                                        <option value='14'>Restaurant</option>
-                                        <option value='15'>Restauration rapide</option>
-                                        <option value='16'>Salon de thé</option>
-                                        <option value='17'>Tabac Loto / Presse</option>
-                                    </select>
-                                </div>
-                                <button type='submit' class='btn-block'><span class='border'></span><span class='txt-btn'>Ok</span></button>
-                            </form>
-                        </footer>
+                        <a href='alerteEdition.php' class='btn-block btn-alert'><span class='border'></span><span class='txt-btn'>Créer une nouvelle alerte</span></a>
+                        <div class='alerts-block'>
+                            <div class='alerts-header'>
+                                <time datetime='2014-10-12'>12/10/2014</time>
+                                <h3 class='title-grey h3'>Boulangerie / Patisserie / Salon de thé<span class='notif'>3</span></h3>
+                                <span class='alerts-place'>Loire Atlantique, max 400 000 €</span>
+                            </div>
+                            <div class='alerts-block-btn'>
+                                <a href='#' class='btn-pen btn-no-text'>Modifier cette alerte</a>
+                                <a href='#' class='btn-delete btn-no-text'>Supprimer cette alerte</a>
+                            </div>
+                            <ul class='alerts-list'>
+                                <li>
+                                    <a href='#'>
+                                        <span class='img'><img src='img/sandwicherie.jpg' alt=''></span>
+                                        <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
+                                        <span href='#' class='btn-arrow small'>Voir</span>
+                                        <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
+                                        <span class='right alerts-price'>235 000 € FAI</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#'>
+                                        <span class='img'></span>
+                                        <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
+                                        <span class='right alerts-price'>140 000 € FAI</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#'>
+                                        <span class='img'></span>
+                                        <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
+                                        <span class='right alerts-price'>140 000 € FAI</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='alerts-block'>
+                            <div class='alerts-header'>
+                                <time datetime='2014-10-12'>12/10/2014</time>
+                                <h3 class='title-grey h3'>Bar / Tabac / PMU<span class='notif'>2</span></h3>
+                                <span class='alerts-place'>Loire Atlantique et voisins, entre 300 000 et 900 000 €</span>
+                            </div>
+                            <div class='alerts-block-btn'>
+                                <a href='#' class='btn-pen btn-no-text'>Modifier cette alerte</a>
+                                <a href='#' class='btn-delete btn-no-text'>Supprimer cette alerte</a>
+                            </div>
+                            <ul class='alerts-list'>
+                                <li>
+                                    <a href='#'>
+                                        <span class='img'><img src='img/sandwicherie.jpg' alt=''></span>
+                                        <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
+                                        <span class='right alerts-price'>235 000 € FAI</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#'>
+                                        <span class='img'></span>
+                                        <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                        <span class='btn-arrow small'>Voir</span>
+                                        <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
+                                        <span class='right alerts-price'>140 000 € FAI</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,13 +312,13 @@
                     </div>
                     <ul class='cols-footer'>
                         <li>
-                            <div class='title-zone small'>Forum des Commerces</div>
-                            <p>Le Forum des Commerces est un portail web qui gère 16 sites d'annonces de vente de fonds de commerce, d'entreprises, de locaux et murs commerciaux, spécialisés par activité. <a href='#' class='btn-arrow'>En savoir plus</a></p>
+                            <div class='title-zone small'>MyForum</div>
+                            <p>MyForum est un portail web qui gère 16 sites d'annonces de vente de fonds de commerce, d'entreprises, de locaux et murs commerciaux, spécialisés par activité. <a href='#' class='btn-arrow'>En savoir plus</a></p>
                             <div class='wrapper-alignment wrapper-address-contact'>
                                 <div class='content-align-middle wrapper-address'>
                                     <address>
                                         <ul>
-                                            <li><strong>Forum des Commerces</strong></li>
+                                            <li><strong>MyForum</strong></li>
                                             <li>Imm Hub Créatic</li>
                                             <li>6 rue Rose Dieng Kuntz</li>
                                             <li>CS 70790</li>
@@ -335,7 +336,7 @@
                             <ul class='cols-right-footer'>
                                 <li>
                                     <div class='title-zone small'>Ils parlent de nous</div>
-                                    <p>Ils recommandent Forum des Commerces&nbsp;:</p>
+                                    <p>Ils recommandent myForum&nbsp;:</p>
                                     <ul class='logos'>
                                         <li>
                                             <img src='img/bpi.png' alt='bpifrance'>

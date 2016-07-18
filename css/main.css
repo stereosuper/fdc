@@ -821,7 +821,7 @@ a, button {
     -webkit-transform: translate3d(-5px, 0, 0) rotate(180deg);
             transform: translate3d(-5px, 0, 0) rotate(180deg); }
 
-.btn-print:before, .btn-heart:before, .btn-pen.left-icon:before, .btn-cancel:before, .btn-alert:before, .btn-delete:before {
+.btn-print:before, .btn-heart:before, .btn-pen.left-icon:before, .btn-cancel:before, .btn-alert:before, .btn-delete:before, .btn-block.btn-alert:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -3112,12 +3112,12 @@ button {
   content: '\e90b';
   top: 0;
   left: -20px;
-  font-size: 3.5px;
+  font-size: 3.7px;
   -webkit-transform-origin: 100% 0%;
           transform-origin: 100% 0%; }
 .btn-delete:after {
   content: '\e909';
-  top: 2px;
+  top: 1px;
   left: -23px;
   font-size: 12px; }
 .btn-delete:hover:before, .btn-delete:focus:before {
@@ -3125,12 +3125,12 @@ button {
           transform: translate3d(1px, -3px, 0) rotate(10deg); }
 .btn-delete.btn-no-text {
   width: 15px;
-  height: 24px; }
+  height: 26px; }
   .btn-delete.btn-no-text:before {
-    top: 5px;
-    left: 0; }
+    top: 5.5px;
+    left: -0.7px; }
   .btn-delete.btn-no-text:after {
-    top: 7px;
+    top: 8px;
     left: 2px; }
 
 /*.btn-mail{
@@ -3210,42 +3210,33 @@ button {
   .btn-block.btn-orange-light:hover, .btn-block.btn-orange-light:focus {
     color: #ef6a2b; }
   .btn-block.btn-alert {
-    padding: 16px 16px 15px 18px;
+    padding: 16px 16px 15px 13px;
     font-size: 1em;
     letter-spacing: 0; }
     .btn-block.btn-alert:before {
-      /* use !important to prevent issues with browser extensions that change fonts */
-      font-family: 'fdc' !important;
-      speak: none;
-      font-style: normal;
-      font-weight: 400;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: '\e90a';
+      content: '\e90f';
+      font-size: 14px;
       display: inline-block;
       width: auto;
       height: 16px;
       right: auto;
-      padding-right: 12px;
+      padding-right: 10px;
       margin: auto;
       z-index: auto;
       opacity: 1;
-      font-size: 18px;
       background: none;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(1px, 0, 0);
+              transform: translate3d(1px, 0, 0);
       -webkit-transform-origin: 50% 50%;
               transform-origin: 50% 50%;
-      -webkit-transition: -webkit-transform 0.3s ease-in-out;
-      transition: -webkit-transform 0.3s ease-in-out;
-      transition: transform 0.3s ease-in-out;
-      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      position: relative; }
     .btn-block.btn-alert:hover:before, .btn-block.btn-alert:focus:before {
-      -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
-              transform: translate3d(0, 0, 0) rotate(20deg); }
+      -webkit-transform: translate3d(1px, 2px, 0) rotate(20deg);
+              transform: translate3d(1px, 2px, 0) rotate(20deg);
+      color: #c6333e;
+      z-index: 5; }
   .wrapper-input-btn .btn-block {
     position: absolute;
     top: 0;
@@ -4397,6 +4388,9 @@ button {
     position: absolute;
     top: 3px;
     right: 20px; }
+    .alerts-block-btn a {
+      display: inline-block;
+      vertical-align: middle; }
 .alerts-header {
   margin: 0 100px 0 20px; }
 .alerts-list {
@@ -4665,7 +4659,8 @@ button {
     background: #c6333e;
     z-index: 2; }
   .messages-list li.new a {
-    background: #f5f5f6; }
+    background: #f5f5f6;
+    min-height: 35px; }
 .messages-list a {
   padding: 12px 25px; }
 .messages-list time, .messages-list b {
@@ -4682,12 +4677,11 @@ button {
   max-width: 50%;
   margin: 0 25px 0 0; }
 .messages-list .btn-delete {
-  height: 16px;
   position: absolute;
+  right: 20px;
   top: 0;
   bottom: 0;
-  right: 20px;
-  margin: auto; }
+  margin: auto 0; }
 
 /* Leads */
 .leads-title {
@@ -7367,7 +7361,11 @@ button {
 
   .img-post {
     float: left;
-    padding: 10px 0 25px 0; } }
+    padding: 10px 0 25px 0; }
+
+  .btn-block.btn-alert {
+    padding: 11px 11px 10px 8px;
+    font-size: 0.9em; } }
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; }

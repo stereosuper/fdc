@@ -44,8 +44,7 @@
                         <header class='tab-content-title has-btn'>
                             <h2 class='h1'>Mes alertes</h2>
                         </header>
-                        <a href='alerteEdition.php' class='btn-block btn-plus'><span class='border'></span><span class='txt-btn'>Créer une nouvelle alerte</span></a>
-                        <div class='alerts-block'>
+                        <a href='alerteEdition.php' class='btn-block btn-alert'><span class='border'></span><span class='txt-btn'>Créer une nouvelle alerte</span></a><div class='alerts-block'>
                             <p><i class='text-grey'>Vous n'avez pas encore crée d'alertes.</i></p>
                         </div>
                     </div>

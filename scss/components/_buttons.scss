@@ -167,13 +167,13 @@
 		content: '\e90b'; //trash-cover
 		top: 0;
 		left: -20px;
-		font-size: 3.5px;
+		font-size: 3.7px;
 		transform-origin: 100% 0%;
 	}
 	&:after{
 		@extend %btn-after;
 		content: '\e909';
-		top: 2px;
+		top: 1px;
 		left: -23px;
 		font-size: 12px;
 	}
@@ -184,13 +184,13 @@
 	}
 	&.btn-no-text{
 		width: 15px;
-		height: 24px;
+		height: 26px;
 		&:before {
-			top:5px;
-			left:0;
+			top:5.5px;
+			left:-0.7px;
 		}
 		&:after{
-			top:7px;
+			top:8px;
 			left:2px;
 		}
 	}
@@ -280,13 +280,13 @@
 		}
 	}
 	&.btn-alert{
-		padding: 16px 16px 15px 18px;
+		padding: 16px 16px 15px 13px;
 		font-size: 1em;
 		letter-spacing: 0;
 		&:before{
-			@include font-icon;
-
-			content: '\e90a';
+			@extend %btn-before;
+			content: '\e90f'; // ding
+			font-size: 14px;
 			display: inline-block;
 			width: auto;
 			height: 16px;
@@ -294,19 +294,21 @@
 			//bottom: 0;
 			//left: 20px;
 			right: auto;
-			padding-right: 12px;
+			padding-right: 10px;
 			margin: auto;
 			z-index: auto;
 			opacity: 1;
-			font-size: 18px;
 			background: none;
-			transform: translate3d(0, 0, 0);
+			transform: translate3d(1px, 0, 0);
 			transform-origin: 50% 50%;
-			transition: transform $transition;
+			transition: all $transition;
+			position:relative;
 		}
 		&:hover, &:focus{
 			&:before{
-				transform: translate3d(0, 0, 0) rotate(20deg);
+				transform: translate3d(1px, 2px, 0) rotate(20deg);
+				color: $theme-btn;
+				z-index: 5;
 			}
 		}
 	}

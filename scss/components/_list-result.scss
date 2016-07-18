@@ -33,6 +33,10 @@
             position: absolute;
             top: 3px;
             right: 20px;
+            a {
+                display:inline-block;
+                vertical-align: middle;
+            }
         }
     }
     &-header{
@@ -54,7 +58,7 @@
     }
 }
 
-/* search empty */ 
+/* search empty */
 
 .search-list-empty{
     border-bottom: 0;
