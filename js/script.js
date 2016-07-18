@@ -318,6 +318,15 @@ $(function(){
 			body.addClass('nav-header-open');
 		}
 	});
+	$('.btn-heart').on('click', function(e){
+		e.preventDefault();
+		if ($(this).hasClass('on')) {
+			$(this).removeClass('on');
+		} else {
+			$(this).addClass('on');
+		}
+	});
+
 
 
 	// Nav tabs responsive

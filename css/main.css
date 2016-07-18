@@ -843,7 +843,7 @@ a, button {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
 
-.btn-pen:after, .btn-delete:after {
+.btn-heart:after, .btn-pen:after, .btn-delete:after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -3072,7 +3072,50 @@ button {
   content: '\e913'; }
 
 .btn-heart:before {
-  content: '\e912'; }
+  content: '\e912';
+  -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s, 0.3s;
+          transition-delay: 0.3s, 0.3s;
+  top: 1px;
+  position: relative; }
+.btn-heart:after {
+  content: '\e91b';
+  position: absolute;
+  left: -4px;
+  font-size: 12px;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition-delay: 0, 0;
+          transition-delay: 0, 0;
+  top: 1px; }
+.btn-heart.on:before {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition-delay: 0s, 0s;
+          transition-delay: 0s, 0s; }
+.btn-heart.on:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s, 0.3s;
+          transition-delay: 0.3s, 0.3s; }
 
 .btn-pen:after {
   content: '\e905'; }
