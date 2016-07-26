@@ -100,32 +100,30 @@
                 right:0;
                 top:0;
                 bottom:0;
-                transform:rotate(46deg);
+                transform:rotate(53deg);
                 z-index:-1;
                 transition: all $transition;
-                clip:rect(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             }
             &.buy-step:before {
-                background-image:url('../layoutImg/cercle/acheter.png');
+                background-image:url('../layoutImg/cercle/losanges/acheter.png');
             }
             &.finance-step:before {
-                background-image:url('../layoutImg/cercle/financer.png');
+                background-image:url('../layoutImg/cercle/losanges/financer.png');
             }
             &.ensure-step:before {
-                background-image:url('../layoutImg/cercle/assurer.png');
+                background-image:url('../layoutImg/cercle/losanges/assurer.png');
             }
             &.equip-step:before {
-                background-image:url('../layoutImg/cercle/equiper.png');
+                background-image:url('../layoutImg/cercle/losanges/equiper.png');
             }
             &.staff-step:before {
-                background-image:url('../layoutImg/cercle/recruter.png');
+                background-image:url('../layoutImg/cercle/losanges/recruter.png');
             }
             &.manage-step:before {
-                background-image:url('../layoutImg/cercle/gerer.png');
+                background-image:url('../layoutImg/cercle/losanges/gerer.png');
             }
             &.sell-step:before {
-                background-image:url('../layoutImg/cercle/vendre.png');
+                background-image:url('../layoutImg/cercle/losanges/vendre.png');
             }
         }
     }

@@ -590,6 +590,27 @@
                     transform:rotate(0);
                     bottom:25px;
                 }
+                &.buy-step:before {
+                    background-image:url('../layoutImg/cercle/acheter.png');
+                }
+                &.finance-step:before {
+                    background-image:url('../layoutImg/cercle/financer.png');
+                }
+                &.ensure-step:before {
+                    background-image:url('../layoutImg/cercle/assurer.png');
+                }
+                &.equip-step:before {
+                    background-image:url('../layoutImg/cercle/equiper.png');
+                }
+                &.staff-step:before {
+                    background-image:url('../layoutImg/cercle/recruter.png');
+                }
+                &.manage-step:before {
+                    background-image:url('../layoutImg/cercle/gerer.png');
+                }
+                &.sell-step:before {
+                    background-image:url('../layoutImg/cercle/vendre.png');
+                }
             }
         }
     }
