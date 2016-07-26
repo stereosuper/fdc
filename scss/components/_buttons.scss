@@ -309,10 +309,10 @@
 	}
 	&.btn-yellow{
 		.border{
-			border-color: #f18832 #f18832;
+			border-color: $yellow $yellow;
 		}
 		&:hover, &:focus{
-			color: #f18832;
+			color: $yellow;
 		}
 	}
 	&.btn-alert{
@@ -447,7 +447,7 @@
 }
 
 .btn-yellow{
-	background: #f18832;
+	background: $yellow;
 }
 
 .btn-close{

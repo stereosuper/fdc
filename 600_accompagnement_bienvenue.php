@@ -38,6 +38,7 @@
                         </li>
                     </ul>
                     <div class='field-content'>
+                        <ul class="littles-squares"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
                         <header class='tab-content-title'>
                             <h2 class='h1'>Faites-vous accompagner&nbsp;!</h2>
                         </header>

@@ -2940,113 +2940,171 @@ button {
   -webkit-transition: none;
   transition: none; }
 
-.cercleMyForum .nav-tabs {
-  background: #f5f5f6;
-  border-bottom: 0 none; }
-  .cercleMyForum .nav-tabs li {
-    padding-bottom: 25px; }
-    .cercleMyForum .nav-tabs li.active {
-      background: #c52d38 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
-      background-size: 2653px 2358px; }
-.cercleMyForum .field-content {
-  background: #c52d38 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
-  background-size: 2653px 2358px;
-  border: 0 none; }
-  .cercleMyForum .field-content .tab-content-title {
-    border-bottom-color: white; }
-    .cercleMyForum .field-content .tab-content-title h2.h1 {
+.cercleMyForum {
+  position: relative; }
+  .cercleMyForum .nav-tabs {
+    background: #f5f5f6;
+    border-bottom: 0 none; }
+    .cercleMyForum .nav-tabs li {
+      padding-bottom: 25px; }
+      .cercleMyForum .nav-tabs li.active {
+        background: #c52d38 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+        background-size: 2653px 2358px; }
+  .cercleMyForum .field-content {
+    background: #c52d38 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+    background-size: 2653px 2358px;
+    border: 0 none; }
+    .cercleMyForum .field-content .tab-content-title {
+      border-bottom-color: white; }
+      .cercleMyForum .field-content .tab-content-title h2.h1 {
+        color: white; }
+    .cercleMyForum .field-content p {
       color: white; }
-  .cercleMyForum .field-content p {
-    color: white; }
-.cercleMyForum .circle-text {
-  margin: 50px 0; }
-  .cercleMyForum .circle-text img {
-    display: inline-block;
-    position: relative;
-    left: -20px;
-    float: left; }
-  .cercleMyForum .circle-text p {
-    padding: 10px 0 0; }
-  .cercleMyForum .circle-text a.btn-block {
-    padding: 17px 25px;
-    float: right;
-    margin-top: 0; }
-.cercleMyForum .call-directly {
-  background: #9b1822;
-  padding: 35px; }
-  .cercleMyForum .call-directly p, .cercleMyForum .call-directly input, .cercleMyForum .call-directly button, .cercleMyForum .call-directly form {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 5px;
-    color: white; }
-    .cercleMyForum .call-directly p:focus, .cercleMyForum .call-directly input:focus, .cercleMyForum .call-directly button:focus, .cercleMyForum .call-directly form:focus {
-      border-color: #f18832;
-      outline: 1px solid #f18832;
-      outline-offset: 0; }
-  .cercleMyForum .call-directly p {
-    margin: 0 20px 0 30px; }
-  .cercleMyForum .call-directly form {
-    float: right;
-    min-width: 490px;
-    margin-right: 20px; }
-  .cercleMyForum .call-directly ::-webkit-input-placeholder {
-    color: #f0f0f0; }
-  .cercleMyForum .call-directly ::-moz-placeholder {
-    color: #f0f0f0; }
-  .cercleMyForum .call-directly ::-ms-input-placeholder {
-    color: #f0f0f0; }
-.cercleMyForum ol.full-circle {
-  list-style: none;
-  margin: 0 -25px 0 -20px;
-  padding: 0; }
-  .cercleMyForum ol.full-circle li {
+  .cercleMyForum .circle-text {
+    margin: 50px 0; }
+    .cercleMyForum .circle-text img {
+      display: inline-block;
+      position: relative;
+      left: -20px;
+      float: left; }
+    .cercleMyForum .circle-text p {
+      padding: 10px 0 0; }
+    .cercleMyForum .circle-text a.btn-block {
+      padding: 17px 25px;
+      float: right;
+      margin-top: 0; }
+  .cercleMyForum .call-directly {
+    background: #9b1822;
+    padding: 35px; }
+    .cercleMyForum .call-directly p, .cercleMyForum .call-directly input, .cercleMyForum .call-directly button, .cercleMyForum .call-directly form {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
+      color: white; }
+      .cercleMyForum .call-directly p:focus, .cercleMyForum .call-directly input:focus, .cercleMyForum .call-directly button:focus, .cercleMyForum .call-directly form:focus {
+        border-color: #f18832;
+        outline: 1px solid #f18832;
+        outline-offset: 0; }
+    .cercleMyForum .call-directly p {
+      margin: 0 20px 0 30px; }
+    .cercleMyForum .call-directly form {
+      float: right;
+      min-width: 490px;
+      margin-right: 20px; }
+    .cercleMyForum .call-directly ::-webkit-input-placeholder {
+      color: #f0f0f0; }
+    .cercleMyForum .call-directly ::-moz-placeholder {
+      color: #f0f0f0; }
+    .cercleMyForum .call-directly ::-ms-input-placeholder {
+      color: #f0f0f0; }
+  .cercleMyForum ol.full-circle {
     list-style: none;
-    margin: 0;
-    padding: 120px 0 0 40px;
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    width: 136px;
-    color: white;
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg);
-    z-index: 1;
-    font-size: 0.8em;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
-    .cercleMyForum ol.full-circle li:before {
-      content: " ";
+    margin: 0 -25px 0 -20px;
+    padding: 0; }
+    .cercleMyForum ol.full-circle li {
+      list-style: none;
       margin: 0;
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: cover;
+      padding: 120px 0 0 40px;
+      box-sizing: border-box;
+      display: inline-block;
+      position: relative;
+      width: 136px;
+      color: white;
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+      z-index: 1;
+      font-size: 0.8em;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      transition: -webkit-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+      .cercleMyForum ol.full-circle li:before {
+        content: " ";
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transform: rotate(53deg);
+                transform: rotate(53deg);
+        z-index: -1;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      .cercleMyForum ol.full-circle li.buy-step:before {
+        background-image: url("../layoutImg/cercle/losanges/acheter.png"); }
+      .cercleMyForum ol.full-circle li.finance-step:before {
+        background-image: url("../layoutImg/cercle/losanges/financer.png"); }
+      .cercleMyForum ol.full-circle li.ensure-step:before {
+        background-image: url("../layoutImg/cercle/losanges/assurer.png"); }
+      .cercleMyForum ol.full-circle li.equip-step:before {
+        background-image: url("../layoutImg/cercle/losanges/equiper.png"); }
+      .cercleMyForum ol.full-circle li.staff-step:before {
+        background-image: url("../layoutImg/cercle/losanges/recruter.png"); }
+      .cercleMyForum ol.full-circle li.manage-step:before {
+        background-image: url("../layoutImg/cercle/losanges/gerer.png"); }
+      .cercleMyForum ol.full-circle li.sell-step:before {
+        background-image: url("../layoutImg/cercle/losanges/vendre.png"); }
+  .cercleMyForum .littles-squares {
+    margin: 0;
+    padding: 0; }
+    .cercleMyForum .littles-squares li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
       position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      -webkit-transform: rotate(53deg);
-              transform: rotate(53deg);
-      z-index: -1;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-    .cercleMyForum ol.full-circle li.buy-step:before {
-      background-image: url("../layoutImg/cercle/losanges/acheter.png"); }
-    .cercleMyForum ol.full-circle li.finance-step:before {
-      background-image: url("../layoutImg/cercle/losanges/financer.png"); }
-    .cercleMyForum ol.full-circle li.ensure-step:before {
-      background-image: url("../layoutImg/cercle/losanges/assurer.png"); }
-    .cercleMyForum ol.full-circle li.equip-step:before {
-      background-image: url("../layoutImg/cercle/losanges/equiper.png"); }
-    .cercleMyForum ol.full-circle li.staff-step:before {
-      background-image: url("../layoutImg/cercle/losanges/recruter.png"); }
-    .cercleMyForum ol.full-circle li.manage-step:before {
-      background-image: url("../layoutImg/cercle/losanges/gerer.png"); }
-    .cercleMyForum ol.full-circle li.sell-step:before {
-      background-image: url("../layoutImg/cercle/losanges/vendre.png"); }
+      background: white; }
+      .cercleMyForum .littles-squares li:before {
+        display: none; }
+      .cercleMyForum .littles-squares li:nth-child(1) {
+        width: 15px;
+        height: 15px;
+        -webkit-transform: rotate(55deg);
+                transform: rotate(55deg);
+        left: 10px;
+        top: 130px; }
+      .cercleMyForum .littles-squares li:nth-child(2) {
+        width: 6px;
+        height: 6px;
+        -webkit-transform: rotate(35deg);
+                transform: rotate(35deg);
+        left: 40px;
+        top: 220px;
+        background: #f18832; }
+      .cercleMyForum .littles-squares li:nth-child(3) {
+        width: 10px;
+        height: 10px;
+        -webkit-transform: rotate(65deg);
+                transform: rotate(65deg);
+        right: 240px;
+        top: 140px;
+        background: #f18832; }
+      .cercleMyForum .littles-squares li:nth-child(4) {
+        width: 15px;
+        height: 15px;
+        -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+        right: 110px;
+        top: 90px; }
+      .cercleMyForum .littles-squares li:nth-child(5) {
+        width: 12px;
+        height: 12px;
+        -webkit-transform: rotate(25deg);
+                transform: rotate(25deg);
+        right: 20px;
+        top: 190px; }
+      .cercleMyForum .littles-squares li:nth-child(6) {
+        width: 5px;
+        height: 5px;
+        -webkit-transform: rotate(75deg);
+                transform: rotate(75deg);
+        right: 10px;
+        top: 440px;
+        background: #f18832; }
 
 /* Pagination */
 .pagination {

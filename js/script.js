@@ -49,6 +49,10 @@ $(function(){
 	function scrollPage(){
 		myScroll = $(document).scrollTop();
 		requestAnimFrame(scrollPage);
+		if ($(".littles-squares").length>0) {
+			TweenMax.set($(".littles-squares li:nth-child(even)"), { y: myScroll/8});
+			TweenMax.set($(".littles-squares li:nth-child(odd)"), { y: myScroll/4});
+		}
 	}
 
 	// Creation de compte - Interactive map
