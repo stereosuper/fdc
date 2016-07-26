@@ -20,7 +20,7 @@
                     </li>
                     <li property='itemListElement' typeof='ListItem'>
                         <a property='item' typeof='WebPage' href='./'>
-                            <span property='name'>Offres & tarifs</span>
+                            <span property='name'>Offres et tarifs</span>
                         </a>
                     </li>
                 </ul>

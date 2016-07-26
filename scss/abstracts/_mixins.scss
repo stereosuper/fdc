@@ -162,3 +162,10 @@
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
 }
+
+// Cercle FDC
+
+@mixin bgCercle{
+    background: $backgroundCercle;
+    background-size: 2653px 2358px;
+}

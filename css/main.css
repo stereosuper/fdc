@@ -2940,6 +2940,118 @@ button {
   -webkit-transition: none;
   transition: none; }
 
+.cercleMyForum .nav-tabs {
+  background: #f5f5f6;
+  border-bottom: 0 none; }
+  .cercleMyForum .nav-tabs li {
+    padding-bottom: 25px; }
+    .cercleMyForum .nav-tabs li.active {
+      background: #c52d38 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+      background-size: 2653px 2358px; }
+.cercleMyForum .field-content {
+  background: #c52d38 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+  background-size: 2653px 2358px;
+  border: 0 none; }
+  .cercleMyForum .field-content .tab-content-title {
+    border-bottom-color: white; }
+    .cercleMyForum .field-content .tab-content-title h2.h1 {
+      color: white; }
+  .cercleMyForum .field-content p {
+    color: white; }
+.cercleMyForum .circle-text {
+  margin: 50px 0; }
+  .cercleMyForum .circle-text img {
+    display: inline-block;
+    position: relative;
+    left: -20px;
+    float: left; }
+  .cercleMyForum .circle-text p {
+    padding: 10px 0 0; }
+  .cercleMyForum .circle-text a.btn-block {
+    padding: 17px 25px;
+    float: right;
+    margin-top: 0; }
+.cercleMyForum .call-directly {
+  background: #9b1822;
+  padding: 35px; }
+  .cercleMyForum .call-directly p, .cercleMyForum .call-directly input, .cercleMyForum .call-directly button, .cercleMyForum .call-directly form {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    color: white; }
+    .cercleMyForum .call-directly p:focus, .cercleMyForum .call-directly input:focus, .cercleMyForum .call-directly button:focus, .cercleMyForum .call-directly form:focus {
+      border-color: #f18832;
+      outline: 1px solid #f18832;
+      outline-offset: 0; }
+  .cercleMyForum .call-directly p {
+    margin: 0 20px 0 30px; }
+  .cercleMyForum .call-directly form {
+    float: right;
+    min-width: 490px;
+    margin-right: 20px; }
+  .cercleMyForum .call-directly ::-webkit-input-placeholder {
+    color: #f0f0f0; }
+  .cercleMyForum .call-directly ::-moz-placeholder {
+    color: #f0f0f0; }
+  .cercleMyForum .call-directly ::-ms-input-placeholder {
+    color: #f0f0f0; }
+.cercleMyForum ol.full-circle {
+  list-style: none;
+  margin: 0 -25px 0 -20px;
+  padding: 0; }
+  .cercleMyForum ol.full-circle li {
+    list-style: none;
+    margin: 0;
+    padding: 120px 0 0 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 136px;
+    color: white;
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    z-index: 1;
+    font-size: 0.8em;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); }
+    .cercleMyForum ol.full-circle li:before {
+      content: " ";
+      margin: 0;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      -webkit-transform: rotate(46deg);
+              transform: rotate(46deg);
+      z-index: -1;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      clip: rect(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      /*webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
+      -webkit-clip-path: url("#clip-polygon");
+              clip-path: url("#clip-polygon"); }
+    .cercleMyForum ol.full-circle li.buy-step:before {
+      background-image: url("../layoutImg/cercle/acheter.png"); }
+    .cercleMyForum ol.full-circle li.finance-step:before {
+      background-image: url("../layoutImg/cercle/financer.png"); }
+    .cercleMyForum ol.full-circle li.ensure-step:before {
+      background-image: url("../layoutImg/cercle/assurer.png"); }
+    .cercleMyForum ol.full-circle li.equip-step:before {
+      background-image: url("../layoutImg/cercle/equiper.png"); }
+    .cercleMyForum ol.full-circle li.staff-step:before {
+      background-image: url("../layoutImg/cercle/recruter.png"); }
+    .cercleMyForum ol.full-circle li.manage-step:before {
+      background-image: url("../layoutImg/cercle/gerer.png"); }
+    .cercleMyForum ol.full-circle li.sell-step:before {
+      background-image: url("../layoutImg/cercle/vendre.png"); }
+
 /* Pagination */
 .pagination {
   text-align: center; }
@@ -3252,6 +3364,10 @@ button {
     border-color: #ef6a2b #ef6a2b; }
   .btn-block.btn-orange-light:hover, .btn-block.btn-orange-light:focus {
     color: #ef6a2b; }
+  .btn-block.btn-yellow .border {
+    border-color: #f18832 #f18832; }
+  .btn-block.btn-yellow:hover, .btn-block.btn-yellow:focus {
+    color: #f18832; }
   .btn-block.btn-alert {
     padding: 16px 16px 15px 13px;
     font-size: 1em;
@@ -3367,6 +3483,9 @@ button {
 
 .btn-orange-light {
   background: #ef6a2b; }
+
+.btn-yellow {
+  background: #f18832; }
 
 .btn-close {
   display: block;
@@ -6265,9 +6384,35 @@ button {
                 transform: translateY(-50%) rotate(-90deg);
         top: 50%;
         left: -75px; } }
+@media (max-width: 1080px) {
+  .cercleMyForum ol.full-circle {
+    margin: 0; }
+    .cercleMyForum ol.full-circle li {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      width: 14%;
+      text-align: center;
+      padding: 170px 10px 0 0;
+      margin: 0 0.1%;
+      min-height: 180px; }
+      .cercleMyForum ol.full-circle li:before {
+        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+                clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        bottom: 25px; } }
 @media (max-width: 1024px) {
   h1.big {
-    font-size: 3em; } }
+    font-size: 3em; }
+
+  .cercleMyForum .call-directly br {
+    display: none; }
+  .cercleMyForum .call-directly form {
+    float: none;
+    margin-left: 25px;
+    margin-bottom: 15px; }
+    .cercleMyForum .call-directly form input, .cercleMyForum .call-directly form button {
+      margin-top: 10px; } }
 @media (max-width: 979px) {
   h1.padding-grid, h2.padding-grid, h3.padding-grid, h4.padding-grid, h5.padding-grid, h6.padding-grid, .title-zone.padding-grid {
     padding: 0; }
@@ -6330,6 +6475,8 @@ button {
       padding: 15px 15px 12px; }
       .nav-tabs-indicator li:not(:first-child):after {
         display: none; }
+    .cercleMyForum .nav-tabs li {
+      padding-bottom: 15px; }
     .nav-tabs:not(.nav-tabs-indicator) a, .nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
       padding: 15px 15px 12px; }
     .nav-tabs:not(.nav-tabs-indicator).no-border a, .nav-tabs:not(.nav-tabs-indicator).no-border span:not(.notif) {
@@ -7097,6 +7244,8 @@ button {
           width: 15px;
           height: 15px;
           text-align: center; }
+    .cercleMyForum ul.nav-tabs li {
+      padding-bottom: 10px; }
 
   .leads-criteres li {
     display: block;
@@ -7173,7 +7322,25 @@ button {
         margin-top: 10px;
         margin-left: 14px; }
       .detail .table .content-tabs-detail .field-content-detail .content-footer .btn-heart, .detail .table .content-tabs-detail .field-content-detail .content-footer .btn-arrow-back, .detail .table .content-tabs-detail.small-col .field-content-detail .content-footer .btn-heart, .detail .table .content-tabs-detail.small-col .field-content-detail .content-footer .btn-arrow-back {
-        margin-left: 18px; } }
+        margin-left: 18px; }
+
+  .cercleMyForum .circle-text {
+    margin: 0;
+    text-align: center; }
+    .cercleMyForum .circle-text img {
+      left: 0;
+      float: none;
+      margin: 40px auto 0 auto; }
+    .cercleMyForum .circle-text p {
+      padding-top: 0;
+      margin-top: -10px; }
+    .cercleMyForum .circle-text a.btn-block {
+      margin: 10px auto;
+      float: none; }
+  .cercleMyForum .call-directly form {
+    min-width: 0; }
+    .cercleMyForum .call-directly form input[type="text"] {
+      margin-right: 100px; } }
 @media (max-width: 600px) {
   .home-link {
     padding-top: 23px;
@@ -7222,7 +7389,17 @@ button {
     .field-content .table-offres-tarifs tr td.option .option-title, .field-content .table-offres-tarifs tr td.big-pricing.option .option-title, .field-content .table-offres-tarifs tr td.no-border.option .option-title {
       position: static;
       display: block;
-      margin: 0 auto 1em; } }
+      margin: 0 auto 1em; }
+
+  /* cercle */
+  .cercleMyForum ol.full-circle {
+    margin-bottom: 0; }
+    .cercleMyForum ol.full-circle li {
+      padding-top: 0;
+      text-indent: -9999px;
+      overflow: hidden; }
+      .cercleMyForum ol.full-circle li:before {
+        bottom: 0; } }
 @media (max-width: 480px) {
   h1, #lb .lightbox-content .field h1 {
     font-size: 1.8em; }
@@ -7408,7 +7585,12 @@ button {
 
   .btn-block.btn-alert {
     padding: 11px 11px 10px 8px;
-    font-size: 0.9em; } }
+    font-size: 0.9em; }
+
+  .cercleMyForum .call-directly {
+    padding: 35px 0; }
+    .cercleMyForum .call-directly input[type="text"] {
+      width: 90%; } }
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; }

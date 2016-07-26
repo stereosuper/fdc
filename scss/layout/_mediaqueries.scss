@@ -574,10 +574,44 @@
     }
 }
 
+@media (max-width: 1080px){
+    .cercleMyForum {
+        ol.full-circle  {
+            margin:0;
+            li {
+                transform:rotate(0);
+                width:14%;
+                text-align: center;
+                padding:170px 10px 0 0;
+                margin:0 0.1%;
+                min-height:180px;
+                &:before {
+                    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+                    transform:rotate(0);
+                    bottom:25px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px){
     h1{
         &.big{
             font-size: 3em;
+        }
+    }
+    .cercleMyForum .call-directly {
+        br {
+            display: none
+        }
+        form {
+            float:none;
+            margin-left:25px;
+            margin-bottom:15px;
+            input, button {
+                margin-top:10px;
+            }
         }
     }
 }
@@ -672,6 +706,9 @@
                     }
                 }
             }
+        }
+        .cercleMyForum & li {
+            padding-bottom:15px;
         }
         &:not(.nav-tabs-indicator){
             a, span:not(.notif){
@@ -1849,6 +1886,9 @@
                 }
             }
         }
+        .cercleMyForum & li {
+            padding-bottom:10px;
+        }
     }
 
     .leads-criteres{
@@ -1979,6 +2019,31 @@
             }
         }
     }
+    .cercleMyForum {
+        .circle-text {
+            margin: 0;
+            text-align: center;
+            img {
+                left:0;
+                float:none;
+                margin:40px auto 0 auto;
+            }
+            p {
+                padding-top: 0;
+                margin-top:-10px;
+            }
+            a.btn-block {
+                margin:10px auto;
+                float:none;
+            }
+        }
+        .call-directly form {
+            min-width:0;
+            input[type="text"] {
+                margin-right:100px;
+            }
+        }
+    }
 }
 
 @media (max-width: 600px){
@@ -2064,6 +2129,18 @@
                         margin:0 auto 1em;
                     }
                 }
+            }
+        }
+    }
+    /* cercle */
+    .cercleMyForum ol.full-circle {
+        margin-bottom: 0;
+        li {
+            padding-top:0;
+            text-indent: -9999px;
+            overflow: hidden;
+            &:before {
+                bottom:0;
             }
         }
     }
@@ -2365,6 +2442,14 @@
     .btn-block.btn-alert{
         padding: 11px 11px 10px 8px;
         font-size: 0.9em;
+    }
+    .cercleMyForum {
+        .call-directly {
+            padding:35px 0;
+            input[type="text"] {
+                width:90%;
+            }
+        }
     }
 }
 

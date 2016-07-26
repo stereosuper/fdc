@@ -20,13 +20,13 @@
                     </li>
                     <li property='itemListElement' typeof='ListItem'>
                         <a property='item' typeof='WebPage' href='./'>
-                            <span property='name'>Offres & tarifs</span>
+                            <span property='name'>Offres et tarifs</span>
                         </a>
                     </li>
                 </ul>
 
                 <h1>Acheter des crédits d'annonce</h1>
-                
+
                 <div class='content-tabs'>
                     <ul class='nav-tabs nav-tabs-indicator nav-tabs-white'>
                         <li >
@@ -50,7 +50,7 @@
 
                         <div class='paiement-option '>
                         <p>Merci pour votre commande. Les crédits ont été ajoutés à votre compte.</p>
-                            
+
                         </div>
                     </div>
                 </div>

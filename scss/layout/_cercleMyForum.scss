@@ -1,0 +1,133 @@
+.cercleMyForum {
+    .nav-tabs {
+        background:$gris-bg;
+        border-bottom: 0 none;
+        li {
+            padding-bottom:25px;
+            &.active {
+                @include bgCercle;
+            }
+        }
+    }
+    .field-content {
+        @include bgCercle;
+        border:0 none;
+        .tab-content-title {
+            border-bottom-color:$blanc;
+            h2.h1 {
+                    color:$blanc;
+            }
+        }
+        p {
+           color:$blanc;
+        }
+    }
+    .circle-text {
+        margin:50px 0;
+        img {
+            display:inline-block;
+            position:relative;
+            left:-20px;
+            float:left;
+        }
+        p {
+            padding:10px 0 0;
+        }
+        a.btn-block {
+            padding: 17px 25px;
+            float:right;
+            margin-top:0;
+        }
+    }
+    .call-directly {
+        background:#9b1822;
+        padding:35px;
+        p, input, button, form {
+            display:inline-block;
+            vertical-align:middle;
+            margin:0 5px;
+            color:$blanc;
+            &:focus{
+                border-color: #f18832;
+                outline: 1px solid #f18832;
+                outline-offset: 0;
+            }
+        }
+        p {
+            margin:0 20px 0 30px;
+        }
+        form {
+            float:right;
+            min-width:490px;
+            margin-right:20px;
+        }
+        ::-webkit-input-placeholder{
+            color: rgb(240, 240, 240);
+        }
+        ::-moz-placeholder{
+            color: rgb(240, 240, 240);
+        }
+        ::-ms-input-placeholder{
+            color: rgb(240, 240, 240);
+        }
+    }
+    ol.full-circle {
+        list-style:none;
+        margin:0 -25px 0 -20px;
+        padding:0;
+        li {
+            list-style:none;
+            margin:0;
+            padding:120px 0 0 40px;
+            box-sizing: border-box;
+            display:inline-block;
+            position:relative;
+            width:136px;
+            color:$blanc;
+            transform:rotate(-40deg);
+            z-index:1;
+            font-size:0.8em;
+            transition: transform $transition;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+            &:before {
+                content:" ";
+                margin:0;
+                background-repeat:no-repeat;
+                background-position:50% 0;
+                background-size:cover;
+                position:absolute;
+                left:0;
+                right:0;
+                top:0;
+                bottom:0;
+                transform:rotate(46deg);
+                z-index:-1;
+                transition: all $transition;
+                clip:rect(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                /*webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
+                clip-path: url("#clip-polygon");
+            }
+            &.buy-step:before {
+                background-image:url('../layoutImg/cercle/acheter.png');
+            }
+            &.finance-step:before {
+                background-image:url('../layoutImg/cercle/financer.png');
+            }
+            &.ensure-step:before {
+                background-image:url('../layoutImg/cercle/assurer.png');
+            }
+            &.equip-step:before {
+                background-image:url('../layoutImg/cercle/equiper.png');
+            }
+            &.staff-step:before {
+                background-image:url('../layoutImg/cercle/recruter.png');
+            }
+            &.manage-step:before {
+                background-image:url('../layoutImg/cercle/gerer.png');
+            }
+            &.sell-step:before {
+                background-image:url('../layoutImg/cercle/vendre.png');
+            }
+        }
+    }
+}
