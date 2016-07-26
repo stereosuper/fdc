@@ -3016,7 +3016,7 @@ button {
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); }
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
     .cercleMyForum ol.full-circle li:before {
       content: " ";
       margin: 0;
@@ -3034,9 +3034,8 @@ button {
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       clip: rect(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-      /*webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
-      -webkit-clip-path: url("#clip-polygon");
-              clip-path: url("#clip-polygon"); }
+      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
     .cercleMyForum ol.full-circle li.buy-step:before {
       background-image: url("../layoutImg/cercle/acheter.png"); }
     .cercleMyForum ol.full-circle li.finance-step:before {
@@ -6390,14 +6389,14 @@ button {
     .cercleMyForum ol.full-circle li {
       -webkit-transform: rotate(0);
               transform: rotate(0);
-      width: 14%;
+      width: 13.6%;
       text-align: center;
       padding: 170px 10px 0 0;
-      margin: 0 0.1%;
+      margin: 0 0.3%;
       min-height: 180px; }
       .cercleMyForum ol.full-circle li:before {
-        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-                clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%) !important;
+                clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%) !important;
         -webkit-transform: rotate(0);
                 transform: rotate(0);
         bottom: 25px; } }

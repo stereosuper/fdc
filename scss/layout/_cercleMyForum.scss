@@ -88,7 +88,7 @@
             z-index:1;
             font-size:0.8em;
             transition: transform $transition;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
             &:before {
                 content:" ";
                 margin:0;
@@ -104,8 +104,7 @@
                 z-index:-1;
                 transition: all $transition;
                 clip:rect(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-                /*webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
-                clip-path: url("#clip-polygon");
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             }
             &.buy-step:before {
                 background-image:url('../layoutImg/cercle/acheter.png');
