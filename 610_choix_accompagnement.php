@@ -155,6 +155,7 @@
                                         </ul>
                                     </li>
                                 </ul>
+                                <button type="submit" class='btn-block btn-yellow huge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                             </form>
                         </div>
                     </div>

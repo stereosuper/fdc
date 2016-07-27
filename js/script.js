@@ -689,18 +689,24 @@ $(function(){
 
 	// selects choix accompagnement
 	if ($(".select-circle").length>0) {
-		$(".select-circle .circle-step > li").addClass('closed');
-		$(".select-circle .circle-step > li ul").slideToggle(0);
-		$(".select-circle .circle-step > li header").on('click', function(e){
-			e.preventDefault();
-			if ($("input[type=checkbox]",this).prop('checked')) {
-				$("input[type=checkbox]",this).prop('checked',false);
-				$(this).parent().addClass('closed');
-			} else {
-				$("input[type=checkbox]",this).prop('checked',true);
-				$(this).parent().removeClass('closed');
+		$(".select-circle .circle-step > li").each(function(index, el) {
+			if (!$("input[type=checkbox]",this).prop('checked')) {
+				$(this).addClass('closed');
+				$("ul", this).slideToggle(0);
 			}
-			$(this).next("ul").slideToggle(400);
+		});
+		$(".select-circle .circle-step > li header").on('click', function(e){
+			if (!$('#formToEdit').hasClass('form-disabled')) {
+				e.preventDefault();
+				if ($("input[type=checkbox]",this).prop('checked')) {
+					$("input[type=checkbox]",this).prop('checked',false);
+					$(this).parent().addClass('closed');
+				} else {
+					$("input[type=checkbox]",this).prop('checked',true);
+					$(this).parent().removeClass('closed');
+				}
+				$(this).next("ul").slideToggle(400);
+			}
 		});
 	}
 

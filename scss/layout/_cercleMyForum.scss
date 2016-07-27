@@ -1,10 +1,14 @@
 .cercleMyForum {
     position:relative;
+    .nav-tabs-indicator {
+        li {
+            padding-bottom:25px;
+        }
+    }
     .nav-tabs {
         background:$gris-bg;
         border-bottom: 0 none;
         li {
-            padding-bottom:25px;
             &.active {
                 @include bgCercle;
             }
@@ -34,22 +38,13 @@
                 color: $blanc;
             }
         }
-        input {
+        .sale-form input, .login-vente input {
             color:$blanc;
             &:focus{
                 border-color: $yellow;
                 outline: 1px solid $yellow;
                 outline-offset: 0;
             }
-        }
-        ::-webkit-input-placeholder{
-            color: rgb(240, 240, 240);
-        }
-        ::-moz-placeholder{
-            color: rgb(240, 240, 240);
-        }
-        ::-ms-input-placeholder{
-            color: rgb(240, 240, 240);
         }
     }
     .circle-text {
@@ -80,6 +75,9 @@
             display:block;
             left:200px;
             right:0;
+            button {
+                float:right;
+            }
             ul {
                 display:block;
                 padding:0;
@@ -146,7 +144,9 @@
                             margin:0;
                             column-count: 2;
                             li {
-                                margin:7px 0 7px 0;
+                                margin:0;
+                                height:40px;
+                                padding:0;
                                 background:none;
                                 input[type=text] {
                                     width:200px;
@@ -161,20 +161,51 @@
                             border:2px solid $blanc;
                             header {
                                 border-radius:5px;
-                                cursor:pointer;
                                 label{
                                     color:$blanc;
                                 }
                             }
-                            &:hover {
-                                cursor:pointer;
-                                background:$blanc;
-                                label{
-                                    color:$txt;
-                                }
-                            }
                         }
                     }
+                }
+            }
+            &:not(.form-disabled) ul.circle-step li.closed:hover {
+                    cursor:pointer;
+                    background:$blanc;
+                    header {
+                        cursor:pointer;
+                    }
+                    label{
+                        color:$txt;
+                    }
+            }
+            &.form-disabled {
+                input[type=checkbox][disabled] + label {
+                    display: inline-block;
+                    padding-left:25px;
+                    &:after {
+                        display:block;
+                    }
+                }
+                input[type=checkbox][disabled]:not(:checked) + label {
+                    &:after {
+                        content: '\e90a';
+                        opacity:1;
+                        font-size:11px;
+                        color:$noir;
+                        transform:rotate(-45deg);
+                    }
+                }
+                header input[type=checkbox][disabled]:not(:checked) + label {
+                    &:after {
+                        display:none;
+                    }
+                }
+                ul li ul input[type=checkbox][disabled] + label{
+                    font-family: $roboto;
+                }
+                input[type=text][disabled] {
+                    display:none;
                 }
             }
         }
