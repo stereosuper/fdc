@@ -2957,8 +2957,28 @@ button {
       border-bottom-color: white; }
       .cercleMyForum .field-content .tab-content-title h2.h1 {
         color: white; }
-    .cercleMyForum .field-content p {
+    .cercleMyForum .field-content p, .cercleMyForum .field-content h3, .cercleMyForum .field-content .login-vente label, .cercleMyForum .field-content .sale-form label, .cercleMyForum .field-content .sale-form legend {
       color: white; }
+    .cercleMyForum .field-content .login-vente {
+      border-right: 1px dashed white; }
+    .cercleMyForum .field-content a, .cercleMyForum .field-content .tab-content-title button {
+      color: #e8adb2; }
+      .cercleMyForum .field-content a:focus, .cercleMyForum .field-content a:hover, .cercleMyForum .field-content .tab-content-title button:focus, .cercleMyForum .field-content .tab-content-title button:hover {
+        color: white; }
+      .cercleMyForum .field-content a:active, .cercleMyForum .field-content .tab-content-title button:active {
+        color: white; }
+    .cercleMyForum .field-content input {
+      color: white; }
+      .cercleMyForum .field-content input:focus {
+        border-color: #f18832;
+        outline: 1px solid #f18832;
+        outline-offset: 0; }
+    .cercleMyForum .field-content ::-webkit-input-placeholder {
+      color: #f0f0f0; }
+    .cercleMyForum .field-content ::-moz-placeholder {
+      color: #f0f0f0; }
+    .cercleMyForum .field-content ::-ms-input-placeholder {
+      color: #f0f0f0; }
   .cercleMyForum .circle-text {
     margin: 50px 0; }
     .cercleMyForum .circle-text img {
@@ -3172,7 +3192,7 @@ button {
         height: 10px;
         -webkit-transform: rotate(65deg);
                 transform: rotate(65deg);
-        right: 240px;
+        right: 230px;
         top: 140px;
         background: #f18832; }
       .cercleMyForum .littles-squares li:nth-child(4) {
@@ -6924,6 +6944,9 @@ button {
     border: none;
     margin: 0 0 20px 0;
     border-bottom: 1px dashed #000; }
+    .cercleMyForum .content-log .login-vente {
+      border: none;
+      border-bottom: 1px dashed white; }
   .content-log .sign-up {
     display: block;
     width: 100%;

@@ -19,8 +19,37 @@
                     color:$blanc;
             }
         }
-        p {
+        p, h3, .login-vente label, .sale-form label, .sale-form legend {
            color:$blanc;
+        }
+        .login-vente {
+            border-right: 1px dashed $blanc;
+        }
+        a, .tab-content-title button {
+            color: mix($theme-btn, $blanc, 40%);
+            &:focus, &:hover{
+                color: $blanc;
+            }
+            &:active{
+                color: $blanc;
+            }
+        }
+        input {
+            color:$blanc;
+            &:focus{
+                border-color: $yellow;
+                outline: 1px solid $yellow;
+                outline-offset: 0;
+            }
+        }
+        ::-webkit-input-placeholder{
+            color: rgb(240, 240, 240);
+        }
+        ::-moz-placeholder{
+            color: rgb(240, 240, 240);
+        }
+        ::-ms-input-placeholder{
+            color: rgb(240, 240, 240);
         }
     }
     .circle-text {
@@ -269,7 +298,7 @@
                 width:10px;
                 height:10px;
                 transform:rotate(65deg);
-                right:240px;
+                right:230px;
                 top:140px;
                 background:$yellow;
             }

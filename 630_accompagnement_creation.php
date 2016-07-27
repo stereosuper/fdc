@@ -3,58 +3,40 @@
 <!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
 
     <head>
-        <title>Forum des Commerces - Vente</title>
+        <title>Forum des Commerces - Achat</title>
         <?php include_once('includes/head.html'); ?>
     </head>
 
     <body>
-        <?php
-            global $field;
-            $field = 'Boulangerie - Pâtisserie - Salon de thé';
-            include_once('includes/header.php');
-        ?>
+        <?php include_once('includes/header.php'); ?>
 
         <main id='main' role='main'>
-            <div class='bloc-top'>
-                <div class='wrapper-img img-fit'>
-                    <img src='img/visuel-home.jpg' alt=''>
-                </div>
-            </div>
-
             <div class='container-small'>
-                <div class='field field-sale'>
-                    <header class='field-header'>
-                        <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
-                            <li property='itemListElement' typeof='ListItem'>
-                                <h6><a property='item' typeof='WebPage' href='./'>
-                                    <span property='name'>Accueil</span>
-                                </a></h6>
-                            </li>
-                        </ul>
-                        <h1>Vente de boulangerie - pâtisserie - salon de thé</h1>
-                        <div class='rect'></div>
-                    </header>
-                </div>
+                <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='./'>
+                            <span property='name'>Accueil</span>
+                        </a>
+                    </li>
+                    <li property='itemListElement' typeof='ListItem'>
+                        <a property='item' typeof='WebPage' href='./'>
+                            <span property='name'>Offres et tarifs</span>
+                        </a>
+                    </li>
+                </ul>
 
-                <div class='content-tabs content-tabs-sale'>
+                <h1>Demande d'acccompagnement</h1>
+
+                <div class='content-tabs cercleMyForum'>
                     <ul class='nav-tabs nav-tabs-indicator'>
-                        <li >
-                            <a href='#'>
-                            <span>1. Bienvenue</span>
-                            </a>
+                        <li><a href="#"><span>Bienvenue&nbsp;!</span></a>
+                        </li><li>
+                                <a href="#"><span>Vos besoins</span></a>
                         </li><li class='active'>
-                                <span>2. Connexion</span>
-                        </li><li>
-                            <a href='#'>
-                                <span>3. Mon annonce</span>
-                            </a>
-                        </li><li>
-                            <a href='#'>
-                                <span>4. Paiement</span>
-                            </a>
+                                <span>Vos coordonnées</span>
                         </li>
                     </ul>
-                    <div class='content-sale-log'>
+                    <div class='content-sale-log field-content'>
                         <header class='tab-content-title'>
                             <h2 class='h1'>Vos informations </h2>
                             <button class='btn-arrow small align-top' >Déjà inscrit ?</button>
@@ -125,6 +107,15 @@
                                 </fieldset>
                             </fieldset>
                             <button type='submit' class='btn-block huge btn-orange-light'><span class='border'></span><span class='txt-btn'>Valider</span></button>
+                        </form>
+                    </div>
+                    <div class="call-directly">
+                        <p><b>Envie de vous simplifier la vie&nbsp;?</b><br />
+                        Faites-vous rappeler directement par un expert !</p>
+                        <form>
+                            <input type="text" placeholder="Votre nom" />
+                            <input type="tel" placeholder="Votre téléphone" />
+                            <button type="submit" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Ok</span></button>
                         </form>
                     </div>
                 </div>
