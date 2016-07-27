@@ -26,7 +26,6 @@
     .circle-text {
         margin:50px 0;
         img {
-            display:inline-block;
             position:relative;
             left:-20px;
             float:left;
@@ -38,6 +37,117 @@
             padding: 17px 25px;
             float:right;
             margin-top:0;
+        }
+    }
+    .select-circle {
+        display:table;
+        .column {
+            display:table-cell;
+            min-width:196px;
+            text-align:left;
+            vertical-align:top;
+        }
+        form {
+            display:block;
+            left:200px;
+            right:0;
+            ul {
+                display:block;
+                padding:0;
+                &.circle-step {
+                    li {
+                        margin:30px 0;
+                        padding:0;
+                        display:block;
+                        background:$blanc;
+                        border-radius:6px;
+                        transition:$transition;
+                        border:2px solid rgba(255,255,255,0);
+                        header {
+                            padding:10px;
+                            border-radius:6px 6px 0 0;
+                            transition:$transition;
+                            label {
+                                transition:$transition;
+                                @include roboto-cd-bold(1.3em);
+                                margin:5px 0 5px 10px;
+                                input[type="checkbox"] {
+                                    margin:15px;
+                                }
+                                &:before, &:after {
+                                    top:3px;
+                                }
+                            }
+                            &.buy-step {
+                                background:url('../layoutImg/cercle/horizontaux/acheter.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.finance-step {
+                                background:url('../layoutImg/cercle/horizontaux/financer.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.ensure-step {
+                                background:url('../layoutImg/cercle/horizontaux/assurer.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.equip-step {
+                                background:url('../layoutImg/cercle/horizontaux/equiper.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.staff-step {
+                                background:url('../layoutImg/cercle/horizontaux/recruter.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.manage-step {
+                                background:url('../layoutImg/cercle/horizontaux/gerer.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.sell-step {
+                                background:url('../layoutImg/cercle/horizontaux/vendre.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                        }
+                        &:before {
+                            display:none;
+                        }
+                        ul {
+                            background:#f5f5f6;
+                            padding:10px 10px 20px 45px;
+                            border-radius:0 0 6px 6px;
+                            margin:0;
+                            column-count: 2;
+                            li {
+                                margin:7px 0 7px 0;
+                                background:none;
+                                input[type=text] {
+                                    width:200px;
+                                    margin-left:10px;
+                                    background:$blanc;
+                                    padding:7px;
+                                }
+                            }
+                        }
+                        &.closed {
+                            background:#c62d3a;
+                            border:2px solid $blanc;
+                            header {
+                                border-radius:5px;
+                                cursor:pointer;
+                                label{
+                                    color:$blanc;
+                                }
+                            }
+                            &:hover {
+                                cursor:pointer;
+                                background:$blanc;
+                                label{
+                                    color:$txt;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .call-directly {
@@ -184,6 +294,32 @@
                 right:10px;
                 top:440px;
                 background:$yellow;
+            }
+        }
+        &.vertical li {
+            &:nth-child(1) {
+                left:90px;
+                top:430px;
+            }
+            &:nth-child(2) {
+                left:130px;
+                top:680px;
+            }
+            &:nth-child(3) {
+                left:120px;
+                top:470px;
+            }
+            &:nth-child(4) {
+                left:160px;
+                top:390px;
+            }
+            &:nth-child(5) {
+                left:100px;
+                top:550px;
+            }
+            &:nth-child(6) {
+                left:70px;
+                top:440px;
             }
         }
     }

@@ -1410,7 +1410,7 @@ input[type=radio][disabled] {
   input[type=radio][disabled]:checked + label {
     display: inline-block; }
 input[type=checkbox] {
-  position: absolute;
+  position: relative;
   left: -99em; }
   input[type=checkbox] + label {
     position: relative;
@@ -1425,7 +1425,7 @@ input[type=checkbox] {
       height: 16px;
       border: 1px solid #ebebeb;
       left: 0;
-      top: -1px;
+      top: -2px;
       background: #fff;
       outline: 1px solid #dadada;
       -webkit-transition: 0.3s ease-in-out;
@@ -1441,17 +1441,17 @@ input[type=checkbox] {
       line-height: 1;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      text-align: center;
       content: '\e907';
       display: block;
       height: 15px;
-      top: 0;
+      width: 12px;
+      top: -1px;
       left: 2px;
-      font-size: 11px;
+      font-size: 0;
       line-height: 15px;
-      color: #7392da;
+      color: #df5441;
       opacity: 0;
-      -webkit-transform: scale(0);
-              transform: scale(0);
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out; }
     input[type=checkbox] + label:hover:before {
@@ -1459,8 +1459,7 @@ input[type=checkbox] {
       outline: 1px solid #efefef; }
   input[type=checkbox]:checked + label:after {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    font-size: 11px; }
   input[type=checkbox][disabled] {
     display: none; }
     input[type=checkbox][disabled] + label {
@@ -2963,7 +2962,6 @@ button {
   .cercleMyForum .circle-text {
     margin: 50px 0; }
     .cercleMyForum .circle-text img {
-      display: inline-block;
       position: relative;
       left: -20px;
       float: left; }
@@ -2973,6 +2971,100 @@ button {
       padding: 17px 25px;
       float: right;
       margin-top: 0; }
+  .cercleMyForum .select-circle {
+    display: table; }
+    .cercleMyForum .select-circle .column {
+      display: table-cell;
+      min-width: 196px;
+      text-align: left;
+      vertical-align: top; }
+    .cercleMyForum .select-circle form {
+      display: block;
+      left: 200px;
+      right: 0; }
+      .cercleMyForum .select-circle form ul {
+        display: block;
+        padding: 0; }
+        .cercleMyForum .select-circle form ul.circle-step li {
+          margin: 30px 0;
+          padding: 0;
+          display: block;
+          background: white;
+          border-radius: 6px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          border: 2px solid rgba(255, 255, 255, 0); }
+          .cercleMyForum .select-circle form ul.circle-step li header {
+            padding: 10px;
+            border-radius: 6px 6px 0 0;
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out; }
+            .cercleMyForum .select-circle form ul.circle-step li header label {
+              -webkit-transition: 0.3s ease-in-out;
+              transition: 0.3s ease-in-out;
+              font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+              font-size: 1.3em;
+              font-weight: 400;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              text-rendering: optimizeLegibility;
+              margin: 5px 0 5px 10px; }
+              .cercleMyForum .select-circle form ul.circle-step li header label input[type="checkbox"] {
+                margin: 15px; }
+              .cercleMyForum .select-circle form ul.circle-step li header label:before, .cercleMyForum .select-circle form ul.circle-step li header label:after {
+                top: 3px; }
+            .cercleMyForum .select-circle form ul.circle-step li header.buy-step {
+              background: url("../layoutImg/cercle/horizontaux/acheter.png") no-repeat 100% -1px;
+              background-size: 305px auto; }
+            .cercleMyForum .select-circle form ul.circle-step li header.finance-step {
+              background: url("../layoutImg/cercle/horizontaux/financer.png") no-repeat 100% -1px;
+              background-size: 305px auto; }
+            .cercleMyForum .select-circle form ul.circle-step li header.ensure-step {
+              background: url("../layoutImg/cercle/horizontaux/assurer.png") no-repeat 100% -1px;
+              background-size: 305px auto; }
+            .cercleMyForum .select-circle form ul.circle-step li header.equip-step {
+              background: url("../layoutImg/cercle/horizontaux/equiper.png") no-repeat 100% -1px;
+              background-size: 305px auto; }
+            .cercleMyForum .select-circle form ul.circle-step li header.staff-step {
+              background: url("../layoutImg/cercle/horizontaux/recruter.png") no-repeat 100% -1px;
+              background-size: 305px auto; }
+            .cercleMyForum .select-circle form ul.circle-step li header.manage-step {
+              background: url("../layoutImg/cercle/horizontaux/gerer.png") no-repeat 100% -1px;
+              background-size: 305px auto; }
+            .cercleMyForum .select-circle form ul.circle-step li header.sell-step {
+              background: url("../layoutImg/cercle/horizontaux/vendre.png") no-repeat 100% -1px;
+              background-size: 305px auto; }
+          .cercleMyForum .select-circle form ul.circle-step li:before {
+            display: none; }
+          .cercleMyForum .select-circle form ul.circle-step li ul {
+            background: #f5f5f6;
+            padding: 10px 10px 20px 45px;
+            border-radius: 0 0 6px 6px;
+            margin: 0;
+            -webkit-column-count: 2;
+               -moz-column-count: 2;
+                    column-count: 2; }
+            .cercleMyForum .select-circle form ul.circle-step li ul li {
+              margin: 7px 0 7px 0;
+              background: none; }
+              .cercleMyForum .select-circle form ul.circle-step li ul li input[type=text] {
+                width: 200px;
+                margin-left: 10px;
+                background: white;
+                padding: 7px; }
+          .cercleMyForum .select-circle form ul.circle-step li.closed {
+            background: #c62d3a;
+            border: 2px solid white; }
+            .cercleMyForum .select-circle form ul.circle-step li.closed header {
+              border-radius: 5px;
+              cursor: pointer; }
+              .cercleMyForum .select-circle form ul.circle-step li.closed header label {
+                color: white; }
+            .cercleMyForum .select-circle form ul.circle-step li.closed:hover {
+              cursor: pointer;
+              background: white; }
+              .cercleMyForum .select-circle form ul.circle-step li.closed:hover label {
+                color: #282c34; }
   .cercleMyForum .call-directly {
     background: #9b1822;
     padding: 35px; }
@@ -3105,6 +3197,24 @@ button {
         right: 10px;
         top: 440px;
         background: #f18832; }
+    .cercleMyForum .littles-squares.vertical li:nth-child(1) {
+      left: 90px;
+      top: 430px; }
+    .cercleMyForum .littles-squares.vertical li:nth-child(2) {
+      left: 130px;
+      top: 680px; }
+    .cercleMyForum .littles-squares.vertical li:nth-child(3) {
+      left: 120px;
+      top: 470px; }
+    .cercleMyForum .littles-squares.vertical li:nth-child(4) {
+      left: 160px;
+      top: 390px; }
+    .cercleMyForum .littles-squares.vertical li:nth-child(5) {
+      left: 100px;
+      top: 550px; }
+    .cercleMyForum .littles-squares.vertical li:nth-child(6) {
+      left: 70px;
+      top: 440px; }
 
 /* Pagination */
 .pagination {
@@ -6480,7 +6590,13 @@ button {
     margin-left: 25px;
     margin-bottom: 15px; }
     .cercleMyForum .call-directly form input, .cercleMyForum .call-directly form button {
-      margin-top: 10px; } }
+      margin-top: 10px; }
+  .cercleMyForum .select-circle form ul.circle-step li ul {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+    .cercleMyForum .select-circle form ul.circle-step li ul li input[type=text] {
+      width: 300px; } }
 @media (max-width: 979px) {
   h1.padding-grid, h2.padding-grid, h3.padding-grid, h4.padding-grid, h5.padding-grid, h6.padding-grid, .title-zone.padding-grid {
     padding: 0; }
@@ -6866,7 +6982,18 @@ button {
       left: auto;
       right: 16px;
       top: 1px;
-      width: 100%; } }
+      width: 100%; }
+
+  .cercleMyForum .select-circle {
+    display: inline; }
+    .cercleMyForum .select-circle .column {
+      display: block; }
+      .cercleMyForum .select-circle .column p {
+        padding: 25px 0 0; }
+    .cercleMyForum .select-circle form ul.circle-step {
+      clear: both; }
+  .cercleMyForum .littles-squares.vertical {
+    display: none; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -7289,7 +7416,13 @@ button {
 
   /* lightbox */
   #lb .prev-slide, #lb .next-slide {
-    width: 20px; } }
+    width: 20px; }
+
+  .cercleMyForum label {
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  .cercleMyForum .field-content .tab-content-title {
+    padding-top: 0; } }
 @media (max-width: 650px) {
   ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){
@@ -7399,6 +7532,8 @@ button {
       left: 0;
       float: none;
       margin: 40px auto 0 auto; }
+    .cercleMyForum .circle-text .column img {
+      display: none; }
     .cercleMyForum .circle-text p {
       padding-top: 0;
       margin-top: -10px; }
@@ -7408,7 +7543,17 @@ button {
   .cercleMyForum .call-directly form {
     min-width: 0; }
     .cercleMyForum .call-directly form input[type="text"] {
-      margin-right: 100px; } }
+      margin-right: 100px; }
+  .cercleMyForum .select-circle form ul.circle-step li header label {
+    margin-left: -5px; }
+  .cercleMyForum .select-circle form ul.circle-step li header.buy-step, .cercleMyForum .select-circle form ul.circle-step li header.finance-step, .cercleMyForum .select-circle form ul.circle-step li header.ensure-step, .cercleMyForum .select-circle form ul.circle-step li header.equip-step, .cercleMyForum .select-circle form ul.circle-step li header.staff-step, .cercleMyForum .select-circle form ul.circle-step li header.manage-step, .cercleMyForum .select-circle form ul.circle-step li header.sell-step {
+    background: none; }
+  .cercleMyForum .select-circle form ul.circle-step li ul {
+    padding-left: 5px; }
+    .cercleMyForum .select-circle form ul.circle-step li ul li input[type=text] {
+      width: 180px; }
+  .cercleMyForum .littles-squares {
+    display: none; } }
 @media (max-width: 600px) {
   .home-link {
     padding-top: 23px;
@@ -7658,7 +7803,19 @@ button {
   .cercleMyForum .call-directly {
     padding: 35px 0; }
     .cercleMyForum .call-directly input[type="text"] {
-      width: 90%; } }
+      width: 90%; }
+  .cercleMyForum .select-circle form ul.circle-step {
+    margin-left: -10px;
+    margin-right: -10px; }
+    .cercleMyForum .select-circle form ul.circle-step li header label {
+      margin-left: -10px;
+      font-size: 1em; }
+      .cercleMyForum .select-circle form ul.circle-step li header label:before, .cercleMyForum .select-circle form ul.circle-step li header label:after {
+        top: -1px; }
+    .cercleMyForum .select-circle form ul.circle-step li ul {
+      padding-left: 0px; }
+      .cercleMyForum .select-circle form ul.circle-step li ul li input[type=text] {
+        width: 130px; } }
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; }

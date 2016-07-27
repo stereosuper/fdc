@@ -687,6 +687,24 @@ $(function(){
 	}
 	// fin slider
 
+	// selects choix accompagnement
+	if ($(".select-circle").length>0) {
+		$(".select-circle .circle-step > li").addClass('closed');
+		$(".select-circle .circle-step > li ul").slideToggle(0);
+		$(".select-circle .circle-step > li header").on('click', function(e){
+			e.preventDefault();
+			if ($("input[type=checkbox]",this).prop('checked')) {
+				$("input[type=checkbox]",this).prop('checked',false);
+				$(this).parent().addClass('closed');
+			} else {
+				$("input[type=checkbox]",this).prop('checked',true);
+				$(this).parent().removeClass('closed');
+			}
+			$(this).next("ul").slideToggle(400);
+		});
+	}
+
+
 	// Google maps
 	if(typeof google !== typeof undefined && $("body").hasClass('hasMaps')) {
 		var $latitudeInput = $('#latitude');

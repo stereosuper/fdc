@@ -622,16 +622,28 @@
             font-size: 3em;
         }
     }
-    .cercleMyForum .call-directly {
-        br {
-            display: none
+    .cercleMyForum {
+        .call-directly {
+            br {
+                display: none
+            }
+            form {
+                float:none;
+                margin-left:25px;
+                margin-bottom:15px;
+                input, button {
+                    margin-top:10px;
+                }
+            }
         }
-        form {
-            float:none;
-            margin-left:25px;
-            margin-bottom:15px;
-            input, button {
-                margin-top:10px;
+        .select-circle form ul.circle-step li {
+            ul {
+                column-count: 1;
+                li {
+                    input[type=text] {
+                        width:300px;
+                    }
+                }
             }
         }
     }
@@ -1205,6 +1217,26 @@
             right:16px;
             top:1px;
             width:100%;
+        }
+    }
+
+    .cercleMyForum {
+        .select-circle {
+            display:inline;
+            .column {
+                display:block;
+                p {
+                    padding:25px 0 0;
+                }
+            }
+            form {
+                ul.circle-step {
+                    clear:both;
+                }
+            }
+        }
+        .littles-squares.vertical {
+            display: none;
         }
     }
 }
@@ -1879,6 +1911,15 @@
     #lb .prev-slide, #lb .next-slide {
         width:20px;
     }
+    .cercleMyForum {
+        label {
+            margin-bottom:5px;
+            margin-top:5px;
+        }
+        .field-content .tab-content-title {
+            padding-top:0;
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -2049,6 +2090,9 @@
                 float:none;
                 margin:40px auto 0 auto;
             }
+            .column img {
+                display: none;
+            }
             p {
                 padding-top: 0;
                 margin-top:-10px;
@@ -2063,6 +2107,25 @@
             input[type="text"] {
                 margin-right:100px;
             }
+        }
+        .select-circle form ul.circle-step li {
+            header {
+                label {
+                    margin-left:-5px;
+                }
+                &.buy-step, &.finance-step, &.ensure-step, &.equip-step, &.staff-step, &.manage-step, &.sell-step  {
+                    background:none;
+                }
+            }
+            ul {
+                padding-left:5px;
+                li input[type=text] {
+                    width:180px;
+                }
+            }
+        }
+        .littles-squares {
+            display: none;
         }
     }
 }
@@ -2469,6 +2532,27 @@
             padding:35px 0;
             input[type="text"] {
                 width:90%;
+            }
+        }
+        .select-circle form ul.circle-step {
+            margin-left:-10px;
+            margin-right:-10px;
+            li {
+                header {
+                    label {
+                        margin-left:-10px;
+                        font-size:1em;
+                        &:before, &:after {
+                            top:-1px;
+                        }
+                    }
+                }
+                ul {
+                    padding-left:0px;
+                    li input[type=text] {
+                        width:130px;
+                    }
+                }
             }
         }
     }
