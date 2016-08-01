@@ -208,7 +208,7 @@ ol{
 img{
     max-width: 100%;
     height: auto;
-    .content-default &{
+    .content-default &:not(.no-float) {
         float: left;
         padding: 30px 32px 20px 0;
     }
