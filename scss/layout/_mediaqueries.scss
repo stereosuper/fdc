@@ -554,6 +554,10 @@
     }
     /* details */
     .detail{
+        display:block;
+        .content-tab-layout {
+            display:block;
+        }
         .wrapper-pub.pub-right {
             display:block;
             margin: 50px 0 60px 0;
