@@ -330,6 +330,7 @@ input{
                 margin: 0;
                 border: 2px #dadada solid;
                 border-radius: 5px;
+                cursor:pointer;
                 &:before, &:after{
                     content: '';
                     position: absolute;

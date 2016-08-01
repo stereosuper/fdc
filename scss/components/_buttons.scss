@@ -247,7 +247,7 @@
 	@extend %btn-arrow-base;
 }
 
-.btn-simple{
+.btn-simple,a.btn-simple, button.btn-simple{
 	@include roboto-cd-bold(0.625em);
 
 	letter-spacing: 1px;
@@ -255,7 +255,7 @@
 	text-decoration: none;
 }
 
-.btn-underlined{
+.btn-underlined,a.btn-underlined, button.btn-underlined{
 	text-decoration: underline;
 }
 
@@ -411,7 +411,7 @@ a.btn-block, button.btn-block, .btn-block {
 	}
 }
 
-.btn-align-right{
+.btn-align-right, a.btn-align-right, button.btn-align-right{
 	float: right;
 	margin: 0;
 }
@@ -435,23 +435,23 @@ a.btn-block, button.btn-block, .btn-block {
 	}
 }*/
 
-.btn-rouge{
+.btn-rouge, a.btn-rouge, button.btn-rouge{
 	background: $theme-gradient-1;
 }
 
-.btn-orange{
+.btn-orange, a.btn-orange, button.btn-orange{
 	background: #de3d25;
 }
 
-.btn-orange-light{
+.btn-orange-light, a.btn-orange-light, button.btn-orange-light{
 	background: #ef6a2b;
 }
 
-.btn-yellow, a.btn-yellow, button.btn-yellow{
+.btn-yellow, a.btn-yellow, button.btn-yellow {
 	background: $yellow;
 }
 
-.btn-close{
+.btn-close, a.btn-close, button.btn-close{
 	display: block;
 	@include size(58px);
 
@@ -471,7 +471,7 @@ a.btn-block, button.btn-block, .btn-block {
 	}
 }
 
-.btn-deconnexion{
+.btn-deconnexion, a.btn-deconnexion, button.btn-deconnexion{
 	position: relative;
 	@include roboto(0.75em);
 	padding: 0 0 0 12px;
@@ -487,7 +487,7 @@ a.btn-block, button.btn-block, .btn-block {
 	}
 }
 
-.option {
+.option, a.option, button.option {
 	label {
 		display: block;
 		cursor: pointer;
@@ -531,7 +531,7 @@ a.btn-block, button.btn-block, .btn-block {
 	bottom: 2px;
 }
 
-.btn-plus{
+.btn-plus, a.btn-plus, button.btn-plus {
 	@extend %btn-arrow-base;
 
 	&:before{
@@ -545,7 +545,7 @@ a.btn-block, button.btn-block, .btn-block {
 	}
 }
 
-.btn-minus{
+.btn-minus, a.btn-minus, button.btn-minus {
 	@extend %btn-arrow-base;
 
 	&:before{

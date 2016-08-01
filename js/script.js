@@ -617,12 +617,13 @@ $(function(){
 			e.preventDefault();
 			createLightbox($(this).attr('href'), true, '#toSlide');
 		});
-		//lightbox générique
-		$(".open-lighbox").on('click', function(e){
-			e.preventDefault();
-			createLightbox($(this).attr('href'), false, '');
-		});
 	}
+
+	//lightbox générique
+	$(".open-lighbox").on('click', function(e){
+		e.preventDefault();
+		createLightbox($(this).attr('href'), false, '');
+	});
 
 	// lightbox
 	function createLightbox(link, isImg, sliderElt) {

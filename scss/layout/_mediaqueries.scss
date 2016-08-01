@@ -606,6 +606,7 @@
                         margin-bottom:0;
                     }
                     a {
+                        margin-top:15px;
                         float:right;
                     }
                 }
@@ -2052,6 +2053,12 @@
                         }
                     }
                 }
+            }
+        }
+        header p.right-head {
+            float:none;
+            a {
+                margin-top:0;
             }
         }
     }

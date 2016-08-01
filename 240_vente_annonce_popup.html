@@ -236,31 +236,24 @@
                     <div class='content-sale-paiement'>
                         <header class='tab-content-title'>
                             <h2 class='h1'>Paiement </h2>
+                            <p class="right-head">Plusieurs annonces à publier&nbsp;? <a href="#" class='btn-arrow small lb-credits open-lighbox'>Acheter des crédits</a></p>
                         </header>
 
                         <div class='paiement-block'>
                             <ul class='paiement-list'>
-                            <li>
-                                <div class='recap'>
-                                    <strong class='title-simple'>Pack de 1 crédit</strong>
-                                    <a href='#' class='btn-cancel txt-middle'>supprimer</a>
-                                    <p>Prix par annonce : 20€ HT  •  Crédits utilisables sans limite de durée</p>
-                                    <span class='right alerts-price'>100 €</span>
-                                </div>
-                            </li>
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Publication d'une annonce</strong>
                                         <p>Boulangerie - Pâtisserie - Salon de thé  •  6 mois  •  modifications illimités</p>
-                                        <span class='right alerts-price'>1 crédit</span>
+                                        <span class='right alerts-price'>40 €</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class='recap'>
                                         <strong class='title-simple'>Option <span class='orange-txt uppercase has-border'><span class='icon-flash'></span>&nbsp;Pole&nbsp;position</span> activée</strong>
-                                        <a href='#' class='btn-cancel txt-middle'>désactiver</a>
+                                        <span class='btn-cancel'>désactiver</span>
                                         <p>Votre annonce apparaîtra en tête des résultats de recherche</p>
-                                        <span class='right alerts-price'>1 crédit</span>
+                                        <span class='right alerts-price'>40 €</span>
                                     </div>
                                 </li>
                             </ul>
@@ -269,13 +262,13 @@
                                     <li>
                                     <div class='recap'>
                                         <span>TVA</span>
-                                        <span class='right'>20 €</span>
+                                        <span class='right'>16 €</span>
                                     </div>
                                     </li>
                                     <li class='border-top'>
                                     <div class='recap'>
                                         <span class='big-txt'>Total TTC</span>
-                                        <span class='big-txt right alerts-price'>120 €</span>
+                                        <span class='big-txt right alerts-price'>96 €</span>
                                     </div>
                                     </li>
                                 </ul>
@@ -309,15 +302,75 @@
                                 <input type='checkbox' name='cgv' id='cgv' value='1'><label class='medium' for='cgv'>En cochant cette case j'accepte et je reconnais avoir pris connaissance des <a href='#' class='btn-underlined'>conditions générales de vente</a></label>
                             </fieldset>
                         </div>
-                        <div class='grey right-align wrapper-pay'>
-                            <p>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</p>
-                            <button type='submit' class='btn-block btn-orange-light huge btn-align-right'><span class='border'></span><span class='txt-btn'>Payer</span></button>
-                        </div>
+                        <button type='submit' class='btn-block btn-orange-light huge btn-align-right'><span class='border'></span><span class='txt-btn'>Payer</span></button>
                     </div>
                 </div>
             </div>
         </main>
-
+        <div id="lb" class="on">
+            <div class="black-mask"></div>
+            <button class="close-btn icon-cross"></button>
+            <div class="lightbox-content">
+                <div class="wrapper">
+                    <div class='field field-sale'>
+                        <header>
+                            <h1>Sélectionner un pack de crédits</h1>
+                        </header>
+                    </div>
+                    <div class='field-content'>
+                        <table class='table-offres-tarifs'>
+                            <tr>
+                                <td rowspan='2' class='super-border dark-red big-pricing'>
+                                    <a href='#'>
+                                        <p class='super-huge'>1</p>
+                                        <span class='undercover'>crédit</span>
+                                        <p class='h1'>40&nbsp;€ HT</p>
+                                        <p>Diffusion pendant <strong>6 mois</strong></p>
+                                        <p>Modifiez votre annonce à tout moment</p>
+                                        <p>Profitez de <strong>statistiques</strong> de consultation</p>
+                                        <span class="btn-arrow plain">Acheter</span>
+                                    </a>
+                                </td>
+                                <td colspan='3' class='no-border'>
+                                    <p class='h1'>1 crédit = 1 annonce</p>
+                                    <p>Vous souhaitez déposer un grand nombre d'annonces ?</p>
+                                    <p><a href="#">Contactez nous</a> pour bénéficier de notre offre «no limit»</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class='super-border red'>
+                                    <a href='#'>
+                                        <p class='super-huge'>5</p>
+                                        <span class='undercover'>crédits</span>
+                                        <p class='h1'>100&nbsp;€ HT</p>
+                                        <p>(20€/annonce)</p>
+                                        <span class="btn-arrow plain">Acheter</span>
+                                    </a>
+                                </td>
+                                <td class='super-border orange'>
+                                    <a href='#'>
+                                        <p class='super-huge'>10</p>
+                                        <span class='undercover'>crédits</span>
+                                        <p class='h1'>150&nbsp;€ HT</p>
+                                        <p>(15€/annonce)</p>
+                                        <span class="btn-arrow plain">Acheter</span>
+                                    </a>
+                                </td>
+                                <td class='super-border orange-light'>
+                                    <a href='#'>
+                                        <p class='super-huge'>20</p>
+                                        <span class='undercover'>crédits</span>
+                                        <p class='h1'>250&nbsp;€ HT</p>
+                                        <p>(10€/annonce)</p>
+                                        <span class="btn-arrow plain">Acheter</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer id='footer' role='contentinfo'>
             <div class='wrapper-overflow-hidden'>
                 <div class='container'>
