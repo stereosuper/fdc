@@ -821,7 +821,7 @@ a, button {
     -webkit-transform: translate3d(-5px, 0, 0) rotate(180deg);
             transform: translate3d(-5px, 0, 0) rotate(180deg); }
 
-.btn-print:before, .btn-heart:before, .btn-pen.left-icon:before, .btn-cancel:before, .btn-alert:before, .btn-delete:before, .btn-block.btn-alert:before {
+.btn-print:before, .btn-heart:before, .btn-pen.left-icon:before, .btn-cancel:before, .btn-alert:before, .btn-delete:before, a.btn-block.btn-alert:before, button.btn-block.btn-alert:before, .btn-block.btn-alert:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'fdc' !important;
   speak: none;
@@ -2941,6 +2941,29 @@ button {
 
 .cercleMyForum {
   position: relative; }
+  .cercleMyForum.adCercle {
+    margin-top: 6em; }
+    .cercleMyForum.adCercle header img {
+      margin: 15px 0 -10px -15px; }
+    .cercleMyForum.adCercle header h2.h1 {
+      margin: 0; }
+    .cercleMyForum.adCercle header p {
+      width: 300px;
+      margin-top: 10px; }
+    .cercleMyForum.adCercle .circle-text {
+      text-align: right; }
+      .cercleMyForum.adCercle .circle-text div {
+        width: 300px;
+        float: right;
+        margin-bottom: 30px; }
+        .cercleMyForum.adCercle .circle-text div p {
+          text-align: left;
+          margin: -80px auto 30px; }
+          .cercleMyForum.adCercle .circle-text div p .gratuit {
+            margin-right: -10px;
+            margin-bottom: -15px; }
+        .cercleMyForum.adCercle .circle-text div a {
+          float: left; }
   .cercleMyForum .nav-tabs-indicator li {
     padding-bottom: 25px; }
   .cercleMyForum .nav-tabs {
@@ -2953,9 +2976,9 @@ button {
     background: #c52d38 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
     background-size: 2653px 2358px;
     border: 0 none; }
-    .cercleMyForum .field-content .tab-content-title {
+    .cercleMyForum .field-content header {
       border-bottom-color: white; }
-      .cercleMyForum .field-content .tab-content-title h2.h1 {
+      .cercleMyForum .field-content header h2.h1 {
         color: white; }
     .cercleMyForum .field-content p, .cercleMyForum .field-content h3, .cercleMyForum .field-content .login-vente label, .cercleMyForum .field-content .sale-form label, .cercleMyForum .field-content .sale-form legend {
       color: white; }
@@ -3178,6 +3201,35 @@ button {
         background-image: url("../layoutImg/cercle/losanges/gerer.png"); }
       .cercleMyForum ol.full-circle li.sell-step:before {
         background-image: url("../layoutImg/cercle/losanges/vendre.png"); }
+    .cercleMyForum ol.full-circle.wave {
+      position: relative;
+      -webkit-transition: 0 none;
+      transition: 0 none; }
+      .cercleMyForum ol.full-circle.wave li {
+        position: absolute;
+        -webkit-transition: 0 none;
+        transition: 0 none; }
+        .cercleMyForum ol.full-circle.wave li.buy-step {
+          left: 100px;
+          top: 50px; }
+        .cercleMyForum ol.full-circle.wave li.finance-step {
+          left: 230px;
+          top: 5px; }
+        .cercleMyForum ol.full-circle.wave li.ensure-step {
+          left: 370px;
+          top: -20px; }
+        .cercleMyForum ol.full-circle.wave li.equip-step {
+          left: 450px;
+          top: -120px; }
+        .cercleMyForum ol.full-circle.wave li.staff-step {
+          left: 500px;
+          top: -255px; }
+        .cercleMyForum ol.full-circle.wave li.manage-step {
+          left: 630px;
+          top: -290px; }
+        .cercleMyForum ol.full-circle.wave li.sell-step {
+          left: 760px;
+          top: -330px; }
   .cercleMyForum .littles-squares {
     margin: 0;
     padding: 0; }
@@ -3252,6 +3304,27 @@ button {
     .cercleMyForum .littles-squares.vertical li:nth-child(6) {
       left: 70px;
       top: 440px; }
+    .cercleMyForum .littles-squares.wave li:nth-child(1) {
+      left: 90px;
+      top: 180px; }
+    .cercleMyForum .littles-squares.wave li:nth-child(2) {
+      left: 130px;
+      top: 330px; }
+    .cercleMyForum .littles-squares.wave li:nth-child(3) {
+      left: auto;
+      right: 40px;
+      top: -200px; }
+    .cercleMyForum .littles-squares.wave li:nth-child(4) {
+      left: auto;
+      right: 70px;
+      top: -30px; }
+    .cercleMyForum .littles-squares.wave li:nth-child(5) {
+      left: 30px;
+      top: 260px; }
+    .cercleMyForum .littles-squares.wave li:nth-child(6) {
+      left: auto;
+      right: 50px;
+      top: 10px; }
 
 /* Pagination */
 .pagination {
@@ -3521,7 +3594,7 @@ button {
 .btn-underlined {
   text-decoration: underline; }
 
-.btn-block {
+a.btn-block, button.btn-block, .btn-block {
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -3542,9 +3615,9 @@ button {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   line-height: 1em; }
-  .btn-block.light {
+  a.btn-block.light, button.btn-block.light, .btn-block.light {
     background-color: #de5340; }
-  .btn-block.medium {
+  a.btn-block.medium, button.btn-block.medium, .btn-block.medium {
     font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
     font-size: 1em;
     font-weight: 400;
@@ -3552,28 +3625,30 @@ button {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     padding: 15px 13px; }
-  .btn-block.big {
+  a.btn-block.big, button.btn-block.big, .btn-block.big {
     padding: 22px 25px; }
-  .btn-block.huge {
+  a.btn-block.huge, button.btn-block.huge, .btn-block.huge {
     padding: 22px 40px;
     font-size: 1em; }
-  .btn-block.btn-rouge .border {
+  a.btn-block.btn-rouge .border, button.btn-block.btn-rouge .border, .btn-block.btn-rouge .border {
     border-color: #c52d38 #c52d38; }
-  .btn-block.btn-orange .border {
+  a.btn-block.btn-orange .border, button.btn-block.btn-orange .border, .btn-block.btn-orange .border {
     border-color: #de3d25 #de3d25; }
-  .btn-block.btn-orange-light .border {
+  a.btn-block.btn-orange-light .border, button.btn-block.btn-orange-light .border, .btn-block.btn-orange-light .border {
     border-color: #ef6a2b #ef6a2b; }
-  .btn-block.btn-orange-light:hover, .btn-block.btn-orange-light:focus {
+  a.btn-block.btn-orange-light:hover, a.btn-block.btn-orange-light:focus, button.btn-block.btn-orange-light:hover, button.btn-block.btn-orange-light:focus, .btn-block.btn-orange-light:hover, .btn-block.btn-orange-light:focus {
     color: #ef6a2b; }
-  .btn-block.btn-yellow .border {
-    border-color: #f18832 #f18832; }
-  .btn-block.btn-yellow:hover, .btn-block.btn-yellow:focus {
-    color: #f18832; }
-  .btn-block.btn-alert {
+  a.btn-block.btn-yellow, button.btn-block.btn-yellow, .btn-block.btn-yellow {
+    color: white; }
+    a.btn-block.btn-yellow .border, button.btn-block.btn-yellow .border, .btn-block.btn-yellow .border {
+      border-color: #f18832 #f18832; }
+    a.btn-block.btn-yellow:hover, a.btn-block.btn-yellow:focus, button.btn-block.btn-yellow:hover, button.btn-block.btn-yellow:focus, .btn-block.btn-yellow:hover, .btn-block.btn-yellow:focus {
+      color: #f18832; }
+  a.btn-block.btn-alert, button.btn-block.btn-alert, .btn-block.btn-alert {
     padding: 16px 16px 15px 13px;
     font-size: 1em;
     letter-spacing: 0; }
-    .btn-block.btn-alert:before {
+    a.btn-block.btn-alert:before, button.btn-block.btn-alert:before, .btn-block.btn-alert:before {
       content: '\e90f';
       font-size: 14px;
       display: inline-block;
@@ -3592,18 +3667,18 @@ button {
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       position: relative; }
-    .btn-block.btn-alert:hover:before, .btn-block.btn-alert:focus:before {
+    a.btn-block.btn-alert:hover:before, a.btn-block.btn-alert:focus:before, button.btn-block.btn-alert:hover:before, button.btn-block.btn-alert:focus:before, .btn-block.btn-alert:hover:before, .btn-block.btn-alert:focus:before {
       -webkit-transform: translate3d(1px, 2px, 0) rotate(20deg);
               transform: translate3d(1px, 2px, 0) rotate(20deg);
       color: #c6333e;
       z-index: 5; }
-  .wrapper-input-btn .btn-block {
+  .wrapper-input-btn a.btn-block, .wrapper-input-btn button.btn-block, .wrapper-input-btn .btn-block {
     position: absolute;
     top: 0;
     right: 0; }
-  .btn-block.right {
+  a.btn-block.right, button.btn-block.right, .btn-block.right {
     float: right; }
-  .btn-block:after {
+  a.btn-block:after, button.btn-block:after, .btn-block:after {
     content: '';
     display: block;
     position: absolute;
@@ -3615,7 +3690,7 @@ button {
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out; }
-  .btn-block .border {
+  a.btn-block .border, button.btn-block .border, .btn-block .border {
     display: block;
     position: absolute;
     width: auto;
@@ -3627,7 +3702,7 @@ button {
     box-sizing: border-box;
     border: 3px solid #c6333e;
     pointer-events: none; }
-    .btn-block .border:before {
+    a.btn-block .border:before, button.btn-block .border:before, .btn-block .border:before {
       content: '';
       display: block;
       position: absolute;
@@ -3644,14 +3719,14 @@ button {
       transition: -webkit-transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
-  .btn-block .txt-btn {
+  a.btn-block .txt-btn, button.btn-block .txt-btn, .btn-block .txt-btn {
     position: relative; }
-  .btn-block:hover, .btn-block:focus {
+  a.btn-block:hover, a.btn-block:focus, button.btn-block:hover, button.btn-block:focus, .btn-block:hover, .btn-block:focus {
     color: #c6333e; }
-    .btn-block:hover .border:before, .btn-block:focus .border:before {
+    a.btn-block:hover .border:before, a.btn-block:focus .border:before, button.btn-block:hover .border:before, button.btn-block:focus .border:before, .btn-block:hover .border:before, .btn-block:focus .border:before {
       -webkit-transform: scaleX(1);
               transform: scaleX(1); }
-    .btn-block:hover:after, .btn-block:focus:after {
+    a.btn-block:hover:after, a.btn-block:focus:after, button.btn-block:hover:after, button.btn-block:focus:after, .btn-block:hover:after, .btn-block:focus:after {
       opacity: 1; }
 
 .btn-align-right {
@@ -3685,7 +3760,7 @@ button {
 .btn-orange-light {
   background: #ef6a2b; }
 
-.btn-yellow {
+.btn-yellow, a.btn-yellow, button.btn-yellow {
   background: #f18832; }
 
 .btn-close {
@@ -6596,9 +6671,30 @@ button {
           top: 50%;
           left: -75px; } }
 @media (max-width: 1080px) {
-  .cercleMyForum ol.full-circle {
-    margin: 0; }
-    .cercleMyForum ol.full-circle li {
+  .cercleMyForum.adCercle header img {
+    float: left;
+    margin: 0 20px 20px -15px; }
+  .cercleMyForum.adCercle header br {
+    display: none; }
+  .cercleMyForum.adCercle header p {
+    width: auto; }
+  .cercleMyForum.adCercle header h2.h1 {
+    padding-top: 20px; }
+  .cercleMyForum.adCercle .circle-text div {
+    float: none;
+    width: auto;
+    text-align: center; }
+    .cercleMyForum.adCercle .circle-text div p {
+      margin-top: -20px;
+      margin-bottom: 0; }
+    .cercleMyForum.adCercle .circle-text div a {
+      float: right; }
+  .cercleMyForum ol.full-circle, .cercleMyForum ol.full-circle.wave {
+    margin: 0;
+    display: block;
+    clear: both; }
+    .cercleMyForum ol.full-circle li, .cercleMyForum ol.full-circle.wave li {
+      position: static;
       -webkit-transform: rotate(0);
               transform: rotate(0);
       width: 13.6%;
@@ -6606,26 +6702,47 @@ button {
       padding: 170px 10px 0 0;
       margin: 0 0.3%;
       min-height: 180px; }
-      .cercleMyForum ol.full-circle li:before {
+      .cercleMyForum ol.full-circle li:before, .cercleMyForum ol.full-circle.wave li:before {
         -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%) !important;
                 clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%) !important;
         -webkit-transform: rotate(0);
                 transform: rotate(0);
         bottom: 25px; }
-      .cercleMyForum ol.full-circle li.buy-step:before {
+      .cercleMyForum ol.full-circle li.buy-step:before, .cercleMyForum ol.full-circle.wave li.buy-step:before {
         background-image: url("../layoutImg/cercle/acheter.png"); }
-      .cercleMyForum ol.full-circle li.finance-step:before {
+      .cercleMyForum ol.full-circle li.finance-step:before, .cercleMyForum ol.full-circle.wave li.finance-step:before {
         background-image: url("../layoutImg/cercle/financer.png"); }
-      .cercleMyForum ol.full-circle li.ensure-step:before {
+      .cercleMyForum ol.full-circle li.ensure-step:before, .cercleMyForum ol.full-circle.wave li.ensure-step:before {
         background-image: url("../layoutImg/cercle/assurer.png"); }
-      .cercleMyForum ol.full-circle li.equip-step:before {
+      .cercleMyForum ol.full-circle li.equip-step:before, .cercleMyForum ol.full-circle.wave li.equip-step:before {
         background-image: url("../layoutImg/cercle/equiper.png"); }
-      .cercleMyForum ol.full-circle li.staff-step:before {
+      .cercleMyForum ol.full-circle li.staff-step:before, .cercleMyForum ol.full-circle.wave li.staff-step:before {
         background-image: url("../layoutImg/cercle/recruter.png"); }
-      .cercleMyForum ol.full-circle li.manage-step:before {
+      .cercleMyForum ol.full-circle li.manage-step:before, .cercleMyForum ol.full-circle.wave li.manage-step:before {
         background-image: url("../layoutImg/cercle/gerer.png"); }
-      .cercleMyForum ol.full-circle li.sell-step:before {
-        background-image: url("../layoutImg/cercle/vendre.png"); } }
+      .cercleMyForum ol.full-circle li.sell-step:before, .cercleMyForum ol.full-circle.wave li.sell-step:before {
+        background-image: url("../layoutImg/cercle/vendre.png"); }
+  .cercleMyForum .littles-squares.wave li:nth-child(1) {
+    left: -10px;
+    top: 0; }
+  .cercleMyForum .littles-squares.wave li:nth-child(2) {
+    left: 30px;
+    top: -30px; }
+  .cercleMyForum .littles-squares.wave li:nth-child(3) {
+    left: auto;
+    right: 30px;
+    top: -160px; }
+  .cercleMyForum .littles-squares.wave li:nth-child(4) {
+    left: auto;
+    right: 20px;
+    top: -30px; }
+  .cercleMyForum .littles-squares.wave li:nth-child(5) {
+    left: 10px;
+    top: -160px; }
+  .cercleMyForum .littles-squares.wave li:nth-child(6) {
+    left: auto;
+    right: 0px;
+    top: 100px; } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; }
@@ -7024,14 +7141,15 @@ button {
     display: block;
     width: 100%;
     margin-bottom: 30px;
-    padding-top: 0; }
+    padding-top: 0;
+    padding-right: 0; }
     .detail .table .content-tabs-detail.small-col address, .detail .table .content-tabs-detail.small-col.small-col address {
       margin-right: 300px; }
     .detail .table .content-tabs-detail ul.detail-photos, .detail .table .content-tabs-detail.small-col ul.detail-photos {
       position: absolute;
       max-width: 300px;
       left: auto;
-      right: 16px;
+      right: 0;
       top: 1px;
       width: 100%; }
 
@@ -7609,7 +7727,11 @@ button {
     .cercleMyForum .select-circle form.form-disabled input[type=checkbox][disabled] + label:after {
       left: 10px; }
   .cercleMyForum .littles-squares {
-    display: none; } }
+    display: none; }
+  .cercleMyForum.adCercle .circle-text div p {
+    margin-top: 30px; }
+    .cercleMyForum.adCercle .circle-text div p img {
+      display: none; } }
 @media (max-width: 600px) {
   .home-link {
     padding-top: 23px;
@@ -7668,7 +7790,25 @@ button {
       text-indent: -9999px;
       overflow: hidden; }
       .cercleMyForum ol.full-circle li:before {
-        bottom: 0; } }
+        bottom: 0; }
+  .cercleMyForum.adCercle {
+    text-align: center;
+    margin-top: 40px; }
+    .cercleMyForum.adCercle header {
+      margin-bottom: 30px; }
+      .cercleMyForum.adCercle header img {
+        float: none;
+        margin-bottom: -15px; }
+      .cercleMyForum.adCercle header h2.h1 {
+        padding-top: 0; }
+    .cercleMyForum.adCercle .circle-text div {
+      text-align: center; }
+      .cercleMyForum.adCercle .circle-text div p {
+        margin-top: 0;
+        text-align: center; }
+      .cercleMyForum.adCercle .circle-text div a {
+        float: none;
+        margin-top: 20px; } }
 @media (max-width: 480px) {
   h1, #lb .lightbox-content .field h1 {
     font-size: 1.8em; }

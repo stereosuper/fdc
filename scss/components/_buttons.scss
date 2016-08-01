@@ -259,7 +259,7 @@
 	text-decoration: underline;
 }
 
-.btn-block{
+a.btn-block, button.btn-block, .btn-block {
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
@@ -308,6 +308,7 @@
 		}
 	}
 	&.btn-yellow{
+		color:$blanc;
 		.border{
 			border-color: $yellow $yellow;
 		}
@@ -446,7 +447,7 @@
 	background: #ef6a2b;
 }
 
-.btn-yellow{
+.btn-yellow, a.btn-yellow, button.btn-yellow{
 	background: $yellow;
 }
 

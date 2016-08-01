@@ -580,9 +580,43 @@
 
 @media (max-width: 1080px){
     .cercleMyForum {
-        ol.full-circle  {
+        &.adCercle {
+            header {
+                img {
+                    float:left;
+                    margin: 0 20px 20px -15px;
+                }
+                br {
+                    display: none;
+                }
+                p {
+                    width:auto;
+                }
+                h2.h1 {
+                    padding-top:20px;
+                }
+            }
+            .circle-text {
+                div {
+                    float:none;
+                    width:auto;
+                    text-align:center;
+                    p {
+                        margin-top:-20px;
+                        margin-bottom:0;
+                    }
+                    a {
+                        float:right;
+                    }
+                }
+            }
+        }
+        ol.full-circle, ol.full-circle.wave {
             margin:0;
+            display:block;
+            clear:both;
             li {
+                position: static;
                 transform:rotate(0);
                 width:13.6%;
                 text-align: center;
@@ -615,6 +649,35 @@
                 &.sell-step:before {
                     background-image:url('../layoutImg/cercle/vendre.png');
                 }
+            }
+        }
+        .littles-squares.wave li {
+            &:nth-child(1) {
+                left:-10px;
+                top:0;
+            }
+            &:nth-child(2) {
+                left:30px;
+                top:-30px;
+            }
+            &:nth-child(3) {
+                left:auto;
+                right:30px;
+                top:-160px;
+            }
+            &:nth-child(4) {
+                left:auto;
+                right:20px;
+                top:-30px;
+            }
+            &:nth-child(5) {
+                left:10px;
+                top:-160px;
+            }
+            &:nth-child(6) {
+                left:auto;
+                right:0px;
+                top:100px;
             }
         }
     }
@@ -1216,6 +1279,7 @@
         width:100%;
         margin-bottom:30px;
         padding-top:0;
+        padding-right: 0;
         &.small-col address {
             margin-right: 300px;
         }
@@ -1223,7 +1287,7 @@
             position:absolute;
             max-width:300px;
             left:auto;
-            right:16px;
+            right:0;
             top:1px;
             width:100%;
         }
@@ -2147,6 +2211,14 @@
         .littles-squares {
             display: none;
         }
+        &.adCercle {
+            .circle-text div p {
+                margin-top:30px;
+                img {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -2237,14 +2309,41 @@
         }
     }
     /* cercle */
-    .cercleMyForum ol.full-circle {
-        margin-bottom: 0;
-        li {
-            padding-top:0;
-            text-indent: -9999px;
-            overflow: hidden;
-            &:before {
-                bottom:0;
+    .cercleMyForum {
+        ol.full-circle {
+            margin-bottom: 0;
+            li {
+                padding-top:0;
+                text-indent: -9999px;
+                overflow: hidden;
+                &:before {
+                    bottom:0;
+                }
+            }
+        }
+        &.adCercle {
+            text-align: center;
+            margin-top: 40px;
+            header {
+                margin-bottom:30px;
+                img {
+                    float:none;
+                    margin-bottom:-15px;
+                }
+                h2.h1 {
+                    padding-top:0;
+                }
+            }
+            .circle-text div {
+                text-align: center;
+                p {
+                    margin-top:0;
+                    text-align: center;
+                }
+                a {
+                    float: none;
+                    margin-top:20px;
+                }
             }
         }
     }
