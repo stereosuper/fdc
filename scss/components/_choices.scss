@@ -513,6 +513,16 @@ $tps-choice-etape-2: 0.3s;
 		transform: translate3d(0, 0, 0) scaleX(0);
 		transform-origin: 0 50%;
 		transition-delay: 0.3s;
+		.form-half{
+			margin-top: 0;
+		}
+		.searchform{
+			.form-half{
+				.btn-arrow{
+					margin-top: 20px;
+				}
+			}
+		}
 	}
 	.content{
 		position: relative;
@@ -604,12 +614,15 @@ $tps-choice-etape-2: 0.3s;
 	.zone-txt{
 		box-sizing: border-box;
 		height: 216px;
-		padding: 20px;
+		padding: 30px 20px 20px 20px;
 		position: relative;
 		z-index: 2;
 
 		transition: transform $tps-choice-etape-1 ease-in-out;
 		transition-delay: $tps-choice-etape-1;
+		.content-align-middle{
+			vertical-align: top;
+		}
 	}
 	h3{
 		margin: 0;
