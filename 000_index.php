@@ -109,7 +109,7 @@
 												<a href='#'>Hôtel Restaurant</a>
 											</td>
 											<td>
-												
+
 											</td>
 										</tr>
 									</table>
@@ -169,7 +169,7 @@
 								</div>
 							</div>
 						</li><!--
-						--><li>
+						--><li class="cercle-choice">
 							<div class='zone-btn'>
 								<a href='#' class='btn-choice'></a>
 								<div class='bg-choice'></div>
@@ -190,6 +190,24 @@
 							--><div class='zone-content'>
 								<div class='content'>
 									<button class='btn-close-choice icon-cross'></button>
+									<div class='cercleMyForum choice-cercle'>
+			                             <div class='field-content'>
+			                                <ul class="little-squares wave"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+			                                <ol class="full-circle wave">
+			                                    <li class="buy-step">Acheter</li><!--
+			                                    --><li class="finance-step">Financer</li><!--
+			                                    --><li class="ensure-step">Assurer</li><!--
+			                                    --><li class="equip-step">Équiper</li><!--
+			                                    --><li class="staff-step">Recruter</li><!--
+			                                    --><li class="manage-step">Gérer</li><!--
+			                                    --><li class="sell-step">Vendre</li>
+			                                </ol>
+			                                <div class="circle-text"><div>
+			                                	<p>Pour réussir et vous simplifier la vie, quel que soit votre besoin d’accompagnement, un interlocuteur dédié du Cercle Forum des Commerces vous contacte, vous conseille et vous met en relation vers le bon expert.</p>
+			                                    <a href="#" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Me faire accompagner</span></a>
+			                                </div></div>
+			                            </div>
+			                        </div>
 								</div>
 							</div>
 						</li><!--
@@ -326,7 +344,7 @@
 												<a href='#'>Hôtel Restaurant</a>
 											</td>
 											<td>
-												
+
 											</td>
 										</tr>
 									</table>

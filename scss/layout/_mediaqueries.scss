@@ -576,6 +576,13 @@
             }
         }
     }
+    .cercleMyForum.choice-cercle {
+        ol.full-circle {
+            transform:scale(1);
+            margin: 160px 0 0 -45px;
+            padding:0;
+        }
+    }
 }
 
 @media (max-width: 1080px){
@@ -652,7 +659,7 @@
                 }
             }
         }
-        .littles-squares.wave li {
+        .little-squares.wave li {
             &:nth-child(1) {
                 left:-10px;
                 top:0;
@@ -711,6 +718,19 @@
                     input[type=text] {
                         width:300px;
                     }
+                }
+            }
+        }
+        &.choice-cercle {
+            height:440px;
+            .circle-text {
+                position:absolute;
+                bottom:0px;
+                right:50px;
+                left:50px;
+                width:auto;
+                p {
+                    margin-bottom:30px;
                 }
             }
         }
@@ -1309,7 +1329,7 @@
                 }
             }
         }
-        .littles-squares.vertical {
+        .little-squares.vertical {
             display: none;
         }
     }
@@ -2215,7 +2235,7 @@
                 }
             }
         }
-        .littles-squares {
+        .little-squares {
             display: none;
         }
         &.adCercle {

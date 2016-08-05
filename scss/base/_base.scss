@@ -181,20 +181,18 @@ ol, ul{
         }
     }
 }
-ul{
-    li{
-        &:before{
-            content: '';
-            @include size(4px);
-            margin: 0 10px 0 0;
-            vertical-align: middle;
-            background: #ef792d;
-        }
+ul > li{
+    &:before{
+        content: '';
+        @include size(4px);
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+        background: #ef792d;
     }
 }
 ol{
     counter-reset: counter;
-    li{
+    > li{
         counter-increment: counter;
         &:before{
             content: counter(counter)'.';

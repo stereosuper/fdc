@@ -1,3 +1,15 @@
+.choices {
+    &.choice-1-active, &.choice-2-active, &.choice-3-active, &.choice-4-active, &.choice-5-active {
+        > li.cercle-choice {
+            .bg-choice {
+                @include bgCercle;
+                &:before, &:after {
+                    display:none;
+                }
+            }
+        }
+    }
+}
 .cercleMyForum {
     position:relative;
     &.adCercle {
@@ -30,6 +42,87 @@
                 }
                 a {
                    float:left;
+                }
+            }
+        }
+    }
+    &.choice-cercle {
+        height:100%;
+        .circle-text {
+            position:absolute;
+            bottom:0px;
+            right:50px;
+            width:390px;
+            p {
+                margin-bottom:30px;
+            }
+        }
+        ol.full-circle {
+            margin: 190px 0 0 -105px;
+            padding:0;
+            transform:scale(0.95);
+            position:absolute;
+            left:0;
+            top:0;
+            &.wave li {
+                &.buy-step {
+                    left:60px;
+                    top:30px;
+                }
+                &.finance-step {
+                    left: 195px;
+                    top: 5px;
+                }
+                &.ensure-step {
+                    left:280px;
+                    top:-90px;
+                }
+                &.equip-step {
+                    left:405px;
+                    top:-130px;
+                }
+                &.staff-step {
+                    left:520px;
+                    top:-175px;
+                }
+                &.manage-step {
+                    left:660px;
+                    top:-190px;
+                }
+                &.sell-step {
+                    left:810px;
+                    top:-190px;
+                }
+            }
+        }
+        .little-squares {
+            &.wave li {
+                &:nth-child(1) {
+                    left:90px;
+                    top:50px;
+                }
+                &:nth-child(2) {
+                    left:130px;
+                    top:200px;
+                }
+                &:nth-child(3) {
+                    left:auto;
+                    right:40px;
+                    top:130px;
+                }
+                &:nth-child(4) {
+                    left:310px;
+                    top:30px;
+                    width:8px;
+                    height:8px;
+                }
+                &:nth-child(5) {
+                    left:30px;
+                    top:130px;
+                }
+                &:nth-child(6) {
+                    left:50px;
+                    top:10px;
                 }
             }
         }
@@ -368,7 +461,7 @@
             }
         }
     }
-    .littles-squares {
+    .little-squares {
         margin:0;
         padding:0;
         li {

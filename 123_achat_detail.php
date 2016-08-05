@@ -93,7 +93,7 @@
                         </div>
                         <div class='cercleMyForum adCercle'>
                              <div class='field-content'>
-                                <ul class="littles-squares wave"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+                                <ul class="little-squares wave"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
                                 <header>
                                     <img src="./layoutImg/cercle/cercle.png" width="198" alt="Le Cercle MyForum"/>
                                     <h2 class='h1'>Facilitateur<br /> de tous vos projets</h2>
