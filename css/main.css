@@ -2913,10 +2913,30 @@ button {
   -webkit-transition: none;
   transition: none; }
 
-.choices.choice-1-active > li.cercle-choice .bg-choice, .choices.choice-2-active > li.cercle-choice .bg-choice, .choices.choice-3-active > li.cercle-choice .bg-choice, .choices.choice-4-active > li.cercle-choice .bg-choice, .choices.choice-5-active > li.cercle-choice .bg-choice {
-  background: #a41d26 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+.choices.choice-1-active > li:nth-child(1).cercle-choice .bg-choice {
+  background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
   background-size: 2653px 2358px; }
-  .choices.choice-1-active > li.cercle-choice .bg-choice:before, .choices.choice-1-active > li.cercle-choice .bg-choice:after, .choices.choice-2-active > li.cercle-choice .bg-choice:before, .choices.choice-2-active > li.cercle-choice .bg-choice:after, .choices.choice-3-active > li.cercle-choice .bg-choice:before, .choices.choice-3-active > li.cercle-choice .bg-choice:after, .choices.choice-4-active > li.cercle-choice .bg-choice:before, .choices.choice-4-active > li.cercle-choice .bg-choice:after, .choices.choice-5-active > li.cercle-choice .bg-choice:before, .choices.choice-5-active > li.cercle-choice .bg-choice:after {
+  .choices.choice-1-active > li:nth-child(1).cercle-choice .bg-choice:before, .choices.choice-1-active > li:nth-child(1).cercle-choice .bg-choice:after {
+    display: none; }
+.choices.choice-2-active > li:nth-child(2).cercle-choice .bg-choice {
+  background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+  background-size: 2653px 2358px; }
+  .choices.choice-2-active > li:nth-child(2).cercle-choice .bg-choice:before, .choices.choice-2-active > li:nth-child(2).cercle-choice .bg-choice:after {
+    display: none; }
+.choices.choice-3-active > li:nth-child(3).cercle-choice .bg-choice {
+  background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+  background-size: 2653px 2358px; }
+  .choices.choice-3-active > li:nth-child(3).cercle-choice .bg-choice:before, .choices.choice-3-active > li:nth-child(3).cercle-choice .bg-choice:after {
+    display: none; }
+.choices.choice-4-active > li:nth-child(4).cercle-choice .bg-choice {
+  background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+  background-size: 2653px 2358px; }
+  .choices.choice-4-active > li:nth-child(4).cercle-choice .bg-choice:before, .choices.choice-4-active > li:nth-child(4).cercle-choice .bg-choice:after {
+    display: none; }
+.choices.choice-5-active > li:nth-child(5).cercle-choice .bg-choice {
+  background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+  background-size: 2653px 2358px; }
+  .choices.choice-5-active > li:nth-child(5).cercle-choice .bg-choice:before, .choices.choice-5-active > li:nth-child(5).cercle-choice .bg-choice:after {
     display: none; }
 
 .cercleMyForum {
@@ -3009,10 +3029,10 @@ button {
     background: #f5f5f6;
     border-bottom: 0 none; }
     .cercleMyForum .nav-tabs li.active {
-      background: #a41d26 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+      background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
       background-size: 2653px 2358px; }
   .cercleMyForum .field-content {
-    background: #a41d26 url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
+    background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
     background-size: 2653px 2358px;
     border: 0 none; }
     .cercleMyForum .field-content header {

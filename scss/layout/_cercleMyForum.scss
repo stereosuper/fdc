@@ -1,10 +1,12 @@
 .choices {
-    &.choice-1-active, &.choice-2-active, &.choice-3-active, &.choice-4-active, &.choice-5-active {
-        > li.cercle-choice {
-            .bg-choice {
-                @include bgCercle;
-                &:before, &:after {
-                    display:none;
+    @for $i from 1 through 5 {
+        &.choice-#{$i}-active {
+            > li:nth-child(#{$i}).cercle-choice {
+                .bg-choice {
+                    @include bgCercle;
+                    &:before, &:after {
+                        display:none;
+                    }
                 }
             }
         }
