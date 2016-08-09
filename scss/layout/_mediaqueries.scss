@@ -2908,8 +2908,7 @@
                 }
             }
             .content-tabs-detail:nth-child(2){
-                // page-break-before: always;
-                // page-break-inside: avoid;
+                page-break-inside: avoid;
                 .field-content-detail{
                     padding: 15px;
                 }

@@ -10277,6 +10277,9 @@ a.btn-block:hover:after, a.btn-block:focus:after, button.btn-block:hover:after, 
   .print .table .content-tabs-detail address a {
     display: none;
   }
+  .print .table .content-tabs-detail:nth-child(2) {
+    page-break-inside: avoid;
+  }
   .print .table .content-tabs-detail:nth-child(2) .field-content-detail {
     padding: 15px;
   }
