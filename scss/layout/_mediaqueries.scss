@@ -2810,4 +2810,93 @@
     h2, h3{
         page-break-after: avoid;
     }
+    .print{
+        .bloc-top{
+                display: none;
+        }
+        header{
+            nav{
+                display: none;
+                .btn-close{
+                    display: none;
+                }
+            }
+            .zone-left-header{
+                display: none;
+            }
+        }
+        #header{
+            display: none !important;
+        }
+        .field-header {
+            padding-left: 0px;
+        }
+        .sidebar-links-open, .nav-header-open{
+            display: none;
+        }
+        #logo{
+            display: none;
+            &:before{
+                display: none;
+            }
+        }
+        header:before{ 
+            display: none !important;
+        }
+        .sidebar, .bg-sidebar, .icon-cross:before, .wrapper-content-nav, .wrapper-content-sidebar {
+            display: none !important;
+        }
+        .field {
+            margin-top: 0;
+        }
+        .detail-photos{
+            li{
+                float: left;
+
+            }
+        }
+        .content-footer{
+            display: none;
+        }
+        .pub {
+            display: none;
+        }
+        footer{
+            display: none;
+        }
+        .table{
+            .small-col {
+                #toSlide{
+                    
+                    li {
+                        display: inline-block !important;
+                        left: auto !important;
+                        position: relative;
+                        width: 25%;
+                        height: auto;
+                        margin: 0;
+                        a{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                                right: auto;
+                                bottom: auto;
+                                margin: 0;    
+                            }
+                        }
+                        a[href]:after {
+                            content: none !important;
+                        }
+                    }
+                }
+            }
+            .content-tabs-detail:nth-child(2){
+                page-break-before: always;
+                page-break-inside: avoid;
+            }
+            .adCercle{
+                display: none;
+            }
+        }
+    }
 }
