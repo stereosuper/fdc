@@ -2830,7 +2830,8 @@
             display: none !important;
         }
         .field-header {
-            padding-left: 0px;
+            padding-left: 10px;
+            padding-bottom: 20px;
             .breadcrumb{
                 display: none;
             }
@@ -2870,24 +2871,34 @@
         }
         .table{
             .small-col {
+                border: 1px solid #dadada;
+                background: #fff;
+                padding: 0;
                 #toSlide{
+                    display: block;
+                    height: auto;
+                    width: 50%;
+                    float: left;
                     &:after{
                         content:"";
                         background: none;
                     }
-                    height: 110px;
                     li {
-                        display: inline-block !important;
-                        left: auto !important;
                         position: relative;
-                        width: 25%;
+                        width: 100%;
                         height: auto;
                         margin: 0;
+                        padding: 0;
+                        &:nth-last-child(-n+3){
+                            display: none;
+                        }
                         a{
                             width: 100%;
-                            height: 110px;
+                            height: auto;
                             img{
+                                position: relative;
                                 width: 100%;
+                                height: auto;
                                 right: auto;
                                 bottom: auto;
                                 margin: 0;    
@@ -2898,12 +2909,26 @@
                         }
                     }
                 }
-            }
-            .content-tabs-detail{
-                address{
-                    min-height: 0 !important;
-                    a{
-                        display: none;
+                .field-content-detail{
+                    float: right;
+                    width: 50%;
+                    border: none;
+                    box-shadow: none;
+                    address{
+                        min-height: 0 !important;
+                        p {
+                            // float: left;
+                            // width: 50%;
+                            // margin: 0 0 0 50% !important;
+                             
+                        }
+                        p:first-child{
+                            margin-right: 30px;
+                            margin-bottom: 0;
+                        }
+                        a{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -2911,6 +2936,17 @@
                 page-break-inside: avoid;
                 .field-content-detail{
                     padding: 15px;
+                    p{
+                        line-height: 1.2;
+                        font-size: 0.9em;
+                    }
+                    ul{
+                        li{
+                            display: block;
+                            float: left;
+                            width: 50%;
+                        }
+                    }
                 }
             }
             .adCercle{
@@ -2918,4 +2954,5 @@
             }
         }
     }
+    
 }

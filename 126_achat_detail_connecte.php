@@ -73,7 +73,7 @@
                             </div>
                             <div class="content-tabs-detail">
                                 <div id="map-canvas" data-latIni="46.7833" data-longIni="-2.0667" data-pinLat="46.7833" data-pinLong="-2.0667"><img src="
-https://maps.googleapis.com/maps/api/staticmap?center=46.7833,-2.0667&zoom=8&size=750x244&maptype=roadmap&markers=color:red%7Clabel:S%7C46.7833,-2.0667&key=AIzaSyA2pKGIlrR-F2MRZujbx2xHKlzlaiSKOTA"></div> <!-- POUR NETIL : NE PAS METTRE CETTE DIV SI VIDE -->
+https://maps.googleapis.com/maps/api/staticmap?center=46.7792198,-1.8186615&zoom=7&size=500x300&scale=2&maptype=roadmap&markers=46.7833,-2.0667&key=AIzaSyA2pKGIlrR-F2MRZujbx2xHKlzlaiSKOTA"></div> <!-- POUR NETIL : NE PAS METTRE CETTE DIV SI VIDE -->
                                 <div class='field-content-detail'>
                                     <mark class="detail-ref">Achat - Ref 1254</mark>
                                     <p>Boulangerie-Pâtisserie située dans une ville du littoral Atlantique. Ce produit est idéal pour une première installation, il n'y a aucun travaux à prévoir. Proche tous commerces et administratif. Emplacement N&nbsp;°1. Matériel et agencement complets. Logement F3 avec petite cour intérieure. Marge de progression. Produit exceptionnel à voir rapidement</p>

@@ -718,7 +718,7 @@ $(function(){
 
 
 	// Google maps
-	if(typeof google !== typeof undefined && $("body").hasClass('hasMaps')) {
+	if(typeof google !== typeof undefined && $("body").hasClass('hasMaps') && window.matchMedia("screen").matches) {
 		var $latitudeInput = $('#latitude');
 		var $longitudeInput = $('#longitude');
 		// Init geocoder
