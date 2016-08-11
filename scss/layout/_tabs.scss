@@ -6,6 +6,8 @@
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+
+    display: table;
     .content-tabs-sale &{
         border-color: #ef6a2b;
     }
@@ -19,12 +21,13 @@
         border: 0;
     }
     li{
-        display: inline-block;
         border-right: 1px solid $gris;
         position: relative;
-        vertical-align: top;
         margin: 0;
         background: #fff;
+
+        display: table-cell;
+        vertical-align: top;
         &:before{
             display: none;
         }
