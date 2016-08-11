@@ -698,7 +698,7 @@ $(function(){
 		$(".select-circle .circle-step > li").each(function(index, el) {
 			if (!$("input[type=checkbox]",this).prop('checked')) {
 				$(this).addClass('closed');
-				$("ul", this).slideToggle(0);
+				$(".content-circle-step", this).slideToggle(0);
 			}
 		});
 		$(".select-circle .circle-step > li header").on('click', function(e){
@@ -711,7 +711,7 @@ $(function(){
 					$("input[type=checkbox]",this).prop('checked',true);
 					$(this).parent().removeClass('closed');
 				}
-				$(this).next("ul").slideToggle(400);
+				$(this).next(".content-circle-step").slideToggle(400);
 			}
 		});
 	}

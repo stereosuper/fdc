@@ -713,7 +713,11 @@
         }
         .select-circle form ul.circle-step li {
             ul {
-                column-count: 1;
+                float: none;
+                width: 100%;
+                &:first-child{
+                    padding-right: 0;
+                }
                 li {
                     input[type=text] {
                         width:300px;

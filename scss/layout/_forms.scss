@@ -447,6 +447,8 @@ input{
     &[type=checkbox]{
         position: relative;
         left:-99em;
+        width: 0;
+        height: 0;
         + label{
             position: relative;
             padding: 0 0 0 25px;
