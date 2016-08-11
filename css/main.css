@@ -10244,36 +10244,37 @@ a.btn-block:hover:after, a.btn-block:focus:after, button.btn-block:hover:after, 
   .print footer {
     display: none;
   }
-  .print .table .small-col {
+  .print .table .content-tabs-detail.small-col {
     border: 1px solid #dadada;
     background: #fff;
     padding: 0;
+    float: none;
   }
-  .print .table .small-col #toSlide {
+  .print .table .content-tabs-detail.small-col #toSlide {
     display: block;
     height: auto;
     width: 50%;
     float: left;
   }
-  .print .table .small-col #toSlide:after {
+  .print .table .content-tabs-detail.small-col #toSlide:after {
     content: "";
     background: none;
   }
-  .print .table .small-col #toSlide li {
+  .print .table .content-tabs-detail.small-col #toSlide li {
     position: relative;
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
   }
-  .print .table .small-col #toSlide li:nth-last-child(-n+3) {
+  .print .table .content-tabs-detail.small-col #toSlide li:nth-last-child(-n+3) {
     display: none;
   }
-  .print .table .small-col #toSlide li a {
+  .print .table .content-tabs-detail.small-col #toSlide li a {
     width: 100%;
     height: auto;
   }
-  .print .table .small-col #toSlide li a img {
+  .print .table .content-tabs-detail.small-col #toSlide li a img {
     position: relative;
     width: 100%;
     height: auto;
@@ -10281,30 +10282,29 @@ a.btn-block:hover:after, a.btn-block:focus:after, button.btn-block:hover:after, 
     bottom: auto;
     margin: 0;
   }
-  .print .table .small-col #toSlide li a[href]:after {
+  .print .table .content-tabs-detail.small-col #toSlide li a[href]:after {
     content: none !important;
   }
-  .print .table .small-col .field-content-detail {
-    float: right;
+  .print .table .content-tabs-detail.small-col .field-content-detail {
+    float: none;
     width: 50%;
     border: none;
     box-shadow: none;
   }
-  .print .table .small-col .field-content-detail address {
-    min-height: 0 !important;
+  .print .table .content-tabs-detail.small-col .field-content-detail address {
+    min-height: 180px !important;
+    width: 100%;
+    float: left;
   }
-  .print .table .small-col .field-content-detail address p:first-child {
+  .print .table .content-tabs-detail.small-col .field-content-detail address p:first-child {
     margin-right: 30px;
     margin-bottom: 0;
   }
-  .print .table .small-col .field-content-detail address a {
+  .print .table .content-tabs-detail.small-col .field-content-detail address a {
     display: none;
   }
   .print .table .content-tabs-detail:nth-child(2) {
     page-break-inside: avoid;
-  }
-  .print .table .content-tabs-detail:nth-child(2) .field-content-detail {
-    padding: 15px;
   }
   .print .table .content-tabs-detail:nth-child(2) .field-content-detail p {
     line-height: 1.2;
@@ -10317,5 +10317,9 @@ a.btn-block:hover:after, a.btn-block:focus:after, button.btn-block:hover:after, 
   }
   .print .table .adCercle {
     display: none;
+  }
+
+  .detail .table {
+    display: block;
   }
 }

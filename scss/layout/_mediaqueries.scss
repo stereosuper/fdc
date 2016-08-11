@@ -2870,10 +2870,11 @@
             display: none;
         }
         .table{
-            .small-col {
+            .content-tabs-detail.small-col {
                 border: 1px solid #dadada;
                 background: #fff;
                 padding: 0;
+                float: none;
                 #toSlide{
                     display: block;
                     height: auto;
@@ -2910,12 +2911,14 @@
                     }
                 }
                 .field-content-detail{
-                    float: right;
+                    float: none;
                     width: 50%;
                     border: none;
                     box-shadow: none;
                     address{
-                        min-height: 0 !important;
+                        min-height: 180px !important;
+                        width: 100%;
+                        float: left;
                         p {
                             // float: left;
                             // width: 50%;
@@ -2935,7 +2938,6 @@
             .content-tabs-detail:nth-child(2){
                 page-break-inside: avoid;
                 .field-content-detail{
-                    padding: 15px;
                     p{
                         line-height: 1.2;
                         font-size: 0.9em;
@@ -2954,5 +2956,9 @@
             }
         }
     }
+    .detail .table{
+        display: block;
+    }
+    
     
 }
