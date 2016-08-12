@@ -895,3 +895,51 @@ $tps-choice-etape-2: 0.3s;
 		}
 	}
 }
+
+.wrapper-btn-q-a{
+	.js &{
+		display: none;
+	}
+	margin: 0 0 35px 0;
+	padding: 0;
+	counter-reset: alpha-counter;
+	>li{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		counter-increment: alpha-counter;
+		&:before{
+			display: none;
+		}
+		&:first-child{
+			padding-right: 17px;
+		}
+		&:last-child{
+			padding-left: 17px;
+		}
+		.btn-q-a{
+			.content-btn{
+				&:before{
+					content: counter(alpha-counter, upper-alpha)'.';
+				}
+			}
+		}
+	}
+}
+
+.wrapper-q-a{
+	.js &{
+		display: none;
+	}
+	&.visible{
+		display: block;
+		.js &{
+			transform: translateY(50px);
+		}
+		.wrapper-btn-q-a{
+			display: block;
+		}
+	}
+}

@@ -1337,6 +1337,18 @@
             display: none;
         }
     }
+
+    .wrapper-btn-q-a{
+        >li{
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+            &:first-child, &:last-child{
+                padding: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px){

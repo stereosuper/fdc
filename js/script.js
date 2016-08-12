@@ -426,6 +426,40 @@ $(function(){
 		}
 	});
 
+	$('.wrapper-btn-q-a .btn-q-a.action').on('click', function(e){
+		e.preventDefault();
+		if(!$(this).hasClass('valid') && !$(this).hasClass('invalid')){
+			$(this).addClass('valid');
+			$(this).parents('.wrapper-btn-q-a').find('.btn-q-a.action:not(.valid)').addClass('invalid');
+		}else if ($(this).hasClass('invalid')){
+			var oldInvalid = $(this);
+			var oldValid = $(this).parents('.wrapper-btn-q-a').find('.btn-q-a.action:not(.invalid)');
+			oldInvalid.removeClass('invalid').addClass('valid');
+			oldValid.removeClass('valid').addClass('invalid');
+		}
+		// Affichage des réponses de la question suivante
+		var indexQClique = $(this).parents('li').index();
+		if(!($(this).parents('.wrapper-q-a')).hasClass('opened')){
+			var nextWrapper = $(this).parents('.wrapper-q-a').next('.wrapper-q-a');
+			TweenMax.set($('.wrapper-btn-q-a:eq('+indexQClique+')', nextWrapper), {display: 'block'});
+		}else{
+			var nextWrapper = $(this).parents('.wrapper-q-a').next('.wrapper-q-a');
+			// fermer les anciennes réponses et ouvrir les nouvelles
+			var tlQA = new TimelineMax();
+			tlQA.to($('.wrapper-btn-q-a', nextWrapper).not(':eq('+indexQClique+')'), 0.2, {opacity: 0});
+			tlQA.set($('.wrapper-btn-q-a', nextWrapper).not(':eq('+indexQClique+')'), {display: 'none'});
+			tlQA.set($('.wrapper-btn-q-a:eq('+indexQClique+')', nextWrapper), {display: 'block'});
+			tlQA.to($('.wrapper-btn-q-a:eq('+indexQClique+')', nextWrapper), 0.2, {opacity: 1});
+		}
+
+
+		if($(this).parents('.wrapper-q-a').hasClass('visible')){
+			TweenMax.to($(this).parents('.wrapper-q-a'), 0.2, {y: '0'});
+		}
+		TweenMax.to($(this).parents('.wrapper-q-a').next('.wrapper-q-a'), 0.2, {display: 'block', opacity: 1});
+		$(this).parents('.wrapper-q-a').addClass('opened');
+	});
+
 
 	// Detect adblock
 	if(isBlocked){
