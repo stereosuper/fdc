@@ -6173,6 +6173,19 @@ a.btn-block, button.btn-block, .btn-block {
   .dashboard-block > div {
     background: #c6333e;
     position: relative; }
+  .dashboard-block .empty-list {
+    display: inline-block;
+    width: 80%;
+    border-top: 4px solid #c6333e;
+    border-right: 4px solid #c6333e;
+    border-bottom: 4px solid #c6333e;
+    vertical-align: top;
+    margin: 0;
+    text-align: left;
+    background: white;
+    padding: 34px 0 34px 20px; }
+    .dashboard-block .empty-list p {
+      margin: 0; }
   .dashboard-block .alerts-list {
     display: inline-block;
     width: 80%;
