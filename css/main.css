@@ -7455,6 +7455,7 @@ a.btn-block, button.btn-block, .btn-block {
       margin: auto; }
 
   .nav-tabs:not(.nav-tabs-indicator) {
+    display: block;
     padding-top: 47px;
     border: 0;
     position: relative;
@@ -7751,6 +7752,8 @@ a.btn-block, button.btn-block, .btn-block {
     .dashboard-block .alerts-list .title-simple {
       display: inline-block;
       max-width: 90%; }
+  .dashboard-block .empty-list {
+    width: 72%; }
 
   .dashboard-title {
     width: 28%; }
@@ -8215,6 +8218,10 @@ a.btn-block, button.btn-block, .btn-block {
   .dashboard-block .alerts-list {
     width: 100%;
     padding: 4px; }
+  .dashboard-block .empty-list {
+    width: 100%;
+    border-top: none;
+    border-left: 4px solid #c6333e; }
 
   .dashboard-title {
     width: 100%;

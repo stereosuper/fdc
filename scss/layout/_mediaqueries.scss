@@ -1403,6 +1403,7 @@
 
     .nav-tabs{
         &:not(.nav-tabs-indicator){
+            display: block;
             padding-top: 47px;
             border: 0;
             position: relative;
@@ -1876,6 +1877,9 @@
                 display: inline-block;
                 max-width: 90%;
             }
+        }
+        .empty-list{
+            width: 72%;
         }
     }
     .dashboard-title{
@@ -2637,6 +2641,11 @@
         .alerts-list{
             width: 100%;
             padding: 4px;
+        }
+        .empty-list{
+            width: 100%;
+            border-top: none;
+            border-left: 4px solid $theme-btn;
         }
     }
     .dashboard-title{
