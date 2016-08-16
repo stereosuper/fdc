@@ -47,7 +47,7 @@
 	}
 	&.field-sale{
 		.field-header{
-			background: linear-gradient(to bottom, rgba(#f2821e, 0.95) 0, rgba(#ec4610, 0.95) 100%);
+			background: linear-gradient(to bottom, rgba(#ef9725, 0.95) 0, rgba(#ea6e19, 0.95) 100%);
 			&:before{
 				width: 129px;
 				height: 75px;
@@ -55,14 +55,14 @@
 				background-size: 100%;
 			}
 			&:after{
-				background: #ec4113;
+				background: #ea6e19;
 			}
 			.rect{
 				&:before{
-					background: #f1661e;
+					background: #ef9725;
 				}
 				&:after{
-					background: #ec4113;
+					background: #ea6e19;
 				}
 			}
 		}
@@ -82,6 +82,52 @@
 			}
 		}
 	}
+    &.field-stuff{
+        .field-header{
+            background: linear-gradient(to bottom, rgba(#f16c2b, 0.95) 0, rgba(#e03f13, 0.95) 100%);
+            &:before{
+                width: 93px;
+                height: 87px;
+                left:55px;
+                background: url(../img/materiel@2x.png) no-repeat;
+                background-size: 100%;
+            }
+            &:after{
+                background: #e03f13;
+            }
+            .rect{
+                &:before{
+                    background: #f16c2b;
+                }
+                &:after{
+                    background: #e03f13;
+                }
+            }
+        }
+    }
+    &.field-job{
+        .field-header{
+            background: linear-gradient(to bottom, rgba(#eb7f16, 0.95) 0, rgba(#e45415, 0.95) 100%);
+            &:before{
+                width: 116px;
+                height: 75px;
+                left: 40px;
+                background: url(../img/personnel@2x.png) no-repeat;
+                background-size: 100%;
+            }
+            &:after{
+                background: #e45415;
+            }
+            .rect{
+                &:before{
+                    background: #eb7f16;
+                }
+                &:after{
+                    background: #e45415;
+                }
+            }
+        }
+    }
 	.breadcrumb{
 		padding: 0;
 		margin: 0;

@@ -24,31 +24,31 @@
                 </div>
             </div>
             <div class='container'>
+                <div class='field field-buy'>
+                    <header class='field-header'>
+                        <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
+                            <li property='itemListElement' typeof='ListItem'>
+                                <h6><a property='item' typeof='WebPage' href='./'>
+                                    <span property='name'>Accueil</span>
+                                </a></h6>
+                            </li>
+                            <li property='itemListElement' typeof='ListItem'>
+                                <h6><a property='item' typeof='WebPage' href='#'>
+                                    <span property='name'>Achat de boulangerie - pâtisserie - salon de thé</span>
+                                </a></h6>
+                            </li>
+                            <li property='itemListElement' typeof='ListItem'>
+                                <h6><a property='item' typeof='WebPage' href='#'>
+                                    <span property='name'>Résultats</span>
+                                </a></h6>
+                            </li>
+                        </ul>
+                        <h1>Boulangerie pâtisserie en Vendée</h1>
+                        <div class='rect'></div>
+                    </header>
+                </div>
                 <div class="table-layout detail">
                     <div class="content-tab-layout">
-                        <div class='field field-buy'>
-                            <header class='field-header'>
-                                <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
-                                    <li property='itemListElement' typeof='ListItem'>
-                                        <h6><a property='item' typeof='WebPage' href='./'>
-                                            <span property='name'>Accueil</span>
-                                        </a></h6>
-                                    </li>
-                                    <li property='itemListElement' typeof='ListItem'>
-                                        <h6><a property='item' typeof='WebPage' href='#'>
-                                            <span property='name'>Achat de boulangerie - pâtisserie - salon de thé</span>
-                                        </a></h6>
-                                    </li>
-                                    <li property='itemListElement' typeof='ListItem'>
-                                        <h6><a property='item' typeof='WebPage' href='#'>
-                                            <span property='name'>Résultats</span>
-                                        </a></h6>
-                                    </li>
-                                </ul>
-                                <h1>Boulangerie pâtisserie en Vendée</h1>
-                                <div class='rect'></div>
-                            </header>
-                        </div>
                         <div class='table'>
                             <div class='content-tabs-detail small-col'>
                                 <ul class="detail-photos" id="toSlide"> <!-- POUR NETIL : NE PAS METTRE DE UL SI VIDE -->
@@ -92,34 +92,34 @@ https://maps.googleapis.com/maps/api/staticmap?center=46.7792198,-1.8186615&zoom
                                     </div>
                                 </div>
                             </div>
-                            <div class='cercleMyForum adCercle'>
-                             <div class='field-content'>
-                                <ul class="little-squares wave"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
-                                <header>
-                                    <img src="./layoutImg/cercle/cercle.png" width="198" alt="Le Cercle MyForum"/>
-                                    <h2 class='h1'>Facilitateur<br /> de tous vos projets</h2>
-                                    <p>Pour réussir et vous simplifier la vie, faites-vous (bien) accompagner par un membre du Cercle&nbsp;!</p>
-                                </header>
-                                <ol class="full-circle wave">
-                                    <li class="buy-step">Acheter</li><!--
-                                    --><li class="finance-step">Financer</li><!--
-                                    --><li class="ensure-step">Assurer</li><!--
-                                    --><li class="equip-step">Équiper</li><!--
-                                    --><li class="staff-step">Recruter</li><!--
-                                    --><li class="manage-step">Gérer</li><!--
-                                    --><li class="sell-step">Vendre</li>
-                                </ol>
-                                <div class="circle-text"><div>
-                                    <p><img src="./layoutImg/cercle/serviceplus.png" width="104" alt="Service Gratuit" class="gratuit" /> Quel que soit votre besoin d'accompagnement, votre interlocuteur dédié du Cercle Forum des Commerces vous contacte, vous conseille et vous met en relation vers le bon expert. </p><a href="#" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Me faire accompagner</span></a>
-                                </div></div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     <div class='wrapper-pub pub-right content-tab-layout'>
                         <div class='pub'>
                             <div class='indic-pub'>— publicité —</div>
                         </div>
+                    </div>
+                </div>
+                <div class='cercleMyForum adCercle'>
+                    <div class='field-content'>
+                        <ul class="little-squares wave"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+                        <header>
+                            <img src="./layoutImg/cercle/cercle.png" width="198" alt="Le Cercle MyForum"/>
+                            <h2 class='h1'>Facilitateur<br /> de tous vos projets</h2>
+                            <p>Pour réussir et vous simplifier la vie, faites-vous (bien) accompagner par un membre du Cercle&nbsp;!</p>
+                        </header>
+                        <ol class="full-circle wave">
+                            <li class="buy-step">Acheter</li><!--
+                            --><li class="finance-step">Financer</li><!--
+                            --><li class="ensure-step">Assurer</li><!--
+                            --><li class="equip-step">Équiper</li><!--
+                            --><li class="staff-step">Recruter</li><!--
+                            --><li class="manage-step">Gérer</li><!--
+                            --><li class="sell-step">Vendre</li>
+                        </ol>
+                        <div class="circle-text"><div>
+                            <p><img src="./layoutImg/cercle/serviceplus.png" width="104" alt="Service Gratuit" class="gratuit" /> Quel que soit votre besoin d'accompagnement, votre interlocuteur dédié du Cercle Forum des Commerces vous contacte, vous conseille et vous met en relation vers le bon expert. </p><a href="#" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Me faire accompagner</span></a>
+                        </div></div>
                     </div>
                 </div>
             </div>

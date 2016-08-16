@@ -5441,19 +5441,19 @@ a.btn-block, button.btn-block, .btn-block {
       bottom: -50px;
       right: -50px; }
   .field.field-sale .field-header {
-    background: -webkit-linear-gradient(top, rgba(242, 130, 30, 0.95) 0, rgba(236, 70, 16, 0.95) 100%);
-    background: linear-gradient(to bottom, rgba(242, 130, 30, 0.95) 0, rgba(236, 70, 16, 0.95) 100%); }
+    background: -webkit-linear-gradient(top, rgba(239, 151, 37, 0.95) 0, rgba(234, 110, 25, 0.95) 100%);
+    background: linear-gradient(to bottom, rgba(239, 151, 37, 0.95) 0, rgba(234, 110, 25, 0.95) 100%); }
     .field.field-sale .field-header:before {
       width: 129px;
       height: 75px;
       background: url(../img/vente@2x.png) no-repeat;
       background-size: 100%; }
     .field.field-sale .field-header:after {
-      background: #ec4113; }
+      background: #ea6e19; }
     .field.field-sale .field-header .rect:before {
-      background: #f1661e; }
+      background: #ef9725; }
     .field.field-sale .field-header .rect:after {
-      background: #ec4113; }
+      background: #ea6e19; }
   .field.field-buy .field-header {
     background: -webkit-linear-gradient(top, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
     background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%); }
@@ -5465,6 +5465,36 @@ a.btn-block, button.btn-block, .btn-block {
       background-size: 100%; }
     .field.field-buy .field-header:after, .field.field-buy .field-header .rect:before, .field.field-buy .field-header .rect:after {
       background: #be2b36; }
+  .field.field-stuff .field-header {
+    background: -webkit-linear-gradient(top, rgba(241, 108, 43, 0.95) 0, rgba(224, 63, 19, 0.95) 100%);
+    background: linear-gradient(to bottom, rgba(241, 108, 43, 0.95) 0, rgba(224, 63, 19, 0.95) 100%); }
+    .field.field-stuff .field-header:before {
+      width: 93px;
+      height: 87px;
+      left: 55px;
+      background: url(../img/materiel@2x.png) no-repeat;
+      background-size: 100%; }
+    .field.field-stuff .field-header:after {
+      background: #e03f13; }
+    .field.field-stuff .field-header .rect:before {
+      background: #f16c2b; }
+    .field.field-stuff .field-header .rect:after {
+      background: #e03f13; }
+  .field.field-job .field-header {
+    background: -webkit-linear-gradient(top, rgba(235, 127, 22, 0.95) 0, rgba(228, 84, 21, 0.95) 100%);
+    background: linear-gradient(to bottom, rgba(235, 127, 22, 0.95) 0, rgba(228, 84, 21, 0.95) 100%); }
+    .field.field-job .field-header:before {
+      width: 116px;
+      height: 75px;
+      left: 40px;
+      background: url(../img/personnel@2x.png) no-repeat;
+      background-size: 100%; }
+    .field.field-job .field-header:after {
+      background: #e45415; }
+    .field.field-job .field-header .rect:before {
+      background: #eb7f16; }
+    .field.field-job .field-header .rect:after {
+      background: #e45415; }
   .field .breadcrumb {
     padding: 0;
     margin: 0;
@@ -6475,9 +6505,7 @@ a.btn-block, button.btn-block, .btn-block {
     width: 120px;
     display: table-cell; }
     .detail .wrapper-pub.pub-right .pub {
-      margin-top: -80px; }
-      .detail .wrapper-pub.pub-right .pub .indic-pub {
-        color: white; }
+      margin-top: -10px; }
 
 /* Responsive vertical */
 @media (max-height: 800px) {
