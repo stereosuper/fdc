@@ -2970,6 +2970,10 @@ button {
             margin-bottom: -15px; }
         .cercleMyForum.adCercle .circle-text div a {
           float: left; }
+    .cercleMyForum.adCercle.small-margin {
+      margin-top: 1em; }
+      .cercleMyForum.adCercle.small-margin .little-squares li {
+        margin-top: 12em; }
   .cercleMyForum.choice-cercle {
     height: 100%; }
     .cercleMyForum.choice-cercle .circle-text {
