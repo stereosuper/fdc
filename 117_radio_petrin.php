@@ -296,16 +296,16 @@
 												<p>Quelle est votre demande&nbsp;?</p>
 												<ul class='wrapper-btn-q-a'>
 													<li>
-														<a href='#' class='btn-q-a action'><span class='content-btn'>Consulter les <span class='underline'>offres</span></span></a>
+														<a href='#' class='btn-q-a'><span class='content-btn'>Consulter les <span class='underline'>offres</span></span></a>
 													</li><li>
-														<a href='#' class='btn-q-a action'><span class='content-btn'>Déposer une <span class='underline'>candidature</span></span></a>
+														<a href='#' class='btn-q-a'><span class='content-btn'>Déposer une <span class='underline'>candidature</span></span></a>
 													</li>
 												</ul>
 												<ul class='wrapper-btn-q-a'>
 													<li>
-														<a href='#' class='btn-q-a action'><span class='content-btn'>Consulter les <span class='underline'>candidats</span></span></a>
+														<a href='#' class='btn-q-a'><span class='content-btn'>Rechercher parmi les <span class='underline'>candidats</span></span></a>
 													</li><li>
-														<a href='#' class='btn-q-a action'><span class='content-btn'>Déposer une <span class='underline'>offre</span></span></a>
+														<a href='#' class='btn-q-a'><span class='content-btn'>Déposer une <span class='underline'>offre</span></span></a>
 													</li>
 												</ul>
 											</div>
