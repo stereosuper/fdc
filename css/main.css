@@ -6881,6 +6881,9 @@ a.btn-block, button.btn-block, .btn-block {
     .choices .content {
       height: auto; }
 
+  .wrapper-choices .field-content {
+    min-height: 450px; }
+
   .tab-leads {
     overflow-x: scroll;
     overflow-y: hidden; }
