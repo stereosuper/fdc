@@ -1,0 +1,21 @@
+/* Partners */
+
+.partners-filters {
+    margin: 1.5em auto 1em;
+    fieldset {
+        display:inline-block;
+        &:nth-child(1) {
+            margin-right: 4em;
+        }
+        label {
+            font-weight: bold;
+            width:auto;
+            margin-right: 2em;
+        }
+    }
+}
+
+.partners-list{
+    @extend %list-base;
+    @extend %list-result;
+}

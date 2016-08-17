@@ -280,7 +280,7 @@
         margin: auto;
         background: url(../layoutImg/no-img-alerts.png) no-repeat;
         color: #fff;
-        &:after{
+        /*&:after{
             @include font-icon;
             @include size(13px);
             content: '\e90a';
@@ -292,7 +292,7 @@
             text-align: center;
             background: $theme-btn;
             transition: background $transition;
-        }
+        }*/
         &:hover, &:focus{
             color: $theme-btn;
             &:after{

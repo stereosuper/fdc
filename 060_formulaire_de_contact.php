@@ -21,7 +21,7 @@
                 </ul>
 
                 <h1>Formulaire de contact</h1>
-                <p class='gutter-left'>Vous avez une question ? Nous sommes à votre écoute et répondrons à toutes vos intérogations.<br/>Merci de remplir le formulaire suivant, nous vous recontacterons rapidement.</p>
+                <p class='gutter-left'>Vous avez une question&nbsp;? Nous sommes à votre écoute et répondrons à toutes vos intérogations.<br/>Merci de remplir le formulaire suivant, nous vous recontacterons rapidement.</p>
                 <div class='content-tabs'>
                     <div class='tab-content form-contact'>
                         <form action='#' method='post' id='formToEdit'>
@@ -45,7 +45,7 @@
                                 <label for='societe'>
                                     Société
                                 </label><input type='text' name='societe' id='societe' class='big' >
-                                
+
                             </fieldset>
                             <fieldset class='required'>
                                 <label for='code' >
@@ -70,7 +70,7 @@
                                     <select name="objet">
                                         <option>Contact
                                         <option>Demande d'accompagnement
-                                        <option>Demande de renseignement 
+                                        <option>Demande de renseignement
                                     </select>
                                 </div>
                             </fieldset>
@@ -79,7 +79,7 @@
                                     Message
                                 </label><textarea id="message"></textarea>
                             </fieldset>
-                            
+
                             <button type='submit' class='btn-block huge '>Valider</button>
                         </form>
                     </div>

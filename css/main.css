@@ -739,6 +739,11 @@ a, button {
   display: table-cell;
   vertical-align: top; }
 
+.red-dot {
+  margin: auto 5px;
+  display: inline-block;
+  color: #df5441; }
+
 /* Placeholders */
 .breadcrumb a, .btn-arrow, .btn-arrow-back, .btn-print, .btn-heart, .btn-pen, .btn-cancel, .btn-alert, .btn-delete, .btn-plus, a.btn-plus, button.btn-plus, .btn-minus, a.btn-minus, button.btn-minus {
   display: inline-block;
@@ -899,34 +904,34 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
     border-color: #ff0000;
     outline: 1px solid #ff0000; }
 
-.alerts-list, .sales-list, .messages-list, .field-list, .search-list {
+.alerts-list, .sales-list, .messages-list, .partners-list, .field-list, .search-list {
   padding: 0;
   border-top: 1px solid #f5f5f6;
   border-bottom: 1px solid #f5f5f6;
   margin: 0.7em 0 0; }
-  .alerts-list li, .sales-list li, .messages-list li, .field-list li, .search-list li {
+  .alerts-list li, .sales-list li, .messages-list li, .partners-list li, .field-list li, .search-list li {
     margin: 0; }
-    .alerts-list li:before, .sales-list li:before, .messages-list li:before, .field-list li:before, .search-list li:before {
+    .alerts-list li:before, .sales-list li:before, .messages-list li:before, .partners-list li:before, .field-list li:before, .search-list li:before {
       display: none; }
-    .alerts-list li:nth-child(n+2) a:before, .sales-list li:nth-child(n+2) a:before, .messages-list li:nth-child(n+2) a:before, .field-list li:nth-child(n+2) a:before, .search-list li:nth-child(n+2) a:before {
+    .alerts-list li:nth-child(n+2) a:before, .sales-list li:nth-child(n+2) a:before, .messages-list li:nth-child(n+2) a:before, .partners-list li:nth-child(n+2) a:before, .field-list li:nth-child(n+2) a:before, .search-list li:nth-child(n+2) a:before {
       background-color: #d63f39; }
-    .alerts-list li:nth-child(n+3) a:before, .sales-list li:nth-child(n+3) a:before, .messages-list li:nth-child(n+3) a:before, .field-list li:nth-child(n+3) a:before, .search-list li:nth-child(n+3) a:before {
+    .alerts-list li:nth-child(n+3) a:before, .sales-list li:nth-child(n+3) a:before, .messages-list li:nth-child(n+3) a:before, .partners-list li:nth-child(n+3) a:before, .field-list li:nth-child(n+3) a:before, .search-list li:nth-child(n+3) a:before {
       background-color: #de5340; }
-    .alerts-list li:nth-child(n+4) a:before, .sales-list li:nth-child(n+4) a:before, .messages-list li:nth-child(n+4) a:before, .field-list li:nth-child(n+4) a:before, .search-list li:nth-child(n+4) a:before {
+    .alerts-list li:nth-child(n+4) a:before, .sales-list li:nth-child(n+4) a:before, .messages-list li:nth-child(n+4) a:before, .partners-list li:nth-child(n+4) a:before, .field-list li:nth-child(n+4) a:before, .search-list li:nth-child(n+4) a:before {
       background-color: #e85d1f; }
-    .alerts-list li:nth-child(n+5) a:before, .sales-list li:nth-child(n+5) a:before, .messages-list li:nth-child(n+5) a:before, .field-list li:nth-child(n+5) a:before, .search-list li:nth-child(n+5) a:before {
+    .alerts-list li:nth-child(n+5) a:before, .sales-list li:nth-child(n+5) a:before, .messages-list li:nth-child(n+5) a:before, .partners-list li:nth-child(n+5) a:before, .field-list li:nth-child(n+5) a:before, .search-list li:nth-child(n+5) a:before {
       background-color: #e8741f; }
-    .alerts-list li:nth-child(n+6) a:before, .sales-list li:nth-child(n+6) a:before, .messages-list li:nth-child(n+6) a:before, .field-list li:nth-child(n+6) a:before, .search-list li:nth-child(n+6) a:before {
+    .alerts-list li:nth-child(n+6) a:before, .sales-list li:nth-child(n+6) a:before, .messages-list li:nth-child(n+6) a:before, .partners-list li:nth-child(n+6) a:before, .field-list li:nth-child(n+6) a:before, .search-list li:nth-child(n+6) a:before {
       background-color: #e8911f; }
-    .alerts-list li:nth-child(n+7) a:before, .sales-list li:nth-child(n+7) a:before, .messages-list li:nth-child(n+7) a:before, .field-list li:nth-child(n+7) a:before, .search-list li:nth-child(n+7) a:before {
+    .alerts-list li:nth-child(n+7) a:before, .sales-list li:nth-child(n+7) a:before, .messages-list li:nth-child(n+7) a:before, .partners-list li:nth-child(n+7) a:before, .field-list li:nth-child(n+7) a:before, .search-list li:nth-child(n+7) a:before {
       background-color: #e8741f; }
-    .alerts-list li:nth-child(n+8) a:before, .sales-list li:nth-child(n+8) a:before, .messages-list li:nth-child(n+8) a:before, .field-list li:nth-child(n+8) a:before, .search-list li:nth-child(n+8) a:before {
+    .alerts-list li:nth-child(n+8) a:before, .sales-list li:nth-child(n+8) a:before, .messages-list li:nth-child(n+8) a:before, .partners-list li:nth-child(n+8) a:before, .field-list li:nth-child(n+8) a:before, .search-list li:nth-child(n+8) a:before {
       background-color: #e85d1f; }
-    .alerts-list li:nth-child(n+9) a:before, .sales-list li:nth-child(n+9) a:before, .messages-list li:nth-child(n+9) a:before, .field-list li:nth-child(n+9) a:before, .search-list li:nth-child(n+9) a:before {
+    .alerts-list li:nth-child(n+9) a:before, .sales-list li:nth-child(n+9) a:before, .messages-list li:nth-child(n+9) a:before, .partners-list li:nth-child(n+9) a:before, .field-list li:nth-child(n+9) a:before, .search-list li:nth-child(n+9) a:before {
       background-color: #de5340; }
-    .alerts-list li:nth-child(n+10) a:before, .sales-list li:nth-child(n+10) a:before, .messages-list li:nth-child(n+10) a:before, .field-list li:nth-child(n+10) a:before, .search-list li:nth-child(n+10) a:before {
+    .alerts-list li:nth-child(n+10) a:before, .sales-list li:nth-child(n+10) a:before, .messages-list li:nth-child(n+10) a:before, .partners-list li:nth-child(n+10) a:before, .field-list li:nth-child(n+10) a:before, .search-list li:nth-child(n+10) a:before {
       background-color: #d63f39; }
-  .alerts-list a, .sales-list a, .messages-list a, .field-list a, .search-list a {
+  .alerts-list a, .sales-list a, .messages-list a, .partners-list a, .field-list a, .search-list a {
     display: block;
     border-top: 1px solid #f5f5f6;
     border-bottom: 1px solid #f5f5f6;
@@ -935,7 +940,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
     overflow: hidden;
     text-decoration: none;
     color: #282c34; }
-    .alerts-list a:before, .sales-list a:before, .messages-list a:before, .field-list a:before, .search-list a:before {
+    .alerts-list a:before, .sales-list a:before, .messages-list a:before, .partners-list a:before, .field-list a:before, .search-list a:before {
       content: '';
       position: absolute;
       top: 0;
@@ -948,36 +953,36 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
       background: #c52d38;
       -webkit-transition: .5s ease-in-out;
       transition: .5s ease-in-out; }
-    .alerts-list a:focus, .sales-list a:focus, .messages-list a:focus, .field-list a:focus, .search-list a:focus, .alerts-list a:hover, .sales-list a:hover, .messages-list a:hover, .field-list a:hover, .search-list a:hover {
+    .alerts-list a:focus, .sales-list a:focus, .messages-list a:focus, .partners-list a:focus, .field-list a:focus, .search-list a:focus, .alerts-list a:hover, .sales-list a:hover, .messages-list a:hover, .partners-list a:hover, .field-list a:hover, .search-list a:hover {
       color: #fff; }
-      .alerts-list a:focus .btn-arrow, .sales-list a:focus .btn-arrow, .messages-list a:focus .btn-arrow, .field-list a:focus .btn-arrow, .search-list a:focus .btn-arrow, .alerts-list a:focus button, .sales-list a:focus button, .messages-list a:focus button, .field-list a:focus button, .search-list a:focus button, .alerts-list a:focus .num, .sales-list a:focus .num, .messages-list a:focus .num, .field-list a:focus .num, .search-list a:focus .num, .alerts-list a:hover .btn-arrow, .sales-list a:hover .btn-arrow, .messages-list a:hover .btn-arrow, .field-list a:hover .btn-arrow, .search-list a:hover .btn-arrow, .alerts-list a:hover button, .sales-list a:hover button, .messages-list a:hover button, .field-list a:hover button, .search-list a:hover button, .alerts-list a:hover .num, .sales-list a:hover .num, .messages-list a:hover .num, .field-list a:hover .num, .search-list a:hover .num {
+      .alerts-list a:focus .btn-arrow, .sales-list a:focus .btn-arrow, .messages-list a:focus .btn-arrow, .partners-list a:focus .btn-arrow, .field-list a:focus .btn-arrow, .search-list a:focus .btn-arrow, .alerts-list a:focus button, .sales-list a:focus button, .messages-list a:focus button, .partners-list a:focus button, .field-list a:focus button, .search-list a:focus button, .alerts-list a:focus .num, .sales-list a:focus .num, .messages-list a:focus .num, .partners-list a:focus .num, .field-list a:focus .num, .search-list a:focus .num, .alerts-list a:hover .btn-arrow, .sales-list a:hover .btn-arrow, .messages-list a:hover .btn-arrow, .partners-list a:hover .btn-arrow, .field-list a:hover .btn-arrow, .search-list a:hover .btn-arrow, .alerts-list a:hover button, .sales-list a:hover button, .messages-list a:hover button, .partners-list a:hover button, .field-list a:hover button, .search-list a:hover button, .alerts-list a:hover .num, .sales-list a:hover .num, .messages-list a:hover .num, .partners-list a:hover .num, .field-list a:hover .num, .search-list a:hover .num {
         color: #fff; }
-      .alerts-list a:focus:before, .sales-list a:focus:before, .messages-list a:focus:before, .field-list a:focus:before, .search-list a:focus:before, .alerts-list a:hover:before, .sales-list a:hover:before, .messages-list a:hover:before, .field-list a:hover:before, .search-list a:hover:before {
+      .alerts-list a:focus:before, .sales-list a:focus:before, .messages-list a:focus:before, .partners-list a:focus:before, .field-list a:focus:before, .search-list a:focus:before, .alerts-list a:hover:before, .sales-list a:hover:before, .messages-list a:hover:before, .partners-list a:hover:before, .field-list a:hover:before, .search-list a:hover:before {
         -webkit-transform: translateX(0);
                 transform: translateX(0);
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
-    .alerts-list a:active, .sales-list a:active, .messages-list a:active, .field-list a:active, .search-list a:active {
+    .alerts-list a:active, .sales-list a:active, .messages-list a:active, .partners-list a:active, .field-list a:active, .search-list a:active {
       opacity: 0.8; }
-  .alerts-list .btn-arrow, .sales-list .btn-arrow, .messages-list .btn-arrow, .field-list .btn-arrow, .search-list .btn-arrow {
+  .alerts-list .btn-arrow, .sales-list .btn-arrow, .messages-list .btn-arrow, .partners-list .btn-arrow, .field-list .btn-arrow, .search-list .btn-arrow {
     vertical-align: middle;
     color: #7392da;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
 
-.alerts-list, .sales-list, .search-list {
+.alerts-list, .sales-list, .partners-list, .search-list {
   border-top: 0; }
-  .alerts-list li:first-of-type a, .sales-list li:first-of-type a, .search-list li:first-of-type a {
+  .alerts-list li:first-of-type a, .sales-list li:first-of-type a, .partners-list li:first-of-type a, .search-list li:first-of-type a {
     border-top: 0; }
-  .alerts-list li:nth-of-type(2n+1) a, .sales-list li:nth-of-type(2n+1) a, .search-list li:nth-of-type(2n+1) a {
+  .alerts-list li:nth-of-type(2n+1) a, .sales-list li:nth-of-type(2n+1) a, .partners-list li:nth-of-type(2n+1) a, .search-list li:nth-of-type(2n+1) a {
     background: #f5f5f6; }
-  .alerts-list a, .sales-list a, .search-list a {
+  .alerts-list a, .sales-list a, .partners-list a, .search-list a {
     padding: 18px 240px 23px 125px; }
-  .alerts-list .title-simple, .sales-list .title-simple, .search-list .title-simple {
+  .alerts-list .title-simple, .sales-list .title-simple, .partners-list .title-simple, .search-list .title-simple {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px; }
-  .alerts-list .p, .sales-list .p, .search-list .p {
+  .alerts-list .p, .sales-list .p, .partners-list .p, .search-list .p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -985,7 +990,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
     max-width: 100%;
     margin: 0;
     font-size: 0.88em; }
-  .alerts-list .img, .sales-list .img, .search-list .img {
+  .alerts-list .img, .sales-list .img, .partners-list .img, .search-list .img {
     width: 68px;
     height: 51px;
     position: absolute;
@@ -994,37 +999,27 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
     left: 20px;
     margin: auto;
     background: url(../layoutImg/no-img-alerts.png) no-repeat;
-    color: #fff; }
-    .alerts-list .img:after, .sales-list .img:after, .search-list .img:after {
-      /* use !important to prevent issues with browser extensions that change fonts */
-      font-family: 'fdc' !important;
-      speak: none;
-      font-style: normal;
-      font-weight: 400;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      width: 13px;
-      height: 13px;
-      content: '\e90a';
-      position: absolute;
-      top: 3px;
-      right: 3px;
-      font-size: 8px;
-      line-height: 13px;
-      text-align: center;
-      background: #c6333e;
-      -webkit-transition: background 0.3s ease-in-out;
-      transition: background 0.3s ease-in-out; }
-    .alerts-list .img:hover, .sales-list .img:hover, .search-list .img:hover, .alerts-list .img:focus, .sales-list .img:focus, .search-list .img:focus {
+    color: #fff;
+    /*&:after{
+        @include font-icon;
+        @include size(13px);
+        content: '\e90a';
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        font-size: 8px;
+        line-height: 13px;
+        text-align: center;
+        background: $theme-btn;
+        transition: background $transition;
+    }*/ }
+    .alerts-list .img:hover, .sales-list .img:hover, .partners-list .img:hover, .search-list .img:hover, .alerts-list .img:focus, .sales-list .img:focus, .partners-list .img:focus, .search-list .img:focus {
       color: #c6333e; }
-      .alerts-list .img:hover:after, .sales-list .img:hover:after, .search-list .img:hover:after, .alerts-list .img:focus:after, .sales-list .img:focus:after, .search-list .img:focus:after {
+      .alerts-list .img:hover:after, .sales-list .img:hover:after, .partners-list .img:hover:after, .search-list .img:hover:after, .alerts-list .img:focus:after, .sales-list .img:focus:after, .partners-list .img:focus:after, .search-list .img:focus:after {
         background: #fff; }
-    .alerts-list .img:empty:after, .sales-list .img:empty:after, .search-list .img:empty:after {
+    .alerts-list .img:empty:after, .sales-list .img:empty:after, .partners-list .img:empty:after, .search-list .img:empty:after {
       display: none; }
-  .alerts-list .num, .sales-list .num, .search-list .num {
+  .alerts-list .num, .sales-list .num, .partners-list .num, .search-list .num {
     height: 51px;
     position: absolute;
     top: 0;
@@ -1037,16 +1032,16 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
     color: #c6333e;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
-  .alerts-list .right, .sales-list .right, .search-list .right {
+  .alerts-list .right, .sales-list .right, .partners-list .right, .search-list .right {
     height: 27px;
     position: absolute;
     right: 20px;
     top: 0;
     bottom: 0;
     margin: auto; }
-    .alerts-list .right button, .sales-list .right button, .search-list .right button {
+    .alerts-list .right button, .sales-list .right button, .partners-list .right button, .search-list .right button {
       vertical-align: middle; }
-    .alerts-list .right .btn-pen, .sales-list .right .btn-pen, .search-list .right .btn-pen, .alerts-list .right .btn-mail, .sales-list .right .btn-mail, .search-list .right .btn-mail {
+    .alerts-list .right .btn-pen, .sales-list .right .btn-pen, .partners-list .right .btn-pen, .search-list .right .btn-pen, .alerts-list .right .btn-mail, .sales-list .right .btn-mail, .partners-list .right .btn-mail, .search-list .right .btn-mail {
       margin-right: 10px; }
 
 /* Grid */
@@ -2971,7 +2966,8 @@ button {
         .cercleMyForum.adCercle .circle-text div a {
           float: left; }
     .cercleMyForum.adCercle.small-margin {
-      margin-top: 1em; }
+      margin-top: 1em;
+      margin-bottom: 5em; }
       .cercleMyForum.adCercle.small-margin .little-squares li {
         margin-top: 12em; }
   .cercleMyForum.choice-cercle {
@@ -5404,6 +5400,18 @@ a.btn-block, button.btn-block, .btn-block {
     padding-bottom: 10px;
     font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif; }
 
+/* Partners */
+.partners-filters {
+  margin: 1.5em auto 1em; }
+  .partners-filters fieldset {
+    display: inline-block; }
+    .partners-filters fieldset:nth-child(1) {
+      margin-right: 4em; }
+    .partners-filters fieldset label {
+      font-weight: bold;
+      width: auto;
+      margin-right: 2em; }
+
 /* Field */
 .field {
   position: relative;
@@ -7719,12 +7727,12 @@ a.btn-block, button.btn-block, .btn-block {
       .cols-right-footer > li:nth-child(2) {
         width: 280px; }
 
-  .alerts-list a, .sales-list a, .search-list a {
+  .alerts-list a, .sales-list a, .search-list a, .partners-list a {
     padding-right: 25px; }
-  .alerts-list .title-simple, .sales-list .title-simple, .search-list .title-simple {
+  .alerts-list .title-simple, .sales-list .title-simple, .search-list .title-simple, .partners-list .title-simple {
     display: block;
     margin-right: 0; }
-  .alerts-list .right, .sales-list .right, .search-list .right {
+  .alerts-list .right, .sales-list .right, .search-list .right, .partners-list .right {
     position: static; }
 
   .alerts-block time {
@@ -8040,11 +8048,11 @@ a.btn-block, button.btn-block, .btn-block {
   .breadcrumb a {
     max-width: 255px; }
 
-  .alerts-list a, .sales-list a, .search-list a {
+  .alerts-list a, .sales-list a, .search-list a, .partners-list a {
     padding-left: 25px; }
-  .alerts-list .btn-arrow, .sales-list .btn-arrow, .search-list .btn-arrow {
+  .alerts-list .btn-arrow, .sales-list .btn-arrow, .search-list .btn-arrow, .partners-list .btn-arrow {
     display: none; }
-  .alerts-list .img, .sales-list .img, .search-list .img {
+  .alerts-list .img, .sales-list .img, .search-list .img, .partners-list .img {
     display: block;
     position: relative;
     left: 0;

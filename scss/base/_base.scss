@@ -439,3 +439,9 @@ a, button{
     display:table-cell;
     vertical-align: top;
 }
+
+.red-dot {
+    margin:auto 5px;
+    display:inline-block;
+    color: $theme-rouge-title;
+}
