@@ -1,0 +1,77 @@
+/* Cercle myForum specific style */
+
+body{
+	&.cercle{
+		@include bgCercleHome;
+		#burger{
+			display: inline-block;
+		}
+		#logo{
+			width: 58px;
+			&:after{
+				display: none;
+			}
+		}
+		&.sidebar-links-open{
+			#logo{
+				width: 210px;
+				&:after{
+					display: block;
+					background-position: 80px 9px;
+				}
+			}
+		}
+	}
+}
+
+.presentation-cercle{
+	padding: 60px 0 0 0;
+	color: $blanc;
+	h1{
+		padding: 0;
+	}
+}
+.desc-cercle{
+	padding: 0 245px 0 0;
+}
+.login-cercle{
+	width: 345px;
+	padding: 120px 0 0 0;
+}
+.login-infos{
+	font-family: $roboto-cd-bold;
+	font-size: 1.75em;
+	margin-bottom: 30px;
+	> div{
+		font-family: $roboto-medium;
+		font-size: 0.643em;
+		color: $orange;
+	}
+}
+.content-login-cercle{
+	padding: 40px;
+	background-color: rgba($noir, 0.15);
+	label{
+		font-size: 1em;
+	}
+	.btn-simple{
+		color: $blanc;
+		font-size: 0.75em;
+		opacity: 0.7;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	input[type=text]{
+		max-width: 100%;
+	}
+	.btn-block{
+		background: $orange;
+		.border{
+			border-color: $orange;
+		}
+		&:hover, &:focus{
+			color: $orange;
+		}
+	}
+}

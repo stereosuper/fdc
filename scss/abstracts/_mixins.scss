@@ -169,3 +169,8 @@
     background: $backgroundCercle;
     background-size: 2653px 2358px;
 }
+
+@mixin bgCercleHome{
+    background: $backgroundCercleHome;
+    background-size: 3089px 2960px;
+}

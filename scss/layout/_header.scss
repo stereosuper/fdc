@@ -17,6 +17,28 @@
 			right: -50px;
 		}
 	}
+	&.cercle{
+		background: rgba($noir, 0.2);
+		.menu-header{
+			a{
+				color: $blanc;
+			}
+		}
+		.nav-header{
+			> li{
+				&:nth-child(1){
+					a, button{
+						background-color: $theme-btn;
+					}
+				}
+				&:nth-child(2){
+					a, button{
+						background-color: $orange;
+					}
+				}
+			}
+		}
+	}
 }
 
 .zone-left-header{
