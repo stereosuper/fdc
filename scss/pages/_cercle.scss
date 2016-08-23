@@ -12,13 +12,23 @@ body{
 				display: none;
 			}
 		}
-		&.sidebar-links-open{
+		&.sidebar-links-open, &.nav-header-open{
 			#logo{
 				width: 210px;
 				&:after{
 					display: block;
 					background-position: 80px 9px;
 				}
+			}
+		}
+		.sidebar{
+			.title-sidebar{
+				background-color: $orange;
+			}
+		}
+		#sidebar-account{
+			.btn-close{
+				background-color: #cb5e31;
 			}
 		}
 	}

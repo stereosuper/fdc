@@ -2246,6 +2246,14 @@ button {
       left: 50%;
       bottom: 0;
       background-color: #31353e; }
+  #footer.footer-cercle {
+    background-color: #1e2831; }
+    #footer.footer-cercle:before {
+      display: none; }
+    #footer.footer-cercle .container {
+      padding: 10px 20px; }
+      #footer.footer-cercle .container:before {
+        display: none; }
 
 .cols-footer {
   display: block;
@@ -2450,6 +2458,35 @@ button {
     -webkit-transform: translateX(75%);
         -ms-transform: translateX(75%);
             transform: translateX(75%); }
+
+.copy-cercle {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "robotomedium", "robotoregular", sans-serif;
+  font-size: 0.75em;
+  color: #a7a9ad; }
+
+.menu-footer-cercle {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  margin: 0;
+  padding: 0;
+  line-height: 1; }
+  .menu-footer-cercle > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 60px;
+    padding: 0;
+    line-height: 1; }
+    .menu-footer-cercle > li:before {
+      display: none; }
+  .menu-footer-cercle a {
+    display: block;
+    font-family: "robotomedium", "robotoregular", sans-serif;
+    font-size: 0.75em;
+    text-decoration: none;
+    color: white; }
 
 .nav-tabs {
   padding: 0;
@@ -6598,11 +6635,15 @@ body.cercle {
     width: 58px; }
     body.cercle #logo:after {
       display: none; }
-  body.cercle.sidebar-links-open #logo {
+  body.cercle.sidebar-links-open #logo, body.cercle.nav-header-open #logo {
     width: 210px; }
-    body.cercle.sidebar-links-open #logo:after {
+    body.cercle.sidebar-links-open #logo:after, body.cercle.nav-header-open #logo:after {
       display: block;
       background-position: 80px 9px; }
+  body.cercle .sidebar .title-sidebar {
+    background-color: #ff8925; }
+  body.cercle #sidebar-account .btn-close {
+    background-color: #cb5e31; }
 
 .presentation-cercle {
   padding: 60px 0 0 0;
@@ -6894,7 +6935,12 @@ body.cercle {
     z-index: 4; }
     #sidebar-tools .btn-close {
       left: auto;
-      right: -50px; } }
+      right: -50px; }
+
+  body.cercle #logo {
+    width: 70px; }
+  body.cercle #sidebar-account .btn-close {
+    background-color: #ae2e39; } }
 @media (max-width: 1150px) {
   .cols-footer > li:nth-child(1) {
     padding-right: 52px; }

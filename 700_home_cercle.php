@@ -52,7 +52,7 @@
 			</div>
 		</main>
 
-	  	<?php include_once('includes/footer_home.html'); ?>
+	  	<?php include_once('includes/footer_cercle.html'); ?>
 
 	</body>
 

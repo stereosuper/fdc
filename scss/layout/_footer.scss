@@ -44,6 +44,18 @@ $padding-bottom-footer: 130px;
 			background-color: rgb(49, 53, 62);
 		}
 	}
+	&.footer-cercle{
+		background-color: rgb(30, 40, 49);
+		&:before{
+			display: none;
+		}
+		.container{
+			padding: 10px 20px;
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
 
 .cols-footer{
@@ -297,5 +309,38 @@ $padding-bottom-footer: 130px;
 	backface-visibility: hidden;
 	&.closed{
 		transform: translateX(75%);
+	}
+}
+
+.copy-cercle{
+	display: inline-block;
+	vertical-align: top;
+	font-family: $roboto-medium;
+	font-size: 0.75em;
+	color: rgb(167, 169, 173);
+}
+.menu-footer-cercle{
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	> li{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 0 60px;
+		padding: 0;
+		line-height: 1;
+		&:before{
+			display: none;
+		}
+	}
+	a{
+		display: block;
+		font-family: $roboto-medium;
+		font-size: 0.75em;
+		text-decoration: none;
+		color: $blanc;
 	}
 }

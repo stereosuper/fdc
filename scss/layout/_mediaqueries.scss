@@ -305,6 +305,19 @@
             right: -50px;
         }
     }
+
+    body{
+        &.cercle{
+            #logo{
+                width: 70px;
+            }
+            #sidebar-account{
+                .btn-close{
+                    background-color: #ae2e39;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1150px){
