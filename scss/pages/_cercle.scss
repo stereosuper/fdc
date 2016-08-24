@@ -2,11 +2,13 @@
 
 body{
 	&.cercle{
-		@include bgCercleHome;
-		height: auto;
-		min-height: 100%;
-		#main{
-			padding-bottom: 230px;
+		&.home-cercle{
+			@include bgCercleHome;
+			height: auto;
+			min-height: 100%;
+			#main{
+				padding-bottom: 230px;
+			}
 		}
 		#burger{
 			display: inline-block;
@@ -232,4 +234,96 @@ body{
 	position: absolute;
 	top: -20px;
 	left: -5px;
+	pointer-events: none;
+}
+
+.header-cercle{
+	width: 100%;
+	height: 298px;
+	@include bgCercleHome;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	.little-squares {
+	    margin:0;
+	    padding:0;
+	    li {
+	        margin:0;
+	        padding:0;
+	        list-style:none;
+	        position:absolute;
+	        background:$blanc;
+	        left: 50%;
+	        top: 50%;
+	        &:before {
+	            display:none;
+	        }
+	        &:nth-child(1) {
+	            width:17px;
+	            height:17px;
+	            transform:rotate(-21deg);
+	            margin-left: 47px;
+	            margin-top: 128px;
+	        }
+	        &:nth-child(2) {
+	            width:17px;
+	            height:17px;
+	            transform:rotate(-21deg);
+	            margin-left: 450px;
+	            margin-top: 84px;
+	        }
+	        &:nth-child(3) {
+	            width:10px;
+	            height:10px;
+	            transform:rotate(-21deg);
+	            margin-left: 577px;
+	            margin-top: 280px;
+	            background:$yellow;
+	        }
+	        &:nth-child(4) {
+	            width:17px;
+	            height:17px;
+	            transform:rotate(-21deg);
+	            margin-left: 638px;
+	            margin-top: 214px;
+	        }
+	        &:nth-child(5) {
+	            width:10px;
+	            height:10px;
+	            transform:rotate(-21deg);
+	           margin-left: 672px;
+	           margin-top: 62px;
+	            background:$yellow;
+	        }
+	    }
+	}
+}
+
+.wrapper-rappel{
+	width: 300px;
+	padding: 0 0 0 40px;
+}
+.content-rappel{
+	background: rgb(51, 61, 71);
+	form{
+		padding: 25px 30px 34px 30px;
+		color: $blanc;
+	}
+	button{
+		margin: 0;
+	}
+}
+.header-rappel{
+	padding: 20px 30px 60px 30px;
+	height: 168px;
+	background: url('../layoutImg/appel-cercle.jpg') no-repeat 50% 100%;
+	background-size: auto 100%;
+	background-size: cover;
+	h2{
+		font-family: $roboto-cd-bold;
+		font-size: 1.875em;
+		margin: 0;
+		line-height: 1;
+	}
 }

@@ -381,6 +381,16 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin: 0.13em 0 0.85em;
   padding: 0 60px; }
+  .cercle h1 {
+    margin-bottom: 0.3em;
+    color: white; }
+    .cercle h1 + p {
+      margin-top: 0;
+      color: white; }
+      .home-cercle .cercle h1 + p {
+        margin-top: 1.55em; }
+    .home-cercle .cercle h1 {
+      margin-bottom: 0.85em; }
   h1.big {
     font-size: 4.063em;
     text-align: center;
@@ -2251,7 +2261,7 @@ button {
       background-color: #31353e; }
   #footer.footer-cercle {
     background-color: #1e2831; }
-    .full-height #footer.footer-cercle {
+    .full-height .home-cercle #footer.footer-cercle {
       position: fixed;
       bottom: 0;
       left: 0;
@@ -2686,6 +2696,8 @@ button {
   font-size: 0.75em;
   line-height: 1;
   color: #c7c2c2; }
+  .cercle .breadcrumb {
+    margin-top: 30px; }
   .breadcrumb li {
     display: inline-block;
     margin: 0; }
@@ -3789,6 +3801,12 @@ a.btn-block, button.btn-block, .btn-block {
       border-color: #f18832 #f18832; }
     a.btn-block.btn-yellow:hover, a.btn-block.btn-yellow:focus, button.btn-block.btn-yellow:hover, button.btn-block.btn-yellow:focus, .btn-block.btn-yellow:hover, .btn-block.btn-yellow:focus {
       color: #f18832; }
+  a.btn-block.btn-orange-cercle, button.btn-block.btn-orange-cercle, .btn-block.btn-orange-cercle {
+    color: white; }
+    a.btn-block.btn-orange-cercle .border, button.btn-block.btn-orange-cercle .border, .btn-block.btn-orange-cercle .border {
+      border-color: #ff8925 #ff8925; }
+    a.btn-block.btn-orange-cercle:hover, a.btn-block.btn-orange-cercle:focus, button.btn-block.btn-orange-cercle:hover, button.btn-block.btn-orange-cercle:focus, .btn-block.btn-orange-cercle:hover, .btn-block.btn-orange-cercle:focus {
+      color: #ff8925; }
   a.btn-block.btn-alert, button.btn-block.btn-alert, .btn-block.btn-alert {
     padding: 16px 16px 15px 13px;
     font-size: 1em;
@@ -3906,6 +3924,9 @@ a.btn-block, button.btn-block, .btn-block {
 
 .btn-orange-light, a.btn-orange-light, button.btn-orange-light {
   background: #ef6a2b; }
+
+.btn-orange-cercle, a.btn-orange-cercle, button.btn-orange-cercle {
+  background: #ff8925; }
 
 .btn-yellow, a.btn-yellow, button.btn-yellow {
   background: #f18832; }
@@ -6634,144 +6655,144 @@ a.btn-block, button.btn-block, .btn-block {
       margin-top: -10px; }
 
 /* Cercle myForum specific style */
-body.cercle {
+body.cercle.home-cercle {
   background: #b2232e url("../layoutImg/bgCercleHome.jpg") fixed no-repeat 95% 63%;
   background-size: 3089px 2960px;
   height: auto;
   min-height: 100%; }
-  body.cercle #main {
+  body.cercle.home-cercle #main {
     padding-bottom: 230px; }
-  body.cercle #burger {
-    display: inline-block; }
-  body.cercle #logo {
-    width: 58px; }
-    body.cercle #logo:after {
-      display: none; }
-  body.cercle.sidebar-links-open #logo, body.cercle.nav-header-open #logo {
-    width: 210px; }
-    body.cercle.sidebar-links-open #logo:after, body.cercle.nav-header-open #logo:after {
-      display: block;
-      background-position: 80px 9px; }
-  body.cercle .sidebar .title-sidebar {
-    background-color: #ff8925; }
-  body.cercle #sidebar-account .btn-close {
-    background-color: #cb5e31; }
-  body.cercle .full-circle {
+body.cercle #burger {
+  display: inline-block; }
+body.cercle #logo {
+  width: 58px; }
+  body.cercle #logo:after {
+    display: none; }
+body.cercle.sidebar-links-open #logo, body.cercle.nav-header-open #logo {
+  width: 210px; }
+  body.cercle.sidebar-links-open #logo:after, body.cercle.nav-header-open #logo:after {
+    display: block;
+    background-position: 80px 9px; }
+body.cercle .sidebar .title-sidebar {
+  background-color: #ff8925; }
+body.cercle #sidebar-account .btn-close {
+  background-color: #cb5e31; }
+body.cercle .full-circle {
+  list-style: none;
+  margin: 0 -25px 0 -20px;
+  padding: 0; }
+  body.cercle .full-circle li {
     list-style: none;
-    margin: 0 -25px 0 -20px;
-    padding: 0; }
-    body.cercle .full-circle li {
-      list-style: none;
+    margin: 0;
+    padding: 120px 0 0 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 136px;
+    color: white;
+    -webkit-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    z-index: 1;
+    font-size: 0.8em;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+    body.cercle .full-circle li:before {
+      content: " ";
       margin: 0;
-      padding: 120px 0 0 40px;
-      box-sizing: border-box;
-      display: inline-block;
-      position: relative;
-      width: 136px;
-      color: white;
-      -webkit-transform: rotate(-40deg);
-          -ms-transform: rotate(-40deg);
-              transform: rotate(-40deg);
-      z-index: 1;
-      font-size: 0.8em;
-      -webkit-transition: -webkit-transform 0.3s ease-in-out;
-              transition: transform 0.3s ease-in-out;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
-      body.cercle .full-circle li:before {
-        content: " ";
-        margin: 0;
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        -webkit-transform: rotate(53deg);
-            -ms-transform: rotate(53deg);
-                transform: rotate(53deg);
-        z-index: -1;
-        -webkit-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out; }
-      body.cercle .full-circle li.buy-step {
-        width: 126px;
-        padding: 108px 0 0 37px; }
-        body.cercle .full-circle li.buy-step:before {
-          top: 6px;
-          left: 6px;
-          bottom: 6px;
-          right: 6px;
-          background-image: url("../layoutImg/cercle/losanges/acheter.png"); }
-      body.cercle .full-circle li.finance-step:before {
-        background-image: url("../layoutImg/cercle/losanges/financer.png"); }
-      body.cercle .full-circle li.ensure-step {
-        width: 104px;
-        padding: 85px 0 0 28px; }
-        body.cercle .full-circle li.ensure-step:before {
-          top: 8px;
-          left: 8px;
-          bottom: 8px;
-          right: 8px;
-          background-image: url("../layoutImg/cercle/losanges/assurer.png"); }
-      body.cercle .full-circle li.equip-step {
-        width: 126px;
-        padding: 108px 0 0 37px; }
-        body.cercle .full-circle li.equip-step:before {
-          top: 6px;
-          left: 6px;
-          bottom: 6px;
-          right: 6px;
-          background-image: url("../layoutImg/cercle/losanges/equiper.png"); }
-      body.cercle .full-circle li.staff-step:before {
-        background-image: url("../layoutImg/cercle/losanges/recruter.png"); }
-      body.cercle .full-circle li.manage-step {
-        width: 126px;
-        padding: 108px 0 0 37px; }
-        body.cercle .full-circle li.manage-step:before {
-          top: 6px;
-          left: 6px;
-          bottom: 6px;
-          right: 6px;
-          background-image: url("../layoutImg/cercle/losanges/gerer.png"); }
-      body.cercle .full-circle li.sell-step {
-        width: 104px;
-        padding: 85px 0 0 28px; }
-        body.cercle .full-circle li.sell-step:before {
-          top: 8px;
-          left: 8px;
-          bottom: 8px;
-          right: 8px;
-          background-image: url("../layoutImg/cercle/losanges/vendre.png"); }
-    body.cercle .full-circle.wave {
-      position: relative;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      -webkit-transform: rotate(53deg);
+          -ms-transform: rotate(53deg);
+              transform: rotate(53deg);
+      z-index: -1;
+      -webkit-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out; }
+    body.cercle .full-circle li.buy-step {
+      width: 126px;
+      padding: 108px 0 0 37px; }
+      body.cercle .full-circle li.buy-step:before {
+        top: 6px;
+        left: 6px;
+        bottom: 6px;
+        right: 6px;
+        background-image: url("../layoutImg/cercle/losanges/acheter.png"); }
+    body.cercle .full-circle li.finance-step:before {
+      background-image: url("../layoutImg/cercle/losanges/financer.png"); }
+    body.cercle .full-circle li.ensure-step {
+      width: 104px;
+      padding: 85px 0 0 28px; }
+      body.cercle .full-circle li.ensure-step:before {
+        top: 8px;
+        left: 8px;
+        bottom: 8px;
+        right: 8px;
+        background-image: url("../layoutImg/cercle/losanges/assurer.png"); }
+    body.cercle .full-circle li.equip-step {
+      width: 126px;
+      padding: 108px 0 0 37px; }
+      body.cercle .full-circle li.equip-step:before {
+        top: 6px;
+        left: 6px;
+        bottom: 6px;
+        right: 6px;
+        background-image: url("../layoutImg/cercle/losanges/equiper.png"); }
+    body.cercle .full-circle li.staff-step:before {
+      background-image: url("../layoutImg/cercle/losanges/recruter.png"); }
+    body.cercle .full-circle li.manage-step {
+      width: 126px;
+      padding: 108px 0 0 37px; }
+      body.cercle .full-circle li.manage-step:before {
+        top: 6px;
+        left: 6px;
+        bottom: 6px;
+        right: 6px;
+        background-image: url("../layoutImg/cercle/losanges/gerer.png"); }
+    body.cercle .full-circle li.sell-step {
+      width: 104px;
+      padding: 85px 0 0 28px; }
+      body.cercle .full-circle li.sell-step:before {
+        top: 8px;
+        left: 8px;
+        bottom: 8px;
+        right: 8px;
+        background-image: url("../layoutImg/cercle/losanges/vendre.png"); }
+  body.cercle .full-circle.wave {
+    position: relative;
+    -webkit-transition: 0 none;
+            transition: 0 none; }
+    body.cercle .full-circle.wave li {
+      position: absolute;
       -webkit-transition: 0 none;
               transition: 0 none; }
-      body.cercle .full-circle.wave li {
-        position: absolute;
-        -webkit-transition: 0 none;
-                transition: 0 none; }
-        body.cercle .full-circle.wave li.buy-step {
-          left: 173px;
-          top: -8px; }
-        body.cercle .full-circle.wave li.finance-step {
-          left: 325px;
-          top: -61px; }
-        body.cercle .full-circle.wave li.ensure-step {
-          left: 624px;
-          top: -178px; }
-        body.cercle .full-circle.wave li.equip-step {
-          left: 693px;
-          top: -318px; }
-        body.cercle .full-circle.wave li.staff-step {
-          left: 734px;
-          top: -468px; }
-        body.cercle .full-circle.wave li.manage-step {
-          left: 470px;
-          top: -123px; }
-        body.cercle .full-circle.wave li.sell-step {
-          left: 840px;
-          top: -530px; }
+      body.cercle .full-circle.wave li.buy-step {
+        left: 173px;
+        top: -8px; }
+      body.cercle .full-circle.wave li.finance-step {
+        left: 325px;
+        top: -61px; }
+      body.cercle .full-circle.wave li.ensure-step {
+        left: 624px;
+        top: -178px; }
+      body.cercle .full-circle.wave li.equip-step {
+        left: 693px;
+        top: -318px; }
+      body.cercle .full-circle.wave li.staff-step {
+        left: 734px;
+        top: -468px; }
+      body.cercle .full-circle.wave li.manage-step {
+        left: 470px;
+        top: -123px; }
+      body.cercle .full-circle.wave li.sell-step {
+        left: 840px;
+        top: -530px; }
 
 .presentation-cercle {
   padding: 60px 0 0 0;
@@ -6823,7 +6844,97 @@ body.cercle {
   background-size: 894px 857px;
   position: absolute;
   top: -20px;
-  left: -5px; }
+  left: -5px;
+  pointer-events: none; }
+
+.header-cercle {
+  width: 100%;
+  height: 298px;
+  background: #b2232e url("../layoutImg/bgCercleHome.jpg") fixed no-repeat 95% 63%;
+  background-size: 3089px 2960px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+  .header-cercle .little-squares {
+    margin: 0;
+    padding: 0; }
+    .header-cercle .little-squares li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: absolute;
+      background: white;
+      left: 50%;
+      top: 50%; }
+      .header-cercle .little-squares li:before {
+        display: none; }
+      .header-cercle .little-squares li:nth-child(1) {
+        width: 17px;
+        height: 17px;
+        -webkit-transform: rotate(-21deg);
+            -ms-transform: rotate(-21deg);
+                transform: rotate(-21deg);
+        margin-left: 47px;
+        margin-top: 128px; }
+      .header-cercle .little-squares li:nth-child(2) {
+        width: 17px;
+        height: 17px;
+        -webkit-transform: rotate(-21deg);
+            -ms-transform: rotate(-21deg);
+                transform: rotate(-21deg);
+        margin-left: 450px;
+        margin-top: 84px; }
+      .header-cercle .little-squares li:nth-child(3) {
+        width: 10px;
+        height: 10px;
+        -webkit-transform: rotate(-21deg);
+            -ms-transform: rotate(-21deg);
+                transform: rotate(-21deg);
+        margin-left: 577px;
+        margin-top: 280px;
+        background: #f18832; }
+      .header-cercle .little-squares li:nth-child(4) {
+        width: 17px;
+        height: 17px;
+        -webkit-transform: rotate(-21deg);
+            -ms-transform: rotate(-21deg);
+                transform: rotate(-21deg);
+        margin-left: 638px;
+        margin-top: 214px; }
+      .header-cercle .little-squares li:nth-child(5) {
+        width: 10px;
+        height: 10px;
+        -webkit-transform: rotate(-21deg);
+            -ms-transform: rotate(-21deg);
+                transform: rotate(-21deg);
+        margin-left: 672px;
+        margin-top: 62px;
+        background: #f18832; }
+
+.wrapper-rappel {
+  width: 300px;
+  padding: 0 0 0 40px; }
+
+.content-rappel {
+  background: #333d47; }
+  .content-rappel form {
+    padding: 25px 30px 34px 30px;
+    color: white; }
+  .content-rappel button {
+    margin: 0; }
+
+.header-rappel {
+  padding: 20px 30px 60px 30px;
+  height: 168px;
+  background: url("../layoutImg/appel-cercle.jpg") no-repeat 50% 100%;
+  background-size: auto 100%;
+  background-size: cover; }
+  .header-rappel h2 {
+    font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+    font-size: 1.875em;
+    margin: 0;
+    line-height: 1; }
 
 /* Responsive vertical */
 @media (max-height: 800px) {
@@ -7433,7 +7544,10 @@ body.cercle {
         background-image: url("../layoutImg/cercle/vendre.png"); }
 
   .squares-cercle {
-    display: none; } }
+    display: none; }
+
+  body.cercle.home-cercle #main {
+    padding-bottom: 100px; } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; }
@@ -7892,7 +8006,7 @@ body.cercle {
     max-width: 345px;
     padding-top: 50px; }
 
-  .full-height #footer.footer-cercle {
+  .full-height .home-cercle #footer.footer-cercle {
     position: relative; } }
 @media (max-width: 767px) {
   h1 {

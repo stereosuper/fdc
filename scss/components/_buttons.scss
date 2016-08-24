@@ -319,6 +319,15 @@ a.btn-block, button.btn-block, .btn-block {
 			color: $yellow;
 		}
 	}
+	&.btn-orange-cercle{
+		color:$blanc;
+		.border{
+			border-color: $orange $orange;
+		}
+		&:hover, &:focus{
+			color: $orange;
+		}
+	}
 	&.btn-alert{
 		padding: 16px 16px 15px 13px;
 		font-size: 1em;
@@ -448,6 +457,10 @@ a.btn-block, button.btn-block, .btn-block {
 
 .btn-orange-light, a.btn-orange-light, button.btn-orange-light{
 	background: #ef6a2b;
+}
+
+.btn-orange-cercle, a.btn-orange-cercle, button.btn-orange-cercle{
+	background: $orange;
 }
 
 .btn-yellow, a.btn-yellow, button.btn-yellow {
