@@ -321,6 +321,18 @@
     .desc-cercle{
         padding-right: 200px;
     }
+    #header{
+        &.cercle{
+            .menu-header{
+                a{
+                    color: $txt;
+                    &:hover, &:focus{
+                        color: $blanc;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1150px){

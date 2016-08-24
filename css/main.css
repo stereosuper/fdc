@@ -6953,7 +6953,12 @@ body.cercle {
     background-color: #ae2e39; }
 
   .desc-cercle {
-    padding-right: 200px; } }
+    padding-right: 200px; }
+
+  #header.cercle .menu-header a {
+    color: #282c34; }
+    #header.cercle .menu-header a:hover, #header.cercle .menu-header a:focus {
+      color: white; } }
 @media (max-width: 1150px) {
   .cols-footer > li:nth-child(1) {
     padding-right: 52px; }
