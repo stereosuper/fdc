@@ -6639,6 +6639,8 @@ body.cercle {
   background-size: 3089px 2960px;
   height: auto;
   min-height: 100%; }
+  body.cercle #main {
+    padding-bottom: 230px; }
   body.cercle #burger {
     display: inline-block; }
   body.cercle #logo {
@@ -6654,6 +6656,122 @@ body.cercle {
     background-color: #ff8925; }
   body.cercle #sidebar-account .btn-close {
     background-color: #cb5e31; }
+  body.cercle .full-circle {
+    list-style: none;
+    margin: 0 -25px 0 -20px;
+    padding: 0; }
+    body.cercle .full-circle li {
+      list-style: none;
+      margin: 0;
+      padding: 120px 0 0 40px;
+      box-sizing: border-box;
+      display: inline-block;
+      position: relative;
+      width: 136px;
+      color: white;
+      -webkit-transform: rotate(-40deg);
+          -ms-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+      z-index: 1;
+      font-size: 0.8em;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+              transition: transform 0.3s ease-in-out;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
+      body.cercle .full-circle li:before {
+        content: " ";
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transform: rotate(53deg);
+            -ms-transform: rotate(53deg);
+                transform: rotate(53deg);
+        z-index: -1;
+        -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out; }
+      body.cercle .full-circle li.buy-step {
+        width: 126px;
+        padding: 108px 0 0 37px; }
+        body.cercle .full-circle li.buy-step:before {
+          top: 6px;
+          left: 6px;
+          bottom: 6px;
+          right: 6px;
+          background-image: url("../layoutImg/cercle/losanges/acheter.png"); }
+      body.cercle .full-circle li.finance-step:before {
+        background-image: url("../layoutImg/cercle/losanges/financer.png"); }
+      body.cercle .full-circle li.ensure-step {
+        width: 104px;
+        padding: 85px 0 0 28px; }
+        body.cercle .full-circle li.ensure-step:before {
+          top: 8px;
+          left: 8px;
+          bottom: 8px;
+          right: 8px;
+          background-image: url("../layoutImg/cercle/losanges/assurer.png"); }
+      body.cercle .full-circle li.equip-step {
+        width: 126px;
+        padding: 108px 0 0 37px; }
+        body.cercle .full-circle li.equip-step:before {
+          top: 6px;
+          left: 6px;
+          bottom: 6px;
+          right: 6px;
+          background-image: url("../layoutImg/cercle/losanges/equiper.png"); }
+      body.cercle .full-circle li.staff-step:before {
+        background-image: url("../layoutImg/cercle/losanges/recruter.png"); }
+      body.cercle .full-circle li.manage-step {
+        width: 126px;
+        padding: 108px 0 0 37px; }
+        body.cercle .full-circle li.manage-step:before {
+          top: 6px;
+          left: 6px;
+          bottom: 6px;
+          right: 6px;
+          background-image: url("../layoutImg/cercle/losanges/gerer.png"); }
+      body.cercle .full-circle li.sell-step {
+        width: 104px;
+        padding: 85px 0 0 28px; }
+        body.cercle .full-circle li.sell-step:before {
+          top: 8px;
+          left: 8px;
+          bottom: 8px;
+          right: 8px;
+          background-image: url("../layoutImg/cercle/losanges/vendre.png"); }
+    body.cercle .full-circle.wave {
+      position: relative;
+      -webkit-transition: 0 none;
+              transition: 0 none; }
+      body.cercle .full-circle.wave li {
+        position: absolute;
+        -webkit-transition: 0 none;
+                transition: 0 none; }
+        body.cercle .full-circle.wave li.buy-step {
+          left: 173px;
+          top: -8px; }
+        body.cercle .full-circle.wave li.finance-step {
+          left: 325px;
+          top: -61px; }
+        body.cercle .full-circle.wave li.ensure-step {
+          left: 624px;
+          top: -178px; }
+        body.cercle .full-circle.wave li.equip-step {
+          left: 693px;
+          top: -318px; }
+        body.cercle .full-circle.wave li.staff-step {
+          left: 734px;
+          top: -468px; }
+        body.cercle .full-circle.wave li.manage-step {
+          left: 470px;
+          top: -123px; }
+        body.cercle .full-circle.wave li.sell-step {
+          left: 840px;
+          top: -530px; }
 
 .presentation-cercle {
   padding: 60px 0 0 0;
@@ -6959,6 +7077,11 @@ body.cercle {
     color: #282c34; }
     #header.cercle .menu-header a:hover, #header.cercle .menu-header a:focus {
       color: white; } }
+@media (max-width: 1200px) {
+  body.cercle .full-circle.wave li.staff-step {
+    left: 703px; }
+  body.cercle .full-circle.wave li.equip-step {
+    left: 660px; } }
 @media (max-width: 1150px) {
   .cols-footer > li:nth-child(1) {
     padding-right: 52px; }
@@ -7168,7 +7291,16 @@ body.cercle {
     padding: 0; }
 
   .desc-cercle {
-    padding-right: 150px; } }
+    padding-right: 150px; }
+
+  body.cercle .full-circle.wave li.staff-step {
+    left: 660px; }
+  body.cercle .full-circle.wave li.equip-step {
+    left: 610px; }
+  body.cercle .full-circle.wave li.ensure-step {
+    left: 576px; }
+  body.cercle .full-circle.wave li.sell-step {
+    left: 767px; } }
 @media (max-width: 1080px) {
   .cercleMyForum.adCercle header img {
     float: left;
@@ -7244,7 +7376,48 @@ body.cercle {
   .cercleMyForum .little-squares.wave li:nth-child(6) {
     left: auto;
     right: 0px;
-    top: 100px; } }
+    top: 100px; }
+
+  body.cercle .full-circle.wave {
+    margin: 30px 0 0 0;
+    display: block;
+    clear: both; }
+    body.cercle .full-circle.wave li {
+      position: static;
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+              transform: rotate(0);
+      width: 13.6%;
+      text-align: center;
+      padding: 170px 10px 0 0;
+      margin: 0 0.3%;
+      min-height: 180px; }
+      body.cercle .full-circle.wave li:before {
+        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%) !important;
+                clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%) !important;
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0);
+        bottom: 25px; }
+      body.cercle .full-circle.wave li.buy-step:before, body.cercle .full-circle.wave li.finance-step:before, body.cercle .full-circle.wave li.ensure-step:before, body.cercle .full-circle.wave li.equip-step:before, body.cercle .full-circle.wave li.staff-step:before, body.cercle .full-circle.wave li.manage-step:before, body.cercle .full-circle.wave li.sell-step:before {
+        top: 0;
+        left: 0;
+        bottom: 25px;
+        right: 0; }
+      body.cercle .full-circle.wave li.buy-step:before {
+        background-image: url("../layoutImg/cercle/acheter.png"); }
+      body.cercle .full-circle.wave li.finance-step:before {
+        background-image: url("../layoutImg/cercle/financer.png"); }
+      body.cercle .full-circle.wave li.ensure-step:before {
+        background-image: url("../layoutImg/cercle/assurer.png"); }
+      body.cercle .full-circle.wave li.equip-step:before {
+        background-image: url("../layoutImg/cercle/equiper.png"); }
+      body.cercle .full-circle.wave li.staff-step:before {
+        background-image: url("../layoutImg/cercle/recruter.png"); }
+      body.cercle .full-circle.wave li.manage-step:before {
+        background-image: url("../layoutImg/cercle/gerer.png"); }
+      body.cercle .full-circle.wave li.sell-step:before {
+        background-image: url("../layoutImg/cercle/vendre.png"); } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; }
@@ -8360,7 +8533,16 @@ body.cercle {
         text-align: center; }
       .cercleMyForum.adCercle .circle-text div a {
         float: none;
-        margin-top: 20px; } }
+        margin-top: 20px; }
+
+  body.cercle .full-circle {
+    margin-bottom: 0; }
+    body.cercle .full-circle li {
+      padding-top: 0;
+      text-indent: -9999px;
+      overflow: hidden; }
+      body.cercle .full-circle li:before {
+        bottom: 0; } }
 @media (max-width: 480px) {
   h1, #lb .lightbox-content .field h1 {
     font-size: 1.8em; }

@@ -335,6 +335,25 @@
     }
 }
 
+@media (max-width: 1200px){
+    body{
+        &.cercle{
+            .full-circle{
+                &.wave{
+                    li{
+                        &.staff-step{
+                            left: 703px;
+                        }
+                        &.equip-step{
+                            left: 660px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1150px){
     .cols-footer{
         > li{
@@ -618,6 +637,29 @@
     .desc-cercle{
         padding-right: 150px;
     }
+
+    body{
+        &.cercle{
+            .full-circle{
+                &.wave{
+                    li{
+                        &.staff-step{
+                            left: 660px;
+                        }
+                        &.equip-step{
+                            left: 610px;
+                        }
+                        &.ensure-step{
+                            left: 576px;
+                        }
+                        &.sell-step{
+                            left: 767px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1080px){
@@ -721,6 +763,60 @@
                 left:auto;
                 right:0px;
                 top:100px;
+            }
+        }
+    }
+    body{
+        &.cercle{
+            .full-circle{
+                &.wave {
+                    margin: 30px 0 0 0;
+                    display:block;
+                    clear:both;
+                    li {
+                        position: static;
+                        transform:rotate(0);
+                        width:13.6%;
+                        text-align: center;
+                        padding:170px 10px 0 0;
+                        margin:0 0.3%;
+                        min-height:180px;
+                        &:before {
+                            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%) !important;
+                            transform:rotate(0);
+                            bottom:25px;
+                        }
+                        &.buy-step, &.finance-step, &.ensure-step, &.equip-step, &.staff-step, &.manage-step, &.sell-step {
+                            &:before {
+                                top: 0;
+                                left: 0;
+                                bottom: 25px;
+                                right: 0;
+                            }
+                        }
+                        &.buy-step:before {
+                            background-image:url('../layoutImg/cercle/acheter.png');
+                        }
+                        &.finance-step:before {
+                            background-image:url('../layoutImg/cercle/financer.png');
+                        }
+                        &.ensure-step:before {
+                            background-image:url('../layoutImg/cercle/assurer.png');
+                        }
+                        &.equip-step:before {
+                            background-image:url('../layoutImg/cercle/equiper.png');
+                        }
+                        &.staff-step:before {
+                            background-image:url('../layoutImg/cercle/recruter.png');
+                        }
+                        &.manage-step:before {
+                            background-image:url('../layoutImg/cercle/gerer.png');
+                        }
+                        &.sell-step:before {
+                            background-image:url('../layoutImg/cercle/vendre.png');
+                        }
+                    }
+                }
             }
         }
     }
@@ -2450,6 +2546,22 @@
                 a {
                     float: none;
                     margin-top:20px;
+                }
+            }
+        }
+    }
+
+    body{
+        &.cercle{
+            .full-circle {
+                margin-bottom: 0;
+                li {
+                    padding-top:0;
+                    text-indent: -9999px;
+                    overflow: hidden;
+                    &:before {
+                        bottom:0;
+                    }
                 }
             }
         }

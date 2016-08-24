@@ -5,6 +5,9 @@ body{
 		@include bgCercleHome;
 		height: auto;
 		min-height: 100%;
+		#main{
+			padding-bottom: 230px;
+		}
 		#burger{
 			display: inline-block;
 		}
@@ -31,6 +34,138 @@ body{
 		#sidebar-account{
 			.btn-close{
 				background-color: #cb5e31;
+			}
+		}
+		.full-circle{
+		    list-style:none;
+		    margin:0 -25px 0 -20px;
+		    padding:0;
+		    li {
+		        list-style:none;
+		        margin:0;
+		        padding:120px 0 0 40px;
+		        box-sizing: border-box;
+		        display:inline-block;
+		        position:relative;
+		        width:136px;
+		        color:$blanc;
+		        transform:rotate(-40deg);
+		        z-index:1;
+		        font-size:0.8em;
+		        transition: transform $transition;
+		        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+		        &:before {
+		            content:" ";
+		            margin:0;
+		            background-repeat:no-repeat;
+		            background-position:50% 0;
+		            background-size:cover;
+		            position:absolute;
+		            left:0;
+		            right:0;
+		            top:0;
+		            bottom:0;
+		            transform:rotate(53deg);
+		            z-index:-1;
+		            transition: all $transition;
+		        }
+		        &.buy-step {
+        			width: 126px;
+        			padding: 108px 0 0 37px;
+                	&:before {
+                		top: 6px;
+                		left: 6px;
+                		bottom: 6px;
+                		right: 6px;
+                    	background-image:url('../layoutImg/cercle/losanges/acheter.png');
+                    }
+		        }
+		        &.finance-step:before {
+		            background-image:url('../layoutImg/cercle/losanges/financer.png');
+		        }
+		        &.ensure-step{
+	    			width: 104px;
+	    			padding: 85px 0 0 28px;
+	            	&:before {
+	            		top: 8px;
+	            		left: 8px;
+	            		bottom: 8px;
+	            		right: 8px;
+	                	background-image:url('../layoutImg/cercle/losanges/assurer.png');
+	                }
+		        }
+		        &.equip-step{
+        			width: 126px;
+        			padding: 108px 0 0 37px;
+                	&:before {
+                		top: 6px;
+                		left: 6px;
+                		bottom: 6px;
+                		right: 6px;
+                    	background-image:url('../layoutImg/cercle/losanges/equiper.png');
+                    }
+		        }
+		        &.staff-step:before {
+		            background-image:url('../layoutImg/cercle/losanges/recruter.png');
+		        }
+		        &.manage-step {
+        			width: 126px;
+        			padding: 108px 0 0 37px;
+                	&:before {
+                		top: 6px;
+                		left: 6px;
+                		bottom: 6px;
+                		right: 6px;
+                    	background-image:url('../layoutImg/cercle/losanges/gerer.png');
+                    }
+		        }
+		        &.sell-step{
+        			width: 104px;
+        			padding: 85px 0 0 28px;
+                	&:before {
+                		top: 8px;
+                		left: 8px;
+                		bottom: 8px;
+                		right: 8px;
+                    	background-image:url('../layoutImg/cercle/losanges/vendre.png');
+                    }
+		        }
+		    }
+			&.wave {
+			    position:relative;
+			    transition: 0 none;
+			    li {
+			        position:absolute;
+			        transition: 0 none;
+			        &.buy-step {
+			            left:173px;
+			            top:-8px;
+			        }
+			        &.finance-step {
+			            left: 325px;
+			            top: -61px;
+			        }
+			        &.ensure-step {
+			            left:624px;
+			            top:-178px;
+			        }
+			        &.equip-step {
+			            left:693px;
+			            top:-318px;
+			        }
+			        &.staff-step {
+			            left:734px;
+			            top:-468px;
+			        }
+			        &.manage-step {
+			            left:470px;
+			            top:-123px;
+			        }
+			        &.sell-step {
+			            left:840px;
+			            top:-530px;
+			        }
+			    }
 			}
 		}
 	}

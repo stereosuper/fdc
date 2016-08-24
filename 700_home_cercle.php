@@ -48,7 +48,15 @@
 						</div>
 					</div>
 				</div>
-				
+				<ol class='full-circle wave'>
+                    <li class='buy-step'>Acheter</li><!--
+                    --><li class='finance-step'>Financer</li><!--
+                    --><li class='ensure-step'>Assurer</li><!--
+                    --><li class='equip-step'>Équiper</li><!--
+                    --><li class='staff-step'>Recruter</li><!--
+                    --><li class='manage-step'>Gérer</li><!--
+                    --><li class='sell-step'>Vendre</li>
+                </ol>
 			</div>
 		</main>
 
