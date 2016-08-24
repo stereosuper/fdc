@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang='fr-FR' class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js'> <!--<![endif]-->
+<!--[if IE 9]> <html lang='fr-FR' class='no-js lt-ie10 full-height'> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang='fr-FR' class='no-js full-height'> <!--<![endif]-->
 
 	<head>
 		<title>Forum des Commerces</title>

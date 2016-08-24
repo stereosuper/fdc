@@ -3,6 +3,8 @@
 body{
 	&.cercle{
 		@include bgCercleHome;
+		height: auto;
+		min-height: 100%;
 		#burger{
 			display: inline-block;
 		}

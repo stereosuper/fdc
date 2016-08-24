@@ -352,6 +352,9 @@ html {
   color: #282c34;
   min-height: 100%;
   position: relative; }
+  html.full-height {
+    min-height: 0;
+    height: 100%; }
 
 body {
   font-family: "robotoregular", sans-serif;
@@ -2248,6 +2251,11 @@ button {
       background-color: #31353e; }
   #footer.footer-cercle {
     background-color: #1e2831; }
+    .full-height #footer.footer-cercle {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0; }
     #footer.footer-cercle:before {
       display: none; }
     #footer.footer-cercle .container {
@@ -6628,7 +6636,9 @@ a.btn-block, button.btn-block, .btn-block {
 /* Cercle myForum specific style */
 body.cercle {
   background: #b2232e url("../layoutImg/bgCercleHome.jpg") fixed no-repeat 95% 63%;
-  background-size: 3089px 2960px; }
+  background-size: 3089px 2960px;
+  height: auto;
+  min-height: 100%; }
   body.cercle #burger {
     display: inline-block; }
   body.cercle #logo {
@@ -6940,7 +6950,10 @@ body.cercle {
   body.cercle #logo {
     width: 70px; }
   body.cercle #sidebar-account .btn-close {
-    background-color: #ae2e39; } }
+    background-color: #ae2e39; }
+
+  .desc-cercle {
+    padding-right: 200px; } }
 @media (max-width: 1150px) {
   .cols-footer > li:nth-child(1) {
     padding-right: 52px; }
@@ -7147,7 +7160,10 @@ body.cercle {
         -ms-transform: scale(1);
             transform: scale(1);
     margin: 160px 0 0 -45px;
-    padding: 0; } }
+    padding: 0; }
+
+  .desc-cercle {
+    padding-right: 150px; } }
 @media (max-width: 1080px) {
   .cercleMyForum.adCercle header img {
     float: left;
@@ -7252,7 +7268,10 @@ body.cercle {
       left: 50px;
       width: auto; }
       .cercleMyForum.choice-cercle .circle-text p {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px; }
+
+  .desc-cercle {
+    padding-right: 100px; } }
 @media (max-width: 979px) {
   h1.padding-grid, h2.padding-grid, h3.padding-grid, h4.padding-grid, h5.padding-grid, h6.padding-grid, .title-zone.padding-grid {
     padding: 0; }
@@ -7664,7 +7683,23 @@ body.cercle {
     max-width: 400px;
     margin: 10px auto; }
     .wrapper-btn-q-a > li:first-child, .wrapper-btn-q-a > li:last-child {
-      padding: 0; } }
+      padding: 0; }
+
+  .presentation-cercle {
+    display: block; }
+
+  .desc-cercle {
+    display: block;
+    padding-right: 0; }
+
+  .login-cercle {
+    display: block;
+    width: 100%;
+    max-width: 345px;
+    padding-top: 50px; }
+
+  .full-height #footer.footer-cercle {
+    position: relative; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -8534,7 +8569,18 @@ body.cercle {
     .cercleMyForum .select-circle form ul.circle-step li ul {
       padding-left: 0px; }
       .cercleMyForum .select-circle form ul.circle-step li ul li input[type=text] {
-        width: 130px; } }
+        width: 130px; }
+
+  #footer.footer-cercle {
+    text-align: center; }
+
+  .copy-cercle {
+    display: block; }
+
+  .menu-footer-cercle {
+    float: none; }
+    .menu-footer-cercle > li {
+      margin: 10px 20px 0 20px; } }
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; }

@@ -46,6 +46,12 @@ $padding-bottom-footer: 130px;
 	}
 	&.footer-cercle{
 		background-color: rgb(30, 40, 49);
+		.full-height &{
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
 		&:before{
 			display: none;
 		}

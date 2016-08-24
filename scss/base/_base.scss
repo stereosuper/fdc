@@ -17,6 +17,10 @@ html{
     color: $txt;
     min-height: 100%;
     position: relative;
+    &.full-height{
+        min-height: 0;
+        height: 100%;
+    }
 }
 
 body{
