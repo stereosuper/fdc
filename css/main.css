@@ -6815,6 +6815,16 @@ body.cercle {
     .content-login-cercle .btn-block:hover, .content-login-cercle .btn-block:focus {
       color: #ff8925; }
 
+.squares-cercle {
+  display: block;
+  width: 894px;
+  height: 857px;
+  background: url("../layoutImg/squares-cercle.png") no-repeat 0 0;
+  background-size: 894px 857px;
+  position: absolute;
+  top: -20px;
+  left: -5px; }
+
 /* Responsive vertical */
 @media (max-height: 800px) {
   .home .bloc-top {
@@ -7300,7 +7310,10 @@ body.cercle {
   body.cercle .full-circle.wave li.ensure-step {
     left: 576px; }
   body.cercle .full-circle.wave li.sell-step {
-    left: 767px; } }
+    left: 767px; }
+
+  .squares-cercle {
+    left: -70px; } }
 @media (max-width: 1080px) {
   .cercleMyForum.adCercle header img {
     float: left;
@@ -7417,7 +7430,10 @@ body.cercle {
       body.cercle .full-circle.wave li.manage-step:before {
         background-image: url("../layoutImg/cercle/gerer.png"); }
       body.cercle .full-circle.wave li.sell-step:before {
-        background-image: url("../layoutImg/cercle/vendre.png"); } }
+        background-image: url("../layoutImg/cercle/vendre.png"); }
+
+  .squares-cercle {
+    display: none; } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; }

@@ -660,6 +660,9 @@
             }
         }
     }
+    .squares-cercle{
+        left: -70px;
+    }
 }
 
 @media (max-width: 1080px){
@@ -819,6 +822,9 @@
                 }
             }
         }
+    }
+    .squares-cercle{
+        display: none;
     }
 }
 

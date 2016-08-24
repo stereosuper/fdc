@@ -7,11 +7,11 @@
 	  	<?php include_once('includes/head.html'); ?>
 	</head>
 
-	<body class='cercle'>
+	<body class='cercle home-cercle'>
 		<?php include_once('includes/header_cercle.php'); ?>
 
 		<main id='main' role='main'>
-			<div class='container'>
+			<div class='container position-relative'>
 				<div class='wrapper-alignment presentation-cercle'>
 					<div class='content-align-top desc-cercle'>
 						<img src='./layoutImg/cercle/cercle.png' width='198' alt='Le Cercle MyForum'>
@@ -48,6 +48,7 @@
 						</div>
 					</div>
 				</div>
+				<div class='squares-cercle'></div>
 				<ol class='full-circle wave'>
                     <li class='buy-step'>Acheter</li><!--
                     --><li class='finance-step'>Financer</li><!--
@@ -57,6 +58,7 @@
                     --><li class='manage-step'>Gérer</li><!--
                     --><li class='sell-step'>Vendre</li>
                 </ol>
+                
 			</div>
 		</main>
 
