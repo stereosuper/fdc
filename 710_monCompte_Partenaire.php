@@ -114,46 +114,51 @@
 				                    Ville
 				                </label><input type='text' name='ville' id='ville' class='big' disabled>
 				                <span class='not-filled'>non renseigné</span>
+				                <fieldset class='block-right'>
+				                    <input type='checkbox' name='adresse-facturation' id='adresse-facturation' value='1' checked disabled><label for='adresse-facturation'>Adresse de facturation identique</label>
+				                </fieldset>
 				            </fieldset>
-				            <legend class='big-legend'>Facturation</legend>
-				            <fieldset>
-				                <label for='societe-facturation'>
-				                    Société
-				                </label><input type='text' name='societe-facturation' id='societe-facturation' class='big' disabled>
-				                <span class='not-filled'>non renseigné</span>
-				            </fieldset>
-							<fieldset>
-							    <label for='adresse-facturation'>
-							        Adr. facturation
-							    </label><input type='text' name='adresse-facturation' id='adresse-facturation' class='huge' disabled>
-							    <span class='not-filled'>non renseigné</span>
-							</fieldset>
-							<fieldset>
-							    <label for='adresse2-facturation'>
-							        Compl. adr. fact.
-							    </label><input type='text' name='adresse2-facturation' id='adresse2-facturation' class='huge' disabled>
-							    <span class='not-filled'>non renseigné</span>
-							</fieldset>
-							<fieldset class='required'>
-							    <label for='code-facturation'>
-							        Code postal
-							    </label><input type='number' name='code-facturation' id='code-facturation' value='75000' min='0' max='99999' required disabled>
-							</fieldset>
-							<fieldset>
-							    <label for='ville-facturation'>
-							        Ville
-							    </label><input type='text' name='ville-facturation' id='ville-facturation' class='big' disabled>
-							    <span class='not-filled'>non renseigné</span>
-							</fieldset>
-							<fieldset class='required'>
-							    <label for='tel-facturation'>
-							        Téléphone
-							    </label><input type='tel' name='tel-facturation' id='tel-facturation' value='0678675690' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" disabled>
-							</fieldset>
-							<fieldset class='required'>
-							    <label for='email-facturation'>
-							        Email
-							    </label><input type='email' name='email-facturation' id='email-facturation' value='jc.dus@caramail.fr' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" disabled>
+				            <fieldset class='block-optionnal hidden' data-name='adresse-facturation'>
+					            <legend class='big-legend'>Facturation</legend>
+					            <fieldset>
+					                <label for='societe-facturation'>
+					                    Société
+					                </label><input type='text' name='societe-facturation' id='societe-facturation' class='big' disabled>
+					                <span class='not-filled'>non renseigné</span>
+					            </fieldset>
+								<fieldset>
+								    <label for='adresse-facturation'>
+								        Adr. facturation
+								    </label><input type='text' name='adresse-facturation' id='adresse-facturation' class='huge' disabled>
+								    <span class='not-filled'>non renseigné</span>
+								</fieldset>
+								<fieldset>
+								    <label for='adresse2-facturation'>
+								        Compl. adr. fact.
+								    </label><input type='text' name='adresse2-facturation' id='adresse2-facturation' class='huge' disabled>
+								    <span class='not-filled'>non renseigné</span>
+								</fieldset>
+								<fieldset class='required'>
+								    <label for='code-facturation'>
+								        Code postal
+								    </label><input type='number' name='code-facturation' id='code-facturation' value='75000' min='0' max='99999' required disabled>
+								</fieldset>
+								<fieldset>
+								    <label for='ville-facturation'>
+								        Ville
+								    </label><input type='text' name='ville-facturation' id='ville-facturation' class='big' disabled>
+								    <span class='not-filled'>non renseigné</span>
+								</fieldset>
+								<fieldset class='required'>
+								    <label for='tel-facturation'>
+								        Téléphone
+								    </label><input type='tel' name='tel-facturation' id='tel-facturation' value='0678675690' required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" disabled>
+								</fieldset>
+								<fieldset class='required'>
+								    <label for='email-facturation'>
+								        Email
+								    </label><input type='email' name='email-facturation' id='email-facturation' value='jc.dus@caramail.fr' required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" disabled>
+								</fieldset>
 							</fieldset>
 				            <button type='submit' class='btn-block btn-orange-cercle huge hidden'><span class='border'></span><span class='txt-btn'>Valider</span></button>
 				        </form>
