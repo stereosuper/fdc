@@ -170,6 +170,9 @@ i, em{
     strong{
         @include roboto-medium-italic(1em);
     }
+    b, strong{
+        @include roboto-cd-bold-italic(1em);
+    }
 }
 
 blockquote{

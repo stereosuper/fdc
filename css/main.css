@@ -517,6 +517,13 @@ i, em {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility; }
+  i b, i strong, em b, em strong {
+    font-family: "roboto_condensedbold_italic", "robotoitalic", "robotoregular", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; }
 
 blockquote {
   position: relative;
@@ -5526,6 +5533,19 @@ a.btn-block, button.btn-block, .btn-block {
 
 .leads-criteres {
   margin: 0 0 60px; }
+  .cercle .leads-criteres {
+    padding: 30px 60px 45px 60px;
+    margin: 50px -60px -50px -60px;
+    background: #eaecf1; }
+    .cercle .leads-criteres .big-legend {
+      margin: 0 0 20px;
+      padding-top: 0;
+      color: #282c34;
+      max-width: 100%; }
+    .cercle .leads-criteres p {
+      border-top: 1px dashed;
+      margin: 20px 0 0 0;
+      padding-top: 10px; }
   .leads-criteres > div {
     margin: 1em 0; }
   .leads-criteres span {

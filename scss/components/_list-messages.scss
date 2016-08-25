@@ -139,6 +139,22 @@
 
 .leads-criteres{
     margin: 0 0 60px;
+    .cercle &{
+        padding: 30px $gutter 45px $gutter;
+        margin: 50px -1*$gutter -50px -1*$gutter;
+        background: #eaecf1;
+        .big-legend{
+            margin: 0 0 20px;
+            padding-top: 0;
+            color: $txt;
+            max-width: 100%;
+        }
+        p{
+            border-top: 1px dashed;
+            margin: 20px 0 0 0;
+            padding-top: 10px;
+        }
+    }
     > div{
         margin: 1em 0;
     }
