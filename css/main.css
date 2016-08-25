@@ -1255,6 +1255,8 @@ label {
   margin-bottom: 20px;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1.5em; }
+  .cercle .big-legend {
+    margin: 20px 0 30px 0; }
 
 .legend-next-fieldset {
   /* float pour ff + safari qui sinon laisse le legend déborder au-dessus du fieldset */
@@ -2516,7 +2518,8 @@ button {
   font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  display: table; }
+  display: table;
+  position: relative; }
   .content-tabs-sale .nav-tabs {
     border-color: #ef6a2b; }
   .content-tabs-partner .nav-tabs {
@@ -2525,6 +2528,17 @@ button {
     border: 1px #dadada solid; }
   .nav-tabs.no-border {
     border: 0; }
+  .cercle .nav-tabs {
+    border-bottom-color: #ff8925; }
+    .cercle .nav-tabs:before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: #ff8925;
+      position: absolute;
+      bottom: -4px;
+      left: -1px; }
   .nav-tabs li {
     border-right: 1px solid #dadada;
     position: relative;
@@ -2539,6 +2553,21 @@ button {
       color: #fff; }
       .content-tabs-sale .nav-tabs li.active {
         background: #ef6a2b; }
+      .cercle .nav-tabs li.active {
+        background: #ff8925; }
+        .cercle .nav-tabs li.active:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: auto;
+          height: auto;
+          margin: 0;
+          background: none;
+          top: -1px;
+          right: -1px;
+          bottom: -1px;
+          left: -1px;
+          border: 1px solid #ff8925; }
       .content-tabs-partner .nav-tabs li.active {
         background: #d63e37; }
     .nav-tabs li.tab-orange .notif {
@@ -2554,6 +2583,8 @@ button {
         color: #ef6a2b; }
       .content-tabs-partner .nav-tabs a:hover, .content-tabs-partner .nav-tabs a:focus {
         color: #d63e37; }
+      .cercle .nav-tabs a:hover, .cercle .nav-tabs a:focus {
+        color: #ff8925; }
   .nav-tabs-indicator li {
     padding: 25px 25px 21px; }
     .nav-tabs-indicator li:not(:first-child):after {
@@ -2577,6 +2608,8 @@ button {
     text-decoration: none; }
     .nav-tabs:not(.nav-tabs-indicator) a:hover, .nav-tabs:not(.nav-tabs-indicator) a:focus {
       color: #c6333e; }
+      .cercle .nav-tabs:not(.nav-tabs-indicator) a:hover, .cercle .nav-tabs:not(.nav-tabs-indicator) a:focus {
+        color: #ff8925; }
   .nav-tabs:not(.nav-tabs-indicator) span:not(.notif) {
     display: block;
     padding: 25px 25px 21px; }
@@ -6659,6 +6692,10 @@ a.btn-block, button.btn-block, .btn-block {
       margin-top: -10px; }
 
 /* Cercle myForum specific style */
+body.cercle.compte .breadcrumb {
+  margin-top: 53px; }
+body.cercle.compte .content-tabs {
+  margin-top: 30px; }
 body.cercle.home-cercle {
   background: #b2232e url("../layoutImg/bgCercleHome.jpg") fixed no-repeat 95% 63%;
   background-size: 3089px 2960px;
@@ -6797,6 +6834,8 @@ body.cercle .full-circle {
       body.cercle .full-circle.wave li.sell-step {
         left: 840px;
         top: -530px; }
+body.cercle .content-tabs {
+  background-color: #f5f5f6; }
 
 .presentation-cercle {
   padding: 60px 0 0 0;
@@ -6861,6 +6900,8 @@ body.cercle .full-circle {
   left: 0;
   z-index: -1;
   overflow: hidden; }
+  .header-cercle.small {
+    height: 268px; }
   .header-cercle .little-squares {
     margin: 0;
     padding: 0; }
@@ -8112,6 +8153,8 @@ body.cercle .full-circle {
         right: 30px;
         background: #fff;
         color: #c6333e; }
+        .cercle .nav-tabs:not(.nav-tabs-indicator) li.active {
+          color: #ff8925; }
         .no-js .nav-tabs:not(.nav-tabs-indicator) li.active {
           right: 0; }
         .nav-tabs:not(.nav-tabs-indicator) li.active:before {
@@ -8140,6 +8183,10 @@ body.cercle .full-circle {
           -webkit-transition: 0.3s ease-in-out;
                   transition: 0.3s ease-in-out;
           background: none; }
+          .cercle .nav-tabs:not(.nav-tabs-indicator) li.active:before {
+            bottom: auto;
+            left: auto;
+            border: none; }
           .no-js .nav-tabs:not(.nav-tabs-indicator) li.active:before {
             display: none; }
         .nav-tabs:not(.nav-tabs-indicator) li.active:after {
@@ -8149,6 +8196,8 @@ body.cercle .full-circle {
           right: -31px;
           bottom: -4px;
           border-bottom: 4px solid #c6333e; }
+          .cercle .nav-tabs:not(.nav-tabs-indicator) li.active:after {
+            border-bottom-color: #ff8925; }
       .nav-tabs:not(.nav-tabs-indicator) li.tab-right {
         border-left: 0;
         float: none; }

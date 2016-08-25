@@ -8,6 +8,7 @@
     letter-spacing: 0.04em;
 
     display: table;
+    position: relative;
     .content-tabs-sale &{
         border-color: #ef6a2b;
     }
@@ -19,6 +20,19 @@
     }
     &.no-border{
         border: 0;
+    }
+    .cercle &{
+        border-bottom-color: $orange;
+        &:before{
+            content: '';
+            display: block;
+            width: 4px;
+            height: 4px;
+            background-color: $orange;
+            position: absolute;
+            bottom: -4px;
+            left: -1px;
+        }
     }
     li{
         border-right: 1px solid $gris;
@@ -36,6 +50,23 @@
             color: #fff;
             .content-tabs-sale & {
                 background: #ef6a2b;
+            }
+            .cercle &{
+                background: $orange;
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: auto;
+                    height: auto;
+                    margin: 0;
+                    background: none;
+                    top: -1px;
+                    right: -1px;
+                    bottom: -1px;
+                    left: -1px;
+                    border: 1px solid $orange;
+                }
             }
             .content-tabs-partner &{
                 background: #d63e37;
@@ -67,6 +98,9 @@
             }
             .content-tabs-partner &{
                 color: #d63e37;
+            }
+            .cercle &{
+                color: $orange;
             }
         }
     }
@@ -106,6 +140,9 @@
             text-decoration: none;
             &:hover, &:focus{
                 color: $theme-btn;
+                .cercle &{
+                    color: $orange;
+                }
             }
         }
         span:not(.notif){

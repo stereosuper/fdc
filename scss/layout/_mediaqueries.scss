@@ -1659,6 +1659,9 @@
                     right: $gutter;
                     background: #fff;
                     color: $theme-btn;
+                    .cercle &{
+                        color: $orange;
+                    }
                     .no-js &{
                         right: 0;
                     }
@@ -1677,6 +1680,11 @@
                         transform: rotate(90deg);
                         transition: $transition;
                         background: none;
+                        .cercle &{
+                            bottom: auto;
+                            left: auto;
+                            border: none;
+                        }
                         .no-js &{
                             display: none;
                         }
@@ -1688,6 +1696,9 @@
                         right: -1-1*$gutter;
                         bottom: -4px;
                         border-bottom: 4px solid $theme-btn;
+                        .cercle &{
+                            border-bottom-color: $orange;
+                        }
                     }
                 }
                 &.tab-right{

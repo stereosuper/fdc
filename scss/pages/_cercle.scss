@@ -2,6 +2,14 @@
 
 body{
 	&.cercle{
+		&.compte{
+			.breadcrumb{
+				margin-top: 53px;
+			}
+			.content-tabs{
+				margin-top: 30px;
+			}
+		}
 		&.home-cercle{
 			@include bgCercleHome;
 			height: auto;
@@ -170,6 +178,9 @@ body{
 			    }
 			}
 		}
+		.content-tabs{
+			background-color: $gris-bg;
+		}
 	}
 }
 
@@ -246,6 +257,9 @@ body{
 	left: 0;
 	z-index: -1;
 	overflow: hidden;
+	&.small{
+		height: 268px;
+	}
 	.little-squares {
 	    margin:0;
 	    padding:0;
