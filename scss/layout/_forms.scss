@@ -443,6 +443,9 @@ input{
                 }
             }
         }
+        &:checked{
+            border: 1px solid $noir;
+        }
     }
     &[type=checkbox]{
         position: relative;

@@ -1419,6 +1419,8 @@ input[type=radio][disabled] {
     font-family: "robotobold", "robotomedium", "robotoregular", sans-serif; }
   input[type=radio][disabled]:checked + label {
     display: inline-block; }
+input[type=radio]:checked {
+  border: 1px solid black; }
 input[type=checkbox] {
   position: relative;
   left: -99em;
@@ -6855,7 +6857,8 @@ body.cercle .full-circle {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; }
+  z-index: -1;
+  overflow: hidden; }
   .header-cercle .little-squares {
     margin: 0;
     padding: 0; }
@@ -6876,7 +6879,7 @@ body.cercle .full-circle {
             -ms-transform: rotate(-21deg);
                 transform: rotate(-21deg);
         margin-left: 47px;
-        margin-top: 128px; }
+        margin-top: 107px; }
       .header-cercle .little-squares li:nth-child(2) {
         width: 17px;
         height: 17px;
@@ -6923,6 +6926,9 @@ body.cercle .full-circle {
     color: white; }
   .content-rappel button {
     margin: 0; }
+  .content-rappel textarea {
+    height: 100px !important;
+    resize: none; }
 
 .header-rappel {
   padding: 20px 30px 60px 30px;
@@ -7424,7 +7430,10 @@ body.cercle .full-circle {
     left: 767px; }
 
   .squares-cercle {
-    left: -70px; } }
+    left: -70px; }
+
+  .header-cercle {
+    height: 380px; } }
 @media (max-width: 1080px) {
   .cercleMyForum.adCercle header img {
     float: left;
@@ -7547,7 +7556,12 @@ body.cercle .full-circle {
     display: none; }
 
   body.cercle.home-cercle #main {
-    padding-bottom: 100px; } }
+    padding-bottom: 100px; }
+
+  .wrapper-form-cercle legend, .wrapper-form-cercle label {
+    width: 140px; }
+  .wrapper-form-cercle textarea {
+    max-width: 325px; } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; }
@@ -8007,7 +8021,15 @@ body.cercle .full-circle {
     padding-top: 50px; }
 
   .full-height .home-cercle #footer.footer-cercle {
-    position: relative; } }
+    position: relative; }
+
+  .wrapper-form-cercle legend, .wrapper-form-cercle label {
+    display: block;
+    margin-bottom: 10px; }
+  .wrapper-form-cercle .legend-next-fieldset {
+    float: none; }
+  .wrapper-form-cercle input[type=radio] + label, .wrapper-form-cercle input[type=checkbox] + label {
+    display: inline-block; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -8442,7 +8464,20 @@ body.cercle .full-circle {
     margin-bottom: 5px;
     margin-top: 5px; }
   .cercleMyForum .field-content .tab-content-title {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .wrapper-cols-cercle {
+    display: block; }
+    .wrapper-cols-cercle .wrapper-form-cercle {
+      display: block; }
+    .wrapper-cols-cercle .wrapper-rappel {
+      display: block;
+      width: 100%;
+      padding: 40px 0 0 0;
+      max-width: 400px; }
+
+  .header-cercle .little-squares {
+    display: none; } }
 @media (max-width: 650px) {
   ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){
