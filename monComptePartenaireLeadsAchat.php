@@ -34,6 +34,7 @@
                                 <a href='#'>Votre entreprise</a>
                             </li><li>
                                 <a href='#'>Correspondances</a>
+                            </li>
                             <!-- </li><li class='tab-right tab-orange'>
                                 <a href='#'>Ma sélection</a>
                                 <span class='notif'>1</span>
@@ -143,72 +144,100 @@
             <?php include_once('includes/footer.html'); ?>
         </div>
 
-        <div class='popup-content'>
-            <div class='popup-container'>
-                <div>
-                    <h4 class='small'>Loire-Atlantique</h4>
-                    <h2 class='h1'>Achat d'un Bar-brasserie</h2>
-                    <p class='presentation-leads'>Vente de mon fond actuel, pour une nouvelle acquisition dans une zone similaire voir différente...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <div class='popup'>
+            <header class='popup-header'>
+                <div class='popup-half left'>
+                    <h4>Loire-Atlantique</h4>
+                    <h2>Achat d'un Bar-brasserie</h2>
+                </div><div class='popup-half right'>
+                    <ul class='menu-popup'>
+                        <li>
+                            <a href='#' class='btn-block btn-orange-cercle'><span class='border'></span><span class='txt-btn'>Acheter ce lead</span></a>
+                        </li><li>
+                            <a href='#' class='btn-print'>Imprimer</a>
+                        </li><li>
+                            <a href='#' class='btn-cancel'>Fermer</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class='eval-lead'>
-                    <li>
-                    <b>Maturité du projet</b>
-                    <p>J'ai eu cette idée très récemment</p>
-                    </li>
-                    <li>
-                    <b>Connaissance du metier</b>
-                    <p>Je ne connais pas ou peu ce secteur d'activité</p>
-                    </li>
-                    <li>
-                    <b>Connaissance du marcher</b>
-                    <p>Je ne connais pas ou peu ce marché</p>
-                    </li>
-                    <li>
-                    <b>Environnement personnel</b>
-                    <p>Mes proches me déconseillent de me lancer dans mon projet</p>
-                    </li>
-                    <li>
-                    <b>Parcours</b>
-                    <p>Je n’ai ni diplômes ni expérience dans ce métier</p>
-                    </li>
-                    <li>
-                    <b>Savoir faire</b>
-                    <p>Je n'ai aucun de ces trois savoir faire</p>
-                    </li>
-                    <li>
-                    <b>Revenus futurs</b>
-                    <p>Praesent commodo cursus magna</p>
-                    </li>
-                </ul>
-                <ul class='eval-lead'>
-                    <li>
-                    <b>Savoir être</b>
-                    <p>Je manque de confiance en moi et je me décourage facilement</p>
-                    </li>
-                    <li>
-                    <b>Ressources</b>
-                    <p>Je n’ai pas de moyens  financiers</p>
-                    </li>
-                    <li>
-                    <b>Moyens materiels</b>
-                    <p>J’ai besoin d'un local mais je ne l'ai pas encore trouvé</p>
-                    </li>
-                    <li>
-                    <b>Lancement de l’activité</b>
-                    <p>Dans un an pas avant</p>
-                    </li>
-                    <li>
-                    <b>Richesses humaines</b>
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo</p>
-                    </li>
-                </ul>
-                <div class='content-footer marges'>
-                    <b>Observations de Forum des Commerces</b>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+            </header>
+            <div class='popup-banner'>
+                <div class='popup-half left'>
+                    <ul class='contact-infos'>
+                        <li class='contact-name'>Guillaume H.</li>
+                        <li class='contact-information'><i>Pour obtenir les coordonnées, vous devez acheter ce lead</i></li>
+                    </ul>
+                </div><div class='popup-half right'>
+                    <ul class='contact-tel-mail blured'>
+                        <li class='contact-tel'>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </li>
+                        <li class='contact-mail'>
+                            <span></span>@<span></span>
+                        </li>
+                    </ul>
                 </div>
-                <a href="#" class='btn-block btn-orange'>Acheter ce lead</a>
-                <a href="#" class='btn-delete'>Je ne suis pas interessé</a>
             </div>
+            <div class='popup-content'>
+                <div class='popup-half left'>
+                    <p>Vente de mon fond actuel, pour une nouvelle acquisition dans une zone similaire voir différente...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div><div class='popup-half right'>
+                    <div class='block-graph'></div>
+                </div>
+                <ul class='eval-lead'>
+                    <li>
+                        <b>Maturité du projet</b>
+                        <p>J'ai eu cette idée très récemment</p>
+                    </li><li>
+                        <b>Connaissance du metier</b>
+                        <p>Je ne connais pas ou peu ce secteur d'activité</p>
+                    </li><li>
+                        <b>Connaissance du marcher</b>
+                        <p>Je ne connais pas ou peu ce marché</p>
+                    </li><li>
+                        <b>Savoir être</b>
+                        <p>Je manque de confiance en moi et je me décourage facilement</p>
+                    </li><li>
+                        <b>Environnement personnel</b>
+                        <p>Mes proches me déconseillent de me lancer dans mon projet</p>
+                    </li><li>
+                        <b>Ressources</b>
+                        <p>Je n’ai pas de moyens  financiers</p>
+                    </li><li>
+                        <b>Parcours</b>
+                        <p>Je n’ai ni diplômes ni expérience dans ce métier</p>
+                    </li><li>
+                        <b>Moyens materiels</b>
+                        <p>J’ai besoin d'un local mais je ne l'ai pas encore trouvé</p>
+                    </li><li>
+                        <b>Savoir faire</b>
+                        <p>Je n'ai aucun de ces trois savoir faire</p>
+                    </li><li>
+                        <b>Lancement de l’activité</b>
+                        <p>Dans un an pas avant</p>
+                    </li><li>
+                        <b>Revenus futurs</b>
+                        <p>Praesent commodo cursus magna</p>
+                    </li><li>
+                        <b>Richesses humaines</b>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo</p>
+                    </li>
+                </ul>
+            </div>
+            <footer class='popup-footer'>
+                <div class='popup-half left'>
+                    <p><strong>Observations de Forum des Commerces</strong><br />
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+                </div><div class='popup-half right'>
+                    <ul class='menu-popup'>
+                        <li>
+                            <a href='#' class='btn-block btn-orange-cercle'><span class='border'></span><span class='txt-btn'>Acheter ce lead</span></a>
+                        </li><li>
+                            <a href='#' class='btn-delete'>Je ne suis pas interessé</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </div>
 
     </body>
