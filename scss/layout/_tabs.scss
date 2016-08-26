@@ -251,6 +251,9 @@
             }
         }
     }
+    &.min-height{
+        min-height: 550px;
+    }
     .block-grey{
         padding-left: $gutter;
         margin-left: -1*$gutter;
