@@ -349,6 +349,94 @@ $(function(){
 		}
 	}
 
+	// Highcharts
+	if($('#content-block-graph').length){
+		$('#content-block-graph').highcharts({
+	        chart: {
+	            polar: true,
+	            type: 'area',
+	            backgroundColor: null
+	        },
+
+	        title: {
+	            text: null
+	        },
+
+	        pane: {
+	            size: '100%'
+	        },
+
+	        plotOptions: {
+                area: {
+                    marker: {
+                        enabled: false
+                    }
+                },
+                series: {
+                	states: {
+                		hover: {
+                			enabled: false
+                		}
+                	}
+                }
+            },
+
+	        xAxis: {
+	            categories: ['Projet', 'Porteur de projet', 'Moyens'],
+	            tickmarkPlacement: 'on',
+	            lineWidth: 0,
+	            labels: {
+	            	useHTML: true,
+	            	style: {
+	            		color: '#878787',
+	            		fontFamily: '"robotoitalic" ,"robotoregular", sans-serif',
+	            		fontSize: '1em'
+	            	}
+	            }
+	        },
+
+	        yAxis: {
+	            gridLineInterpolation: 'polygon',
+	            lineWidth: 0,
+	            min: 0,
+	            max: 10,
+	            tickInterval: 2,
+	            labels: {
+	            	enabled: false
+	            }
+	        },
+
+	        tooltip: {
+	            shared: true,
+	            pointFormat: '<span class="tooltip-graph">{point.y:,.0f}</span>',
+	            enabled: false
+	        },
+
+	        legend: {
+	            enabled: false
+	        },
+
+	        series: [{
+	            name: 'Valeurs',
+	            data: [4, 0, 10],
+	            pointPlacement: 'on',
+	            color: {
+				    radialGradient: { cx: 0, cy: 0, r: 1 },
+				    stops: [
+				       [0, '#ddae4b'],
+				       [1, '#b55543']
+				    ]
+				},
+				fillOpacity: 1
+	        }],
+
+	        credits: {
+	        	enabled: false
+	        }
+
+	    });
+	}
+
 	// Mon compte - Check main checkbox from sub fields
 	/*if($('.block-sub-fields').length){
 		var blockSubFields = $('.block-sub-fields'),

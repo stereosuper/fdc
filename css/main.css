@@ -1067,6 +1067,10 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   overflow: hidden; }
   .sidebar-links-open #wrapper-page, .sidebar-account-open #wrapper-page, .nav-header-open #wrapper-page, .sidebar-tools-open #wrapper-page {
     max-height: 100vh; }
+  .wrapper-blured #wrapper-page {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    background: rgba(40, 44, 52, 0.3); }
 
 #main {
   padding: 0 0 100px; }
@@ -5893,11 +5897,6 @@ a.btn-block, button.btn-block, .btn-block {
     font-size: 0.88em;
     margin: 1px 3px 0 2px; }
 
-.blur {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  background: rgba(40, 44, 52, 0.3); }
-
 .popup {
   background: white;
   max-width: 1048px;
@@ -5968,7 +5967,10 @@ a.btn-block, button.btn-block, .btn-block {
       padding: 0; }
       .popup-banner .contact-tel-mail > li.contact-tel {
         font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
-        font-size: 1.25em; }
+        font-size: 1.25em;
+        color: #282c34; }
+      .popup-banner .contact-tel-mail > li.contact-mail {
+        color: white; }
     .popup-banner .contact-tel-mail.blured > li.contact-tel span {
       display: inline-block;
       vertical-align: top;
@@ -5979,14 +5981,76 @@ a.btn-block, button.btn-block, .btn-block {
       -webkit-filter: blur(5px);
               filter: blur(5px);
       opacity: 0.5; }
+    .popup-banner .contact-tel-mail.blured > li.contact-mail span {
+      display: inline-block;
+      vertical-align: middle; }
+      .popup-banner .contact-tel-mail.blured > li.contact-mail span.blank {
+        width: 40px;
+        height: 15px;
+        background: white;
+        margin: 0 2px;
+        -webkit-filter: blur(5px);
+                filter: blur(5px);
+        opacity: 0.5; }
 
 .popup-content {
   padding: 25px 65px 50px 65px; }
   .popup-content p {
     margin: 0; }
-  .popup-content .block-graph {
-    height: 305px;
-    background: blue; }
+  .popup-content #block-graph {
+    width: 100%;
+    position: relative;
+    margin-top: -14px; }
+    .popup-content #block-graph:before {
+      content: '';
+      display: block;
+      padding-bottom: 100%; }
+    .popup-content #block-graph:after {
+      content: '10';
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      margin-left: -13px;
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      line-height: 26px;
+      background: #c52d38;
+      color: white;
+      font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+      font-size: 1em; }
+    .popup-content #block-graph #content-block-graph {
+      display: block;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+      .popup-content #block-graph #content-block-graph:before, .popup-content #block-graph #content-block-graph:after {
+        content: '10';
+        position: absolute;
+        bottom: 21%;
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        background: #c52d38;
+        color: white;
+        font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+        font-size: 1em; }
+      .popup-content #block-graph #content-block-graph:before {
+        left: 0; }
+      .popup-content #block-graph #content-block-graph:after {
+        right: 0; }
+    .popup-content #block-graph .highcharts-container {
+      position: absolute !important;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto; }
   .popup-content .eval-lead {
     font-size: 0.88em;
     display: block;
@@ -6044,6 +6108,30 @@ a.btn-block, button.btn-block, .btn-block {
       left: auto;
       right: 2px;
       font-size: 13px; }
+
+.highcharts-axis-labels.highcharts-xaxis-labels {
+  position: relative; }
+  .highcharts-axis-labels.highcharts-xaxis-labels:before {
+    content: '10';
+    position: absolute;
+    bottom: 0; }
+  .highcharts-axis-labels.highcharts-xaxis-labels span {
+    width: 200px !important; }
+    .highcharts-axis-labels.highcharts-xaxis-labels span:nth-child(1) {
+      margin-left: 65px !important;
+      margin-top: 101px !important;
+      -webkit-transform: rotate(60deg) !important;
+          -ms-transform: rotate(60deg) !important;
+              transform: rotate(60deg) !important; }
+    .highcharts-axis-labels.highcharts-xaxis-labels span:nth-child(2) {
+      margin-left: -134px !important;
+      margin-top: 4px !important; }
+    .highcharts-axis-labels.highcharts-xaxis-labels span:nth-child(3) {
+      margin-left: 107px !important;
+      margin-top: -195px !important;
+      -webkit-transform: rotate(-60deg) !important;
+          -ms-transform: rotate(-60deg) !important;
+              transform: rotate(-60deg) !important; }
 
 .big-price {
   display: block;

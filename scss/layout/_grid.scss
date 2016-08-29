@@ -6,6 +6,10 @@
     .sidebar-links-open &, .sidebar-account-open &, .nav-header-open &, .sidebar-tools-open &{
         max-height: 100vh;
     }
+    .wrapper-blured & {
+        filter: blur(5px);
+        background: rgba(40, 44, 52, 0.3);
+    }
 }
 
 #main{
