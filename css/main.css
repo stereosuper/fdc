@@ -5970,10 +5970,20 @@ body.wrapper-blured #wrapper-page {
       .popup-banner .contact-infos > li.contact-name {
         font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
         font-size: 1.25em; }
+        .popup-banner .contact-infos > li.contact-name .last-name {
+          text-transform: uppercase; }
       .popup-banner .contact-infos > li.contact-information {
         color: white;
         font-family: "robotoregular", sans-serif;
         font-size: 0.875em; }
+        .popup-banner .contact-infos > li.contact-information .contact-adress {
+          display: block;
+          margin: 0;
+          padding: 0; }
+          .popup-banner .contact-infos > li.contact-information .contact-adress > li {
+            display: inline-block;
+            vertical-align: top;
+            margin: 2px 10px 2px 0; }
   .popup-banner .contact-tel-mail {
     display: block;
     margin: 0;
@@ -5990,6 +6000,9 @@ body.wrapper-blured #wrapper-page {
         color: #282c34; }
       .popup-banner .contact-tel-mail > li.contact-mail {
         color: white; }
+        .popup-banner .contact-tel-mail > li.contact-mail a {
+          color: white;
+          text-decoration: none; }
     .popup-banner .contact-tel-mail.blured > li.contact-tel span {
       display: inline-block;
       vertical-align: top;
