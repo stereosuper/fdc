@@ -847,6 +847,27 @@
             max-width: 325px;
         }
     }
+
+    .popup-header{
+        h2{
+            font-size: 2em;
+        }
+        .menu-popup{
+            margin: 38px 0 0 0;
+            > li{
+                &:last-child{
+                    margin: 0;
+                }
+            }
+            a{
+                &.btn-cancel{
+                    position: absolute;
+                    top: 61px;
+                    right: 65px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px){
@@ -1561,6 +1582,23 @@
             }
         }
     }
+
+    .popup-header{
+        .popup-half{
+            display: block;
+            width: 100%;
+            &.left{
+                padding: 28px 0 0 0;
+            }
+            &.right{
+                padding: 0;
+                text-align: left;
+            }
+        }
+    }
+    .menu-popup{
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 767px){
@@ -2273,6 +2311,72 @@
     .header-cercle{
         .little-squares{
             display: none;
+        }
+    }
+
+    .popup-header{
+        padding: 30px 30px 10px 30px;
+        .menu-popup{
+            a{
+                &.btn-cancel{
+                    top: 36px;
+                    right: 30px;
+                }
+            }
+        }
+    }
+    .popup-banner{
+        padding: 15px 30px;
+        .popup-half{
+            display: block;
+            width: 100%;
+            &.left, &.right{
+                padding: 0;
+            }
+            &.right{
+                margin: 20px 0 0 0;
+                text-align: left;
+            }
+        }
+    }
+    .popup-content{
+        padding: 25px 30px 50px 30px;
+        .popup-half{
+            display: block;
+            width: 100%;
+            &.left{
+                padding: 0;
+            }
+            &.right{
+                padding: 0;
+            }
+        }
+        #block-graph{
+            max-width: 282px;
+            margin: 40px 0 -10% 0;
+        }
+        .eval-lead{
+            > li{
+                display: block;
+                width: 100%;
+                &:nth-child(odd), &:nth-child(even){
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .popup-footer{
+        padding: 15px 30px;
+        .popup-half{
+            display: block;
+            width: 100%;
+            &.left{
+                padding: 0;
+            }
+            &.right{
+                padding: 0;
+                text-align: left;
+            }
         }
     }
 }
@@ -2997,6 +3101,15 @@
         float: none;
         > li{
             margin: 10px 20px 0 20px;
+        }
+    }
+
+    .popup-footer{
+        .menu-popup{
+            > li{
+                display: block;
+                margin-left: 0;
+            }
         }
     }
 }
