@@ -187,6 +187,21 @@
             left: 0;
             margin: auto;
         }
+        .center-min-label{
+            position: absolute;
+            left: 50%;
+            margin-left: -13px;
+            bottom: 48%;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            background: #d8863b;
+            color: $blanc;
+            font-family: $roboto-cd-bold;
+            font-size: 1em;
+            border: 1px solid $blanc;
+        }
     }
     .eval-lead{
         font-size: 0.88em;
