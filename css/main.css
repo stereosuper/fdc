@@ -2689,7 +2689,7 @@ button {
     margin: 5em 0 5.3em; }
     .tab-content-buttons .btn-block-arrow:first-of-type {
       margin-right: 4%; }
-  .tab-content.min-height {
+  .cercle .tab-content {
     min-height: 550px; }
   .tab-content .block-grey {
     padding-left: 60px;

@@ -40,7 +40,7 @@
 				            <a href='#'>Correspondance</a>
 				        </li>
 				    </ul>
-				    <div class='tab-content min-height'>
+				    <div class='tab-content'>
 				        <header class='tab-content-title'>
 				            <h2 class='h1'>Vos leads
 				                <span class='notif'>1</span>
