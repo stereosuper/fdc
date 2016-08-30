@@ -346,3 +346,24 @@ body{
 		line-height: 1;
 	}
 }
+
+.wrapper-partner-card{
+	width: 354px;
+	padding: 0 54px 0 0;
+	.content-partner-card{
+		border: 2px solid rgb(219, 219, 219);
+		padding: 28px 26px;
+	}
+}
+.wrapper-desc-partner{
+	h3{
+		color: $txt;
+		padding: 0;
+	}
+	textarea{
+		width: 100%;
+		max-width: 100%;
+		height: 460px;
+		margin: 0 0 28px 0;
+	}
+}

@@ -7244,6 +7244,22 @@ body.cercle .content-tabs {
     margin: 0;
     line-height: 1; }
 
+.wrapper-partner-card {
+  width: 354px;
+  padding: 0 54px 0 0; }
+  .wrapper-partner-card .content-partner-card {
+    border: 2px solid #dbdbdb;
+    padding: 28px 26px; }
+
+.wrapper-desc-partner h3 {
+  color: #282c34;
+  padding: 0; }
+.wrapper-desc-partner textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 460px;
+  margin: 0 0 28px 0; }
+
 /* Responsive vertical */
 @media (max-height: 800px) {
   .home .bloc-top {
