@@ -167,6 +167,13 @@ $(function(){
 		}
 	}
 
+	// Fonction pour fermer le popup de détail lead
+	function closePopup(){
+		$('.popup').addClass('hidden');
+		$('.bg-popup').addClass('hidden');
+		$('body').removeClass('wrapper-blured');
+	}
+
 
 	/**** INIT ****/
 	imgFit();
@@ -436,6 +443,17 @@ $(function(){
 
 	    });
 	}
+
+	// Popup
+	$('.menu-popup a.btn-cancel').on('click', function(e){
+		e.preventDefault();
+		closePopup();
+	});
+
+	$('.bg-popup').on('click', function(e){
+		e.preventDefault();
+		closePopup();
+	});
 
 	// Mon compte - Check main checkbox from sub fields
 	/*if($('.block-sub-fields').length){

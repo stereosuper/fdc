@@ -6,6 +6,10 @@
     left: 0;
     background: rgba(40, 44, 52, 0.3);
     z-index: 12;
+    cursor: pointer;
+    &.hidden{
+        display: none;
+    }
 }
 
 body{
@@ -30,6 +34,9 @@ body{
     max-height: 88%;
     overflow: auto;
     z-index: 13;
+    &.hidden{
+        display: none;
+    }
     .btn-orange{
         padding: 13px 16px;
         background: $orange;
