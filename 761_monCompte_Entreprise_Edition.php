@@ -43,9 +43,9 @@
 				    <div class='tab-content'>
 				        <header class='tab-content-title'>
 				            <h2 class='h1'>Entreprise</h2>
-				            <button class='small btn-pen' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Modifier</button>
+				            <button class='btn-cancel small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Annuler les modifications</button>
 				        </header>
-				        <form class='form-disabled' id='formToEdit' action='#' method='post'>
+				        <form action='#' id='formToEdit' method='post'>
 				        <div class='wrapper-alignment wrapper-cercle-entreprise'>
 							<div class='content-align-top wrapper-partner-card'>
 								<div class='content-partner-card'>
@@ -56,27 +56,27 @@
 									<div class='fieldset-groupe'>
 									    <fieldset class='required no-asterisk'>
 									        <label for='company-name' class='block'>Nom</label>
-									        <input type='text' name='company-name' id='company-name' value='Strego' required disabled>
+									        <input type='text' name='company-name' id='company-name' value='Strego' required>
 									    </fieldset>
 									    <fieldset class='required no-asterisk'>
 									        <label for='interlocutor-name' class='block'>Interlocuteur</label>
-									        <input type='text' name='interlocutor-name' id='interlocutor-name' value='Guillaume HOLLEVOET' required disabled>
+									        <input type='text' name='interlocutor-name' id='interlocutor-name' value='Guillaume HOLLEVOET' required>
 									    </fieldset>
 									    <fieldset class='required no-asterisk'>
 									        <label for='interlocutor-function' class='block'>Fonction de l'interlocuteur</label>
-									        <input type='text' name='interlocutor-function' id='interlocutor-function' value='Avocat' required disabled>
+									        <input type='text' name='interlocutor-function' id='interlocutor-function' value='Avocat' required>
 									    </fieldset>
-									    <ul class='infos-static'>
-											<li data-info='company-name' class='big'>
-												Strego
-											</li><!--
-											--><li data-info='interlocutor-name'>
-												Guillaume HOLLEVOET
-											</li><!--
-											--><li data-info='interlocutor-function'>
-												Avocat
-											</li>
-									    </ul>
+								        <ul class='infos-static'>
+								    		<li data-info='company-name' class='big'>
+								    			Strego
+								    		</li><!--
+								    		--><li data-info='interlocutor-name'>
+								    			Guillaume HOLLEVOET
+								    		</li><!--
+								    		--><li data-info='interlocutor-function'>
+								    			Avocat
+								    		</li>
+								        </ul>
 								    </div>
 								    <h3>Specialités</h3>
 								    <ul class='tags'>
@@ -100,7 +100,7 @@
 							</div>
 							<div class='content-align-top wrapper-desc-partner'>
 								<h3>Présentation</h3>
-								<textarea class='big' disabled>Strego se positionne comme une entreprise proche de ses clients grâce à une implantation forte sur toute la région Grand Ouest, de l’Essonne au Morbihan jusqu'en Charente-Maritime,  dans les villes de + 50 000 habitants comme dans les zones rurales.&#13;&#13;&#10;Il n'y a rien de tel pour bien se connaître !&#13;&#13;&#10;Afin de se tenir au plus près de la réalité des entreprises, nos équipes s'impliquent dans les chambres consulaires, les réseaux d'accompagnement à la création et à la transmission, les associations de dirigeants... Strego répond ainsi aux attentes croissantes des professionnels qui souhaitent disponibilité et réelle implication dans les affaires locales.&#13;&#13; &#10;Pour répondre au mieux aux besoins spécifiques qui sont les vôtres, nous avons développé une large palette de compétences dans de nombreux métiers : experts-comptables, commissaires aux comptes, spécialistes de la paie, spécialistes de la fiscalité et du droit, consultants en gestion sociale et ressources humaines, consultants en organisation, formation, conseil en financement, assurances, conseil en gestion de patrimoine...
+								<textarea class='big'>Strego se positionne comme une entreprise proche de ses clients grâce à une implantation forte sur toute la région Grand Ouest, de l’Essonne au Morbihan jusqu'en Charente-Maritime,  dans les villes de + 50 000 habitants comme dans les zones rurales.&#13;&#13;&#10;Il n'y a rien de tel pour bien se connaître !&#13;&#13;&#10;Afin de se tenir au plus près de la réalité des entreprises, nos équipes s'impliquent dans les chambres consulaires, les réseaux d'accompagnement à la création et à la transmission, les associations de dirigeants... Strego répond ainsi aux attentes croissantes des professionnels qui souhaitent disponibilité et réelle implication dans les affaires locales.&#13;&#13; &#10;Pour répondre au mieux aux besoins spécifiques qui sont les vôtres, nous avons développé une large palette de compétences dans de nombreux métiers : experts-comptables, commissaires aux comptes, spécialistes de la paie, spécialistes de la fiscalité et du droit, consultants en gestion sociale et ressources humaines, consultants en organisation, formation, conseil en financement, assurances, conseil en gestion de patrimoine...
 								</textarea>
 								
 								<h3>Références</h3>
@@ -113,7 +113,7 @@
 													<button class='btn-photo'>Supprimer / changer l'image</button>
 												</div>
 												<div class='content-align-middle txt-company-ref'>
-													<textarea disabled>Dany BRIAND gérante de la SARL BRIAND TP, travaux publics de terrassement, assainissement et d’aménagement divers, à Tiercé (49)</textarea>
+													<textarea>Dany BRIAND gérante de la SARL BRIAND TP, travaux publics de terrassement, assainissement et d’aménagement divers, à Tiercé (49)</textarea>
 												</div>
 											</div>
 										</li>
@@ -124,15 +124,15 @@
 													<button class='btn-photo'>Ajouter une&nbsp;image</button>
 												</div>
 												<div class='content-align-middle txt-company-ref'>
-													<textarea disabled>Marcel DA SILVA, dirigeant de la SARL TM BTP, entreprise de maçonnerie et terrassement, à Roinville (28)</textarea>
+													<textarea>Marcel DA SILVA, dirigeant de la SARL TM BTP, entreprise de maçonnerie et terrassement, à Roinville (28)</textarea>
 												</div>
 											</div>
 										</li>
 									</ul>
-									<button type='submit' class='btn-block btn-orange-cercle small hidden'><span class='border'></span><span class='txt-btn'>Ajouter une référence</span></button>
+									<button type='submit' class='btn-block btn-orange-cercle small'><span class='border'></span><span class='txt-btn'>Ajouter une référence</span></button>
 								</div>
-								
-								<button type='submit' class='btn-block btn-orange-cercle huge hidden'><span class='border'></span><span class='txt-btn'>Valider</span></button>
+
+								<button type='submit' class='btn-block btn-orange-cercle huge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
 							</div>
 				        </div>
 				        </form>

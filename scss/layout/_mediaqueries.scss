@@ -1599,6 +1599,32 @@
     .menu-popup{
         margin-top: 15px;
     }
+
+    .wrapper-partner-card{
+        width: 300px;
+        padding: 0 34px 0 0;
+    }
+
+    .company-refs{
+        .wrapper-alignment{
+            display: block;
+        }
+        .img-company-ref{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 10px 0;
+            width: auto;
+            text-align: left;
+            img{
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+        .txt-company-ref{
+            display: block;
+            padding: 0;
+        }
+    }
 }
 
 @media (max-width: 767px){
@@ -2377,6 +2403,30 @@
                 padding: 0;
                 text-align: left;
             }
+        }
+    }
+
+    .wrapper-cercle-entreprise{
+        display: block;
+    }
+    .wrapper-partner-card{
+        display: block;
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto 30px auto;
+        padding: 0;
+        .content-partner-card{
+            padding: 20px 18px;
+        }
+    }
+    .wrapper-desc-partner{
+        display: block;
+        width: 100%;
+        textarea{
+            padding: 15px 10px; 
+        }
+        h3{
+            transform: translateX(10px);
         }
     }
 }

@@ -515,6 +515,9 @@ $(function(){
 			if(form.siblings('.content-footer').length){
 				form.siblings('.content-footer').toggleClass('hidden');
 			}
+			if(form.find('textarea')){
+				form.find('textarea').toggleAttr('disabled');
+			}
 		}
 	});
 
