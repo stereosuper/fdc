@@ -430,8 +430,8 @@ $(function(){
 	            color: {
 				    radialGradient: { cx: 0, cy: 0, r: 1 },
 				    stops: [
-				       [0, '#ddae4b'],
-				       [1, '#b55543']
+				       [0, '#b55543'],
+				       [1, '#ddae4b']
 				    ]
 				},
 				fillOpacity: 1
