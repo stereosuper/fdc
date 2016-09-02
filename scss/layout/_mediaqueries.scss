@@ -3281,7 +3281,7 @@
         page-break-inside: avoid;
     }
     @page{
-        margin: .5cm;
+        margin: .1cm;
     }
     p, h2, h3{
         orphans: 3;
@@ -3291,6 +3291,7 @@
         page-break-after: avoid;
     }
     .print{
+        margin: 10px;
         .bloc-top{
                 display: none;
         }
@@ -3346,7 +3347,7 @@
         .pub {
             display: none;
         }
-        footer{
+        #footer{
             display: none;
         }
         .table{
@@ -3431,14 +3432,57 @@
                     }
                 }
             }
-            .adCercle{
+        }
+        .adCercle{
+            display: none;
+        }
+        .popup{
+
+            margin-top: -40px;
+            box-shadow: none;
+            p{
+                line-height: 1.2;
+                width: 100%;
+            }
+            .popup-header{
+                padding: 0;
+            }
+            .popup-banner{
+                padding: 10px 0;
+                .right{
+                    display: none;
+                }
+            }
+            .menu-popup{
                 display: none;
+            }
+            .popup-content {
+                padding: 0;
+                .eval-lead {
+                    > li {
+                        margin: 3px 0;
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    > li:nth-child(2) {
+                        padding: 0;
+                    }
+                }
+                #block-graph{
+                    max-width: 282px;
+                    margin: 40px 0 -10% 0;
+                }
+                .popup-half{
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .popup-footer{
+                padding: 10px 0 0 0;
             }
         }
     }
     .detail .table{
         display: block;
     }
-
-
 }

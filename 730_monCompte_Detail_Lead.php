@@ -7,7 +7,7 @@
 	  	<?php include_once('includes/head.html'); ?>
 	</head>
 
-	<body class='cercle compte wrapper-blured'>
+	<body class='cercle compte wrapper-blured print'>
 		<?php include_once('includes/header_cercle.php'); ?>
 
 		<main id='main' role='main'>
