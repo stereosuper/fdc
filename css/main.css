@@ -1815,7 +1815,10 @@ button {
 .content-tabs-sale .content-sale-log, .content-tabs-sale .content-sale-paiement {
   padding: 20px 60px 50px;
   overflow: hidden;
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  margin: 0 1px 1px 1px;
+  border-bottom: 1px solid #dadada; }
   .content-tabs-sale .content-sale-log .align-top, .content-tabs-sale .content-sale-paiement .align-top {
     vertical-align: top; }
 
@@ -2661,7 +2664,10 @@ button {
 .tab-content {
   padding: 20px 60px 50px;
   overflow: hidden;
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  margin: 0 1px 1px 1px;
+  border-bottom: 1px solid #dadada; }
   .tab-content-title {
     padding: 30px 0 10px;
     border-bottom: 1px solid;
@@ -3331,7 +3337,8 @@ button {
         display: none; }
   .cercleMyForum .call-directly {
     background: #9b1822;
-    padding: 35px; }
+    padding: 35px;
+    position: relative; }
     .cercleMyForum .call-directly p, .cercleMyForum .call-directly input, .cercleMyForum .call-directly button, .cercleMyForum .call-directly form {
       display: inline-block;
       vertical-align: middle;
@@ -5720,7 +5727,8 @@ a.btn-block, button.btn-block, .btn-block {
     border-top: 0;
     overflow: hidden;
     box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
-    background: #fff; }
+    background: #fff;
+    position: relative; }
     .field-content.low-padding-top {
       padding: 0 60px 60px; }
     .wrapper-choices .field-content {

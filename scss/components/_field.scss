@@ -154,6 +154,7 @@
 		overflow: hidden;
 		box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
 		background: #fff;
+		position: relative;
         &.low-padding-top {
             padding: 0 $gutter 60px;
         }
