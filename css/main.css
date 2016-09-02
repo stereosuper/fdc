@@ -1100,8 +1100,17 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   padding-right: 130px; }
 
 .content-default, .content-tabs {
-  border: 1px solid #dadada;
-  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+  position: relative; }
+  .content-default:before, .content-tabs:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #dadada; }
 
 .content-default {
   padding: 20px 60px 50px;
@@ -2518,9 +2527,9 @@ button {
     color: white; }
 
 .nav-tabs {
-  padding: 0;
+  padding: 1px 0 0 0;
   border-bottom: 4px solid #c6333e;
-  margin: 0;
+  margin: 0 0 0 1px;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 0.75em;
   text-transform: uppercase;
@@ -2531,23 +2540,13 @@ button {
     border-color: #ef6a2b; }
   .content-tabs-partner .nav-tabs {
     border-color: #d63e37; }
-  .nav-tabs.nav-tabs-white {
-    border: 1px #dadada solid; }
   .nav-tabs.no-border {
-    border: 0; }
+    border: 0;
+    padding-bottom: 1px; }
   .cercle .nav-tabs {
     border-bottom-color: #ff8925;
-    box-sizing: border-box; }
-    .cercle .nav-tabs:before {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 0;
-      background-color: #ff8925;
-      position: absolute;
-      top: 64px;
-      left: -1px;
-      border-bottom: 4px solid #ff8925; }
+    box-sizing: border-box;
+    margin-left: 0; }
   .nav-tabs li {
     border-right: 1px solid #dadada;
     position: relative;
@@ -2557,13 +2556,16 @@ button {
     vertical-align: top; }
     .nav-tabs li:before {
       display: none; }
+    .nav-tabs li:last-child.active {
+      border-right: none; }
     .nav-tabs li.active {
       background: #c6333e;
       color: #fff; }
       .content-tabs-sale .nav-tabs li.active {
         background: #ef6a2b; }
       .cercle .nav-tabs li.active {
-        background: #ff8925; }
+        background: #ff8925;
+        z-index: 1; }
         .cercle .nav-tabs li.active:before {
           content: '';
           display: block;
@@ -2573,10 +2575,12 @@ button {
           margin: 0;
           background: none;
           top: -1px;
-          right: -1px;
-          bottom: -1px;
-          left: -1px;
-          border: 1px solid #ff8925; }
+          right: 0;
+          bottom: 0;
+          left: 0;
+          border: 1px solid #ff8925;
+          z-index: -1;
+          background-color: #ff8925; }
       .content-tabs-partner .nav-tabs li.active {
         background: #d63e37; }
     .nav-tabs li.tab-orange .notif {
@@ -3159,7 +3163,6 @@ button {
   .cercleMyForum .nav-tabs-indicator li {
     padding-bottom: 25px; }
   .cercleMyForum .nav-tabs {
-    background: #f5f5f6;
     border-bottom: 0 none; }
     .cercleMyForum .nav-tabs li.active {
       background: #b2232e url("../layoutImg/bgCercle.png") fixed no-repeat 55% 0;
@@ -7279,7 +7282,8 @@ body.cercle .content-tabs {
 .wrapper-desc-partner textarea {
   width: 100%;
   max-width: 100%;
-  resize: none; }
+  resize: none;
+  color: #282c34; }
   .wrapper-desc-partner textarea.big {
     height: 460px;
     margin: 0 0 28px 0;
@@ -7288,7 +7292,11 @@ body.cercle .content-tabs {
     padding: 0;
     border: none;
     box-shadow: none;
-    outline: none; }
+    outline: none;
+    color: #282c34;
+    color: #282c34 !important;
+    opacity: 1;
+    -webkit-text-fill-color: #282c34; }
 .wrapper-desc-partner .btn-block {
   margin: 30px 0 0 0; }
 
@@ -8620,6 +8628,13 @@ body.cercle .content-tabs {
       left: 30px;
       margin: auto; }
 
+  .content-default:before, .content-tabs:before {
+    bottom: 1px; }
+
+  .nav-tabs.no-border {
+    padding-bottom: 0; }
+    .nav-tabs.no-border:not(.nav-tabs-indicator) li.active:after {
+      bottom: -2px; }
   .nav-tabs:not(.nav-tabs-indicator) {
     display: block;
     padding-top: 47px;
@@ -8639,11 +8654,12 @@ body.cercle .content-tabs {
       display: block;
       border: 0;
       border-bottom: 1px solid #dadada;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-right: 1px; }
       .nav-tabs:not(.nav-tabs-indicator) li.active {
         border-right: 1px solid #dadada;
         position: absolute;
-        top: 0;
+        top: 1px;
         left: 0;
         right: 30px;
         background: #fff;

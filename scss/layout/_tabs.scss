@@ -1,7 +1,7 @@
 .nav-tabs{
-    padding: 0;
+    padding: 1px 0 0 0;
     border-bottom: 4px solid $theme-btn;
-    margin: 0;
+    margin: 0 0 0 1px;
     font-family: $roboto-cd-bold;
     font-size: 0.75em;
     text-transform: uppercase;
@@ -16,25 +16,16 @@
         border-color: #d63e37;
     }
     &.nav-tabs-white{
-        border: 1px #dadada solid;
+        //border: 1px #dadada solid;
     }
     &.no-border{
         border: 0;
+        padding-bottom: 1px;
     }
     .cercle &{
         border-bottom-color: $orange;
         box-sizing: border-box;
-        &:before{
-            content: '';
-            display: block;
-            width: 4px;
-            height: 0;
-            background-color: $orange;
-            position: absolute;
-            top: 64px;
-            left: -1px;
-            border-bottom: 4px solid $orange;
-        }
+        margin-left: 0;
     }
     li{
         border-right: 1px solid $gris;
@@ -47,6 +38,11 @@
         &:before{
             display: none;
         }
+        &:last-child{
+            &.active{
+                border-right: none;
+            } 
+        }
         &.active{
             background: $theme-btn;
             color: #fff;
@@ -55,6 +51,7 @@
             }
             .cercle &{
                 background: $orange;
+                z-index: 1;
                 &:before{
                     content: '';
                     display: block;
@@ -64,10 +61,12 @@
                     margin: 0;
                     background: none;
                     top: -1px;
-                    right: -1px;
-                    bottom: -1px;
-                    left: -1px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
                     border: 1px solid $orange;
+                    z-index: -1;
+                    background-color: $orange;
                 }
             }
             .content-tabs-partner &{

@@ -1693,8 +1693,22 @@
             margin: auto;
         }
     }
-
+    .content-default:before, .content-tabs:before{
+        bottom: 1px;
+    }
     .nav-tabs{
+        &.no-border{
+            padding-bottom: 0;
+            &:not(.nav-tabs-indicator){
+                li{
+                    &.active{
+                        &:after{
+                            bottom: -2px;
+                        }
+                    }
+                }
+            }
+        }
         &:not(.nav-tabs-indicator){
             display: block;
             padding-top: 47px;
@@ -1720,10 +1734,11 @@
                 border: 0;
                 border-bottom: 1px solid #dadada;
                 cursor: pointer;
+                margin-right: 1px;
                 &.active{
                     border-right: 1px solid #dadada;
                     position: absolute;
-                    top: 0;
+                    top: 1px;
                     left: 0;
                     right: $gutter;
                     background: #fff;

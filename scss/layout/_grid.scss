@@ -42,8 +42,18 @@
 }
 
 .content-default, .content-tabs{
-    border: 1px solid $gris;
     box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid $gris;
+    }
 }
 
 .content-default{
