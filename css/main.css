@@ -2536,16 +2536,18 @@ button {
   .nav-tabs.no-border {
     border: 0; }
   .cercle .nav-tabs {
-    border-bottom-color: #ff8925; }
+    border-bottom-color: #ff8925;
+    box-sizing: border-box; }
     .cercle .nav-tabs:before {
       content: '';
       display: block;
       width: 4px;
-      height: 4px;
+      height: 0;
       background-color: #ff8925;
       position: absolute;
-      bottom: -4px;
-      left: -1px; }
+      top: 64px;
+      left: -1px;
+      border-bottom: 4px solid #ff8925; }
   .nav-tabs li {
     border-right: 1px solid #dadada;
     position: relative;
@@ -8155,6 +8157,8 @@ body.cercle .content-tabs {
 
   .nav-tabs {
     font-size: 0.62em; }
+    .cercle .nav-tabs:before {
+      top: 41px; }
     .nav-tabs-indicator li {
       padding: 15px 15px 12px; }
       .nav-tabs-indicator li:not(:first-child):after {

@@ -23,15 +23,17 @@
     }
     .cercle &{
         border-bottom-color: $orange;
+        box-sizing: border-box;
         &:before{
             content: '';
             display: block;
             width: 4px;
-            height: 4px;
+            height: 0;
             background-color: $orange;
             position: absolute;
-            bottom: -4px;
+            top: 64px;
             left: -1px;
+            border-bottom: 4px solid $orange;
         }
     }
     li{
