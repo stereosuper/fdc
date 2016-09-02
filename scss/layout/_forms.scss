@@ -447,7 +447,7 @@ input{
             }
         }
         &:checked{
-            border: 1px solid $noir;
+            border-color: $noir;
         }
     }
     &[type=checkbox]{

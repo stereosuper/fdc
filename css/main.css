@@ -1429,7 +1429,7 @@ input[type=radio][disabled] {
   input[type=radio][disabled]:checked + label {
     display: inline-block; }
 input[type=radio]:checked {
-  border: 1px solid black; }
+  border-color: black; }
 input[type=checkbox] {
   position: relative;
   left: -99em;
