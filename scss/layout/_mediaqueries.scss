@@ -3201,6 +3201,19 @@
             }
         }
     }
+    .wrapper-cercle-entreprise{
+        &.presentation{
+            padding: 25px;
+        }
+    }
+    .wrapper-partner-card{
+        .footer-partner-card{
+            a.btn-block{
+                padding: 18px 13px;
+                font-size: 0.75em;
+            }
+        }
+    }
 }
 
 @media (max-width: 400px){

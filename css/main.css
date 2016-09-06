@@ -244,6 +244,15 @@ hr {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-star:before {
+  content: ""; }
+
+.icon-star-half:before {
+  content: ""; }
+
+.icon-star-other-half:before {
+  content: ""; }
+
 .icon-tick-rounded:before {
   content: ""; }
 
@@ -7284,6 +7293,23 @@ body.cercle .content-tabs {
     margin: 0;
     line-height: 1; }
 
+.wrapper-cercle-entreprise.presentation {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 57px 63px; }
+  .wrapper-cercle-entreprise.presentation .wrapper-partner-card .content-partner-card {
+    border-bottom: none; }
+  .wrapper-cercle-entreprise.presentation .wrapper-partner-card h3 {
+    margin: 1.4em 0 0.5em; }
+  .wrapper-cercle-entreprise.presentation .wrapper-desc-partner h3 {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+  .wrapper-cercle-entreprise.presentation .bloc-logo {
+    margin: 0; }
+  .wrapper-cercle-entreprise.presentation .infos-static {
+    display: block; }
+
 .wrapper-partner-card {
   width: 354px;
   padding: 0 54px 0 0; }
@@ -7300,6 +7326,18 @@ body.cercle .content-tabs {
     color: #282c34;
     margin: 2em 0 1em 0;
     padding: 0; }
+  .wrapper-partner-card .footer-partner-card {
+    border-left: 2px solid #dbdbdb;
+    border-right: 2px solid #dbdbdb;
+    border-bottom: 2px solid #dbdbdb;
+    padding: 32px 26px;
+    background: #f4f5f8;
+    text-align: center; }
+    .wrapper-partner-card .footer-partner-card a.btn-block {
+      width: 100%;
+      padding: 21px 13px;
+      font-size: 1em;
+      max-width: 244px; }
 
 .wrapper-desc-partner h3 {
   color: #282c34;
@@ -7375,21 +7413,21 @@ body.cercle .content-tabs {
       right: 7px;
       top: 50%;
       margin-top: -5px; }
-  form.form-disabled .tags {
+  form.form-disabled .tags, .wrapper-cercle-entreprise.presentation .tags {
     margin-bottom: 0; }
-    form.form-disabled .tags .tag {
+    form.form-disabled .tags .tag, .wrapper-cercle-entreprise.presentation .tags .tag {
       cursor: auto;
       background: none;
       border: none;
       padding: 0;
       font-family: "robotoregular", sans-serif; }
-      form.form-disabled .tags .tag:before {
+      form.form-disabled .tags .tag:before, .wrapper-cercle-entreprise.presentation .tags .tag:before {
         display: none; }
-      form.form-disabled .tags .tag:after {
+      form.form-disabled .tags .tag:after, .wrapper-cercle-entreprise.presentation .tags .tag:after {
         content: '•';
         color: #c52d38;
         margin-left: 6px; }
-    form.form-disabled .tags > li:last-child .tag:after {
+    form.form-disabled .tags > li:last-child .tag:after, .wrapper-cercle-entreprise.presentation .tags > li:last-child .tag:after {
       display: none; }
 
 .bloc-logo {
@@ -7477,6 +7515,65 @@ body.cercle .content-tabs {
     padding: 0 0 0 44px; }
     .company-refs .txt-company-ref textarea {
       height: 94px; }
+
+.title-stars-rating {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px; }
+
+.stars-rating {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1.6em 0 0 0; }
+  .stars-rating .icon-star {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 20px;
+    margin: 0 2px;
+    width: 20px;
+    height: 20px; }
+    .stars-rating .icon-star.full {
+      color: #f18832; }
+    .stars-rating .icon-star.half:before {
+      content: '\e91d';
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'fdc' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #f18832; }
+    .stars-rating .icon-star.half:after {
+      content: '\e91f';
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'fdc' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0.5px; }
+
+.retour-small {
+  margin: 10px 0 50px 0;
+  padding: 0 8px; }
+  .retour-small a.btn-arrow-back {
+    font-size: 0.75em; }
 
 /* Responsive vertical */
 @media (max-height: 800px) {
@@ -9618,7 +9715,14 @@ body.cercle .content-tabs {
 
   .popup-footer .menu-popup > li {
     display: block;
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .wrapper-cercle-entreprise.presentation {
+    padding: 25px; }
+
+  .wrapper-partner-card .footer-partner-card a.btn-block {
+    padding: 18px 13px;
+    font-size: 0.75em; } }
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; }
