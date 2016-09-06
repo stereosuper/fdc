@@ -1038,6 +1038,8 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
       display: none; }
   .alerts-list .num, .sales-list .num, .partners-list .num, .search-list .num {
     height: 51px;
+    width: 72px;
+    text-align: right;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -6769,7 +6771,7 @@ body.wrapper-blured #wrapper-page {
       .dashboard-block .alerts-list li:last-of-type:after {
         display: none; }
     .dashboard-block .alerts-list.has-num li a {
-      padding-left: 60px; }
+      padding-left: 110px; }
     .dashboard-block .alerts-list .title-simple {
       white-space: nowrap;
       text-overflow: ellipsis;
