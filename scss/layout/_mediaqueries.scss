@@ -492,6 +492,7 @@
             top: inherit;
             width: 100%;
             height: auto;
+            min-height: 0;
             &:nth-child(1){
                 left: 0;
             }
