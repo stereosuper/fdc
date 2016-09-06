@@ -5805,7 +5805,8 @@ a.btn-block, button.btn-block, .btn-block {
 .field-list .title-simple-big {
   vertical-align: middle;
   margin-right: 20px;
-  display: inline; }
+  display: inline;
+  text-transform: none; }
 .field-list .p {
   display: block;
   margin: 15px 0 0;
