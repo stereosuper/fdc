@@ -525,6 +525,8 @@
                 box-sizing: border-box;
                 left: 250px;
                 right: 0;
+                top: 0;
+                bottom: auto;
                 transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
                 transform-origin: 100% 0;
                 border-bottom: none;
