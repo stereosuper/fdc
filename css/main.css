@@ -934,7 +934,8 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   border-bottom: 1px solid #f5f5f6;
   margin: 0.7em 0 0; }
   .alerts-list li, .sales-list li, .messages-list li, .partners-list li, .field-list li, .search-list li {
-    margin: 0; }
+    margin: 0;
+    position: relative; }
     .alerts-list li:before, .sales-list li:before, .messages-list li:before, .partners-list li:before, .field-list li:before, .search-list li:before {
       display: none; }
     .alerts-list li:nth-child(n+2) a:before, .sales-list li:nth-child(n+2) a:before, .messages-list li:nth-child(n+2) a:before, .partners-list li:nth-child(n+2) a:before, .field-list li:nth-child(n+2) a:before, .search-list li:nth-child(n+2) a:before {
@@ -998,10 +999,12 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
 
 .alerts-list, .sales-list, .partners-list, .search-list {
   border-top: 0; }
-  .alerts-list li:first-of-type a, .sales-list li:first-of-type a, .partners-list li:first-of-type a, .search-list li:first-of-type a {
-    border-top: 0; }
-  .alerts-list li:nth-of-type(2n+1) a, .sales-list li:nth-of-type(2n+1) a, .partners-list li:nth-of-type(2n+1) a, .search-list li:nth-of-type(2n+1) a {
-    background: #f5f5f6; }
+  .alerts-list li, .sales-list li, .partners-list li, .search-list li {
+    position: relative; }
+    .alerts-list li:first-of-type a, .sales-list li:first-of-type a, .partners-list li:first-of-type a, .search-list li:first-of-type a {
+      border-top: 0; }
+    .alerts-list li:nth-of-type(2n+1) a, .sales-list li:nth-of-type(2n+1) a, .partners-list li:nth-of-type(2n+1) a, .search-list li:nth-of-type(2n+1) a {
+      background: #f5f5f6; }
   .alerts-list a, .sales-list a, .partners-list a, .search-list a {
     padding: 18px 240px 23px 125px; }
   .alerts-list .title-simple, .sales-list .title-simple, .partners-list .title-simple, .search-list .title-simple {
@@ -1063,7 +1066,7 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   .alerts-list .right, .sales-list .right, .partners-list .right, .search-list .right {
     height: 27px;
     position: absolute;
-    right: 20px;
+    right: 65px;
     top: 0;
     bottom: 0;
     margin: auto; }
@@ -5227,6 +5230,18 @@ a.btn-block, button.btn-block, .btn-block {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1.14em; }
 
+.bloc-overlay {
+  position: absolute;
+  height: 26px;
+  top: 50%;
+  right: 20px;
+  margin: -13px 0 0 0;
+  z-index: 2; }
+  .bloc-overlay button {
+    vertical-align: middle; }
+  .bloc-overlay .btn-pen, .bloc-overlay .btn-mail {
+    margin-right: 10px; }
+
 /* search empty */
 .search-list-empty {
   border-bottom: 0;
@@ -9020,6 +9035,15 @@ body.cercle .content-tabs {
     margin-right: 0; }
   .alerts-list .right, .sales-list .right, .search-list .right, .partners-list .right {
     position: static; }
+
+  .bloc-overlay {
+    left: 220px;
+    right: auto;
+    top: auto;
+    bottom: 22px;
+    margin: 0; }
+    .bloc-overlay .btn-pen, .bloc-overlay .btn-mail {
+      margin-right: 0; }
 
   .alerts-block time {
     display: block;

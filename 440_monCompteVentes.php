@@ -55,10 +55,12 @@
                                     <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
                                     <span class='right'>
                                         <span class='sales-views'><b>174</b> <span>vues</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
                                     </span>
                                 </a>
+                                <div class='bloc-overlay'>
+                                    <button class='btn-pen btn-no-text'>Modifier cette vente</button>
+                                    <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
+                                </div>
                             </li>
                             <li>
                                 <a href='#'>

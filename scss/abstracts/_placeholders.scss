@@ -131,6 +131,7 @@
     margin: 0.7em 0 0;
     li{
         margin: 0;
+        position: relative;
         &:before{
             display: none;
         }
@@ -243,6 +244,7 @@
 %list-result{
     border-top: 0;
     li{
+        position: relative;
         &:first-of-type{
             a{
                 border-top: 0;
@@ -323,7 +325,8 @@
     .right{
         height: 27px;
         position: absolute;
-        right: 20px;
+        //right: 20px;
+        right: 65px;
         top: 0;
         bottom: 0;
         margin: auto;

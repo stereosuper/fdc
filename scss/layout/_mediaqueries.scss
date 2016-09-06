@@ -2074,6 +2074,17 @@
         }
     }
 
+    .bloc-overlay{
+        left: 220px;
+        right: auto;
+        top: auto;
+        bottom: 22px;
+        margin: 0;
+        .btn-pen, .btn-mail{
+            margin-right: 0;
+        }
+    }
+
     .alerts{
         &-block{
             time{

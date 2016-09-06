@@ -58,6 +58,21 @@
     }
 }
 
+.bloc-overlay{
+    position: absolute;
+    height: 26px;
+    top: 50%;
+    right: 20px;
+    margin: -13px 0 0 0;
+    z-index: 2;
+    button{
+        vertical-align: middle;
+    }
+    .btn-pen, .btn-mail{
+        margin-right: 10px;
+    }
+}
+
 /* search empty */
 
 .search-list-empty{
