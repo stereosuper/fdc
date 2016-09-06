@@ -1008,6 +1008,9 @@
 
     .nav-tabs{
         font-size: 0.62em;
+        &:before{
+            top: 42px;
+        }
         .cercle &{
             &:before{
                 top: 41px;
@@ -1700,6 +1703,16 @@
         bottom: 1px;
     }
     .nav-tabs{
+        padding-bottom: 0;
+        &:before{
+            display: none;
+        }
+        &-indicator{
+            padding-bottom: 4px;
+            &:before{
+                display: block;
+            }
+        }
         &.no-border{
             padding-bottom: 0;
             &:not(.nav-tabs-indicator){
@@ -2461,6 +2474,9 @@
         }*/
         &-indicator{
             font-size: 0.75em;
+            &:before{
+                top: 36px;
+            }
             span{
                 display: none;
             }

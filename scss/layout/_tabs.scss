@@ -1,6 +1,5 @@
 .nav-tabs{
-    padding: 1px 0 0 0;
-    border-bottom: 4px solid $theme-btn;
+    padding: 1px 0 4px 0;
     margin: 0 0 0 1px;
     font-family: $roboto-cd-bold;
     font-size: 0.75em;
@@ -8,12 +7,34 @@
     letter-spacing: 0.04em;
 
     display: table;
-    position: relative;
+    //position: relative;
+    &:before{
+        content: '';
+        display: block;
+        height: 4px;
+        position: absolute;
+        top: 65px;
+        left: 1px;
+        right: 1px;
+        background: $theme-btn;
+    }
     .content-tabs-sale &{
         border-color: #ef6a2b;
+        &:before{
+            background: #ef6a2b;
+        }
     }
     .content-tabs-partner &{
         border-color: #d63e37;
+        &:before{
+            background: #d63e37;
+        }
+    }
+    .cercleMyForum &{
+        padding-bottom: 0;
+        &:before{
+            display: none;
+        }
     }
     &.nav-tabs-white{
         //border: 1px #dadada solid;
@@ -21,11 +42,19 @@
     &.no-border{
         border: 0;
         padding-bottom: 1px;
+        &:before{
+            display: none;
+        }
     }
     .cercle &{
         border-bottom-color: $orange;
         box-sizing: border-box;
         margin-left: 0;
+        &:before{
+            background: $orange;
+            left: 0;
+            right: 0;
+        }
     }
     li{
         border-right: 1px solid $gris;

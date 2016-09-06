@@ -29,7 +29,7 @@
 				<div class='content-tabs'>
 				    <ul class='nav-tabs'>
 				        <li>
-				            <span>Mes informations</span>
+				            <a href='#'>Mes informations</a>
 				        </li><li>
 				            <a href='#'>Les leads proposés</a>
 				        </li><li>
@@ -37,7 +37,7 @@
 				        </li><li>
 				            <a href='#'>Votre entreprise</a>
 				        </li><li class='active'>
-				            <a href='#'>Correspondance</a>
+				            <span>Correspondance</span>
 				        </li>
 				    </ul>
 				    <div class='tab-content'>

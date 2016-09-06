@@ -29,11 +29,11 @@
 				<div class='content-tabs'>
 				    <ul class='nav-tabs'>
 				        <li>
-				            <span>Mes informations</span>
+				            <a href='#'>Mes informations</a>
 				        </li><li>
 				            <a href='#'>Les leads proposés</a>
 				        </li><li class='active'>
-				            <a href='#'>Les leads achetés</a>
+				            <span>Les leads achetés</span>
 				        </li><li>
 				            <a href='#'>Votre entreprise</a>
 				        </li><li>
