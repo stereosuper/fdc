@@ -6685,6 +6685,8 @@ body.wrapper-blured #wrapper-page {
     margin-bottom: 10px; }
 .content-sale-paiement header p.right-head {
   float: right; }
+  .content-sale-paiement header p.right-head i {
+    margin-right: 7px; }
 
 .detail-paiement li:before {
   display: none; }
@@ -9295,7 +9297,8 @@ body.cercle .content-tabs {
   .content-sale-paiement .paiement-block .paiement-list li .recap .title-simple {
     font-size: 1.2em; }
   .content-sale-paiement header p.right-head {
-    float: none; }
+    float: none;
+    margin-top: 5px; }
     .content-sale-paiement header p.right-head a {
       margin-top: 0; }
 

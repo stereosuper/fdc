@@ -57,7 +57,7 @@
                     <div class='content-sale-paiement'>
                         <header class='tab-content-title'>
                             <h2 class='h1'>Paiement </h2>
-                            <p class="right-head">Plusieurs annonces à publier&nbsp;? <a href="240_vente_annonce_popup.html" class='btn-arrow small lb-credits open-lighbox'>Acheter des crédits</a></p>
+                            <p class="right-head"><i>Plusieurs annonces à publier&nbsp;?</i> <a href="240_vente_annonce_popup.html" class='btn-arrow small lb-credits open-lighbox'>Acheter des crédits</a></p>
                         </header>
 
                         <div class='paiement-block'>
