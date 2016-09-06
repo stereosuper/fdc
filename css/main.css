@@ -6567,7 +6567,8 @@ body.wrapper-blured #wrapper-page {
     margin: 10px 0 4.3em;
     clear: both; }
     .content-sale-paiement .paiement-block .btn-arrow {
-      margin-left: 15px; }
+      margin-left: 15px;
+      position: relative; }
     .content-sale-paiement .paiement-block .paiement-list {
       line-height: 1.5;
       padding-left: 0;

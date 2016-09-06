@@ -60,7 +60,7 @@
                         </header>
 
                         <div class='paiement-block'>
-                            <p>Votre annonce a été publiée <a class='btn-arrow small'>Voir l'annonce</a></p>
+                            <p>Votre annonce a été publiée <a href='#' class='btn-arrow small'>Voir l'annonce</a></p>
                         </div>
                     </div>
                 </div>
