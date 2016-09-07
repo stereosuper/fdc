@@ -92,8 +92,11 @@ h2{
         padding: 0;
         color: $txt;
     }
-    .content-default &{
-        
+    #main:not(.seo-style) .content-default &{
+        @include roboto-cd-bold(1.25em);
+        padding: 2em 0 0.5em;
+        margin: 0 0 1em;
+        color: $theme-rouge-title;
     }
 }
 
@@ -125,6 +128,10 @@ h3{
     &.small{
         @include roboto(1em);
         color: $txt;
+    }
+    #main:not(.seo-style) .content-default &{
+        font-size: 1em;
+        padding: 1.5em 0 0.5em;
     }
 }
 

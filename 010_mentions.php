@@ -10,7 +10,7 @@
     <body>
         <?php include_once('includes/header.php'); ?>
 
-        <main id='main' role='main'>
+        <main id='main' class='seo-style' role='main'>
             <div class='container-small'>
                 <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                     <li property='itemListElement' typeof='ListItem'>

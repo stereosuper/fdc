@@ -441,6 +441,16 @@ h2 {
   h2.title-simple-big {
     padding: 0;
     color: #282c34; }
+  #main:not(.seo-style) .content-default h2 {
+    font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    padding: 2em 0 0.5em;
+    margin: 0 0 1em;
+    color: #df5441; }
 
 .title-zone {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
@@ -474,6 +484,9 @@ h3 {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     color: #282c34; }
+  #main:not(.seo-style) .content-default h3 {
+    font-size: 1em;
+    padding: 1.5em 0 0.5em; }
 
 h4, .h4 {
   font-size: 1.1em;
