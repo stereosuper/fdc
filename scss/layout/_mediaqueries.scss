@@ -2073,13 +2073,26 @@
             position: static;
         }
     }
+    
+    .sales-list{
+        a{
+            padding-bottom: 46px;
+        }
+    }
 
     .bloc-overlay{
-        left: 220px;
+        left: 125px;
         right: auto;
         top: auto;
         bottom: 22px;
         margin: 0;
+        &.fixed-right{
+            top: 50%;
+            bottom: auto;
+            left: auto;
+            right: 20px;
+            margin: -13px 0 0 0;
+        }
         .btn-pen, .btn-mail{
             margin-right: 0;
         }
@@ -2747,6 +2760,21 @@
             position: relative;
             left: 0;
             margin: 0 0 10px;
+        }
+    }
+
+    .sales-list{
+        a{
+            padding-bottom: 40px;
+        }
+    }
+
+    .bloc-overlay{
+        left: 25px;
+        bottom: 18px;
+        &.fixed-right{
+            left: auto;
+            bottom: auto;
         }
     }
 

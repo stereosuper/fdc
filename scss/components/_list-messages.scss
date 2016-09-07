@@ -2,9 +2,7 @@
 
 .messages-list{
     @extend %list-base;
-
     li{
-
         &.new{
             position: relative;
             &:before{
@@ -43,13 +41,13 @@
         max-width: 50%;
         margin: 0 25px 0 0;
     }
-    .btn-delete{
+    /*.btn-delete{
         position: absolute;
         right: 20px;
         top: 0;
         bottom: 0;
         margin: auto 0;
-    }
+    }*/
 }
 
 

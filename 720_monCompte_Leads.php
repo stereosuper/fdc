@@ -65,8 +65,10 @@
 				                        </span>
 				                        <span class='ville'>Nantes</span>
 				                        <span class='price'>200&nbsp;000&nbsp;€</span>
-				                        <button class='btn-delete btn-no-text'>Supprimer ce message</button>
 				                    </a>
+				                    <div class='bloc-overlay fixed-right'>
+				                        <button class='btn-delete btn-no-text'>Supprimer ce lead</button>
+				                    </div>
 				                </li>
 				                <li>
 				                    <a href='#'>
@@ -78,8 +80,10 @@
 				                        </span> 
 				                        <span class='ville'>Rezé</span>
 				                        <span class='price'>150&nbsp;000&nbsp;€</span>
-				                        <button class='btn-delete btn-no-text'>Supprimer ce message</button>
 				                    </a>
+				                    <div class='bloc-overlay fixed-right'>
+				                        <button class='btn-delete btn-no-text'>Supprimer ce lead</button>
+				                    </div>
 				                </li>
 				                <li>
 				                    <a href='#'>
@@ -91,8 +95,10 @@
 				                        </span>
 				                        <span class='ville'>Sablé-sur-sarthe</span>
 				                        <span class='price'>20&nbsp;000&nbsp;€</span>
-				                        <button class='btn-delete btn-no-text'>Supprimer ce message</button>
 				                    </a>
+				                    <div class='bloc-overlay fixed-right'>
+				                        <button class='btn-delete btn-no-text'>Supprimer ce lead</button>
+				                    </div>
 				                </li>
 				            </ul>
 				        </div>

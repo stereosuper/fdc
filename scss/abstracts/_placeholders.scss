@@ -198,6 +198,18 @@
                 }
             }
         }
+        &:hover{
+            .btn-arrow, button, .num{
+                color: #fff;
+            }
+            a{
+                color: #fff;
+                &:before{
+                    transform: translateX(0);
+                    transition: $transition;
+                }
+            }
+        }
     }
     a{
         display: block;

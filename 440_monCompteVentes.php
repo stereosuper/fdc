@@ -70,10 +70,12 @@
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right'>
                                         <span class='sales-views'><b>90</b> <span>vues</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
                                     </span>
                                 </a>
+                                <div class='bloc-overlay'>
+                                    <button class='btn-pen btn-no-text'>Modifier cette vente</button>
+                                    <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
+                                </div>
                             </li>
                             <li>
                                 <a href='#'>
@@ -83,10 +85,12 @@
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right'>
                                         <span class='sales-views'><b>1</b> <span>vue</span></span>
-                                        <button class='btn-pen btn-no-text'>Modifier cette vente</button>
-                                        <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
                                     </span>
                                 </a>
+                                <div class='bloc-overlay'>
+                                    <button class='btn-pen btn-no-text'>Modifier cette vente</button>
+                                    <button class='btn-delete btn-no-text'>Supprimer cette vente</button>
+                                </div>
                             </li>
                         </ul>
                         <footer class='tab-content-footer'>

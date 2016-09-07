@@ -956,6 +956,16 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
       background-color: #de5340; }
     .alerts-list li:nth-child(n+10) a:before, .sales-list li:nth-child(n+10) a:before, .messages-list li:nth-child(n+10) a:before, .partners-list li:nth-child(n+10) a:before, .field-list li:nth-child(n+10) a:before, .search-list li:nth-child(n+10) a:before {
       background-color: #d63f39; }
+    .alerts-list li:hover .btn-arrow, .sales-list li:hover .btn-arrow, .messages-list li:hover .btn-arrow, .partners-list li:hover .btn-arrow, .field-list li:hover .btn-arrow, .search-list li:hover .btn-arrow, .alerts-list li:hover button, .sales-list li:hover button, .messages-list li:hover button, .partners-list li:hover button, .field-list li:hover button, .search-list li:hover button, .alerts-list li:hover .num, .sales-list li:hover .num, .messages-list li:hover .num, .partners-list li:hover .num, .field-list li:hover .num, .search-list li:hover .num {
+      color: #fff; }
+    .alerts-list li:hover a, .sales-list li:hover a, .messages-list li:hover a, .partners-list li:hover a, .field-list li:hover a, .search-list li:hover a {
+      color: #fff; }
+      .alerts-list li:hover a:before, .sales-list li:hover a:before, .messages-list li:hover a:before, .partners-list li:hover a:before, .field-list li:hover a:before, .search-list li:hover a:before {
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transition: 0.3s ease-in-out;
+                transition: 0.3s ease-in-out; }
   .alerts-list a, .sales-list a, .messages-list a, .partners-list a, .field-list a, .search-list a {
     display: block;
     border-top: 1px solid #f5f5f6;
@@ -5491,43 +5501,45 @@ a.btn-block, button.btn-block, .btn-block {
     left: 0; }
 
 /* Messages */
-.messages-list li.new {
-  position: relative; }
-  .messages-list li.new:before {
-    width: 6px;
-    height: 6px;
-    display: block;
-    position: absolute;
-    left: -20px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #c6333e;
-    z-index: 2; }
-  .messages-list li.new a {
-    background: #f5f5f6;
-    min-height: 35px; }
-.messages-list a {
-  padding: 12px 25px; }
-.messages-list time, .messages-list b {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0.88em; }
-.messages-list time {
-  width: 15.5%;
-  min-width: 85px; }
-.messages-list b {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-width: 50%;
-  margin: 0 25px 0 0; }
-.messages-list .btn-delete {
-  position: absolute;
-  right: 20px;
-  top: 0;
-  bottom: 0;
-  margin: auto 0; }
+.messages-list {
+  /*.btn-delete{
+      position: absolute;
+      right: 20px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+  }*/ }
+  .messages-list li.new {
+    position: relative; }
+    .messages-list li.new:before {
+      width: 6px;
+      height: 6px;
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #c6333e;
+      z-index: 2; }
+    .messages-list li.new a {
+      background: #f5f5f6;
+      min-height: 35px; }
+  .messages-list a {
+    padding: 12px 25px; }
+  .messages-list time, .messages-list b {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.88em; }
+  .messages-list time {
+    width: 15.5%;
+    min-width: 85px; }
+  .messages-list b {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 50%;
+    margin: 0 25px 0 0; }
 
 /* Leads */
 .leads-title {
@@ -9036,12 +9048,21 @@ body.cercle .content-tabs {
   .alerts-list .right, .sales-list .right, .search-list .right, .partners-list .right {
     position: static; }
 
+  .sales-list a {
+    padding-bottom: 46px; }
+
   .bloc-overlay {
-    left: 220px;
+    left: 125px;
     right: auto;
     top: auto;
     bottom: 22px;
     margin: 0; }
+    .bloc-overlay.fixed-right {
+      top: 50%;
+      bottom: auto;
+      left: auto;
+      right: 20px;
+      margin: -13px 0 0 0; }
     .bloc-overlay .btn-pen, .bloc-overlay .btn-mail {
       margin-right: 0; }
 
@@ -9451,6 +9472,16 @@ body.cercle .content-tabs {
     position: relative;
     left: 0;
     margin: 0 0 10px; }
+
+  .sales-list a {
+    padding-bottom: 40px; }
+
+  .bloc-overlay {
+    left: 25px;
+    bottom: 18px; }
+    .bloc-overlay.fixed-right {
+      left: auto;
+      bottom: auto; }
 
   .alerts-block-btn {
     position: static;
