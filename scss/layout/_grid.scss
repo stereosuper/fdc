@@ -44,6 +44,7 @@
 .content-default, .content-tabs{
     box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
     position: relative;
+    z-index: 1;
     &:before{
         content: '';
         display: block;
@@ -53,6 +54,7 @@
         bottom: 0;
         left: 0;
         border: 1px solid $gris;
+        z-index: -1;
     }
 }
 
@@ -61,6 +63,7 @@
     background: #fff;
     .content-footer{
         padding-left: $gutter;
-        margin: 50px -1*$gutter -50px;
+        //margin: 50px -1*$gutter -50px;
+        margin: 50px -1*($gutter - 1) -49px;
     }
 }

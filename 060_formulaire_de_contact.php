@@ -23,7 +23,7 @@
                 <h1>Formulaire de contact</h1>
                 <p class='gutter-left'>Vous avez une question&nbsp;? Nous sommes à votre écoute et répondrons à toutes vos intérogations.<br/>Merci de remplir le formulaire suivant, nous vous recontacterons rapidement.</p>
                 <div class='content-tabs'>
-                    <div class='tab-content form-contact'>
+                    <div class='tab-content form-contact no-header'>
                         <form action='#' method='post' id='formToEdit'>
                             <fieldset class='required'>
                                 <legend class='legend-next-fieldset'>Civilités</legend><fieldset class='inline-b'>

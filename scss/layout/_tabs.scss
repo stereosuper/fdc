@@ -237,6 +237,9 @@
     position: relative;
     margin: 0 1px 1px 1px;
     border-bottom: 1px solid $gris;
+    &.no-header{
+        border-top: 1px solid $gris;
+    }
     &-title{
         padding: 30px 0 10px;
         border-bottom: 1px solid;

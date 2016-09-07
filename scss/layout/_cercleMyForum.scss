@@ -148,6 +148,21 @@
             &.active {
                 @include bgCercle;
             }
+            &:first-child{
+                &.active{
+                    margin-left: -1px;
+                    &:after{
+                        content: '';
+                        display: block;
+                        height: 100%;
+                        width: 1px;
+                        position: absolute;
+                        top: 0;
+                        left: -1px;
+                        background: #b2232e;
+                    }
+                }
+            }
         }
     }
     .field-content {

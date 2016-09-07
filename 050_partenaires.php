@@ -45,7 +45,7 @@
                 <p class='gutter-left'>Le Cercle FDC, c’est une sélection de partenaires de confiance et de qualité pour accompagner les entrepreneurs,
                 dans leur spécialité, et dans leur région&nbsp;:</p>
                 <div class='content-tabs'>
-                    <div class='tab-content'>
+                    <div class='tab-content no-header'>
                         <header class="partners-filters">
                             <fieldset>
                                 <label for='departement'>
