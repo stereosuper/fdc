@@ -8586,6 +8586,11 @@ body.cercle .content-tabs {
   .field-content {
     padding-left: 45px;
     padding-right: 45px; }
+    .content-tabs-sale .field-content {
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-top: 40px;
+      padding-bottom: 40px; }
     .field-content a.right {
       float: none;
       margin: 0; }
@@ -8652,6 +8657,10 @@ body.cercle .content-tabs {
     overflow-y: hidden; }
     .content-tabs-sale .field-content .wrapper-alignment {
       min-width: 795px; }
+      .content-tabs-sale .field-content .wrapper-alignment.container-depot-annonce {
+        min-width: 0; }
+        .content-tabs-sale .field-content .wrapper-alignment.container-depot-annonce .wrapper-alignment {
+          min-width: 0; }
       .content-tabs-sale .field-content .wrapper-alignment .big-price {
         max-width: 100px; }
   .content-tabs-sale .paiement-block .total {
@@ -9119,6 +9128,11 @@ body.cercle .content-tabs {
   .field-content {
     padding-left: 30px;
     padding-right: 30px; }
+    .content-tabs-sale .field-content {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 40px;
+      padding-bottom: 40px; }
   .field-header {
     padding-right: 30px;
     padding-left: 160px; }
@@ -9332,7 +9346,24 @@ body.cercle .content-tabs {
     .wrapper-desc-partner h3 {
       -webkit-transform: translateX(10px);
           -ms-transform: translateX(10px);
-              transform: translateX(10px); } }
+              transform: translateX(10px); }
+
+  .container-depot-annonce {
+    display: block; }
+    .container-depot-annonce .wrapper-depot-annonce {
+      display: block;
+      padding: 0; }
+    .container-depot-annonce .wrapper-pub-pack {
+      display: block;
+      margin: 30px 0 0 0;
+      min-height: 250px;
+      width: 100%;
+      max-width: 230px; }
+    .container-depot-annonce .pub-pack .big-txt {
+      font-size: 1.6em; }
+
+  .content-tabs-sale .field-content .tab-content-title {
+    font-size: 2.2em; } }
 @media (max-width: 650px) {
   ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){
@@ -9479,7 +9510,16 @@ body.cercle .content-tabs {
   .cercleMyForum.adCercle .circle-text div p {
     margin-top: 30px; }
     .cercleMyForum.adCercle .circle-text div p img {
-      display: none; } }
+      display: none; }
+
+  .container-depot-annonce .wrapper-price-argu {
+    display: block; }
+    .container-depot-annonce .wrapper-price-argu .content-align-middle {
+      display: block; }
+      .container-depot-annonce .wrapper-price-argu .content-align-middle ul {
+        padding: 0; }
+    .container-depot-annonce .wrapper-price-argu .content-price {
+      margin-bottom: 12px; } }
 @media (max-width: 600px) {
   .home-link {
     padding-top: 23px;
@@ -9811,7 +9851,10 @@ body.cercle .content-tabs {
 
   .wrapper-partner-card .footer-partner-card a.btn-block {
     padding: 18px 13px;
-    font-size: 0.75em; } }
+    font-size: 0.75em; }
+
+  .content-tabs-sale .field-content .tab-content-title {
+    font-size: 1.8em; } }
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; }

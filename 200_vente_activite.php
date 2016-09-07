@@ -55,7 +55,7 @@
                         </li>
                     </ul>
                     <div class='field-content'>
-                        <div class='wrapper-alignment'>
+                        <div class='wrapper-alignment container-depot-annonce'>
                             <div class='content-align-top wrapper-depot-annonce'>
                                 <div class="tab-content-title">
                                     Déposer une annonce
