@@ -724,7 +724,8 @@ $(function(){
 		var valWidth2 = -$(".lightbox-content ul li").eq(0).width()*slideIndex;
 		TweenMax.to($(".lightbox-content ul li"), 0.2, {x: valWidth2});
 	}
-	if($('#toSlide').length>0 && !window.matchMedia('print')) {
+	//if($('#toSlide').length>0 && !window.matchMedia('print')) {
+	if($('#toSlide').length>0) {
 		$('#toSlide').prepend('<button class="prev-slide small" />');
 		$('#toSlide').append('<button class="next-slide small" />');
 		$('#toSlide li').each(function(index, el) {
