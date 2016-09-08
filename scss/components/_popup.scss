@@ -51,6 +51,40 @@ body{
     p{
         line-height: 1.4;
     }
+    &.popup-center{
+        text-align: center;
+        padding: 80px 65px 100px 65px;
+        max-width: 800px;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        .popup-header{
+            padding: 0;
+            text-align: right;
+            position: absolute;
+            top: 18px;
+            right: 20px;
+        }
+        h2{
+            font-family: $roboto-cd-bold;
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+        p{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        h2, p{
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a.btn-block{
+            margin-top: 50px;
+        }
+    }
 }
 
 .popup-header{

@@ -871,6 +871,20 @@
             }
         }
     }
+    .popup{
+        &.popup-center{
+            .popup-header{
+                .menu-popup{
+                    margin: 0;
+                    a.btn-cancel{
+                        position: relative;
+                        top: auto;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px){
@@ -1646,6 +1660,19 @@
         .txt-company-ref{
             display: block;
             padding: 0;
+        }
+    }
+
+    .popup{
+        &.popup-center{
+            padding: 60px 65px;
+            h2{
+                font-size: 2em;
+            }
+            img{
+                height: 50px;
+                width: auto;
+            }
         }
     }
 }
@@ -2532,6 +2559,21 @@
     .content-tabs-sale .field-content .tab-content-title{
         font-size: 2.2em;
     }
+
+    .popup{
+        &.popup-center{
+            padding: 45px 30px;
+            h2{
+                font-size: 1.8em;
+            }
+            img{
+                height: 40px;
+            }
+            a.btn-block{
+                font-size: 0.8em;
+            }
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -3315,6 +3357,17 @@
     }
     .content-tabs-sale .field-content .tab-content-title{
         font-size: 1.8em;
+    }
+
+    .popup{
+        &.popup-center{
+            h2{
+                font-size: 1.6em;
+            }
+            a.btn-block{
+                margin-top: 30px;
+            }
+        }
     }
 }
 
