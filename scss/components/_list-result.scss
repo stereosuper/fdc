@@ -78,8 +78,13 @@
 .search-list-empty{
     border-bottom: 0;
     border-top: 1px solid;
-    padding: 100px 0;
+    padding: 75px 0 0 0;
     margin-top: 0.7em;
+    p{
+        &:first-child{
+            margin-bottom: 50px;
+        }
+    }
 }
 
 /* Sales */

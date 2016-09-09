@@ -5284,8 +5284,10 @@ a.btn-block, button.btn-block, .btn-block {
 .search-list-empty {
   border-bottom: 0;
   border-top: 1px solid;
-  padding: 100px 0;
+  padding: 75px 0 0 0;
   margin-top: 0.7em; }
+  .search-list-empty p:first-child {
+    margin-bottom: 50px; }
 
 /* Sales */
 .sales-views {
@@ -5825,6 +5827,19 @@ a.btn-block, button.btn-block, .btn-block {
     .wrapper-choices .field-content {
       padding: 45px 60px 13px;
       height: 100%; }
+    .field-content .cercleMyForum.adCercle {
+      margin-top: 0; }
+      .field-content .cercleMyForum.adCercle .field-content {
+        padding: 20px 50px; }
+      .field-content .cercleMyForum.adCercle ol.full-circle.wave li.buy-step {
+        left: 80px; }
+      .field-content .cercleMyForum.adCercle ol.full-circle.wave li.finance-step {
+        left: 206px; }
+      .field-content .cercleMyForum.adCercle ol.full-circle.wave li.ensure-step {
+        left: 340px; }
+      .field-content .cercleMyForum.adCercle ol.full-circle.wave li.equip-step {
+        left: 390px;
+        top: -160px; }
     .field-content h2 + a {
       margin-right: 15px; }
     .field-content p, .field-content h3 {
@@ -8830,7 +8845,10 @@ body.cercle .content-tabs {
       font-size: 2em; }
     .popup.popup-center img {
       height: 50px;
-      width: auto; } }
+      width: auto; }
+
+  .field-content .cercleMyForum.adCercle .field-content {
+    padding: 20px 30px; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -9419,7 +9437,10 @@ body.cercle .content-tabs {
     .popup.popup-center img {
       height: 40px; }
     .popup.popup-center a.btn-block {
-      font-size: 0.8em; } }
+      font-size: 0.8em; }
+
+  .field-content .cercleMyForum.adCercle .field-content {
+    padding: 20px 15px; } }
 @media (max-width: 650px) {
   ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){
