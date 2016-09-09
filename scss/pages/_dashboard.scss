@@ -1,11 +1,29 @@
+.wrapper-dashboard-blocks{
+    display: block;
+    position: relative;
+}
 .dashboard-block{
     width: 50%;
-    padding: 24px 12px 0 0;
+    padding: 24px 6px 0 6px;
     float: left;
     text-align: right;
-    &:nth-of-type(2n+1){
-        padding: 24px 0 0 12px;
+    .js &{
+        opacity: 0;
+    }
+    &.align-left{
+        padding-left: 0;
+        padding-right: 12px;
+        .js &{
+            opacity: 1;
+        }
+    }
+    &.align-right{
+        padding-left: 12px;
+        padding-right: 0;
         float: right;
+        .js &{
+            opacity: 1;
+        }
     }
     > div{
         background: $theme-btn;

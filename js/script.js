@@ -702,6 +702,16 @@ $(function(){
 
 	$(window).load(function(){
 		newsHeight();
+		// Positionnement dashboard
+		if($('.dashboard-block').length){
+			$('.dashboard-block').each(function(){
+				if($(this).position().left == 0){
+					$(this).addClass('align-left');
+				}else{
+					$(this).addClass('align-right');
+				}
+			});
+		}
 	});
 
 	// Slider page detail
