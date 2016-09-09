@@ -277,6 +277,9 @@
     padding: 50px 70px 90px 70px;
     display: table;
     width: 100%;
+    .field-content &{
+    	padding: 0;
+    }
     .login-vente {
     	height: 315px;
     	max-width: 50%;

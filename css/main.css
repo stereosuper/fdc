@@ -5909,6 +5909,8 @@ a.btn-block, button.btn-block, .btn-block {
   padding: 50px 70px 90px 70px;
   display: table;
   width: 100%; }
+  .field-content .content-log {
+    padding: 0; }
   .content-log .login-vente {
     height: 315px;
     max-width: 50%;
