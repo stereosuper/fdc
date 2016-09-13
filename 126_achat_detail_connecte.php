@@ -10,7 +10,7 @@
         <link rel='next' href='/page2.html'>
     </head>
 
-    <body class="hasMaps print">
+    <body class="hasMaps vue-print">
         <?php
             global $field;
             $field = 'Boulangerie - Pâtisserie - Salon de thé';

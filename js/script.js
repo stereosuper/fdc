@@ -372,7 +372,6 @@ $(function(){
 	        pane: {
 	            size: '100%'
 	        },
-
 	        plotOptions: {
                 area: {
                     marker: {
@@ -440,7 +439,6 @@ $(function(){
 	        credits: {
 	        	enabled: false
 	        }
-
 	    });
 	}
 
