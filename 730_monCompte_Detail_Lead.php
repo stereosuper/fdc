@@ -7,7 +7,7 @@
 	  	<?php include_once('includes/head.html'); ?>
 	</head>
 
-	<body class='cercle compte wrapper-blured print'>
+	<body class='cercle compte wrapper-blured vue-print'>
 		<?php include_once('includes/header_cercle.php'); ?>
 
 		<main id='main' role='main'>
