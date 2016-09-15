@@ -201,12 +201,15 @@
         &:hover{
             .btn-arrow, button, .num{
                 color: #fff;
+                transition-delay: $tps-transition-delay;
             }
             a{
                 color: #fff;
+                transition-delay: $tps-transition-delay;
                 &:before{
                     transform: translateX(0);
                     transition: $transition;
+                    transition-delay: $tps-transition-delay;
                 }
             }
         }
@@ -231,15 +234,18 @@
             transform: translateX(-100%);
             background: $theme-gradient-1;
             transition: .5s ease-in-out;
+            transition-delay: 0s;
         }
         &:focus, &:hover{
             color: #fff;
             .btn-arrow, button, .num{
                 color: #fff;
+                transition-delay: $tps-transition-delay;
             }
             &:before{
                 transform: translateX(0);
                 transition: $transition;
+                transition-delay: $tps-transition-delay;
             }
         }
         &:active{

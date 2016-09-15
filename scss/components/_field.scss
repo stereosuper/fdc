@@ -256,9 +256,11 @@
 			}
 			.img{
 				opacity: 0.7;
+				transition-delay: $tps-transition-delay;
 			}
 			.link{
 				color: #fff;
+				transition-delay: $tps-transition-delay;
 			}
 		}
 	}
@@ -268,6 +270,10 @@
 		position: absolute;
 		overflow: hidden;
 		transition: $transition;
+		transition-delay: 0s;
+	}
+	.link{
+		transition-delay: 0s;
 	}
 	img{
 		max-width: none;
