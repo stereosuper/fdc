@@ -59,7 +59,8 @@ body{
 		        position:relative;
 		        width:136px;
 		        color:$blanc;
-		        transform:rotate(-40deg);
+		        transform: rotate(-40deg) translateZ(0) scale(1.01);
+		        backface-visibility: hidden;
 		        z-index:1;
 		        font-size:0.8em;
 		        transition: transform $transition;
@@ -75,7 +76,8 @@ body{
 		            right:0;
 		            top:0;
 		            bottom:0;
-		            transform:rotate(53deg);
+		            transform:rotate(53deg) translateZ(0) scale(1.01);
+		        	backface-visibility: hidden;
 		            z-index:-1;
 		            transition: all $transition;
 		        }
