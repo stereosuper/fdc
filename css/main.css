@@ -6569,7 +6569,7 @@ body.wrapper-blured #wrapper-page {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
           transition: opacity 0.3s ease-in-out;
-  overflow-y: auto; }
+  overflow: hidden; }
   #lb.on {
     pointer-events: auto;
     opacity: 1; }

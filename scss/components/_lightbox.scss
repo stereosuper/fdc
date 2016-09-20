@@ -9,7 +9,8 @@
     pointer-events:none;
     opacity:0;
     transition: opacity $transition;
-    overflow-y:auto;
+    //overflow-y:auto;
+    overflow: hidden;
     &.on {
         pointer-events:auto;
         opacity:1;
