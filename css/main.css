@@ -7181,6 +7181,8 @@ body.cercle.home-cercle {
   min-height: 100%; }
   body.cercle.home-cercle #main {
     padding-bottom: 230px; }
+  body.cercle.home-cercle #wrapper-page {
+    min-height: 100vh; }
 body.cercle #burger {
   display: inline-block; }
 body.cercle #logo {
