@@ -2295,6 +2295,32 @@ button {
     display: block;
     opacity: 0.3; }
 
+.alert-cookies {
+  background: #c6333e;
+  color: white;
+  padding: 10px 0;
+  text-align: left; }
+  .alert-cookies p {
+    margin: 0;
+    font-size: 0.875em; }
+  .alert-cookies ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .alert-cookies ul > li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0 0 20px; }
+      .alert-cookies ul > li:before {
+        display: none; }
+      .alert-cookies ul > li:first-child {
+        margin-left: 0; }
+  .alert-cookies .btn-cookies {
+    width: 240px;
+    text-align: right;
+    padding-left: 40px; }
+
 /* Footer */
 #footer {
   background-color: #393d47;
@@ -3950,6 +3976,8 @@ a.btn-block, button.btn-block, .btn-block {
       border-color: #ff8925 #ff8925; }
     a.btn-block.btn-orange-cercle:hover, a.btn-block.btn-orange-cercle:focus, button.btn-block.btn-orange-cercle:hover, button.btn-block.btn-orange-cercle:focus, .btn-block.btn-orange-cercle:hover, .btn-block.btn-orange-cercle:focus {
       color: #ff8925; }
+  a.btn-block.btn-white-border .border, button.btn-block.btn-white-border .border, .btn-block.btn-white-border .border {
+    border-color: white white; }
   a.btn-block.btn-alert, button.btn-block.btn-alert, .btn-block.btn-alert {
     padding: 16px 16px 15px 13px;
     font-size: 1em;
@@ -9480,7 +9508,18 @@ body.cercle .content-tabs {
       font-size: 0.8em; }
 
   .field-content .cercleMyForum.adCercle .field-content {
-    padding: 20px 15px; } }
+    padding: 20px 15px; }
+
+  .alert-cookies .wrapper-alignment {
+    display: block;
+    width: 100%; }
+  .alert-cookies .content-align-middle {
+    display: block;
+    width: 100%; }
+    .alert-cookies .content-align-middle.btn-cookies {
+      padding: 0;
+      margin: 10px 0 0 0;
+      text-align: left; } }
 @media (max-width: 650px) {
   ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){

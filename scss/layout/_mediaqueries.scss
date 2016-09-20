@@ -2585,6 +2585,22 @@
     .field-content .cercleMyForum.adCercle .field-content{
         padding: 20px 15px;
     }
+
+    .alert-cookies{
+        .wrapper-alignment{
+            display: block;
+            width: 100%;
+        }
+        .content-align-middle{
+            display: block;
+            width: 100%;
+            &.btn-cookies{
+                padding: 0;
+                margin: 10px 0 0 0;
+                text-align: left;
+            }
+        }
+    }
 }
 
 @media (max-width: 650px){

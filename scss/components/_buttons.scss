@@ -328,6 +328,11 @@ a.btn-block, button.btn-block, .btn-block {
 			color: $orange;
 		}
 	}
+	&.btn-white-border{
+		.border{
+			border-color: $blanc $blanc;
+		}
+	}
 	&.btn-alert{
 		padding: 16px 16px 15px 13px;
 		font-size: 1em;
