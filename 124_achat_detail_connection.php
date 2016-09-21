@@ -10,7 +10,7 @@
         <link rel='next' href='/page2.html'>
     </head>
 
-    <body class="hasMaps">
+    <body class="hasMaps" style="overflow: hidden;">
         <?php
             global $field;
             $field = 'Boulangerie - Pâtisserie - Salon de thé';
@@ -120,8 +120,7 @@
                 </div>
             </div>
             <div id="lb" class="on">
-                <div class="black-mask"></div>
-                <button class="close-btn icon-cross"></button>
+                <div class="black-mask"><button class="close-btn icon-cross"></button></div>
                 <div class="lightbox-content">
                     <div class="wrapper">
                         <div class='field field-buy'>

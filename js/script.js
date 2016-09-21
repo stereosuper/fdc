@@ -699,6 +699,7 @@ $(function(){
 	});
 
 	// lightbox
+
 	function createLightbox(link, isImg, sliderElt) {
 		$("body,html").css('overflow', 'hidden');
 		if ($("#lb").length==0) {
@@ -752,13 +753,13 @@ $(function(){
 			}
 		}
 		$("#lb").addClass('on');
-		$(".black-mask").on('click', closeLightbox);
-		$(".close-btn").on('click', closeLightbox);
 	}
 	function closeLightbox(e) {
 		$("#lb").remove();
 		$("body,html").css('overflow', 'auto');
 	}
+	$("body").on('click', '#lb .black-mask', closeLightbox);
+	$("body").on('click', '#lb .close-btn', closeLightbox);
 	// fin slider
 
 	// selects choix accompagnement

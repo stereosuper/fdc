@@ -10,7 +10,7 @@
     opacity:0;
     transition: opacity $transition;
     //overflow-y:auto;
-    overflow: hidden;
+    overflow-x: hidden;
     &.on {
         pointer-events:auto;
         opacity:1;
