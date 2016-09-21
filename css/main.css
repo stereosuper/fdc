@@ -7513,6 +7513,9 @@ body.cercle .content-tabs {
     margin: 0;
     line-height: 1; }
 
+.wrapper-cercle-entreprise .select {
+  width: 100%;
+  max-width: 300px; }
 .wrapper-cercle-entreprise.presentation {
   background: white;
   border: 1px solid #dbdbdb;
@@ -7521,9 +7524,6 @@ body.cercle .content-tabs {
     border-bottom: none; }
   .wrapper-cercle-entreprise.presentation .wrapper-partner-card h3 {
     margin: 1.4em 0 0.5em; }
-  .wrapper-cercle-entreprise.presentation .wrapper-partner-card .select {
-    width: 100%;
-    max-width: 300px; }
   .wrapper-cercle-entreprise.presentation .wrapper-desc-partner h3 {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
