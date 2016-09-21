@@ -235,7 +235,30 @@
 
 .field-list{
 	@extend %list-base;
-
+	&.categs{
+		font-size: 0;
+		li{
+			display: inline-block;
+			vertical-align: top;
+			width: 50%;
+			font-size: 16px;
+			&:nth-child(odd){
+				padding: 0 20px 0 0;
+			}
+			&:nth-child(even){
+				padding: 0 0 0 20px;
+			}
+		}
+		a{
+			min-height: 162px;
+		}
+		.field-txt{
+			padding: 26px 30px;
+		}
+		.title-simple-big{
+			line-height: 0.95;
+		}
+	}
 	li{
 		margin-bottom: 10px;
 	}
