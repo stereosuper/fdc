@@ -695,6 +695,19 @@ button{
     }
 }
 
+.p-valid, #footer .p-valid{
+    padding: 15px;
+    position: relative;
+    font-family: $roboto-bold;
+    font-size: 0.88em;
+    background: #f3f4e1;
+    color: $valid;
+    &.small{
+        font-size: 0.85em;
+        padding: 10px;
+    }
+}
+
 
 /* Map form */
 

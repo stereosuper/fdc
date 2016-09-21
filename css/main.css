@@ -1697,6 +1697,17 @@ button {
     margin: auto;
     font-size: 40px; }
 
+.p-valid, #footer .p-valid {
+  padding: 15px;
+  position: relative;
+  font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
+  font-size: 0.88em;
+  background: #f3f4e1;
+  color: #76a626; }
+  .p-valid.small, #footer .p-valid.small {
+    font-size: 0.85em;
+    padding: 10px; }
+
 /* Map form */
 .map-container {
   display: inline-block;
