@@ -200,7 +200,7 @@ $(function(){
 			btnsChoices = choices.find('.btn-choice'),
 			visualsChoices = choices.find('.visuel'),
 			nbChoices = choices.find('li').length, j = 0,
-			numCols = 4, numRows = 5, frameHeight = 200, frameWidth = 200,
+			numCols = 4, numRows = 6, frameHeight = 200, frameWidth = 200,
 			steppedEase = new SteppedEase(numCols-1),
 			spritesTl = [];
 
