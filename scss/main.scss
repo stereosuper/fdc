@@ -24,6 +24,7 @@
   'layout/tabs',
   'layout/breadcrumb',
   'layout/sidebar',
+  'layout/cercleMyForum',
   'layout/pagination';
 
 @import
@@ -35,12 +36,19 @@
   'components/list-result',
   'components/pub',
   'components/list-messages',
+  'components/list-partners',
   'components/field',
-  'components/list-search';
+  'components/list-search',
+  'components/popup',
+  'components/pricing',
+  'components/lightbox',
+  'components/paiement';
 
 @import
   'pages/home',
-  'pages/dashboard';
+  'pages/dashboard',
+  'pages/details',
+  'pages/cercle';
 
 
 @import 'layout/mediaqueries';

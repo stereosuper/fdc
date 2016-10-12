@@ -1,39 +1,112 @@
 .nav-tabs{
-    padding: 0;
-    border-bottom: 4px solid $theme-btn;
-    margin: 0;
-    font-family: $roboto-bold;
+    padding: 1px 0 4px 0;
+    margin: 0 0 0 1px;
+    font-family: $roboto-cd-bold;
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+
+    display: table;
+    //position: relative;
+    &:before{
+        content: '';
+        display: block;
+        height: 4px;
+        position: absolute;
+        top: 65px;
+        left: 1px;
+        right: 1px;
+        background: $theme-btn;
+    }
     .content-tabs-sale &{
         border-color: #ef6a2b;
+        &:before{
+            background: #ef6a2b;
+        }
+    }
+    .content-tabs-partner &{
+        border-color: #d63e37;
+        &:before{
+            background: #d63e37;
+        }
+    }
+    .cercleMyForum &{
+        padding-bottom: 0;
+        &:before{
+            display: none;
+        }
+    }
+    &.nav-tabs-white{
+        //border: 1px #dadada solid;
     }
     &.no-border{
         border: 0;
-    }
-    li{
-        display: inline-block;
-        border-right: 1px solid $gris;
-        position: relative;
-        vertical-align: top;
-        margin: 0;
-        background: #fff;
+        padding-bottom: 1px;
         &:before{
             display: none;
+        }
+    }
+    .cercle &{
+        border-bottom-color: $orange;
+        box-sizing: border-box;
+        margin-left: 0;
+        &:before{
+            background: $orange;
+            left: 0;
+            right: 0;
+        }
+    }
+    li{
+        border-right: 1px solid $gris;
+        position: relative;
+        margin: 0;
+        background: #fff;
+
+        display: table-cell;
+        vertical-align: top;
+        &:before{
+            display: none;
+        }
+        &:last-child{
+            &.active{
+                border-right: none;
+            } 
         }
         &.active{
             background: $theme-btn;
             color: #fff;
-            .content-tabs-sale &{
+            .content-tabs-sale & {
                 background: #ef6a2b;
             }
+            .cercle &{
+                background: $orange;
+                z-index: 1;
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: auto;
+                    height: auto;
+                    margin: 0;
+                    background: none;
+                    top: -1px;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    border: 1px solid $orange;
+                    z-index: -1;
+                    background-color: $orange;
+                }
+            }
+            .content-tabs-partner &{
+                background: #d63e37;
+            }
         }
-        &.tab-right{
-            border-right: 0;
-            border-left: 1px solid $gris;
-            float: right;
-        }
+        // &.tab-right{
+        //     border-right: 0;
+        //     border-left: 1px solid $gris;
+        //     float: right;
+        // }
         &.tab-orange{
             .notif{
                 background: #f18832;
@@ -53,6 +126,12 @@
             .content-tabs-sale &{
                 color: #ef6a2b;
             }
+            .content-tabs-partner &{
+                color: #d63e37;
+            }
+            .cercle &{
+                color: $orange;
+            }
         }
     }
     &-indicator{
@@ -69,6 +148,9 @@
                     left: -1px;
                     margin: auto;
                     background: url(../layoutImg/arrows-tab.png) no-repeat;
+                    .content-tabs-sale &{
+                        background-image: url(../layoutImg/arrows-tab2.png);
+                    }
                 }
             }
             &.active{
@@ -88,6 +170,9 @@
             text-decoration: none;
             &:hover, &:focus{
                 color: $theme-btn;
+                .cercle &{
+                    color: $orange;
+                }
             }
         }
         span:not(.notif){
@@ -105,20 +190,69 @@
     }
 }
 
+.content-tabs-sale{
+    .btn-block{
+        &:before, &:after{
+            content: none;
+        }
+    }
+    .tab-content{
+        padding: 20px 320px 50px 60px;
+        ul{
+            line-height: 1em;
+            padding-left: 160px;
+            margin-top: 1.8em;
+
+            li{
+                &:before{
+                    background: #d23a33;
+                    height: 5px;
+                    width: 5px;
+                }
+            }
+        }
+    }
+}
+.wrapper-depot-annonce{
+    padding: 0 70px 0 0;
+    ul{
+        margin: 0;
+        li{
+            margin: 0;
+        }
+    }
+}
+.wrapper-alignment.wrapper-price-argu{
+    table-layout: auto;
+    margin: 0 0 20px 0;
+    .content-align-middle.content-price{
+        white-space: nowrap;
+        padding: 0 28px 0 0;
+    }
+}
 .tab-content{
     padding: 20px $gutter 50px;
     overflow: hidden;
     background: #fff;
+    position: relative;
+    margin: 0 1px 1px 1px;
+    border-bottom: 1px solid $gris;
+    &.no-header{
+        border-top: 1px solid $gris;
+    }
     &-title{
-        padding: 30px 0 12px;
+        padding: 30px 0 10px;
         border-bottom: 1px solid;
         margin: 0 0 2.5em;
+        &.no-margin-bottom{
+            margin-bottom: 0;
+        }
         .h1{
             display: inline-block;
             padding: 0;
             max-width: 80%;
             position: relative;
-            vertical-align: top;
+            //vertical-align: top;
             margin: 0 2.6% 0 0;
             .notif{
                 right: -15px;
@@ -153,6 +287,9 @@
             }
         }
     }
+    .cercle &{
+        min-height: 550px;
+    }
     .block-grey{
         padding-left: $gutter;
         margin-left: -1*$gutter;
@@ -183,9 +320,38 @@
 }
 
 .content-tabs-sale{
-    .btn-block{
-        background: #ef6a2b;
+    .field-content{
+        padding: 50px 70px 90px 70px;
+        .tab-content-title{
+            padding-top: 0;
+            margin: 0 0 35px;
+            font-family: $roboto-cd-bold;
+            font-size: 2.5em;
+            line-height: 1em;
+        }
+        .btn-block:not(.btn-yellow){
+            background: #ef6a2b;
+        }
     }
 }
+.form-contact{
+    padding-top: $gutter;
+}
 
-
+/* tab buy home */
+.wrapper-choices{
+    .field-content{
+        .tab-content-title{
+            padding-top: 0;
+            margin: 0 0 35px;
+            font-family: $roboto-cd-bold;
+            font-size: 2.5em;
+            line-height: 1em;
+            &.searchform{
+                .form-half{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

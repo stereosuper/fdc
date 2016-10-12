@@ -97,6 +97,10 @@
 }
 
 $icons: (
+    star: '\e91e',
+    star-half: '\e91d',
+    star-other-half: '\e91f',
+    tick-rounded: '\e91c',
     lock: '\e90e',
     bulb: '\e90d',
     check: '\e907',
@@ -113,12 +117,19 @@ $icons: (
     tool: '\e903',
     arrow: '\e900',
     error: '\e908',
-    pen: '\e909',
-    trash: '\e90b',
+    pen: '\e905',
+    trash-bin:'\e909',
+    trash-cover: '\e90b',
     plus: '\e90a',
     mail2: '\e90c',
     ding: '\e90f',
-    flash: '\e910'
+    flash: '\e910',
+    photo: '\e90c',
+    pointer: '\e914',
+    cb: '\e915',
+    chq: '\e916',
+    plus2: '\e918',
+    minus: '\e917'
 );
 @each $name, $icon in $icons {
     .icon-#{$name}:before {

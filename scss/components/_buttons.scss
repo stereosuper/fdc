@@ -22,7 +22,35 @@
 		font-size: 18px;
 	}
 }
+.btn-info{
+    &:after{
+    	content: "?";
+    	display: inline-block;
+    	vertical-align: top;
+        height: 15px;
+        width: 15px;
+        border: 2px #c52d38 solid;
+        font-family: $roboto;
+        font-size: 0.7em;
+        padding: 0px 2px;
+        margin-left: 10px;
+        color: #c52d38;
+    }
+}
 
+.btn-photo {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-family: $roboto-cd-bold;
+	letter-spacing: 1px;
+	&:before{
+		font-size: 1.15em;
+		vertical-align: top;
+		margin-right: 5px;
+		content: '\e90c';
+		@include font-icon;
+	}
+}
 .btn-arrow{
 	@extend %btn-arrow-base;
 	@extend %btn-arrow;
@@ -31,6 +59,18 @@
 		width: 15px;
 		height: 11px;
 	}
+
+	&.plain {
+		color:$blanc;
+		background: $theme-gradient-1;
+		display:inline-block;
+		padding: 0.5em 1.8em 0.5em 1em;
+		margin:1em 0;
+		font-size:0.9em;
+		&:after{
+			right: 1.6em;
+		}
+	}
 }
 
 .btn-arrow-back{
@@ -38,24 +78,81 @@
 	@extend %btn-arrow-back;
 }
 
-.btn-pen{
+.btn-print {
 	@extend %btn-arrow-base;
+	&:before{
+		@extend %btn-before;
+		content: '\e913'; // printer
+	}
+}
 
+.btn-heart {
+	@extend %btn-arrow-base;
+	&:before{
+		@extend %btn-before;
+		content: '\e912'; // heart
+		transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+		transition-delay: 0.3s, 0.3s;
+		top:1px;
+		position:relative;
+	}
 	&:after{
 		@extend %btn-after;
+		content: '\e91b'; // heart
+		position: absolute;
+    	left: -4px;
+    	font-size: 12px;
+		transform: scale(1.3);
+		opacity:0;
+		transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+		transition-delay: 0, 0;
+		top:1px;
+	}
+	&.on:before {
+		transform: scale(1.3);
+		opacity:0;
+		transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+		transition-delay: 0s, 0s;
+	}
+	&.on:after {
+		transform: scale(1);
+		opacity:1;
+		transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+		transition-delay: 0.3s, 0.3s;
+	}
+}
 
-		content: '\e909';
+.btn-pen{
+	@extend %btn-arrow-base;
+	&:after{
+		@extend %btn-after;
+		content: '\e905';
 	}
 	&:hover, &:focus{
-		&:after{
+		&:after, &:before{
 			transform: translate3d(0, 0, 0) rotate(-90deg);
 		}
 	}
 	&.btn-no-text{
 		width: 17px;
 	}
+	&.left-icon {
+		&:after{
+			display:none;
+		}
+		&:before{
+			@extend %btn-before;
+			content: '\e905';
+		}
+	}
 }
 
+.btn-pen-orange{
+	color: $orange-btn;
+	&:hover {
+		color: $orange-btn;
+	}
+}
 .btn-cancel{
 	@extend %btn-arrow-base;
 
@@ -73,7 +170,6 @@
 
 .btn-alert{
 	@extend %btn-arrow-base;
-
 	&:before{
 		@extend %btn-before;
 
@@ -89,19 +185,42 @@
 
 .btn-delete{
 	@extend %btn-arrow-base;
-
+	&:before, &:after{
+		text-indent: 0;
+		position: absolute;
+	}
+	&:before{
+		@extend %btn-before;
+		margin: 0;
+		content: '\e90b'; //trash-cover
+		top: 0;
+		left: -20px;
+		font-size: 3.7px;
+		transform-origin: 100% 0%;
+	}
 	&:after{
 		@extend %btn-after;
-
-		content: '\e90b'; //trash
+		content: '\e909';
+		top: 1px;
+		left: -23px;
+		font-size: 12px;
 	}
 	&:hover, &:focus{
-		&:after{
-			transform: translate3d(0, 0, 0) scale(0.95);
+		&:before{
+			transform: translate3d(1px, -3px, 0) rotate(10deg);
 		}
 	}
 	&.btn-no-text{
 		width: 15px;
+		height: 26px;
+		&:before {
+			top:5.5px;
+			left:-0.7px;
+		}
+		&:after{
+			top:8px;
+			left:2px;
+		}
 	}
 }
 
@@ -128,7 +247,7 @@
 	@extend %btn-arrow-base;
 }
 
-.btn-simple{
+.btn-simple,a.btn-simple, button.btn-simple{
 	@include roboto-cd-bold(0.625em);
 
 	letter-spacing: 1px;
@@ -136,12 +255,15 @@
 	text-decoration: none;
 }
 
-.btn-block{
+.btn-underlined,a.btn-underlined, button.btn-underlined{
+	text-decoration: underline;
+}
+
+a.btn-block, button.btn-block, .btn-block {
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
-	overflow: hidden;
 	padding: 13px 13px 12px 13px;
 	@include roboto-cd-bold(0.75em);
 	text-transform: uppercase;
@@ -152,27 +274,6 @@
 	border: none;
 	backface-visibility: hidden;
 	line-height: 1em;
-	&:before, &:after{
-		content: '';
-		display: block;
-		position: absolute;
-		background: rgb(134, 48, 58);
-		transform: rotate(45deg);
-		z-index: -1;
-		opacity: 0.12;
-	}
-	&:before{
-		@include size(45px);
-
-		top: 25px;
-		right: 3px;
-	}
-	&:after{
-		@include size(36px);
-
-		top: -28px;
-		right: 62px;
-	}
 	&.light{
 		background-color: $theme-btn-light;
 	}
@@ -188,42 +289,81 @@
 		padding: 22px 40px;
 		font-size: 1em;
 	}
+	&.has-shadow{
+		box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.22);
+	}
+	&.btn-rouge{
+		.border{
+			border-color: $theme-gradient-1 $theme-gradient-1;
+		}
+	}
+	&.btn-orange{
+		.border{
+			border-color: #de3d25 #de3d25;
+		}
+	}
+	&.btn-orange-light{
+		.border{
+			border-color: #ef6a2b #ef6a2b;
+		}
+		&:hover, &:focus{
+			color: #ef6a2b;
+		}
+	}
+	&.btn-yellow{
+		color:$blanc;
+		.border{
+			border-color: $yellow $yellow;
+		}
+		&:hover, &:focus{
+			color: $yellow;
+		}
+	}
+	&.btn-orange-cercle{
+		color:$blanc;
+		.border{
+			border-color: $orange $orange;
+		}
+		&:hover, &:focus{
+			color: $orange;
+		}
+	}
+	&.btn-white-border{
+		.border{
+			border-color: $blanc $blanc;
+		}
+	}
 	&.btn-alert{
-		padding: 16px 16px 15px 50px;
+		padding: 16px 16px 15px 13px;
 		font-size: 1em;
 		letter-spacing: 0;
 		&:before{
-			@include font-icon;
-
-			content: '\e90f';
+			@extend %btn-before;
+			content: '\e90f'; // ding
+			font-size: 14px;
 			display: inline-block;
 			width: auto;
 			height: 16px;
-			top: -2px;
-			bottom: 0;
-			left: 20px;
+			//top: -2px;
+			//bottom: 0;
+			//left: 20px;
 			right: auto;
+			padding-right: 10px;
 			margin: auto;
 			z-index: auto;
 			opacity: 1;
-			font-size: 18px;
 			background: none;
-			transform: translate3d(0, 0, 0);
+			transform: translate3d(1px, 0, 0);
 			transform-origin: 50% 50%;
-			transition: transform $transition;
-		}
-		&:after{
-			display: none;
+			transition: all $transition;
+			position:relative;
 		}
 		&:hover, &:focus{
 			&:before{
-				transform: translate3d(0, 0, 0) rotate(20deg);
+				transform: translate3d(1px, 2px, 0) rotate(20deg);
+				color: $theme-btn;
+				z-index: 5;
 			}
-		}
-	}
-	&.no-square{
-		&:before, &:after{
-			display: none;
 		}
 	}
 	.wrapper-input-btn &{
@@ -231,12 +371,66 @@
 		top: 0;
 		right: 0;
 	}
-	&:hover, &:focus{
-		color: #fff;
-	}
 	&.right{
 		float: right;
 	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.2);
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+	.border{
+		display: block;
+		position: absolute;
+		width: auto;
+		height: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-sizing: border-box;
+		border: 3px solid $theme-btn;
+		pointer-events: none;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: $blanc;
+			transform: scaleX(0);
+			transform-origin: 0 50%;
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+	.txt-btn{
+		position: relative;
+	}
+	&:hover, &:focus{
+		color: $theme-btn;
+		.border{
+			&:before{
+				transform: scaleX(1);
+			}
+		}
+		&:after{
+			opacity: 1;
+		}
+	}
+}
+
+.btn-align-right, a.btn-align-right, button.btn-align-right{
+	float: right;
+	margin: 0;
 }
 
 /*.btn-block-arrow{
@@ -258,11 +452,27 @@
 	}
 }*/
 
-.btn-orange{
+.btn-rouge, a.btn-rouge, button.btn-rouge{
+	background: $theme-gradient-1;
+}
+
+.btn-orange, a.btn-orange, button.btn-orange{
 	background: #de3d25;
 }
 
-.btn-close{
+.btn-orange-light, a.btn-orange-light, button.btn-orange-light{
+	background: #ef6a2b;
+}
+
+.btn-orange-cercle, a.btn-orange-cercle, button.btn-orange-cercle{
+	background: $orange;
+}
+
+.btn-yellow, a.btn-yellow, button.btn-yellow {
+	background: $yellow;
+}
+
+.btn-close, a.btn-close, button.btn-close{
 	display: block;
 	@include size(58px);
 
@@ -282,7 +492,7 @@
 	}
 }
 
-.btn-deconnexion{
+.btn-deconnexion, a.btn-deconnexion, button.btn-deconnexion{
 	position: relative;
 	@include roboto(0.75em);
 	padding: 0 0 0 12px;
@@ -295,5 +505,132 @@
 		left: 0;
 		margin: -4px 0 0 0;
 		text-decoration: none;
+	}
+}
+
+.option, a.option, button.option {
+	label {
+		display: block;
+		cursor: pointer;
+	}
+	.title-simple{
+	    font-family: $roboto;
+	    font-size: 1em;
+	    letter-spacing: 0;
+	    padding: 17px 0;
+	    &:before{
+	    	//position: absolute;
+	    	//left: -9999px;
+	    }
+	    strong{
+			display: block;
+			font-family: $roboto-cd-bold;
+			font-size: 1.25em;
+	    }
+	}
+	.p{
+		padding: 0;
+		width: auto;
+		padding-left: 20px;
+	}
+	#checkbox {
+		position: absolute;
+		left: -9999em;
+		&:checked {
+			+ label {
+				color: #fff;
+				background: #ee5f20;
+			}
+		}
+	}
+	input[type=checkbox] + label {
+	    padding-left: 20px;
+	}
+}
+
+.txt-middle{
+	bottom: 2px;
+}
+
+.btn-plus, a.btn-plus, button.btn-plus {
+	@extend %btn-arrow-base;
+
+	&:before{
+		content: '\e918';
+		@include font-icon;
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		position:relative;
+		top:-.1em;
+	}
+}
+
+.btn-minus, a.btn-minus, button.btn-minus {
+	@extend %btn-arrow-base;
+
+	&:before{
+		content: '\e917';
+		@include font-icon;
+	}
+}
+
+.btn-q-a{
+	display: block;
+	font-family: $roboto-cd-bold;
+	font-size: 1.8rem;
+	padding: 22px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $blanc;
+	background: rgb(229, 83, 47);
+	border: 4px solid rgb(229, 83, 47);
+	.content-btn{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		padding: 0 0 0 20px;
+		&:before{
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: opacity 0.1s ease-in-out;
+		}
+		&:after{
+			content: '\e91c';
+			@include font-icon;
+			font-size: 12px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin: -7px 0 0 0;
+			opacity: 0;
+			transition: opacity 0.1s ease-in-out;
+		}
+	}
+	.underline{
+		box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5);
+	}
+	&:hover, &.valid{
+		background: $blanc;
+		color: rgb(229, 83, 47);
+	}
+	&.valid{
+		padding: 12px 20px;
+		.content-btn{
+			&:before{
+				opacity: 0;
+			}
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+	&.invalid{
+		padding: 12px 20px;
+		background: $blanc;
+		color: rgb(214, 214, 218);
+		border-color: rgb(214, 214, 218);
 	}
 }

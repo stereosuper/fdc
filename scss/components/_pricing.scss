@@ -1,0 +1,225 @@
+
+.big-price{
+    display: block;
+    background: #f5f5f6;
+    border: 1px solid #d7d7d7;
+    padding: 11px 10px;
+    width: auto;
+    height: 100%;
+    font-family: $roboto-cd;
+    font-size: 2.5em;
+    line-height: 1em;
+    span{
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1em;
+    }
+    sup{
+        display: inline-block;
+        vertical-align: top;
+        font-family: $roboto-cd-bold;
+        font-size: 0.7em;
+        line-height: 1em;
+        margin: 0 0 0 2px;
+    }
+}
+
+.field-content .table-offres-tarifs{
+    table-layout: fixed;
+    width: 100%;
+    width: calc(100% + 30px);
+    margin: 0 0 0 -15px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 15px;
+    tr{ // 1ere ligne
+        td{
+            border: 1px solid red;
+            &.no-border{
+                border: 0;
+            }
+            &.super-border{
+                border: 6px #000 solid;
+                z-index:1;
+                position:relative;
+                overflow:hidden; /* ie10 sa mère */
+                a {
+                    text-decoration:none;
+                    display:block;
+                    width:100%;
+                    height:100%;
+                    margin:0;
+                    padding:1.2em;
+                    &:before {
+                      content:'';
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      z-index:-1;
+                      bottom: -20px; /* ie10 sa mère */
+                      transform: scaleX(0);
+                      transform-origin:0;
+                      transition: .6s ease-in-out;
+                    }
+                    .btn-arrow {
+                        transition: .6s ease-in-out;
+                    }
+                    &:hover, &:focus{
+                        color: $blanc;
+                        &:before{
+                            transform: scaleX(1);
+                            transition: .3s ease-in-out;
+                        }
+                        .btn-arrow {
+                            background:$blanc;
+                            transition: .3s ease-in-out;
+                        }
+                    }
+                }
+            }
+            &.dark-red{
+                border-color: $theme-gradient-1;
+                a {
+                    color: $theme-gradient-1;
+                    &:before {
+                        background: $theme-gradient-1;
+                    }
+                    .btn-arrow {
+                        background:$theme-gradient-1;
+                    }
+                    &:hover, &:focus {
+                        .btn-arrow {
+                            color:$theme-gradient-1;
+                        }
+                    }
+                }
+            }
+            &.red{
+                border-color: $theme-gradient-3;
+                a {
+                    color: $theme-gradient-3;
+                    &:before {
+                        background: $theme-gradient-3;
+                    }
+                    .btn-arrow {
+                        background:$theme-gradient-3;
+                    }
+                    &:hover {
+                        .btn-arrow {
+                            color:$theme-gradient-3;
+                        }
+                    }
+                }
+            }
+            &.orange{
+                border-color:$theme-gradient-4;
+                a {
+                    color: $theme-gradient-4;
+                    &:before {
+                        background: $theme-gradient-4;
+                    }
+                    .btn-arrow {
+                        background:$theme-gradient-4;
+                    }
+                    &:hover {
+                        .btn-arrow {
+                            color:$theme-gradient-4;
+                        }
+                    }
+                }
+            }
+            &.orange-light{
+                border-color: $theme-gradient-5;
+                a {
+                    color: $theme-gradient-5;
+                    &:before {
+                        background: $theme-gradient-5;
+                    }
+                    .btn-arrow {
+                        background:$theme-gradient-5;
+                    }
+                    &:hover {
+                        .btn-arrow {
+                            color:$theme-gradient-5;
+                        }
+                    }
+                }
+            }
+            &.deep-blue{
+                border-color: $deep-blue;
+            }
+            &.option {
+                background:#fffcea;
+                text-align:left;
+                padding:0.8em 0.5em 0.8em 9em;
+                position:relative;
+                .option-title {
+                    position:absolute;
+                    text-transform:uppercase;
+                    left:1.4em;
+                    font-size:1em;
+                    letter-spacing:1px;
+                    top:0;
+                    height:30px;
+                    margin: auto 0;
+                    bottom:0;
+                    display:block;
+                    width:100px;
+                    padding:0.2em 0;
+                    text-align:center;
+                    border-top:2px solid $deep-blue;
+                    border-bottom:2px solid $deep-blue;
+                }
+            }
+            .undercover{
+                text-transform: uppercase;
+                font-family: $roboto-cd-bold;
+                border-top: 2px solid;
+                border-bottom: 2px solid;
+                padding: 0 20px;
+                letter-spacing:2px;
+            }
+            p, li {
+                margin: 0;
+                color: inherit;
+                &.h1{
+                    margin: 0.2em auto -0.1em;
+                    letter-spacing:-1px;
+                    font-size:2em;
+                }
+                &.super-huge{
+                    line-height: 0.9;
+                    display:block;
+                    margin:0 auto 0.15em;
+                    letter-spacing:-5px;
+                }
+            }
+            &.big-pricing {
+                width: 40%;
+                .undercover{
+                    font-size:1.2em;
+                }
+                p {
+                    &.h1{
+                        font-size:2.5em;
+                        margin-bottom:0.2em;
+                    }
+                    &.super-huge{
+                        font-size:9em;
+                        margin-bottom:0.1em;
+                    }
+                }
+                .btn-arrow {
+                    padding: 0.65em 1.8em 0.7em 1em;
+                    font-size:1em;
+                }
+            }
+
+        }
+
+        td.no-border {
+           padding: 5px 0 30px 0;
+        }
+    }
+}

@@ -12,6 +12,10 @@ $txt: rgb(40, 44, 52);
 $bleu-link: rgb(115, 146, 218);
 $theme-btn: rgb(198, 51, 62);
 $theme-btn-light: rgb(222, 83, 64);
+$orange: rgb(255, 137, 37);
+$orange-btn: rgb(241, 136, 50);
+$yellow: #f18832;
+$deep-blue: rgb(94, 98, 110);
 
 $theme-gradient-1: rgb(197, 45, 56);
 $theme-gradient-2: rgb(214, 63, 57);
@@ -27,6 +31,14 @@ $theme2-gradient-4: rgb(241, 104, 30);
 $theme2-gradient-5: rgb(242, 130, 30);
 
 $error: #ff0000;
+$valid: #76a626;
+
+$black-less-masking: rgba(0,0,0,0.3);
+$black-masking: rgba(0,0,0,0.7);
+$black-more-masking: rgba(0,0,0,0.8);
+
+// Transition delay list
+$tps-transition-delay: 0.3s;
 
 
 // Grid
@@ -50,3 +62,10 @@ $roboto-cd-bold: 'roboto_condensedbold', $roboto-bold;
 $roboto-cd-bold-it: 'roboto_condensedbold_italic', $roboto-it;
 $roboto-cd: 'roboto_condensedregular', $roboto;
 $roboto-cd-it: 'roboto_condensedregular_italic', $roboto-it;
+
+// Background Cercle My Forum
+
+$backgroundCercle: #b2232e url('../layoutImg/bgCercle.png') fixed no-repeat 55% 0;
+$backgroundCercleHome: #b2232e url('../layoutImg/bgCercleHome.jpg') fixed no-repeat 95% 63%;
+
+

@@ -20,13 +20,13 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li>
-                            <a href='creationCompte.php'>1<span>. Bienvenue !</span></a>
+                            <a href='creationCompte.php'><span>1. Bienvenue !</span></a>
                         </li><li>
-                            <a href='creationCompte2.php'>2<span>. Mes informations</span></a>
+                            <a href='creationCompte2.php'><span>2. Mes informations</span></a>
                         </li><li>
-                            <a href='creationCompte3.php'>3<span>. Je recherche...</span></a>
+                            <a href='creationCompte3.php'><span>3. Je recherche...</span></a>
                         </li><li class='active'>
-                            4<span>. Mes besoins</span>
+                            <span>4. Mes besoins</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
@@ -85,7 +85,7 @@
                                     </fieldset>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge no-margin'>Valider</button>
+                            <button type='submit' class='btn-block huge no-margin'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </form>
                     </div>
                 </div>

@@ -1,0 +1,688 @@
+/* Cercle myForum specific style */
+
+body{
+	&.cercle{
+		&.compte{
+			.breadcrumb{
+				margin-top: 53px;
+			}
+			.content-tabs{
+				margin-top: 30px;
+			}
+		}
+		&.home-cercle{
+			@include bgCercleHome;
+			height: auto;
+			min-height: 100%;
+			#main{
+				padding-bottom: 230px;
+			}
+			#wrapper-page{
+				min-height: 100vh;
+			}
+		}
+		#burger{
+			display: inline-block;
+		}
+		#logo{
+			width: 58px;
+			&:after{
+				display: none;
+			}
+		}
+		&.sidebar-links-open, &.nav-header-open{
+			#logo{
+				width: 210px;
+				&:after{
+					display: block;
+					background-position: 80px 9px;
+				}
+			}
+		}
+		.sidebar{
+			.title-sidebar{
+				background-color: $orange;
+			}
+		}
+		#sidebar-account{
+			.btn-close{
+				background-color: #cb5e31;
+			}
+		}
+		.full-circle{
+		    list-style:none;
+		    margin:0 -25px 0 -20px;
+		    padding:0;
+		    li {
+		        list-style:none;
+		        margin:0;
+		        padding:120px 0 0 40px;
+		        box-sizing: border-box;
+		        display:inline-block;
+		        position:relative;
+		        width:136px;
+		        color:$blanc;
+		        transform: rotate(-40deg) translateZ(0) scale(1.01);
+		        backface-visibility: hidden;
+		        z-index:1;
+		        font-size:0.8em;
+		        transition: transform $transition;
+		        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+		        &:before {
+		            content:" ";
+		            margin:0;
+		            background-repeat:no-repeat;
+		            background-position:50% 0;
+		            background-size:cover;
+		            position:absolute;
+		            left:0;
+		            right:0;
+		            top:0;
+		            bottom:0;
+		            transform:rotate(53deg) translateZ(0) scale(1.01);
+		        	backface-visibility: hidden;
+		            z-index:-1;
+		            transition: all $transition;
+		        }
+		        &.buy-step {
+        			width: 126px;
+        			padding: 108px 0 0 37px;
+                	&:before {
+                		top: 6px;
+                		left: 6px;
+                		bottom: 6px;
+                		right: 6px;
+                    	background-image:url('../layoutImg/cercle/losanges/acheter.png');
+                    }
+		        }
+		        &.finance-step:before {
+		            background-image:url('../layoutImg/cercle/losanges/financer.png');
+		        }
+		        &.ensure-step{
+	    			width: 104px;
+	    			padding: 85px 0 0 28px;
+	            	&:before {
+	            		top: 8px;
+	            		left: 8px;
+	            		bottom: 8px;
+	            		right: 8px;
+	                	background-image:url('../layoutImg/cercle/losanges/assurer.png');
+	                }
+		        }
+		        &.equip-step{
+        			width: 126px;
+        			padding: 108px 0 0 37px;
+                	&:before {
+                		top: 6px;
+                		left: 6px;
+                		bottom: 6px;
+                		right: 6px;
+                    	background-image:url('../layoutImg/cercle/losanges/equiper.png');
+                    }
+		        }
+		        &.staff-step:before {
+		            background-image:url('../layoutImg/cercle/losanges/recruter.png');
+		        }
+		        &.manage-step {
+        			width: 126px;
+        			padding: 108px 0 0 37px;
+                	&:before {
+                		top: 6px;
+                		left: 6px;
+                		bottom: 6px;
+                		right: 6px;
+                    	background-image:url('../layoutImg/cercle/losanges/gerer.png');
+                    }
+		        }
+		        &.sell-step{
+        			width: 104px;
+        			padding: 85px 0 0 28px;
+                	&:before {
+                		top: 8px;
+                		left: 8px;
+                		bottom: 8px;
+                		right: 8px;
+                    	background-image:url('../layoutImg/cercle/losanges/vendre.png');
+                    }
+		        }
+		    }
+			&.wave {
+			    position:relative;
+			    transition: 0 none;
+			    li {
+			        position:absolute;
+			        transition: 0 none;
+			        &.buy-step {
+			            left:173px;
+			            top:-8px;
+			        }
+			        &.finance-step {
+			            left: 325px;
+			            top: -61px;
+			        }
+			        &.ensure-step {
+			            left:624px;
+			            top:-178px;
+			        }
+			        &.equip-step {
+			            left:693px;
+			            top:-318px;
+			        }
+			        &.staff-step {
+			            left:734px;
+			            top:-468px;
+			        }
+			        &.manage-step {
+			            left:470px;
+			            top:-123px;
+			        }
+			        &.sell-step {
+			            left:840px;
+			            top:-530px;
+			        }
+			    }
+			}
+		}
+		.content-tabs{
+			background-color: $gris-bg;
+		}
+	}
+}
+
+.presentation-cercle{
+	padding: 60px 0 0 0;
+	color: $blanc;
+	h1{
+		padding: 0;
+	}
+}
+.desc-cercle{
+	padding: 0 245px 0 0;
+}
+.login-cercle{
+	width: 345px;
+	padding: 120px 0 0 0;
+}
+.login-infos{
+	font-family: $roboto-cd-bold;
+	font-size: 1.75em;
+	margin-bottom: 30px;
+	> div{
+		font-family: $roboto-medium;
+		font-size: 0.643em;
+		color: $orange;
+	}
+}
+.content-login-cercle{
+	padding: 40px;
+	background-color: rgba($noir, 0.15);
+	label{
+		font-size: 1em;
+	}
+	.btn-simple{
+		color: $blanc;
+		font-size: 0.75em;
+		opacity: 0.7;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	input[type=text]{
+		max-width: 100%;
+	}
+	.btn-block{
+		background: $orange;
+		.border{
+			border-color: $orange;
+		}
+		&:hover, &:focus{
+			color: $orange;
+		}
+	}
+}
+
+.squares-cercle{
+	display: block;
+	width: 894px;
+	height: 857px;
+	background: url('../layoutImg/squares-cercle.png') no-repeat 0 0;
+	background-size: 894px 857px;
+	position: absolute;
+	top: -20px;
+	left: -5px;
+	pointer-events: none;
+}
+
+.header-cercle{
+	width: 100%;
+	height: 298px;
+	@include bgCercleHome;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+	&.small{
+		height: 268px;
+	}
+	.little-squares {
+	    margin:0;
+	    padding:0;
+	    li {
+	        margin:0;
+	        padding:0;
+	        list-style:none;
+	        position:absolute;
+	        background:$blanc;
+	        left: 50%;
+	        top: 50%;
+	        &:before {
+	            display:none;
+	        }
+	        &:nth-child(1) {
+	            width:17px;
+	            height:17px;
+	            transform:rotate(-21deg);
+	            margin-left: 47px;
+	            margin-top: 107px;
+	        }
+	        &:nth-child(2) {
+	            width:17px;
+	            height:17px;
+	            transform:rotate(-21deg);
+	            margin-left: 450px;
+	            margin-top: 84px;
+	        }
+	        &:nth-child(3) {
+	            width:10px;
+	            height:10px;
+	            transform:rotate(-21deg);
+	            margin-left: 577px;
+	            margin-top: 280px;
+	            background:$yellow;
+	        }
+	        &:nth-child(4) {
+	            width:17px;
+	            height:17px;
+	            transform:rotate(-21deg);
+	            margin-left: 638px;
+	            margin-top: 214px;
+	        }
+	        &:nth-child(5) {
+	            width:10px;
+	            height:10px;
+	            transform:rotate(-21deg);
+	           margin-left: 672px;
+	           margin-top: 62px;
+	            background:$yellow;
+	        }
+	    }
+	}
+}
+
+.wrapper-rappel{
+	width: 300px;
+	padding: 0 0 0 40px;
+}
+.content-rappel{
+	background: rgb(51, 61, 71);
+	form{
+		padding: 25px 30px 34px 30px;
+		color: $blanc;
+	}
+	button{
+		margin: 0;
+	}
+	textarea {
+		height: 100px!important;
+	    resize: none;
+	}
+}
+.header-rappel{
+	padding: 20px 30px 60px 30px;
+	height: 168px;
+	background: url('../layoutImg/appel-cercle.jpg') no-repeat 50% 100%;
+	background-size: auto 100%;
+	background-size: cover;
+	h2{
+		font-family: $roboto-cd-bold;
+		font-size: 1.875em;
+		margin: 0;
+		line-height: 1;
+	}
+}
+
+.wrapper-cercle-entreprise{
+	.select{
+		width: 100%;
+		max-width: 300px;
+	}
+	&.presentation{
+		background: $blanc;
+		border: 1px solid rgb(219, 219, 219);
+		padding: 57px 63px;
+		.wrapper-partner-card{
+			.content-partner-card{
+				border-bottom: none;
+			}
+			h3{
+				margin: 1.4em 0 0.5em;
+			}
+		}
+		.wrapper-desc-partner{
+			h3{
+				transform: translateX(0);
+			}
+		}
+		.bloc-logo{
+			margin: 0;
+		}
+		.infos-static{
+			display: block;
+		}
+	}
+}
+
+.wrapper-partner-card{
+	width: 354px;
+	padding: 0 54px 0 0;
+	.content-partner-card{
+		border: 2px solid rgb(219, 219, 219);
+		padding: 28px 26px;
+		label{
+			padding-left: 10px;
+		}
+		fieldset{
+			form.form-disabled &{
+				display: none;
+			}
+		}
+	}
+	.select{
+		form.form-disabled &{
+			display: none;
+		}
+	}
+	h3{
+		color: $txt;
+		margin: 2em 0 1em 0;
+		padding: 0;
+	}
+	.footer-partner-card{
+		border-left: 2px solid rgb(219, 219, 219);
+		border-right: 2px solid rgb(219, 219, 219);
+		border-bottom: 2px solid rgb(219, 219, 219);
+		padding: 32px 26px;
+		background: #f4f5f8;
+		text-align: center;
+		a.btn-block{
+			width: 100%;
+			padding: 21px 13px;
+			font-size: 1em;
+			max-width: 244px;
+		}
+	}
+}
+.wrapper-desc-partner{
+	h3{
+		color: $txt;
+		padding: 0;
+		transform: translateX(25px);
+		transition: transform 0.3s ease-in-out;
+		form.form-disabled &{
+			transform: translateX(0);
+		}
+	}
+	textarea{
+		width: 100%;
+		max-width: 100%;
+		resize: none;
+		color: $txt;
+		&.big{
+			height: 460px;
+			margin: 0 0 28px 0;
+			padding: 20px 25px;
+		}
+		&:disabled{
+			padding: 0;
+			border: none;
+			box-shadow: none;
+			outline: none;
+			color: $txt;
+			color: $txt!important;
+			opacity: 1;
+			-webkit-text-fill-color: $txt; 
+		}
+	}
+	.btn-block{
+		margin: 30px 0 0 0;
+	}
+}
+
+.tags{
+	display: block;
+	margin: 0 0 20px 0;
+	padding: 0;
+	> li{
+		display: inline-block;
+		vertical-align: top;
+		margin: 4px 6px 4px 0;
+		&:before{
+			display: none;
+		}
+	}
+	.tag{
+		display: block;
+		position: relative;
+		padding: 4px 28px 4px 10px;
+		background: rgb(234, 236, 241);
+		border: 1px solid rgb(198, 199, 204);
+		border-radius: 4px;
+		color: $txt;
+		text-decoration: none;
+		font-family: $roboto-bold;
+		font-size: 0.875em;
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+		&:before{
+			content: '\e906';
+			@include font-icon;
+			font-size: 11px;
+			position: absolute;
+			right: 7px;
+			top: 50%;
+			margin-top: -5px;
+		}
+	}
+	form.form-disabled &, .wrapper-cercle-entreprise.presentation &{
+		margin-bottom: 0;
+		.tag{
+			cursor: auto;
+			background: none;
+			border: none;
+			padding: 0;
+			font-family: $roboto;
+			&:before{
+				display: none;
+			}
+			&:after{
+				content: '•';
+				color: $theme-gradient-1;
+				margin-left: 6px;
+			}
+		}
+		> li{
+			&:last-child{
+				.tag{
+					&:after{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.bloc-logo{
+	margin: 0 0 30px 0;
+	text-align: center;
+	position: relative;
+	padding: 0 0 25px 0;
+	form.form-disabled &{
+		margin-bottom: 0;
+	}
+	&.no-img{
+		button{
+			position: absolute;
+			top: 0;
+			bottom: 25px;
+			left: 0;
+			margin: auto;
+			width: 100%;
+			text-align: center;
+		}
+	}
+	button{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		form.form-disabled &{
+			display: none;
+		}
+	}
+}
+
+.infos-static{
+	display: none;
+	margin: 0;
+	padding: 0;
+	form.form-disabled &{
+		display: block;
+	}
+	> li{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 10px 0 0;
+		padding: 0;
+		font-family: $roboto-cd-bold;
+		&:before{
+			display: none;
+		}
+		&:after{
+			content: '/';
+			color: $theme-gradient-1;
+			margin-left: 8px;
+		}
+		&:last-child{
+			margin-right: 0;
+			&:after{
+				display: none;
+			}
+		}
+		&.big{
+			display: block;
+			margin-right: 0;
+			font-size: 1.5em;
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
+
+.company-refs{
+	display: block;
+	margin: 0;
+	padding: 0;
+	> li{
+		display: block;
+		margin: 0 0 30px 0;
+		padding: 0;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:before{
+			display: none;
+		}
+	}
+	.img-company-ref{
+		text-align: center;
+		width: 134px;
+		position: relative;
+		button{
+			margin-top: 5px;
+			form.form-disabled &{
+				display: none;
+			}
+		}
+		&.no-img{
+			button{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+	.txt-company-ref{
+		padding: 0 0 0 44px;
+		textarea{
+			height: 94px;
+		}
+	}
+}
+
+.title-stars-rating{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 12px;
+}
+.stars-rating{
+	display: inline-block;
+	vertical-align: top;
+	margin: 1.6em 0 0 0;
+	.icon-star{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		font-size: 20px;
+		margin: 0 2px;
+		width: 20px;
+		height: 20px;
+		&.full{
+			color: #f18832;
+		}
+		&.half{
+			&:before{
+				content: '\e91d';
+				@include font-icon;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #f18832;
+			}
+			&:after{
+				content: '\e91f';
+				@include font-icon;
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0.5px;
+			}
+		}
+	}
+}
+
+.retour-small{
+	margin: 10px 0 50px 0;
+	padding: 0 8px;
+	a.btn-arrow-back{
+		font-size: 0.75em;
+	}
+}

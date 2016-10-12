@@ -20,13 +20,13 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li>
-                            <a href='creationCompte.php'>1<span>. Bienvenue !</span></a>
+                            <a href='creationCompte.php'><span>1. Bienvenue !</span></a>
                         </li><li>
-                            <a href='creationCompte2.php'>2<span>. Mes informations</span></a>
+                            <a href='creationCompte2.php'><span>2. Mes informations</span></a>
                         </li><li class='active'>
-                            3<span>. Je recherche...</span>
+                            <span>3. Je recherche...</span>
                         </li><li>
-                            <a href='creationCompte4.php'>4<span>. Mes besoins</span></a>
+                            <a href='creationCompte4.php'><span>4. Mes besoins</span></a>
                         </li>
                     </ul>
                     <div class='tab-content'>
@@ -209,7 +209,7 @@
                                     </select>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge'>Valider</button>
+                            <button type='submit' class='btn-block huge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                             <a href='#' class='btn-arrow small'>Remplir plus tard</a>
                         </form><div class='map-container' id='mapForm'>
                             <div id='mapFormMetropole' class='map-form active'>

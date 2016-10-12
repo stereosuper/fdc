@@ -6,7 +6,7 @@
 
 .indic-pub{
 	color: rgb(205, 205, 210);
-	@include roboto-cd-italic(0.875em);
+	@include roboto-cd-bold-italic(0.875em);
 	transform: translateY(-50%) rotate(-90deg);
 	position: absolute;
 	top: 50%;
@@ -19,4 +19,189 @@
 	height: 90px;
 	background-color: #000;
 	margin: 0 auto;
+}
+
+.wrapper-link-cercle{
+	padding: 35px 30px;
+}
+
+.link-cercle{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	background: linear-gradient(to bottom, rgb(178, 35, 46) 0%, rgb(157, 26, 34) 100%);
+	z-index: 1;
+	padding: 24px 30px 80px 30px;
+	display: block;
+	color: $blanc;
+	text-decoration: none;
+	.rect{
+		display: block;
+		position: absolute;
+		transform: rotate(40deg);
+		&:nth-child(1){
+			@include size(20px);
+			background-color: $blanc;
+			top: 20px;
+			left: 3px;
+		}
+		&:nth-child(2){
+			@include size(10px);
+			background-color: rgb(243, 151, 57);
+			top: 70px;
+			right: 10px;
+		}
+		&:nth-child(3){
+			@include size(16px);
+			background-color: $blanc;
+			top: 114px;
+			right: 45px;
+		}
+		&:nth-child(4){
+			@include size(12px);
+			background-color: rgb(243, 151, 57);
+			top: 265px;
+			left: 20px;
+		}
+		&:nth-child(5){
+			@include size(16px);
+			background-color: $blanc;
+			top: 312px;
+			left: 40px;
+		}
+	}
+	&:before, &:after{
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: -1;
+	}
+	&:before{
+		top: -450px;
+		left: -142px;
+		@include size(526px);
+		transform: rotate(40deg);
+		background-color: rgb(186, 39, 51);
+		box-shadow: 0px 1px 6px 0px rgb(166, 29, 39);
+	}
+	&:after{
+		top: -134px;
+		left: 35px;
+		@include size(200px);
+		transform: rotate(40deg);
+		background-color: rgb(199, 47, 62);
+		box-shadow: 0px 1px 6px 0px rgb(182, 37, 47);
+	}
+	.illus-cercle{
+		position: absolute;
+		top: 71px;
+		left: -44px;
+	}
+	.logo-cercle{
+		margin-bottom: 60px;
+	}
+	.txt-link{
+		@include roboto-medium(0.938em);
+		display: block;
+		margin: 0;
+		line-height: 1.4em;
+	}
+	.pseudo-link{
+		display: block;
+		@include roboto-medium(0.938em);
+		color: rgb(243, 157, 60);
+		text-decoration: underline;
+	}
+	.service{
+		display: inline-block;
+		vertical-align: top;
+		background-color: $blanc;
+		color: rgb(157, 26, 34);
+		text-transform: uppercase;
+		padding: 2px 3px;
+		@include roboto-bold(0.938em);
+		transform: rotate(-10deg);
+		position: absolute;
+		bottom: 20px;
+		right: 30px;
+		strong{
+			display: block;
+			@include roboto-bold(1.15em);
+		}
+	}
+	&:hover, &:focus{
+		color: $blanc;
+	}
+}
+
+.wrapper-pub-pack{
+    width: 208px;
+    position: relative;
+}
+.pub-pack{
+    display: block;
+    background: url('../layoutImg/pack-annonces.jpg') no-repeat 0 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 10px;
+    color: $txt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid $gris;
+    transition: $transition;
+    .small-txt{
+        display: block;
+        font-family: $roboto-cd;
+        font-size: 0.875em;
+        margin: 0 0 4px 0;
+    }
+    .big-txt{
+        display: block;
+        font-family: $roboto-cd;
+        font-size: 2.125em;
+        line-height: 0.9em;
+        color: rgb(227, 77, 26);
+        transition: color 0.3s ease-in-out;
+        .icon-arrow{
+            display: inline-block;
+            font-size: 9px;
+            vertical-align: middle;
+            position:relative;
+            top:-.1em;
+            margin: 0 0 0 6px;
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+    &:focus, &:hover{
+        color: mix(white, $bleu-link, 30%);
+        .big-txt{
+            color: mix(white, $bleu-link, 30%);
+            .icon-arrow{
+                transform: translateX(10px);
+            }
+        }
+    }
+}
+
+.wrapper-pub.pub-right{
+    width: 120px;
+    margin:0;
+    .pub{
+        margin-left: 35px;
+        width: 120px;
+        height: 600px;
+    }
+    .indic-pub{
+        width:120px;
+        text-align:center;
+        transform: translateY(0) rotate(0);
+        top: -20px;
+        left: 0;
+    }
 }

@@ -1,0 +1,233 @@
+/* tab paiement vente */
+
+.content-sale-paiement{
+    position: relative;
+    padding-bottom: 60px;
+    .orange-txt{
+        font-size: 0.59em;
+        vertical-align: middle;
+    }
+    .paiement-block{
+        position: relative;
+        margin: 10px 0 4.3em;
+        clear: both;
+        .btn-arrow{
+            margin-left: 15px;
+            position: relative;
+        }
+        .paiement-list{
+            line-height: 1.5;
+            padding-left: 0;
+            margin-bottom: 0;
+            li{
+                &:before{
+                    content: none;
+                }
+                border: 2px #FFF solid;
+                margin: 0;
+                .recap{
+                    background: #f5f5f6;
+                    padding: 25px 240px 25px 30px;
+                    position: relative;
+                    .title-simple{
+                        font-size: 1.5em;
+                    }
+
+                    .right{
+                        height: 27px;
+                        position: absolute;
+                        right: 20px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        font-size: 1.25em;
+                    }
+                    .btn-plus{
+                        margin-left: 15px;
+                    }
+                    .btn-cancel{
+                        font-size: 0.7em;
+                        margin-left: 10px;
+                        vertical-align: baseline;
+                    }
+                }
+            }
+        }
+        .total{
+            position: relative;
+            margin: -20px 0 0 480px;
+            ul{
+                padding-left: 0;
+                margin-top: 20px;
+            }
+
+            li{
+                margin: 0;
+                &:before{
+                    content: none;
+                }
+            }
+            .recap{
+                padding: 13px 100px 13px 20px;
+                position: relative;
+            }
+            .right{
+                height: 27px;
+                position: absolute;
+                right: 20px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+    p{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        font-size: 1em;
+    }
+    .paiement-block{
+        .border-top{
+            border-top: 1px #000 solid;
+        }
+        .credit{
+            margin: 40px 0 30px;
+            p{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .big-txt{
+                padding: 0 5px;
+            }
+            .btn-arrow{
+                margin-top: 3px;
+                vertical-align: middle;
+            }
+        }
+        &.small-margin-bottom{
+            margin-bottom: 3.3em;
+        }
+    }
+
+    .paiement-option{
+        position: relative;
+
+       .option{
+           width: 50%;
+           display: inline-block;
+           vertical-align: middle;
+           &.option-left{
+                padding-right: 10px;
+            }
+            &.option-right{
+                padding-left: 10px;
+            }
+        }
+        &.big-margin-bottom{
+            margin-bottom: 2.3em;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+        .detail-paiement{
+            margin-bottom: 90px;
+        }
+    }
+    .grey{
+        position: relative;
+        .btn-align-right{
+            vertical-align: middle;
+            float: none;
+            margin-left: 30px;
+        }
+    }
+    .wrapper-pay{
+        p{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .content-chq{
+        margin-bottom: 60px;
+    }
+}
+
+.grey{
+    color: #9b9b9c;
+}
+.grey-border{
+    color: #9b9b9c;
+    border: 1px #9b9b9c solid;
+}
+
+.big-txt{
+    font-family: $roboto-bold;
+    font-size: 1.25em;
+}
+
+/* achat crédits recap */
+.content-sale-paiement{
+    .no-padding{
+        padding: 0;
+        .h1{
+            margin-bottom: 10px;
+        }
+    }
+    header p.right-head {
+        float:right;
+        i{
+            margin-right: 7px;
+        }
+    }
+}
+
+.detail-paiement{
+    li{
+        &:before{
+            display: none;
+        }
+    }
+    > li{
+        display: block;
+        margin-bottom: 23px;
+        &:nth-child(3){
+            margin-bottom: 60px;
+        }
+        ul{
+            display: block;
+            margin-bottom: 1.4em;
+            // colonnes
+            > li{
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+                margin-bottom: 0;
+                &:first-child{
+                    text-align: right;
+                    padding-right: 27px;
+                }
+                &:last-child{
+                    padding-left: 27px;
+                }
+            }
+        }
+    }
+}
+
+.paiement-type input[type=radio].invisible + label {
+    transition: $transition;
+    cursor:pointer;
+    .visu-type:after {
+        transition: $transition;
+    }
+    &:hover {
+        border-color: #ee5f20;
+        .visu-type:after {
+            background: #ee5f20;
+        }
+    }
+}

@@ -17,6 +17,10 @@ html{
     color: $txt;
     min-height: 100%;
     position: relative;
+    &.full-height{
+        min-height: 0;
+        height: 100%;
+    }
 }
 
 body{
@@ -38,6 +42,20 @@ h1, h2, h3, h4, h5, h6{
 h1{
   margin: 0.13em 0 0.85em;
   padding: 0 $gutter;
+  .cercle &{
+      margin-bottom: 0.3em;
+      color: $blanc;
+      +p{
+        margin-top: 0;
+        color: $blanc;
+        .home-cercle &{
+            margin-top: 1.55em;
+        }
+      }
+      .home-cercle &{
+        margin-bottom: 0.85em;
+      }
+  }
   &.big{
       font-size: 4.063em;
       text-align: center;
@@ -45,14 +63,27 @@ h1{
   }
 }
 
+.h1{
+    @include roboto-cd-bold(1em);
+    font-size: 2.5em;
+    color: $txt;
+    line-height: 1;
+}
+
 h2{
-    font-size: 1.25em;
-    padding: 2em 0 0.5em;
-    margin: 0 0 1em;
-    color: $theme-rouge-title;
+    line-height: 1.5;
+    margin: 1.55em 0;
+    padding: 0;
+    @include roboto(1em);
+    //font-size: 1.25em;
+    //padding: 2em 0 0.5em;
+    //margin: 0 0 1em;
+    //color: $theme-rouge-title;
     &.h1{
+        @include roboto-cd-bold(1em);
         font-size: 2.5em;
         color: $txt;
+        line-height: 1;
     }
     &.inline-b{
         padding-right: 10px;
@@ -61,19 +92,50 @@ h2{
         padding: 0;
         color: $txt;
     }
+    #main:not(.seo-style) .content-default &{
+        @include roboto-cd-bold(1.25em);
+        padding: 2em 0 0.5em;
+        margin: 0 0 1em;
+        color: $theme-rouge-title;
+    }
+}
+
+.title-zone{
+    @include roboto-cd-bold(2.5em);
+    &.padding-grid{
+        padding: 0 118px;
+    }
+    &.inline-b{
+        padding-right: 10px;
+    }
+    &.small{
+        font-size: 1.25em;
+    }
 }
 
 h3{
-    font-size: 1.1em;
-    margin: 1.5em 0 1em;
-    line-height: 1em;
+    font-size: 1.25em;
+    padding: 2em 0 0.5em;
+    margin: 0 0 1em;
+    color: $theme-rouge-title;
+    &.h3{
+        padding: 0;
+    }
     &.h2{
         font-size: 1.25em;
         margin: 0;
     }
+    &.small{
+        @include roboto(1em);
+        color: $txt;
+    }
+    #main:not(.seo-style) .content-default &{
+        font-size: 1em;
+        padding: 1.5em 0 0.5em;
+    }
 }
 
-h4{
+h4, .h4{
     font-size: 1.1em;
     margin: 0 0 7px 0;
     text-transform: uppercase;
@@ -85,13 +147,15 @@ h4{
 }
 
 h5{
-    font-size: 1em;
-    margin: 1.67em 0;
+    font-size: 1.25em;
+    line-height: 1em;
+    margin: 5px 0 2px 0;
+    padding: 0;
 }
 
 h6{
-    font-size: 0.9em;
-    margin: 2.33em 0;
+    font-size: 1em;
+    margin: 0;
 }
 
 p{
@@ -112,6 +176,13 @@ b, strong{
 
 i, em{
     @include roboto-italic(1em);
+    font-style: normal;
+    strong{
+        @include roboto-medium-italic(1em);
+    }
+    b, strong{
+        @include roboto-cd-bold-italic(1em);
+    }
 }
 
 blockquote{
@@ -141,20 +212,18 @@ ol, ul{
         }
     }
 }
-ul{
-    li{
-        &:before{
-            content: '';
-            @include size(4px);
-            margin: 0 10px 0 0;
-            vertical-align: middle;
-            background: #ef792d;
-        }
+ul > li{
+    &:before{
+        content: '';
+        @include size(4px);
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+        background: #ef792d;
     }
 }
 ol{
     counter-reset: counter;
-    li{
+    > li{
         counter-increment: counter;
         &:before{
             content: counter(counter)'.';
@@ -168,6 +237,10 @@ ol{
 img{
     max-width: 100%;
     height: auto;
+    .content-default &:not(.no-float) {
+        float: left;
+        padding: 30px 32px 20px 0;
+    }
 }
 
 address{
@@ -194,7 +267,14 @@ address{
     }
 }
 
-
+.mega-huge{
+    font-size: 141px;
+    font-family: $roboto-cd-bold;
+}
+.super-huge{
+    font-size: 100px;
+    font-family: $roboto-cd-bold;
+}
 /******* LIENS / BOUTONS *******/
 
 a, button{
@@ -251,6 +331,10 @@ a, button{
 
 .center-align{
     text-align: center;
+}
+
+.right-align{
+    text-align: right;
 }
 
 .inline-b{
@@ -370,6 +454,25 @@ a, button{
     font-size: 1.75em;
 }
 
+.title-simple-med {
+    font-size: 1.5em;
+    letter-spacing: 0;
+}
 .text-grey{
     color: #a1a3a7;
+}
+
+.table {
+    display: table;
+}
+
+.content-tab-layout {
+    display:table-cell;
+    vertical-align: top;
+}
+
+.red-dot {
+    margin:auto 5px;
+    display:inline-block;
+    color: $theme-rouge-title;
 }

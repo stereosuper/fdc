@@ -3,6 +3,9 @@
 #wrapper-page{
     position: relative;
     overflow: hidden;
+    .sidebar-links-open &, .sidebar-account-open &, .nav-header-open &, .sidebar-tools-open &{
+        max-height: 100vh;
+    }
 }
 
 #main{
@@ -23,10 +26,15 @@
 
 .container-small{
     @include clearfix;
-
     max-width: 1080px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.container-xsmall{
+  max-width: 940px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .content-right{
@@ -34,8 +42,20 @@
 }
 
 .content-default, .content-tabs{
-    border: 1px solid $gris;
     box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid $gris;
+        z-index: -1;
+    }
 }
 
 .content-default{
@@ -43,6 +63,7 @@
     background: #fff;
     .content-footer{
         padding-left: $gutter;
-        margin: 50px -1*$gutter -50px;
+        //margin: 50px -1*$gutter -50px;
+        margin: 50px -1*($gutter - 1) -49px;
     }
 }

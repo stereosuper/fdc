@@ -47,10 +47,10 @@
 	transition: $transition;
 	&:before{
 		@include font-icon;
-
 		content: '\e910';
 		display: inline-block;
 		vertical-align: top;
-		margin: 0 3px 0 0;
+		font-size: 0.88em;
+		margin: 1px 3px 0 2px;
 	}
 }

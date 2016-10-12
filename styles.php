@@ -70,12 +70,12 @@
                     <hr>
 
                     <h2>Buttons (components/_buttons.scss)</h2>
-                    <a href='#' class='btn-block'>.btn-block</a>
-                    <a href='#' class='btn-block btn-orange'>.btn-block.btn-orange</a>
-                    <a href='#' class='btn-block big'>.btn-block.big</a>
-                    <a href='#' class='btn-block huge'>.btn-block.huge</a>
+                    <a href='#' class='btn-block'><span class='border'></span><span class='txt-btn'>.btn-block</span></a>
+                    <a href='#' class='btn-block btn-orange'><span class='border'></span><span class='txt-btn'>.btn-block.btn-orange</span></a>
+                    <a href='#' class='btn-block big'><span class='border'></span><span class='txt-btn'>.btn-block.big</span></a>
+                    <a href='#' class='btn-block huge'><span class='border'></span><span class='txt-btn'>.btn-block.huge</span></a>
                     <br><br>
-                    <a href='#' class='btn-block btn-alert'>.btn-block.btn-alert</a>
+                    <a href='#' class='btn-block btn-alert'><span class='border'></span><span class='txt-btn'>.btn-block.btn-alert</span></a>
                     <br><br><br><br>
                     <a href='#' class='btn-arrow small'>.btn-arrow.small</a>
                     <a href='#' class='btn-arrow'>.btn-arrow</a>
@@ -123,8 +123,8 @@
 
                     <h2>Breadcrumb (layout/_breadcrumb.scss)</h2>
                     <ul class='breadcrumb'>
-                        <li><a href='./'>Accueil</a></li>
-                        <li><a href='./'>Exemple</a></li>
+                        <li><h6><a href='./'>Accueil</a></h6></li>
+                        <li><h6><a href='./'>Exemple</a></h6></li>
                     </ul>
                 </div>
             </div>

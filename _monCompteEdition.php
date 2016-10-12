@@ -140,7 +140,7 @@
                                     </fieldset>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge'>Valider</button>
+                            <button type='submit' class='btn-block huge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </form>
                     </div>
                 </div>

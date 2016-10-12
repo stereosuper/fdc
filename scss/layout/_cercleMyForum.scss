@@ -1,0 +1,612 @@
+.choices {
+    @for $i from 1 through 5 {
+        &.choice-#{$i}-active {
+            > li:nth-child(#{$i}).cercle-choice {
+                .bg-choice {
+                    @include bgCercle;
+                    &:before, &:after {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+.cercleMyForum {
+    position:relative;
+    &.adCercle {
+        margin-top:6em;
+        header {
+            img {
+                margin:15px 0 -10px -15px;
+            }
+            h2.h1 {
+                margin:0
+            }
+            p {
+                width:300px;
+                margin-top:10px;
+            }
+        }
+        .circle-text {
+            text-align:right;
+            div {
+                width:300px;
+                float:right;
+                margin-bottom:30px;
+                p {
+                    text-align:left;
+                    margin:-80px auto 30px;
+                    .gratuit {
+                        margin-right:-10px;
+                        margin-bottom:-15px;
+                    }
+                }
+                a {
+                   float:left;
+                }
+            }
+        }
+        &.small-margin {
+            margin-top:1em;
+            margin-bottom:5em;
+            .little-squares li {
+                margin-top:12em;
+            }
+        }
+    }
+    &.choice-cercle {
+        height:100%;
+        .circle-text {
+            position:absolute;
+            bottom:0px;
+            right:50px;
+            width:390px;
+            p {
+                margin-bottom:30px;
+            }
+        }
+        ol.full-circle {
+            margin: 190px 0 0 -105px;
+            padding:0;
+            transform:scale(0.95);
+            position:absolute;
+            left:0;
+            top:0;
+            &.wave li {
+                &.buy-step {
+                    left:60px;
+                    top:30px;
+                }
+                &.finance-step {
+                    left: 195px;
+                    top: 5px;
+                }
+                &.ensure-step {
+                    left:280px;
+                    top:-90px;
+                }
+                &.equip-step {
+                    left:405px;
+                    top:-130px;
+                }
+                &.staff-step {
+                    left:520px;
+                    top:-175px;
+                }
+                &.manage-step {
+                    left:660px;
+                    top:-190px;
+                }
+                &.sell-step {
+                    left:810px;
+                    top:-190px;
+                }
+            }
+        }
+        .little-squares {
+            &.wave li {
+                &:nth-child(1) {
+                    left:90px;
+                    top:50px;
+                }
+                &:nth-child(2) {
+                    left:130px;
+                    top:200px;
+                }
+                &:nth-child(3) {
+                    left:auto;
+                    right:40px;
+                    top:130px;
+                }
+                &:nth-child(4) {
+                    left:310px;
+                    top:30px;
+                    width:8px;
+                    height:8px;
+                }
+                &:nth-child(5) {
+                    left:30px;
+                    top:130px;
+                }
+                &:nth-child(6) {
+                    left:50px;
+                    top:10px;
+                }
+            }
+        }
+    }
+    .nav-tabs-indicator {
+        li {
+            padding-bottom:25px;
+        }
+    }
+    .nav-tabs {
+        //background:$gris-bg;
+        border-bottom: 0 none;
+        li {
+            &.active {
+                @include bgCercle;
+            }
+            &:first-child{
+                &.active{
+                    margin-left: -1px;
+                    &:after{
+                        content: '';
+                        display: block;
+                        height: 100%;
+                        width: 1px;
+                        position: absolute;
+                        top: 0;
+                        left: -1px;
+                        background: #b2232e;
+                    }
+                }
+            }
+        }
+    }
+    .field-content {
+        @include bgCercle;
+        border:0 none;
+        header {
+            border-bottom-color:$blanc;
+            h2.h1 {
+                    color:$blanc;
+            }
+        }
+        p, h3, .login-vente label, .sale-form label, .sale-form legend {
+           color:$blanc;
+        }
+        .login-vente {
+            border-right: 1px dashed $blanc;
+        }
+        a, .tab-content-title button {
+            color: mix($theme-btn, $blanc, 40%);
+            &:focus, &:hover{
+                color: $blanc;
+            }
+            &:active{
+                color: $blanc;
+            }
+        }
+        .sale-form input, .login-vente input {
+            color:$blanc;
+            &:focus{
+                border-color: $yellow;
+                outline: 1px solid $yellow;
+                outline-offset: 0;
+            }
+        }
+    }
+    .circle-text {
+        margin:50px 0;
+        img {
+            position:relative;
+            left:-20px;
+            float:left;
+        }
+        p {
+            padding:10px 0 0;
+        }
+        a.btn-block {
+            padding: 17px 25px;
+            float:right;
+            margin-top:12px;
+        }
+    }
+    .select-circle {
+        display:table;
+        .column {
+            display:table-cell;
+            min-width:196px;
+            text-align:left;
+            vertical-align:top;
+        }
+        form {
+            display:block;
+            left:200px;
+            right:0;
+            button {
+                float:right;
+            }
+            ul {
+                display:block;
+                padding:0;
+                &.circle-step {
+                    li {
+                        margin:30px 0;
+                        padding:0;
+                        display:block;
+                        background:$blanc;
+                        border-radius:6px;
+                        transition:$transition;
+                        border:2px solid rgba(255,255,255,0);
+
+                        @include clearfix;
+                        header {
+                            padding:10px;
+                            border-radius:6px 6px 0 0;
+                            transition:$transition;
+                            label {
+                                transition:$transition;
+                                @include roboto-cd-bold(1.3em);
+                                margin:5px 0 5px 10px;
+                                input[type="checkbox"] {
+                                    margin:15px;
+                                }
+                                &:before, &:after {
+                                    top:3px;
+                                }
+                            }
+                            &.buy-step {
+                                background:url('../layoutImg/cercle/horizontaux/acheter.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.finance-step {
+                                background:url('../layoutImg/cercle/horizontaux/financer.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.ensure-step {
+                                background:url('../layoutImg/cercle/horizontaux/assurer.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.equip-step {
+                                background:url('../layoutImg/cercle/horizontaux/equiper.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.staff-step {
+                                background:url('../layoutImg/cercle/horizontaux/recruter.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.manage-step {
+                                background:url('../layoutImg/cercle/horizontaux/gerer.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                            &.sell-step {
+                                background:url('../layoutImg/cercle/horizontaux/vendre.png') no-repeat 100% -1px;
+                                background-size:305px auto;
+                            }
+                        }
+                        &:before {
+                            display:none;
+                        }
+                        .content-circle-step{
+                            background:#f5f5f6;
+                            padding:10px 10px 20px 45px;
+                            border-radius:0 0 6px 6px;
+                        }
+                        ul {
+                            margin:0;
+                            padding: 0;
+                            display: block;
+                            float: left;
+                            width: 50%;
+                            &:first-child{
+                                padding-right: 10px;
+                            }
+                            li {
+                                margin:0;
+                                padding:0;
+                                background:none;
+                                input[type=text] {
+                                    width:200px;
+                                    margin-left:10px;
+                                    background:$blanc;
+                                    padding:7px;
+                                }
+                            }
+                        }
+                        &.closed {
+                            background:#c62d3a;
+                            border:2px solid $blanc;
+                            header {
+                                border-radius:5px;
+                                label{
+                                    color:$blanc;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:not(.form-disabled) ul.circle-step li.closed:hover {
+                    cursor:pointer;
+                    background:$blanc;
+                    header {
+                        cursor:pointer;
+                    }
+                    label{
+                        color:$txt;
+                    }
+            }
+            &.form-disabled {
+                input[type=checkbox][disabled] + label {
+                    display: inline-block;
+                    padding-left:25px;
+                    &:after {
+                        display:block;
+                    }
+                }
+                input[type=checkbox][disabled]:not(:checked) + label {
+                    &:after {
+                        content: '\e90a';
+                        opacity:1;
+                        font-size:11px;
+                        color:$noir;
+                        transform:rotate(-45deg);
+                    }
+                }
+                header input[type=checkbox][disabled]:not(:checked) + label {
+                    &:after {
+                        display:none;
+                    }
+                }
+                ul li ul input[type=checkbox][disabled] + label{
+                    font-family: $roboto;
+                }
+                input[type=text][disabled] {
+                    display:none;
+                }
+            }
+        }
+    }
+    .call-directly {
+        background:#9b1822;
+        padding:35px;
+        position: relative;
+        p, input, button, form {
+            display:inline-block;
+            vertical-align:middle;
+            margin:0 5px;
+            color:$blanc;
+            &:focus{
+                border-color: $yellow;
+                outline: 1px solid $yellow;
+                outline-offset: 0;
+            }
+        }
+        p {
+            margin:0 20px 0 30px;
+        }
+        form {
+            float:right;
+            min-width:490px;
+            margin-right:20px;
+        }
+        ::-webkit-input-placeholder{
+            color: rgb(240, 240, 240);
+        }
+        ::-moz-placeholder{
+            color: rgb(240, 240, 240);
+        }
+        ::-ms-input-placeholder{
+            color: rgb(240, 240, 240);
+        }
+    }
+    ol.full-circle {
+        list-style:none;
+        margin:0 -25px 0 -20px;
+        padding:0;
+        li {
+            list-style:none;
+            margin:0;
+            padding:120px 0 0 40px;
+            box-sizing: border-box;
+            display:inline-block;
+            position:relative;
+            width:136px;
+            color:$blanc;
+            transform:rotate(-40deg);
+            z-index:1;
+            font-size:0.8em;
+            transition: transform $transition;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            &:before {
+                content:" ";
+                margin:0;
+                background-repeat:no-repeat;
+                background-position:50% 0;
+                background-size:cover;
+                position:absolute;
+                left:0;
+                right:0;
+                top:0;
+                bottom:0;
+                transform:rotate(53deg);
+                z-index:-1;
+                transition: all $transition;
+            }
+            &.buy-step:before {
+                background-image:url('../layoutImg/cercle/losanges/acheter.png');
+            }
+            &.finance-step:before {
+                background-image:url('../layoutImg/cercle/losanges/financer.png');
+            }
+            &.ensure-step:before {
+                background-image:url('../layoutImg/cercle/losanges/assurer.png');
+            }
+            &.equip-step:before {
+                background-image:url('../layoutImg/cercle/losanges/equiper.png');
+            }
+            &.staff-step:before {
+                background-image:url('../layoutImg/cercle/losanges/recruter.png');
+            }
+            &.manage-step:before {
+                background-image:url('../layoutImg/cercle/losanges/gerer.png');
+            }
+            &.sell-step:before {
+                background-image:url('../layoutImg/cercle/losanges/vendre.png');
+            }
+        }
+        &.wave {
+            position:relative;
+            transition: 0 none;
+            li {
+                position:absolute;
+                transition: 0 none;
+                &.buy-step {
+                    left:100px;
+                    top:50px;
+                }
+                &.finance-step {
+                    left: 230px;
+                    top: 5px;
+                }
+                &.ensure-step {
+                    left:370px;
+                    top:-20px;
+                }
+                &.equip-step {
+                    left:450px;
+                    top:-120px;
+                }
+                &.staff-step {
+                    left:500px;
+                    top:-255px;
+                }
+                &.manage-step {
+                    left:630px;
+                    top:-290px;
+                }
+                &.sell-step {
+                    left:760px;
+                    top:-330px;
+                }
+            }
+        }
+    }
+    .little-squares {
+        margin:0;
+        padding:0;
+        li {
+            margin:0;
+            padding:0;
+            list-style:none;
+            position:absolute;
+            background:$blanc;
+            &:before {
+                display:none;
+            }
+            &:nth-child(1) {
+                width:15px;
+                height:15px;
+                transform:rotate(55deg);
+                left:10px;
+                top:130px;
+            }
+            &:nth-child(2) {
+                width:6px;
+                height:6px;
+                transform:rotate(35deg);
+                left:40px;
+                top:220px;
+                background:$yellow;
+            }
+            &:nth-child(3) {
+                width:10px;
+                height:10px;
+                transform:rotate(65deg);
+                right:230px;
+                top:140px;
+                background:$yellow;
+            }
+            &:nth-child(4) {
+                width:15px;
+                height:15px;
+                transform:rotate(15deg);
+                right:110px;
+                top:90px;
+            }
+            &:nth-child(5) {
+                width:12px;
+                height:12px;
+                transform:rotate(25deg);
+                right:20px;
+                top:190px;
+            }
+            &:nth-child(6) {
+                width:5px;
+                height:5px;
+                transform:rotate(75deg);
+                right:10px;
+                top:440px;
+                background:$yellow;
+            }
+        }
+        &.vertical li {
+            &:nth-child(1) {
+                left:90px;
+                top:430px;
+            }
+            &:nth-child(2) {
+                left:130px;
+                top:680px;
+            }
+            &:nth-child(3) {
+                left:120px;
+                top:470px;
+            }
+            &:nth-child(4) {
+                left:160px;
+                top:390px;
+            }
+            &:nth-child(5) {
+                left:100px;
+                top:550px;
+            }
+            &:nth-child(6) {
+                left:70px;
+                top:440px;
+            }
+        }
+        &.wave li {
+            &:nth-child(1) {
+                left:90px;
+                top:180px;
+            }
+            &:nth-child(2) {
+                left:130px;
+                top:330px;
+            }
+            &:nth-child(3) {
+                left:auto;
+                right:40px;
+                top:-200px;
+            }
+            &:nth-child(4) {
+                left:auto;
+                right:70px;
+                top:-30px;
+            }
+            &:nth-child(5) {
+                left:30px;
+                top:260px;
+            }
+            &:nth-child(6) {
+                left:auto;
+                right:50px;
+                top:10px;
+            }
+        }
+    }
+}

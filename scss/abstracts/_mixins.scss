@@ -150,3 +150,27 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+@mixin shadow-button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 24px 76px 0 rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+// Cercle FDC
+
+@mixin bgCercle{
+    background: $backgroundCercle;
+    background-size: 2653px 2358px;
+}
+
+@mixin bgCercleHome{
+    background: $backgroundCercleHome;
+    background-size: 3089px 2960px;
+}

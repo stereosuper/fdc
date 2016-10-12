@@ -20,13 +20,13 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li class='active'>
-                            1<span>. Bienvenue !</span>
+                            <span>1. Bienvenue !</span>
                         </li><li>
-                            2<span>. Mes informations</span>
+                            <span>2. Mes informations</span>
                         </li><li>
-                            3<span>. Je recherche...</span>
+                            <span>3. Je recherche...</span>
                         </li><li>
-                            4<span>. Mes besoins</span>
+                            <span>4. Mes besoins</span>
                         </li>
                     </ul>
                     <div class='tab-content'>

@@ -20,13 +20,13 @@
                 <div class='content-tabs'>
                     <ul class='nav-tabs nav-tabs-indicator'>
                         <li>
-                            <a href='creationCompte.php'>1<span>. Bienvenue !</span></a>
+                            <a href='creationCompte.php'><span>1. Bienvenue !</span></a>
                         </li><li class='active'>
-                            2<span>. Mes informations</span>
+                            <span>2. Mes informations</span>
                         </li><li>
-                            3<span>. Je recherche...</span>
+                            <span>3. Je recherche...</span>
                         </li><li>
-                            4<span>. Mes besoins</span>
+                            <span>4. Mes besoins</span>
                         </li>
                     </ul>
                     <div class='tab-content'>
@@ -84,7 +84,7 @@
                                     </label><input type='password' name='mdp2' id='mdp2' required>
                                 </fieldset>
                             </fieldset>
-                            <button type='submit' class='btn-block huge'>Valider</button>
+                            <button type='submit' class='btn-block huge'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </form>
                     </div>
                 </div>
