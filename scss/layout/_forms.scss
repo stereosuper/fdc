@@ -211,7 +211,7 @@ label{
     font-family: $roboto-cd-bold;
     font-size: 1.5em;
     .cercle &{
-        margin: 20px 0 30px 0; 
+        margin: 20px 0 30px 0;
     }
 }
 
@@ -740,10 +740,13 @@ button{
         stroke-linecap: round;
         stroke-linejoin: round;
     }
-    .department{
+    .country{
+        fill: none;
+        stroke: #93939a;
+        stroke-width: 0.12px;
+    }
+    .department, .country-select{
         fill: #fff;
-        stroke: $bleu-link;
-        stroke-width: 0.05px;
         cursor: pointer;
         transition: $transition;
         &:hover{
@@ -752,17 +755,16 @@ button{
         &.active{
             fill: $theme-btn;
         }
+    }
+    .department{
+        stroke: $bleu-link;
+        stroke-width: 0.05px;
         &.adjacent{
             fill: #ef8630;
             &:hover{
                 fill: $bleu-link;
             }
         }
-    }
-    .country{
-        fill: none;
-        stroke: #93939a;
-        stroke-width: 0.12px;
     }
     &-extra{
         top: 50px;
