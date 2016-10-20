@@ -50,24 +50,6 @@
                 <div class="table-layout detail">
                     <div class="content-tab-layout">
                         <div class='table'>
-                            <div class='content-tabs-detail small-col'>
-                                <ul class="detail-photos" id="toSlide"> <!-- POUR NETIL : NE PAS METTRE DE UL SI VIDE -->
-                                    <li><a href="img/comptoireBoul_Big.jpg" href="#" class="lBslider"><img src="img/comptoireBoul.png"></a></li>
-                                    <li><a href="img/comptoireBoul2.jpg" href="#" class="lBslider"><img src="img/comptoireBoul2.jpg"></a></li>
-                                    <li><a href="img/comptoireBoul3.jpg" href="#" class="lBslider"><img src="img/comptoireBoul3.jpg"></a></li>
-                                    <li><a href="img/comptoireBoul4.jpg" href="#" class="lBslider"><img src="img/comptoireBoul4.jpg"></a></li>
-                                </ul>
-                                <div class='field-content-detail'>
-                                    <address>
-                                        <p class='big-price'>Prix&nbsp;: <span class="blurred">XX&#8239;XXX</span>&nbsp;€</p>
-                                        <p>pour connaître le prix exact et obtenir les coordonnées du vendeur, vous devez être connecté.</p>
-                                        <a href="#" class='btn-block btn-rouge huge'><span class='border'></span><span class='txt-btn'>Voir le prix</span></a>
-                                    </address>
-                                    <div class='content-footer'>
-                                        <a href="#" class='btn-heart' >Ajouter à ma séléction</a>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="content-tabs-detail">
                                 <div id="map-canvas" data-latIni="46.7833" data-longIni="-2.0667" data-pinLat="46.7833" data-pinLong="-2.0667"></div> <!-- POUR NETIL : NE PAS METTRE CETTE DIV SI VIDE -->
                                 <div class='field-content-detail'>
@@ -85,6 +67,24 @@
                                     <div class='content-footer'>
                                         <a href="#" class='btn-arrow-back'>Retour à la recherche</a>
                                         <a href="#" class='btn-print'>Imprimer</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='content-tabs-detail small-col'>
+                                <ul class="detail-photos" id="toSlide"> <!-- POUR NETIL : NE PAS METTRE DE UL SI VIDE -->
+                                    <li><a href="img/comptoireBoul_Big.jpg" href="#" class="lBslider"><img src="img/comptoireBoul.png"></a></li>
+                                    <li><a href="img/comptoireBoul2.jpg" href="#" class="lBslider"><img src="img/comptoireBoul2.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul3.jpg" href="#" class="lBslider"><img src="img/comptoireBoul3.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul4.jpg" href="#" class="lBslider"><img src="img/comptoireBoul4.jpg"></a></li>
+                                </ul>
+                                <div class='field-content-detail'>
+                                    <address>
+                                        <p class='big-price'>Prix&nbsp;: <span class="blurred">XX&#8239;XXX</span>&nbsp;€</p>
+                                        <p>pour connaître le prix exact et obtenir les coordonnées du vendeur, vous devez être connecté.</p>
+                                        <a href="#" class='btn-block btn-rouge huge'><span class='border'></span><span class='txt-btn'>Voir le prix</span></a>
+                                    </address>
+                                    <div class='content-footer'>
+                                        <a href="#" class='btn-heart' >Ajouter à ma séléction</a>
                                     </div>
                                 </div>
                             </div>

@@ -7055,6 +7055,7 @@ body.wrapper-blured #wrapper-page {
       width: 62%;
       box-sizing: border-box;
       font-size: 0.87em;
+      float: left;
       padding: 0 30px 0 0; }
       .detail .table .content-tabs-detail em {
         color: #7a7a7a; }
@@ -7128,7 +7129,6 @@ body.wrapper-blured #wrapper-page {
       .detail .table .content-tabs-detail.small-col {
         width: 38%;
         position: relative;
-        float: right;
         padding-right: 0; }
         .detail .table .content-tabs-detail.small-col p {
           margin: 0; }
@@ -8885,7 +8885,8 @@ body.cercle .content-tabs {
     width: 100%;
     margin-bottom: 30px;
     padding-top: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    float: none; }
     .detail .table .content-tabs-detail.small-col address, .detail .table .content-tabs-detail.small-col.small-col address {
       margin-right: 300px; }
     .detail .table .content-tabs-detail ul.detail-photos, .detail .table .content-tabs-detail.small-col ul.detail-photos {
