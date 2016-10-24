@@ -1,11 +1,21 @@
 .choices {
     @for $i from 1 through 5 {
+        > li:nth-child(#{$i}).cercle-choice {
+            .bg-choice {
+                &:before, &:after {
+                    opacity: 1;
+                    transition: opacity 0 ease-in-out;
+                    transition-delay: 0.4s;
+                }
+            }
+        }
         &.choice-#{$i}-active {
             > li:nth-child(#{$i}).cercle-choice {
                 .bg-choice {
                     @include bgCercle;
                     &:before, &:after {
-                        display:none;
+                        transition-delay: 0s;
+                        opacity: 0;
                     }
                 }
             }

@@ -19,9 +19,11 @@
         background: $theme-btn;
     }
     .content-tabs-sale &{
-        border-color: #ef6a2b;
+        //border-color: #ef6a2b;
+        border-color: #e24318;
         &:before{
-            background: #ef6a2b;
+            //background: #ef6a2b;
+            background: #e24318;
         }
     }
     .content-tabs-partner &{
@@ -76,7 +78,8 @@
             background: $theme-btn;
             color: #fff;
             .content-tabs-sale & {
-                background: #ef6a2b;
+                //background: #ef6a2b;
+                background: #e24318;
             }
             .cercle &{
                 background: $orange;
@@ -124,7 +127,8 @@
         &:hover, &:focus{
             color: $theme-btn;
             .content-tabs-sale &{
-                color: #ef6a2b;
+                //color: #ef6a2b;
+                color: #e24318;
             }
             .content-tabs-partner &{
                 color: #d63e37;
@@ -149,7 +153,8 @@
                     margin: auto;
                     background: url(../layoutImg/arrows-tab.png) no-repeat;
                     .content-tabs-sale &{
-                        background-image: url(../layoutImg/arrows-tab2.png);
+                        //background-image: url(../layoutImg/arrows-tab2.png);
+                        background-image: url(../layoutImg/arrows-tab3.png);
                     }
                 }
             }
@@ -320,6 +325,11 @@
 }
 
 .content-tabs-sale{
+    ul > li{
+        &:before{
+            background: #e24318;
+        }
+    }
     .field-content{
         padding: 50px 70px 90px 70px;
         .tab-content-title{
@@ -330,7 +340,14 @@
             line-height: 1em;
         }
         .btn-block:not(.btn-yellow){
-            background: #ef6a2b;
+            //background: #ef6a2b;
+            background: #e24318;
+            &:hover, &:focus{
+                color: #e24318;
+            }
+            .border{
+                border-color: #e24318;
+            }
         }
     }
 }

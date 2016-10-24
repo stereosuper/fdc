@@ -198,6 +198,7 @@ $(function(){
 	if($('.choices').length){
 		var choices = $('.choices'),
 			btnsChoices = choices.find('.btn-choice'),
+			btnsChoicesTitle = $('.btn-choice-title'), indexChoiceTitleClicked;
 			visualsChoices = choices.find('.visuel'),
 			nbChoices = choices.find('li').length, j = 0,
 			numCols = 4, numRows = 6, frameHeight = 200, frameWidth = 200,
@@ -213,6 +214,54 @@ $(function(){
 			TweenMax.set(sprite, {backgroundPosition: '0 0'});
 		}
 
+		btnsChoicesTitle.on('click', function(e){
+			var needNewOpening;
+			if(windowWidth>767){
+				e.preventDefault();
+				indexChoiceTitleClicked = $('.btn-choice-title').index(this);
+				needNewOpening = false;
+				if(!$('.choices').hasClass('choice-'+(indexChoiceTitleClicked+1)+'-active')){
+					var choices = $('.choices');
+					needNewOpening = true;
+					if(choices.hasClass('choice-1-active') || choices.hasClass('choice-2-active') || choices.hasClass('choice-3-active') || choices.hasClass('choice-4-active') || choices.hasClass('choice-5-active')){
+						choices.removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active choice-1-animating choice-2-animating choice-3-animating choice-4-animating choice-5-animating');
+						setTimeout(function(){
+							$('.choices').addClass('choice-'+(indexChoiceTitleClicked+1)+'-active choice-'+(indexChoiceTitleClicked+1)+'-animating');
+							if(windowWidth<=1150){
+								var liParent = $('.choices > li').eq(indexChoiceTitleClicked);
+								$('html, body').animate({scrollTop:liParent.offset().top}, 200);
+							}
+						}, tpsAnimChoice);
+					}else{
+						choices.removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active');
+						$('.choices').addClass('choice-'+(indexChoiceTitleClicked+1)+'-active choice-'+(indexChoiceTitleClicked+1)+'-animating');
+						if(windowWidth<=1150){
+							var liParent = $('.choices > li').eq(indexChoiceTitleClicked);
+							$('html, body').animate({scrollTop:liParent.offset().top}, 200);
+						}
+					}
+				}else{
+					var choices = $('.choices');
+					choices.removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active');
+					setTimeout(function(){
+						choices.removeClass('choice-1-animating choice-2-animating choice-3-animating choice-4-animating choice-5-animating');
+					}, tpsAnimChoice);
+				}
+				if(windowWidth<=1150){
+					var liParent = $('.choices > li').eq(indexChoiceTitleClicked);
+					$('.choices li').each(function(index, el) {
+						$('.zone-content').slideUp(300);
+					});
+					if(needNewOpening){
+						$('.zone-content', liParent).slideToggle(300);
+					}
+				}else{
+					var index = $('.choices > li').eq(indexChoiceTitleClicked).index();
+					spritesTl[index].reverse();
+				}
+			}
+		});
+
 		btnsChoices.on('mouseenter', function(){
 			if(!choices.hasClass('choice-1-active') && !choices.hasClass('choice-2-active') && !choices.hasClass('choice-3-active') && !choices.hasClass('choice-4-active') && !choices.hasClass('choice-5-active')){
 				var index = $(this).parents('li').index();
@@ -222,9 +271,12 @@ $(function(){
 			var index = $(this).parents('li').index();
 			spritesTl[index].reverse();
 		}).on('click', function(e){
+			var needNewOpening;
 			if(windowWidth>767){
 				e.preventDefault();
+				needNewOpening = false;
 				if(!$(this).closest('.choices').hasClass('choice-'+($(this).closest('li').index()+1)+'-active')){
+					needNewOpening = true;
 					var choices = $(this).closest('.choices');
 					choices.removeClass('choice-1-active choice-2-active choice-3-active choice-4-active choice-5-active');
 					$(this).closest('.choices').addClass('choice-'+($(this).closest('li').index()+1)+'-active choice-'+($(this).closest('li').index()+1)+'-animating');
@@ -240,7 +292,9 @@ $(function(){
 						$('.zone-content', liParent).slideUp(300);
 					});
 					var liParent = $(this).closest('li');
-					$('.zone-content', liParent).slideToggle(300);
+					if(needNewOpening){
+						$('.zone-content', liParent).slideToggle(300);
+					}
 				}else{
 					var index = $(this).parents('li').index();
 					spritesTl[index].reverse();

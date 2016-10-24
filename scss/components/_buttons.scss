@@ -310,6 +310,15 @@ a.btn-block, button.btn-block, .btn-block {
 			color: #ef6a2b;
 		}
 	}
+	&.btn-orange-sale{
+		background: #e24318;
+		.border{
+			border-color: #e24318 #e24318;
+		}
+		&:hover, &:focus{
+			color: #e24318;
+		}
+	}
 	&.btn-yellow{
 		color:$blanc;
 		.border{

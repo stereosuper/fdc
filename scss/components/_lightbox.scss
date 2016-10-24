@@ -87,7 +87,8 @@
         .field {
             margin:0;
             &.field-sale {
-                background: linear-gradient(to bottom, rgba(#f2821e, 0.95) 0, rgba(#ec4610, 0.95) 100%);
+                //background: linear-gradient(to bottom, rgba(#f2821e, 0.95) 0, rgba(#ec4610, 0.95) 100%);
+                background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
             }
             &.field-buy {
                 background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);

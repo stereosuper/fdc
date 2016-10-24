@@ -100,7 +100,7 @@
                         </div>
                         <div class='grey right-align wrapper-pay'>
                             <p>Il vous restera <span class='big-txt'>3 crédits</span> sur votre compte après la validation</p>
-                            <button type='submit' class='btn-block btn-orange-light huge btn-align-right'><span class='border'></span><span class='txt-btn'>Valider</span></button>
+                            <button type='submit' class='btn-block btn-orange-sale huge btn-align-right'><span class='border'></span><span class='txt-btn'>Valider</span></button>
                         </div>
                     </div>
                 </div>
