@@ -395,8 +395,6 @@ $(function(){
 		}
 	});
 
-
-
 	// Nav tabs responsive
 	setResponsiveNavTabs();
 

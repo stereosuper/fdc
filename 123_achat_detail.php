@@ -11,6 +11,26 @@
     </head>
 
     <body class="hasMaps">
+        <div class='alert-cookies'>
+            <div class='container'>
+                <div class='wrapper-alignment'>
+                    <div class='content-align-middle'>
+                        <p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies permettant d'améliorer votre expérience utilisateur.</p>
+                    </div>
+                    <div class='content-align-middle btn-cookies'>
+                        <ul>
+                            <li>
+                                <a href='#' id='close-alert-cookies' class='btn-block btn-white-border'><span class='border'></span><span class='txt-btn'>Ok</span></a>
+                            </li>
+                            <li>
+                                <a href='#' class='btn-block btn-white-border'><span class='border'></span><span class='txt-btn'>En savoir +</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
         <?php
             global $field;
             $field = 'Boulangerie - Pâtisserie - Salon de thé';
@@ -72,10 +92,10 @@
                             </div>
                             <div class='content-tabs-detail small-col'>
                                 <ul class="detail-photos" id="toSlide"> <!-- POUR NETIL : NE PAS METTRE DE UL SI VIDE -->
-                                    <li><a href="img/comptoireBoul_Big.jpg" href="#" class="lBslider"><img src="img/comptoireBoul.png"></a></li>
-                                    <li><a href="img/comptoireBoul2.jpg" href="#" class="lBslider"><img src="img/comptoireBoul2.jpg"></a></li>
-                                    <li><a href="img/comptoireBoul3.jpg" href="#" class="lBslider"><img src="img/comptoireBoul3.jpg"></a></li>
-                                    <li><a href="img/comptoireBoul4.jpg" href="#" class="lBslider"><img src="img/comptoireBoul4.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul_Big.jpg" class="lBslider"><img src="img/comptoireBoul.png"></a></li>
+                                    <li><a href="img/comptoireBoul2.jpg" class="lBslider"><img src="img/comptoireBoul2.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul3.jpg" class="lBslider"><img src="img/comptoireBoul3.jpg"></a></li>
+                                    <li><a href="img/comptoireBoul4.jpg" class="lBslider"><img src="img/comptoireBoul4.jpg"></a></li>
                                 </ul>
                                 <div class='field-content-detail'>
                                     <address>
