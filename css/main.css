@@ -7211,6 +7211,22 @@ body.wrapper-blured #wrapper-page {
           -webkit-filter: blur(9px);
                   filter: blur(9px);
           margin: 0 5px; }
+          .is-ie .detail .table .content-tabs-detail .field-content-detail .blurred {
+            -webkit-filter: none;
+                    filter: none; }
+            .is-ie .detail .table .content-tabs-detail .field-content-detail .blurred .blurred-char {
+              display: inline-block;
+              position: relative; }
+              .is-ie .detail .table .content-tabs-detail .field-content-detail .blurred .blurred-char:after {
+                content: '';
+                background: url("../layoutImg/blur.png") 50% 50%;
+                width: 59px;
+                height: 67px;
+                position: absolute;
+                top: -16px;
+                left: -20px; }
+              .is-ie .detail .table .content-tabs-detail .field-content-detail .blurred .blurred-char > span {
+                opacity: 0; }
       .detail .table .content-tabs-detail #map-canvas {
         width: 100%;
         height: 240px;

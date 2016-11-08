@@ -99,7 +99,20 @@
                                 </ul>
                                 <div class='field-content-detail'>
                                     <address>
-                                        <p class='big-price'>Prix&nbsp;: <span class="blurred">XX&#8239;XXX</span>&nbsp;€</p>
+                                        <!-- <p class='big-price'>Prix&nbsp;: <span class='blurred'>
+                                            <span class='blurred-char'>
+                                                <span>X</span>
+                                            </span><span class='blurred-char'>
+                                                <span>X</span>
+                                            </span>&#8239;<span class='blurred-char'>
+                                                <span>X</span>
+                                            </span><span class='blurred-char'>
+                                                <span>X</span>
+                                            </span><span class='blurred-char'>
+                                                <span>X</span>
+                                            </span>
+                                        </span>&nbsp;€</p> -->
+                                        <p class='big-price'>Prix&nbsp;: <span class='blurred'>XX&#8239;XXX</span>&nbsp;€</p>
                                         <p>pour connaître le prix exact et obtenir les coordonnées du vendeur, vous devez être connecté.</p>
                                         <!-- POUR NETIL : LE LIEN, C'EST POUR TESTER -->
                                         <a href="124_achat_detail_connection.html" class='btn-block btn-rouge huge open-lighbox'><span class='border'></span><span class='txt-btn'>Voir le prix</span></a>

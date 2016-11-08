@@ -75,21 +75,40 @@
                                 margin-top: -3px;
                             }
                             i {
-                                font-variant:none;
-                                display:inline-block;
+                                font-variant: none;
+                                display: inline-block;
                                 vertical-align: middle;
                                 margin-top: -3px;
-                                margin-left:2px;
+                                margin-left: 2px;
                             }
                         }
                     }
                 }
                 .btn-block {
-                    margin-top:20px;
+                    margin-top: 20px;
                 }
                 .blurred {
-                    filter:blur(9px);
-                    margin:0 5px;
+                    filter: blur(9px);
+                    margin: 0 5px;
+                    .is-ie &{
+                        filter: none;
+                        .blurred-char{
+                            display: inline-block;
+                            position: relative;
+                            &:after{
+                                content: '';
+                                background: url('../layoutImg/blur.png') 50% 50%;
+                                width: 59px;
+                                height: 67px;
+                                position: absolute;
+                                top: -16px;
+                                left: -20px;
+                            }
+                            > span{
+                                opacity: 0;
+                            }
+                        }
+                    }
                 }
             }
             #map-canvas {
