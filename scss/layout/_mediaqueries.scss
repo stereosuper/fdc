@@ -580,7 +580,6 @@
     /* Pricing */
     .field-content .table-offres-tarifs {
         tr {
-
             td, td.big-pricing, td.no-border {
                 margin: 1em auto 1em;
                 padding:0;
@@ -592,6 +591,9 @@
                     &.h1{
                         font-size:1.2em;
                         margin-bottom:0.1em;
+                        &.credit-annonce{
+                            font-size: 1.8em;
+                        }
                     }
                     &.super-huge{
                         font-size:5em;
@@ -603,6 +605,7 @@
             td.no-border {
                 margin-bottom: 0;
             }
+
         }
     }
     /* details */
@@ -1706,7 +1709,38 @@
     .field-content .cercleMyForum.adCercle .field-content{
         padding: 20px 30px;
     }
-
+    
+    .field-content .table-offres-tarifs {
+        tr {
+            td, td.big-pricing, td.no-border {
+                p {
+                    &.h1{
+                        &.credit-annonce{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .credits-contact{
+        margin: 20px 0 0;
+        > li{
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            margin: 20px auto;
+            &:first-child, &:last-child{
+                padding: 0;
+            }
+            a{
+                padding: 20px;
+                strong{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767px){

@@ -6544,6 +6544,72 @@ body.wrapper-blured #wrapper-page {
     line-height: 1em;
     margin: 0 0 0 2px; }
 
+.credits-contact {
+  display: block;
+  margin: 30px 0 40px 0;
+  padding: 0; }
+  .credits-contact > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin: 0; }
+    .credits-contact > li:before {
+      display: none; }
+    .credits-contact > li:first-child {
+      padding: 0 12px 0 0; }
+      .credits-contact > li:first-child a {
+        border-color: #c52d38; }
+        .credits-contact > li:first-child a:before {
+          background: #c52d38; }
+        .credits-contact > li:first-child a:hover {
+          color: #c52d38; }
+    .credits-contact > li:last-child {
+      padding: 0 0 0 12px; }
+      .credits-contact > li:last-child a {
+        border-color: #e85d1f; }
+        .credits-contact > li:last-child a:before {
+          background: #e85d1f; }
+        .credits-contact > li:last-child a:hover {
+          color: #e85d1f; }
+  .credits-contact a {
+    display: block;
+    position: relative;
+    font-family: "robotoregular", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    border: 6px #000 solid;
+    line-height: 1.1; }
+    .credits-contact a:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      -webkit-transform-origin: 100% 0;
+          -ms-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+      -webkit-transition: .3s ease-in-out;
+              transition: .3s ease-in-out; }
+    .credits-contact a:hover:before {
+      -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+              transform: scaleX(0); }
+    .credits-contact a strong {
+      display: block;
+      font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+      font-size: 2.5em;
+      margin: 0 0 5px; }
+    .credits-contact a i {
+      font-style: normal;
+      font-family: "roboto_condensedbold_italic", "robotoitalic", "robotoregular", sans-serif; }
+
 .field-content .table-offres-tarifs {
   table-layout: fixed;
   width: 100%;
@@ -6683,6 +6749,13 @@ body.wrapper-blured #wrapper-page {
         display: block;
         margin: 0 auto 0.15em;
         letter-spacing: -5px; }
+    .field-content .table-offres-tarifs tr td p.credit-annonce {
+      line-height: 0.7; }
+    .field-content .table-offres-tarifs tr td .equal {
+      display: block;
+      margin-top: 5px; }
+    .field-content .table-offres-tarifs tr td .btn-arrow.big-margin-top {
+      margin-top: 2.4em; }
     .field-content .table-offres-tarifs tr td.big-pricing {
       width: 40%; }
       .field-content .table-offres-tarifs tr td.big-pricing .undercover {
@@ -8351,6 +8424,8 @@ body.cercle .content-tabs {
     .field-content .table-offres-tarifs tr td p.h1, .field-content .table-offres-tarifs tr td.big-pricing p.h1, .field-content .table-offres-tarifs tr td.no-border p.h1 {
       font-size: 1.2em;
       margin-bottom: 0.1em; }
+      .field-content .table-offres-tarifs tr td p.h1.credit-annonce, .field-content .table-offres-tarifs tr td.big-pricing p.h1.credit-annonce, .field-content .table-offres-tarifs tr td.no-border p.h1.credit-annonce {
+        font-size: 1.8em; }
     .field-content .table-offres-tarifs tr td p.super-huge, .field-content .table-offres-tarifs tr td.big-pricing p.super-huge, .field-content .table-offres-tarifs tr td.no-border p.super-huge {
       font-size: 5em;
       margin-bottom: 0.1em;
@@ -9093,7 +9168,24 @@ body.cercle .content-tabs {
       width: auto; }
 
   .field-content .cercleMyForum.adCercle .field-content {
-    padding: 20px 30px; } }
+    padding: 20px 30px; }
+
+  .field-content .table-offres-tarifs tr td p.h1.credit-annonce, .field-content .table-offres-tarifs tr td.big-pricing p.h1.credit-annonce, .field-content .table-offres-tarifs tr td.no-border p.h1.credit-annonce {
+    font-size: 1.5em; }
+
+  .credits-contact {
+    margin: 20px 0 0; }
+    .credits-contact > li {
+      display: block;
+      width: 100%;
+      max-width: 650px;
+      margin: 20px auto; }
+      .credits-contact > li:first-child, .credits-contact > li:last-child {
+        padding: 0; }
+      .credits-contact > li a {
+        padding: 20px; }
+        .credits-contact > li a strong {
+          font-size: 2em; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;

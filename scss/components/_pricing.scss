@@ -24,6 +24,85 @@
     }
 }
 
+.credits-contact{
+    display: block;
+    margin: 30px 0 40px 0;
+    padding: 0;
+    > li{
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        margin: 0;
+        &:before{
+            display: none;
+        }
+        &:first-child{
+            padding: 0 12px 0 0;
+            a{
+                border-color: $theme-gradient-1;
+                &:before{
+                    background: $theme-gradient-1;
+                }
+                &:hover{
+                    color: $theme-gradient-1;
+                }
+            }
+        }
+        &:last-child{
+            padding: 0 0 0 12px;
+            a{
+                border-color: $theme-gradient-4;
+                &:before{
+                    background: $theme-gradient-4;
+                }
+                &:hover{
+                    color: $theme-gradient-4;
+                }
+            }
+        }
+    }
+    a{
+        display: block;
+        position: relative;
+        font-family: $roboto;
+        font-size: 1em;
+        text-align: center;
+        padding: 25px;
+        color: $blanc;
+        text-decoration: none;
+        z-index: 1;
+        border: 6px #000 solid;
+        line-height: 1.1;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transform-origin: 100% 0;
+            transition: .3s ease-in-out;
+        }
+        &:hover{
+            &:before{
+                transform: scaleX(0);
+            }
+        }
+        strong{
+            display: block;
+            font-family: $roboto-cd-bold;
+            font-size: 2.5em;
+            margin: 0 0 5px;
+        }
+        i{
+            font-style: normal;
+            font-family: $roboto-cd-bold-it;
+        }
+    }
+}
+
 .field-content .table-offres-tarifs{
     table-layout: fixed;
     width: 100%;
@@ -193,6 +272,20 @@
                     display:block;
                     margin:0 auto 0.15em;
                     letter-spacing:-5px;
+                }
+            }
+            p{
+                &.credit-annonce{
+                    line-height: 0.7;
+                }
+            }
+            .equal{
+                display: block;
+                margin-top: 5px;
+            }
+            .btn-arrow{
+                &.big-margin-top{
+                    margin-top: 2.4em;
                 }
             }
             &.big-pricing {
