@@ -296,18 +296,40 @@ a.btn-block, button.btn-block, .btn-block {
 		.border{
 			border-color: $theme-gradient-1 $theme-gradient-1;
 		}
+		.price-btn{
+			color: $theme-gradient-1;
+		}
+		&:hover, &:focus{
+			.price-btn{
+				color: $theme-gradient-1;
+			}
+		}
 	}
 	&.btn-orange{
 		.border{
 			border-color: #de3d25 #de3d25;
+		}
+		.price-btn{
+			color: #de3d25;
+		}
+		&:hover, &:focus{
+			.price-btn{
+				color: #de3d25;
+			}
 		}
 	}
 	&.btn-orange-light{
 		.border{
 			border-color: #ef6a2b #ef6a2b;
 		}
+		.price-btn{
+			color: #ef6a2b;
+		}
 		&:hover, &:focus{
 			color: #ef6a2b;
+			.price-btn{
+				color: #ef6a2b;
+			}
 		}
 	}
 	&.btn-orange-sale{
@@ -315,8 +337,14 @@ a.btn-block, button.btn-block, .btn-block {
 		.border{
 			border-color: #e24318 #e24318;
 		}
+		.price-btn{
+			color: #e24318;
+		}
 		&:hover, &:focus{
 			color: #e24318;
+			.price-btn{
+				color: #e24318;
+			}
 		}
 	}
 	&.btn-yellow{
@@ -324,8 +352,14 @@ a.btn-block, button.btn-block, .btn-block {
 		.border{
 			border-color: $yellow $yellow;
 		}
+		.price-btn{
+			color: $yellow;
+		}
 		&:hover, &:focus{
 			color: $yellow;
+			.price-btn{
+				color: $yellow;
+			}
 		}
 	}
 	&.btn-orange-cercle{
@@ -334,6 +368,9 @@ a.btn-block, button.btn-block, .btn-block {
 			border-color: $orange $orange;
 		}
 		&:hover, &:focus{
+			color: $orange;
+		}
+		.price-btn{
 			color: $orange;
 		}
 	}
@@ -373,6 +410,28 @@ a.btn-block, button.btn-block, .btn-block {
 				color: $theme-btn;
 				z-index: 5;
 			}
+		}
+	}
+	&.btn-price{
+		padding: 0;
+		.price-btn{
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			background: $blanc;
+			font-size: 2.5em;
+			line-height: 1;
+			padding: 15px;
+			border-top: 3px solid currentColor;
+			border-bottom: 3px solid currentColor;
+			border-left: 3px solid currentColor;
+			font-family: $roboto-cd;
+		}
+		.txt-btn{
+			display: inline-block;
+			vertical-align: middle;
+			padding: 15px 25px;
+			font-family: $roboto-cd-bold;
 		}
 	}
 	.wrapper-input-btn &{

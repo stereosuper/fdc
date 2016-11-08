@@ -355,6 +355,25 @@
 }
 
 @media (max-width: 1150px){
+    .credits-contact{
+        margin: 20px 0 0;
+        > li{
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            margin: 20px auto;
+            &:first-child, &:last-child{
+                padding: 0;
+            }
+            a{
+                padding: 20px;
+                strong{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
     .cols-footer{
         > li{
             &:nth-child(1){
@@ -1723,22 +1742,28 @@
             }
         }
     }
-    .credits-contact{
-        margin: 20px 0 0;
-        > li{
-            display: block;
-            width: 100%;
-            max-width: 650px;
-            margin: 20px auto;
-            &:first-child, &:last-child{
-                padding: 0;
+    .wrapper-pub-pack{
+        width: 280px;
+    }
+    .pub-pack{
+        .big-txt{
+            font-size: 1.8em;
+        }
+    }
+    a.btn-block, button.btn-block, .btn-block{
+        &.btn-price{
+            .price-btn{
+                font-size: 2em;
+                padding: 8px;
             }
-            a{
-                padding: 20px;
-                strong{
-                    font-size: 2em;
-                }
+            .txt-btn{
+                padding: 8px 12px;
             }
+        }
+    }
+    .wrapper-depot-annonce{
+        ul{
+            margin: 0;
         }
     }
 }
@@ -2623,11 +2648,17 @@
             margin: 30px 0 0 0;
             min-height: 250px;
             width: 100%;
-            max-width: 230px;
+            max-width: 300px;
         }
         .pub-pack{
             .big-txt{
                 font-size: 1.6em;
+            }
+            background: none;
+            padding: 15px 10px 30px 10px;
+            &.transaction{
+                padding: 20px 10px 15px 10px;
+                background: none;
             }
         }
     }
@@ -3078,6 +3109,12 @@
                 }
             }
         }
+    }
+    a.btn-block.btn-price .price-btn, button.btn-block.btn-price .price-btn, .btn-block.btn-price .price-btn{
+        display: block;
+        border-right: 3px solid currentColor;
+        width: 100%;
+        text-align: center;
     }
 }
 

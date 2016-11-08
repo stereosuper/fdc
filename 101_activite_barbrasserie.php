@@ -407,29 +407,23 @@
 												    Déposer une annonce
 												</div>
 												<p>
-												    Vous souhaitez trouver rapidement un acquéreur pour votre bar brasserie ?<br>
-												    Vous êtes au bon endroit !
+												    Vous souhaitez trouver rapidement un acquéreur pour votre bar brasserie&nbsp;?
 												</p>
-												<div class='wrapper-alignment wrapper-price-argu'>
-													<div class='content-align-middle content-price'>
-														<div class="big-price">
-														    <span>40</span><sup>€ HT</sup>
-														</div>
-													</div>
-													<div class='content-align-middle'>
-														<ul>
-														    <li>Diffusion pendant <strong>6 mois</strong></li>
-														    <li><strong>Modifiez votre annonce</strong> quand vous le souhaitez</li>
-														    <li>Profitez de <strong>statistiques</strong> de consultation</li>
-														</ul>
-													</div>
-												</div>
-												<a href="#" class="btn-block btn-orange-sale huge right"><span class="border"></span><span class="txt-btn">Déposer mon annonce</span></a>
+												<ul>
+												    <li>Diffusion pendant <strong>6 mois</strong></li>
+												    <li><strong>Modifiez votre annonce</strong> quand vous le souhaitez</li>
+												    <li>Profitez de <strong>statistiques</strong> de consultation</li>
+												</ul>
+												<a href="#" class="btn-block btn-orange-sale huge btn-price"><span class="border"></span><span class='price-btn'>40<span class='currency'>€ HT</span></span><span class="txt-btn">Déposer mon annonce</span></a>
 											</div>
 											<div class='content-align-top wrapper-pub-pack'>
 												<a href='#' class='pub-pack'>
 													<span class='small-txt'>Plusieurs affaires à vendre&nbsp;?</span>
-													<span class='big-txt'>Découvrez nos packs d'annonces<span class='icon-arrow'></span></span>
+													<span class='big-txt'>Découvrez<br/> nos packs<br/> d'annonces<span class='icon-arrow'></span></span>
+												</a>
+												<a href='#' class='pub-pack transaction'>
+													<span class='big-txt'>Professionnels<br /> de la transaction<span class='icon-arrow'></span></span>
+													<span class='small-txt'>Contactez-nous pour bénéficier<br/> de notre offre <i>no limit&nbsp;!</i></span>
 												</a>
 											</div>
 				                        </div>

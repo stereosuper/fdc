@@ -135,7 +135,7 @@
 }
 
 .wrapper-pub-pack{
-    width: 208px;
+    width: 345px;
     position: relative;
 }
 .pub-pack{
@@ -145,15 +145,19 @@
     height: auto;
     text-align: center;
     text-decoration: none;
-    padding: 30px 10px;
+    margin: 0 0 15px;
+    padding: 15px 10px 30px 105px;
     color: $txt;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     border: 1px solid $gris;
     transition: $transition;
+    &.transaction{
+    	margin-bottom: 0;
+    	background: url('../layoutImg/pro-transaction.jpg') no-repeat 0 100%;
+    	padding: 20px 10px 15px 80px;
+    	.big-txt{
+			margin-bottom: 5px;
+    	}
+    }
     .small-txt{
         display: block;
         font-family: $roboto-cd;
@@ -177,6 +181,10 @@
             transform: translateX(0);
             transition: transform 0.3s ease-in-out;
         }
+    }
+    i{
+    	font-style: normal;
+    	font-family: $roboto-cd-bold-it;
     }
     &:focus, &:hover{
         color: mix(white, $bleu-link, 30%);

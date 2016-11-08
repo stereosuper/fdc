@@ -2760,9 +2760,17 @@ button {
 .wrapper-depot-annonce {
   padding: 0 70px 0 0; }
   .wrapper-depot-annonce ul {
-    margin: 0; }
+    margin: 0 0 0 -14px;
+    padding: 0; }
     .wrapper-depot-annonce ul li {
       margin: 0; }
+  .wrapper-depot-annonce .btn-price {
+    margin-top: 30px;
+    font-family: "roboto_condensedregular", "robotoregular", sans-serif; }
+    .wrapper-depot-annonce .btn-price .currency {
+      vertical-align: super;
+      font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+      font-size: 0.55em; }
 
 .wrapper-alignment.wrapper-price-argu {
   table-layout: auto;
@@ -4016,29 +4024,51 @@ a.btn-block, button.btn-block, .btn-block {
     box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.22); }
   a.btn-block.btn-rouge .border, button.btn-block.btn-rouge .border, .btn-block.btn-rouge .border {
     border-color: #c52d38 #c52d38; }
+  a.btn-block.btn-rouge .price-btn, button.btn-block.btn-rouge .price-btn, .btn-block.btn-rouge .price-btn {
+    color: #c52d38; }
+  a.btn-block.btn-rouge:hover .price-btn, a.btn-block.btn-rouge:focus .price-btn, button.btn-block.btn-rouge:hover .price-btn, button.btn-block.btn-rouge:focus .price-btn, .btn-block.btn-rouge:hover .price-btn, .btn-block.btn-rouge:focus .price-btn {
+    color: #c52d38; }
   a.btn-block.btn-orange .border, button.btn-block.btn-orange .border, .btn-block.btn-orange .border {
     border-color: #de3d25 #de3d25; }
+  a.btn-block.btn-orange .price-btn, button.btn-block.btn-orange .price-btn, .btn-block.btn-orange .price-btn {
+    color: #de3d25; }
+  a.btn-block.btn-orange:hover .price-btn, a.btn-block.btn-orange:focus .price-btn, button.btn-block.btn-orange:hover .price-btn, button.btn-block.btn-orange:focus .price-btn, .btn-block.btn-orange:hover .price-btn, .btn-block.btn-orange:focus .price-btn {
+    color: #de3d25; }
   a.btn-block.btn-orange-light .border, button.btn-block.btn-orange-light .border, .btn-block.btn-orange-light .border {
     border-color: #ef6a2b #ef6a2b; }
+  a.btn-block.btn-orange-light .price-btn, button.btn-block.btn-orange-light .price-btn, .btn-block.btn-orange-light .price-btn {
+    color: #ef6a2b; }
   a.btn-block.btn-orange-light:hover, a.btn-block.btn-orange-light:focus, button.btn-block.btn-orange-light:hover, button.btn-block.btn-orange-light:focus, .btn-block.btn-orange-light:hover, .btn-block.btn-orange-light:focus {
     color: #ef6a2b; }
+    a.btn-block.btn-orange-light:hover .price-btn, a.btn-block.btn-orange-light:focus .price-btn, button.btn-block.btn-orange-light:hover .price-btn, button.btn-block.btn-orange-light:focus .price-btn, .btn-block.btn-orange-light:hover .price-btn, .btn-block.btn-orange-light:focus .price-btn {
+      color: #ef6a2b; }
   a.btn-block.btn-orange-sale, button.btn-block.btn-orange-sale, .btn-block.btn-orange-sale {
     background: #e24318; }
     a.btn-block.btn-orange-sale .border, button.btn-block.btn-orange-sale .border, .btn-block.btn-orange-sale .border {
       border-color: #e24318 #e24318; }
+    a.btn-block.btn-orange-sale .price-btn, button.btn-block.btn-orange-sale .price-btn, .btn-block.btn-orange-sale .price-btn {
+      color: #e24318; }
     a.btn-block.btn-orange-sale:hover, a.btn-block.btn-orange-sale:focus, button.btn-block.btn-orange-sale:hover, button.btn-block.btn-orange-sale:focus, .btn-block.btn-orange-sale:hover, .btn-block.btn-orange-sale:focus {
       color: #e24318; }
+      a.btn-block.btn-orange-sale:hover .price-btn, a.btn-block.btn-orange-sale:focus .price-btn, button.btn-block.btn-orange-sale:hover .price-btn, button.btn-block.btn-orange-sale:focus .price-btn, .btn-block.btn-orange-sale:hover .price-btn, .btn-block.btn-orange-sale:focus .price-btn {
+        color: #e24318; }
   a.btn-block.btn-yellow, button.btn-block.btn-yellow, .btn-block.btn-yellow {
     color: white; }
     a.btn-block.btn-yellow .border, button.btn-block.btn-yellow .border, .btn-block.btn-yellow .border {
       border-color: #f18832 #f18832; }
+    a.btn-block.btn-yellow .price-btn, button.btn-block.btn-yellow .price-btn, .btn-block.btn-yellow .price-btn {
+      color: #f18832; }
     a.btn-block.btn-yellow:hover, a.btn-block.btn-yellow:focus, button.btn-block.btn-yellow:hover, button.btn-block.btn-yellow:focus, .btn-block.btn-yellow:hover, .btn-block.btn-yellow:focus {
       color: #f18832; }
+      a.btn-block.btn-yellow:hover .price-btn, a.btn-block.btn-yellow:focus .price-btn, button.btn-block.btn-yellow:hover .price-btn, button.btn-block.btn-yellow:focus .price-btn, .btn-block.btn-yellow:hover .price-btn, .btn-block.btn-yellow:focus .price-btn {
+        color: #f18832; }
   a.btn-block.btn-orange-cercle, button.btn-block.btn-orange-cercle, .btn-block.btn-orange-cercle {
     color: white; }
     a.btn-block.btn-orange-cercle .border, button.btn-block.btn-orange-cercle .border, .btn-block.btn-orange-cercle .border {
       border-color: #ff8925 #ff8925; }
     a.btn-block.btn-orange-cercle:hover, a.btn-block.btn-orange-cercle:focus, button.btn-block.btn-orange-cercle:hover, button.btn-block.btn-orange-cercle:focus, .btn-block.btn-orange-cercle:hover, .btn-block.btn-orange-cercle:focus {
+      color: #ff8925; }
+    a.btn-block.btn-orange-cercle .price-btn, button.btn-block.btn-orange-cercle .price-btn, .btn-block.btn-orange-cercle .price-btn {
       color: #ff8925; }
   a.btn-block.btn-white-border .border, button.btn-block.btn-white-border .border, .btn-block.btn-white-border .border {
     border-color: white white; }
@@ -4071,6 +4101,25 @@ a.btn-block, button.btn-block, .btn-block {
               transform: translate3d(1px, 2px, 0) rotate(20deg);
       color: #c6333e;
       z-index: 5; }
+  a.btn-block.btn-price, button.btn-block.btn-price, .btn-block.btn-price {
+    padding: 0; }
+    a.btn-block.btn-price .price-btn, button.btn-block.btn-price .price-btn, .btn-block.btn-price .price-btn {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      background: white;
+      font-size: 2.5em;
+      line-height: 1;
+      padding: 15px;
+      border-top: 3px solid currentColor;
+      border-bottom: 3px solid currentColor;
+      border-left: 3px solid currentColor;
+      font-family: "roboto_condensedregular", "robotoregular", sans-serif; }
+    a.btn-block.btn-price .txt-btn, button.btn-block.btn-price .txt-btn, .btn-block.btn-price .txt-btn {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 15px 25px;
+      font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif; }
   .wrapper-input-btn a.btn-block, .wrapper-input-btn button.btn-block, .wrapper-input-btn .btn-block {
     position: absolute;
     top: 0;
@@ -5624,7 +5673,7 @@ a.btn-block, button.btn-block, .btn-block {
     color: white; }
 
 .wrapper-pub-pack {
-  width: 208px;
+  width: 345px;
   position: relative; }
 
 .pub-pack {
@@ -5634,16 +5683,18 @@ a.btn-block, button.btn-block, .btn-block {
   height: auto;
   text-align: center;
   text-decoration: none;
-  padding: 30px 10px;
+  margin: 0 0 15px;
+  padding: 15px 10px 30px 105px;
   color: #282c34;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   border: 1px solid #dadada;
   -webkit-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out; }
+  .pub-pack.transaction {
+    margin-bottom: 0;
+    background: url("../layoutImg/pro-transaction.jpg") no-repeat 0 100%;
+    padding: 20px 10px 15px 80px; }
+    .pub-pack.transaction .big-txt {
+      margin-bottom: 5px; }
   .pub-pack .small-txt {
     display: block;
     font-family: "roboto_condensedregular", "robotoregular", sans-serif;
@@ -5669,6 +5720,9 @@ a.btn-block, button.btn-block, .btn-block {
               transform: translateX(0);
       -webkit-transition: -webkit-transform 0.3s ease-in-out;
               transition: transform 0.3s ease-in-out; }
+  .pub-pack i {
+    font-style: normal;
+    font-family: "roboto_condensedbold_italic", "robotoitalic", "robotoregular", sans-serif; }
   .pub-pack:focus, .pub-pack:hover {
     color: #9db2e5; }
     .pub-pack:focus .big-txt, .pub-pack:hover .big-txt {
@@ -6577,7 +6631,7 @@ body.wrapper-blured #wrapper-page {
     font-family: "robotoregular", sans-serif;
     font-size: 1em;
     text-align: center;
-    padding: 25px;
+    padding: 25px 15px;
     color: white;
     text-decoration: none;
     z-index: 1;
@@ -6604,7 +6658,7 @@ body.wrapper-blured #wrapper-page {
     .credits-contact a strong {
       display: block;
       font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
-      font-size: 2.5em;
+      font-size: 1.95em;
       margin: 0 0 5px; }
     .credits-contact a i {
       font-style: normal;
@@ -8250,6 +8304,20 @@ body.cercle .content-tabs {
   body.cercle .full-circle.wave li.equip-step {
     left: 660px; } }
 @media (max-width: 1150px) {
+  .credits-contact {
+    margin: 20px 0 0; }
+    .credits-contact > li {
+      display: block;
+      width: 100%;
+      max-width: 650px;
+      margin: 20px auto; }
+      .credits-contact > li:first-child, .credits-contact > li:last-child {
+        padding: 0; }
+      .credits-contact > li a {
+        padding: 20px; }
+        .credits-contact > li a strong {
+          font-size: 2em; }
+
   .cols-footer > li:nth-child(1) {
     padding-right: 52px; }
 
@@ -9173,19 +9241,20 @@ body.cercle .content-tabs {
   .field-content .table-offres-tarifs tr td p.h1.credit-annonce, .field-content .table-offres-tarifs tr td.big-pricing p.h1.credit-annonce, .field-content .table-offres-tarifs tr td.no-border p.h1.credit-annonce {
     font-size: 1.5em; }
 
-  .credits-contact {
-    margin: 20px 0 0; }
-    .credits-contact > li {
-      display: block;
-      width: 100%;
-      max-width: 650px;
-      margin: 20px auto; }
-      .credits-contact > li:first-child, .credits-contact > li:last-child {
-        padding: 0; }
-      .credits-contact > li a {
-        padding: 20px; }
-        .credits-contact > li a strong {
-          font-size: 2em; } }
+  .wrapper-pub-pack {
+    width: 280px; }
+
+  .pub-pack .big-txt {
+    font-size: 1.8em; }
+
+  a.btn-block.btn-price .price-btn, button.btn-block.btn-price .price-btn, .btn-block.btn-price .price-btn {
+    font-size: 2em;
+    padding: 8px; }
+  a.btn-block.btn-price .txt-btn, button.btn-block.btn-price .txt-btn, .btn-block.btn-price .txt-btn {
+    padding: 8px 12px; }
+
+  .wrapper-depot-annonce ul {
+    margin: 0; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -9765,9 +9834,15 @@ body.cercle .content-tabs {
       margin: 30px 0 0 0;
       min-height: 250px;
       width: 100%;
-      max-width: 230px; }
-    .container-depot-annonce .pub-pack .big-txt {
-      font-size: 1.6em; }
+      max-width: 300px; }
+    .container-depot-annonce .pub-pack {
+      background: none;
+      padding: 15px 10px 30px 10px; }
+      .container-depot-annonce .pub-pack .big-txt {
+        font-size: 1.6em; }
+      .container-depot-annonce .pub-pack.transaction {
+        padding: 20px 10px 15px 10px;
+        background: none; }
 
   .content-tabs-sale .field-content .tab-content-title {
     font-size: 2.2em; }
@@ -10045,7 +10120,13 @@ body.cercle .content-tabs {
       text-indent: -9999px;
       overflow: hidden; }
       body.cercle .full-circle li:before {
-        bottom: 0; } }
+        bottom: 0; }
+
+  a.btn-block.btn-price .price-btn, button.btn-block.btn-price .price-btn, .btn-block.btn-price .price-btn {
+    display: block;
+    border-right: 3px solid currentColor;
+    width: 100%;
+    text-align: center; } }
 @media (max-width: 480px) {
   h1, #lb .lightbox-content .field h1 {
     font-size: 1.8em; }
