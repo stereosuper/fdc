@@ -512,6 +512,11 @@ p {
   line-height: 1.5; }
   p.small {
     font-size: 0.875em; }
+  #main:not(.seo-style) .content-default p:first-of-type {
+    font-family: "robotomedium_italic", "robotoitalic", "robotoregular", sans-serif; }
+
+#main:not(.seo-style) .content-default h2 + p:first-of-type, #main:not(.seo-style) .content-default h3 + p:first-of-type, #main:not(.seo-style) .content-default h4 + p:first-of-type {
+  font-family: "robotoregular", sans-serif; }
 
 b, strong {
   font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
