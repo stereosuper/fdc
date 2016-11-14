@@ -3635,6 +3635,9 @@
     }
     .vue-print{
         margin: 10px;
+        .field-content-detail{
+            padding: 15px 30px;
+        }
         .bloc-top{
                 display: none;
         }
@@ -3855,5 +3858,8 @@
     }
     .detail .table{
         display: block;
+    }
+    .alert-cookies{
+        display: none;
     }
 }

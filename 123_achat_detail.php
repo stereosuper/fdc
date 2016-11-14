@@ -10,7 +10,7 @@
         <link rel='next' href='/page2.html'>
     </head>
 
-    <body class="hasMaps">
+    <body class="hasMaps vue-print">
         <div class='alert-cookies'>
             <div class='container'>
                 <div class='wrapper-alignment'>

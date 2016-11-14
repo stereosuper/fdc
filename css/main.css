@@ -10448,6 +10448,8 @@ body.cercle .content-tabs {
 
   .vue-print {
     margin: 10px; }
+    .vue-print .field-content-detail {
+      padding: 15px 30px; }
     .vue-print .bloc-top {
       display: none; }
     .vue-print header {
@@ -10595,4 +10597,7 @@ body.cercle .content-tabs {
 
 @media print {
   .detail .table {
-    display: block; } }
+    display: block; }
+
+  .alert-cookies {
+    display: none; } }
