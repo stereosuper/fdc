@@ -5545,6 +5545,10 @@ a.btn-block, button.btn-block, .btn-block {
   height: 90px;
   background-color: #000;
   margin: 0 auto; }
+  .pub img.horizontale {
+    display: block; }
+  .pub img.horizontale-small {
+    display: none; }
 
 .wrapper-link-cercle {
   padding: 35px 30px; }
@@ -5744,6 +5748,12 @@ a.btn-block, button.btn-block, .btn-block {
     margin-left: 35px;
     width: 120px;
     height: 600px; }
+    .wrapper-pub.pub-right .pub img.verticale {
+      display: block; }
+    .wrapper-pub.pub-right .pub img.horizontale {
+      display: none; }
+    .wrapper-pub.pub-right .pub img.horizontale-small {
+      display: none; }
   .wrapper-pub.pub-right .indic-pub {
     width: 120px;
     text-align: center;
@@ -8551,7 +8561,14 @@ body.cercle .content-tabs {
     left: -70px; }
 
   .header-cercle {
-    height: 380px; } }
+    height: 380px; }
+
+  .wrapper-pub.pub-right .pub img.verticale {
+    display: none; }
+  .wrapper-pub.pub-right .pub img.horizontale {
+    display: block; }
+  .wrapper-pub.pub-right .pub img.horizontale-small {
+    display: none; } }
 @media (max-width: 1080px) {
   .cercleMyForum.adCercle header img {
     float: left;
@@ -9873,7 +9890,19 @@ body.cercle .content-tabs {
     .alert-cookies .content-align-middle.btn-cookies {
       padding: 0;
       margin: 10px 0 0 0;
-      text-align: left; } }
+      text-align: left; }
+
+  .pub img.horizontale {
+    display: none; }
+  .pub img.horizontale-small {
+    display: block; }
+
+  .wrapper-pub.pub-right .pub img.verticale {
+    display: none; }
+  .wrapper-pub.pub-right .pub img.horizontale {
+    display: none; }
+  .wrapper-pub.pub-right .pub img.horizontale-small {
+    display: block; } }
 @media (max-width: 650px) {
   ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){

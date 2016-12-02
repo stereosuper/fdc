@@ -19,6 +19,14 @@
 	height: 90px;
 	background-color: #000;
 	margin: 0 auto;
+	img{
+		&.horizontale{
+			display: block;
+		}
+		&.horizontale-small{
+			display: none;
+		}
+	}
 }
 
 .wrapper-link-cercle{
@@ -204,7 +212,19 @@
         margin-left: 35px;
         width: 120px;
         height: 600px;
+        img{
+        	&.verticale{
+        		display: block;
+        	}
+        	&.horizontale{
+        		display: none;
+        	}
+        	&.horizontale-small{
+        		display: none;
+        	}
+        }
     }
+
     .indic-pub{
         width:120px;
         text-align:center;

@@ -115,6 +115,9 @@
                     <div class='wrapper-pub pub-right content-tab-layout'>
                         <div class='pub'>
                             <div class='indic-pub'>— publicité —</div>
+                            <img class='verticale' src='img/pub-verticale.jpg' srcset='img/pub-verticale.jpg 1x, img/pub-verticale@2x.jpg 2x' alt=''>
+                            <img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
+                            <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
                         </div>
                     </div>
                 </div>
