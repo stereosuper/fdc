@@ -563,10 +563,8 @@ $(function(){
 
 
 	// Detect adblock
-	if(isBlocked.length){
-		if(isBlocked){
-			$('.wrapper-pub').addClass('hidden');
-		}
+	if(isBlocked){
+		$('.wrapper-pub').addClass('hidden');
 	}
 
 	var isIE = detectIE();
