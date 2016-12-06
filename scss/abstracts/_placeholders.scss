@@ -300,6 +300,9 @@
         margin: auto;
         background: url(../layoutImg/no-img-alerts.png) no-repeat;
         color: #fff;
+        &.no-bg{
+            background: none;
+        }
         /*&:after{
             @include font-icon;
             @include size(13px);

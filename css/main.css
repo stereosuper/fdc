@@ -1082,6 +1082,8 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
         background: $theme-btn;
         transition: background $transition;
     }*/ }
+    .alerts-list .img.no-bg, .sales-list .img.no-bg, .partners-list .img.no-bg, .search-list .img.no-bg {
+      background: none; }
     .alerts-list .img:hover, .sales-list .img:hover, .partners-list .img:hover, .search-list .img:hover, .alerts-list .img:focus, .sales-list .img:focus, .partners-list .img:focus, .search-list .img:focus {
       color: #c6333e; }
       .alerts-list .img:hover:after, .sales-list .img:hover:after, .partners-list .img:hover:after, .search-list .img:hover:after, .alerts-list .img:focus:after, .sales-list .img:focus:after, .partners-list .img:focus:after, .search-list .img:focus:after {
