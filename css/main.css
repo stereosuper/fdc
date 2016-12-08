@@ -7316,6 +7316,16 @@ body.wrapper-blured #wrapper-page {
             margin: 0; }
             .detail .table .content-tabs-detail .field-content-detail ul li:before {
               content: none; }
+            .detail .table .content-tabs-detail .field-content-detail ul li h3 {
+              padding: 0;
+              font-family: "robotoregular", sans-serif;
+              font-size: 1em;
+              font-weight: 400;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              text-rendering: optimizeLegibility;
+              margin: 0;
+              color: #282c34; }
         .detail .table .content-tabs-detail .field-content-detail .content-footer {
           padding: 30px 50px;
           margin: 30px -66px -30px; }
