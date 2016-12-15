@@ -270,7 +270,7 @@ $tps-choice-etape-2: 0.3s;
 		.zone-txt{
 			transition-delay: 0s;
 		}
-		h3, p{
+		h2, h3, p{
 			transition-delay: 0s;
 		}
 		.zone-btn{
@@ -353,7 +353,7 @@ $tps-choice-etape-2: 0.3s;
 					transform: translateY(-35px);
 				}
 				.zone-btn{
-					h3, p{
+					h2, h3, p{
 						color: $blanc;
 					}
 				}
@@ -388,7 +388,7 @@ $tps-choice-etape-2: 0.3s;
 					transform: translateY(-35px);
 				}
 				.zone-btn{
-					h3, p{
+					h2, h3, p{
 						color: $blanc;
 					}
 				}
@@ -423,7 +423,7 @@ $tps-choice-etape-2: 0.3s;
 					transform: translateY(-35px);
 				}
 				.zone-btn{
-					h3, p{
+					h2, h3, p{
 						color: $blanc;
 					}
 				}
@@ -458,7 +458,7 @@ $tps-choice-etape-2: 0.3s;
 					transform: translateY(-35px);
 				}
 				.zone-btn{
-					h3, p{
+					h2, h3, p{
 						color: $blanc;
 					}
 				}
@@ -493,7 +493,7 @@ $tps-choice-etape-2: 0.3s;
 					transform: translateY(-35px);
 				}
 				.zone-btn{
-					h3, p{
+					h2, h3, p{
 						color: $blanc;
 					}
 				}
@@ -688,10 +688,10 @@ $tps-choice-etape-2: 0.3s;
 		padding: 0;
 		line-height: 1em;
 	}
-	p{
+	h2, p{
 		margin: 10px 0;
 	}
-	h3, p{
+	h2, h3, p{
 		transition: color $tps-choice-etape-1 ease-in-out;
 		transition-delay: 0.3s;
 	}

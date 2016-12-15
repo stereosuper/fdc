@@ -4718,7 +4718,7 @@ a.btn-block, button.btn-block, .btn-block {
     .choices.choice-1-active .zone-txt, .choices.choice-2-active .zone-txt, .choices.choice-3-active .zone-txt, .choices.choice-4-active .zone-txt, .choices.choice-5-active .zone-txt {
       -webkit-transition-delay: 0s;
               transition-delay: 0s; }
-    .choices.choice-1-active h3, .choices.choice-1-active p, .choices.choice-2-active h3, .choices.choice-2-active p, .choices.choice-3-active h3, .choices.choice-3-active p, .choices.choice-4-active h3, .choices.choice-4-active p, .choices.choice-5-active h3, .choices.choice-5-active p {
+    .choices.choice-1-active h2, .choices.choice-1-active h3, .choices.choice-1-active p, .choices.choice-2-active h2, .choices.choice-2-active h3, .choices.choice-2-active p, .choices.choice-3-active h2, .choices.choice-3-active h3, .choices.choice-3-active p, .choices.choice-4-active h2, .choices.choice-4-active h3, .choices.choice-4-active p, .choices.choice-5-active h2, .choices.choice-5-active h3, .choices.choice-5-active p {
       -webkit-transition-delay: 0s;
               transition-delay: 0s; }
     .choices.choice-1-active .zone-btn:before, .choices.choice-2-active .zone-btn:before, .choices.choice-3-active .zone-btn:before, .choices.choice-4-active .zone-btn:before, .choices.choice-5-active .zone-btn:before {
@@ -4772,7 +4772,7 @@ a.btn-block, button.btn-block, .btn-block {
       -webkit-transform: translateY(-35px);
           -ms-transform: translateY(-35px);
               transform: translateY(-35px); }
-    .choices.choice-1-active > li:nth-child(1) .zone-btn h3, .choices.choice-1-active > li:nth-child(1) .zone-btn p {
+    .choices.choice-1-active > li:nth-child(1) .zone-btn h2, .choices.choice-1-active > li:nth-child(1) .zone-btn h3, .choices.choice-1-active > li:nth-child(1) .zone-btn p {
       color: white; }
   .choices.choice-1-active .bg-choice {
     opacity: 1; }
@@ -4803,7 +4803,7 @@ a.btn-block, button.btn-block, .btn-block {
       -webkit-transform: translateY(-35px);
           -ms-transform: translateY(-35px);
               transform: translateY(-35px); }
-    .choices.choice-2-active > li:nth-child(2) .zone-btn h3, .choices.choice-2-active > li:nth-child(2) .zone-btn p {
+    .choices.choice-2-active > li:nth-child(2) .zone-btn h2, .choices.choice-2-active > li:nth-child(2) .zone-btn h3, .choices.choice-2-active > li:nth-child(2) .zone-btn p {
       color: white; }
   .choices.choice-2-active .bg-choice {
     opacity: 1; }
@@ -4834,7 +4834,7 @@ a.btn-block, button.btn-block, .btn-block {
       -webkit-transform: translateY(-35px);
           -ms-transform: translateY(-35px);
               transform: translateY(-35px); }
-    .choices.choice-3-active > li:nth-child(3) .zone-btn h3, .choices.choice-3-active > li:nth-child(3) .zone-btn p {
+    .choices.choice-3-active > li:nth-child(3) .zone-btn h2, .choices.choice-3-active > li:nth-child(3) .zone-btn h3, .choices.choice-3-active > li:nth-child(3) .zone-btn p {
       color: white; }
   .choices.choice-3-active .bg-choice {
     opacity: 1; }
@@ -4865,7 +4865,7 @@ a.btn-block, button.btn-block, .btn-block {
       -webkit-transform: translateY(-35px);
           -ms-transform: translateY(-35px);
               transform: translateY(-35px); }
-    .choices.choice-4-active > li:nth-child(4) .zone-btn h3, .choices.choice-4-active > li:nth-child(4) .zone-btn p {
+    .choices.choice-4-active > li:nth-child(4) .zone-btn h2, .choices.choice-4-active > li:nth-child(4) .zone-btn h3, .choices.choice-4-active > li:nth-child(4) .zone-btn p {
       color: white; }
   .choices.choice-4-active .bg-choice {
     opacity: 1; }
@@ -4896,7 +4896,7 @@ a.btn-block, button.btn-block, .btn-block {
       -webkit-transform: translateY(-35px);
           -ms-transform: translateY(-35px);
               transform: translateY(-35px); }
-    .choices.choice-5-active > li:nth-child(5) .zone-btn h3, .choices.choice-5-active > li:nth-child(5) .zone-btn p {
+    .choices.choice-5-active > li:nth-child(5) .zone-btn h2, .choices.choice-5-active > li:nth-child(5) .zone-btn h3, .choices.choice-5-active > li:nth-child(5) .zone-btn p {
       color: white; }
   .choices.choice-5-active .bg-choice {
     opacity: 1; }
@@ -5072,9 +5072,9 @@ a.btn-block, button.btn-block, .btn-block {
     font-size: 1.75em;
     padding: 0;
     line-height: 1em; }
-  .choices p {
+  .choices h2, .choices p {
     margin: 10px 0; }
-  .choices h3, .choices p {
+  .choices h2, .choices h3, .choices p {
     -webkit-transition: color 0.3s ease-in-out;
             transition: color 0.3s ease-in-out;
     -webkit-transition-delay: 0.3s;
@@ -8074,7 +8074,7 @@ body.cercle .content-tabs {
   .menu-header a {
     padding: 0 15px; }
 
-  .choices p {
+  .choices h2, .choices p {
     font-size: 0.9em; } }
 @media (max-width: 1280px) {
   /* AAA */
@@ -8352,7 +8352,7 @@ body.cercle .content-tabs {
     height: auto; }
     .choices h3 br {
       display: none; }
-    .choices p {
+    .choices h2, .choices p {
       font-size: 1em; }
     .choices.choice-1-active, .choices.choice-2-active, .choices.choice-3-active, .choices.choice-4-active, .choices.choice-5-active {
       background: none; }
@@ -9668,7 +9668,7 @@ body.cercle .content-tabs {
     padding: 20px 20px 20px 180px; }
   .choices h3 {
     font-size: 1.5em; }
-  .choices p {
+  .choices h2, .choices p {
     font-size: 0.9em; }
   .choices > li:nth-child(1) .visuel img {
     max-width: 65px; }
@@ -10316,7 +10316,7 @@ body.cercle .content-tabs {
     padding: 20px 20px 20px 100px; }
   .choices h3 {
     font-size: 1.5em; }
-  .choices p {
+  .choices h2, .choices p {
     font-size: 0.9em; }
   .choices > li:nth-child(1) .visuel img {
     max-width: 48px; }

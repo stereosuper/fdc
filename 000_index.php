@@ -38,7 +38,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Acheter<br /> son affaire</h3>
-										<p>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
+										<h2>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</h2>
 									</div>
 								</div>
 							</div><!--
@@ -183,7 +183,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Vendre <br />son affaire</h3>
-										<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
+										<h2>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</h2>
 									</div>
 								</div>
 							</div><!--
@@ -328,7 +328,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Être (bien) <br />accompagné</h3>
-										<p>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</p>
+										<h2>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</h2>
 									</div>
 								</div>
 							</div><!--
@@ -370,7 +370,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Achetez ou vendez votre matériel</h3>
-										<p>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</p>
+										<h2>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</h2>
 									</div>
 								</div>
 							</div><!--
@@ -412,7 +412,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Compléter <br />son équipe</h3>
-										<p>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</p>
+										<h2>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</h2>
 									</div>
 								</div>
 							</div><!--

@@ -19,7 +19,7 @@
     }
 
     .choices{
-        p{
+        h2, p{
             font-size: 0.9em;
         }
     }
@@ -389,7 +389,7 @@
                 display: none;
             }
         }
-        p{
+        h2, p{
             font-size: 1em;
         }
         &.choice-1-active, &.choice-2-active, &.choice-3-active, &.choice-4-active, &.choice-5-active{
@@ -2344,7 +2344,7 @@
         h3{
             font-size: 1.5em;
         }
-        p{
+        h2, p{
             font-size: 0.9em;
         }
         > li{
@@ -3375,7 +3375,7 @@
         h3{
             font-size: 1.5em;
         }
-        p{
+        h2, p{
             font-size: 0.9em;
         }
         > li{
