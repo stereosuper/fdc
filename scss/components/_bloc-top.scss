@@ -6,7 +6,7 @@
 	.home &{
 		height: 505px;
 	}
-	strong{
+	h1{
 		display: block;
 		margin: 0 0 8px 0;
 		padding: 130px 0 0;
@@ -14,7 +14,7 @@
 		@include roboto-cd-bold(4.063em);
 		text-align: center;
 	}
-	h1{
+	strong{
 		display: inline-block;
 		vertical-align: top;
 		margin: 4px 0 0;

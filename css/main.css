@@ -4462,7 +4462,7 @@ a.btn-block, button.btn-block, .btn-block {
   text-align: center; }
   .home .bloc-top {
     height: 505px; }
-  .bloc-top strong {
+  .bloc-top h1 {
     display: block;
     margin: 0 0 8px 0;
     padding: 130px 0 0;
@@ -4474,7 +4474,7 @@ a.btn-block, button.btn-block, .btn-block {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     text-align: center; }
-  .bloc-top h1 {
+  .bloc-top strong {
     display: inline-block;
     vertical-align: top;
     margin: 4px 0 0;
@@ -8067,7 +8067,7 @@ body.cercle .content-tabs {
 @media (max-height: 800px) {
   .home .bloc-top {
     height: 390px; }
-    .home .bloc-top strong {
+    .home .bloc-top h1 {
       padding: 96px 0 0; } }
 /* Responsive horizontal */
 @media (max-width: 1400px) {
@@ -8929,7 +8929,7 @@ body.cercle .content-tabs {
 
   .bloc-top, .home .bloc-top {
     height: 440px; }
-    .bloc-top strong, .home .bloc-top strong {
+    .bloc-top h1, .home .bloc-top h1 {
       padding: 110px 0 0;
       font-size: 3.5em; }
     .bloc-top p, .home .bloc-top p {
@@ -9566,10 +9566,10 @@ body.cercle .content-tabs {
 
   .bloc-top, .home .bloc-top {
     height: 380px; }
-    .bloc-top strong, .home .bloc-top strong {
+    .bloc-top h1, .home .bloc-top h1 {
       padding: 80px 0 0;
       font-size: 2.2em; }
-    .bloc-top h1, .home .bloc-top h1 {
+    .bloc-top strong, .home .bloc-top strong {
       font-size: 1em;
       padding: 0 4px; }
 
@@ -10222,10 +10222,10 @@ body.cercle .content-tabs {
 
   .bloc-top, .home .bloc-top {
     height: 320px; }
-    .bloc-top strong, .home .bloc-top strong {
+    .bloc-top h1, .home .bloc-top h1 {
       padding: 40px 0 0;
       font-size: 1.8em; }
-    .bloc-top h1, .home .bloc-top h1 {
+    .bloc-top strong, .home .bloc-top strong {
       font-size: 0.9em;
       padding: 0 4px; }
 

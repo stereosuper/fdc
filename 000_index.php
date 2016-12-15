@@ -16,8 +16,8 @@
 					<img src='img/visuel-home.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<strong>Notre projet : concrétiser le&nbsp;vôtre</strong>
-					<h1>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</h1>
+					<h1>Notre projet : concrétiser le&nbsp;vôtre</h1>
+					<strong>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</strong>
 				</div>
 			</div>
 
