@@ -60,7 +60,7 @@
                                 <a href='#'>
                                     <span class='img no-bg'><img src='img/sandwicherie.jpg' alt=''></span>
                                     <span class='notif-pole'>Pole Position</span>
-                                    <strong class='title-simple'>Terminal de cuisson, sandwicherie</strong>
+                                    <h2 class='title-simple'>Terminal de cuisson, sandwicherie</h2>
                                     <span href='#' class='btn-arrow small'>Voir</span>
                                     <span class='p'>Dans ensemble commercial, à 20 min de SAINT NAZAIRE. Parking</span>
                                     <span class='right alerts-price'>235 000 € FAI</span>
@@ -70,7 +70,7 @@
                                 <a href='#'>
                                     <span class='img'></span>
                                     <span class='notif-pole'>Pole Position</span>
-                                    <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                    <h2 class='title-simple'>Boulangerie pâtisserie confiserie</h2>
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right alerts-price'>140 000 € FAI</span>
@@ -79,7 +79,7 @@
                             <li>
                                 <a href='#'>
                                     <span class='img'></span>
-                                    <strong class='title-simple'>Boulangerie pâtisserie confiserie</strong>
+                                    <h2 class='title-simple'>Boulangerie pâtisserie confiserie</h2>
                                     <span class='btn-arrow small'>Voir</span>
                                     <span class='p'>BOULANGERIE PATISSERIE PROCHE LITTORAL VENDEE Situé à quinze minutes des catacombes</span>
                                     <span class='right alerts-price'>140 000 € FAI</span>
