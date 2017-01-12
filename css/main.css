@@ -704,7 +704,8 @@ a, button {
   position: relative;
   margin: 50px 0 0;
   overflow: hidden;
-  background: #eaecf1; }
+  background: #eaecf1;
+  clear: both; }
   .content-footer p {
     padding: 20px 0;
     margin: 0;
