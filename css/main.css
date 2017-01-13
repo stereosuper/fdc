@@ -4685,11 +4685,9 @@ a.btn-block, button.btn-block, .btn-block {
     .choices > li:nth-child(5) {
       left: 80%; }
       .choices > li:nth-child(5) .bg-choice {
-        background: #f2821e;
-        background: -webkit-linear-gradient(top, #f2821e 0%, #e9750d 100%);
-        background: linear-gradient(to bottom, #f2821e 0%, #e9750d 100%); }
+        background: #969696; }
         .choices > li:nth-child(5) .bg-choice:before, .choices > li:nth-child(5) .bg-choice:after {
-          background: #f1671e;
+          background: #939393;
           opacity: 0.5; }
         .choices > li:nth-child(5) .bg-choice:before {
           width: 92px;
@@ -4704,7 +4702,7 @@ a.btn-block, button.btn-block, .btn-block {
       .choices > li:nth-child(5) .visuel {
         background: url(../layoutImg/team@1x.png) no-repeat; }
       .choices > li:nth-child(5) h3 {
-        color: #e68025; }
+        color: #939393; }
   .choices.choice-1-active, .choices.choice-2-active, .choices.choice-3-active, .choices.choice-4-active, .choices.choice-5-active {
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
