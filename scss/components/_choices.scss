@@ -227,12 +227,12 @@ $tps-choice-etape-2: 0.3s;
 		&:nth-child(5){
 			left: 80%;
 			.bg-choice{
-				// background: $theme2-gradient-5;
-				// background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
-				background: rgb(150, 150, 150);
+				background: $theme2-gradient-5;
+				background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
+				// background: rgb(150, 150, 150);
 				&:before, &:after{
-					// background: rgb(241, 103, 30);
-					background: rgb(147, 147, 147);
+					background: rgb(241, 103, 30);
+					// background: rgb(147, 147, 147);
 					opacity: 0.5;
 				}
 				&:before{
@@ -252,8 +252,8 @@ $tps-choice-etape-2: 0.3s;
 				background: url(../layoutImg/team@1x.png) no-repeat;
 			}
 			h3{
-				// color: rgb(230, 128, 37);
-				color: rgb(147, 147, 147);
+				color: rgb(230, 128, 37);
+				// color: rgb(147, 147, 147);
 			}
 		}
 	}
