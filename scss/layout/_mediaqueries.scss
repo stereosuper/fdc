@@ -1802,6 +1802,9 @@
     h2{
         &.h1{
             font-size: 2.2em;
+            .content-tabs &{
+                font-size: 2.2em;
+            }
         }
     }
     .wrapper-choices .field-content .tab-content-title{
@@ -3180,6 +3183,9 @@
     h2{
         &.h1{
             font-size: 1.8em;
+            .content-tabs &{
+                font-size: 1.8em;
+            }
         }
     }
     .wrapper-choices .field-content .tab-content-title{
