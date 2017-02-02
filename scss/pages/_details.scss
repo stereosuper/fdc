@@ -216,11 +216,13 @@
             }
         }
     }
-    .wrapper-pub.pub-right {
-        width:120px;
-        display:table-cell;
-        .pub {
-            margin-top:-10px;
+    .wrapper-pub {
+        &.pub-left, &.pub-right{
+            width: 120px;
+            display: table-cell;
+            .pub {
+                margin-top: -10px;
+            }
         }
     }
 }

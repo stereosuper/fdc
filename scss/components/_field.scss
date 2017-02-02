@@ -48,6 +48,8 @@
 	&.field-sale{
 		.field-header{
 			//background: linear-gradient(to bottom, rgba(#ef9725, 0.95) 0, rgba(#ea6e19, 0.95) 100%);
+			//background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
+			background: $theme2-gradient-2;
 			background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
 			&:before{
 				width: 129px;
@@ -58,22 +60,27 @@
 			&:after{
 				//background: #ea6e19;
 				background: rgb(212, 47, 31);
+				opacity: 0.5;
 			}
 			.rect{
 				&:before{
 					//background: #ef9725;
 					background: rgb(212, 47, 31);
+					opacity: 0.5;
 				}
 				&:after{
 					//background: #ea6e19;
 					background: rgb(212, 47, 31);
+					opacity: 0.5;
 				}
 			}
 		}
 	}
 	&.field-buy{
 		.field-header{
-			background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
+			//background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
+			background: $theme2-gradient-1;
+			background: linear-gradient(to bottom, $theme2-gradient-1 0%, darken($theme2-gradient-1, 5%) 100%);
 			&:before{
 				width: 84px;
 				height: 83px;
@@ -82,13 +89,15 @@
 				background-size: 100%;
 			}
 			&:after, .rect:before, .rect:after{
-				background: #be2b36;
+				background: rgb(198, 40, 25);
 			}
 		}
 	}
     &.field-stuff{
         .field-header{
-            background: linear-gradient(to bottom, rgba(#f16c2b, 0.95) 0, rgba(#e03f13, 0.95) 100%);
+            // background: linear-gradient(to bottom, rgba(#f16c2b, 0.95) 0, rgba(#e03f13, 0.95) 100%);
+            background: $theme2-gradient-4;
+            background: linear-gradient(to bottom, $theme2-gradient-4 0%, darken($theme2-gradient-4, 5%) 100%);
             &:before{
                 width: 93px;
                 height: 87px;
@@ -97,21 +106,26 @@
                 background-size: 100%;
             }
             &:after{
-                background: #e03f13;
+                // background: #e03f13;
+                background: rgb(235, 91, 30);
             }
             .rect{
                 &:before{
-                    background: #f16c2b;
+                    // background: #f16c2b;
+                    background: rgb(235, 91, 30);
                 }
                 &:after{
-                    background: #e03f13;
+                    // background: #e03f13;
+                    background: rgb(235, 91, 30);
                 }
             }
         }
     }
     &.field-job{
         .field-header{
-            background: linear-gradient(to bottom, rgba(#eb7f16, 0.95) 0, rgba(#e45415, 0.95) 100%);
+            // background: linear-gradient(to bottom, rgba(#eb7f16, 0.95) 0, rgba(#e45415, 0.95) 100%);
+            background: $theme2-gradient-5;
+            background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
             &:before{
                 width: 116px;
                 height: 75px;
@@ -120,14 +134,20 @@
                 background-size: 100%;
             }
             &:after{
-                background: #e45415;
+                // background: #e45415;
+                background: rgb(241, 103, 30);
+                opacity: 0.5;
             }
             .rect{
                 &:before{
-                    background: #eb7f16;
+                    // background: #eb7f16;
+                    background: rgb(241, 103, 30);
+                    opacity: 0.5;
                 }
                 &:after{
-                    background: #e45415;
+                    // background: #e45415;
+                    background: rgb(241, 103, 30);
+                    opacity: 0.5;
                 }
             }
         }

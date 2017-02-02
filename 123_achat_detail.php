@@ -68,6 +68,16 @@
                     </header>
                 </div>
                 <div class="table-layout detail">
+                    <div class='wrapper-pub pub-left content-tab-layout'>
+                        <div class='pub'>
+                            <div class='indic-pub'>— publicité —</div>
+                            <a href='#'>
+                                <img class='verticale' src='img/pub-verticale.jpg' srcset='img/pub-verticale.jpg 1x, img/pub-verticale@2x.jpg 2x' alt=''>
+                                <img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
+                                <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
+                            </a>
+                        </div>
+                    </div>
                     <div class="content-tab-layout">
                         <div class='table'>
                             <div class="content-tabs-detail">
@@ -121,6 +131,11 @@
                                 <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div class='wrapper-pub'>
+                    <div class='pub'>
+                        <div class='indic-pub'>— publicité —</div>
                     </div>
                 </div>
                 <div class='cercleMyForum adCercle'>

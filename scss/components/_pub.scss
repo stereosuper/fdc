@@ -205,31 +205,41 @@
     }
 }
 
-.wrapper-pub.pub-right{
-    width: 120px;
-    margin:0;
-    .pub{
-        margin-left: 35px;
-        width: 120px;
-        height: 600px;
-        img{
-        	&.verticale{
-        		display: block;
-        	}
-        	&.horizontale{
-        		display: none;
-        	}
-        	&.horizontale-small{
-        		display: none;
-        	}
-        }
-    }
-
-    .indic-pub{
-        width:120px;
-        text-align:center;
-        transform: translateY(0) rotate(0);
-        top: -20px;
-        left: 0;
-    }
+.wrapper-pub{
+	&.pub-left, &.pub-right{
+		width: 120px;
+		margin: 0;
+		.pub{
+		    width: 120px;
+		    height: 600px;
+		    img{
+		    	&.verticale{
+		    		display: block;
+		    	}
+		    	&.horizontale{
+		    		display: none;
+		    	}
+		    	&.horizontale-small{
+		    		display: none;
+		    	}
+		    }
+		}
+		.indic-pub{
+		    width:120px;
+		    text-align:center;
+		    transform: translateY(0) rotate(0);
+		    top: -20px;
+		    left: 0;
+		}
+	}
+	&.pub-left{
+		.pub{
+		    margin-right: 35px;
+		}
+	}
+	&.pub-right{
+	    .pub{
+	        margin-left: 35px;
+	    }
+	}
 }
