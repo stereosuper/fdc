@@ -10,10 +10,10 @@
                 left:50%;
                 top:300px;
                 z-index:3;
-                &.left-side {
+                &.right-side {
                     margin-left:630px;
                 }
-                &.right-side {
+                &.left-side {
                     margin-left:-750px;
                 }
                 .pub {
@@ -77,10 +77,10 @@
                 left:50%;
                 top:150px;
                 z-index:3;
-                &.left-side {
+                &.right-side {
                     margin-left:550px;
                 }
-                &.right-side {
+                &.left-side {
                     margin-left:-670px;
                 }
                 .pub {
