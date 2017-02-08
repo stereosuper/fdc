@@ -8101,7 +8101,10 @@ body.cercle .content-tabs {
         top: -20px;
         left: 0;
         right: 0;
-        text-align: center; } }
+        text-align: center; }
+
+  body.cercle:not(.home) .wrapper-pub.floating-pub {
+    top: 184px; } }
 @media (max-width: 1400px) {
   .menu-header a {
     padding: 0 15px; }

@@ -99,21 +99,22 @@ $(function(){
 	// On scroll page
 	function scrollPage(){
 		myScroll = $(document).scrollTop();
-		requestAnimFrame(scrollPage);
 		if ($(".little-squares").length>0) {
 			TweenMax.set($(".little-squares li:nth-child(even)"), { y: myScroll/8});
 			TweenMax.set($(".little-squares li:nth-child(odd)"), { y: myScroll/4});
 		}
 		if(windowWidth>1500){
-			fixBloc(".home .floating-pub",300,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
+			fixBloc("body.home .floating-pub",300,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
 		} else {
-			$(".home .floating-pub").css({"top":"auto","position":"static"});
+			$("body.home .floating-pub").css({"top":"auto","position":"static"});
 		}
 		if(windowWidth>1350){
-			fixBloc("body:not(.home) .floating-pub",150,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
+			fixBloc("body:not(.home):not(.cercle) .floating-pub",150,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
+			fixBloc("body.cercle:not(.home) .floating-pub",184,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
 		} else {
-			$("body:not(.home) .floating-pub").css({"top":"auto","position":"static"});
+			$(".floating-pub").css({"top":"auto","position":"static"});
 		}
+		requestAnimFrame(scrollPage);
 	}
 
 	// Creation de compte - Interactive map

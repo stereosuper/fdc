@@ -110,6 +110,13 @@
             }
         }
     }
+    body.cercle:not(.home) {
+        .wrapper-pub{
+            &.floating-pub{
+                top:184px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1400px){
