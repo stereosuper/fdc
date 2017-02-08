@@ -242,4 +242,22 @@
 	        margin-left: 35px;
 	    }
 	}
+	&.floating-pub {
+		margin-top: -30px;
+		.pub{
+		    width: 728px;
+		    height: 90px;
+		    img{
+		    	&.verticale{
+		    		display: none;
+		    	}
+		    	&.horizontale{
+		    		display: block;
+		    	}
+		    	&.horizontale-small{
+		    		display: none;
+		    	}
+		    }
+		}
+	}
 }

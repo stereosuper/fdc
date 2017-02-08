@@ -1,3 +1,47 @@
+/* Responsive horizontal */
+@media (min-width: 1500px){
+     .wrapper-pub{
+        &.floating-pub{
+            display: block;
+            margin: 147px 0 0 0;
+            width:120px;
+            position:absolute;
+            left:50%;
+            top:200px;
+            z-index:3;
+            &.left-side {
+                margin-left:630px;
+            }
+            &.right-side {
+                margin-left:-750px;
+            }
+            .pub {
+                margin-top:0;
+                width: 120px;
+                height: 600px;
+                margin:0 auto;
+                img{
+                    &.verticale{
+                        display: block;
+                    }
+                    &.horizontale{
+                        display: none;
+                    }
+                    &.horizontale-small{
+                        display: none;
+                    }
+                }
+                .indic-pub{
+                    transform: none;
+                    top: -20px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 /* Responsive vertical */
 @media (max-height: 800px){
     .home{
@@ -9,8 +53,14 @@
         }
     }
 }
+@media (min-height: 801px) and (min-width: 1500px){
+    .wrapper-pub{
+        &.floating-pub{
+            margin-top: 264px;
+        }
+    } 
+}
 
-/* Responsive horizontal */
 @media (max-width: 1400px){
     .menu-header{
         a{
@@ -2530,18 +2580,17 @@
         }
     }
     /* details */
-    .detail {
-        .wrapper-pub{
-            &.pub-left, &.pub-right{
-                .pub {
-                    width: 300px;
-                    height: 250px;
-                    max-width:100%;
-                    max-height:auto;
-                }
+    .wrapper-pub{
+        &.pub-left, &.pub-right, &.floating-pub {
+            .pub {
+                width: 300px;
+                height: 250px;
+                max-width:100%;
+                max-height:auto;
             }
-        } 
-    }
+        }
+    } 
+
     /* lightbox */
     #lb .prev-slide, #lb .next-slide {
         width:20px;
@@ -2737,7 +2786,7 @@
         }
     }
     .wrapper-pub{
-        &.pub-left, &.pub-right{
+        &.pub-left, &.pub-right, &.floating-pub {
            .pub{
                img{
                    &.verticale{
