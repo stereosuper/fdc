@@ -5,6 +5,7 @@ $(function(){
 		windowHeight = $(window).height(), windowWidth = $(window).width(),
 		setMapFormActive = false, doit,
 		body = $('body'),
+		heightPub = 630,
 		slideIndex = 0;
 
 
@@ -17,6 +18,26 @@ $(function(){
 				window.msRequestAnimationFrame     ||
 				function(callback){ window.setTimeout(callback, 1000/60); };
 	})();
+
+	// to fix an element on scroll
+	// note : element should be in absolute position, with a margin-top equal to the desired offset while fixed.
+	// scrollBegin will set the initial position regardless of 'top' css property. Same with scrollEnd
+	function fixBloc(id_string, scrollBegin, scrollEnd) {
+		var myScroll = $(document).scrollTop();
+		if (myScroll>=scrollBegin && myScroll<scrollEnd) {
+			$(id_string).css("position","fixed");
+			$(id_string).addClass("scrollFixed");
+			$(id_string).css("top","0px");
+		} else {
+			$(id_string).css("position","absolute");
+			$(id_string).removeClass("scrollFixed");
+			if (myScroll<scrollBegin) {
+				$(id_string).css("top",scrollBegin+"px");
+			} else if (myScroll>=scrollEnd) {
+				$(id_string).css("top",scrollEnd+"px");
+			}
+		}
+	}
 
 	// toggleAttr() jQuery plugin
 	// @link http://github.com/mathiasbynens/toggleAttr-jQuery-Plugin
@@ -82,6 +103,11 @@ $(function(){
 		if ($(".little-squares").length>0) {
 			TweenMax.set($(".little-squares li:nth-child(even)"), { y: myScroll/8});
 			TweenMax.set($(".little-squares li:nth-child(odd)"), { y: myScroll/4});
+		}
+		if(windowWidth>1500){
+			fixBloc(".floating-pub",300,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
+		} else {
+			$(".floating-pub").css({"top":"auto","position":"static"});
 		}
 	}
 

@@ -8033,11 +8033,11 @@ body.cercle .content-tabs {
 @media (min-width: 1500px) {
   .wrapper-pub.floating-pub {
     display: block;
-    margin: 147px 0 0 0;
+    margin: 47px 0 0 0;
     width: 120px;
     position: absolute;
     left: 50%;
-    top: 200px;
+    top: 300px;
     z-index: 3; }
     .wrapper-pub.floating-pub.left-side {
       margin-left: 630px; }
@@ -8069,7 +8069,7 @@ body.cercle .content-tabs {
       padding: 96px 0 0; } }
 @media (min-height: 801px) and (min-width: 1500px) {
   .wrapper-pub.floating-pub {
-    margin-top: 264px; } }
+    margin-top: 164px; } }
 @media (max-width: 1400px) {
   .menu-header a {
     padding: 0 15px; }
