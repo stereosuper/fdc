@@ -105,9 +105,14 @@ $(function(){
 			TweenMax.set($(".little-squares li:nth-child(odd)"), { y: myScroll/4});
 		}
 		if(windowWidth>1500){
-			fixBloc(".floating-pub",300,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
+			fixBloc(".home .floating-pub",300,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
 		} else {
-			$(".floating-pub").css({"top":"auto","position":"static"});
+			$(".home .floating-pub").css({"top":"auto","position":"static"});
+		}
+		if(windowWidth>1350){
+			fixBloc("body:not(.home) .floating-pub",150,$(document).height()-heightPub-$(".floating-pub").css("marginTop").replace('px', '')-$("footer").height(), true);
+		} else {
+			$("body:not(.home) .floating-pub").css({"top":"auto","position":"static"});
 		}
 	}
 
