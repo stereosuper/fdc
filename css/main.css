@@ -6371,6 +6371,12 @@ body.wrapper-blured #wrapper-page {
       line-height: 1.2;
       margin-top: 0;
       margin-bottom: 0.5em; }
+    .popup.popup-center h3 {
+      font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
+      font-size: 1.5em;
+      color: #282c34;
+      padding: 0;
+      margin: 1em 0 0; }
     .popup.popup-center p {
       margin-top: 0;
       margin-bottom: 0; }
@@ -6380,6 +6386,15 @@ body.wrapper-blured #wrapper-page {
       margin-right: auto; }
     .popup.popup-center a.btn-block {
       margin-top: 50px; }
+    .popup.popup-center.popup-large {
+      padding-top: 50px;
+      padding-bottom: 60px; }
+      .popup.popup-center.popup-large h2 {
+        margin-bottom: 0.8em; }
+      .popup.popup-center.popup-large h2, .popup.popup-center.popup-large p {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto; }
 
 .popup-header {
   padding: 50px 65px 30px 65px; }
@@ -9998,6 +10013,10 @@ body.cercle .content-tabs {
       height: 40px; }
     .popup.popup-center a.btn-block {
       font-size: 0.8em; }
+    .popup.popup-center.popup-large h2 {
+      font-size: 1.4em; }
+      .popup.popup-center.popup-large h2 br {
+        display: none; }
 
   .field-content .cercleMyForum.adCercle .field-content {
     padding: 20px 15px; }

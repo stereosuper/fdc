@@ -2812,6 +2812,14 @@
             a.btn-block{
                 font-size: 0.8em;
             }
+            &.popup-large{
+                h2{
+                    font-size: 1.4em;
+                    br{
+                        display: none;
+                    }
+                }
+            }
         }
     }
     .field-content .cercleMyForum.adCercle .field-content{
@@ -3633,7 +3641,15 @@
             margin: 10px 20px 0 20px;
         }
     }
-
+    .popup{
+        &.popup-center{
+            &.popup-large{
+                h2{
+                    //font-size: 1.2em;
+                }
+            }
+        }
+    }
     .popup-footer{
         .menu-popup{
             > li{

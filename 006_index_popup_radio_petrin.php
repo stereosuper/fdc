@@ -7,7 +7,7 @@
 	  	<?php include_once('includes/head.html'); ?>
 	</head>
 
-	<body class='home'>
+	<body class='home wrapper-blured'>
 		<?php include_once('includes/header.php'); ?>
 
 		<main id='main' role='main'>
@@ -16,8 +16,8 @@
 					<img src='img/visuel-home.jpg' alt=''>
 				</div>
 				<div class='container position-relative'>
-					<h1>Notre projet : concrétiser le&nbsp;vôtre</h1>
-					<strong>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</strong>
+					<strong>Notre projet : concrétiser le&nbsp;vôtre</strong>
+					<h1>Bienvenue au Forum des Commerces, site d’annonces spécialiste des entrepreneurs</h1>
 				</div>
 			</div>
 
@@ -38,7 +38,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Acheter<br /> son affaire</h3>
-										<h2>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</h2>
+										<p>Achat d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
 									</div>
 								</div>
 							</div><!--
@@ -183,7 +183,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Vendre <br />son affaire</h3>
-										<h2>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</h2>
+										<p>Vente d'un fond de commerce, d'une entreprise, d'un bureau, d'un local&nbsp;commercial…</p>
 									</div>
 								</div>
 							</div><!--
@@ -328,7 +328,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Être (bien) <br />accompagné</h3>
-										<h2>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</h2>
+										<p>Pour vos besoins d’avocat, de comptable, d’assureur, faites confiance à nos partenaires métiers.</p>
 									</div>
 								</div>
 							</div><!--
@@ -370,7 +370,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Achetez ou vendez votre matériel</h3>
-										<h2>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</h2>
+										<p>Achat et vente de matériel spécifique à votre activité : four, porte-revue, tondeuse, mobilier…</p>
 									</div>
 								</div>
 							</div><!--
@@ -412,7 +412,7 @@
 								<div class='zone-txt wrapper-alignment'>
 									<div class='content-align-middle'>
 										<h3>Compléter <br />son équipe</h3>
-										<h2>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</h2>
+										<p>Recrutement permanent ou ponctuel de personnel spécifique à votre activité : cuisinier, secrétaire…</p>
 									</div>
 								</div>
 							</div><!--
@@ -446,8 +446,6 @@
 				<div class='wrapper-pub'>
 					<div class='pub'>
 						<div class='indic-pub'>— publicité —</div>
-						<img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
-						<img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
 					</div>
 				</div>
 
@@ -489,27 +487,7 @@
 				</ul>
 			</div>
 		</main>
-		<div class='wrapper-pub floating-pub left-side'>
-            <div class='pub'>
-                <div class='indic-pub'>— publicité —</div>
-                <a href='#'>
-                    <img class='verticale' src='img/pub-verticale.jpg' srcset='img/pub-verticale.jpg 1x, img/pub-verticale@2x.jpg 2x' alt=''>
-                    <img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
-                    <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
-                </a>
-            </div>
-        </div>
-        <div class='wrapper-pub floating-pub right-side'>
-            <div class='pub'>
-                <div class='indic-pub'>— publicité —</div>
-                <a href='#'>
-                    <img class='verticale' src='img/pub-verticale.jpg' srcset='img/pub-verticale.jpg 1x, img/pub-verticale@2x.jpg 2x' alt=''>
-                    <img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
-                    <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
-                </a>
-            </div>
-        </div>
-	  	<?php include_once('includes/footer_home.html'); ?>
+		<?php include_once('includes/footer_radio_petrin_popup.html'); ?>
 
 	</body>
 
