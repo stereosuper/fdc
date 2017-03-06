@@ -1226,7 +1226,11 @@ fieldset {
   fieldset.footer {
     margin: 35px 18px; }
   fieldset.inline-b {
-    vertical-align: baseline; }
+    vertical-align: baseline;
+    max-width: calc(100% - 195px); }
+    fieldset.inline-b .has-margin-around {
+      margin-top: 5px;
+      margin-bottom: 5px; }
   fieldset.block-pwd {
     margin: 35px 0 25px; }
     fieldset.block-pwd input {
@@ -1413,7 +1417,7 @@ input[type=radio], input[type=checkbox] {
     font-family: "robotoregular", sans-serif; }
     input[type=radio] + label:after, input[type=checkbox] + label:after {
       display: none; }
-    input[type=radio] + label:not(.has-margin), input[type=checkbox] + label:not(.has-margin) {
+    input[type=radio] + label:not(.has-margin):not(.has-margin-around), input[type=checkbox] + label:not(.has-margin):not(.has-margin-around) {
       margin-right: 0; }
 input[type=radio] + label {
   margin: 0 30px 0 10px;
@@ -9000,6 +9004,13 @@ body.cercle .content-tabs {
       -webkit-transform: none;
           -ms-transform: none;
               transform: none; }
+
+  .legend-next-fieldset {
+    float: none; }
+
+  fieldset.inline-b {
+    display: block;
+    max-width: none; }
 
   .map-container {
     width: 43%;

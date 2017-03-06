@@ -39,6 +39,11 @@ fieldset{
     }
     &.inline-b{
         vertical-align: baseline;
+        max-width: calc(100% - 195px);
+        .has-margin-around{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     }
     &.block-pwd{
         margin: 35px 0 25px;
@@ -310,7 +315,7 @@ input{
             &:after{
                 display: none;
             }
-            &:not(.has-margin){
+            &:not(.has-margin):not(.has-margin-around){
                 margin-right: 0;
             }
         }

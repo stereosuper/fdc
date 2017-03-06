@@ -76,6 +76,19 @@
                                     Prénom
                                 </label><input type='text' name='prenom' id='prenom' value='' required >
                             </fieldset>
+
+
+                            <fieldset class="required" aria-required="true">
+                                <legend class='legend-next-fieldset'>Pour nous permettre de vous aider, merci d'indiquer votre(vos) besoins(s)</legend><fieldset class='inline-b'>
+                                    <input type="checkbox" name="person.needs" id="person_needs" value="person_needs_JacheteDuMateriel"><label class="has-margin-around" for="person_needs">J'achète du matériel</label>
+                                    <input type="checkbox" name="person.needs" id="person_needs1" value="person_needs_JEmbaucheUnCollaborateur"><label class="has-margin-around" for="person_needs1">J'embauche un collaborateur</label>
+                                    <input type="checkbox" name="person.needs" id="person_needs2" value="person_needs_JeRechercheUnEmploi"><label class="has-margin-around" for="person_needs2">Je recherche un emploi</label>
+                                    <input type="checkbox" name="person.needs" id="person_needs3" value="person_needs_JeRechercheUneAffaire"><label class="has-margin-around" for="person_needs3">Je recherche une affaire</label>
+                                    <input type="checkbox" name="person.needs" id="person_needs4" value="person_needs_JeVendsOuLoueDuMateriel"><label class="has-margin-around" for="person_needs4">Je vends ou loue du matériel</label>
+                                    <input type="checkbox" name="person.needs" id="person_needs5" value="person_needs_JeVenssUneAffaire"><label class="has-margin-around" for="person_needs5">Je vends une affaire</label>
+                                </fieldset>
+                            </fieldset>
+
                             <fieldset>
                                 <label for='societe'>
                                     Société

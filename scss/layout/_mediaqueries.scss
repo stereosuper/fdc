@@ -1266,6 +1266,15 @@
             transform: none;
         }
     }
+    .legend-next-fieldset{
+        float: none;
+    }
+    fieldset{
+        &.inline-b{
+            display: block;
+            max-width: none;
+        }
+    }
 
     .map-container{
         width: 43%;
