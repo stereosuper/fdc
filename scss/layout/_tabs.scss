@@ -18,11 +18,15 @@
         right: 1px;
         background: $theme-btn;
     }
+    .content-tabs-job &{
+        border-color: #f78232;
+        &:before{
+            background: #f78232;
+        }
+    }
     .content-tabs-sale &{
-        //border-color: #ef6a2b;
         border-color: #e24318;
         &:before{
-            //background: #ef6a2b;
             background: #e24318;
         }
     }
@@ -78,8 +82,10 @@
             background: $theme-btn;
             color: #fff;
             .content-tabs-sale & {
-                //background: #ef6a2b;
                 background: #e24318;
+            }
+            .content-tabs-job &{
+                background: #f78232;
             }
             .cercle &{
                 background: $orange;
@@ -126,8 +132,10 @@
         text-decoration: none;
         &:hover, &:focus{
             color: $theme-btn;
+            .content-tabs-job &{
+                color: #f78232;
+            }
             .content-tabs-sale &{
-                //color: #ef6a2b;
                 color: #e24318;
             }
             .content-tabs-partner &{

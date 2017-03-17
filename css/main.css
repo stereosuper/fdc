@@ -2658,6 +2658,10 @@ button {
     left: 1px;
     right: 1px;
     background: #c6333e; }
+  .content-tabs-job .nav-tabs {
+    border-color: #f78232; }
+    .content-tabs-job .nav-tabs:before {
+      background: #f78232; }
   .content-tabs-sale .nav-tabs {
     border-color: #e24318; }
     .content-tabs-sale .nav-tabs:before {
@@ -2699,6 +2703,8 @@ button {
       color: #fff; }
       .content-tabs-sale .nav-tabs li.active {
         background: #e24318; }
+      .content-tabs-job .nav-tabs li.active {
+        background: #f78232; }
       .cercle .nav-tabs li.active {
         background: #ff8925;
         z-index: 1; }
@@ -2728,6 +2734,8 @@ button {
     text-decoration: none; }
     .nav-tabs a:hover, .nav-tabs a:focus {
       color: #c6333e; }
+      .content-tabs-job .nav-tabs a:hover, .content-tabs-job .nav-tabs a:focus {
+        color: #f78232; }
       .content-tabs-sale .nav-tabs a:hover, .content-tabs-sale .nav-tabs a:focus {
         color: #e24318; }
       .content-tabs-partner .nav-tabs a:hover, .content-tabs-partner .nav-tabs a:focus {
@@ -4075,6 +4083,16 @@ a.btn-block, button.btn-block, .btn-block {
       color: #e24318; }
       a.btn-block.btn-orange-sale:hover .price-btn, a.btn-block.btn-orange-sale:focus .price-btn, button.btn-block.btn-orange-sale:hover .price-btn, button.btn-block.btn-orange-sale:focus .price-btn, .btn-block.btn-orange-sale:hover .price-btn, .btn-block.btn-orange-sale:focus .price-btn {
         color: #e24318; }
+  a.btn-block.btn-orange-job, button.btn-block.btn-orange-job, .btn-block.btn-orange-job {
+    background: #f78232; }
+    a.btn-block.btn-orange-job .border, button.btn-block.btn-orange-job .border, .btn-block.btn-orange-job .border {
+      border-color: #f78232 #f78232; }
+    a.btn-block.btn-orange-job .price-btn, button.btn-block.btn-orange-job .price-btn, .btn-block.btn-orange-job .price-btn {
+      color: #f78232; }
+    a.btn-block.btn-orange-job:hover, a.btn-block.btn-orange-job:focus, button.btn-block.btn-orange-job:hover, button.btn-block.btn-orange-job:focus, .btn-block.btn-orange-job:hover, .btn-block.btn-orange-job:focus {
+      color: #f78232; }
+      a.btn-block.btn-orange-job:hover .price-btn, a.btn-block.btn-orange-job:focus .price-btn, button.btn-block.btn-orange-job:hover .price-btn, button.btn-block.btn-orange-job:focus .price-btn, .btn-block.btn-orange-job:hover .price-btn, .btn-block.btn-orange-job:focus .price-btn {
+        color: #f78232; }
   a.btn-block.btn-yellow, button.btn-block.btn-yellow, .btn-block.btn-yellow {
     color: white; }
     a.btn-block.btn-yellow .border, button.btn-block.btn-yellow .border, .btn-block.btn-yellow .border {
@@ -5971,6 +5989,8 @@ a.btn-block, button.btn-block, .btn-block {
 .field {
   position: relative;
   margin: -100px 0 45px; }
+  .field.no-margin-bottom {
+    margin-bottom: 0; }
   .field-header {
     padding: 45px 60px 50px 185px;
     position: relative;

@@ -347,6 +347,21 @@ a.btn-block, button.btn-block, .btn-block {
 			}
 		}
 	}
+	&.btn-orange-job{
+		background: #f78232;
+		.border{
+			border-color: #f78232 #f78232;
+		}
+		.price-btn{
+			color: #f78232;
+		}
+		&:hover, &:focus{
+			color: #f78232;
+			.price-btn{
+				color: #f78232;
+			}
+		}
+	}
 	&.btn-yellow{
 		color:$blanc;
 		.border{

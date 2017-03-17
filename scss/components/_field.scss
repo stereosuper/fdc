@@ -3,6 +3,9 @@
 .field{
 	position: relative;
 	margin: -100px 0 45px;
+	&.no-margin-bottom{
+		margin-bottom: 0;
+	}
 	&-header{
 		padding: 45px $gutter 50px 185px;
 		position: relative;
