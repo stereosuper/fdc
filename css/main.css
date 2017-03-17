@@ -1390,6 +1390,8 @@ input[type=text] {
   input[type=text].small {
     padding-top: 7px;
     padding-bottom: 7px; }
+  input[type=text].med {
+    max-width: 230px; }
 input[type=tel] {
   max-width: 150px; }
 input[type=email], input.big {
@@ -1639,6 +1641,8 @@ select {
     pointer-events: none; }
     .lt-ie10 .select:after {
       display: none; }
+  .select.medium {
+    width: 200px; }
   .select.small {
     width: 130px; }
     .form-half .select.small {
@@ -4036,6 +4040,8 @@ a.btn-block, button.btn-block, .btn-block {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   line-height: 1em; }
+  a.btn-block.big-margin-top, button.btn-block.big-margin-top, .btn-block.big-margin-top {
+    margin-top: 30px; }
   a.btn-block.light, button.btn-block.light, .btn-block.light {
     background-color: #de5340; }
   a.btn-block.medium, button.btn-block.medium, .btn-block.medium {

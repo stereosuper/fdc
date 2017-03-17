@@ -26,8 +26,12 @@
                     <header class='field-header'>
                         <ul class='breadcrumb' vocab='http://schema.org/' typeof='BreadcrumbList'>
                             <li property='itemListElement' typeof='ListItem'>
-                                <h6><a property='item' typeof='WebPage' href='./'>
+                                <h6><a property='item' typeof='WebPage' href='#'>
                                     <span property='name'>Accueil</span>
+                                </a></h6>
+                            </li><li property='itemListElement' typeof='ListItem'>
+                                <h6><a property='item' typeof='WebPage' href='./'>
+                                    <span property='name'>Boulangerie patisserie</span>
                                 </a></h6>
                             </li>
                         </ul>
@@ -54,18 +58,17 @@
                             <fieldset class='required'>
                                 <label for='poste'>
                                     Poste
-                                </label><input type='text' name='poste' id='poste' value='' required >
+                                </label><input type='text' class='med' name='poste' id='poste' placeholder='Boulanger' value='' required>
                             </fieldset>
                             <fieldset>
                                 <label for='ville'>
                                     Ville
-                                </label><input type='text' name='ville' id='ville' >
+                                </label><input type='text' name='ville' placeholder='Nantes (44000)' id='ville' >
                             </fieldset>
                             <fieldset>
                                 <label for='mobilite'>
                                     Mobilité
-                                </label>
-                                <div class='huge objet select'>
+                                </label><div class='select medium'>
                                     <select name='mobilite' id='mobilite'>
                                         <option value='indifferent' selected>Indifférent</option>
                                         <option value='option-2'>Option 2</option>
@@ -85,8 +88,7 @@
                             <fieldset>
                                 <label for='disponibilite'>
                                     Disponibilité de
-                                </label>
-                                <div class='huge objet select'>
+                                </label><div class='select small'>
                                     <select name='disponibilite' id='disponibilite'>
                                         <option value='1-semaine' selected>1 semaine</option>
                                         <option value='option-2'>Option 2</option>
@@ -94,7 +96,7 @@
                                     </select>
                                 </div>
                             </fieldset>
-                            <button type='submit' class='btn-block huge btn-orange-job'><span class='border'></span><span class='txt-btn'>Lancer la recherche</span></button>
+                            <button type='submit' class='btn-block huge btn-orange-job big-margin-top'><span class='border'></span><span class='txt-btn'>Lancer la recherche</span></button>
                         </form>
                     </div>
                 </div>

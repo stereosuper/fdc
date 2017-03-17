@@ -274,6 +274,9 @@ a.btn-block, button.btn-block, .btn-block {
 	border: none;
 	backface-visibility: hidden;
 	line-height: 1em;
+	&.big-margin-top{
+		margin-top: 30px;
+	}
 	&.light{
 		background-color: $theme-btn-light;
 	}
