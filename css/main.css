@@ -2942,7 +2942,7 @@ button {
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: 3;
+  z-index: 4;
   background-color: white;
   -webkit-filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 24px 35px rgba(0, 0, 0, 0.15));

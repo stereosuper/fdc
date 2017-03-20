@@ -100,9 +100,72 @@
                         </form>
                     </div>
                 </div>
+                <div class='wrapper-pub'>
+                    <div class='pub'>
+                        <div class='indic-pub'>— publicité —</div>
+                        <img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
+                        <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
+                    </div>
+                </div>
+
+                <div class='title-zone inline-b no-margin padding-grid'>À la une</div>
+                <a href='#' class='btn-arrow small inline-b'>Toute l'actualité</a>
+                <ul class='news'>
+                    <li>
+                        <article>
+                            <a href='#'>
+                                <span class='center-align article-date'>
+                                    <span class='wrapper-alignment full-height'>
+                                        <time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+                                    </span>
+                                </span><!--
+                                --><span class='article-desc'>
+                                    <h4 class='small'>Actualité fiscale</h4>
+                                    <h5>Crédit d’impôt : tout un art…</h5>
+                                    <p>Une entreprise exerçant une activité de conseil en communication et en création publicitaire a sollicité le bénéfice… <span class='btn-arrow'>Lire la suite</span></p>
+                                </span>
+                            </a>
+                        </article>
+                    </li><!--
+                    --><li>
+                        <article>
+                            <a href='#'>
+                                <span class='center-align article-date'>
+                                    <span class='wrapper-alignment full-height'>
+                                        <time class='content-align-middle' datetime='2016-03-25'><span class='day'>25</span> <span class='month'>mars</span> <span class='year'>2016</span></time>
+                                    </span>
+                                </span><!--
+                                --><span class='article-desc'>
+                                    <h4 class='small'>Actualité sociale</h4>
+                                    <h5>Des indemnités de préavis en cas de maladie&nbsp;?</h5>
+                                    <p>Un employeur licencie un salarié pour motif économique. Cependant, ce salarié est en arrêt maladie… <span class='btn-arrow'>Lire la suite</span></p>
+                                </span>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
             </div>
         </main>
-
+        <div class='wrapper-pub floating-pub left-side'>
+            <div class='pub'>
+                <div class='indic-pub'>— publicité —</div>
+                <a href='#'>
+                    <img class='verticale' src='img/pub-verticale.jpg' srcset='img/pub-verticale.jpg 1x, img/pub-verticale@2x.jpg 2x' alt=''>
+                    <img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
+                    <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
+                </a>
+            </div>
+        </div>
+        <div class='wrapper-pub floating-pub right-side'>
+            <div class='pub'>
+                <div class='indic-pub'>— publicité —</div>
+                <a href='#'>
+                    <img class='verticale' src='img/pub-verticale.jpg' srcset='img/pub-verticale.jpg 1x, img/pub-verticale@2x.jpg 2x' alt=''>
+                    <img class='horizontale' src='img/pub-horizontale.jpg' srcset='img/pub-horizontale.jpg 1x, img/pub-horizontale@2x.jpg 2x' alt=''>
+                    <img class='horizontale-small' src='img/pub-horizontale-small.jpg' srcset='img/pub-horizontale-small.jpg 1x, img/pub-horizontale-small@2x.jpg 2x' alt=''>
+                </a>
+            </div>
+        </div>
         <?php include_once('includes/footer.html'); ?>
 
     </body>
