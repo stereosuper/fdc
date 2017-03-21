@@ -6,7 +6,8 @@ $(function(){
 		setMapFormActive = false, doit,
 		body = $('body'),
 		heightPub = 630,
-		slideIndex = 0;
+		slideIndex = 0,
+		brother;
 
 
 	// Request anim frame
@@ -562,6 +563,21 @@ $(function(){
 			if(pwd.find('.block-pwd2').length){
 				pwd.find('.block-pwd2').toggleClass('hidden');
 			}
+		}
+	});
+
+	$('.search').on('click', function(e){
+		e.preventDefault();
+		brother = $(this).siblings('.search');
+		if($(this).hasClass('is-selected')){
+			$(this).removeClass('is-selected');
+			brother.removeClass('is-inactive');
+		}else if($(this).hasClass('is-inactive')){
+			$(this).removeClass('is-inactive').addClass('is-selected');
+			brother.removeClass('is-selected').addClass('is-inactive');
+		}else{
+			$(this).addClass('is-selected');
+			brother.addClass('is-inactive');
 		}
 	});
 
