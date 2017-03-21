@@ -428,7 +428,7 @@
 											<div class="tab-content-title">
 											    Rechercher un collaborateur ou un emploi
 											</div>
-											<div class='wrapper-q-a visible'>
+											<!-- <div class='wrapper-q-a visible'>
 												<p>
 												    Bienvenue dans l’espace employeur/candidat de Radio Pétrin. Quelle est votre situation&nbsp;?
 												</p>
@@ -456,6 +456,43 @@
 														<a href='#' class='btn-q-a'><span class='content-btn'>Déposer une <span class='underline'>offre</span></span></a>
 													</li>
 												</ul>
+											</div> -->
+											<p>Bienvenue dans l’espace employeur/candidat de Radio Pétrin. Quelle est votre situation  ?</p>
+											<div class='wrapper-search'>
+											    <div class='search'>
+											        <header class='header-search'>
+											            <span class='step-search'>Je recherche un <span class='underline'>emploi</span></span>
+											        </header>
+											        <div class='content-search'>
+											            <div class='default'>
+											                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Curabitur turpis velit</strong>, rutrum eget lorem quis, rutrum consectetur metus. Cras eget facilisis nulla. Sed sollicitudin mauris laoreet, tempor orci nec, sollicitudin nunc. Fusce erat ante, elementum in lacus blandit, <strong>varius ultricies</strong> ligula. Aenean consequat nulla et.</p>
+											            </div>
+											            <div class='selected'>
+											                <p>Quelle est votre demande ?</p>
+											                <div class='container-btn-q-a'>
+											                    <a href='#' class='btn-q-a'><span class='content-btn'>Consulter les <span class='underline'>offres</span></span></a>
+											                    <a href='#' class='btn-q-a'><span class='content-btn'>Déposer une <span class='underline'>candidature</span></span></a>
+											                </div>
+											            </div>
+											        </div>
+											    </div>
+											    <div class='search'>
+											        <header class='header-search'>
+											            <span class='step-search'>Je recherche un <span class='underline'>collaborateur</span></span>
+											        </header>
+											        <div class='content-search'>
+											            <div class='default'>
+											                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis velit, rutrum eget lorem quis, rutrum consectetur metus. Cras eget facilisis nulla. Sed sollicitudin mauris laoreet, <strong>tempor orci nec</strong>, sollicitudin nunc. Fusce erat ante, elementum in lacus blandit, varius ultricies ligula. Aenean consequat nulla et elit ultricies suscipit. Sed lorem lorem, varius sed est vel, <strong>fringilla amet.</strong></p>
+											            </div>
+											            <div class='selected'>
+											                <p>Quelle est votre demande ?</p>
+											                <div class='container-btn-q-a'>
+											                    <a href='#' class='btn-q-a'><span class='content-btn'>Consulter les <span class='underline'>candidatures</span></span></a>
+											                    <a href='#' class='btn-q-a'><span class='content-btn'>Déposer une <span class='underline'>offre</span></span></a>
+											                </div>
+											            </div>
+											        </div>
+											    </div>
 											</div>
 										</div>
 			                        </div>

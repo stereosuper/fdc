@@ -54,6 +54,9 @@
 	border-top: 4px solid #f78232;
 	border-right: 4px solid #f78232;
 	border-left: 4px solid #f78232;
+	.choices &{
+		padding: 10px 25px;
+	}
 }
 .content-search{
 	padding: 5px 25px;
@@ -75,6 +78,7 @@
 	font-family: $roboto-cd-bold;
 	font-size: 1.8rem;
 	text-transform: uppercase;
+	line-height: 1;
 	&:before{
 		position: absolute;
 		top: 0;

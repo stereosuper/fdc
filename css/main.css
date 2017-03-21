@@ -7303,6 +7303,8 @@ body.wrapper-blured #wrapper-page {
   border-top: 4px solid #f78232;
   border-right: 4px solid #f78232;
   border-left: 4px solid #f78232; }
+  .choices .header-search {
+    padding: 10px 25px; }
 
 .content-search {
   padding: 5px 25px; }
@@ -7321,7 +7323,8 @@ body.wrapper-blured #wrapper-page {
   padding: 0 0 0 20px;
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1.8rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1; }
   .step-search:before {
     position: absolute;
     top: 0;
