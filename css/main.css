@@ -8972,7 +8972,10 @@ body.cercle .content-tabs {
     .popup.popup-center .popup-header .menu-popup a.btn-cancel {
       position: relative;
       top: auto;
-      right: auto; } }
+      right: auto; }
+
+  .header-search {
+    padding: 10px 25px; } }
 @media (max-width: 1024px) {
   h1.big {
     font-size: 3em; }
@@ -9541,7 +9544,15 @@ body.cercle .content-tabs {
     padding: 8px 12px; }
 
   .wrapper-depot-annonce ul {
-    margin: 0; } }
+    margin: 0; }
+
+  .wrapper-search {
+    display: block; }
+
+  .search {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -10679,7 +10690,30 @@ body.cercle .content-tabs {
   .popup.popup-center h2 {
     font-size: 1.6em; }
   .popup.popup-center a.btn-block {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .tab-content p {
+    font-size: 0.9em; }
+
+  .header-search {
+    padding: 10px 15px;
+    min-height: 55px; }
+
+  .content-search {
+    padding: 5px 15px; }
+    .content-search p {
+      font-size: 1.4rem;
+      margin: 1em 0; }
+
+  .step-search {
+    font-size: 1.3rem;
+    padding: 0 0 0 15px; }
+
+  .btn-q-a {
+    font-size: 1.25rem;
+    padding: 15px 5px; }
+    .btn-q-a .content-btn {
+      padding: 0 0 0 13px; } }
 @media (max-width: 400px) {
   .breadcrumb a {
     max-width: 215px; }
