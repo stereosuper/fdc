@@ -567,7 +567,6 @@ $(function(){
 	});
 
 	$('.search').on('click', function(e){
-		e.preventDefault();
 		brother = $(this).siblings('.search');
 		if($(this).hasClass('is-selected')){
 			$(this).removeClass('is-selected');
