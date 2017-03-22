@@ -243,12 +243,12 @@
                             <fieldset class='required'>
                                 <label for='poste'>
                                     Poste
-                                </label><input type='text' class='med' name='poste' id='poste' placeholder='Boulanger' value='' required>
+                                </label><input type='text' name='poste' id='poste' placeholder='Boulanger' class='med autocomplete jobs' value='' required>
                             </fieldset>
                             <fieldset>
                                 <label for='ville'>
                                     Ville
-                                </label><input type='text' name='ville' placeholder='Nantes (44000)' id='ville' >
+                                </label><input type='text' name='ville' placeholder='Nantes (44000)' class='autocomplete cities' id='ville' >
                             </fieldset>
                             <fieldset>
                                 <label for='mobilite'>
@@ -482,6 +482,8 @@
     <script src='js/ads.js'></script>
 
     <script src='js/jquery-1.11.2.min.js'></script>
+    <!-- Autocomplete -->
+    <script src='js/libs/jquery.autocomplete.min.js'></script>
     <script src='js/script.js'></script>
     </body>
 

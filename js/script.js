@@ -580,6 +580,24 @@ $(function(){
 		}
 	});
 
+	if($('.autocomplete').length){
+		var cities = [
+		    { value: 'Nantes', data: 'NT' },
+		    { value: 'Paris', data: 'PRS' }
+		];
+		var jobs = [
+		    { value: 'Boulanger', data: 'BO' },
+		    { value: 'Boucher', data: 'BOU' }
+		];
+
+		$('.autocomplete.cities').autocomplete({
+		    lookup: cities
+		});
+		$('.autocomplete.jobs').autocomplete({
+		    lookup: jobs
+		});
+	}
+
 	$('.wrapper-btn-q-a .btn-q-a.action').on('click', function(e){
 		e.preventDefault();
 		if(!$(this).hasClass('valid') && !$(this).hasClass('invalid')){

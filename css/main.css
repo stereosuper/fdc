@@ -950,6 +950,10 @@ input[type=text], input[type=email], input[type=tel], input[type=password], inpu
   input[type=text]:not([disabled]):hover, input[type=email]:not([disabled]):hover, input[type=tel]:not([disabled]):hover, input[type=password]:not([disabled]):hover, input[type=number]:not([disabled]):hover, textarea:not([disabled]):hover {
     border-color: #efefef;
     outline: 1px solid #efefef; }
+    input[type=text]:not([disabled]):hover:focus, input[type=email]:not([disabled]):hover:focus, input[type=tel]:not([disabled]):hover:focus, input[type=password]:not([disabled]):hover:focus, input[type=number]:not([disabled]):hover:focus, textarea:not([disabled]):hover:focus {
+      border-color: #7392da;
+      outline: 1px solid #7392da;
+      outline-offset: 0; }
   input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=number]:focus, textarea:focus {
     border-color: #7392da;
     outline: 1px solid #7392da;
@@ -3809,6 +3813,31 @@ button {
   .pagination .next:hover:after, .pagination .next:focus:after {
     -webkit-transform: translate3d(5px, 0, 0);
             transform: translate3d(5px, 0, 0); }
+
+.autocomplete-suggestions {
+  border: 1px solid #ebebeb;
+  outline: 1px solid #dadada;
+  outline-offset: 0;
+  background: white;
+  overflow: auto;
+  margin-top: 1px; }
+  .autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #7392da; }
+
+.autocomplete-suggestion {
+  padding: 5px 5px;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.autocomplete-selected {
+  background: #F0F0F0; }
+
+.autocomplete-group {
+  padding: 2px 5px; }
+  .autocomplete-group strong {
+    display: block;
+    border-bottom: 1px solid #000; }
 
 /* Buttons */
 .btn-no-text, .btn-home {

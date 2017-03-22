@@ -58,12 +58,12 @@
                             <fieldset class='required'>
                                 <label for='poste'>
                                     Poste
-                                </label><input type='text' class='med' name='poste' id='poste' placeholder='Boulanger' value='' required>
+                                </label><input type='text' name='poste' id='poste' placeholder='Boulanger' class='med autocomplete jobs' value='' required>
                             </fieldset>
                             <fieldset>
                                 <label for='ville'>
                                     Ville
-                                </label><input type='text' name='ville' placeholder='Nantes (44000)' id='ville' >
+                                </label><input type='text' name='ville' placeholder='Nantes (44000)' class='autocomplete cities' id='ville' >
                             </fieldset>
                             <fieldset>
                                 <label for='mobilite'>
@@ -166,7 +166,7 @@
                 </a>
             </div>
         </div>
-        <?php include_once('includes/footer.html'); ?>
+        <?php include_once('includes/footer_autocomplete.html'); ?>
 
     </body>
 
