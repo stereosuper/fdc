@@ -1256,7 +1256,8 @@
         }
         .label-select.small{
             width: 34.92%;
-            margin: 10px 3.1% 0 0;
+            // margin: 10px 3.1% 0 0;
+            margin: 0 3.1% 0 0;
             text-align: right;
             + .select{
                 margin-top: 10px;
@@ -1327,18 +1328,18 @@
         .form-half{
             width: 52%;
             .label-select{
-                width: 25.92%;
+                width: 30%;
                 &.small{
-                    width: 25.92%;
+                    width: 30%;
                 }
             }
             fieldset.block-right {
                 margin-left: 28.93%;
             }
             .select{
-                width: 70.9%;
+                width: 66%;
                 &.small{
-                    width: 70.9%;
+                    width: 66%;
                 }
             }
         }
@@ -2226,6 +2227,7 @@
             margin-right: 0;
             &.small{
                 width: auto;
+                margin-top: 10px;
                 margin-right: 0;
                 text-align: left;
             }

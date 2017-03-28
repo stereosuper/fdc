@@ -179,6 +179,24 @@
                                     </select>
                                 </div>
                             </fieldset>
+                            <fieldset>
+                                <label for='categorie' class='label-select'>
+                                    Catégorie
+                                </label><div class='select'>
+                                    <select name='categorie' id='categorie'>
+                                        <option selected value=''>— Tous</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label for='sous-categorie' class='label-select'>
+                                    Sous-catégorie
+                                </label><div class='select'>
+                                    <select name='sous-categorie' id='sous-categorie'>
+                                        <option selected value=''>— Tous</option>
+                                    </select>
+                                </div>
+                            </fieldset>
                             <button type='submit' class='btn-block huge right'><span class='border'></span><span class='txt-btn'>Recherche</span></button>
                             <a href='#' class='btn-arrow small'>Nous confier gratuitement votre recherche</a>
                         </form><div class='map-container' id='mapForm'>
