@@ -4,7 +4,7 @@
 
     <head>
         <title>Forum des Commerces - Vente</title>
-        <?php include_once('includes/head.html'); ?>
+        <?php include_once('includes/head_autocomplete.html'); ?>
     </head>
 
     <body>

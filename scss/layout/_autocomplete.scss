@@ -1,28 +1,11 @@
-.autocomplete-suggestions{
-    border: 1px solid #ebebeb;
-    outline: 1px solid #dadada;
-    outline-offset: 0;
-    background: $blanc;
-    overflow: auto;
-    margin-top: 1px;
-    strong{
-        font-weight: normal;
-        // color: #f78232;
-        color: $bleu-link;
+.ui-menu{
+    li{
+        &:before{
+            display: none;
+        }
     }
 }
-.autocomplete-suggestion{
-    padding: 5px 5px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.autocomplete-selected{
-    background: #F0F0F0;
-}
-.autocomplete-group{
-    padding: 2px 5px;
-    strong{
-        display: block;
-        border-bottom: 1px solid #000;
-    }
+.ui-state-hover, .ui-state-active {
+    background-color: $bleu-link!important;
+    border-color: $bleu-link!important;
 }

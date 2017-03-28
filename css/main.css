@@ -3814,30 +3814,12 @@ button {
     -webkit-transform: translate3d(5px, 0, 0);
             transform: translate3d(5px, 0, 0); }
 
-.autocomplete-suggestions {
-  border: 1px solid #ebebeb;
-  outline: 1px solid #dadada;
-  outline-offset: 0;
-  background: white;
-  overflow: auto;
-  margin-top: 1px; }
-  .autocomplete-suggestions strong {
-    font-weight: normal;
-    color: #7392da; }
+.ui-menu li:before {
+  display: none; }
 
-.autocomplete-suggestion {
-  padding: 5px 5px;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.autocomplete-selected {
-  background: #F0F0F0; }
-
-.autocomplete-group {
-  padding: 2px 5px; }
-  .autocomplete-group strong {
-    display: block;
-    border-bottom: 1px solid #000; }
+.ui-state-hover, .ui-state-active {
+  background-color: #7392da !important;
+  border-color: #7392da !important; }
 
 /* Buttons */
 .btn-no-text, .btn-home {
