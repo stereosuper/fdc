@@ -720,3 +720,14 @@ a.btn-block, button.btn-block, .btn-block {
 		border-color: rgb(214, 214, 218);
 	}
 }
+.btn-txt{
+	font-family: $roboto-cd-bold;
+	font-size: 1.4rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $blanc;
+	&:hover, &:focus{
+		opacity: 0.7;
+		color: $blanc;
+	}
+}

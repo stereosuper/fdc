@@ -1,0 +1,183 @@
+/* Jobs */
+.wrapper-jobs{
+	background: $blanc;
+	box-shadow: 0px 24px 35px 0px rgba(0, 0, 0, 0.05);
+}
+.header-jobs{
+	display: flex;
+	align-items: center;
+	min-height: 80px;
+	padding: 20px;
+	color: $blanc;
+	background: rgb(247, 130, 50);
+	background: linear-gradient(to bottom, rgb(247, 130, 50) 0%, rgb(245, 95, 36) 100%);
+}
+.filters-team{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	>li{
+		margin: 0 20px 0 0;
+		&:before{
+			display: none;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.list-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 10px;
+	flex-grow: 1;
+	>li{
+		flex-basis: calc(33.3333% - 20px);
+		margin: 10px;
+		flex-grow: 0;
+		border: 1px solid rgb(119, 119, 119);
+		&:before{
+			display: none;
+		}
+	}
+	header{
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		border-bottom: 1px solid $gris;
+	}
+	footer{
+		border-top: 1px solid $gris;
+	}
+}
+.img-applicant{
+	width: 80px;
+	height: 90px;
+	flex-shrink: 0;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-right: 1px solid $gris;
+}
+.btn-applicant{
+	font-family: $roboto-cd-bold;
+	font-size: 1.4rem;
+	color: rgb(155, 173, 217);
+	text-decoration: none;
+}
+.btn-cv{
+	padding: 10px;
+	text-align: center;
+	flex-grow: 1;
+	.icon-download{
+		display: block;
+		margin: 0 auto 2px auto;
+		font-size: 24px;
+	}
+}
+.btn-memo{
+	text-transform: uppercase;
+	.icon-pin2{
+		margin-right: 5px;
+	}
+}
+.btn-show-infos{
+	text-transform: uppercase;
+	margin-right: 20px;
+	font-size: 1.2rem;
+}
+.content-jobs{
+	display: flex;
+	.wrapper-map-jobs{
+		width: 250px;
+		flex-shrink: 0;
+	}
+}
+.content-card{
+	padding: 20px;
+}
+.wrapper-name-distance{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.name{
+		font-family: $roboto-cd-bold;
+		font-size: 2.5rem;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+	}
+	.distance{
+		font-family: $roboto-cd-bold;
+		font-size: 1.4rem;
+	}
+	.icon-pin{
+		margin-right: 5px;
+		color: rgb(197, 46, 64);
+	}
+}
+.applicant-job{
+	font-family: $roboto-bold;
+	font-size: 1.6rem;
+	margin: 0.5em 0 0;
+	padding: 0;
+	color: $txt;
+}
+.applicant-desc{
+	margin: 0;
+}
+.wrapper-tel-applicant{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0 10px;
+	.tel-applicant{
+		font-family: $roboto-bold;
+		font-size: 1.4rem;
+		margin: 0 20px;
+	}
+}
+.wrapper-mail-applicant{
+	margin: 0 20px;
+	padding: 0 0 20px;
+	text-align: center;
+	.mail-applicant{
+		display: inline-block;
+		font-family: $roboto-bold;
+		font-size: 1.4rem;
+		text-decoration: none;
+		color: $txt;
+	}
+}
+.wrapper-btn-applicant{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -1px;
+}
+.btn-invalid-applicant, .btn-valid-applicant{
+	position: relative;
+	width: 50%;
+	height: 48px;
+	line-height: 44px;
+	text-decoration: none;
+	text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	margin-bottom: -1px;
+}
+.btn-invalid-applicant{
+	color: rgb(197, 46, 64);
+	border-color: rgb(197, 46, 64);
+	margin-right: 1px;
+	font-size: 20px;
+}
+.btn-valid-applicant{
+	color: rgb(72, 137, 74);
+	border-color: rgb(72, 137, 74);
+	margin-left: 1px;
+	font-size: 26px;
+}
