@@ -37,7 +37,7 @@
                                 Mobilité : <strong>Indifférent</strong>
                             </li>
                             <li>
-                                Disponibilité de : <strong>1 semaine</strong>
+                                Disponibilité : <strong>1 semaine</strong>
                             </li>
                             <li>
                                 <a href='#' class='btn-txt'>Modifier</a>
@@ -184,7 +184,12 @@
                             </li>
                         </ul>
                         <div class='wrapper-map-jobs'>
-                            
+                            <div class='map-jobs'>
+                                
+                            </div>
+                            <div class='footer-map'>
+                                <a class='btn-block huge btn-orange-job' href='#'>Poursuivre</a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -7436,15 +7436,38 @@ body.wrapper-blured #wrapper-page {
     -webkit-flex-basis: calc(33.3333% - 20px);
         -ms-flex-preferred-size: calc(33.3333% - 20px);
             flex-basis: calc(33.3333% - 20px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 10px;
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    border: 1px solid #777777; }
+    border: 1px solid #777777;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .list-cards > li:before {
       display: none; }
   .list-cards header {
+    -webkit-flex-basis: 90px;
+        -ms-flex-preferred-size: 90px;
+            flex-basis: 90px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -7453,13 +7476,25 @@ body.wrapper-blured #wrapper-page {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    border-bottom: 1px solid #dadada; }
+  .list-cards footer {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    border-bottom: 1px solid #dadada; }
-  .list-cards footer {
-    border-top: 1px solid #dadada; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 
 .img-applicant {
   width: 80px;
@@ -7504,7 +7539,10 @@ body.wrapper-blured #wrapper-page {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  border-left: 1px solid #dadada; }
   .content-jobs .wrapper-map-jobs {
     width: 250px;
     -webkit-flex-shrink: 0;
@@ -7512,6 +7550,10 @@ body.wrapper-blured #wrapper-page {
             flex-shrink: 0; }
 
 .content-card {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px; }
 
 .wrapper-name-distance {
@@ -7563,7 +7605,8 @@ body.wrapper-blured #wrapper-page {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0 10px; }
+  padding: 20px 0 10px;
+  border-top: 1px solid #dadada; }
   .wrapper-tel-applicant .tel-applicant {
     font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
     font-size: 1.4rem;
@@ -7607,12 +7650,42 @@ body.wrapper-blured #wrapper-page {
   border-color: #c52e40;
   margin-right: 1px;
   font-size: 20px; }
+  .btn-invalid-applicant:hover {
+    color: white;
+    background-color: #c52e40; }
 
 .btn-valid-applicant {
   color: #48894a;
   border-color: #48894a;
   margin-left: 1px;
   font-size: 26px; }
+  .btn-valid-applicant:hover {
+    color: white;
+    background-color: #48894a; }
+
+.map-jobs {
+  height: calc(100vh - 115px);
+  max-height: calc(100% - 115px);
+  background: red;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  border-left: 1px solid #dadada; }
+
+.footer-map {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  padding: 20px; }
 
 /* Home specific style */
 .wrapper-dashboard-blocks {
