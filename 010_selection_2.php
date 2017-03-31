@@ -46,8 +46,10 @@
                     </header>
                     <div class='content-jobs'>
                         <ul class='list-cards'>
-                            <li>
+                            <li class='card'>
+                                <a href='#' class='cancel-invalid icon-cross-big'></a>
                                 <header>
+                                    <span class='diamond d-1'></span><span class='diamond d-2'></span><span class='diamond d-3'></span>
                                     <div class='img-applicant' style='background: url("../img/applicant.jpg");'></div>
                                     <a class='btn-applicant btn-cv' href='#'><span class='icon-download'></span>Télécharger le CV</a>
                                 </header>
@@ -77,11 +79,14 @@
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
                                         <a class='btn-valid-applicant icon-checkmark-big' href='#'></a>
+                                        <div class='invalid-txt'>Non retenu</div>
                                     </div>
                                 </footer>
                             </li>
-                            <li>
+                            <li class='card'>
+                                <a href='#' class='cancel-invalid icon-cross-big'></a>
                                 <header>
+                                    <span class='diamond d-1'></span><span class='diamond d-2'></span><span class='diamond d-3'></span>
                                     <div class='img-applicant' style='background: url("../img/applicant.jpg");'></div>
                                     <a class='btn-applicant btn-cv' href='#'><span class='icon-download'></span>Télécharger le CV</a>
                                 </header>
@@ -111,12 +116,15 @@
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
                                         <a class='btn-valid-applicant icon-checkmark-big' href='#'></a>
+                                        <div class='invalid-txt'>Non retenu</div>
                                     </div>
                                 </footer>
                             </li>
-                            <li>
+                            <li class='card'>
+                                <a href='#' class='cancel-invalid icon-cross-big'></a>
                                 <header>
-                                    <div class='img-applicant' style='background: url("../img/applicant.jpg");'></div>
+                                    <span class='diamond d-1'></span><span class='diamond d-2'></span><span class='diamond d-3'></span>
+                                    <div class='img-applicant no-photo'></div>
                                     <a class='btn-applicant btn-cv' href='#'><span class='icon-download'></span>Télécharger le CV</a>
                                 </header>
                                 <div class='content-card'>
@@ -145,11 +153,14 @@
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
                                         <a class='btn-valid-applicant icon-checkmark-big' href='#'></a>
+                                        <div class='invalid-txt'>Non retenu</div>
                                     </div>
                                 </footer>
                             </li>
-                            <li>
+                            <li class='card'>
+                                <a href='#' class='cancel-invalid icon-cross-big'></a>
                                 <header>
+                                    <span class='diamond d-1'></span><span class='diamond d-2'></span><span class='diamond d-3'></span>
                                     <div class='img-applicant' style='background: url("../img/applicant.jpg");'></div>
                                     <a class='btn-applicant btn-cv' href='#'><span class='icon-download'></span>Télécharger le CV</a>
                                 </header>
@@ -179,6 +190,81 @@
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
                                         <a class='btn-valid-applicant icon-checkmark-big' href='#'></a>
+                                        <div class='invalid-txt'>Non retenu</div>
+                                    </div>
+                                </footer>
+                            </li>
+                            <li class='card'>
+                                <a href='#' class='cancel-invalid icon-cross-big'></a>
+                                <header>
+                                    <span class='diamond d-1'></span><span class='diamond d-2'></span><span class='diamond d-3'></span>
+                                    <div class='img-applicant' style='background: url("../img/applicant.jpg");'></div>
+                                    <a class='btn-applicant btn-cv' href='#'><span class='icon-download'></span>Télécharger le CV</a>
+                                </header>
+                                <div class='content-card'>
+                                    <div class='wrapper-name-distance'>
+                                        <h2 class='name'>
+                                            Pierre T.
+                                        </h2>
+                                        <span class='distance'>
+                                            <span class='icon-pin'></span>1 km
+                                        </span>
+                                    </div>
+                                    <a class='btn-applicant btn-memo' href='#'><span class='icon-pin2'></span>1 mémo(s)</a>
+                                    <h3 class='applicant-job'>
+                                        Chef Boulanger - Patissier
+                                    </h3>
+                                    <p class='applicant-desc'>5 ans d’expérience aux cotés de Vincent Guerlais</p>
+                                </div>
+                                <footer>
+                                    <div class='wrapper-tel-applicant'>
+                                        <div class='tel-applicant'>Tel : <span class='tel-number'>06 94 32 16 83</span></div>
+                                        <a class='btn-applicant btn-show-infos' href='#'>Afficher</a>
+                                    </div>
+                                    <div class='wrapper-mail-applicant'>
+                                        <a class='mail-applicant' href='#'>pierre.tromelin2@gmail.com</a>
+                                    </div>
+                                    <div class='wrapper-btn-applicant'>
+                                        <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
+                                        <a class='btn-valid-applicant icon-checkmark-big' href='#'></a>
+                                        <div class='invalid-txt'>Non retenu</div>
+                                    </div>
+                                </footer>
+                            </li>
+                            <li class='card'>
+                                <a href='#' class='cancel-invalid icon-cross-big'></a>
+                                <header>
+                                    <span class='diamond d-1'></span><span class='diamond d-2'></span><span class='diamond d-3'></span>
+                                    <div class='img-applicant' style='background: url("../img/applicant.jpg");'></div>
+                                    <a class='btn-applicant btn-cv' href='#'><span class='icon-download'></span>Télécharger le CV</a>
+                                </header>
+                                <div class='content-card'>
+                                    <div class='wrapper-name-distance'>
+                                        <h2 class='name'>
+                                            Pierre T.
+                                        </h2>
+                                        <span class='distance'>
+                                            <span class='icon-pin'></span>1 km
+                                        </span>
+                                    </div>
+                                    <a class='btn-applicant btn-memo' href='#'><span class='icon-pin2'></span>1 mémo(s)</a>
+                                    <h3 class='applicant-job'>
+                                        Chef Boulanger - Patissier
+                                    </h3>
+                                    <p class='applicant-desc'>5 ans d’expérience aux cotés de Vincent Guerlais</p>
+                                </div>
+                                <footer>
+                                    <div class='wrapper-tel-applicant'>
+                                        <div class='tel-applicant'>Tel : <span class='tel-number'>06 94 32 16 83</span></div>
+                                        <a class='btn-applicant btn-show-infos' href='#'>Afficher</a>
+                                    </div>
+                                    <div class='wrapper-mail-applicant'>
+                                        <a class='mail-applicant' href='#'>pierre.tromelin2@gmail.com</a>
+                                    </div>
+                                    <div class='wrapper-btn-applicant'>
+                                        <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
+                                        <a class='btn-valid-applicant icon-checkmark-big' href='#'></a>
+                                        <div class='invalid-txt'>Non retenu</div>
                                     </div>
                                 </footer>
                             </li>

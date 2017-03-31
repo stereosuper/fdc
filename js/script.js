@@ -7,7 +7,8 @@ $(function(){
 		body = $('body'),
 		heightPub = 630,
 		slideIndex = 0,
-		brother;
+		brother,
+		cardParent;
 
 
 	// Request anim frame
@@ -462,6 +463,26 @@ $(function(){
 		} else {
 			$(this).addClass('on');
 		}
+	});
+	// Jobs
+	$('.btn-valid-applicant').on('click', function(e){
+		e.preventDefault();
+		cardParent = $(this).parents('.card');
+		cardParent.toggleClass('isValid');
+	});
+	$('.btn-invalid-applicant').on('click', function(e){
+		e.preventDefault();
+		cardParent = $(this).parents('.card');
+		if(cardParent.hasClass('isValid')){
+			cardParent.removeClass('isValid');
+		}else{
+			cardParent.addClass('isInvalid');
+		}
+	});
+	$('.cancel-invalid').on('click', function(e){
+		e.preventDefault();
+		cardParent = $(this).parents('.card');
+		cardParent.removeClass('isInvalid');
 	});
 
 	// Nav tabs responsive
