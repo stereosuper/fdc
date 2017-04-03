@@ -347,6 +347,18 @@
 	align-items: center;
 	height: 115px;
 	padding: 20px;
+	p{
+		font-size: 1.4rem;
+	}
+}
+.btn-connexion{
+	text-transform: uppercase;
+	.icon-arrow{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 7px;
+		margin: 7px 0 0 2px;
+	}
 }
 .card{
 	&:before{

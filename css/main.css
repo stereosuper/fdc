@@ -7818,6 +7818,16 @@ body.wrapper-blured #wrapper-page {
           align-items: center;
   height: 115px;
   padding: 20px; }
+  .footer-map p {
+    font-size: 1.4rem; }
+
+.btn-connexion {
+  text-transform: uppercase; }
+  .btn-connexion .icon-arrow {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 7px;
+    margin: 7px 0 0 2px; }
 
 .card:before {
   content: '';

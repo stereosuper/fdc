@@ -107,11 +107,11 @@
                                 </div>
                                 <footer>
                                     <div class='wrapper-tel-applicant'>
-                                        <div class='tel-applicant'>Tel : <span class='tel-number'>06 94 32 16 83</span></div>
+                                        <div class='tel-applicant'>Tel : <span class='tel-number blurred'>XX XX XX XX XX</span></div>
                                         <a class='btn-applicant btn-show-infos' href='#'>Afficher</a>
                                     </div>
                                     <div class='wrapper-mail-applicant'>
-                                        <a class='mail-applicant' href='#'>pierre.tromelin2@gmail.com</a>
+                                        <a class='mail-applicant blurred' href='#'>XXXXXXXXXXXXXXXXXX</a>
                                     </div>
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
@@ -144,11 +144,11 @@
                                 </div>
                                 <footer>
                                     <div class='wrapper-tel-applicant'>
-                                        <div class='tel-applicant'>Tel : <span class='tel-number'>06 94 32 16 83</span></div>
+                                        <div class='tel-applicant'>Tel : <span class='tel-number blurred'>XX XX XX XX XX</span></div>
                                         <a class='btn-applicant btn-show-infos' href='#'>Afficher</a>
                                     </div>
                                     <div class='wrapper-mail-applicant'>
-                                        <a class='mail-applicant' href='#'>pierre.tromelin2@gmail.com</a>
+                                        <a class='mail-applicant blurred' href='#'>XXXXXXXXXXXXXXXXXX</a>
                                     </div>
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
@@ -181,11 +181,11 @@
                                 </div>
                                 <footer>
                                     <div class='wrapper-tel-applicant'>
-                                        <div class='tel-applicant'>Tel : <span class='tel-number'>06 94 32 16 83</span></div>
+                                        <div class='tel-applicant'>Tel : <span class='tel-number blurred'>XX XX XX XX XX</span></div>
                                         <a class='btn-applicant btn-show-infos' href='#'>Afficher</a>
                                     </div>
                                     <div class='wrapper-mail-applicant'>
-                                        <a class='mail-applicant' href='#'>pierre.tromelin2@gmail.com</a>
+                                        <a class='mail-applicant blurred' href='#'>XXXXXXXXXXXXXXXXXX</a>
                                     </div>
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
@@ -218,11 +218,11 @@
                                 </div>
                                 <footer>
                                     <div class='wrapper-tel-applicant'>
-                                        <div class='tel-applicant'>Tel : <span class='tel-number'>06 94 32 16 83</span></div>
+                                        <div class='tel-applicant'>Tel : <span class='tel-number blurred'>XX XX XX XX XX</span></div>
                                         <a class='btn-applicant btn-show-infos' href='#'>Afficher</a>
                                     </div>
                                     <div class='wrapper-mail-applicant'>
-                                        <a class='mail-applicant' href='#'>pierre.tromelin2@gmail.com</a>
+                                        <a class='mail-applicant blurred' href='#'>XXXXXXXXXXXXXXXXXX</a>
                                     </div>
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
@@ -255,11 +255,11 @@
                                 </div>
                                 <footer>
                                     <div class='wrapper-tel-applicant'>
-                                        <div class='tel-applicant'>Tel : <span class='tel-number'>06 94 32 16 83</span></div>
+                                        <div class='tel-applicant'>Tel : <span class='tel-number blurred'>XX XX XX XX XX</span></div>
                                         <a class='btn-applicant btn-show-infos' href='#'>Afficher</a>
                                     </div>
                                     <div class='wrapper-mail-applicant'>
-                                        <a class='mail-applicant' href='#'>pierre.tromelin2@gmail.com</a>
+                                        <a class='mail-applicant blurred' href='#'>XXXXXXXXXXXXXXXXXX</a>
                                     </div>
                                     <div class='wrapper-btn-applicant'>
                                         <a class='btn-invalid-applicant icon-cross-big' href='#'></a>
@@ -274,7 +274,7 @@
                                 
                             </div>
                             <div class='footer-map'>
-                                <p>Pour poursuivre votre séléction d'offres d'emploi, <a href='#'>veuillez vous connecter</a></p>
+                                <p>Pour poursuivre votre séléction d'offres d'emploi, <a class='btn-applicant btn-connexion' href='#'>veuillez vous connecter <span class='icon-arrow'></span></a></p>
                             </div>
                         </div>
                     </div>
