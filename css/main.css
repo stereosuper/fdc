@@ -7588,7 +7588,11 @@ body.wrapper-blured #wrapper-page {
   font-family: "roboto_condensedbold", "robotobold", "robotomedium", "robotoregular", sans-serif;
   font-size: 1.4rem;
   color: #9badd9;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .btn-cv {
   position: relative;
@@ -7687,8 +7691,15 @@ body.wrapper-blured #wrapper-page {
   border-top: 1px solid #dadada; }
   .wrapper-tel-applicant .tel-applicant {
     font-family: "robotobold", "robotomedium", "robotoregular", sans-serif;
-    font-size: 1.4rem;
-    margin: 0 20px; }
+    font-size: 1.3rem;
+    margin: 0 20px;
+    text-transform: uppercase;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .wrapper-tel-applicant .tel-number.blurred {
+    font-size: 1.2rem; }
 
 .wrapper-mail-applicant {
   margin: 0 20px;
@@ -7700,6 +7711,27 @@ body.wrapper-blured #wrapper-page {
     font-size: 1.4rem;
     text-decoration: none;
     color: #282c34; }
+
+.tel-number.blurred, .mail-applicant.blurred {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  pointer-events: none; }
+  .is-ie .tel-number.blurred, .is-ie .mail-applicant.blurred {
+    -webkit-filter: none;
+            filter: none; }
+    .is-ie .tel-number.blurred .blurred-char, .is-ie .mail-applicant.blurred .blurred-char {
+      display: inline-block;
+      position: relative; }
+      .is-ie .tel-number.blurred .blurred-char:after, .is-ie .mail-applicant.blurred .blurred-char:after {
+        content: '';
+        background: url("../layoutImg/blur-jobs.png") 50% 50%;
+        width: 23px;
+        height: 28px;
+        position: absolute;
+        top: -4px;
+        left: -7px; }
+      .is-ie .tel-number.blurred .blurred-char > span, .is-ie .mail-applicant.blurred .blurred-char > span {
+        opacity: 0; }
 
 .wrapper-btn-applicant {
   position: relative;

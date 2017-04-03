@@ -150,6 +150,7 @@
 	font-size: 1.4rem;
 	color: rgb(155, 173, 217);
 	text-decoration: none;
+	flex-grow: 1;
 }
 .btn-cv{
 	position: relative;
@@ -225,8 +226,15 @@
 	border-top: 1px solid $gris;
 	.tel-applicant{
 		font-family: $roboto-bold;
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		margin: 0 20px;
+		text-transform: uppercase;
+		flex-grow: 1;
+	}
+	.tel-number{
+		&.blurred{
+			font-size: 1.2rem;
+		}
 	}
 }
 .wrapper-mail-applicant{
@@ -239,6 +247,31 @@
 		font-size: 1.4rem;
 		text-decoration: none;
 		color: $txt;
+	}
+}
+.tel-number, .mail-applicant{
+	&.blurred{
+		filter: blur(5px);
+		pointer-events: none;
+		.is-ie &{
+		    filter: none;
+		    .blurred-char{
+		        display: inline-block;
+		        position: relative;
+		        &:after{
+		            content: '';
+		            background: url('../layoutImg/blur-jobs.png') 50% 50%;
+		            width: 23px;
+		            height: 28px;
+		            position: absolute;
+		            top: -4px;
+		            left: -7px;
+		        }
+		        > span{
+		            opacity: 0;
+		        }
+		    }
+		}
 	}
 }
 .wrapper-btn-applicant{

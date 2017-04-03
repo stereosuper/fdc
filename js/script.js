@@ -663,11 +663,12 @@ $(function(){
 		$('html').addClass('is-ie');
 
 		// add span around prices blurred characters
-		if($('.field-content-detail .blurred').length){
-			console.log($('.field-content-detail .blurred').text());
-			var original = $('.field-content-detail .blurred').text();
-			var new_version = original.split('X').join('<span class="blurred-char"><span>X</span></span>');
-			$('.field-content-detail .blurred').html(new_version)
+		if($('.blurred').length){
+			$('.blurred').each(function(){
+				var original = $(this).text();
+				var new_version = original.split('X').join('<span class="blurred-char"><span>X</span></span>');
+				$(this).html(new_version);
+			});
 		}
 	}
 
