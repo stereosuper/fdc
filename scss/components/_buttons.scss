@@ -274,6 +274,13 @@ a.btn-block, button.btn-block, .btn-block {
 	border: none;
 	backface-visibility: hidden;
 	line-height: 1em;
+	&.disabled{
+		pointer-events: none;
+		background-color: rgb(218, 218, 218)!important;
+		.border{
+			border-color: rgb(218, 218, 218)!important;
+		}
+	}
 	&.big-margin-top{
 		margin-top: 30px;
 	}

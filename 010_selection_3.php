@@ -43,6 +43,51 @@
                                 <a href='#' class='btn-txt'>Modifier</a>
                             </li>
                         </ul>
+                        <div class='wrapper-form-jobs'>
+                            <form action='#' method='post' class='applicant-form'>
+                                <fieldset class='size1'>
+                                    <label class='size1' for='poste'>
+                                        Poste
+                                    </label><input type='text' name='poste' id='poste' placeholder='Boulanger' class='med autocomplete jobs' value='' required>
+                                </fieldset>
+                                <fieldset class='size1'>
+                                    <label class='size3' for='ville'>
+                                        Ville
+                                    </label><input type='text' name='ville' placeholder='Nantes (44000)' class='autocomplete cities' id='ville' >
+                                </fieldset>
+                                <fieldset class='small-margin'>
+                                    <legend class='legend-next-fieldset size1'>Type de contrat</legend><fieldset class='inline-b'>
+                                        <input type='checkbox' name='type-contrat' id='cdi' value='cdi'><label class='has-margin-around' for='cdi'>CDI</label>
+                                        <input type='checkbox' name='type-contrat' id='cdd' value='cdd'><label class='has-margin-around' for='cdd'>CDD</label>
+                                        <input type='checkbox' name='type-contrat' id='apprentissage' value='apprentissage'><label class='has-margin-around' for='apprentissage'>Apprentissage</label>
+                                        <input type='checkbox' name='type-contrat' id='interim' value='interim'><label class='has-margin-around' for='interim'>Intérim</label>
+                                        <input type='checkbox' name='type-contrat' id='stage' value='stage'><label class='has-margin-around' for='stage'>Stage</label>
+                                    </fieldset>
+                                </fieldset>
+                                <fieldset>
+                                    <label class='size2' for='disponibilite'>
+                                        Disponibilité
+                                    </label><div class='select small'>
+                                        <select name='disponibilite' id='disponibilite'>
+                                            <option value='1-semaine' selected>1 semaine</option>
+                                            <option value='option-2'>Option 2</option>
+                                            <option value='option-3'>Option 3</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <label class='size3' for='mobilite'>
+                                        Mobilité
+                                    </label><div class='select small'>
+                                        <select name='mobilite' id='mobilite'>
+                                            <option value='indifferent' selected>Indifférent</option>
+                                            <option value='option-2'>Option 2</option>
+                                            <option value='option-3'>Option 3</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
                     </header>
                     <div class='content-jobs'>
                         <ul class='list-cards'>
@@ -268,7 +313,7 @@
                                 
                             </div>
                             <div class='footer-map'>
-                                <a class='btn-block huge btn-orange-job' href='#'>Poursuivre</a>
+                                <a class='btn-block huge btn-orange-job disabled' href='#'><span class='border'></span><span class='txt-btn'>Poursuivre</span></a>
                             </div>
                         </div>
                     </div>
