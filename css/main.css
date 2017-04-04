@@ -9858,17 +9858,6 @@ body.cercle .content-tabs {
     padding: 10px 0;
     text-align: center; }
 
-  /*.choices{
-      &.three-choices{
-          height: auto;
-          > li{
-              position: relative;
-              &:nth-child(2), &:nth-child(3){
-                  left: 0;
-              }
-          }
-      }
-  }*/
   .choices .table-types a {
     font-size: 0.9em;
     padding: 27px 20px 0 20px; }
@@ -10151,7 +10140,21 @@ body.cercle .content-tabs {
   .search {
     width: 100%;
     max-width: 500px;
-    margin: 0 auto 20px auto; } }
+    margin: 0 auto 20px auto; }
+
+  .applicant-form fieldset .inline-b {
+    display: inline-block;
+    max-width: 265px; }
+  .applicant-form fieldset.size1 {
+    width: 290px; }
+  .applicant-form label.legend-next-fieldset, .applicant-form legend.legend-next-fieldset {
+    float: left; }
+  .applicant-form label.size1, .applicant-form legend.size1 {
+    width: 70px; }
+  .applicant-form input[type=text] {
+    max-width: 200px; }
+    .applicant-form input[type=text].med {
+      max-width: 200px; } }
 @media (max-width: 767px) {
   h1 {
     padding: 0 30px;
@@ -10784,7 +10787,26 @@ body.cercle .content-tabs {
   .wrapper-pub.pub-left .pub img.horizontale, .wrapper-pub.pub-right .pub img.horizontale, .wrapper-pub.floating-pub .pub img.horizontale {
     display: none; }
   .wrapper-pub.pub-left .pub img.horizontale-small, .wrapper-pub.pub-right .pub img.horizontale-small, .wrapper-pub.floating-pub .pub img.horizontale-small {
-    display: block; } }
+    display: block; }
+
+  .applicant-form fieldset {
+    display: block; }
+    .applicant-form fieldset.small-margin {
+      margin-right: 0; }
+    .applicant-form fieldset.size1 {
+      width: auto; }
+    .applicant-form fieldset .inline-b {
+      display: block;
+      max-width: none;
+      margin-top: 0; }
+  .applicant-form label.size1, .applicant-form label.size2, .applicant-form label.size3, .applicant-form legend.size1, .applicant-form legend.size2, .applicant-form legend.size3 {
+    width: 180px; }
+  .applicant-form label.legend-next-fieldset, .applicant-form legend.legend-next-fieldset {
+    float: none; }
+  .applicant-form input[type=text] {
+    max-width: 200px; }
+    .applicant-form input[type=text].med {
+      max-width: 200px; } }
 @media (max-width: 650px) {
   ul.nav-tabs {
     /*&:not(.nav-tabs-indicator){

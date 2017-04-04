@@ -1449,17 +1449,6 @@
         }
     }
 
-    /*.choices{
-        &.three-choices{
-            height: auto;
-            > li{
-                position: relative;
-                &:nth-child(2), &:nth-child(3){
-                    left: 0;
-                }
-            }
-        }
-    }*/
     .choices{
         .table-types{
             a{
@@ -1915,6 +1904,34 @@
         width: 100%;
         max-width: 500px;
         margin: 0 auto 20px auto;
+    }
+
+    .applicant-form{
+        fieldset{
+            .inline-b{
+                display: inline-block;
+                max-width: 265px;
+            }
+            &.size1{
+                width: 290px;
+            }
+        }
+        label, legend{
+            &.legend-next-fieldset{
+                float: left;
+            }
+            &.size1{
+                width: 70px;
+            }
+        }
+        input{
+            &[type=text]{
+                max-width: 200px;
+                &.med{
+                    max-width: 200px;
+                }
+            }
+        }
     }
 }
 
@@ -2890,6 +2907,41 @@
                }
            } 
        }
+    }
+    .applicant-form{
+        fieldset{
+            display: block;
+            &.small-margin{
+                margin-right: 0;
+            }
+            &.size1{
+                width: auto;
+            }
+            .inline-b{
+                display: block;
+                max-width: none;
+                margin-top: 0;
+            }
+        }
+        label, legend{
+            &.size1, &.size2, &.size3{
+                width: 180px;
+            }
+            &.legend-next-fieldset{
+                float: none;
+            }
+        }
+    
+
+        
+        input{
+            &[type=text]{
+                max-width: 200px;
+                &.med{
+                    max-width: 200px;
+                }
+            }
+        }
     }
 }
 
