@@ -310,7 +310,7 @@
                             </li>
                         </ul>
                         <div class='wrapper-map-jobs'>
-                            <div class='map-jobs'>
+                            <div id='map-jobs'>
                                 
                             </div>
                             <div class='footer-map'>
@@ -322,7 +322,7 @@
             </div>
         </main>
 
-        <?php include_once('includes/footer.html'); ?>
+        <?php include_once('includes/footer_jobs.html'); ?>
 
     </body>
 

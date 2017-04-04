@@ -490,6 +490,15 @@ $(function(){
 		$('.header-jobs').toggleClass('showFilters');
 	});
 
+	// Map jobs
+	if($('#map-jobs').length){
+		L.mapbox.accessToken = 'pk.eyJ1Ijoic3RlcmVvc3VwZXIiLCJhIjoiY2lyM2JnMDIwMDAxM2k0bWNndmUzeTFhbSJ9.UZ-XuPASxGVtYFSqdVyppg';
+		var centerOption = $(window).width() > 1200 ? [47, 9] : [47, 3], zoomOption = $(window).width() > 1200 ? 6 : 5;
+
+		var map = L.mapbox.map('map-jobs', null, {minZoom: 3, maxZoom: 15, center: centerOption, zoom: zoomOption, scrollWheelZoom: false});
+		L.mapbox.styleLayer('mapbox://styles/stereosuper/cj13p69px00102sowhk6p2f8w').addTo(map);
+	}
+
 	// Nav tabs responsive
 	setResponsiveNavTabs();
 
