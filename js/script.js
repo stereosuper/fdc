@@ -484,6 +484,11 @@ $(function(){
 		cardParent = $(this).parents('.card');
 		cardParent.removeClass('isInvalid');
 	});
+	$('.showHideFilters').on('click', function(e){
+		e.preventDefault();
+		$('.wrapper-form-jobs').slideToggle(200);
+		$('.header-jobs').toggleClass('showFilters');
+	});
 
 	// Nav tabs responsive
 	setResponsiveNavTabs();

@@ -40,7 +40,8 @@
                                 Disponibilité : <strong>1 semaine</strong>
                             </li>
                             <li>
-                                <a href='#' class='btn-txt'>Modifier</a>
+                                <a href='#' class='btn-txt showHideFilters' id='btn-filters'>Modifier</a>
+                                <a href='#' class='btn-txt showHideFilters' id='btn-valid-filters'>Ok</a>
                             </li>
                         </ul>
                         <div class='wrapper-form-jobs'>

@@ -7422,13 +7422,13 @@ body.wrapper-blured #wrapper-page {
       margin-right: 0; }
 
 .wrapper-form-jobs {
-  position: absolute;
-  background: white;
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   padding: 30px 20px 10px;
+  background: white;
   border: 1px solid #dadada; }
   .wrapper-form-jobs:before {
     content: '';
@@ -7647,6 +7647,19 @@ body.wrapper-blured #wrapper-page {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+
+#btn-valid-filters {
+  display: none;
+  background: white;
+  color: #f78232;
+  padding: 8px 10px; }
+  .showFilters #btn-valid-filters {
+    display: inline-block; }
+
+#btn-filters {
+  display: inline-block; }
+  .showFilters #btn-filters {
+    display: none; }
 
 .btn-cv {
   position: relative;
