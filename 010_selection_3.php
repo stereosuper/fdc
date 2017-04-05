@@ -310,9 +310,7 @@
                             </li>
                         </ul>
                         <div class='wrapper-map-jobs'>
-                            <div id='map-jobs'>
-                                
-                            </div>
+                            <div id='map-jobs'></div>
                             <div class='footer-map'>
                                 <a class='btn-block huge btn-orange-job disabled' href='#'><span class='border'></span><span class='txt-btn'>Poursuivre</span></a>
                             </div>
