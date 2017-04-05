@@ -316,9 +316,11 @@
                             </li>
                         </ul>
                         <div class='wrapper-map-jobs'>
-                            <div id='map-jobs'></div>
-                            <div class='footer-map'>
-                                <p>Pour poursuivre votre séléction d'offres d'emploi, <a class='btn-applicant btn-connexion' href='#'>veuillez vous connecter <span class='icon-arrow'></span></a></p>
+                            <div id='content-map-jobs'>
+                                <div id='map-jobs'></div>
+                                <div class='footer-map'>
+                                    <p>Pour poursuivre votre séléction d'offres d'emploi, <a class='btn-applicant btn-connexion' href='#'>veuillez vous connecter <span class='icon-arrow'></span></a></p>
+                                </div>
                             </div>
                         </div>
                     </div>

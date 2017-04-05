@@ -497,6 +497,8 @@ $(function(){
 
 		var map = L.mapbox.map('map-jobs', null, {minZoom: 3, maxZoom: 15, center: centerOption, zoom: zoomOption, scrollWheelZoom: false});
 		L.mapbox.styleLayer('mapbox://styles/stereosuper/cj13p69px00102sowhk6p2f8w').addTo(map);
+
+		$('#content-map-jobs').stick_in_parent();
 	}
 
 	// Nav tabs responsive
