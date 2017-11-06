@@ -1247,6 +1247,11 @@ fieldset {
   fieldset.inline-b {
     vertical-align: baseline;
     max-width: calc(100% - 195px); }
+    fieldset.inline-b.align-middle {
+      vertical-align: middle;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
     fieldset.inline-b .has-margin-around {
       margin-top: 5px;
       margin-bottom: 5px; }
@@ -3572,21 +3577,24 @@ button {
     background: #9b1822;
     padding: 35px;
     position: relative; }
+    .cercleMyForum .call-directly fieldset {
+      margin: 0 5px; }
     .cercleMyForum .call-directly p, .cercleMyForum .call-directly input, .cercleMyForum .call-directly button, .cercleMyForum .call-directly form {
       display: inline-block;
       vertical-align: middle;
-      margin: 0 5px;
+      margin: 0;
       color: white; }
       .cercleMyForum .call-directly p:focus, .cercleMyForum .call-directly input:focus, .cercleMyForum .call-directly button:focus, .cercleMyForum .call-directly form:focus {
         border-color: #f18832;
         outline: 1px solid #f18832;
         outline-offset: 0; }
+    .cercleMyForum .call-directly button {
+      margin-left: 5px; }
     .cercleMyForum .call-directly p {
       margin: 0 20px 0 30px; }
     .cercleMyForum .call-directly form {
       float: right;
-      min-width: 490px;
-      margin-right: 20px; }
+      margin-right: 30px; }
     .cercleMyForum .call-directly ::-webkit-input-placeholder {
       color: #f0f0f0; }
     .cercleMyForum .call-directly ::-moz-placeholder {
@@ -10321,7 +10329,7 @@ body.cercle .content-tabs {
     float: none;
     margin-left: 25px;
     margin-bottom: 15px; }
-    .cercleMyForum .call-directly form input, .cercleMyForum .call-directly form button {
+    .cercleMyForum .call-directly form fieldset, .cercleMyForum .call-directly form button {
       margin-top: 10px; }
   .cercleMyForum .select-circle form ul.circle-step li ul {
     float: none;
@@ -10469,6 +10477,8 @@ body.cercle .content-tabs {
   fieldset.inline-b {
     display: block;
     max-width: none; }
+    fieldset.inline-b.align-middle {
+      display: inline-block; }
 
   .map-container {
     width: 43%;

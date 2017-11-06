@@ -40,6 +40,10 @@ fieldset{
     &.inline-b{
         vertical-align: baseline;
         max-width: calc(100% - 195px);
+        &.align-middle{
+            vertical-align: middle;
+            transform: none;
+        }
         .has-margin-around{
             margin-top: 5px;
             margin-bottom: 5px;

@@ -179,8 +179,12 @@
                         <p><b>Des projets ou besoins spécifiques&nbsp;?</b><br />
                         Faites-vous rappeler directement par un expert !</p>
                         <form>
-                            <input type="text" placeholder="Votre nom" />
-                            <input type="tel" placeholder="Votre téléphone" />
+                            <fieldset class="required inline-b align-middle">
+                                <input type="text" placeholder="Votre nom" />
+                            </fieldset>
+                            <fieldset class="required inline-b align-middle">
+                                <input type="tel" placeholder="Votre téléphone" />
+                            </fieldset>
                             <button type="submit" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Ok</span></button>
                         </form>
                     </div>

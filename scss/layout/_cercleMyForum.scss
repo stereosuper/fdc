@@ -384,24 +384,29 @@
         background:#9b1822;
         padding:35px;
         position: relative;
+        fieldset{
+            margin: 0 5px;
+        }
         p, input, button, form {
-            display:inline-block;
-            vertical-align:middle;
-            margin:0 5px;
-            color:$blanc;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+            color: $blanc;
             &:focus{
                 border-color: $yellow;
                 outline: 1px solid $yellow;
                 outline-offset: 0;
             }
         }
+        button{
+            margin-left: 5px;
+        }
         p {
             margin:0 20px 0 30px;
         }
         form {
-            float:right;
-            min-width:490px;
-            margin-right:20px;
+            float: right;
+            margin-right: 30px;
         }
         ::-webkit-input-placeholder{
             color: rgb(240, 240, 240);

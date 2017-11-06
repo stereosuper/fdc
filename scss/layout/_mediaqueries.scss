@@ -1056,7 +1056,7 @@
                 float:none;
                 margin-left:25px;
                 margin-bottom:15px;
-                input, button {
+                fieldset, button {
                     margin-top:10px;
                 }
             }
@@ -1278,6 +1278,9 @@
         &.inline-b{
             display: block;
             max-width: none;
+            &.align-middle{
+                display: inline-block;
+            }
         }
     }
 
