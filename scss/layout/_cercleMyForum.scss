@@ -403,6 +403,11 @@
         }
         p {
             margin:0 20px 0 30px;
+            &.p-error{
+                display: block;
+                margin: 1.55em 0;
+                color: $error;
+            }
         }
         form {
             float: right;

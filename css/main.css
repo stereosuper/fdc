@@ -3592,6 +3592,10 @@ button {
       margin-left: 5px; }
     .cercleMyForum .call-directly p {
       margin: 0 20px 0 30px; }
+      .cercleMyForum .call-directly p.p-error {
+        display: block;
+        margin: 1.55em 0;
+        color: #ff0000; }
     .cercleMyForum .call-directly form {
       float: right;
       margin-right: 30px; }

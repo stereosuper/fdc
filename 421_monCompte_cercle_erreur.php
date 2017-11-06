@@ -179,7 +179,8 @@
                         <p><b>Des projets ou besoins spécifiques&nbsp;?</b><br />
                         Faites-vous rappeler directement par un expert !</p>
                         <form>
-                            <fieldset class="required inline-b align-middle">
+                            <p class='p-error'>Le champ <i>"Nom"</i> est obligatoire.</p>
+                            <fieldset class="required inline-b align-middle error">
                                 <input type="text" placeholder="Votre nom" />
                             </fieldset>
                             <fieldset class="required inline-b align-middle">
