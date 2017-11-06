@@ -9654,7 +9654,7 @@ body.cercle .content-tabs {
   .menu-header a {
     padding: 0 15px; }
 
-  .choices h2, .choices p {
+  .choices h2, .choices p, .choices.three-choices h2, .choices.three-choices p {
     font-size: 0.9em; } }
 @media (max-width: 1280px) {
   /* AAA */
@@ -9928,113 +9928,113 @@ body.cercle .content-tabs {
   .cols-footer > li:nth-child(1) {
     padding-right: 52px; }
 
-  .choices {
+  .choices, .choices.three-choices {
     height: auto; }
-    .choices h3 br {
+    .choices h3 br, .choices.three-choices h3 br {
       display: none; }
-    .choices h2, .choices p {
+    .choices h2, .choices p, .choices.three-choices h2, .choices.three-choices p {
       font-size: 1em; }
-    .choices.choice-1-active, .choices.choice-2-active, .choices.choice-3-active, .choices.choice-4-active, .choices.choice-5-active {
+    .choices.choice-1-active, .choices.choice-2-active, .choices.choice-3-active, .choices.choice-4-active, .choices.choice-5-active, .choices.three-choices.choice-1-active, .choices.three-choices.choice-2-active, .choices.three-choices.choice-3-active, .choices.three-choices.choice-4-active, .choices.three-choices.choice-5-active {
       background: none; }
-      .choices.choice-1-active > li, .choices.choice-2-active > li, .choices.choice-3-active > li, .choices.choice-4-active > li, .choices.choice-5-active > li {
+      .choices.choice-1-active > li, .choices.choice-2-active > li, .choices.choice-3-active > li, .choices.choice-4-active > li, .choices.choice-5-active > li, .choices.three-choices.choice-1-active > li, .choices.three-choices.choice-2-active > li, .choices.three-choices.choice-3-active > li, .choices.three-choices.choice-4-active > li, .choices.three-choices.choice-5-active > li {
         opacity: 1; }
-      .choices.choice-1-active .zone-content, .choices.choice-2-active .zone-content, .choices.choice-3-active .zone-content, .choices.choice-4-active .zone-content, .choices.choice-5-active .zone-content {
+      .choices.choice-1-active .zone-content, .choices.choice-2-active .zone-content, .choices.choice-3-active .zone-content, .choices.choice-4-active .zone-content, .choices.choice-5-active .zone-content, .choices.three-choices.choice-1-active .zone-content, .choices.three-choices.choice-2-active .zone-content, .choices.three-choices.choice-3-active .zone-content, .choices.three-choices.choice-4-active .zone-content, .choices.three-choices.choice-5-active .zone-content {
         -webkit-transition-delay: none;
                 transition-delay: none; }
-    .choices.choice-1-active > li:nth-child(1) .zone-btn:before {
+    .choices.choice-1-active > li:nth-child(1) .zone-btn:before, .choices.three-choices.choice-1-active > li:nth-child(1) .zone-btn:before {
       -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
               transform: translate3d(0, 0, 0) scaleY(1) scaleX(0); }
-    .choices.choice-1-active > li:nth-child(1) .visuel {
+    .choices.choice-1-active > li:nth-child(1) .visuel, .choices.three-choices.choice-1-active > li:nth-child(1) .visuel {
       -webkit-transform: translateY(0);
           -ms-transform: translateY(0);
               transform: translateY(0); }
-    .choices.choice-1-active > li:nth-child(1) .zone-txt {
+    .choices.choice-1-active > li:nth-child(1) .zone-txt, .choices.three-choices.choice-1-active > li:nth-child(1) .zone-txt {
       -webkit-transform: translateY(0);
           -ms-transform: translateY(0);
               transform: translateY(0); }
-    .choices.choice-2-active > li:nth-child(2) {
+    .choices.choice-2-active > li:nth-child(2), .choices.three-choices.choice-2-active > li:nth-child(2) {
       -webkit-transform: translateX(0%);
           -ms-transform: translateX(0%);
               transform: translateX(0%); }
-      .choices.choice-2-active > li:nth-child(2) .zone-btn:before {
+      .choices.choice-2-active > li:nth-child(2) .zone-btn:before, .choices.three-choices.choice-2-active > li:nth-child(2) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
                 transform: translate3d(0, 0, 0) scaleY(1) scaleX(0); }
-      .choices.choice-2-active > li:nth-child(2) .visuel {
+      .choices.choice-2-active > li:nth-child(2) .visuel, .choices.three-choices.choice-2-active > li:nth-child(2) .visuel {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-      .choices.choice-2-active > li:nth-child(2) .zone-txt {
+      .choices.choice-2-active > li:nth-child(2) .zone-txt, .choices.three-choices.choice-2-active > li:nth-child(2) .zone-txt {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-    .choices.choice-3-active > li:nth-child(3) {
+    .choices.choice-3-active > li:nth-child(3), .choices.three-choices.choice-3-active > li:nth-child(3) {
       -webkit-transform: translateX(0%);
           -ms-transform: translateX(0%);
               transform: translateX(0%); }
-      .choices.choice-3-active > li:nth-child(3) .zone-btn:before {
+      .choices.choice-3-active > li:nth-child(3) .zone-btn:before, .choices.three-choices.choice-3-active > li:nth-child(3) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
                 transform: translate3d(0, 0, 0) scaleY(1) scaleX(0); }
-      .choices.choice-3-active > li:nth-child(3) .visuel {
+      .choices.choice-3-active > li:nth-child(3) .visuel, .choices.three-choices.choice-3-active > li:nth-child(3) .visuel {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-      .choices.choice-3-active > li:nth-child(3) .zone-txt {
+      .choices.choice-3-active > li:nth-child(3) .zone-txt, .choices.three-choices.choice-3-active > li:nth-child(3) .zone-txt {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-    .choices.choice-4-active > li:nth-child(4) {
+    .choices.choice-4-active > li:nth-child(4), .choices.three-choices.choice-4-active > li:nth-child(4) {
       -webkit-transform: translateX(0%);
           -ms-transform: translateX(0%);
               transform: translateX(0%); }
-      .choices.choice-4-active > li:nth-child(4) .zone-btn:before {
+      .choices.choice-4-active > li:nth-child(4) .zone-btn:before, .choices.three-choices.choice-4-active > li:nth-child(4) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
                 transform: translate3d(0, 0, 0) scaleY(1) scaleX(0); }
-      .choices.choice-4-active > li:nth-child(4) .visuel {
+      .choices.choice-4-active > li:nth-child(4) .visuel, .choices.three-choices.choice-4-active > li:nth-child(4) .visuel {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-      .choices.choice-4-active > li:nth-child(4) .zone-txt {
+      .choices.choice-4-active > li:nth-child(4) .zone-txt, .choices.three-choices.choice-4-active > li:nth-child(4) .zone-txt {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-    .choices.choice-5-active > li:nth-child(5) {
+    .choices.choice-5-active > li:nth-child(5), .choices.three-choices.choice-5-active > li:nth-child(5) {
       -webkit-transform: translateX(0%);
           -ms-transform: translateX(0%);
               transform: translateX(0%); }
-      .choices.choice-5-active > li:nth-child(5) .zone-btn:before {
+      .choices.choice-5-active > li:nth-child(5) .zone-btn:before, .choices.three-choices.choice-5-active > li:nth-child(5) .zone-btn:before {
         -webkit-transform: translate3d(0, 0, 0) scaleY(1) scaleX(0);
                 transform: translate3d(0, 0, 0) scaleY(1) scaleX(0); }
-      .choices.choice-5-active > li:nth-child(5) .visuel {
+      .choices.choice-5-active > li:nth-child(5) .visuel, .choices.three-choices.choice-5-active > li:nth-child(5) .visuel {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-      .choices.choice-5-active > li:nth-child(5) .zone-txt {
+      .choices.choice-5-active > li:nth-child(5) .zone-txt, .choices.three-choices.choice-5-active > li:nth-child(5) .zone-txt {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0); }
-    .choices > li {
+    .choices > li, .choices.three-choices > li {
       display: block;
       position: relative;
       top: inherit;
       width: 100%;
       height: auto;
       min-height: 0; }
-      .choices > li:nth-child(1) {
+      .choices > li:nth-child(1), .choices.three-choices > li:nth-child(1) {
         left: 0; }
-      .choices > li:nth-child(2) {
+      .choices > li:nth-child(2), .choices.three-choices > li:nth-child(2) {
         left: 0; }
-      .choices > li:nth-child(3) {
+      .choices > li:nth-child(3), .choices.three-choices > li:nth-child(3) {
         left: 0; }
-      .choices > li:nth-child(4) {
+      .choices > li:nth-child(4), .choices.three-choices > li:nth-child(4) {
         left: 0; }
-      .choices > li:nth-child(5) {
+      .choices > li:nth-child(5), .choices.three-choices > li:nth-child(5) {
         left: 0; }
-      .choices > li:last-child .zone-btn:before {
+      .choices > li:last-child .zone-btn:before, .choices.three-choices > li:last-child .zone-btn:before {
         border-bottom: 1px solid #dadada; }
-    .choices .zone-btn {
+    .choices .zone-btn, .choices.three-choices .zone-btn {
       width: 100%;
       height: auto; }
-      .choices .zone-btn:before {
+      .choices .zone-btn:before, .choices.three-choices .zone-btn:before {
         width: auto;
         height: 100%;
         box-sizing: border-box;
@@ -10049,7 +10049,7 @@ body.cercle .content-tabs {
                 transform-origin: 100% 0;
         border-bottom: none;
         border-right: 1px solid #dadada; }
-    .choices .visuel {
+    .choices .visuel, .choices.three-choices .visuel {
       width: 250px;
       height: 100%;
       position: absolute;
@@ -10057,13 +10057,14 @@ body.cercle .content-tabs {
       left: 0;
       margin: 0;
       background: none !important; }
-      .choices .visuel .wrapper-alignment {
+      .choices .visuel .wrapper-alignment, .choices.three-choices .visuel .wrapper-alignment {
         display: table; }
-    .choices .zone-txt {
+    .choices .zone-txt, .choices.three-choices .zone-txt {
+      max-width: 100%;
       height: auto;
       text-align: left;
       padding: 40px 40px 40px 290px; }
-    .choices .zone-content {
+    .choices .zone-content, .choices.three-choices .zone-content {
       display: none;
       width: 100%;
       height: auto;
@@ -10076,7 +10077,7 @@ body.cercle .content-tabs {
               transition: none;
       -webkit-transition-delay: none;
               transition-delay: none; }
-    .choices .content {
+    .choices .content, .choices.three-choices .content {
       height: auto; }
 
   .wrapper-choices .field-content {
@@ -10593,7 +10594,7 @@ body.cercle .content-tabs {
     padding: 10px 0;
     text-align: center; }
 
-  .choices .table-types a {
+  .choices .table-types a, .choices.three-choices .table-types a {
     font-size: 0.9em;
     padding: 27px 20px 0 20px; }
 
@@ -11264,27 +11265,27 @@ body.cercle .content-tabs {
   .field-list .img {
     width: 30%; }
 
-  .choices .visuel {
+  .choices .visuel, .choices.three-choices .visuel {
     width: 150px; }
-  .choices .zone-btn:before {
+  .choices .zone-btn:before, .choices.three-choices .zone-btn:before {
     left: 150px; }
-  .choices .zone-txt {
+  .choices .zone-txt, .choices.three-choices .zone-txt {
     padding: 20px 20px 20px 180px; }
-  .choices h3 {
+  .choices h3, .choices.three-choices h3 {
     font-size: 1.5em; }
-  .choices h2, .choices p {
+  .choices h2, .choices p, .choices.three-choices h2, .choices.three-choices p {
     font-size: 0.9em; }
-  .choices > li:nth-child(1) .visuel img {
+  .choices > li:nth-child(1) .visuel img, .choices.three-choices > li:nth-child(1) .visuel img {
     max-width: 65px; }
-  .choices > li:nth-child(2) .visuel img {
+  .choices > li:nth-child(2) .visuel img, .choices.three-choices > li:nth-child(2) .visuel img {
     max-width: 90px; }
-  .choices > li:nth-child(3) .visuel img {
+  .choices > li:nth-child(3) .visuel img, .choices.three-choices > li:nth-child(3) .visuel img {
     max-width: 80px; }
-  .choices > li:nth-child(4) .visuel img {
+  .choices > li:nth-child(4) .visuel img, .choices.three-choices > li:nth-child(4) .visuel img {
     max-width: 75px; }
-  .choices > li:nth-child(5) .visuel img {
+  .choices > li:nth-child(5) .visuel img, .choices.three-choices > li:nth-child(5) .visuel img {
     max-width: 80px; }
-  .choices .table-types a {
+  .choices .table-types a, .choices.three-choices .table-types a {
     padding: 27px 15px 0 15px; }
 
   .dashboard-block .alerts-list {
@@ -11937,25 +11938,25 @@ body.cercle .content-tabs {
   .field-list .field-txt {
     padding: 100px 30px 25px; }
 
-  .choices .visuel {
+  .choices .visuel, .choices.three-choices .visuel {
     width: 80px; }
-  .choices .zone-btn:before {
+  .choices .zone-btn:before, .choices.three-choices .zone-btn:before {
     left: 80px; }
-  .choices .zone-txt {
+  .choices .zone-txt, .choices.three-choices .zone-txt {
     padding: 20px 20px 20px 100px; }
-  .choices h3 {
+  .choices h3, .choices.three-choices h3 {
     font-size: 1.5em; }
-  .choices h2, .choices p {
+  .choices h2, .choices p, .choices.three-choices h2, .choices.three-choices p {
     font-size: 0.9em; }
-  .choices > li:nth-child(1) .visuel img {
+  .choices > li:nth-child(1) .visuel img, .choices.three-choices > li:nth-child(1) .visuel img {
     max-width: 48px; }
-  .choices > li:nth-child(2) .visuel img {
+  .choices > li:nth-child(2) .visuel img, .choices.three-choices > li:nth-child(2) .visuel img {
     max-width: 62px; }
-  .choices > li:nth-child(3) .visuel img {
+  .choices > li:nth-child(3) .visuel img, .choices.three-choices > li:nth-child(3) .visuel img {
     max-width: 60px; }
-  .choices > li:nth-child(4) .visuel img {
+  .choices > li:nth-child(4) .visuel img, .choices.three-choices > li:nth-child(4) .visuel img {
     max-width: 48px; }
-  .choices > li:nth-child(5) .visuel img {
+  .choices > li:nth-child(5) .visuel img, .choices.three-choices > li:nth-child(5) .visuel img {
     max-width: 60px; }
 
   .dashboard-block .alerts-list {
@@ -12086,19 +12087,19 @@ body.cercle .content-tabs {
     background-image: url(../img/logo@2x.png);
     background-size: 114px 40px; }
 
-  .choices > li:nth-child(1) .visuel {
+  .choices > li:nth-child(1) .visuel, .choices.three-choices > li:nth-child(1) .visuel {
     background: url(../layoutImg/loupe@2x.png) no-repeat;
     background-size: 800px 1200px; }
-  .choices > li:nth-child(2) .visuel {
+  .choices > li:nth-child(2) .visuel, .choices.three-choices > li:nth-child(2) .visuel {
     background: url(../layoutImg/hp@2x.png) no-repeat;
     background-size: 800px 1200px; }
-  .choices > li:nth-child(3) .visuel {
+  .choices > li:nth-child(3) .visuel, .choices.three-choices > li:nth-child(3) .visuel {
     background: url(../layoutImg/logo@2x.png) no-repeat;
     background-size: 800px 1200px; }
-  .choices > li:nth-child(4) .visuel {
+  .choices > li:nth-child(4) .visuel, .choices.three-choices > li:nth-child(4) .visuel {
     background: url(../layoutImg/box@2x.png) no-repeat;
     background-size: 800px 1200px; }
-  .choices > li:nth-child(5) .visuel {
+  .choices > li:nth-child(5) .visuel, .choices.three-choices > li:nth-child(5) .visuel {
     background: url(../layoutImg/team@2x.png) no-repeat;
     background-size: 800px 1200px; } }
 /* Print styles */

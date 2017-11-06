@@ -126,7 +126,7 @@
         }
     }
 
-    .choices{
+    .choices, .choices.three-choices{
         h2, p{
             font-size: 0.9em;
         }
@@ -490,7 +490,7 @@
         }
     }
 
-    .choices{
+    .choices, .choices.three-choices{
         height: auto;
         h3{
             br{
@@ -673,6 +673,7 @@
             }
         }
         .zone-txt{
+            max-width: 100%;
             height: auto;
             text-align: left;
             padding: 40px 40px 40px 290px;
@@ -1449,7 +1450,7 @@
         }
     }
 
-    .choices{
+    .choices, .choices.three-choices{
         .table-types{
             a{
                 font-size: 0.9em;
@@ -2484,7 +2485,7 @@
         }
     }
 
-    .choices{
+    .choices, .choices.three-choices{
         .visuel{
             width: 150px;
         }
@@ -3566,7 +3567,7 @@
         }
     }
 
-    .choices{
+    .choices, .choices.three-choices{
         .visuel{
             width: 80px;
         }
@@ -3821,7 +3822,7 @@
             background-size: 114px 40px;
         }
     }
-    .choices{
+    .choices, .choices.three-choices{
         > li{
             &:nth-child(1){
                 .visuel{
