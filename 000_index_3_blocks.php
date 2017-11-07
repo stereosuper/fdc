@@ -352,10 +352,10 @@
 												<p>Pitchez votre projet avec nous et profitez d'un audit gratuit&nbsp;:</p>
 												<form>
 													<fieldset class="required inline-b align-middle">
-														<input class="med" type="text" placeholder="Votre nom" />
+														<input class="med" type="text" placeholder="Votre nom" required />
 													</fieldset>
 													<fieldset class="required inline-b align-middle">
-														<input class="med" type="tel" placeholder="Votre n° de téléphone" />
+														<input class="med" type="tel" placeholder="Votre n° de téléphone" required />
 													</fieldset>
 													<button type="submit" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Ok</span></button>
 												</form>
