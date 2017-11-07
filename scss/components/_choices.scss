@@ -96,6 +96,11 @@ $tps-choice-etape-2: 0.3s;
 				}
 			}
 		}
+		.cercleMyForum.choice-cercle{
+			ol.full-circle{
+				//margin: 170px 0 0 -175px;
+			}
+		}
 	}
 	> li{
 		/*display: inline-block;
@@ -176,23 +181,30 @@ $tps-choice-etape-2: 0.3s;
 		}
 		&:nth-child(3){
 			left: 40%;
-			.bg-choice{
-				background: $theme2-gradient-3;
-				background: linear-gradient(to bottom, $theme2-gradient-3 0%, darken($theme2-gradient-3, 5%) 100%);
+			.zone-btn{
 				&:before{
-					width: 84px;
-					height: 84px;
-					top: 27px;
-					left: -23px;
-					background: rgb(228, 77, 29);
-					opacity: 0.8;
+					content: none;
+				}
+			}
+			.bg-choice{
+				background: $theme2-grey;
+				background: linear-gradient(to bottom, $theme2-grey 0%, darken($theme2-grey, 5%) 100%);
+				&:before, &:after{
+					content: none;
 				}
 			}
 			.visuel{
 				background: url(../layoutImg/logo@1x.png) no-repeat;
 			}
-			h3{
-				color: rgb(204, 68, 48);
+			h3, h2, p{
+				color: $blanc;
+			}
+			.zone-txt{
+				padding-top: 0;
+				margin-top: -15px;
+			}
+			.visuel{
+				margin: 42px auto 0;
 			}
 		}
 		&:nth-child(4){
@@ -254,6 +266,38 @@ $tps-choice-etape-2: 0.3s;
 			h3{
 				color: rgb(230, 128, 37);
 				// color: rgb(147, 147, 147);
+			}
+		}
+	}
+	&.three-choices{
+		&.choice-1-active{
+			> li{
+				&:nth-child(1){
+					.zone-btn{
+						width: 20%;
+						transition-delay: 0s;
+					}
+				}
+			}
+		}
+		&.choice-2-active{
+			> li{
+				&:nth-child(2){
+					.zone-btn{
+						width: 20%;
+						transition-delay: 0s;
+					}
+				}
+			}
+		}
+		&.choice-3-active{
+			> li{
+				&:nth-child(3){
+					.zone-btn{
+						width: 20%;
+						transition-delay: 0s;
+					}
+				}
 			}
 		}
 	}
@@ -416,12 +460,6 @@ $tps-choice-etape-2: 0.3s;
 						transform: translate3d(0, 0, 0) scaleY(0);
 					}
 				}
-				.visuel{
-					transform: translateY(30px);
-				}
-				.zone-txt{
-					transform: translateY(-35px);
-				}
 				.zone-btn{
 					h2, h3, p{
 						color: $blanc;
@@ -513,6 +551,8 @@ $tps-choice-etape-2: 0.3s;
 		position: relative;
 		backface-visibility: hidden;
 		transform-style: preserve-3d;
+		transition: $tps-choice-etape-1 ease-in-out;
+		transition-delay: 0.6s;
 		&:before{
 			content: '';
 			display: block;

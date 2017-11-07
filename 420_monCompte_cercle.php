@@ -192,7 +192,7 @@
             </div>
         </main>
 
-        <?php include_once('includes/footer.html'); ?>
+        <?php include_once('includes/footer_sticky.html'); ?>
 
     </body>
 

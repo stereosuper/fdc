@@ -628,6 +628,14 @@
             }
             &:nth-child(3){
                 left: 0;
+                .visuel{
+                    margin-top: 0;
+                    height: 100%;
+                }
+                .zone-txt{
+                    padding-top: 40px;
+                    margin-top: 0;
+                }
             }
             &:nth-child(4){
                 left: 0;

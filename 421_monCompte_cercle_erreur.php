@@ -44,7 +44,7 @@
                     <div class='field-content'>
                         <ul class="little-squares vertical"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
                         <header class='tab-content-title'>
-                            <h2 class='h1'>Mes besoins d'accompagnement</h2>
+                            <h2 class='h1'>Boostez votre projet !</h2>
                             <button class='btn-pen small' id='editForm' data-cancel='Annuler les modifications' data-edit='Modifier'>Modifier</button>
                         </header>
                         <div class="select-circle circle-text">
@@ -193,7 +193,7 @@
             </div>
         </main>
 
-        <?php include_once('includes/footer.html'); ?>
+        <?php include_once('includes/footer_sticky.html'); ?>
 
     </body>
 

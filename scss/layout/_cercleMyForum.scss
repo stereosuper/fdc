@@ -10,7 +10,7 @@
             }
         }
         &.choice-#{$i}-active {
-            > li:nth-child(#{$i}).cercle-choice {
+            > li:nth-child(#{$i}).cercle-choice:not(.grey) {
                 .bg-choice {
                     @include bgCercle;
                     &:before, &:after {
@@ -68,12 +68,46 @@
     &.choice-cercle {
         height:100%;
         .circle-text {
-            position:absolute;
-            bottom:0px;
-            right:50px;
-            width:390px;
+            position: absolute;
+            bottom: 0px;
+            right: 50px;
+            width: 390px;
+            &.big{
+                width: 460px;
+            }
+            h3{
+                margin: 0;
+                + p{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
             p {
                 margin-bottom:30px;
+            }
+            form{
+                margin-top: 15px;
+                fieldset{
+                    margin: 0 5px;
+                    &:first-of-type{
+                        margin-left: 0;
+                    }
+                }
+                button{
+                    margin-left: 5px;
+                }
+            }
+            input[type=text], input[type=email], input[type=tel], input[type=password], input[type=number], textarea{
+                color: $blanc;
+            }
+            ::-webkit-input-placeholder{
+                color: rgba($blanc, 0.8);
+            }
+            ::-moz-placeholder{
+                color: rgba($blanc, 0.8);
+            }
+            ::-ms-input-placeholder{
+                color: rgba($blanc, 0.8);
             }
         }
         ol.full-circle {

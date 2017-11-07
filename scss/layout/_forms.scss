@@ -291,6 +291,9 @@ input{
     }
     &[type=tel]{
         max-width: 150px;
+        &.med{
+            max-width: 180px;
+        }
     }
     &[type=email], &.big{
         max-width: 325px;

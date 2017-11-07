@@ -501,6 +501,11 @@ $(function(){
 		$('#content-map-jobs').stick_in_parent();
 	}
 
+	// Footer mon compte cercle
+	if($('.call-directly').length){
+		//$('.call-directly').stick_in_parent();
+	}
+
 	// Nav tabs responsive
 	setResponsiveNavTabs();
 
