@@ -723,21 +723,6 @@ $tps-choice-etape-2: 0.3s;
 			vertical-align: top;
 		}
 	}
-	.bandeau-bottom{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		padding: 20px 60px;
-		text-align: right;
-		background: rgba($noir, 0.1);
-		p{
-			margin: 0;
-		}
-		.btn-small-arrow{
-			color: $orange;
-		}
-	}
 	h3{
 		margin: 0;
 		font-size: 1.75em;

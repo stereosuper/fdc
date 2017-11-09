@@ -143,8 +143,8 @@
                         <ul class="little-squares wave"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
                         <header>
                             <img src="./layoutImg/cercle/cercle.png" width="198" alt="Le Cercle MyForum"/>
-                            <h2 class='h1'>Facilitateur<br /> de tous vos projets</h2>
-                            <p>Pour réussir et vous simplifier la vie, faites-vous (bien) accompagner par un membre du Cercle&nbsp;!</p>
+                            <h2 class='h1'>Parlons de votre projet</h2>
+                            <p>Gratuit : audit de votre projet, conseils, accompagnement, mises en relation.<br />Demandez à être rappelé&nbsp;!</p>
                         </header>
                         <ol class="full-circle wave">
                             <li class="buy-step">Acheter</li><!--
@@ -155,9 +155,22 @@
                             --><li class="manage-step">Gérer</li><!--
                             --><li class="sell-step">Vendre</li>
                         </ol>
-                        <div class="circle-text"><div>
-                            <p><img src="./layoutImg/cercle/serviceplus.png" width="104" alt="Service Gratuit" class="gratuit" /> Quel que soit votre besoin d'accompagnement, votre interlocuteur dédié du Cercle Forum des Commerces vous contacte, vous conseille et vous met en relation vers le bon expert. </p><a href="#" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Me faire accompagner</span></a>
+                        <div class="circle-text big clearfix"><div>
+                            <h3>Boostez votre projet !</h3>
+                            <p>Pitchez votre projet avec nous et profitez d'un audit gratuit&nbsp;:</p>
+                            <form>
+                                <fieldset class="required inline-b align-middle">
+                                    <input class="med" type="text" placeholder="Votre nom" required />
+                                </fieldset>
+                                <fieldset class="required inline-b align-middle">
+                                    <input class="med" type="tel" placeholder="Votre n° de téléphone" required />
+                                </fieldset>
+                                <button type="submit" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Ok</span></button>
+                            </form>
                         </div></div>
+                        <div class="bandeau-bottom">
+                            <p><strong>Vous avez des besoins spécifiques&nbsp;?</strong> <a class="btn-small-arrow" href="#"><span>Complétez notre formulaire&nbsp;!</span></a>
+                        </div>
                     </div>
                 </div>
             </div>

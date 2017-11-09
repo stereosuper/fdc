@@ -862,6 +862,11 @@
                         float:right;
                     }
                 }
+                &.big{
+                    div{
+                        text-align: left;
+                    }
+                }
             }
         }
         ol.full-circle, ol.full-circle.wave {
@@ -2955,6 +2960,10 @@
             }
         }
     }
+    .bandeau-bottom, .cercleMyForum .bandeau-bottom{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 @media (max-width: 650px){
@@ -3147,6 +3156,9 @@
                 margin:10px auto;
                 float:none;
             }
+            &.big{
+                margin: 30px 0;
+            }
         }
         .call-directly form {
             min-width:0;
@@ -3337,17 +3349,41 @@
                     padding-top:0;
                 }
             }
-            .circle-text div {
-                text-align: center;
-                p {
-                    margin-top:0;
+            .circle-text{
+                div {
                     text-align: center;
+                    p {
+                        margin-top:0;
+                        text-align: center;
+                    }
+                    a {
+                        float: none;
+                        margin-top:20px;
+                    }
                 }
-                a {
-                    float: none;
-                    margin-top:20px;
+                &.big{
+                    margin: 0 0 35px;
+                    div{
+                        text-align: center;
+                        max-width: 100%;
+                        fieldset{
+                            margin: 0 0 10px;
+                            &:first-of-type{
+                                display: block;
+                            }
+                            &:last-of-type{
+                                margin: 0 5px 0 0;
+                            }
+                        }
+                    }
+                    input[type=text].med{
+                        max-width: 214px;
+                    }
+                    input[type=tel].med{
+                        width: 155px;
+                    }
                 }
-            }
+            } 
         }
     }
 
@@ -3371,6 +3407,10 @@
         border-right: 3px solid currentColor;
         width: 100%;
         text-align: center;
+    }
+    .bandeau-bottom, .cercleMyForum .bandeau-bottom{
+        text-align: center;
+        padding: 15px 30px;
     }
 }
 

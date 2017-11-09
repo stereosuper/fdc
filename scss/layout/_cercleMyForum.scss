@@ -38,6 +38,9 @@
                 margin-top:10px;
             }
         }
+        ol.full-circle{
+            margin-left: -65px;
+        }
         .circle-text {
             text-align:right;
             div {
@@ -56,6 +59,47 @@
                    float:left;
                 }
             }
+            &.big{
+                text-align: left;
+                div{
+                    width: 100%;
+                    max-width: 450px;
+                }
+                h3{
+                    margin: 0;
+                    + p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                p {
+                    margin-bottom:30px;
+                }
+                form{
+                    margin-top: 15px;
+                    fieldset{
+                        margin: 0 5px;
+                        &:first-of-type{
+                            margin-left: 0;
+                        }
+                    }
+                    button{
+                        margin-left: 5px;
+                    }
+                }
+                input[type=text], input[type=email], input[type=tel], input[type=password], input[type=number], textarea{
+                    color: $blanc;
+                }
+                ::-webkit-input-placeholder{
+                    color: rgba($blanc, 0.8);
+                }
+                ::-moz-placeholder{
+                    color: rgba($blanc, 0.8);
+                }
+                ::-ms-input-placeholder{
+                    color: rgba($blanc, 0.8);
+                }
+            }
         }
         &.small-margin {
             margin-top:1em;
@@ -64,6 +108,7 @@
                 margin-top:12em;
             }
         }
+        
     }
     &.choice-cercle {
         height:100%;
@@ -663,5 +708,20 @@
                 top:10px;
             }
         }
+    }
+}
+.bandeau-bottom, .cercleMyForum .bandeau-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 60px;
+    text-align: right;
+    background: rgba($noir, 0.1);
+    p, .field-content p{
+        margin: 0;
+    }
+    .btn-small-arrow, .field-content .btn-small-arrow{
+        color: $orange;
     }
 }
