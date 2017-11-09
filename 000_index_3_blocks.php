@@ -360,6 +360,9 @@
 													<button type="submit" class='btn-block btn-yellow medium'><span class='border'></span><span class='txt-btn'>Ok</span></button>
 												</form>
 											</div></div>
+											<div class="bandeau-bottom">
+												<p><strong>Vous avez des besoins spécifiques&nbsp;?</strong> <a class="btn-small-arrow" href="#"><span>Complétez notre formulaire&nbsp;!</span></a>
+											</div>
 			                            </div>
 			                        </div>
 								</div>

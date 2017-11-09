@@ -51,6 +51,27 @@
 		@include font-icon;
 	}
 }
+.btn-small-arrow{
+	color: $orange;
+	position: relative;
+	padding: 0 8px 0 0;
+	text-decoration: none;
+	> span{
+		text-decoration: underline;
+	}
+	&:after{
+		content: '›';
+		position: absolute;
+		top: 0;
+		right: 0;
+		transition: transform 0.3s ease-in-out;
+	}
+	&:hover, &:focus{
+		&:after{
+			transform: translate3d(5px, 0, 0);
+		}
+	}
+}
 .btn-arrow{
 	@extend %btn-arrow-base;
 	@extend %btn-arrow;

@@ -3343,7 +3343,8 @@ button {
       right: 50px;
       width: 390px; }
       .cercleMyForum.choice-cercle .circle-text.big {
-        width: 460px; }
+        width: 460px;
+        bottom: 40px; }
       .cercleMyForum.choice-cercle .circle-text h3 {
         margin: 0; }
         .cercleMyForum.choice-cercle .circle-text h3 + p {
@@ -3934,6 +3935,24 @@ button {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+
+.btn-small-arrow {
+  color: #ff8925;
+  position: relative;
+  padding: 0 8px 0 0;
+  text-decoration: none; }
+  .btn-small-arrow > span {
+    text-decoration: underline; }
+  .btn-small-arrow:after {
+    content: '›';
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out; }
+  .btn-small-arrow:hover:after, .btn-small-arrow:focus:after {
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0); }
 
 .btn-arrow.btn-no-text {
   width: 15px;
@@ -5197,6 +5216,18 @@ a.btn-block, button.btn-block, .btn-block {
             transition-delay: 0.3s; }
     .choices .zone-txt .content-align-middle {
       vertical-align: top; }
+  .choices .bandeau-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 60px;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.1); }
+    .choices .bandeau-bottom p {
+      margin: 0; }
+    .choices .bandeau-bottom .btn-small-arrow {
+      color: #ff8925; }
   .choices h3 {
     margin: 0;
     font-size: 1.75em;
