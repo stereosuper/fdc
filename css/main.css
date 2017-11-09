@@ -5126,6 +5126,7 @@ a.btn-block, button.btn-block, .btn-block {
   .choices .content {
     position: relative;
     height: 100%;
+    max-height: 475px;
     z-index: 1;
     overflow: hidden;
     opacity: 0;
