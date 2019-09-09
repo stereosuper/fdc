@@ -321,7 +321,7 @@
 								<div class='visuel'>
 									<div class='wrapper-alignment'>
 										<div class='content-align-middle'>
-											<img src="img/cercle.png" srcset="img/cercle.png 1x, img/cercle@2x.png 2x" alt="">
+											<img src="img/cercle.png" alt="">
 										</div>
 									</div>
 								</div>

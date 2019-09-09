@@ -268,6 +268,11 @@ $tps-choice-etape-2: 0.3s;
 				// color: rgb(147, 147, 147);
 			}
 		}
+		&.cercle-choice{
+			img{
+				max-width: 60%;
+			}
+		}
 	}
 	&.three-choices{
 		&.choice-1-active{

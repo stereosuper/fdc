@@ -3304,6 +3304,9 @@ button {
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
     opacity: 0; }
+.choices > li.cercle-choice img{
+  max-width: 60%;
+}
 
 .cercleMyForum {
   position: relative; }
