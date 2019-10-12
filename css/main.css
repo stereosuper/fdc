@@ -2262,13 +2262,11 @@ a.btn-block:hover:after, a.btn-block:focus:after, button.btn-block:hover:after, 
 
 .choices > li:nth-child(3) .bg-choice:before, .choices > li:nth-child(3) .bg-choice:after { content: none; }
 
-.choices > li:nth-child(3) .visuel { background: url(../layoutImg/logo@1x.png) no-repeat; }
+.choices > li:nth-child(3) .visuel { margin: 0 auto; background: url(../layoutImg/logo@1x.png) no-repeat; }
 
 .choices > li:nth-child(3) h3, .choices > li:nth-child(3) h2, .choices > li:nth-child(3) p { color: white; }
 
 .choices > li:nth-child(3) .zone-txt { padding-top: 0; margin-top: -15px; }
-
-.choices > li:nth-child(3) .visuel { margin: 0 auto 50px; }
 
 .choices > li:nth-child(4) { left: 60%; }
 

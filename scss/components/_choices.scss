@@ -194,6 +194,7 @@ $tps-choice-etape-2: 0.3s;
 				}
 			}
 			.visuel{
+				margin: 0 auto;
 				background: url(../layoutImg/logo@1x.png) no-repeat;
 			}
 			h3, h2, p{
@@ -202,9 +203,6 @@ $tps-choice-etape-2: 0.3s;
 			.zone-txt{
 				padding-top: 0;
 				margin-top: -15px;
-			}
-			.visuel{
-				margin: 0 auto 50px;
 			}
 		}
 		&:nth-child(4){
