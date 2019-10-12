@@ -1,153 +1,172 @@
 /* Field */
 
-.field{
-	position: relative;
-	margin: -100px 0 45px;
-	&.no-margin-bottom{
-		margin-bottom: 0;
-	}
-	&-header{
-		padding: 45px $gutter 50px 185px;
-		position: relative;
-		overflow: hidden;
-		color: #fff;
-		&:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 35px;
-			margin: auto;
-		}
-		&:after{
-			@include size(100px);
+.field {
+    position: relative;
+    margin: -100px 0 45px;
+    &.no-margin-bottom {
+        margin-bottom: 0;
+    }
+    &-header {
+        padding: 45px $gutter 50px 185px;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 35px;
+            margin: auto;
+        }
+        &:after {
+            @include size(100px);
 
-			content: '';
-			position: absolute;
-			left: 200px;
-			bottom: 0;
-			opacity: 0.5;
-			transform: rotate(45deg) translateY(70%);
-		}
-		.rect{
-			&:before, &:after{
-				@include size(100px);
+            content: '';
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+            opacity: 0.5;
+            transform: rotate(45deg) translateY(70%);
+        }
+        .rect {
+            &:before,
+            &:after {
+                @include size(100px);
 
-				content: '';
-				position: absolute;
-				opacity: 0.5;
-				transform: rotate(45deg);
-			}
-			&:before{
-				top: -50px;
-				left: -50px;
-			}
-			&:after{
-				bottom: -50px;
-				right: -50px;
-			}
-		}
-	}
-	&.field-sale{
-		.field-header{
-			//background: linear-gradient(to bottom, rgba(#ef9725, 0.95) 0, rgba(#ea6e19, 0.95) 100%);
-			//background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
-			background: $theme2-gradient-2;
-			background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
-			&:before{
-				width: 129px;
-				height: 75px;
-				background: url(../img/vente@2x.png) no-repeat;
-				background-size: 100%;
-			}
-			&:after{
-				//background: #ea6e19;
-				background: rgb(212, 47, 31);
-				opacity: 0.5;
-			}
-			.rect{
-				&:before{
-					//background: #ef9725;
-					background: rgb(212, 47, 31);
-					opacity: 0.5;
-				}
-				&:after{
-					//background: #ea6e19;
-					background: rgb(212, 47, 31);
-					opacity: 0.5;
-				}
-			}
-		}
-	}
-	&.field-buy{
-		.field-header{
-			//background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
-			background: $theme2-gradient-1;
-			background: linear-gradient(to bottom, $theme2-gradient-1 0%, darken($theme2-gradient-1, 5%) 100%);
-			&:before{
-				width: 84px;
-				height: 83px;
-				left: 70px;
-				background: url(../img/achat@2x.png) no-repeat;
-				background-size: 100%;
-			}
-			&:after, .rect:before, .rect:after{
-				background: rgb(198, 40, 25);
-			}
-		}
-	}
-    &.field-stuff{
-        .field-header{
+                content: '';
+                position: absolute;
+                opacity: 0.5;
+                transform: rotate(45deg);
+            }
+            &:before {
+                top: -50px;
+                left: -50px;
+            }
+            &:after {
+                bottom: -50px;
+                right: -50px;
+            }
+        }
+    }
+    &.field-sale {
+        .field-header {
+            //background: linear-gradient(to bottom, rgba(#ef9725, 0.95) 0, rgba(#ea6e19, 0.95) 100%);
+            //background: linear-gradient(to bottom, $theme2-gradient-2 0%, darken($theme2-gradient-2, 5%) 100%);
+            background: $theme2-gradient-2;
+            background: linear-gradient(
+                to bottom,
+                $theme2-gradient-2 0%,
+                darken($theme2-gradient-2, 5%) 100%
+            );
+            &:before {
+                width: 129px;
+                height: 75px;
+                background: url(../img/vente@2x.png) no-repeat;
+                background-size: 100%;
+            }
+            &:after {
+                //background: #ea6e19;
+                background: rgb(212, 47, 31);
+                opacity: 0.5;
+            }
+            .rect {
+                &:before {
+                    //background: #ef9725;
+                    background: rgb(212, 47, 31);
+                    opacity: 0.5;
+                }
+                &:after {
+                    //background: #ea6e19;
+                    background: rgb(212, 47, 31);
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    &.field-buy {
+        .field-header {
+            //background: linear-gradient(to bottom, rgba(228, 65, 76, 0.95) 0, rgba(199, 32, 44, 0.95) 100%);
+            background: $theme2-gradient-1;
+            background: linear-gradient(
+                to bottom,
+                $theme2-gradient-1 0%,
+                darken($theme2-gradient-1, 5%) 100%
+            );
+            &:before {
+                width: 84px;
+                height: 83px;
+                left: 70px;
+                background: url(../img/achat@2x.png) no-repeat;
+                background-size: 100%;
+            }
+            &:after,
+            .rect:before,
+            .rect:after {
+                background: rgb(198, 40, 25);
+            }
+        }
+    }
+    &.field-stuff {
+        .field-header {
             // background: linear-gradient(to bottom, rgba(#f16c2b, 0.95) 0, rgba(#e03f13, 0.95) 100%);
             background: $theme2-gradient-4;
-            background: linear-gradient(to bottom, $theme2-gradient-4 0%, darken($theme2-gradient-4, 5%) 100%);
-            &:before{
+            background: linear-gradient(
+                to bottom,
+                $theme2-gradient-4 0%,
+                darken($theme2-gradient-4, 5%) 100%
+            );
+            &:before {
                 width: 93px;
                 height: 87px;
-                left:55px;
+                left: 55px;
                 background: url(../img/materiel@2x.png) no-repeat;
                 background-size: 100%;
             }
-            &:after{
+            &:after {
                 // background: #e03f13;
                 background: rgb(235, 91, 30);
             }
-            .rect{
-                &:before{
+            .rect {
+                &:before {
                     // background: #f16c2b;
                     background: rgb(235, 91, 30);
                 }
-                &:after{
+                &:after {
                     // background: #e03f13;
                     background: rgb(235, 91, 30);
                 }
             }
         }
     }
-    &.field-job{
-        .field-header{
+    &.field-job {
+        .field-header {
             // background: linear-gradient(to bottom, rgba(#eb7f16, 0.95) 0, rgba(#e45415, 0.95) 100%);
             background: $theme2-gradient-5;
-            background: linear-gradient(to bottom, $theme2-gradient-5 0%, darken($theme2-gradient-5, 5%) 100%);
-            &:before{
+            background: linear-gradient(
+                to bottom,
+                $theme2-gradient-5 0%,
+                darken($theme2-gradient-5, 5%) 100%
+            );
+            &:before {
                 width: 116px;
                 height: 75px;
                 left: 40px;
                 background: url(../img/personnel@2x.png) no-repeat;
                 background-size: 100%;
             }
-            &:after{
+            &:after {
                 // background: #e45415;
                 background: rgb(241, 103, 30);
                 opacity: 0.5;
             }
-            .rect{
-                &:before{
+            .rect {
+                &:before {
                     // background: #eb7f16;
                     background: rgb(241, 103, 30);
                     opacity: 0.5;
                 }
-                &:after{
+                &:after {
                     // background: #e45415;
                     background: rgb(241, 103, 30);
                     opacity: 0.5;
@@ -155,202 +174,206 @@
             }
         }
     }
-	.breadcrumb{
-		padding: 0;
-		margin: 0;
-		color: #fff;
-		a{
-			&:hover, &:focus{
-				color: rgba(#fff, 0.7);
-			}
-			&:active{
-				color: rgba(#fff, 0.5);
-			}
-		}
-	}
-	h1{
-		padding: 0;
-		position: relative;
-		margin-bottom: 0;
-		z-index: 1;
-	}
-	&-content{
-		padding: 40px $gutter;
-		border: 1px solid $gris;
-		border-top: 0;
-		overflow: hidden;
-		box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
-		background: #fff;
-		position: relative;
-		&.no-header{
-		    border-top: 1px solid $gris;
-		}
+    .breadcrumb {
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        a {
+            &:hover,
+            &:focus {
+                color: rgba(#fff, 0.7);
+            }
+            &:active {
+                color: rgba(#fff, 0.5);
+            }
+        }
+    }
+    h1 {
+        padding: 0;
+        position: relative;
+        margin-bottom: 0;
+        z-index: 1;
+        color: #fff;
+    }
+    &-content {
+        padding: 40px $gutter;
+        border: 1px solid $gris;
+        border-top: 0;
+        overflow: hidden;
+        box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+        background: #fff;
+        position: relative;
+        &.no-header {
+            border-top: 1px solid $gris;
+        }
         &.low-padding-top {
             padding: 0 $gutter 60px;
         }
-		.wrapper-choices &{
-			padding: 45px $gutter 13px;
-			height: 100%;
-		}
-		.cercleMyForum{
-			&.adCercle{
-				margin-top: 0;
-				.field-content{
-					padding: 20px 50px;
-				}
-				ol.full-circle.wave{
-					li{
-						&.buy-step{
-							left: 80px;
-						}
-						&.finance-step{
-							left: 206px;
-						}
-						&.ensure-step{
-							left: 340px;
-						}
-						&.equip-step{
-							left: 390px;
-							top: -160px;
-						}
-					}
-				}
-			}
-		}
-		h2{
-			+ a{
-				margin-right: 15px;
-			}
-		}
-		p, h3{
-			padding: 0;
-			margin: 5px 0 15px;
-			line-height: 1.3;
-			letter-spacing: -0.5px;
-			color: $txt;
-		}
-		a.right{
-			float: right;
-			margin: 10px 0 0;
-		}
-		.content-align-middle{
-			&.wrapper-search-title{
-				width: 130px;
-			}
-			&.wrapper-search-txt{
-				h2{
-					line-height: 1.1em;
-				}
-				h2, a{
-					display: inline;
-					vertical-align: middle;
-				}
-				a{
-					top: 1px;
-				}
-			}
-			&.wrapper-create-alert{
-				width: 160px;
-				padding-left: 20px;
-			}
-		}
-	}
+        .wrapper-choices & {
+            padding: 45px $gutter 13px;
+            height: 100%;
+        }
+        .cercleMyForum {
+            &.adCercle {
+                margin-top: 0;
+                .field-content {
+                    padding: 20px 50px;
+                }
+                ol.full-circle.wave {
+                    li {
+                        &.buy-step {
+                            left: 80px;
+                        }
+                        &.finance-step {
+                            left: 206px;
+                        }
+                        &.ensure-step {
+                            left: 340px;
+                        }
+                        &.equip-step {
+                            left: 390px;
+                            top: -160px;
+                        }
+                    }
+                }
+            }
+        }
+        h2 {
+            + a {
+                margin-right: 15px;
+            }
+        }
+        p,
+        h3 {
+            padding: 0;
+            margin: 5px 0 15px;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+            color: $txt;
+        }
+        a.right {
+            float: right;
+            margin: 10px 0 0;
+        }
+        .content-align-middle {
+            &.wrapper-search-title {
+                width: 130px;
+            }
+            &.wrapper-search-txt {
+                h2 {
+                    line-height: 1.1em;
+                }
+                h2,
+                a {
+                    display: inline;
+                    vertical-align: middle;
+                }
+                a {
+                    top: 1px;
+                }
+            }
+            &.wrapper-create-alert {
+                width: 160px;
+                padding-left: 20px;
+            }
+        }
+    }
 }
-
 
 /* Field list */
 
-.field-list{
-	@extend %list-base;
-	&.categs{
-		font-size: 0;
-		li{
-			display: inline-block;
-			vertical-align: top;
-			width: 50%;
-			font-size: 16px;
-			&:nth-child(odd){
-				padding: 0 20px 0 0;
-			}
-			&:nth-child(even){
-				padding: 0 0 0 20px;
-			}
-		}
-		a{
-			min-height: 162px;
-		}
-		.field-txt{
-			padding: 26px 30px;
-		}
-		.title-simple-big{
-			line-height: 0.95;
-		}
-	}
-	li{
-		margin-bottom: 10px;
-	}
-	a{
-		min-height: 210px;
-		border: 1px solid $gris;
-		border-right: 0;
-		box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
-		background: #fff;
-		&:before{
-			left: -8px;
-			right: 8px;
-			transform: translateX(100%);
-		}
-		&:hover, &:focus{
-			&:before{
-				transform: translateX(8px);
-			}
-			.img{
-				opacity: 0.7;
-				transition-delay: $tps-transition-delay;
-			}
-			.link{
-				color: #fff;
-				transition-delay: $tps-transition-delay;
-			}
-		}
-	}
-	.img{
-		width: 39%;
-		height: 100%;
-		position: absolute;
-		overflow: hidden;
-		transition: $transition;
-		transition-delay: 0s;
-	}
-	.link{
-		transition-delay: 0s;
-	}
-	img{
-		max-width: none;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		bottom: 0;
-		margin: auto;
-		transform: translateX(-50%);
-	}
-	.field-txt{
-		display: block;
-		padding: 40px 60px 40px 43%;
-	}
-	.title-simple-big{
-		vertical-align: middle;
-		margin-right: 20px;
-		display: inline;
-		text-transform: none;
-	}
-	.p{
-		display: block;
-		margin: 15px 0 0;
-		line-height: 1.3;
-		letter-spacing: -0.5px;
-	}
+.field-list {
+    @extend %list-base;
+    &.categs {
+        font-size: 0;
+        li {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            font-size: 16px;
+            &:nth-child(odd) {
+                padding: 0 20px 0 0;
+            }
+            &:nth-child(even) {
+                padding: 0 0 0 20px;
+            }
+        }
+        a {
+            min-height: 162px;
+        }
+        .field-txt {
+            padding: 26px 30px;
+        }
+        .title-simple-big {
+            line-height: 0.95;
+        }
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        min-height: 210px;
+        border: 1px solid $gris;
+        border-right: 0;
+        box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.05);
+        background: #fff;
+        &:before {
+            left: -8px;
+            right: 8px;
+            transform: translateX(100%);
+        }
+        &:hover,
+        &:focus {
+            &:before {
+                transform: translateX(8px);
+            }
+            .img {
+                opacity: 0.7;
+                transition-delay: $tps-transition-delay;
+            }
+            .link {
+                color: #fff;
+                transition-delay: $tps-transition-delay;
+            }
+        }
+    }
+    .img {
+        width: 39%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        transition: $transition;
+        transition-delay: 0s;
+    }
+    .link {
+        transition-delay: 0s;
+    }
+    img {
+        max-width: none;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        margin: auto;
+        transform: translateX(-50%);
+    }
+    .field-txt {
+        display: block;
+        padding: 40px 60px 40px 43%;
+    }
+    .title-simple-big {
+        vertical-align: middle;
+        margin-right: 20px;
+        display: inline;
+        text-transform: none;
+    }
+    .p {
+        display: block;
+        margin: 15px 0 0;
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+    }
 }
 
 /* connexion vente */
@@ -358,62 +381,62 @@
     padding: 50px 70px 90px 70px;
     display: table;
     width: 100%;
-    .field-content &{
-    	padding: 0;
+    .field-content & {
+        padding: 0;
     }
     .login-vente {
-    	height: 315px;
-    	max-width: 50%;
-    	display: table-cell;
-    	border-right: 1px dashed #000;
-    	h3{
-    		margin-bottom: 50px;
-    	}
-    	.info-form{
-    		display: inline-block;
-    		margin-left: 20px;
-    		.btn-simple{
-    			font-size: 0.75em;
-    		}
-    	}
-    	label{
-    		display: inline-block;
-    		font-size: 1em;
-            width:125px;
-    	}
-    	.wrapper-input-btn {
-    		input[type=password] {
-    			max-width: 140px;
-    		}
-    		.btn-block{
-    			right: auto;
-    			margin-top: 20px;
-    			margin-left: 128px;
-    			padding: 23px 34px;
-    		}
-    	}
+        height: 315px;
+        max-width: 50%;
+        display: table-cell;
+        border-right: 1px dashed #000;
+        h3 {
+            margin-bottom: 50px;
+        }
+        .info-form {
+            display: inline-block;
+            margin-left: 20px;
+            .btn-simple {
+                font-size: 0.75em;
+            }
+        }
+        label {
+            display: inline-block;
+            font-size: 1em;
+            width: 125px;
+        }
+        .wrapper-input-btn {
+            input[type='password'] {
+                max-width: 140px;
+            }
+            .btn-block {
+                right: auto;
+                margin-top: 20px;
+                margin-left: 128px;
+                padding: 23px 34px;
+            }
+        }
     }
     .sign-up {
-    	display: table-cell;
-    	//width: 420px;
-    	padding-left: 60px;
-    	h3{
-    		margin-bottom: 47px;
-    	}
-    	p {
-    		max-width: 335px;
-    		margin-bottom: 32px;
-    		line-height: 1.5;
-    	}
-    	.wrapper-input-btn {
-    		input[type=password] {
-    			max-width: 140px;
-    		}
-    		.btn-block{
-    			left: 0;
-    			padding: 23px 34px;
-    			margin-left: 0;
-    		}
-    	}
+        display: table-cell;
+        //width: 420px;
+        padding-left: 60px;
+        h3 {
+            margin-bottom: 47px;
+        }
+        p {
+            max-width: 335px;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+        .wrapper-input-btn {
+            input[type='password'] {
+                max-width: 140px;
+            }
+            .btn-block {
+                left: 0;
+                padding: 23px 34px;
+                margin-left: 0;
+            }
+        }
     }
 }
